@@ -607,10 +607,8 @@ The derivative is known analytically:
 def loss(w):
     return (w - 3) ** 2
 
-
 def gradient(w):
     return 2 * (w - 3)
-
 
 w = 1.0
 learning_rate = 0.1
@@ -769,10 +767,8 @@ Understanding this sequence is more useful than memorizing isolated formulas bec
 - [02 — Algebra, Exponents and Logarithms](02-Algebra-Exponents-and-Logarithms.md) — algebraic manipulation and exponential relationships.
 - [05 — Linear Algebra Foundations](05-Linear-Algebra-Foundations.md) — vectors, linear transformations, and geometric intuition.
 - [06 — Vectors, Matrices and Operations](06-Vectors-Matrices-and-Operations.md) — vector and matrix operations used in model computation.
-- [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md) — planned connection to model training and evaluation.
-- [AIF-04 — Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md) — planned connection to neural networks and backpropagation.
-
-**Source and link limitation:** The authoritative detailed AIF-wide hierarchy was not available for independent comparison, and live repository paths have not been inspected. Cross-links follow the approved proposed structure and should be verified against the repository before merging.
+- [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md) — connection to model training and evaluation.
+- [AIF-04 — Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md) — connection to neural networks and backpropagation.
 
 ---
 

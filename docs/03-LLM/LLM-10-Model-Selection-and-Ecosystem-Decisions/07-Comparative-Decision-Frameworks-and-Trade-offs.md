@@ -33,8 +33,6 @@ Related topics remain in their owning chapters:
 
 This chapter does not re-teach those subjects. It explains how to combine their evidence and constraints into a defensible comparative decision.
 
-Repository navigation: Add relative links to the relevant chapter README files after confirming their exact paths in the repository. Do not assume directory names from chapter titles.
-
 ## 3. The Engineering Problem
 
 A model-selection decision rarely has one universally best candidate.
@@ -769,4 +767,3 @@ Consult the relevant authoritative documentation and preceding chapters when app
 - Production AI Engineering documentation for deployment and operational acceptance.
 - Enterprise AI Systems documentation for governance, security, and compliance constraints.
 
-Verify repository-relative links and chapter paths against the actual repository structure before merging this file.

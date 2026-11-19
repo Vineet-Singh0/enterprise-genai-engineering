@@ -30,8 +30,6 @@ Relevant neighboring chapters:
 - **Production AI Engineering:** Serving, deployment, scaling, reliability, and operational management.
 - **Enterprise AI Systems:** Governance, security, compliance, and organizational risk.
 
-Repository note: Verify relative links against the actual repository structure before merging.
-
 ## 3. The Engineering Problem
 
 A candidate model may be unsuitable in its current configuration but potentially viable after a change.

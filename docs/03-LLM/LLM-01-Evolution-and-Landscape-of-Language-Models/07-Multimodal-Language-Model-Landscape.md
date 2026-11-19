@@ -555,5 +555,3 @@ The purpose of these resources is to deepen understanding of modality support. D
 - **Scope:** Covers the multimodal landscape at a conceptual level, including text, image, audio, video, and selected structured modalities.
 - **Boundary control:** Does not teach detailed multimodal architecture, implementation, or evaluation methodology.
 - **Engineering relevance:** Explains input/output distinctions, integrated models versus pipelines, and modality-specific trade-offs.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.
