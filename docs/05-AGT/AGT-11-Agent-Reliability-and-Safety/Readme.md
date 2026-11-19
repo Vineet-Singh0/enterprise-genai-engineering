@@ -108,7 +108,7 @@ Covers:
 - escalation,
 - behavior-level recovery observability.
 
-[Read File 01 →](./01-Agent-Failure-Modes-and-Recovery-Strategies.md)
+[Read Lesson 01 →](./01-Agent-Failure-Modes-and-Recovery-Strategies.md)
 
 ### 02 — Execution and State Safety
 
@@ -140,7 +140,7 @@ Covers:
 - partial completion,
 - recovery after unsafe execution.
 
-[Read File 02 →](./02-Execution-and-State-Safety.md)
+[Read Lesson 02 →](./02-Execution-and-State-Safety.md)
 
 ### 03 — Agent Safety, Excessive Agency and Tool Boundaries
 
@@ -171,7 +171,7 @@ Covers:
 - containment,
 - termination.
 
-[Read File 03 →](./03-Agent-Safety-Excessive-Agency-and-Tool-Boundaries.md)
+[Read Lesson 03 →](./03-Agent-Safety-Excessive-Agency-and-Tool-Boundaries.md)
 
 ---
 
@@ -191,52 +191,51 @@ The progression is:
 
 **Failure → Recovery → Safe Execution → Safe State → Bounded Agency**
 
-File 01 establishes failure and recovery reasoning.
+Lesson 01 establishes failure and recovery reasoning.
 
-File 02 applies that reasoning to execution and state safety.
+Lesson 02 applies that reasoning to execution and state safety.
 
-File 03 extends the safety model to agent autonomy, capabilities, authority, tools, external content, and high-impact actions.
+Lesson 03 extends the safety model to agent autonomy, capabilities, authority, tools, external content, and high-impact actions.
 
 ---
 
-## Concept Ownership Map
-
+## Related Chapters
 Each major AGT-11 concept has one primary teaching location.
 
-| Concept | Primary File |
+| Concept | Covered in |
 |---|---|
-| Failure classification | File 01 |
-| Agent failure modes | File 01 |
-| Retry and bounded retry | File 01 |
-| Backoff | File 01 |
-| Fallback and degradation | File 01 |
-| Compensation | File 01 |
-| Recovery strategy selection | File 01 |
-| Recovery limits and failure budgets | File 01 |
-| Recovery escalation | File 01 |
-| Execution safety | File 02 |
-| State safety | File 02 |
-| Unsafe state transitions | File 02 |
-| Safety invariants | File 02 |
-| Preconditions and postconditions | File 02 |
-| Action/state validation | File 02 |
-| Unsafe continuation | File 02 |
-| Containment and termination controls | File 02 |
-| Fail-safe vs. fail-open behavior | File 02 |
-| Irreversible actions and reversibility | File 02 |
-| Side-effect isolation | File 02 |
-| Duplicate and partial execution | File 02 |
-| Excessive agency | File 03 |
-| Capability vs. authority | File 03 |
-| Action-space minimization | File 03 |
-| Agent-level least privilege | File 03 |
-| Tool trust and unsafe tool outputs | File 03 |
-| Authorization and action gating | File 03 |
-| Untrusted external content | File 03 |
-| Prompt-injection consequences | File 03 |
-| Memory-poisoning safety implications | File 03 |
-| Unsafe persistence and delegation | File 03 |
-| High-impact and destructive actions | File 03 |
+| Failure classification | Lesson 01 |
+| Agent failure modes | Lesson 01 |
+| Retry and bounded retry | Lesson 01 |
+| Backoff | Lesson 01 |
+| Fallback and degradation | Lesson 01 |
+| Compensation | Lesson 01 |
+| Recovery strategy selection | Lesson 01 |
+| Recovery limits and failure budgets | Lesson 01 |
+| Recovery escalation | Lesson 01 |
+| Execution safety | Lesson 02 |
+| State safety | Lesson 02 |
+| Unsafe state transitions | Lesson 02 |
+| Safety invariants | Lesson 02 |
+| Preconditions and postconditions | Lesson 02 |
+| Action/state validation | Lesson 02 |
+| Unsafe continuation | Lesson 02 |
+| Containment and termination controls | Lesson 02 |
+| Fail-safe vs. fail-open behavior | Lesson 02 |
+| Irreversible actions and reversibility | Lesson 02 |
+| Side-effect isolation | Lesson 02 |
+| Duplicate and partial execution | Lesson 02 |
+| Excessive agency | Lesson 03 |
+| Capability vs. authority | Lesson 03 |
+| Action-space minimization | Lesson 03 |
+| Agent-level least privilege | Lesson 03 |
+| Tool trust and unsafe tool outputs | Lesson 03 |
+| Authorization and action gating | Lesson 03 |
+| Untrusted external content | Lesson 03 |
+| Prompt-injection consequences | Lesson 03 |
+| Memory-poisoning safety implications | Lesson 03 |
+| Unsafe persistence and delegation | Lesson 03 |
+| High-impact and destructive actions | Lesson 03 |
 
 Later files should reference these concepts rather than re-teach them in depth.
 
@@ -305,7 +304,7 @@ Monitoring
 Containment / Termination
 ```
 
-This is a navigation model for the chapter; the detailed engineering treatment belongs in Files 02 and 03.
+This is a navigation model for the chapter; the detailed engineering treatment belongs in Lessons 02 and 03.
 
 ---
 
@@ -459,9 +458,9 @@ This is an engineering model, not a universal legal or compliance requirement.
 
 | Activity | Estimated Time |
 |---|---:|
-| File 01 — Failure Modes and Recovery | 60–75 min |
-| File 02 — Execution and State Safety | 60–75 min |
-| File 03 — Agent Safety and Excessive Agency | 60–75 min |
+| Lesson 01 — Failure Modes and Recovery | 60–75 min |
+| Lesson 02 — Execution and State Safety | 60–75 min |
+| Lesson 03 — Agent Safety and Excessive Agency | 60–75 min |
 | Revision / exercises | 30–45 min |
 | **Total** | **~3.5–4.5 hours** |
 

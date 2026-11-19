@@ -49,7 +49,7 @@ AGT-09 contains exactly three lessons.
 
 ### 01 — Single-Agent vs Multi-Agent Architecture
 
-[01-Single-Agent-vs-Multi-Agent-Architecture.md](./01-Single-Agent-vs-Multi-Agent-Architecture.md)
+[Single Agent vs Multi Agent Architecture](./01-Single-Agent-vs-Multi-Agent-Architecture.md)
 
 **Purpose:** Establish why a system might intentionally use multiple agents and when it should not.
 
@@ -77,7 +77,7 @@ AGT-09 contains exactly three lessons.
 
 ### 02 — Delegation, Supervision and Agent Coordination
 
-[02-Delegation-Supervision-and-Agent-Coordination.md](./02-Delegation-Supervision-and-Agent-Coordination.md)
+[Delegation Supervision and Agent Coordination](./02-Delegation-Supervision-and-Agent-Coordination.md)
 
 **Purpose:** Explain how multiple agents work together after meaningful agent boundaries have been established.
 
@@ -110,7 +110,7 @@ AGT-09 contains exactly three lessons.
 
 ### 03 — Multi-Agent State, Communication, Failure and Termination
 
-[03-Multi-Agent-State-Communication-Failure-and-Termination.md](./03-Multi-Agent-State-Communication-Failure-and-Termination.md)
+[Multi Agent State Communication Failure and Termination](./03-Multi-Agent-State-Communication-Failure-and-Termination.md)
 
 **Purpose:** Explain how multi-agent systems behave when state differs, communication fails, agents become unavailable, outputs conflict, or coordination must terminate.
 
@@ -204,8 +204,7 @@ These chapters provide concepts that AGT-09 uses as foundations. AGT-09 does not
 
 ---
 
-## Concept Ownership and Chapter Boundaries
-
+## Where This Is Covered
 AGT-09 deliberately maintains boundaries with adjacent chapters.
 
 | Chapter | Relationship to AGT-09 |
@@ -416,9 +415,9 @@ These questions are intended as architectural checks. Detailed implementation be
 | Component | Approximate effort |
 |---|---:|
 | README | 10–15 minutes |
-| File 01 | 30–40 minutes |
-| File 02 | 30–40 minutes |
-| File 03 | 35–45 minutes |
+| Lesson 01 | 30–40 minutes |
+| Lesson 02 | 30–40 minutes |
+| Lesson 03 | 35–45 minutes |
 | **Total chapter** | **~105–140 minutes** |
 
 Actual effort will vary depending on the learner's prior familiarity with distributed coordination and agent architecture.

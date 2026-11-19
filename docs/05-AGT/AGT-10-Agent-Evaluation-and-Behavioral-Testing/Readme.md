@@ -49,9 +49,9 @@ AGT-10 contains exactly three lessons.
 
 | File | Primary Focus |
 |---|---|
-| [`01-Agent-Task-Success-and-Behavioral-Evaluation.md`](./01-Agent-Task-Success-and-Behavioral-Evaluation.md) | Task success, behavioral correctness, evaluation dimensions, acceptance criteria, and evaluation fundamentals. |
-| [`02-Trajectory-Tool-Planning-and-State-Evaluation.md`](./02-Trajectory-Tool-Planning-and-State-Evaluation.md) | Trajectories, tool use, planning, state transitions, context, memory, intermediate behavior, and failure points. |
-| [`03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md`](./03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md) | Evaluation datasets, metrics, evaluator reliability, calibration, LLM judges, and regression testing. |
+| [Agent Task Success and Behavioral Evaluation](./01-Agent-Task-Success-and-Behavioral-Evaluation.md) | Task success, behavioral correctness, evaluation dimensions, acceptance criteria, and evaluation fundamentals. |
+| [Trajectory Tool Planning and State Evaluation](./02-Trajectory-Tool-Planning-and-State-Evaluation.md) | Trajectories, tool use, planning, state transitions, context, memory, intermediate behavior, and failure points. |
+| [Agent Evaluation Sets Metrics and Regression Testing](./03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md) | Evaluation datasets, metrics, evaluator reliability, calibration, LLM judges, and regression testing. |
 
 No additional lessons are introduced in AGT-10.
 
@@ -73,21 +73,20 @@ This creates a progression from **evaluation definition → behavioral evidence 
 
 ---
 
-# Concept Ownership
-
+# Where This Is Covered
 Each concept has one primary teaching location.
 
 Later files may build on concepts introduced earlier, but should not re-teach those concepts in depth.
 
 ```text
-File 01
+Lesson 01
 Task Success
 Behavioral Correctness
 Acceptance Criteria
 Evaluation Dimensions
         │
         ▼
-File 02
+Lesson 02
 Trajectories
 Tool Behavior
 Planning Behavior
@@ -95,7 +94,7 @@ State / Context / Memory Behavior
 Failure Localization
         │
         ▼
-File 03
+Lesson 03
 Evaluation Sets
 Metrics
 Evaluator Quality
@@ -440,19 +439,19 @@ Read the lessons in order.
 
 ### 1. Task Success & Behavioral Evaluation
 
-[`01-Agent-Task-Success-and-Behavioral-Evaluation.md`](./01-Agent-Task-Success-and-Behavioral-Evaluation.md)
+[Agent Task Success and Behavioral Evaluation](./01-Agent-Task-Success-and-Behavioral-Evaluation.md)
 
 Establishes the meaning of successful and acceptable agent behavior.
 
 ### 2. Trajectory, Tool, Planning & State Evaluation
 
-[`02-Trajectory-Tool-Planning-and-State-Evaluation.md`](./02-Trajectory-Tool-Planning-and-State-Evaluation.md)
+[Trajectory Tool Planning and State Evaluation](./02-Trajectory-Tool-Planning-and-State-Evaluation.md)
 
 Moves from final outcomes to the behavior and evidence produced during execution.
 
 ### 3. Evaluation Sets, Metrics & Regression Testing
 
-[`03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md`](./03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md)
+[Agent Evaluation Sets Metrics and Regression Testing](./03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md)
 
 Builds the measurement system required for repeatable evaluation and regression detection.
 

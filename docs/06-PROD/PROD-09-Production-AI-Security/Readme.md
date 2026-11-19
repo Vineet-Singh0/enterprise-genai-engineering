@@ -165,7 +165,7 @@ It covers:
 
 ## What PROD-09 Does Not Own
 
-Clear concept ownership is required to prevent duplication across the repository.
+Clear topic boundaries are required to prevent duplication across the curriculum.
 
 ### PROD-02 — Artifact Identity and Provenance
 
@@ -366,11 +366,11 @@ The learner finally applies the previous security concepts to AI-specific attack
 
 | File | Primary Responsibility |
 |---|---|
-| `01-Production-AI-Identity-Secrets-and-Access-Control.md` | Identity, authentication, authorization, access control, workload identity, secrets, credentials, and least privilege |
-| `02-AI-Application-Container-and-Supply-Chain-Security.md` | Application, container, dependency, artifact, vulnerability, and software/AI supply-chain security |
-| `03-AI-Specific-Production-Threats-and-Protection.md` | AI-specific production attack surfaces, threats, controls, trade-offs, and residual risk |
+| Production AI Identity Secrets and Access Control | Identity, authentication, authorization, access control, workload identity, secrets, credentials, and least privilege |
+| AI Application Container and Supply Chain Security | Application, container, dependency, artifact, vulnerability, and software/AI supply-chain security |
+| AI Specific Production Threats and Protection | AI-specific production attack surfaces, threats, controls, trade-offs, and residual risk |
 
-Each file has one primary teaching responsibility.
+Each file has one primary teaching focus.
 
 Later files may reference concepts introduced earlier, but they should not re-teach earlier concepts in depth.
 
@@ -739,14 +739,6 @@ The learner should also have a working understanding of:
 
 The approved learning order is:
 
-```text
-01-Production-AI-Identity-Secrets-and-Access-Control.md
-                ↓
-02-AI-Application-Container-and-Supply-Chain-Security.md
-                ↓
-03-AI-Specific-Production-Threats-and-Protection.md
-```
-
 Do not skip the first two files before studying AI-specific production threats.
 
 The later threat analysis depends on understanding identity, access, application boundaries, runtime isolation, and artifact trust.
@@ -844,19 +836,10 @@ The standard is:
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 The PROD-09 documentation structure is:
 
-```text
-docs/06-PROD/PROD-09-Production-AI-Security/
-├── README.md
-├── 01-Production-AI-Identity-Secrets-and-Access-Control.md
-├── 02-AI-Application-Container-and-Supply-Chain-Security.md
-└── 03-AI-Specific-Production-Threats-and-Protection.md
-```
-
-`README.md` provides the chapter-level orientation and ownership boundaries.
+README provides the chapter-level orientation and ownership boundaries.
 
 The three numbered files contain the actual teaching material.
 

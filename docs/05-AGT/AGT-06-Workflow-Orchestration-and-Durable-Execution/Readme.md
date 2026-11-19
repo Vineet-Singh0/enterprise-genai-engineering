@@ -108,7 +108,7 @@ AGT-06 contains three lessons.
 
 > How is a multi-step workflow structured?
 
-This file establishes the fundamental structures used to represent workflow execution.
+This lesson establishes the fundamental structures used to represent workflow execution.
 
 It covers:
 
@@ -137,7 +137,7 @@ It covers:
 
 > How does a workflow survive interruption?
 
-This file introduces the state and persistence mechanisms required to recover and continue workflow execution.
+This lesson introduces the state and persistence mechanisms required to recover and continue workflow execution.
 
 It covers:
 
@@ -166,7 +166,7 @@ It covers:
 
 > How does a workflow continue when execution cannot remain continuously active?
 
-This file extends durable execution to workflows that wait for future events, remain active for long periods, or require compensation after partial completion.
+This lesson extends durable execution to workflows that wait for future events, remain active for long periods, or require compensation after partial completion.
 
 It covers:
 

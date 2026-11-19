@@ -70,11 +70,11 @@ ENT-08 contains three lessons.
 
 > **What does an AI capability cost, what drives that cost, and how should the enterprise measure and manage its economics?**
 
-This file establishes the economic foundation.
+This lesson establishes the economic foundation.
 
 It covers AI cost structures, cost allocation and attribution, AI-specific FinOps, cost forecasting, unit economics, cost drivers, cost-to-outcome relationships, and economic optimization.
 
-[Read File 01 →](./01-AI-Cost-Models-FinOps-and-Unit-Economics.md)
+[Read Lesson 01 →](./01-AI-Cost-Models-FinOps-and-Unit-Economics.md)
 
 ---
 
@@ -84,11 +84,11 @@ It covers AI cost structures, cost allocation and attribution, AI-specific FinOp
 
 > **Which AI initiatives or capabilities should the enterprise prioritize, fund, and scale?**
 
-This file establishes the investment-decision foundation.
+This lesson establishes the investment-decision foundation.
 
 It covers AI initiative intake, opportunity assessment, strategic alignment, value hypotheses, expected value, prioritization, funding, investment-capacity allocation, sequencing, portfolio balancing, and experimentation-versus-scale decisions.
 
-[Read File 02 →](./02-AI-Portfolio-Intake-Prioritization-Funding-and-Value.md)
+[Read Lesson 02 →](./02-AI-Portfolio-Intake-Prioritization-Funding-and-Value.md)
 
 ---
 
@@ -98,11 +98,11 @@ It covers AI initiative intake, opportunity assessment, strategic alignment, val
 
 > **Once AI capabilities exist in the portfolio, how should the enterprise decide what to scale, continue, optimize, consolidate, reduce, or retire?**
 
-This file addresses portfolio evolution after investment decisions have been made.
+This lesson addresses portfolio evolution after investment decisions have been made.
 
 It covers AI investment and portfolio decision governance, portfolio health, value realization, duplication, consolidation, portfolio optimization, rebalancing, continuation, scale, reduction, and sunset decisions.
 
-[Read File 03 →](./03-AI-Portfolio-Governance-Optimization-and-Sunset-Decisions.md)
+[Read Lesson 03 →](./03-AI-Portfolio-Governance-Optimization-and-Sunset-Decisions.md)
 
 ---
 
@@ -239,14 +239,14 @@ No single metric determines an AI portfolio decision.
 ENT-08 distinguishes **expected value** from **realized value**.
 
 ```text
-File 02
+Lesson 02
 Expected Value
     ↓
 Investment Hypothesis
     ↓
 Investment Decision
 
-File 03
+Lesson 03
 Observed / Realized Value
     ↓
 Portfolio Review
@@ -254,9 +254,9 @@ Portfolio Review
 Continue / Scale / Reduce / Consolidate / Sunset
 ```
 
-File 02 focuses on the value expected to justify investment.
+Lesson 02 focuses on the value expected to justify investment.
 
-File 03 uses observed evidence to inform subsequent portfolio decisions.
+Lesson 03 uses observed evidence to inform subsequent portfolio decisions.
 
 ---
 
@@ -300,7 +300,7 @@ These concepts have different decision scopes.
 
 ### Economic Optimization
 
-**File 01** focuses on the economic efficiency of an individual AI workload or capability.
+**Lesson 01** focuses on the economic efficiency of an individual AI workload or capability.
 
 The question is:
 
@@ -308,7 +308,7 @@ The question is:
 
 ### Portfolio Optimization
 
-**File 03** focuses on the composition of the enterprise AI portfolio.
+**Lesson 03** focuses on the composition of the enterprise AI portfolio.
 
 The question is:
 

@@ -79,7 +79,7 @@ Complete the chapter in order.
 
 ### 1. Performance Analysis
 
-[01-AI-Latency-Throughput-and-Performance-Analysis.md](./01-AI-Latency-Throughput-and-Performance-Analysis.md)
+[AI Latency Throughput and Performance Analysis](./01-AI-Latency-Throughput-and-Performance-Analysis.md)
 
 Focuses on:
 
@@ -104,7 +104,7 @@ Focuses on:
 
 ### 2. Inference Optimization
 
-[02-Inference-Optimization-and-Resource-Efficiency.md](./02-Inference-Optimization-and-Resource-Efficiency.md)
+[Inference Optimization and Resource Efficiency](./02-Inference-Optimization-and-Resource-Efficiency.md)
 
 Focuses on:
 
@@ -126,7 +126,7 @@ Focuses on:
 
 ### 3. Benchmarking and Cost-Performance Trade-offs
 
-[03-Performance-Benchmarking-and-Cost-Performance-Trade-offs.md](./03-Performance-Benchmarking-and-Cost-Performance-Trade-offs.md)
+[Performance Benchmarking and Cost Performance Trade offs](./03-Performance-Benchmarking-and-Cost-Performance-Trade-offs.md)
 
 Focuses on:
 
@@ -240,7 +240,7 @@ Benchmark
 Decision
 ```
 
-Detailed performance analysis is taught in File 01.
+Detailed performance analysis is taught in Lesson 01.
 
 ---
 
@@ -276,7 +276,7 @@ An optimization decision must consider the required combination of:
 - AI quality
 - reliability
 
-Detailed optimization techniques are taught in File 02.
+Detailed optimization techniques are taught in Lesson 02.
 
 ---
 
@@ -302,7 +302,7 @@ Decision
 
 Benchmark design considers **representative workload characteristics, execution conditions, repeated measurements, and meaningful variation** before optimization results are compared.
 
-File 03 develops the detailed methodology for representative workloads, repeated measurements, variance, regression detection, and cost-performance analysis.
+Lesson 03 develops the detailed methodology for representative workloads, repeated measurements, variance, regression detection, and cost-performance analysis.
 
 ---
 
@@ -335,7 +335,7 @@ The core principle is:
 
 The objective is to select an implementation that satisfies required performance and quality while remaining economically viable.
 
-Detailed cost-performance analysis belongs to File 03.
+Detailed cost-performance analysis belongs to Lesson 03.
 
 ---
 

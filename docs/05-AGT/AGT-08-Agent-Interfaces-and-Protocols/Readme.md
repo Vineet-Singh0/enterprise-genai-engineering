@@ -40,7 +40,7 @@ After completing AGT-08, you should be able to:
 
 ### 01 — Agent Capability Interfaces and Interoperability
 
-**File:** [`01-Agent-Capability-Interfaces-and-Interoperability.md`](./01-Agent-Capability-Interfaces-and-Interoperability.md)
+**File:** [Agent Capability Interfaces and Interoperability](./01-Agent-Capability-Interfaces-and-Interoperability.md)
 
 Establishes the durable foundations of interoperability:
 
@@ -58,13 +58,13 @@ Establishes the durable foundations of interoperability:
 - versioning and evolution
 - interoperability failure modes
 
-This file provides the conceptual foundation for the protocol-specific files that follow.
+This lesson provides the conceptual foundation for the protocol-specific files that follow.
 
 ---
 
 ### 02 — Model Context Protocol (MCP) and Tool Interoperability
 
-**File:** [`02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md`](./02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md)
+**File:** [Model Context Protocol MCP and Tool Interoperability](./02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md)
 
 Applies the interoperability foundations to **MCP** and capability/tool exposure.
 
@@ -76,7 +76,7 @@ MCP is treated as a mechanism for **capability/tool interoperability**, not as a
 
 ### 03 — Agent-to-Agent Interoperability and A2A
 
-**File:** [`03-Agent-to-Agent-Interoperability-and-A2A.md`](./03-Agent-to-Agent-Interoperability-and-A2A.md)
+**File:** [Agent to Agent Interoperability and A2A](./03-Agent-to-Agent-Interoperability-and-A2A.md)
 
 Applies the interoperability foundations to **agent-to-agent communication** and A2A.
 
@@ -386,7 +386,7 @@ Follow the chapter in this order:
 03 — Agent-to-Agent Interoperability and A2A
 ```
 
-Do not skip File 01.
+Do not skip Lesson 01.
 
 The protocol-specific files assume that the underlying concepts of interfaces, contracts, discovery, boundaries, structured communication, compatibility, and protocol evolution are already understood.
 
@@ -416,17 +416,7 @@ AGT-08 can be considered complete when you can:
 
 ---
 
-## Repository Navigation
-
-```text
-docs/
-└── 05-AGT/
-    └── AGT-08/
-        ├── README.md
-        ├── 01-Agent-Capability-Interfaces-and-Interoperability.md
-        ├── 02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md
-        └── 03-Agent-to-Agent-Interoperability-and-A2A.md
-```
+## Chapter Contents
 
 Use this README as the chapter navigation point. Detailed concepts, examples, implementation guidance, production considerations, and interview material belong in the three lessons.
 

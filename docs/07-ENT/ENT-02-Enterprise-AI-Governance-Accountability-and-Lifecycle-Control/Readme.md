@@ -54,7 +54,7 @@ This progression moves from identifying **who has authority and accountability**
 
 > Who is accountable for enterprise AI decisions, responsibilities, and outcomes?
 
-This file establishes the foundation for:
+This lesson establishes the foundation for:
 
 - Accountability
 - Responsibility
@@ -67,7 +67,7 @@ This file establishes the foundation for:
 - Escalation responsibility
 - Central and domain-team accountability
 
-[Read `01-AI-Governance-Accountability-and-Decision-Rights.md`](./01-AI-Governance-Accountability-and-Decision-Rights.md)
+[Read AI Governance, Accountability, and Decision Rights](./01-AI-Governance-Accountability-and-Decision-Rights.md)
 
 ---
 
@@ -77,7 +77,7 @@ This file establishes the foundation for:
 
 > How does an enterprise make governance operational rather than leaving it as policy or assigned responsibility?
 
-This file covers:
+This lesson covers:
 
 - Centralized governance
 - Federated governance
@@ -94,7 +94,7 @@ This file covers:
 - Control ownership
 - Governance obligation monitoring
 
-[Read `02-Governance-Operating-Models-and-Control-Mechanisms.md`](./02-Governance-Operating-Models-and-Control-Mechanisms.md)
+[Read Governance Operating Models and Control Mechanisms](./02-Governance-Operating-Models-and-Control-Mechanisms.md)
 
 ---
 
@@ -104,7 +104,7 @@ This file covers:
 
 > How does governance remain active as an AI system moves through its lifecycle and changes over time?
 
-This file covers:
+This lesson covers:
 
 - Lifecycle governance
 - Governance checkpoints
@@ -122,7 +122,7 @@ This file covers:
 - Renewed review and approval
 - Lifecycle traceability and continuity
 
-[Read `03-AI-Lifecycle-Governance-and-Material-Change-Control.md`](./03-AI-Lifecycle-Governance-and-Material-Change-Control.md)
+[Read AI Lifecycle Governance and Material Change Control](./03-AI-Lifecycle-Governance-and-Material-Change-Control.md)
 
 ---
 

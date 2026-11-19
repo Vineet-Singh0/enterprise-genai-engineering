@@ -876,8 +876,6 @@ The central principle is that linear algebra gives AI/ML engineers a consistent 
 
 **Scope boundary:** This chapter owns the conceptual foundations of scalars, vectors, matrices, dimensions, linear combinations, span, basis, linear transformations, and dot product intuition. Detailed vector/matrix calculations belong to Chapter 06. Embedding semantics and similarity interpretation belong to AIF-05. Neural network computation and transformer-specific operations belong to their respective pillars.
 
-**Source limitation:** This chapter follows the approved proposed AIF-01 hierarchy. The authoritative detailed AIF hierarchy was not available for independent comparison, and the live repository paths have not been inspected. Internal links follow the planned structure and require repository verification.
-
 ---
 
 # End of Document

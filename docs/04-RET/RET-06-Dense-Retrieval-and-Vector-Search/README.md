@@ -28,11 +28,10 @@ Useful foundations include searchable representations and index design from RET-
 
 ## Scope Boundaries
 
-This chapter owns dense retrieval compatibility, exact-versus-approximate search behavior, and vector-specific tuning and diagnostics. Filtered-search behavior may be examined where it affects vector-search execution, recall, or performance; query transformations and filter strategy belong to RET-07. Hybrid retrieval and fusion belong to RET-08; final ranking and reranking belong to RET-09; formal retrieval evaluation and benchmark methodology belong to RET-10; broader retrieval diagnosis belongs to RET-11. These topics may be referenced where necessary but are not re-taught here.
+This chapter covers dense retrieval compatibility, exact-versus-approximate search behavior, and vector-specific tuning and diagnostics. Filtered-search behavior may be examined where it affects vector-search execution, recall, or performance; query transformations and filter strategy belong to RET-07. Hybrid retrieval and fusion belong to RET-08; final ranking and reranking belong to RET-09; formal retrieval evaluation and benchmark methodology belong to RET-10; broader retrieval diagnosis belongs to RET-11. These topics may be referenced where necessary but are not re-taught here.
 
 ## Expected Outcome
 
 Produce a working dense retrieval baseline and an exact-versus-approximate search comparison. Document how query–document representation compatibility was checked, how approximate results differ from the exact-search reference, and how observed recall, latency, and resource consumption inform configuration decisions.
 
 **Estimated reading time:** 30 minutes.  
-**Teaching-content budget:** 2,200–2,800 words across the three lessons.

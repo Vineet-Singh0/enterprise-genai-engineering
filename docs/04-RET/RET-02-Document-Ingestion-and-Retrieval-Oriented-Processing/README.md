@@ -75,7 +75,7 @@ RET-02 owns the transformation and management of source documents as corpus inpu
 | RET-11 | Retrieval diagnostics and optimization | Owns systematic failure diagnosis and targeted optimization |
 | RET-12 | RAG retrieval integration and end-to-end lab | Owns integration of retrieval components into an end-to-end system |
 
-These boundaries establish primary concept ownership. Later chapters may refer to RET-02 concepts when needed, but should not reproduce their detailed teaching.
+These boundaries establish where RET-02 teaches in depth. Later chapters may refer to RET-02 concepts when needed, but should not reproduce their detailed teaching.
 
 In particular, corpus freshness and index freshness are related but distinct: RET-02 owns the condition and lifecycle of source-corpus content, while RET-04 owns index-related consistency and lifecycle mechanisms.
 

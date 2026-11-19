@@ -1112,8 +1112,6 @@ The central principle is that probability is a mathematical language for uncerta
 
 **Scope boundary:** This chapter owns foundational probability concepts. It does not teach advanced probability theory, formal statistical inference, complete distribution theory, ML evaluation methodology, or implementation of probabilistic models.
 
-**Source limitation:** This chapter follows the approved proposed AIF-01 hierarchy. The authoritative detailed AIF hierarchy was not available for independent comparison, and the live repository paths have not been inspected. Internal links therefore follow the planned structure and require repository verification.
-
 ---
 
 # End of Document

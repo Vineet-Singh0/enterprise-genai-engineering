@@ -98,7 +98,7 @@ AGT-12 contains three lessons.
 
 ### 01 — Architecture Selection and Trade-offs
 
-**File:** [`01-Agent-Architecture-Selection-and-Trade-offs.md`](./01-Agent-Architecture-Selection-and-Trade-offs.md)
+**File:** [Agent Architecture Selection and Trade offs](./01-Agent-Architecture-Selection-and-Trade-offs.md)
 
 Focuses on selecting an appropriate architecture from requirements, constraints, workload characteristics, and risk.
 
@@ -121,7 +121,7 @@ Key themes include:
 
 ### 02 — End-to-End Agent System Design
 
-**File:** [`02-End-to-End-Agent-System-Design.md`](./02-End-to-End-Agent-System-Design.md)
+**File:** [End to End Agent System Design](./02-End-to-End-Agent-System-Design.md)
 
 Focuses on composing the selected architecture into an end-to-end system.
 
@@ -148,7 +148,7 @@ Key themes include:
 
 ### 03 — Agent Design Review and Architecture Validation
 
-**File:** [`03-Agent-Design-Review-and-Architecture-Validation.md`](./03-Agent-Design-Review-and-Architecture-Validation.md)
+**File:** [Agent Design Review and Architecture Validation](./03-Agent-Design-Review-and-Architecture-Validation.md)
 
 Focuses on critically reviewing and validating an agent architecture before implementation or production deployment.
 
@@ -385,7 +385,7 @@ Architecture validation is **evidence-driven rather than diagram-driven**.
 
 The appropriate validation evidence depends on system risk, requirements, assumptions, and uncertainty.
 
-File 03 develops the process for determining what evidence is needed to establish architectural fitness.
+Lesson 03 develops the process for determining what evidence is needed to establish architectural fitness.
 
 ---
 

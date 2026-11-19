@@ -54,7 +54,7 @@ The three lessons should be studied in order.
 
 > Who owns and stewards the information, how is it classified, and how are information-governance responsibilities established?
 
-This file covers:
+This lesson covers:
 
 - information and data ownership
 - stewardship
@@ -77,7 +77,7 @@ This file covers:
 
 > Which source should be recognized as authoritative, where did the information come from, how did it change, what evidence supports its quality and trust, and is it fit for the intended use?
 
-This file covers:
+This lesson covers:
 
 - authority and authoritative sources
 - source confidence and conflicting information
@@ -101,7 +101,7 @@ This file covers:
 
 > Under what conditions may enterprise information be used, transformed, shared, retained, and handled throughout its lifecycle?
 
-This file covers:
+This lesson covers:
 
 - permitted and intended use
 - secondary use
@@ -119,27 +119,26 @@ This file covers:
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 Each major ENT-05 concept has a primary teaching location.
 
 | Concept Area | Primary File |
 |---|---|
-| Ownership | File 01 |
-| Stewardship | File 01 |
-| Classification | File 01 |
-| Responsibility | File 01 |
-| Authority | File 02 |
-| Authoritative Sources | File 02 |
-| Provenance | File 02 |
-| Lineage | File 02 |
-| Quality | File 02 |
-| Trust | File 02 |
-| Usage Constraints | File 03 |
-| Secondary Use | File 03 |
-| Information Handling | File 03 |
-| Retention | File 03 |
-| Information Lifecycle Governance | File 03 |
+| Ownership | Lesson 01 |
+| Stewardship | Lesson 01 |
+| Classification | Lesson 01 |
+| Responsibility | Lesson 01 |
+| Authority | Lesson 02 |
+| Authoritative Sources | Lesson 02 |
+| Provenance | Lesson 02 |
+| Lineage | Lesson 02 |
+| Quality | Lesson 02 |
+| Trust | Lesson 02 |
+| Usage Constraints | Lesson 03 |
+| Secondary Use | Lesson 03 |
+| Information Handling | Lesson 03 |
+| Retention | Lesson 03 |
+| Information Lifecycle Governance | Lesson 03 |
 
 Later chapters or domains may reference these concepts, but detailed teaching should remain in their primary location.
 

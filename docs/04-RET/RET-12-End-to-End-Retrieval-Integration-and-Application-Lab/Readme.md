@@ -65,27 +65,25 @@ A bounded RAG integration may be included as an additional consumer. It does not
 
 The detailed implementation requirements and artifact contents are defined in the corresponding lessons.
 
-## Related Chapter References
+## Related Chapters
 
-The following chapters retain primary ownership of their respective concepts. Consult their existing documentation when additional explanation is needed.
+These chapters teach the concepts RET-12 integrates. Open a chapter when you need deeper explanation of a technique used in your implementation.
 
-| Chapter | Primary concept ownership | Known primary lessons |
-|---|---|---|
-| RET-01 | Retrieval problem formulation and system fundamentals | `01-Retrieval-Problems-and-Information-Needs.md`; `02-Relevance-and-Retrieval-Success-Criteria.md`; `03-Retrieval-Pipeline-and-System-Boundaries.md` |
-| RET-02 | Document ingestion, extraction, normalization, metadata, and corpus lifecycle | Refer to the RET-02 chapter documentation |
-| RET-03 | Chunking and document structure | Refer to the RET-03 chapter documentation |
-| RET-04 | Retrieval representations and indexing | Refer to the RET-04 chapter documentation |
-| RET-05 | Lexical retrieval and sparse search | Refer to the RET-05 chapter documentation |
-| RET-06 | Dense retrieval and vector search | `01-Dense-Retrieval-and-Embedding-Compatibility.md`; `02-Exact-Search-Approximate-Search-and-ANN.md`; `03-Vector-Search-Tuning-and-Dense-Retrieval-Diagnostics.md` |
-| RET-07 | Query processing and metadata constraints | Refer to the RET-07 chapter documentation |
-| RET-08 | Hybrid retrieval and candidate generation | Refer to the RET-08 chapter documentation |
-| RET-09 | Ranking, reranking, and relevance optimization | Refer to the RET-09 chapter documentation |
-| RET-10 | Retrieval evaluation and experimental design | Refer to the RET-10 chapter documentation |
-| RET-11 | Retrieval diagnostics and optimization | Refer to the RET-11 chapter documentation |
+| Chapter | What it covers |
+|---|---|
+| [RET-01 — Retrieval Problem Formulation](../RET-01-Retrieval-Problem-Formulation-and-System-Fundamentals/) | Retrieval problems, relevance criteria, and system boundaries |
+| [RET-02 — Document Ingestion](../RET-02-Document-Ingestion-and-Retrieval-Oriented-Processing/) | Ingestion, extraction, normalization, metadata, and corpus lifecycle |
+| [RET-03 — Chunking and Document Structure](../RET-03-Chunking-and-Document-Structure/) | Chunking and document structure |
+| [RET-04 — Representations and Indexing](../RET-04-Retrieval-Representations-and-Indexing/) | Retrieval representations and indexing |
+| [RET-05 — Lexical Retrieval](../RET-05-Lexical-Retrieval-and-Sparse-Search/) | Lexical retrieval and sparse search |
+| [RET-06 — Dense Retrieval](../RET-06-Dense-Retrieval-and-Vector-Search/) | Dense retrieval and vector search |
+| [RET-07 — Query Processing](../RET-07-Query-Processing-and-Metadata-Constraints/) | Query processing and metadata constraints |
+| [RET-08 — Hybrid Retrieval](../RET-08-Hybrid-Retrieval-and-Candidate-Generation/) | Hybrid retrieval and candidate generation |
+| [RET-09 — Ranking and Reranking](../RET-09-Ranking-Reranking-and-Relevance-Optimization/) | Ranking, reranking, and relevance optimization |
+| [RET-10 — Retrieval Evaluation](../RET-10-Retrieval-Evaluation-and-Experimental-Design/) | Retrieval evaluation and experimental design |
+| [RET-11 — Retrieval Diagnostics](../RET-11-Retrieval-Diagnostics-and-Optimization/) | Retrieval diagnostics and optimization |
 
-These references identify where concepts are taught, not a mandatory sequential implementation pipeline. RET-12 uses only the techniques justified by the selected workload.
-
-Open the linked chapter READMEs for the detailed lessons behind each concept.
+These links identify where concepts are taught. RET-12 uses only the techniques justified by the selected workload.
 
 ## Practical Outcome
 
@@ -112,7 +110,7 @@ Evidence may include contract checks, constraint tests, automated test results, 
 
 The presence of an implementation or a successful demonstration alone does not establish that every acceptance criterion has been satisfied.
 
-Detailed acceptance criteria and evaluation procedures belong to Files 01 and 04.
+Detailed acceptance criteria and evaluation procedures belong to Lessons 01 and 04.
 
 ## Chapter Completion Criteria
 
@@ -134,14 +132,14 @@ RET-12 integrates previously taught retrieval concepts without replacing their p
 
 Its relationship with neighboring engineering domains is defined below:
 
-| Domain | Primary ownership | RET-12 boundary |
+| Domain | Focus elsewhere | RET-12 boundary |
 |---|---|---|
 | ENG | Programming, software engineering, databases, APIs, and testing | RET-12 applies these engineering foundations to retrieval integration; it does not reteach general programming or software engineering. |
 | AIF | Representation learning, embedding spaces, similarity, and foundational ML | RET-12 applies representations to retrieval contracts and pipeline integration without replacing foundational representation-learning teaching. |
-| LLM | Model behavior, generation, and context engineering | RET-12 packages retrieval evidence for consumers. LLM owns foundational generation engineering. |
-| AGT | Agent planning, tool use, and orchestration | RET-12 exposes retrieval as a callable capability; AGT owns agent control loops and orchestration. |
-| PROD | Deployment, serving, monitoring, reliability, and infrastructure | RET-12 defines retrieval integration and validation needs; PROD owns production infrastructure and deployment engineering. |
-| ENT | Enterprise integration, authorization, security, governance, and compliance | RET-12 applies retrieval constraints and preserves relevant metadata; ENT owns enterprise-wide policies, authorization, governance, and compliance. |
+| LLM | Model behavior, generation, and context engineering | RET-12 packages retrieval evidence for consumers. foundational generation engineering is covered in LLM. |
+| AGT | Agent planning, tool use, and orchestration | RET-12 exposes retrieval as a callable capability; agent control loops and orchestration are covered in AGT. |
+| PROD | Deployment, serving, monitoring, reliability, and infrastructure | RET-12 defines retrieval integration and validation needs; production infrastructure and deployment engineering are covered in PROD. |
+| ENT | Enterprise integration, authorization, security, governance, and compliance | RET-12 applies retrieval constraints and preserves relevant metadata; enterprise-wide policies, authorization, governance, and compliance are covered in ENT. |
 
 RET-12 does not replace:
 

@@ -1,10 +1,6 @@
 # AI Foundations (AIF)
 
-**Domain:** AI Foundations  
-**Version:** v1.0  
-**Program:** Enterprise GenAI Engineering Mentorship  
-**Repository:** `enterprise-genai-engineering`  
-**Status:** Detailed hierarchy approved; documentation generation in progress
+**Domain:** AI Foundations
 
 ---
 
@@ -39,7 +35,7 @@ These outcomes describe the intended capabilities of the domain; completion requ
 
 ### Included
 
-AIF owns the foundational concepts and mental models for:
+AIF covers the foundational concepts and mental models for:
 
 - Mathematical foundations relevant to AI.
 - General AI concepts, approaches, reasoning, and problem formulation.
@@ -49,7 +45,7 @@ AIF owns the foundational concepts and mental models for:
 - Sequential data and earlier sequence-modeling architectures.
 - Attention and transformer architecture fundamentals.
 
-### Excluded or owned by other domains
+### Covered elsewhere
 
 | Domain | Boundary |
 |---|---|
@@ -66,7 +62,7 @@ AIF may introduce the concepts necessary to understand these areas, but it does 
 
 AIF contains seven pillars in the recommended order. Their order defines the curriculum's intended progression; it does **not**, by itself, establish mandatory prerequisite dependencies.
 
-| Order | Pillar | Primary focus | Teaching chapters |
+| Order | Pillar | Primary focus | Lessons |
 |---:|---|---|---:|
 | 1 | [Mathematics Foundation](AIF-01-Mathematics-Foundation/README.md) | Mathematical relationships, uncertainty, data, vectors, and optimization | 7 |
 | 2 | [AI Fundamentals](AIF-02-AI-Fundamentals/README.md) | AI approaches, reasoning, search, and problem lifecycles | 4 |
@@ -76,57 +72,11 @@ AIF contains seven pillars in the recommended order. Their order defines the cur
 | 6 | [Sequence Modeling](AIF-06-Sequence-Modeling/README.md) | Sequential data, recurrent models, and the motivation for attention | 3 |
 | 7 | [Transformer Foundations](AIF-07-Transformer-Foundations/README.md) | Self-attention, transformer architecture, information flow, and scaling | 5 |
 
-**Total:** 35 proposed teaching chapters across seven pillars.
+**Total:** 35 lessons across seven pillars.
 
-The linked pillar README files are planned navigation targets. Their existence and link destinations have not been verified against the live repository, and they have not been generated in this step.
+## 5. Learning Principles
 
-## 5. Documentation Structure
-
-The approved proposed structure is:
-
-```text
-docs/
-└── 02-AIF/
-    ├── README.md
-    ├── AIF-01-Mathematics-Foundation/
-    │   ├── README.md
-    │   └── 01–07 teaching chapters
-    ├── AIF-02-AI-Fundamentals/
-    │   ├── README.md
-    │   └── 01–04 teaching chapters
-    ├── AIF-03-Machine-Learning-Foundations/
-    │   ├── README.md
-    │   └── 01–06 teaching chapters
-    ├── AIF-04-Deep-Learning-Foundations/
-    │   ├── README.md
-    │   └── 01–06 teaching chapters
-    ├── AIF-05-Representation-Learning/
-    │   ├── README.md
-    │   └── 01–04 teaching chapters
-    ├── AIF-06-Sequence-Modeling/
-    │   ├── README.md
-    │   └── 01–03 teaching chapters
-    └── AIF-07-Transformer-Foundations/
-        ├── README.md
-        └── 01–05 teaching chapters
-```
-
-The chapter filenames and assignments are defined by the approved detailed hierarchy. Each chapter will have one primary teaching responsibility.
-
-The expected documentation inventory is:
-
-| Artifact type | Planned count |
-|---|---:|
-| Domain README | 1 |
-| Pillar READMEs | 7 |
-| Teaching chapters | 35 |
-| **Total Markdown files** | **43** |
-
-This is the planned inventory, not a claim that all 43 files currently exist.
-
-## 6. Learning and Documentation Principles
-
-All AIF documentation must follow these principles.
+Study AIF with these principles in mind.
 
 ### 6.1 Engineering-first mathematics
 
@@ -226,5 +176,4 @@ The hierarchy has been approved as the working documentation plan. The following
 - **Dependency claims:** The pillar order should not be interpreted as proof that every earlier pillar is a mandatory prerequisite for every later pillar.
 
 These limitations do not block generation under the approved plan, but they must not be represented as validated facts.
-
 

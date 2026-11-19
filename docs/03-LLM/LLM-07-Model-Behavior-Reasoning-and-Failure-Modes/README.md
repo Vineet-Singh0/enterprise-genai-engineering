@@ -105,8 +105,6 @@ LLM-07 connects with the following areas without taking over their primary teach
 | PROD — Production AI Engineering | Owns production serving, deployment, monitoring, and operational reliability. |
 | ENT — Enterprise AI Systems | Owns enterprise-wide architecture, governance, security, and risk management. |
 
-These references describe conceptual relationships, not independently verified repository links. Add direct links only after the relevant destinations and paths have been checked.
-
 ## Scope Boundaries
 
 LLM-07 focuses on observable model behavior, reasoning-related limitations, behavioral failure patterns, causal investigation, and proportionate mitigation.

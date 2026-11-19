@@ -49,55 +49,55 @@ Study the chapters in order. Each chapter builds on the concepts established ear
 
 ### Chapter 01 — Inference Fundamentals and Execution Lifecycle
 
-File: [`01-Inference-Fundamentals-and-Execution-Lifecycle.md`](01-Inference-Fundamentals-and-Execution-Lifecycle.md)
+File: [Inference Fundamentals and Execution Lifecycle](01-Inference-Fundamentals-and-Execution-Lifecycle.md)
 
 Understand what inference means, how it differs from training, how a trained model is invoked, and how learned parameters differ from inference-time configuration.
 
 ### Chapter 02 — The Autoregressive Next-Token Generation Loop
 
-File: [`02-The-Autoregressive-Next-Token-Generation-Loop.md`](02-The-Autoregressive-Next-Token-Generation-Loop.md)
+File: [The Autoregressive Next Token Generation Loop](02-The-Autoregressive-Next-Token-Generation-Loop.md)
 
 Trace the generation process from input tokens to logits, token selection, iterative sequence extension, stopping checks, and decoded output.
 
 ### Chapter 03 — Prefill, Decoding, and Key-Value Caching
 
-File: [`03-Prefill-Decoding-and-Key-Value-Caching.md`](03-Prefill-Decoding-and-Key-Value-Caching.md)
+File: [Prefill Decoding and Key Value Caching](03-Prefill-Decoding-and-Key-Value-Caching.md)
 
 Understand the difference between prompt processing and token generation, why their computational characteristics differ, and how cached key-value state can avoid repeated computation.
 
 ### Chapter 04 — Decoding Strategies and Token Selection
 
-File: [`04-Decoding-Strategies-and-Token-Selection.md`](04-Decoding-Strategies-and-Token-Selection.md)
+File: [Decoding Strategies and Token Selection](04-Decoding-Strategies-and-Token-Selection.md)
 
 Explore greedy decoding, probabilistic sampling, temperature, top-k, top-p, repetition controls, and beam search as a comparison point. Learn how these strategies influence token selection.
 
 ### Chapter 05 — Generation Configuration and Stopping Conditions
 
-File: [`05-Generation-Configuration-and-Stopping-Conditions.md`](05-Generation-Configuration-and-Stopping-Conditions.md)
+File: [Generation Configuration and Stopping Conditions](05-Generation-Configuration-and-Stopping-Conditions.md)
 
 Understand maximum generated-token limits, end-of-sequence tokens, stop sequences, finish reasons, and the difference between normal termination and output-limit exhaustion.
 
 ### Chapter 06 — Structured Generation and Output Constraints
 
-File: [`06-Structured-Generation-and-Output-Constraints.md`](06-Structured-Generation-and-Output-Constraints.md)
+File: [Structured Generation and Output Constraints](06-Structured-Generation-and-Output-Constraints.md)
 
 Learn how free-form generation differs from structured generation, why prompting for JSON does not guarantee schema compliance, and where output validation is required.
 
 ### Chapter 07 — Streaming Generation and Output Semantics
 
-File: [`07-Streaming-Generation-and-Output-Semantics.md`](07-Streaming-Generation-and-Output-Semantics.md)
+File: [Streaming Generation and Output Semantics](07-Streaming-Generation-and-Output-Semantics.md)
 
 Understand incremental output delivery, token-level versus text-level chunks, stream termination, partial structured outputs, and generation metadata.
 
 ### Chapter 08 — Determinism, Reproducibility, and Generation Failures
 
-File: [`08-Determinism-Reproducibility-and-Generation-Failures.md`](08-Determinism-Reproducibility-and-Generation-Failures.md)
+File: [Determinism Reproducibility and Generation Failures](08-Determinism-Reproducibility-and-Generation-Failures.md)
 
 Investigate why outputs vary, what random seeds can and cannot guarantee, and how to reason about repetitive output, premature stopping, incomplete responses, and configuration mistakes.
 
 ### Chapter 09 — Inspecting Generation Systems in Practice
 
-File: [`09-Inspecting-Generation-Systems-in-Practice.md`](09-Inspecting-Generation-Systems-in-Practice.md)
+File: [Inspecting Generation Systems in Practice](09-Inspecting-Generation-Systems-in-Practice.md)
 
 Apply the concepts through a practical investigation using a supported causal language model. Inspect inputs and outputs, compare generation configurations, record observations, and document experimental limitations.
 
@@ -213,7 +213,7 @@ This module does not replace the documentation for:
 - Advanced inference serving, batching, hardware optimization, and deployment.
 - Enterprise governance and security architecture.
 
-These boundaries prevent duplicate teaching and preserve clear concept ownership across the repository.
+These boundaries prevent duplicate teaching and keep topic focus clear across the curriculum.
 
 ---
 

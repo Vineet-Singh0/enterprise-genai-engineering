@@ -72,8 +72,7 @@ The chapters can be studied as six focused sessions.
 
 Use these sessions as a guide rather than a rigid schedule. Revisit prerequisite material when your explanation exposes a gap.
 
-## Concept Ownership and Scope
-
+## Where This Is Covered
 LLM-02 owns the explanation of language-model training stages, training objectives at the appropriate level, post-training foundations, and how training choices influence learned behavior.
 
 The following boundaries help prevent duplication across the engineering handbook:

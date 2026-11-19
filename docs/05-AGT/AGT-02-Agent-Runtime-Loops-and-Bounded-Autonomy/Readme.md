@@ -93,9 +93,9 @@ Read the lessons in the following order.
 
 ### 1. Runtime Harness and Execution Loop
 
-**File:** `01-Agent-Runtime-Harness-and-Execution-Loop.md`
+**File:** Agent Runtime Harness and Execution Loop
 
-This file establishes the runtime foundation:
+This lesson establishes the runtime foundation:
 
 - Runtime harness
 - Runtime responsibilities
@@ -115,9 +115,9 @@ This file establishes the runtime foundation:
 
 ### 2. Decision, Action, Observation and Continuation
 
-**File:** `02-Agent-Decision-Action-Observation-and-Continuation.md`
+**File:** Agent Decision Action Observation and Continuation
 
-This file examines the execution cycle:
+This lesson examines the execution cycle:
 
 ```text
 Decision
@@ -141,9 +141,9 @@ It focuses on how one execution step produces the information needed to determin
 
 ### 3. Termination Policies and Bounded Autonomy
 
-**File:** `03-Termination-Policies-and-Bounded-Autonomy.md`
+**File:** Termination Policies and Bounded Autonomy
 
-This file covers runtime stopping conditions and execution boundaries, including:
+This lesson covers runtime stopping conditions and execution boundaries, including:
 
 - Successful completion
 - Explicit termination
@@ -190,8 +190,7 @@ The three files should be completed in order.
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 AGT-02 is the primary location for the following concepts:
 
 | Concept | Primary Owner |
@@ -512,9 +511,9 @@ Before moving beyond AGT-02, you should be able to explain:
 
 | File | Purpose |
 |---|---|
-| [01-Agent-Runtime-Harness-and-Execution-Loop.md](01-Agent-Runtime-Harness-and-Execution-Loop.md) | Runtime harness and execution-loop foundations |
-| [02-Agent-Decision-Action-Observation-and-Continuation.md](02-Agent-Decision-Action-Observation-and-Continuation.md) | Execution-cycle mechanics |
-| [03-Termination-Policies-and-Bounded-Autonomy.md](03-Termination-Policies-and-Bounded-Autonomy.md) | Termination policies and bounded autonomy |
+| [Agent Runtime Harness and Execution Loop](01-Agent-Runtime-Harness-and-Execution-Loop.md) | Runtime harness and execution-loop foundations |
+| [Agent Decision Action Observation and Continuation](02-Agent-Decision-Action-Observation-and-Continuation.md) | Execution-cycle mechanics |
+| [Termination Policies and Bounded Autonomy](03-Termination-Policies-and-Bounded-Autonomy.md) | Termination policies and bounded autonomy |
 
 ---
 

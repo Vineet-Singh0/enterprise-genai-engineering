@@ -38,9 +38,9 @@ This chapter contains three lessons.
 
 ### 01 — Enterprise AI Integration Patterns and System Boundaries
 
-**File:** [`01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
+**File:** [Enterprise AI Integration Patterns and System Boundaries](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 
-This file establishes the integration architecture foundation.
+This lesson establishes the integration architecture foundation.
 
 It covers:
 
@@ -66,9 +66,9 @@ It covers:
 
 ### 02 — AI Platforms, Shared Services, Gateways and Control Planes
 
-**File:** [`02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
+**File:** [AI Platforms Shared Services Gateways and Control Planes](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
 
-This file examines enterprise AI platform architecture and the boundary between centrally provided capabilities and domain-owned capabilities.
+This lesson examines enterprise AI platform architecture and the boundary between centrally provided capabilities and domain-owned capabilities.
 
 It covers:
 
@@ -95,9 +95,9 @@ It covers:
 
 ### 03 — AI Interoperability, Identity Propagation and Enterprise Interfaces
 
-**File:** [`03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md`](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
+**File:** [AI Interoperability Identity Propagation and Enterprise Interfaces](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
 
-This file examines how independent enterprise systems exchange AI capabilities across system boundaries.
+This lesson examines how independent enterprise systems exchange AI capabilities across system boundaries.
 
 It covers:
 
@@ -153,8 +153,7 @@ Each lesson builds on the architectural reasoning established by the preceding f
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 ENT-06 has a defined scope within the Enterprise AI domain.
 
 | Concern | Primary Ownership |
@@ -257,9 +256,9 @@ These topics may be referenced when necessary to establish an architectural boun
 
 Read the lessons sequentially:
 
-1. [`01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
-2. [`02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
-3. [`03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md`](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
+1. [Enterprise AI Integration Patterns and System Boundaries](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
+2. [AI Platforms Shared Services Gateways and Control Planes](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
+3. [AI Interoperability Identity Propagation and Enterprise Interfaces](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
 
 The sequence moves from:
 
@@ -287,25 +286,14 @@ The goal is to reason about **where AI capabilities belong, how they should inte
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 The authoritative chapter structure is:
-
-```text
-docs/
-└── 07-ENT/
-    └── ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/
-        ├── README.md
-        ├── 01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md
-        ├── 02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md
-        └── 03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md
-```
 
 ### Chapter Files
 
-- [`01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
-- [`02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
-- [`03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md`](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
+- [Enterprise AI Integration Patterns and System Boundaries](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
+- [AI Platforms Shared Services Gateways and Control Planes](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
+- [AI Interoperability Identity Propagation and Enterprise Interfaces](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
 
 ---
 

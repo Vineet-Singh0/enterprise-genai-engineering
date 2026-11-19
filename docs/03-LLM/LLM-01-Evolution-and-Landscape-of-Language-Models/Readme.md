@@ -99,8 +99,7 @@ These estimates describe reading only; they do not include implementation exerci
 | 7 | Multimodal landscape | Describe the broad differences between text-only and multimodal models. |
 | 8 | Ecosystem synthesis and revision | Connect landscape knowledge to later engineering study. |
 
-## 8. Concept Ownership and Scope Boundaries
-
+## Where This Is Covered
 LLM-01 owns historical evolution, high-level model-family distinctions, broad capabilities and limitations, introductory multimodal awareness, access and distribution terminology, and ecosystem orientation.
 
 It does **not** replace the primary teaching locations for:

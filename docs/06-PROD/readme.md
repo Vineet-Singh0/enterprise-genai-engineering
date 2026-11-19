@@ -651,27 +651,8 @@ Completion means the learner can connect these concerns into a coherent producti
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 The PROD domain is self-contained in:
-
-```text
-docs/
-└── 06-PROD/
-    ├── README.md
-    ├── PROD-01-Production-AI-System-Foundations/
-    ├── PROD-02-AI-Application-Packaging-and-Runtime/
-    ├── PROD-03-Production-Model-and-AI-Serving/
-    ├── PROD-04-Deployment-and-Release-Engineering/
-    ├── PROD-05-AI-Observability-and-Telemetry/
-    ├── PROD-06-Production-AI-Reliability/
-    ├── PROD-07-Scaling-and-Capacity-Engineering/
-    ├── PROD-08-AI-Performance-Optimization-and-Cost/
-    ├── PROD-09-Production-AI-Security/
-    ├── PROD-10-AI-Operations-and-Incident-Management/
-    ├── PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/
-    └── PROD-12-Production-Readiness-and-Architecture-Review/
-```
 
 Upstream and downstream domain links should be added only when their exact repository paths are confirmed.
 
@@ -735,11 +716,10 @@ The same principle applies throughout the PROD domain.
 
 ---
 
-## Concept Ownership Rule
-
+## Scope Boundaries
 The domain README does not own the concepts it mentions.
 
-Concept ownership remains with the lessons.
+Detailed instruction remains in the lessons.
 
 The README provides:
 
@@ -759,7 +739,7 @@ The 36 lessons remain the primary locations for detailed technical instruction.
 
 # Quality and Validation
 
-The PROD documentation should remain aligned with the frozen architecture.
+PROD lessons should stay aligned with the domain structure described above.
 
 Validation should confirm:
 

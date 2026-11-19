@@ -120,27 +120,21 @@ Each module builds on the knowledge gained in the previous modules. Following th
 
 ---
 
-## Documentation Standards
+## How Lessons Are Organized
 
-Every module follows the same documentation structure to ensure a consistent learning experience.
+ENG lessons share a consistent learner-facing structure so you always know where to find objectives, explanations, examples, and revision material.
 
-Each chapter typically includes:
+A typical lesson includes some or all of:
 
 - Learning Objectives
 - Prerequisites
-- Before We Start
-- Why This Exists
-- Mental Model
-- Core Concepts
-- Internal Working
-- Practical Examples
-- Production Perspective
-- Engineering Decisions
+- Core explanations and worked examples
+- Production / engineering perspective
 - Common Mistakes
 - Interview Questions
-- Quick Revision
-- Key Takeaways
-- Further Reading
+- Quick Revision and Key Takeaways
+
+Exact section names can vary by lesson; use the on-page table of contents to navigate.
 
 ---
 

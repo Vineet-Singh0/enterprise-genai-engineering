@@ -99,11 +99,9 @@ Mathematics Foundation provides prerequisites for the remaining AI Foundations p
 | AIF-06 — Sequence Modeling | Mathematical foundations support the study of sequential models. |
 | AIF-07 — Transformer Foundations | Vector and matrix operations provide prerequisites for understanding transformer computations. |
 
-These connections do not transfer ownership of downstream topics into this pillar. For example, mathematical dot products belong here, while semantic similarity and embedding interpretation belong to Representation Learning. General gradient intuition belongs here, while neural-network backpropagation belongs to Deep Learning Foundations.
+These connections do not duplicate downstream topics inside this pillar. For example, mathematical dot products belong here, while semantic similarity and embedding interpretation belong to Representation Learning. General gradient intuition belongs here, while neural-network backpropagation belongs to Deep Learning Foundations.
 
-For the overall AI Foundations curriculum, see the [AIF domain README](../README.md).
-
-> **Source limitation:** The detailed AIF hierarchy was not independently verified against the authoritative curriculum, and the live repository paths have not been inspected. The chapter links above follow the approved proposed filenames; their destination files must be verified in the repository.
+For the overall AI Foundations curriculum, see the [AIF domain overview](../README.md).
 
 ## How to Study This Pillar
 
@@ -133,4 +131,4 @@ The goal is to make the mathematics behind AI/ML systems understandable rather t
 
 ---
 
-**Next step:** Begin with [01 — Functions and Graphs](01-Functions-and-Graphs.md) after reviewing and approving this README.
+**Next step:** Begin with [01 — Functions and Graphs](01-Functions-and-Graphs.md)

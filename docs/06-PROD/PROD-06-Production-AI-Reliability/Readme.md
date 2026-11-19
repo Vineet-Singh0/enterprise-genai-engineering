@@ -58,18 +58,6 @@ Technology examples may be used to illustrate concepts, but implementation tutor
 
 PROD-06 contains exactly three lessons.
 
-```text
-PROD-06 — Production AI Reliability
-│
-├── README.md
-│
-├── 01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md
-│
-├── 02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md
-│
-└── 03-Graceful-Degradation-Fallbacks-and-Dependency-Failure.md
-```
-
 The files form a deliberate progression:
 
 ```text
@@ -87,20 +75,19 @@ Protect the User-Visible Outcome
 
 ---
 
-# File 01 — AI Service Reliability, SLIs, SLOs and Error Budgets
+# Lesson 01 — AI Service Reliability, SLIs, SLOs and Error Budgets
 
 **File:**
 
-`01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md`
+AI Service Reliability SLIs SLOs and Error Budgets
 
 ### Primary Question
 
 > **How do we define and measure whether a production AI service is reliable enough?**
 
-This file establishes the reliability foundation.
+This lesson establishes the reliability foundation.
 
-### Primary Ownership
-
+### Related Chapters
 - Reliability definition
 - Availability
 - Reliability vs availability
@@ -130,24 +117,23 @@ System Reliability
 AI Quality
 ```
 
-AI evaluation methodology is not the purpose of this file.
+AI evaluation methodology is not the purpose of this lesson.
 
 ---
 
-# File 02 — Failure Isolation, Timeouts, Retries and Backpressure
+# Lesson 02 — Failure Isolation, Timeouts, Retries and Backpressure
 
 **File:**
 
-`02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md`
+Failure Isolation Timeouts Retries and Backpressure
 
 ### Primary Question
 
 > **How do we prevent one failure or overloaded component from destabilizing the entire AI system?**
 
-This file focuses on failure propagation, overload protection, and reliability controls.
+This lesson focuses on failure propagation, overload protection, and reliability controls.
 
-### Primary Ownership
-
+### Related Chapters
 **Failure isolation**
 
 - Failure domains
@@ -191,20 +177,19 @@ The file teaches these mechanisms as **interacting reliability controls**, rathe
 
 ---
 
-## File 03 — Graceful Degradation, Fallbacks and Dependency Failure
+## Lesson 03 — Graceful Degradation, Fallbacks and Dependency Failure
 
 **File:**
 
-`03-Graceful-Degradation-Fallbacks-and-Dependency-Failure.md`
+Graceful Degradation Fallbacks and Dependency Failure
 
 ### Primary Question
 
 > **What should the system do when a component or dependency cannot provide the normal service?**
 
-This file focuses on controlled behavior during dependency failure and partial system failure.
+This lesson focuses on controlled behavior during dependency failure and partial system failure.
 
-### Primary Ownership
-
+### Related Chapters
 - Dependency failure
 - Partial failure
 - Graceful degradation
@@ -284,9 +269,9 @@ flowchart TD
     G --> H[Reliable User Outcome]
 ```
 
-The detailed mechanisms represented by **reliability controls** are developed in Files 02 and 03.
+The detailed mechanisms represented by **reliability controls** are developed in Lessons 02 and 03.
 
-The reliability objectives used to determine whether the outcome is acceptable are established in File 01.
+The reliability objectives used to determine whether the outcome is acceptable are established in Lesson 01.
 
 ---
 
@@ -342,39 +327,13 @@ Therefore:
 System Reliability
         ≠
 AI Quality
-```
-
-PROD-06 focuses on reliability of production-system behavior.
-
-AI evaluation methodology, model-quality measurement, regression, drift, and continuous improvement belong to their respective AI lifecycle and evaluation curriculum.
-
----
-
-# Chapter Boundaries
-
-PROD-06 has important boundaries with neighboring production chapters.
-
-## PROD-05 — AI Observability and Telemetry
-
-[PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md)
-
-```text
+text
 PROD-05
 What evidence tells us what the system is doing?
 
 PROD-06
 How should the system behave reliably under normal and failure conditions?
-```
-
-PROD-06 may reference observability signals when discussing reliability measurement or failure behavior, but it does not re-teach observability architecture.
-
----
-
-## PROD-07 — Scaling and Capacity Engineering
-
-[PROD-07 — Scaling and Capacity Engineering](../PROD-07-Scaling-and-Capacity-Engineering/README.md)
-
-```text
+text
 PROD-06
 How do we prevent overload from becoming cascading failure?
 
@@ -423,17 +382,7 @@ What happens when a dependency becomes unavailable?
 
 PROD-09
 How do we protect that dependency and its credentials?
-```
-
-Security controls should only be referenced when necessary to establish a reliability boundary.
-
----
-
-## PROD-10 — AI Operations and Incident Management
-
-[PROD-10 — AI Operations and Incident Management](../PROD-10-AI-Operations-and-Incident-Management/README.md)
-
-```text
+text
 PROD-06
 How should the system behave during failure?
 
@@ -629,7 +578,6 @@ Most importantly, the learner should be able to answer:
 ## Chapter File Structure
 
 ```text
-docs/06-PROD/PROD-06-Production-AI-Reliability/
 │
 ├── README.md
 │

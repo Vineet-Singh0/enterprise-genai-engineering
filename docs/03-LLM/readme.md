@@ -66,8 +66,7 @@ The domain contains ten connected topics covering language-model foundations, re
 - Model and ecosystem selection using evidence and engineering requirements.
 - Model-level image and audio interfaces, limitations, and evaluation implications.
 
-### Concept ownership and exclusions
-
+### Where This Is Covered
 **AI and transformer foundations**
 
 AIF owns general AI/ML/DL foundations, representation learning, sequence modeling, and foundational transformer architecture. LLM applies these concepts to language-model engineering without duplicating their detailed treatment.
@@ -172,7 +171,7 @@ The progression is not a rigid prerequisite chain. Some topics provide context f
 
 ## 8. Documentation Status
 
-The LLM Domain Curriculum Architecture v1.0 defines the approved scope, topic hierarchy, learning progression, and concept ownership for this domain.
+This overview defines the scope, topic hierarchy, and learning progression for the LLM domain.
 
 This README serves as the domain-level navigation document. It does not establish that the ten topic READMEs, teaching chapters, or practical implementation files have been generated or reviewed.
 

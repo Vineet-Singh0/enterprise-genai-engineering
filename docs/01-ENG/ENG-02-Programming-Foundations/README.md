@@ -14,29 +14,6 @@ Build a strong programming foundation by understanding how software is designed,
 
 ## 1. Folder Structure
 
-```text
-docs/
-└── 01-ENG/
-    └── ENG-02-Programming-Foundations/
-        │
-        ├── README.md
-        │
-        ├── 01-Programming-Fundamentals.md
-        ├── 02-Variables-and-Data-Types.md
-        ├── 03-Operators-and-Expressions.md
-        ├── 04-Control-Flow.md
-        ├── 05-Functions.md
-        ├── 06-Scope-and-Lifetime.md
-        ├── 07-Data-Structures.md
-        ├── 08-Error-Handling.md
-        ├── 09-Modules-and-Packages.md
-        ├── 10-Object-Oriented-Programming-Fundamentals.md
-        ├── 11-Iterators-and-Generators.md
-        ├── 12-File-Handling.md
-        ├── 13-Virtual-Environments-and-Package-Management.md
-        └── 14-Python-Best-Practices.md
-```
-
 ---
 
 # 2. Final Markdown File List
@@ -173,7 +150,7 @@ Cross-links will be used instead of repeating explanations.
 
 Example:
 
-> We'll study Python dictionaries in detail in `07-Data-Structures.md`.
+> We'll study Python dictionaries in detail in Data Structures.
 
 ---
 
@@ -337,18 +314,7 @@ No approved topics are merged, as each represents a distinct engineering concept
 
 All filenames follow the project standard:
 
-```text
-NN-Topic-Name.md
-```
-
 Examples:
-
-```text
-01-Programming-Fundamentals.md
-07-Data-Structures.md
-10-Object-Oriented-Programming-Fundamentals.md
-14-Python-Best-Practices.md
-```
 
 Benefits:
 

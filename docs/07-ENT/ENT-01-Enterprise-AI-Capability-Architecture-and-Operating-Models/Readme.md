@@ -65,18 +65,17 @@ ENT-01 does not re-teach the technical implementation concepts owned by those do
 
 ## Chapter Progression
 
-### File 01 — What Exists?
+### Lesson 01 — What Exists?
 
-**[`01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md`](./01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md)**
+**[Enterprise AI Capabilities and Architectural Boundaries](./01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md)**
 
 Primary question:
 
 > **What enterprise AI capabilities exist, and where should their boundaries be?**
 
-This file establishes the foundation for reasoning about enterprise AI capabilities and their boundaries.
+This lesson establishes the foundation for reasoning about enterprise AI capabilities and their boundaries.
 
-It owns:
-
+This lesson covers:
 - Enterprise AI capabilities
 - AI capability versus AI application
 - Capability decomposition
@@ -92,18 +91,17 @@ The key outcome is the ability to determine **what capability is actually being 
 
 ---
 
-### File 02 — How Is It Organized and Operated?
+### Lesson 02 — How Is It Organized and Operated?
 
-**[`02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md`](./02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md)**
+**[Centralized Federated and Hybrid AI Operating Models](./02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md)**
 
 Primary question:
 
 > **How should enterprise AI capabilities be organized and operated?**
 
-This file builds on the capability boundaries established in File 01 and examines how AI responsibilities can be distributed across an enterprise.
+This lesson builds on the capability boundaries established in Lesson 01 and examines how AI responsibilities can be distributed across an enterprise.
 
-It owns:
-
+This lesson covers:
 - AI operating models
 - Centralized operating models
 - Federated operating models
@@ -122,18 +120,17 @@ The key outcome is understanding that **operating-model selection is contextual 
 
 ---
 
-### File 03 — How Do We Make and Defend Decisions?
+### Lesson 03 — How Do We Make and Defend Decisions?
 
-**[`03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md`](./03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md)**
+**[Enterprise AI Architecture Principles Boundaries and Decisions](./03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md)**
 
 Primary question:
 
 > **Given the capabilities and operating model, how should enterprise AI architecture decisions be made and defended?**
 
-This file focuses on architecture judgment and decision reasoning.
+This lesson focuses on architecture judgment and decision reasoning.
 
-It owns:
-
+This lesson covers:
 - Enterprise AI architecture principles
 - Architecture constraints
 - Platform, domain, and shared-service boundaries
@@ -158,13 +155,12 @@ rather than only describing what was chosen.
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 The three lessons have distinct responsibilities:
 
 ```text
 ┌─────────────────────────────────────────────────────────┐
-│ File 01                                                  │
+│ Lesson 01                                                  │
 │ Enterprise AI capabilities and boundaries                 │
 │                                                         │
 │ WHAT capability exists?                                 │
@@ -172,14 +168,14 @@ The three lessons have distinct responsibilities:
 └───────────────────────────┬─────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────┐
-│ File 02                                                  │
+│ Lesson 02                                                  │
 │ AI operating models and responsibility distribution      │
 │                                                         │
 │ HOW should the capability be organized and operated?     │
 └───────────────────────────┬─────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────┐
-│ File 03                                                  │
+│ Lesson 03                                                  │
 │ Architecture principles, trade-offs, and decisions       │
 │                                                         │
 │ HOW should architecture choices be evaluated and         │
@@ -187,7 +183,7 @@ The three lessons have distinct responsibilities:
 └─────────────────────────────────────────────────────────┘
 ```
 
-Later files may reference concepts established earlier, but they should not re-teach those concepts in depth.
+Later lessons may reference concepts established earlier, but they should not re-teach those concepts in depth.
 
 ---
 
@@ -292,7 +288,7 @@ Examples of the boundary:
 
 ## Recommended Learning Order
 
-Complete the files sequentially:
+Complete the lessons sequentially:
 
 ```text
 01 — Enterprise AI Capabilities and Architectural Boundaries
@@ -363,19 +359,13 @@ Consider ENT-01 complete when you can independently:
 
 ---
 
-## Repository Navigation
+## Chapter Contents
 
-```text
-docs/
-└── 07-ENT/
-    └── ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/
-        ├── README.md
-        ├── 01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md
-        ├── 02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md
-        └── 03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md
-```
+Start with **Lesson 01** and proceed sequentially:
 
-Start with **File 01** and proceed sequentially through File 03.
+1. [Enterprise AI Capabilities and Architectural Boundaries](./01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md)
+2. [Centralized, Federated, and Hybrid AI Operating Models](./02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md)
+3. [Enterprise AI Architecture Principles, Boundaries, and Decisions](./03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md)
 
 ---
 

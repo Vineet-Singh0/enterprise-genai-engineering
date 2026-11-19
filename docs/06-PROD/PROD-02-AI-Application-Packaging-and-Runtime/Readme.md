@@ -73,8 +73,7 @@ These components should not automatically be assumed to belong in one artifact. 
 
 PROD-02 owns the engineering foundation required to define a production AI application as a reproducible and well-understood runtime artifact.
 
-It owns:
-
+This lesson covers:
 - What constitutes the application artifact
 - What inputs are required to reproduce it
 - How dependencies are represented and controlled
@@ -227,13 +226,13 @@ The chapter progresses from the basic packaging problem toward explicit runtime 
 03 — Production Artifacts, Dependencies, and Environment Configuration
 ```
 
-### File 01 — AI Application Packaging and Reproducibility
+### Lesson 01 — AI Application Packaging and Reproducibility
 
 Primary question:
 
 > **What does it mean to package an AI application reproducibly?**
 
-This file establishes the foundation:
+This lesson establishes the foundation:
 
 - Application boundaries
 - Dependency capture
@@ -246,13 +245,13 @@ This file establishes the foundation:
 
 Containers are introduced only as context for packaging and reproducibility.
 
-### File 02 — Containers, Configuration, and Runtime Contracts
+### Lesson 02 — Containers, Configuration, and Runtime Contracts
 
 Primary question:
 
 > **How do we define a consistent runtime environment and make its assumptions explicit?**
 
-This file builds on reproducibility and introduces:
+This lesson builds on reproducibility and introduces:
 
 - Containers as packaging and isolation
 - Image and container mental models
@@ -269,13 +268,13 @@ This file builds on reproducibility and introduces:
 
 The file does not become a Docker, Kubernetes, or deployment tutorial.
 
-### File 03 — Production Artifacts, Dependencies, and Environment Configuration
+### Lesson 03 — Production Artifacts, Dependencies, and Environment Configuration
 
 Primary question:
 
 > **How should production AI artifacts, dependencies, and environment configuration be identified, managed, and traced?**
 
-This file brings the earlier concepts together around:
+This lesson brings the earlier concepts together around:
 
 - Application artifacts
 - Model artifacts
@@ -293,7 +292,7 @@ This file brings the earlier concepts together around:
 - Environment compatibility
 - Artifact properties required for downstream production processes
 
-This file establishes the artifact properties and metadata that downstream production processes can rely on. It does **not** teach artifact promotion workflows, CI/CD pipelines, deployment strategies, or release processes; those belong to PROD-04.
+This lesson establishes the artifact properties and metadata that downstream production processes can rely on. It does **not** teach artifact promotion workflows, CI/CD pipelines, deployment strategies, or release processes; those belong to PROD-04.
 
 ---
 
@@ -509,9 +508,9 @@ PROD-02 should provide the foundations required by these areas without becoming 
 
 Complete the files in order:
 
-1. `01-AI-Application-Packaging-and-Reproducibility.md`
-2. `02-Containers-Configuration-and-Runtime-Contracts.md`
-3. `03-Production-Artifacts-Dependencies-and-Environment-Configuration.md`
+1. AI Application Packaging and Reproducibility
+2. Containers Configuration and Runtime Contracts
+3. Production Artifacts Dependencies and Environment Configuration
 
 The order matters because each file builds on the previous mental model.
 
