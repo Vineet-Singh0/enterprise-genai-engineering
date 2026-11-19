@@ -174,3 +174,26 @@ html.dark .prose .shiki span {
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;
 }
+
+/* KaTeX — scoped readability + equation-local scroll (no page-level overflow) */
+.prose .ege-math-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.15rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose .ege-math-display > .katex-display {
+  margin: 0.5rem 0;
+}
+
+.prose .katex {
+  font-size: 1.05em;
+  color: var(--ink);
+}
+
+html.dark .prose .katex {
+  color: var(--ink);
+}
