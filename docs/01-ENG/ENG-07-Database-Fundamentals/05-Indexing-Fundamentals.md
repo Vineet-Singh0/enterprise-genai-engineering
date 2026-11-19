@@ -662,14 +662,160 @@ ORDER BY viewed_at DESC
 LIMIT 20;
 ```
 
-A composite index on `(viewer_user_id, viewed_at)` may be worth evaluating because it aligns with the equality filter followed by the timestamp ordering.
+A composite index on `(viewer_user_id, viewed_at)` is worth evaluating because it aligns with the equality filter followed by the timestamp ordering.
 
 ```sql
 CREATE INDEX idx_profile_views_viewer_time
 ON profile_views(viewer_user_id, viewed_at);
 ```
 
-This is a candidate, not an automatic recommendation for every database. Its value depends on workload frequency, data volume, existing indexes, and observed execution behavior.
+Do not assume this index helps. Inspect the plan and measure.
+
+### 10.3 Measured example: before and after the index
+
+The following is a **single-run result — warm cache — PostgreSQL 18.6 — temporary local cluster** used only to generate evidence for this lesson. It is one reproducible execution example, not a universal benchmark.
+
+**Table definition**
+
+```sql
+CREATE TABLE profile_views (
+    view_id BIGINT PRIMARY KEY,
+    viewer_user_id BIGINT NOT NULL,
+    viewed_at TIMESTAMPTZ NOT NULL
+);
+```
+
+**Data generation (exact SQL used)**
+
+```sql
+INSERT INTO profile_views (view_id, viewer_user_id, viewed_at)
+SELECT
+  g AS view_id,
+  CASE
+    WHEN g <= 3500 THEN 101
+    ELSE 1 + ((g - 3501) % 99999)
+  END AS viewer_user_id,
+  TIMESTAMPTZ '2024-01-01 00:00:00+00'
+    + ((g % 86400) * INTERVAL '1 second')
+    + ((g / 86400) * INTERVAL '1 day') AS viewed_at
+FROM generate_series(1, 2000000) AS g;
+```
+
+**Generated distribution**
+
+| Metric | Value |
+|--------|-------|
+| Total rows | 2,000,000 |
+| Distinct `viewer_user_id` | 99,999 |
+| Rows for `viewer_user_id = 101` | 3,520 |
+
+User 101 is intentionally heavier than a typical viewer so the ordered top-N query is a realistic index candidate. User 101 is still a small fraction of the table (~0.18%), not a majority of rows.
+
+**Statistics**
+
+```sql
+ANALYZE profile_views;
+```
+
+Then the baseline query was executed three times; the third (warm-cache) plan is documented below.
+
+**Baseline query**
+
+```sql
+EXPLAIN (ANALYZE, BUFFERS)
+SELECT view_id, viewed_at
+FROM profile_views
+WHERE viewer_user_id = 101
+ORDER BY viewed_at DESC
+LIMIT 20;
+```
+
+**Baseline plan (warm cache)**
+
+```text
+Limit  (cost=24191.91..24194.24 rows=20 width=16) (actual time=66.130..70.327 rows=20.00 loops=1)
+  Buffers: shared hit=11872 read=943 written=37
+  ->  Gather Merge  (cost=24191.91..24572.29 rows=3266 width=16) (actual time=66.128..70.321 rows=20.00 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=11872 read=943 written=37
+        ->  Sort  (cost=23191.88..23195.28 rows=1361 width=16) (actual time=52.362..52.364 rows=6.67 loops=3)
+              Sort Key: viewed_at DESC
+              Sort Method: top-N heapsort  Memory: 26kB
+              Buffers: shared hit=11872 read=943 written=37
+              Worker 0:  Sort Method: quicksort  Memory: 25kB
+              Worker 1:  Sort Method: quicksort  Memory: 25kB
+              ->  Parallel Seq Scan on profile_views  (cost=0.00..23155.67 rows=1361 width=16) (actual time=9.367..51.968 rows=1173.33 loops=3)
+                    Filter: (viewer_user_id = 101)
+                    Rows Removed by Filter: 665493
+                    Buffers: shared hit=11796 read=943 written=37
+Planning Time: 0.074 ms
+Execution Time: 70.351 ms
+```
+
+**What the baseline plan shows**
+
+The baseline plan performs a parallel sequential scan, filters for `viewer_user_id = 101`, sorts the qualifying rows with a top-N heapsort, and merges worker results. PostgreSQL still touches a large portion of the table to find those rows. The explicit `Sort` node is present because the table scan does not deliver rows in `viewed_at DESC` order.
+
+**Create the index and refresh statistics**
+
+```sql
+CREATE INDEX idx_profile_views_viewer_time
+ON profile_views(viewer_user_id, viewed_at);
+
+ANALYZE profile_views;
+```
+
+The same `EXPLAIN (ANALYZE, BUFFERS)` query was executed three times again; the third warm-cache plan is documented below.
+
+**Indexed plan (warm cache)**
+
+```text
+Limit  (cost=0.43..70.46 rows=20 width=16) (actual time=0.008..0.026 rows=20.00 loops=1)
+  Buffers: shared hit=23
+  ->  Index Scan Backward using idx_profile_views_viewer_time on profile_views  (cost=0.43..13541.15 rows=3867 width=16) (actual time=0.008..0.024 rows=20.00 loops=1)
+        Index Cond: (viewer_user_id = 101)
+        Index Searches: 1
+        Buffers: shared hit=23
+Planning Time: 0.038 ms
+Execution Time: 0.033 ms
+```
+
+**What changed**
+
+1. The scan became index-backed: `Index Scan Backward` on `idx_profile_views_viewer_time`.
+2. The explicit `Sort` node disappeared because the composite index already provides `(viewer_user_id, viewed_at)` order, and a backward scan satisfies `ORDER BY viewed_at DESC` for a single viewer.
+3. Buffer traffic dropped sharply (from thousands of pages to 23 hits).
+4. Warm-cache execution time dropped from about 70 ms to about 0.03 ms in this run.
+
+`view_id` remains in the `SELECT` list, so PostgreSQL still reads heap tuples for those columns. This run used an index-backed table access path, not an index-only scan.
+
+**Engineering interpretation**
+
+Planner choice depends on statistics, selectivity, table size, cache state, PostgreSQL version, hardware, and query shape. Another environment can produce a different valid plan. The durable lesson is unchanged: inspect `EXPLAIN (ANALYZE, BUFFERS)` and measure before treating an index as a success.
+
+**Counter-example (separate experiment — representative example output)**
+
+The `city = 'Pune'` case below is a **different table and query**. It is not part of the `profile_views` measurement above. The plan text here is a **representative example output** for teaching selectivity, not a warm-cache measurement from the same PostgreSQL run.
+
+When a condition matches a large share of rows (for example roughly 20% of a `users` table live in `'Pune'`), PostgreSQL often prefers a sequential scan even if an index on `city` exists, because locating and assembling that many heap rows through the index can cost more than reading the table once.
+
+```sql
+EXPLAIN (ANALYZE, BUFFERS)
+SELECT user_id, name
+FROM users
+WHERE city = 'Pune';
+```
+
+Representative shape:
+
+```text
+Seq Scan on users
+  Filter: (city = 'Pune')
+  Rows Removed by Filter: ...
+```
+
+An index can help one query and still be the wrong tool for another. That is why evaluation starts from the workload, not from a list of columns.
 
 ---
 
