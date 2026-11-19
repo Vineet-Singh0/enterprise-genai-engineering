@@ -1,0 +1,55 @@
+---
+/**
+ * Desktop: full trail. Mobile: Home · … · parent · current (compact).
+ */
+export interface Crumb {
+  href?: string;
+  label: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+const last = items[items.length - 1];
+const parent = items.length >= 2 ? items[items.length - 2] : null;
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="bc-full">
+    {items.map((item, i) => (
+      <li>
+        {i > 0 && <span class="bc-sep" aria-hidden="true">→</span>}
+        {item.href && i < items.length - 1 ? (
+          <a href={item.href}>{item.label}</a>
+        ) : (
+          <span aria-current={i === items.length - 1 ? 'page' : undefined}>{item.label}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+
+  <ol class="bc-compact">
+    <li>
+      <a href={items[0]?.href || '/'}>{items[0]?.label || 'Home'}</a>
+    </li>
+    {items.length > 3 && (
+      <li>
+        <span class="bc-sep" aria-hidden="true">→</span>
+        <span class="bc-ellipsis" aria-hidden="true">…</span>
+      </li>
+    )}
+    {parent && items.length > 1 && (
+      <li>
+        <span class="bc-sep" aria-hidden="true">→</span>
+        {parent.href ? <a href={parent.href}>{parent.label}</a> : <span>{parent.label}</span>}
+      </li>
+    )}
+    {last && items.length > 1 && (
+      <li>
+        <span class="bc-sep" aria-hidden="true">→</span>
+        <span aria-current="page">{last.label}</span>
+      </li>
+    )}
+  </ol>
+</nav>

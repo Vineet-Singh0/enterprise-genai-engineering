@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ReaderClient from '../../../../components/ReaderClient.astro';
+import {
+  getAdjacent,
+  getChapter,
+  getCurriculum,
+  getDomain,
+  readDocSource,
+} from '../../../../lib/curriculum/scan';
+import { DOMAIN_META } from '../../../../lib/curriculum/types';
+import { renderMarkdown } from '../../../../lib/curriculum/markdown';
+import { resetBrokenLinks } from '../../../../lib/curriculum/links';
+import { getBase } from '../../../../lib/base';
+import { cleanDisplayTitle } from '../../../../lib/curriculum/slug';
+import { filterTocHeadings } from '../../../../lib/curriculum/toc';
+import { prepareLessonContent } from '../../../../lib/curriculum/lesson-chrome';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+
+export function getStaticPaths() {
+  return getCurriculum().domains.flatMap((d) =>
+    d.chapters.flatMap((ch) =>
+      ch.documents.map((doc) => ({
+        params: { domain: d.slug, chapter: ch.slug, doc: doc.slug },
+      })),
+    ),
+  );
+}
+
+const { domain: domainSlug, chapter: chapterSlug, doc: docSlug } = Astro.params;
+const domain = getDomain(domainSlug!);
+const chapter = getChapter(domainSlug!, chapterSlug!);
+const doc = chapter?.documents.find((d) => d.slug === docSlug);
+if (!domain || !chapter || !doc) throw new Error('Document not found');
+
+const base = getBase();
+const accent = DOMAIN_META[domain.id].accent;
+const chapterTitle = cleanDisplayTitle(chapter.title, chapter.code);
+const docTitle = cleanDisplayTitle(doc.title);
+const domainName = DOMAIN_META[domain.id].name;
+
+resetBrokenLinks();
+const source = readDocSource(doc.relativePath);
+const rendered = await renderMarkdown(source, doc.relativePath, domain.id, base);
+const prepared = prepareLessonContent(rendered.html, rendered.headings);
+const lessonHtml = prepared.html;
+const headings = filterTocHeadings(
+  prepared.headings.filter((h) => h.depth >= 2 && h.depth <= 3),
+);
+const adjacent = getAdjacent(doc.href);
+---
+<BaseLayout title={docTitle} description={`${chapter.code}: ${docTitle}`}>
+  <main class="reader-layout" style={`--domain-accent:${accent}`}>
+    <aside class="reader-sidebar" aria-label="Chapter files">
+      <details class="chapter-files" open>
+        <summary>
+          <span class="kicker">{chapter.code}</span>
+          <strong>{chapterTitle}</strong>
+        </summary>
+        <ul class="side-list">
+          <li>
+            <a
+              href={`${base}domains/${domain.slug}/${chapter.slug}/`}
+              data-progress-href={chapter.href}
+            >
+              <span class="progress-mark" aria-hidden="true"></span>
+              <span class="side-label">Chapter overview</span>
+              <span class="visually-hidden progress-status" data-progress-label={chapter.href}></span>
+            </a>
+          </li>
+          {chapter.documents.map((item) => (
+            <li>
+              <a
+                href={`${base}domains/${domain.slug}/${chapter.slug}/${item.slug}/`}
+                data-progress-href={item.href}
+                aria-current={item.slug === doc.slug ? 'page' : undefined}
+              >
+                <span class="progress-mark" aria-hidden="true"></span>
+                <span class="side-label">{cleanDisplayTitle(item.title)}</span>
+                <span class="visually-hidden progress-status" data-progress-label={item.href}></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    </aside>
+
+    <article class="reader-main">
+      <Breadcrumbs
+        items={[
+          { href: base, label: 'Home' },
+          { href: `${base}domains/${domain.slug}/`, label: domainName },
+          { href: `${base}domains/${domain.slug}/${chapter.slug}/`, label: chapterTitle },
+          { label: docTitle },
+        ]}
+      />
+
+      {/* Desktop: early. Mobile: CSS order places this after prose. */}
+      <div class="doc-toolbar" role="toolbar" aria-label="Document actions">
+        <button type="button" class="btn btn-primary" id="mark-complete">Mark completed</button>
+        <button type="button" class="btn" id="toggle-bookmark">Bookmark</button>
+        <button type="button" class="btn" id="toggle-focus" aria-pressed="false">Focus mode</button>
+      </div>
+
+      {headings.length > 0 && (
+        <details class="toc-mobile">
+          <summary>On this page</summary>
+          <ul class="toc-list">
+            {headings.map((h) => (
+              <li class={`toc-depth-${h.depth}`}>
+                <a href={`#${h.id}`}>{h.text}</a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      <div class="reader-body">
+        <div class="prose prose-lesson" data-pagefind-body set:html={lessonHtml} />
+      </div>
+
+      <nav class="prev-next" aria-label="Document navigation">
+        {adjacent.prev ? (
+          <a href={`${base.replace(/\/$/, '')}${adjacent.prev}/`}>
+            <span>Previous</span>
+            {adjacent.prevTitle}
+          </a>
+        ) : <span></span>}
+        {adjacent.next ? (
+          <a
+            href={`${base.replace(/\/$/, '')}${adjacent.next}/`}
+            style="text-align:right;"
+            data-complete-on-nav
+          >
+            <span>Next</span>
+            {adjacent.nextTitle}
+          </a>
+        ) : <span></span>}
+      </nav>
+    </article>
+
+    <aside class="reader-toc" aria-label="On this page">
+      <div class="kicker">On this page</div>
+      {headings.length ? (
+        <ul class="toc-list">
+          {headings.map((h) => (
+            <li class={`toc-depth-${h.depth}`}>
+              <a href={`#${h.id}`}>{h.text}</a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="muted" style="margin:0;font-size:0.85rem;">No major sections</p>
+      )}
+    </aside>
+  </main>
+  <ReaderClient
+    href={doc.href}
+    title={docTitle}
+    domainId={domain.id}
+    domainName={domainName}
+    chapterCode={chapter.code}
+    chapterTitle={chapterTitle}
+  />
+</BaseLayout>

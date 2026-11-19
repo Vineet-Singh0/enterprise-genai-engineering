@@ -1,0 +1,184 @@
+---
+import '../styles/app.css';
+import { getBase } from '../lib/base';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Personal learning platform for the Enterprise GenAI Engineering curriculum.' } = Astro.props;
+const base = getBase();
+const pageTitle = title.includes('Enterprise GenAI') ? title : `${title} · Enterprise GenAI Engineering`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="icon" href={`${base}favicon.png`} type="image/png" />
+    <link rel="alternate icon" href={`${base}favicon.ico`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline define:vars={{ base }}>
+      (function () {
+        try {
+          const stored = localStorage.getItem('ege-learning-platform-v1');
+          const theme = stored ? JSON.parse(stored).theme : null;
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if ((theme || (prefersDark ? 'dark' : 'light')) === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (_) {}
+        window.__EGE_BASE__ = base;
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={base}>
+        <img
+          class="brand-logo"
+          src={`${base}logo.png`}
+          alt="Enterprise GenAI Engineering"
+          width="280"
+          height="48"
+          onerror="this.setAttribute('data-failed',''); this.removeAttribute('alt'); this.nextElementSibling?.removeAttribute('aria-hidden');"
+        />
+        <span class="brand-text" aria-hidden="true">
+          <strong>Enterprise GenAI Engineering</strong>
+          <span>Personal learning platform</span>
+        </span>
+      </a>
+      <button
+        type="button"
+        class="icon-btn mobile-nav-toggle"
+        id="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        ☰
+      </button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href={base} data-nav="home"><span class="nav-text">Home</span></a>
+        <a href={`${base}path/`} data-nav="path"><span class="nav-text">Path</span></a>
+        <a href={`${base}domains/`} data-nav="domains"><span class="nav-text">Domains</span></a>
+        <a href={`${base}search/`} data-nav="search"><span class="nav-text">Search</span></a>
+        <a href={`${base}bookmarks/`} data-nav="bookmarks"><span class="nav-text">Bookmarks</span></a>
+        <a href={`${base}progress/`} data-nav="progress"><span class="nav-text">Progress</span></a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
+          <span class="theme-toggle-label" id="theme-toggle-label">Dark</span>
+        </button>
+      </nav>
+    </header>
+    <div id="main-content">
+      <slot />
+    </div>
+    <script>
+      import { loadStore, saveStore } from '../lib/storage';
+
+      const path = window.location.pathname.replace(/\/+$/, '') || '/';
+      const baseRaw = (window as unknown as { __EGE_BASE__?: string }).__EGE_BASE__ || '/';
+      const baseNorm = baseRaw.replace(/\/+$/, '') || '';
+
+      function stripBase(p: string): string {
+        if (baseNorm && p.startsWith(baseNorm)) {
+          const rest = p.slice(baseNorm.length) || '/';
+          return rest.startsWith('/') ? rest : `/${rest}`;
+        }
+        return p.startsWith('/') ? p : `/${p}`;
+      }
+
+      const rel = stripBase(path);
+
+      let active: string | null = null;
+      if (rel === '/' || rel === '') active = 'home';
+      else if (rel === '/path' || rel.startsWith('/path/')) active = 'path';
+      else if (rel === '/search' || rel.startsWith('/search/')) active = 'search';
+      else if (rel === '/bookmarks' || rel.startsWith('/bookmarks/')) active = 'bookmarks';
+      else if (rel === '/progress' || rel.startsWith('/progress/')) active = 'progress';
+      else if (rel === '/domains') active = 'domains';
+      // Deeper /domains/... routes: no top-nav page current (avoid false "Domains")
+
+      if (active) {
+        document
+          .querySelector(`.nav-links a[data-nav="${active}"]`)
+          ?.setAttribute('aria-current', 'page');
+      }
+
+      const themeBtn = document.getElementById('theme-toggle');
+      const themeLabel = document.getElementById('theme-toggle-label');
+
+      function paintTheme() {
+        const dark = document.documentElement.classList.contains('dark');
+        if (themeLabel) themeLabel.textContent = dark ? 'Dark' : 'Light';
+        themeBtn?.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        themeBtn?.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      }
+      paintTheme();
+
+      themeBtn?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const next = root.classList.contains('dark') ? 'light' : 'dark';
+        root.classList.toggle('dark', next === 'dark');
+        const store = loadStore();
+        store.theme = next;
+        saveStore(store);
+        paintTheme();
+      });
+
+      const nav = document.getElementById('primary-nav');
+      const toggle = document.getElementById('nav-toggle');
+
+      function setNavOpen(open: boolean) {
+        document.body.classList.toggle('nav-open', open);
+        nav?.classList.toggle('is-open', open);
+        if (toggle) {
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        }
+        if (open) {
+          nav?.querySelector('a')?.focus();
+        } else {
+          toggle?.focus();
+        }
+      }
+
+      toggle?.addEventListener('click', () => {
+        setNavOpen(!document.body.classList.contains('nav-open'));
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.body.classList.contains('nav-open')) {
+          setNavOpen(false);
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!document.body.classList.contains('nav-open')) return;
+        const t = e.target as Node;
+        if (nav?.contains(t) || toggle?.contains(t)) return;
+        document.body.classList.remove('nav-open');
+        nav?.classList.remove('is-open');
+        toggle?.setAttribute('aria-expanded', 'false');
+        toggle?.setAttribute('aria-label', 'Open menu');
+      });
+
+      nav?.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+          document.body.classList.remove('nav-open');
+          nav.classList.remove('is-open');
+          toggle?.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getBase } from '../lib/base';
+const base = getBase();
+---
+<BaseLayout title="Bookmarks">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Personal</div>
+      <h1>Bookmarks</h1>
+      <p>Saved documents stay in this browser only. Remove any bookmark at any time.</p>
+    </section>
+    <section class="panel" style="padding:1rem 1.15rem;" id="bookmarks-root" data-base={base}>
+      <div id="bookmarks-empty" class="empty-state">
+        <p style="margin:0 0 0.35rem;"><strong>Pin lessons you want to revisit.</strong></p>
+        <p class="muted" style="margin:0 0 0.85rem;">
+          On any document, tap Bookmark. Items stay in this browser only.
+        </p>
+        <div class="empty-actions">
+          <a class="btn btn-primary" href={`${base}path/`}>Browse learning path</a>
+          <a class="btn" href={`${base}domains/`}>Browse domains</a>
+        </div>
+      </div>
+      <ul class="bookmark-list" id="bookmarks-list" hidden></ul>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  import { loadStore, toggleBookmark } from '../lib/storage';
+
+  const root = document.getElementById('bookmarks-root');
+  const list = document.getElementById('bookmarks-list');
+  const empty = document.getElementById('bookmarks-empty');
+  const base = (root?.dataset.base || '/').replace(/\/$/, '');
+
+  function render() {
+    const store = loadStore();
+    if (!list || !empty) return;
+    list.innerHTML = '';
+    if (!store.bookmarks.length) {
+      empty.hidden = false;
+      list.hidden = true;
+      return;
+    }
+    empty.hidden = true;
+    list.hidden = false;
+    for (const item of store.bookmarks) {
+      const li = document.createElement('li');
+      li.className = 'bookmark-item';
+      const main = document.createElement('div');
+      main.className = 'bookmark-main';
+      const a = document.createElement('a');
+      a.href = `${base}${item.href}`;
+      a.textContent = item.title;
+      const sub = document.createElement('div');
+      sub.className = 'muted';
+      sub.style.fontSize = '0.85rem';
+      const docMeta = store.documents[item.href];
+      sub.textContent = [item.domainName || docMeta?.domainName, item.chapterTitle || docMeta?.chapterTitle]
+        .filter(Boolean)
+        .join(' · ');
+      main.append(a, sub);
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-quiet';
+      btn.type = 'button';
+      btn.textContent = 'Remove';
+      btn.addEventListener('click', () => {
+        toggleBookmark(item.href, item.title);
+        render();
+      });
+      li.append(main, btn);
+      list.append(li);
+    }
+  }
+  render();
+</script>

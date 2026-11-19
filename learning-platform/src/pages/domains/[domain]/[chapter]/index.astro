@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ReaderClient from '../../../../components/ReaderClient.astro';
+import { getAdjacent, getChapter, getCurriculum, getDomain, readDocSource } from '../../../../lib/curriculum/scan';
+import { DOMAIN_META } from '../../../../lib/curriculum/types';
+import { renderMarkdown } from '../../../../lib/curriculum/markdown';
+import { resetBrokenLinks } from '../../../../lib/curriculum/links';
+import { getBase } from '../../../../lib/base';
+import { cleanDisplayTitle } from '../../../../lib/curriculum/slug';
+import { filterTocHeadings } from '../../../../lib/curriculum/toc';
+import { prepareLessonContent } from '../../../../lib/curriculum/lesson-chrome';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+
+export function getStaticPaths() {
+  return getCurriculum().domains.flatMap((d) =>
+    d.chapters.map((ch) => ({
+      params: { domain: d.slug, chapter: ch.slug },
+    })),
+  );
+}
+
+const { domain: domainSlug, chapter: chapterSlug } = Astro.params;
+const domain = getDomain(domainSlug!);
+const chapter = getChapter(domainSlug!, chapterSlug!);
+if (!domain || !chapter) throw new Error('Chapter not found');
+
+const base = getBase();
+const accent = DOMAIN_META[domain.id].accent;
+const chapterTitle = cleanDisplayTitle(chapter.title, chapter.code);
+const domainName = DOMAIN_META[domain.id].name;
+
+resetBrokenLinks();
+let html = '';
+let headings: Array<{ depth: number; text: string; id: string }> = [];
+const href = chapter.href;
+
+if (chapter.readme) {
+  const source = readDocSource(chapter.readme.relativePath);
+  const rendered = await renderMarkdown(source, chapter.readme.relativePath, domain.id, base);
+  const prepared = prepareLessonContent(rendered.html, rendered.headings);
+  html = prepared.html;
+  headings = filterTocHeadings(prepared.headings.filter((h) => h.depth >= 2 && h.depth <= 3));
+}
+
+const adjacent = getAdjacent(href);
+const overviewTitle = `${chapter.code} — ${chapterTitle}`;
+---
+<BaseLayout title={overviewTitle}>
+  <main class="reader-layout" style={`--domain-accent:${accent}`}>
+    <aside class="reader-sidebar" aria-label="Chapter files">
+      <div class="kicker">{chapter.code}</div>
+      <strong style="display:block;margin-bottom:0.65rem;">{chapterTitle}</strong>
+      <ul class="side-list">
+        <li>
+          <a
+            href={`${base}domains/${domain.slug}/${chapter.slug}/`}
+            aria-current="page"
+            data-progress-href={href}
+          >
+            <span class="progress-mark" aria-hidden="true"></span>
+            <span class="side-label">Chapter overview</span>
+            <span class="visually-hidden progress-status" data-progress-label={href}></span>
+          </a>
+        </li>
+        {chapter.documents.map((doc) => (
+          <li>
+            <a
+              href={`${base}domains/${domain.slug}/${chapter.slug}/${doc.slug}/`}
+              data-progress-href={doc.href}
+            >
+              <span class="progress-mark" aria-hidden="true"></span>
+              <span class="side-label">{cleanDisplayTitle(doc.title)}</span>
+              <span class="visually-hidden progress-status" data-progress-label={doc.href}></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+
+    <article class="reader-main">
+      <Breadcrumbs
+        items={[
+          { href: base, label: 'Home' },
+          { href: `${base}domains/${domain.slug}/`, label: domainName },
+          { label: chapterTitle },
+        ]}
+      />
+
+      <div class="doc-toolbar" role="toolbar" aria-label="Document actions">
+        <button type="button" class="btn btn-primary" id="mark-complete">Mark completed</button>
+        <button type="button" class="btn" id="toggle-bookmark">Bookmark</button>
+        <button type="button" class="btn" id="toggle-focus" aria-pressed="false">Focus mode</button>
+      </div>
+
+      {headings.length > 0 && (
+        <details class="toc-mobile">
+          <summary>On this page</summary>
+          <ul class="toc-list">
+            {headings.map((h) => (
+              <li class={`toc-depth-${h.depth}`}>
+                <a href={`#${h.id}`}>{h.text}</a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+
+      <div class="reader-body">
+        {html ? (
+          <div class="prose" data-pagefind-body set:html={html} />
+        ) : (
+          <div>
+            <h1>{chapter.code} — {chapterTitle}</h1>
+            <p class="muted">No chapter overview yet. Open a lesson below.</p>
+            <ul>
+              {chapter.documents.map((doc) => (
+                <li><a href={`${base}domains/${domain.slug}/${chapter.slug}/${doc.slug}/`}>{cleanDisplayTitle(doc.title)}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <nav class="prev-next" aria-label="Document navigation">
+        {adjacent.prev ? (
+          <a href={`${base.replace(/\/$/, '')}${adjacent.prev}/`}>
+            <span>Previous</span>
+            {adjacent.prevTitle}
+          </a>
+        ) : <span></span>}
+        {adjacent.next ? (
+          <a
+            href={`${base.replace(/\/$/, '')}${adjacent.next}/`}
+            style="text-align:right;"
+            data-complete-on-nav
+          >
+            <span>Next</span>
+            {adjacent.nextTitle}
+          </a>
+        ) : <span></span>}
+      </nav>
+    </article>
+
+    <aside class="reader-toc" aria-label="On this page">
+      <div class="kicker">On this page</div>
+      <ul class="toc-list">
+        {headings.map((h) => (
+          <li class={`toc-depth-${h.depth}`}>
+            <a href={`#${h.id}`}>{h.text}</a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  </main>
+  <ReaderClient
+    href={href}
+    title={overviewTitle}
+    domainId={domain.id}
+    domainName={domainName}
+    chapterCode={chapter.code}
+    chapterTitle={chapterTitle}
+  />
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCurriculum } from '../../lib/curriculum/scan';
+import { DOMAIN_META } from '../../lib/curriculum/types';
+import { getBase } from '../../lib/base';
+
+const base = getBase();
+const curriculum = getCurriculum();
+---
+<BaseLayout title="Domains">
+  <main class="shell">
+    <section class="hero-panel">
+      <div class="kicker">Browse</div>
+      <h1>Domains</h1>
+      <p>All seven curriculum domains. Each domain page lists chapters and your local progress.</p>
+    </section>
+    <div class="grid-domains">
+      {curriculum.domains.map((domain) => (
+        <a class="card" href={`${base}domains/${domain.slug}/`} style={`border-top:3px solid ${DOMAIN_META[domain.id].accent}`}>
+          <div class="kicker">{domain.id}</div>
+          <h3>{domain.name}</h3>
+          <p class="muted" style="margin:0 0 0.5rem;font-size:0.9rem;">{domain.description}</p>
+          <span class="badge">{domain.chapters.length} chapters</span>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getBase } from '../lib/base';
+
+const base = getBase();
+---
+<BaseLayout title="Search">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Find</div>
+      <h1>Search the curriculum</h1>
+      <p>Search across domains, chapters, and teaching documents on this site.</p>
+    </section>
+    <section class="panel" style="padding:1rem 1.15rem;">
+      <link href={`${base}pagefind/pagefind-ui.css`} rel="stylesheet" />
+      <div id="search" class="search-host"></div>
+      <div id="search-fallback" class="search-fallback" hidden inert aria-hidden="true">
+        <p style="margin:0 0 0.5rem;">
+          <strong>Search index not available here.</strong>
+        </p>
+        <p class="muted" style="margin:0;">
+          Run <code>npm run build</code>, then open the built site (or restart
+          <code>npm run preview</code> afterwards). Search needs the Pagefind index from a full build.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script is:inline define:vars={{ base }}>
+    window.addEventListener('DOMContentLoaded', () => {
+      const host = document.getElementById('search');
+      const fallback = document.getElementById('search-fallback');
+
+      function showFallback() {
+        if (fallback) {
+          fallback.hidden = false;
+          fallback.removeAttribute('inert');
+          fallback.setAttribute('aria-hidden', 'false');
+        }
+        if (host) host.hidden = true;
+      }
+
+      function hideFallback() {
+        if (fallback) {
+          fallback.hidden = true;
+          fallback.setAttribute('inert', '');
+          fallback.setAttribute('aria-hidden', 'true');
+        }
+        if (host) host.hidden = false;
+      }
+
+      const DOMAIN_NAMES = {
+        eng: 'Engineering Foundations',
+        aif: 'AI Foundations',
+        llm: 'LLM Engineering',
+        ret: 'Retrieval Engineering',
+        agt: 'Agent Engineering',
+        prod: 'Production AI Engineering',
+        ent: 'Enterprise AI Systems',
+      };
+
+      function decorateResults() {
+        host?.querySelectorAll('.pagefind-ui__result').forEach((result) => {
+          if (result.querySelector('.ege-result-meta')) return;
+          const link = result.querySelector('.pagefind-ui__result-link');
+          const href = link?.getAttribute('href') || '';
+          const parts = href.split('/').filter(Boolean);
+          const domainsIdx = parts.indexOf('domains');
+          if (domainsIdx < 0) return;
+          const domainSlug = parts[domainsIdx + 1];
+          const chapterSlug = parts[domainsIdx + 2];
+          const meta = document.createElement('div');
+          meta.className = 'ege-result-meta muted';
+          const domainLabel = DOMAIN_NAMES[domainSlug] || (domainSlug || '').toUpperCase();
+          const chapterLabel = (chapterSlug || '')
+            .replace(/^[a-z]+-\d+-?/i, '')
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, (c) => c.toUpperCase());
+          meta.textContent = [domainLabel, chapterLabel].filter(Boolean).join(' · ');
+          link?.parentElement?.insertBefore(meta, link);
+        });
+      }
+
+      function mountUi() {
+        if (!window.PagefindUI) {
+          showFallback();
+          return;
+        }
+        try {
+          new window.PagefindUI({
+            element: '#search',
+            showImages: false,
+            baseUrl: base,
+            bundlePath: `${base}pagefind/`,
+          });
+          hideFallback();
+          const obs = new MutationObserver(() => decorateResults());
+          if (host) obs.observe(host, { childList: true, subtree: true });
+        } catch (_) {
+          showFallback();
+        }
+      }
+
+      // Probe index first — avoids false "unavailable" when UI is just slow
+      fetch(`${base}pagefind/pagefind-entry.json`, { method: 'GET' })
+        .then((res) => {
+          if (!res.ok) throw new Error('no index');
+          const script = document.createElement('script');
+          script.src = `${base}pagefind/pagefind-ui.js`;
+          script.onload = mountUi;
+          script.onerror = showFallback;
+          document.body.appendChild(script);
+        })
+        .catch(showFallback);
+    });
+  </script>
+</BaseLayout>

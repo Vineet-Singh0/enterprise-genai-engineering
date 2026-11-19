@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCurriculum } from '../lib/curriculum/scan';
+import { DOMAIN_META } from '../lib/curriculum/types';
+import { getBase } from '../lib/base';
+import { cleanDisplayTitle } from '../lib/curriculum/slug';
+
+const base = getBase();
+const curriculum = getCurriculum();
+
+const pathData = curriculum.domains.map((domain, index) => ({
+  id: domain.id,
+  slug: domain.slug,
+  name: domain.name,
+  description: domain.description,
+  accent: DOMAIN_META[domain.id].accent,
+  step: index + 1,
+  chapters: domain.chapters.map((ch) => ({
+    code: ch.code,
+    title: cleanDisplayTitle(ch.title, ch.code),
+    hrefs: [ch.readme?.href, ...ch.documents.map((d) => d.href)].filter(Boolean) as string[],
+  })),
+}));
+---
+<BaseLayout title="Learning Path">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Curriculum</div>
+      <h1>Learning Path</h1>
+      <p>Seven domains in recommended order. Your current place is highlighted from local progress.</p>
+    </section>
+
+    <p class="muted path-status" id="path-status" style="margin:0 0 0.85rem;font-size:0.9rem;"></p>
+
+    <nav class="path-steps" aria-label="Domain steps">
+      {curriculum.domains.map((domain) => (
+        <a href={`#step-${domain.slug}`} data-path-chip={domain.id}>{domain.id}</a>
+      ))}
+    </nav>
+
+    <div class="path-domain-list" id="path-root" data-path={JSON.stringify(pathData)}>
+      {curriculum.domains.map((domain, index) => (
+        <details
+          class="panel path-domain"
+          id={`step-${domain.slug}`}
+          data-domain-id={domain.id}
+          open={false}
+          style={`border-left:4px solid ${DOMAIN_META[domain.id].accent}`}
+        >
+          <summary>
+            <span class="kicker">Step {index + 1}</span>
+            <span class="path-domain-title">{domain.id} — {domain.name}</span>
+            <span class="muted path-domain-desc">{domain.description}</span>
+            <span class="muted path-domain-state" data-domain-state={domain.id}></span>
+          </summary>
+          <p style="margin:0.65rem 0 0;">
+            <a class="btn" href={`${base}domains/${domain.slug}/`}>Open {domain.id}</a>
+          </p>
+          <ol class="path-chapter-list">
+            {domain.chapters.map((ch) => (
+              <li data-chapter-code={ch.code}>
+                <a href={`${base}domains/${domain.slug}/${ch.slug}/`}>
+                  {ch.code} — {cleanDisplayTitle(ch.title, ch.code)}
+                </a>
+                <span class="muted"> · {ch.documents.length} docs</span>
+                <span class="muted chapter-state" data-chapter-state={`${domain.id}:${ch.code}`}></span>
+              </li>
+            ))}
+          </ol>
+        </details>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  import { loadStore } from '../lib/storage';
+
+  type PathDomain = {
+    id: string;
+    slug: string;
+    chapters: Array<{ code: string; hrefs: string[] }>;
+  };
+
+  const root = document.getElementById('path-root');
+  const status = document.getElementById('path-status');
+  if (!root) throw new Error('path root missing');
+  const data = JSON.parse(root.dataset.path || '[]') as PathDomain[];
+  const store = loadStore();
+
+  let currentDomainId: string | null = null;
+  const studyHref = store.currentStudy?.href || store.currentHref;
+  if (studyHref) {
+    for (const d of data) {
+      if (d.chapters.some((ch) => ch.hrefs.includes(studyHref))) {
+        currentDomainId = d.id;
+        break;
+      }
+    }
+  }
+  if (!currentDomainId) {
+    for (const d of data) {
+      const any = d.chapters.some((ch) =>
+        ch.hrefs.some((h) => store.documents[h]?.state === 'in_progress' || store.documents[h]?.state === 'completed'),
+      );
+      if (any) {
+        currentDomainId = d.id;
+        break;
+      }
+    }
+  }
+  if (!currentDomainId) currentDomainId = data[0]?.id || null;
+
+  for (const d of data) {
+    const hrefs = d.chapters.flatMap((c) => c.hrefs);
+    const done = hrefs.filter((h) => store.documents[h]?.state === 'completed').length;
+    const active = hrefs.filter((h) => store.documents[h]?.state === 'in_progress').length;
+    const stateEl = document.querySelector(`[data-domain-state="${d.id}"]`);
+    if (stateEl) {
+      if (done === hrefs.length && hrefs.length) stateEl.textContent = 'Completed';
+      else if (d.id === currentDomainId) stateEl.textContent = 'Current';
+      else if (active || done) stateEl.textContent = `${done} completed` + (active ? ` · ${active} in progress` : '');
+      else stateEl.textContent = 'Upcoming';
+    }
+
+    const details = document.querySelector(`details[data-domain-id="${d.id}"]`) as HTMLDetailsElement | null;
+    if (details) {
+      details.open = d.id === currentDomainId;
+      details.classList.toggle('is-current', d.id === currentDomainId);
+    }
+
+    document.querySelector(`[data-path-chip="${d.id}"]`)?.classList.toggle('is-current', d.id === currentDomainId);
+
+    for (const ch of d.chapters) {
+      const cDone = ch.hrefs.filter((h) => store.documents[h]?.state === 'completed').length;
+      const cActive = ch.hrefs.filter((h) => store.documents[h]?.state === 'in_progress').length;
+      const el = document.querySelector(`[data-chapter-state="${d.id}:${ch.code}"]`);
+      if (!el) continue;
+      if (cDone === ch.hrefs.length && ch.hrefs.length) el.textContent = ' · Done';
+      else if (cActive) el.textContent = ' · In progress';
+      else if (cDone) el.textContent = ` · ${cDone}/${ch.hrefs.length}`;
+    }
+  }
+
+  if (status && currentDomainId) {
+    const name = store.currentStudy?.chapterTitle
+      ? `${store.currentStudy.domainName || currentDomainId} · ${store.currentStudy.chapterTitle}`
+      : currentDomainId;
+    status.textContent = store.currentStudy?.title
+      ? `Continue: ${store.currentStudy.title} (${name})`
+      : `Current focus: ${currentDomainId}`;
+  }
+</script>
