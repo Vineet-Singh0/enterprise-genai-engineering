@@ -184,7 +184,7 @@ After completing PROD-03, the learner should be able to:
 
 The chapter is intentionally divided into three stages.
 
-### File 01 — Production Inference and Model Serving
+### Lesson 01 — Production Inference and Model Serving
 
 **Question:**
 
@@ -202,7 +202,7 @@ Focus:
 - request lifecycle,
 - serving boundaries.
 
-### File 02 — Concurrency, Queues, Batching and Streaming
+### Lesson 02 — Concurrency, Queues, Batching and Streaming
 
 **Question:**
 
@@ -222,7 +222,7 @@ Focus:
 - streaming,
 - request lifecycle under concurrent load.
 
-### File 03 — Model Routing and Serving Architecture
+### Lesson 03 — Model Routing and Serving Architecture
 
 **Question:**
 
@@ -247,9 +247,9 @@ Focus:
 
 | Order | File | Primary Responsibility |
 |---|---|---|
-| 01 | [`01-Production-Inference-and-Model-Serving.md`](./01-Production-Inference-and-Model-Serving.md) | Production inference and model-serving foundations |
-| 02 | [`02-Concurrency-Queues-Batching-and-Streaming.md`](./02-Concurrency-Queues-Batching-and-Streaming.md) | Request concurrency, queueing, batching and streaming |
-| 03 | [`03-Model-Routing-and-Serving-Architecture.md`](./03-Model-Routing-and-Serving-Architecture.md) | Model routing, target selection and serving architecture |
+| 01 | [Production Inference and Model Serving](./01-Production-Inference-and-Model-Serving.md) | Production inference and model-serving foundations |
+| 02 | [Concurrency Queues Batching and Streaming](./02-Concurrency-Queues-Batching-and-Streaming.md) | Request concurrency, queueing, batching and streaming |
+| 03 | [Model Routing and Serving Architecture](./03-Model-Routing-and-Serving-Architecture.md) | Model routing, target selection and serving architecture |
 
 The recommended order is **01 → 02 → 03**.
 

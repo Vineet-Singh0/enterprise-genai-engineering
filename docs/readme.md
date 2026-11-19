@@ -35,20 +35,6 @@ The objective is to build engineering intuition rather than memorization.
 
 The documentation is divided into seven learning domains.
 
-```text
-docs/
-│
-├── README.md
-│
-├── 01-ENG/    → Engineering Foundations
-├── 02-AIF/    → AI Foundations
-├── 03-LLM/    → LLM Engineering
-├── 04-RET/    → Retrieval Engineering
-├── 05-AGT/    → Agent Engineering
-├── 06-PROD/   → Production AI Engineering
-└── 07-ENT/ → Enterprise AI Systems
-```
-
 Each domain contains one or more learning modules.
 
 Each module contains:
@@ -107,29 +93,21 @@ Each domain assumes knowledge from the previous domains. Following this sequence
 
 ---
 
-# Documentation Standards
+# How Lessons Are Organized
 
-Every chapter in this repository follows a consistent structure.
+Lessons across domains share a consistent learner-facing structure so you can navigate objectives, explanations, examples, and revision material predictably.
 
-Typical sections include:
+A typical lesson includes some or all of:
 
 - Learning Objectives
 - Prerequisites
-- Before We Start
-- Why This Exists
-- Mental Model
-- Core Concepts
-- Internal Working
-- Practical Examples
-- Production Perspective
-- Engineering Decisions
+- Core explanations and worked examples
+- Production / engineering perspective
 - Common Mistakes
 - Interview Questions
-- Quick Revision
-- Key Takeaways
-- Further Reading
+- Quick Revision and Key Takeaways
 
-This consistency makes the documentation suitable for both structured learning and quick revision.
+Exact section names can vary; use each lesson's on-page table of contents to navigate.
 
 ---
 

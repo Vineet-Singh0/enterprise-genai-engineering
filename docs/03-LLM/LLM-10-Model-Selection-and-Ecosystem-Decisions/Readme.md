@@ -82,8 +82,7 @@ The module follows this decision process:
 
 This workflow is a decision aid, not a universal scoring formula. The appropriate criteria and their relative importance depend on the application.
 
-## Scope and Concept Ownership
-
+## Scope and Related Chapters
 LLM-10 focuses on **making model and ecosystem selection decisions**. It does not replace the detailed instruction provided by adjacent modules or other engineering domains.
 
 | Area | Primary ownership | LLM-10's responsibility |

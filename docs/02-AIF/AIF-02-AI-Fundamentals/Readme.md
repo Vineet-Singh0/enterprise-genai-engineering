@@ -34,7 +34,7 @@ Study the chapters in the following order.
 
 ### 1. AI Concepts and Evolution
 
-**File:** [`01-AI-Concepts-and-Evolution.md`](01-AI-Concepts-and-Evolution.md)
+**File:** [AI Concepts and Evolution](01-AI-Concepts-and-Evolution.md)
 
 Establishes the meaning and objectives of AI, the relationship between AI, machine learning, and deep learning, and the major shifts in AI approaches.
 
@@ -42,7 +42,7 @@ It also develops a realistic understanding of AI capabilities and limitations.
 
 ### 2. Symbolic and Statistical AI
 
-**File:** [`02-Symbolic-and-Statistical-AI.md`](02-Symbolic-and-Statistical-AI.md)
+**File:** [Symbolic and Statistical AI](02-Symbolic-and-Statistical-AI.md)
 
 Explores two broad approaches to intelligent behavior: explicitly represented knowledge and rules, and statistical approaches that learn from data.
 
@@ -50,7 +50,7 @@ The chapter focuses on how these approaches differ, when their characteristics m
 
 ### 3. Search, Reasoning and Knowledge Representation
 
-**File:** [`03-Search-Reasoning-and-Knowledge-Representation.md`](03-Search-Reasoning-and-Knowledge-Representation.md)
+**File:** [Search Reasoning and Knowledge Representation](03-Search-Reasoning-and-Knowledge-Representation.md)
 
 Introduces the formulation of problems in terms of states, actions, goals, and constraints.
 
@@ -58,7 +58,7 @@ It explains the conceptual roles of search, reasoning, inference, and symbolic k
 
 ### 4. AI Problem Types and System Lifecycle
 
-**File:** [`04-AI-Problem-Types-and-System-Lifecycle.md`](04-AI-Problem-Types-and-System-Lifecycle.md)
+**File:** [AI Problem Types and System Lifecycle](04-AI-Problem-Types-and-System-Lifecycle.md)
 
 Explores how AI problems can be classified, how problem requirements influence approach selection, and why developing an AI system involves more than choosing a model or algorithm.
 

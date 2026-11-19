@@ -230,8 +230,7 @@ These questions are intentionally engineering-oriented. The goal is not to memor
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 | Concept | Primary Location |
 |---|---|
 | Capacity planning and capacity models | PROD-07.01 |
@@ -650,4 +649,3 @@ The goal is to develop the engineering judgment required to determine whether a 
 
 **Chapter:** PROD-07 — Scaling and Capacity Engineering  
 **Domain:** PROD — Production AI Engineering  
-**Documentation Root:** `docs/06-PROD/PROD-07-Scaling-and-Capacity-Engineering/`

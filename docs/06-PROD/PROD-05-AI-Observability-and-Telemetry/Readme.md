@@ -66,16 +66,15 @@ PROD-05 contains exactly three lessons.
 
 ### 01 — Production AI Observability and Telemetry
 
-[01-Production-AI-Observability-and-Telemetry.md](./01-Production-AI-Observability-and-Telemetry.md)
+[Production AI Observability and Telemetry](./01-Production-AI-Observability-and-Telemetry.md)
 
 **Primary responsibility:** establish the observability foundation.
 
-This file answers:
+This lesson answers:
 
 > What is production AI observability, why is it needed, and what constitutes useful operational evidence?
 
-It owns:
-
+This lesson covers:
 - Observability definition
 - Monitoring vs observability
 - Production AI observability problems
@@ -91,16 +90,15 @@ It owns:
 
 ### 02 — Logs, Metrics, Traces, and AI-Specific Signals
 
-[02-Logs-Metrics-Traces-and-AI-Specific-Signals.md](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md)
+[Logs Metrics Traces and AI Specific Signals](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md)
 
 **Primary responsibility:** establish the telemetry signal layer.
 
-This file answers:
+This lesson answers:
 
 > What signals can a production AI system emit, and what operational information does each signal provide?
 
-It owns:
-
+This lesson covers:
 - Structured logs
 - Event records
 - Contextual logging
@@ -135,16 +133,15 @@ Signal selection is treated as an engineering decision based on purpose, diagnos
 
 ### 03 — AI Observability Architecture and Signal Design
 
-[03-AI-Observability-Architecture-and-Signal-Design.md](./03-AI-Observability-Architecture-and-Signal-Design.md)
+[AI Observability Architecture and Signal Design](./03-AI-Observability-Architecture-and-Signal-Design.md)
 
 **Primary responsibility:** establish the telemetry architecture and signal-design layer.
 
-This file answers:
+This lesson answers:
 
 > How should observability be architected so that telemetry remains useful, trustworthy, scalable, and sustainable?
 
-It owns:
-
+This lesson covers:
 - Instrumentation
 - Telemetry generation
 - Collection
@@ -196,23 +193,22 @@ Application / Model / Service
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 PROD-05 uses a strict ownership model.
 
 | Question | Primary Owner |
 |---|---|
-| What is observability? | File 01 |
-| Why does production AI need observability? | File 01 |
-| What constitutes operational evidence? | File 01 |
-| What signals should be emitted? | File 02 |
-| What do logs, metrics, and traces provide? | File 02 |
-| What AI-specific operational signals may be useful? | File 02 |
-| How are telemetry signals collected? | File 03 |
-| How are signals processed and correlated? | File 03 |
-| How should sampling and aggregation be designed? | File 03 |
-| How should cardinality and retention be managed? | File 03 |
-| How should observability architecture be designed? | File 03 |
+| What is observability? | Lesson 01 |
+| Why does production AI need observability? | Lesson 01 |
+| What constitutes operational evidence? | Lesson 01 |
+| What signals should be emitted? | Lesson 02 |
+| What do logs, metrics, and traces provide? | Lesson 02 |
+| What AI-specific operational signals may be useful? | Lesson 02 |
+| How are telemetry signals collected? | Lesson 03 |
+| How are signals processed and correlated? | Lesson 03 |
+| How should sampling and aggregation be designed? | Lesson 03 |
+| How should cardinality and retention be managed? | Lesson 03 |
+| How should observability architecture be designed? | Lesson 03 |
 
 Later chapters may reference these concepts, but they should not re-teach them in depth.
 
@@ -338,7 +334,7 @@ The objective is not to collect the maximum amount of telemetry.
 
 The objective is to collect **sufficient, trustworthy, useful evidence at sustainable cost and acceptable risk**.
 
-Detailed trade-offs belong in File 03.
+Detailed trade-offs belong in Lesson 03.
 
 ---
 
@@ -435,7 +431,7 @@ PROD — Production AI Engineering
 
 [01 — Production AI Observability and Telemetry](./01-Production-AI-Observability-and-Telemetry.md)
 
-Then continue through Files 02 and 03 in order.
+Then continue through Lessons 02 and 03 in order.
 
 ---
 
@@ -445,13 +441,13 @@ Then continue through Files 02 and 03 in order.
 PROD-05
 │
 ├── Observability Foundation
-│      └── File 01
+│      └── Lesson 01
 │
 ├── Telemetry Signals
-│      └── File 02
+│      └── Lesson 02
 │
 ├── Observability Architecture
-│      └── File 03
+│      └── Lesson 03
 │
 └── Operational Evidence
        └── Supports downstream engineering decisions

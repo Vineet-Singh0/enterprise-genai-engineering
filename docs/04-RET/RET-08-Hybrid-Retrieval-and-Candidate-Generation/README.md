@@ -52,7 +52,7 @@ These are conditional implementation dependencies. For example, a system combini
 
 ### 01 — Candidate Generation and Retriever Complementarity
 
-File: `01-Candidate-Generation-and-Retriever-Complementarity.md`
+File: Candidate Generation and Retriever Complementarity
 
 This chapter establishes the role of candidate generation in the retrieval pipeline and explains why different retrieval sources may contribute different candidates.
 
@@ -69,7 +69,7 @@ The emphasis is on deciding which sources should participate and why. It does no
 
 ### 02 — Retrieval Fusion and Candidate Combination
 
-File: `02-Retrieval-Fusion-and-Candidate-Combination.md`
+File: Retrieval Fusion and Candidate Combination
 
 This chapter examines how outputs from multiple retrieval sources can be combined into a unified candidate set.
 
@@ -87,7 +87,7 @@ The emphasis is on combining retrieval outputs correctly and understanding the a
 
 ### 03 — Candidate Depth, Deduplication, and Coverage
 
-File: `03-Candidate-Depth-Deduplication-and-Coverage.md`
+File: Candidate Depth Deduplication and Coverage
 
 This chapter examines how the size and composition of a candidate set affect the rest of the retrieval pipeline.
 
@@ -154,8 +154,7 @@ Do not claim improved candidate recall without relevance evidence. Do not claim 
 
 This exercise introduces candidate-coverage reasoning. Formal metric definitions, statistical considerations, benchmark methodology, and controlled experiments are developed in RET-10.
 
-## Concept Ownership and Chapter Boundaries
-
+## Where This Is Covered
 The RET chapters form a connected retrieval-engineering curriculum. Each chapter has a primary responsibility.
 
 | Chapter | Primary responsibility | Relationship to RET-08 |

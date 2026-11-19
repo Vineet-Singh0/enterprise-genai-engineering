@@ -177,7 +177,7 @@ Establishes the foundations of agent planning, including:
 - basic planning patterns
 - limitations of naive planning
 
-This file establishes the conceptual foundation required by the later files.
+This lesson establishes the conceptual foundation required by the later files.
 
 ---
 
@@ -333,8 +333,7 @@ This is a planning lifecycle interacting with execution, not a replacement for t
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 AGT-05 has deliberately defined boundaries with the surrounding AGT chapters.
 
 | Area | Primary Owner |
@@ -556,7 +555,7 @@ AGT-05 is complete when you can confidently:
 - verify and critique plans
 - reason about plan quality and trade-offs
 - design bounded adaptive planning behavior
-- explain AGT-05's relationship with runtime, tools, state, workflows, and evaluation without confusing concept ownership
+- explain AGT-05's relationship with runtime, tools, state, workflows, and evaluation without confusing topic boundaries
 
 ---
 

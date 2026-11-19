@@ -127,16 +127,16 @@ The chapter contains exactly two lessons.
 
 ## Learning Progression
 
-### File 01 — Human-in-the-Loop and Intervention Patterns
+### Lesson 01 — Human-in-the-Loop and Intervention Patterns
 
 **Path:**  
-[`01-Human-in-the-Loop-and-Intervention-Patterns.md`](./01-Human-in-the-Loop-and-Intervention-Patterns.md)
+[Human in the Loop and Intervention Patterns](./01-Human-in-the-Loop-and-Intervention-Patterns.md)
 
 **Primary question:**
 
 > How can humans observe and intervene in agent behavior?
 
-This file establishes the foundational vocabulary and patterns for human control, including:
+This lesson establishes the foundational vocabulary and patterns for human control, including:
 
 - Human-in-the-Loop
 - Human-on-the-Loop
@@ -153,20 +153,20 @@ This file establishes the foundational vocabulary and patterns for human control
 - Synchronous and asynchronous human involvement
 - Automation versus oversight trade-offs
 
-This file provides the terminology and conceptual foundation required by File 02.
+This lesson provides the terminology and conceptual foundation required by Lesson 02.
 
 ---
 
-### File 02 — Approval Boundaries, Escalation, and High-Risk Actions
+### Lesson 02 — Approval Boundaries, Escalation, and High-Risk Actions
 
 **Path:**  
-[`02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md`](./02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md)
+[Approval Boundaries Escalation and High Risk Actions](./02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md)
 
 **Primary question:**
 
 > Which agent actions should remain autonomous, and which should require human authorization?
 
-This file focuses on:
+This lesson focuses on:
 
 - Approval boundaries
 - Approval gates and conditions
@@ -375,8 +375,7 @@ It does not teach enterprise governance itself.
 
 ---
 
-## Concept Ownership Summary
-
+## Where This Is Covered
 | Concept | Primary Owner |
 |---|---|
 | Agent runtime loop | AGT-02 |
@@ -444,9 +443,9 @@ Read the chapter in order:
 1. [Human-in-the-Loop and Intervention Patterns](./01-Human-in-the-Loop-and-Intervention-Patterns.md)
 2. [Approval Boundaries, Escalation, and High-Risk Actions](./02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md)
 
-File 01 establishes the human-control vocabulary and intervention patterns.
+Lesson 01 establishes the human-control vocabulary and intervention patterns.
 
-File 02 builds on that foundation to address approval boundaries, escalation, and high-risk actions.
+Lesson 02 builds on that foundation to address approval boundaries, escalation, and high-risk actions.
 
 ---
 

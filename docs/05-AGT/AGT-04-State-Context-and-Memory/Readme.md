@@ -81,13 +81,13 @@ AGT-04-State-Context-and-Memory/
 
 ### 01 — Agent State, Context and Lifecycle
 
-[`01-Agent-State-Context-and-Lifecycle.md`](./01-Agent-State-Context-and-Lifecycle.md)
+[Agent State Context and Lifecycle](./01-Agent-State-Context-and-Lifecycle.md)
 
 **Primary question:**
 
 > What is the difference between state, context, and memory, and how does information move through an agent execution lifecycle?
 
-This file establishes the foundational model for:
+This lesson establishes the foundational model for:
 
 - state;
 - context;
@@ -98,19 +98,19 @@ This file establishes the foundational model for:
 - high-level memory lifecycle;
 - movement of information through execution.
 
-**Role in the chapter:** Establish the conceptual foundation required by Files 02 and 03.
+**Role in the chapter:** Establish the conceptual foundation required by Lessons 02 and 03.
 
 ---
 
 ### 02 — Context Engineering and Execution Context Management
 
-[`02-Context-Engineering-and-Execution-Context-Management.md`](./02-Context-Engineering-and-Execution-Context-Management.md)
+[Context Engineering and Execution Context Management](./02-Context-Engineering-and-Execution-Context-Management.md)
 
 **Primary question:**
 
 > How should an agent decide what information belongs in the context for a particular execution step?
 
-This file focuses on:
+This lesson focuses on:
 
 - execution context;
 - context sources;
@@ -137,13 +137,13 @@ This file focuses on:
 
 ### 03 — Agent Memory, Retention, Retrieval and Lifecycle
 
-[`03-Agent-Memory-Retention-Retrieval-and-Lifecycle.md`](./03-Agent-Memory-Retention-Retrieval-and-Lifecycle.md)
+[Agent Memory Retention Retrieval and Lifecycle](./03-Agent-Memory-Retention-Retrieval-and-Lifecycle.md)
 
 **Primary question:**
 
 > What information should an agent remember, for how long, and how should retained information be used later?
 
-This file focuses on:
+This lesson focuses on:
 
 - memory meaning;
 - memory vs state and context;
@@ -255,8 +255,7 @@ AGT-04 may use tool results as examples of information that can participate in s
 
 ---
 
-## Concept Ownership and Boundaries
-
+## Where This Is Covered
 AGT-04 owns the **agent execution-context management problem**.
 
 The primary boundaries are:
@@ -376,9 +375,9 @@ Approximately **75–90 minutes** for the three lessons, excluding practical exe
 
 Complete the files in order:
 
-1. Read **File 01** and verify that you can clearly distinguish state, context, and memory.
-2. Read **File 02** and practice deciding what should and should not enter an execution context.
-3. Read **File 03** and reason about what information deserves retention and how its lifecycle should be managed.
+1. Read **Lesson 01** and verify that you can clearly distinguish state, context, and memory.
+2. Read **Lesson 02** and practice deciding what should and should not enter an execution context.
+3. Read **Lesson 03** and reason about what information deserves retention and how its lifecycle should be managed.
 4. Revisit the three concepts together and analyze how information moves between current execution state, active context, and retained memory.
 5. Apply the concepts to a real agent-system scenario before moving to later AGT chapters.
 

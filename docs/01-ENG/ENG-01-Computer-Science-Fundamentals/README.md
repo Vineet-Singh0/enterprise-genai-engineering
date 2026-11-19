@@ -3,8 +3,6 @@
 > **Domain:** Engineering Foundations (ENG)
 > **Module ID:** ENG-01
 > **Repository:** `enterprise-genai-engineering`
-> **Location:** `docs/01-ENG/ENG-01-Computer-Science-Fundamentals/`
-
 ---
 
 ## Welcome
@@ -124,30 +122,7 @@ Filesystems
 ↓
 
 I/O Fundamentals
-```
-
-Each topic builds on the previous one.
-
----
-
-# Documentation Structure
-
-| Order | Document                                  | Purpose                                                    |
-| ----: | ----------------------------------------- | ---------------------------------------------------------- |
-|     1 | `01-Computing-Systems-Overview.md`        | Build the overall mental model of a computer system.       |
-|     2 | `02-CPU-Architecture.md`                  | Learn how the CPU executes instructions.                   |
-|     3 | `03-Memory-Hierarchy.md`                  | Understand memory organization, including Stack and Heap.  |
-|     4 | `04-Program-Execution-Model.md`           | Learn how software becomes a running program.              |
-|     5 | `05-Operating-System-Responsibilities.md` | Understand what the operating system manages.              |
-|     6 | `06-Processes-and-Threads.md`             | Learn execution units, scheduling, and concurrency basics. |
-|     7 | `07-Filesystems.md`                       | Learn how data is stored and organized.                    |
-|     8 | `08-IO-Fundamentals.md`                   | Understand how computers communicate with devices.         |
-
----
-
-## Knowledge Graph
-
-```text
+text
 Computer Science Fundamentals
 │
 ├── Computing Systems
@@ -201,7 +176,7 @@ Every document follows the same structure to make learning and revision consiste
 
 ## Next Document
 
-➡️ `01-Computing-Systems-Overview.md`
+➡️ Computing Systems Overview
 
 ---
 

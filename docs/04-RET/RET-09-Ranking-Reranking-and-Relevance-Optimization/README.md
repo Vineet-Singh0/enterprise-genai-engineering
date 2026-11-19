@@ -33,7 +33,7 @@ These prerequisites establish why retrieval scores may differ in meaning and sca
 
 ### 01 — Candidate Scores and Relevance Ordering
 
-**File:** `01-Candidate-Scores-and-Relevance-Ordering.md`
+**File:** Candidate Scores and Relevance Ordering
 
 **Responsibility:** Explain how ranking signals are interpreted and how retrieved candidates are ordered.
 
@@ -43,7 +43,7 @@ Covers score semantics, ranking signals, score comparability, relevance judgment
 
 ### 02 — Reranking Strategies and Cross-Encoders
 
-**File:** `02-Reranking-Strategies-and-Cross-Encoders.md`
+**File:** Reranking Strategies and Cross Encoders
 
 **Responsibility:** Explain when an additional relevance-assessment stage is justified and how reranking fits into a retrieval pipeline.
 
@@ -53,7 +53,7 @@ Covers initial ranking versus reranking, reranking strategies, the conceptual di
 
 ### 03 — Top-K Decisions, Ranking Errors, and Trade-offs
 
-**File:** `03-Top-K-Decisions-Ranking-Errors-and-Trade-offs.md`
+**File:** Top K Decisions Ranking Errors and Trade offs
 
 **Responsibility:** Explain how ranking depth and final result limits affect relevance, latency, and resource use.
 
@@ -79,9 +79,9 @@ Use the exercises and self-assessments within the relevant lessons. Keep each co
 | Dense retrieval mechanics and similarity scoring | RET-06 |
 | Query processing and metadata constraints | RET-07 |
 | Candidate generation, fusion, deduplication, and candidate coverage | RET-08 |
-| Candidate-score interpretation and relevance ordering | RET-09, File 01 |
-| Reranking strategies and cross-encoder usage | RET-09, File 02 |
-| Top-K decisions, ranking errors, and ranking trade-offs | RET-09, File 03 |
+| Candidate-score interpretation and relevance ordering | RET-09, Lesson 01 |
+| Reranking strategies and cross-encoder usage | RET-09, Lesson 02 |
+| Top-K decisions, ranking errors, and ranking trade-offs | RET-09, Lesson 03 |
 | Relevance judgments, metric definitions, controlled experiments, and formal evaluation | RET-10 |
 | Retrieval failure diagnosis and targeted optimization | RET-11 |
 

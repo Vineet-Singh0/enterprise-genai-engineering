@@ -163,15 +163,14 @@ Preserve Exit Options
 
 ---
 
-## Concept Ownership
-
+## Where This Is Covered
 Each major ENT-07 concept has one primary teaching location.
 
 | Area | Primary File |
 |---|---|
-| Model/provider selection, strategic fit, capability evaluation, and provider trade-offs | [File 01](./01-Enterprise-Model-and-Provider-Selection-Strategy.md) |
-| Portability, diversification, concentration, lock-in, and substitution barriers | [File 02](./02-Provider-Diversification-Portability-and-Vendor-Lock-In.md) |
-| Vendor risk, procurement implications, contractual dependency, substitution, and exit | [File 03](./03-AI-Vendor-Risk-Procurement-and-Exit-Strategy.md) |
+| Model/provider selection, strategic fit, capability evaluation, and provider trade-offs | [Lesson 01](./01-Enterprise-Model-and-Provider-Selection-Strategy.md) |
+| Portability, diversification, concentration, lock-in, and substitution barriers | [Lesson 02](./02-Provider-Diversification-Portability-and-Vendor-Lock-In.md) |
+| Vendor risk, procurement implications, contractual dependency, substitution, and exit | [Lesson 03](./03-AI-Vendor-Risk-Procurement-and-Exit-Strategy.md) |
 
 Later sections and related chapters may reference these concepts, but should not re-teach them in depth.
 
@@ -250,18 +249,6 @@ ENT-08 — AI Economics, FinOps and Portfolio Governance
 ---
 
 ## Chapter Structure
-
-```text
-ENT-07-Model-Provider-and-Vendor-Strategy/
-│
-├── README.md
-│
-├── 01-Enterprise-Model-and-Provider-Selection-Strategy.md
-│
-├── 02-Provider-Diversification-Portability-and-Vendor-Lock-In.md
-│
-└── 03-AI-Vendor-Risk-Procurement-and-Exit-Strategy.md
-```
 
 ---
 

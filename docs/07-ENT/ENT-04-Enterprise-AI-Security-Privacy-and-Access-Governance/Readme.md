@@ -74,7 +74,7 @@ The progression moves from establishing what must be governed, to determining wh
 
 ### 01 — AI Security, Privacy and Access Governance
 
-**File:** `01-AI-Security-Privacy-and-Access-Governance.md`
+**File:** AI Security Privacy and Access Governance
 
 Establishes the conceptual foundation for enterprise AI security, privacy, and access governance.
 
@@ -95,7 +95,7 @@ It also establishes the boundaries between security, privacy, identity, access, 
 
 ### 02 — Identity, Authorization and AI Access Boundaries
 
-**File:** `02-Identity-Authorization-and-AI-Access-Boundaries.md`
+**File:** Identity Authorization and AI Access Boundaries
 
 Defines how enterprise AI access should be governed.
 
@@ -119,7 +119,7 @@ The file focuses on:
 
 ### 03 — AI Security, Privacy Controls and Governance Integration
 
-**File:** `03-AI-Security-Privacy-Controls-and-Governance-Integration.md`
+**File:** AI Security Privacy Controls and Governance Integration
 
 Establishes how security and privacy controls become part of enterprise AI governance rather than remaining isolated technical mechanisms.
 
@@ -198,9 +198,9 @@ Those subjects remain owned by their respective curriculum areas.
 
 Read the files sequentially:
 
-1. `01-AI-Security-Privacy-and-Access-Governance.md`
-2. `02-Identity-Authorization-and-AI-Access-Boundaries.md`
-3. `03-AI-Security-Privacy-Controls-and-Governance-Integration.md`
+1. AI Security Privacy and Access Governance
+2. Identity Authorization and AI Access Boundaries
+3. AI Security Privacy Controls and Governance Integration
 
 The sequence is intentional:
 

@@ -61,9 +61,9 @@ Detailed knowledge of agent frameworks is **not required**.
 
 ### 1. Agent Definition and System Boundaries
 
-**File:** [`01-Agent-Definition-and-System-Boundaries.md`](./01-Agent-Definition-and-System-Boundaries.md)
+**File:** [Agent Definition and System Boundaries](./01-Agent-Definition-and-System-Boundaries.md)
 
-This file establishes the foundational definition of an agent.
+This lesson establishes the foundational definition of an agent.
 
 It covers:
 
@@ -102,9 +102,9 @@ The model is conceptual rather than a claim that every implementation follows ex
 
 ### 2. Agent vs LLM Applications, Workflows, and RAG Systems
 
-**File:** [`02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md`](./02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md)
+**File:** [Agent vs LLM Applications Workflows and RAG Systems](./02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md)
 
-This file establishes the architectural distinction between agentic systems and other common AI application patterns.
+This lesson establishes the architectural distinction between agentic systems and other common AI application patterns.
 
 It compares:
 
@@ -175,9 +175,9 @@ Systems can also combine these patterns. A workflow may contain agentic behavior
 
 ### 3. Agent Architecture and System Composition
 
-**File:** [`03-Agent-Architecture-and-System-Composition.md`](./03-Agent-Architecture-and-System-Composition.md)
+**File:** [Agent Architecture and System Composition](./03-Agent-Architecture-and-System-Composition.md)
 
-This file establishes the high-level architectural composition of an agent system.
+This lesson establishes the high-level architectural composition of an agent system.
 
 It introduces the major components surrounding agent execution:
 
@@ -203,8 +203,7 @@ Detailed engineering of these components is intentionally deferred to later AGT 
 
 ---
 
-## Concept Ownership Boundaries
-
+## Where This Is Covered
 AGT-01 establishes vocabulary and system-level relationships. It does not become the detailed engineering chapter for every component it introduces.
 
 | Concept | AGT-01 Responsibility | Detailed Owner |
@@ -365,9 +364,9 @@ Complete the files in this order:
 03-Agent-Architecture-and-System-Composition.md
 ```
 
-Do not skip File 01.
+Do not skip Lesson 01.
 
-The definition and boundary model established there is required for understanding the architectural distinctions in File 02 and the system composition model in File 03.
+The definition and boundary model established there is required for understanding the architectural distinctions in Lesson 02 and the system composition model in Lesson 03.
 
 ---
 

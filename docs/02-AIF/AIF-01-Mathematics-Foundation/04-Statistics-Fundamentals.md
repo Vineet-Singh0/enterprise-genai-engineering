@@ -911,8 +911,6 @@ The central principle is that statistics helps engineers summarize data and reas
 
 **Scope boundary:** This chapter owns foundational descriptive and inferential statistics concepts, central tendency, spread, percentiles, sampling variability, correlation, and outliers. It does not teach advanced statistical inference, formal hypothesis testing, detailed ML evaluation methodology, or experimental design in depth.
 
-**Source limitation:** This chapter follows the approved proposed AIF-01 hierarchy. The authoritative detailed AIF hierarchy was not available for independent comparison, and the live repository paths have not been inspected. Internal links follow the planned structure and require repository verification.
-
 ---
 
 # End of Document

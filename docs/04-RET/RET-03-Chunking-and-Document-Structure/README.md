@@ -30,13 +30,11 @@ This chapter builds on the following Retrieval Engineering topics:
 
 These prerequisites establish what information the retrieval system needs and how source content is prepared. RET-03 builds on that foundation by determining how prepared content should be divided into retrieval units.
 
-*Repository navigation links to RET-01 and RET-02 are omitted until their approved paths and exact chapter titles can be verified.*
-
 ## Chapter Navigation
 
 The chapter contains three lessons.
 
-| File | Primary Focus |
+| Lesson | Primary Focus |
 |---|---|
 | [01 — Retrieval Granularity and Chunking Objectives](./01-Retrieval-Granularity-and-Chunking-Objectives.md) | Why chunking exists, retrieval granularity, chunking objectives, and criteria for selecting suitable retrieval units. |
 | [02 — Chunking Strategies and Boundaries](./02-Chunking-Strategies-and-Boundaries.md) | Fixed-size, token-based, recursive, structure-aware, and semantic chunking; boundary selection, overlap, and strategy trade-offs. |

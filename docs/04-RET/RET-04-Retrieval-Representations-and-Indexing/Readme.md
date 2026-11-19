@@ -41,19 +41,19 @@ Follow the numbered files in order.
 
 ### 1. Searchable Representations and Index Structures
 
-[`01-Searchable-Representations-and-Index-Structures.md`](01-Searchable-Representations-and-Index-Structures.md)
+[Searchable Representations and Index Structures](01-Searchable-Representations-and-Index-Structures.md)
 
 Understand the distinction between retrieval units, searchable representations, and indexes. Examine the roles of term-oriented, metadata-oriented, and vector-oriented representations, including how index entries relate to retrieval-unit identifiers.
 
 ### 2. Index Lifecycle, Freshness, and Consistency
 
-[`02-Index-Lifecycle-Freshness-and-Consistency.md`](02-Index-Lifecycle-Freshness-and-Consistency.md)
+[Index Lifecycle Freshness and Consistency](02-Index-Lifecycle-Freshness-and-Consistency.md)
 
 Understand how indexed state is constructed and maintained as source content changes. Specify expected behavior for additions, updates, refresh delays, deletions, interrupted operations, and reconciliation between source and indexed state.
 
 ### 3. Index Design and Engineering Trade-offs
 
-[`03-Index-Design-and-Engineering-Trade-offs.md`](03-Index-Design-and-Engineering-Trade-offs.md)
+[Index Design and Engineering Trade offs](03-Index-Design-and-Engineering-Trade-offs.md)
 
 Translate workload requirements into index-design criteria. Compare plausible choices using query patterns, searchable fields, filtering requirements, freshness, latency, storage, consistency, and engineering cost.
 

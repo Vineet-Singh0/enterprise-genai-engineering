@@ -289,21 +289,21 @@ Operational Improvement
 
 | File | Primary Responsibility |
 |---|---|
-| `01-AI-Production-Operations-and-On-Call-Readiness.md` | Production operations, service ownership, on-call readiness, operational context, dependencies, escalation, and operational preparation |
-| `02-AI-Incident-Detection-Diagnosis-Recovery-and-Disaster-Readiness.md` | Incident detection, triage, diagnosis, mitigation, recovery, verification, disaster readiness, failover, backup/restore, RTO/RPO, and continuity |
-| `03-Runbooks-Postmortems-and-Operational-Learning.md` | Runbooks, operational procedures, postmortems, corrective actions, recurring incidents, and operational learning |
+| AI Production Operations and On Call Readiness | Production operations, service ownership, on-call readiness, operational context, dependencies, escalation, and operational preparation |
+| AI Incident Detection Diagnosis Recovery and Disaster Readiness | Incident detection, triage, diagnosis, mitigation, recovery, verification, disaster readiness, failover, backup/restore, RTO/RPO, and continuity |
+| Runbooks Postmortems and Operational Learning | Runbooks, operational procedures, postmortems, corrective actions, recurring incidents, and operational learning |
 
 ---
 
 ## File-by-File Navigation
 
-### File 01 — AI Production Operations and On-Call Readiness
+### Lesson 01 — AI Production Operations and On-Call Readiness
 
 **Primary question:**
 
 > **What does an engineering team need to know, own, and prepare before it can responsibly operate a production AI system?**
 
-This file establishes the operational foundation for:
+This lesson establishes the operational foundation for:
 
 - service ownership
 - on-call responsibilities
@@ -321,13 +321,13 @@ This file establishes the operational foundation for:
 
 ---
 
-### File 02 — AI Incident Detection, Diagnosis, Recovery and Disaster Readiness
+### Lesson 02 — AI Incident Detection, Diagnosis, Recovery and Disaster Readiness
 
 **Primary question:**
 
 > **How do operators detect, diagnose, mitigate, recover from, and validate recovery from production AI incidents?**
 
-This file owns the operational incident lifecycle and extends that reasoning to larger failure scopes through disaster readiness.
+This lesson owns the operational incident lifecycle and extends that reasoning to larger failure scopes through disaster readiness.
 
 Its scope includes:
 
@@ -351,14 +351,13 @@ Its scope includes:
 
 ---
 
-### File 03 — Runbooks, Postmortems and Operational Learning
+### Lesson 03 — Runbooks, Postmortems and Operational Learning
 
 **Primary question:**
 
 > **How do teams capture operational knowledge and convert production incidents into durable improvements?**
 
-This file owns:
-
+This lesson covers:
 - runbook structure
 - operational procedures
 - diagnostic and mitigation guidance
@@ -427,7 +426,7 @@ Learn
 
 The lifecycle is a reasoning model rather than a rigid sequence. Diagnosis, mitigation, and verification may repeat as new evidence becomes available.
 
-Detailed incident-response teaching belongs to File 02.
+Detailed incident-response teaching belongs to Lesson 02.
 
 ---
 
@@ -458,7 +457,7 @@ A key operational principle is:
 
 > **A backup that has never been restored successfully should not be treated as proven recovery capability.**
 
-Detailed disaster-recovery reasoning belongs to File 02.
+Detailed disaster-recovery reasoning belongs to Lesson 02.
 
 ---
 
@@ -659,11 +658,10 @@ PROD-10 is complete when the learner can demonstrate the ability to:
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 ### PROD-10 Files
 
-- [README.md](./README.md)
+- [README](./README.md)
 - [01 — AI Production Operations and On-Call Readiness](./01-AI-Production-Operations-and-On-Call-Readiness.md)
 - [02 — AI Incident Detection, Diagnosis, Recovery and Disaster Readiness](./02-AI-Incident-Detection-Diagnosis-Recovery-and-Disaster-Readiness.md)
 - [03 — Runbooks, Postmortems and Operational Learning](./03-Runbooks-Postmortems-and-Operational-Learning.md)

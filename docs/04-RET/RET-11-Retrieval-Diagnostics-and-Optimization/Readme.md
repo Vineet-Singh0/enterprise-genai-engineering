@@ -4,7 +4,6 @@
 
 **Difficulty:** Advanced  
 **Estimated reading time:** 30 minutes  
-**Teaching-content budget:** 2,200–2,800 words  
 **lessons:** 3
 
 ## 1. Purpose
@@ -70,9 +69,9 @@ RET-11 follows three stages:
 
 | Stage | lesson | Engineering capability |
 |---|---|---|
-| 1. Recognize | File 01 | Identify symptoms, classify failures, and prioritize investigation. |
-| 2. Investigate | File 02 | Trace pipeline behavior and establish evidence-supported root causes. |
-| 3. Improve | File 03 | Apply targeted changes and validate quality, performance, and regressions. |
+| 1. Recognize | Lesson 01 | Identify symptoms, classify failures, and prioritize investigation. |
+| 2. Investigate | Lesson 02 | Trace pipeline behavior and establish evidence-supported root causes. |
+| 3. Improve | Lesson 03 | Apply targeted changes and validate quality, performance, and regressions. |
 
 The progression moves from observing a failure to explaining it and finally correcting it.
 
@@ -80,13 +79,13 @@ The files are designed to build on one another without repeating the same teachi
 
 ## 5. Chapter Files
 
-### File 01 — Retrieval Failure Taxonomy and Triage
+### Lesson 01 — Retrieval Failure Taxonomy and Triage
 
-**File:** [01-Retrieval-Failure-Taxonomy-and-Triage.md](./01-Retrieval-Failure-Taxonomy-and-Triage.md)
+**File:** [Retrieval Failure Taxonomy and Triage](./01-Retrieval-Failure-Taxonomy-and-Triage.md)
 
 **Primary responsibility:** Classify retrieval failure symptoms and prioritize investigation.
 
-This file establishes a common vocabulary for retrieval failures and teaches learners to distinguish symptoms, failure modes, contributing factors, and root causes.
+This lesson establishes a common vocabulary for retrieval failures and teaches learners to distinguish symptoms, failure modes, contributing factors, and root causes.
 
 Topics include:
 
@@ -104,13 +103,13 @@ Topics include:
 
 **Practical focus:** Map observed retrieval symptoms to likely investigation areas and prioritize the next diagnostic action.
 
-### File 02 — Layered Diagnostics and Root Cause Analysis
+### Lesson 02 — Layered Diagnostics and Root Cause Analysis
 
-**File:** [02-Layered-Diagnostics-and-Root-Cause-Analysis.md](./02-Layered-Diagnostics-and-Root-Cause-Analysis.md)
+**File:** [Layered Diagnostics and Root Cause Analysis](./02-Layered-Diagnostics-and-Root-Cause-Analysis.md)
 
 **Primary responsibility:** Trace failures across retrieval pipeline stages and establish defensible root-cause hypotheses using evidence.
 
-This file develops a systematic diagnostic workflow rather than relying on intuition or changing components randomly.
+This lesson develops a systematic diagnostic workflow rather than relying on intuition or changing components randomly.
 
 Topics include:
 
@@ -129,13 +128,13 @@ Topics include:
 
 **Practical focus:** Investigate a degraded retrieval pipeline, trace its behavior across relevant stages, and establish a defensible root cause.
 
-### File 03 — Targeted Optimization and Regression Validation
+### Lesson 03 — Targeted Optimization and Regression Validation
 
-**File:** [03-Targeted-Optimization-and-Regression-Validation.md](./03-Targeted-Optimization-and-Regression-Validation.md)
+**File:** [Targeted Optimization and Regression Validation](./03-Targeted-Optimization-and-Regression-Validation.md)
 
 **Primary responsibility:** Select targeted engineering interventions, evaluate their effects, and prevent regressions.
 
-This file connects diagnostic findings to practical engineering decisions.
+This lesson connects diagnostic findings to practical engineering decisions.
 
 Topics include:
 
@@ -176,9 +175,9 @@ The exercise should reuse appropriate RET-10 evaluation assets instead of creati
 
 ## 7. Boundaries with Other RET Chapters
 
-Clear concept ownership is essential to prevent unnecessary duplication.
+Clear topic boundaries prevent unnecessary duplication.
 
-| Chapter | Primary responsibility | RET-11 relationship |
+| Chapter | Focus | RET-11 relationship |
 |---|---|---|
 | RET-02 | Document ingestion and corpus lifecycle | Uses corpus-processing concepts when investigating source-data failures. |
 | RET-03 | Chunking and document structure | Uses chunking knowledge when investigating context and retrieval-unit failures. |
@@ -191,19 +190,19 @@ Clear concept ownership is essential to prevent unnecessary duplication.
 | RET-10 | Retrieval evaluation and experimental design | Provides metrics, baselines, relevance judgments, and reproducible comparison methodology. |
 | RET-12 | End-to-end retrieval integration and application lab | Applies diagnostic methods within an integrated retrieval application. |
 
-### Important ownership distinctions
+### Important distinctions
 
 **RET-10 versus RET-11**
 
 - RET-10 establishes how retrieval performance should be measured and compared.
 - RET-11 investigates why observed retrieval behavior occurs and determines the next engineering action.
 
-RET-11 must reference existing evaluation methodology rather than re-teaching metrics, benchmark construction, or experimental design.
+RET-11 references existing evaluation methodology rather than re-teaching metrics, benchmark construction, or experimental design.
 
 **RET-11 versus PROD**
 
-- RET-11 owns retrieval-specific failure diagnosis and optimization.
-- PROD owns production observability platforms, infrastructure reliability, incident-management operations, and production monitoring systems.
+- RET-11 covers retrieval-specific failure diagnosis and optimization.
+- PROD covers production observability platforms, infrastructure reliability, incident-management operations, and production monitoring systems.
 
 RET-11 may discuss latency and resource measurements as diagnostic evidence without becoming a production observability chapter.
 
@@ -214,28 +213,16 @@ RET-11 may discuss latency and resource measurements as diagnostic evidence with
 
 RET-12 should reference RET-11 instead of reproducing its complete diagnostic framework.
 
-## 8. Reading Time and Content Budget
+## 8. Estimated Reading Time
 
-The following estimates follow the approved RET Phase 1 Documentation Plan v1.4.1.
+| Lesson | Estimated reading time |
+|---|---:|
+| Lesson 01 | 9 minutes |
+| Lesson 02 | 10 minutes |
+| Lesson 03 | 11 minutes |
+| **Total** | **30 minutes** |
 
-| File | Estimated reading time | Teaching-content target |
-|---|---:|---:|
-| File 01 | 9 minutes | 600–800 words |
-| File 02 | 10 minutes | 800–1,000 words |
-| File 03 | 11 minutes | 800–1,000 words |
-| **Total** | **30 minutes** | **2,200–2,800 words** |
-
-### Interpretation
-
-- Reading time represents the estimated time needed to read the teaching content.
-- Word counts are planning estimates, not hard quotas.
-- README navigation content is excluded from the teaching-content budget.
-- Implementation, debugging, experiments, and report preparation require additional time.
-- Complex concepts should receive sufficient explanation even if a file exceeds its estimated word range.
-- Do not expand content merely to meet a numerical target.
-- Remove repetition and explanations owned by neighboring chapters before considering additional content.
-
-Conceptual completeness and engineering usefulness take priority over artificial length.
+Implementation, debugging, experiments, and report preparation require additional time.
 
 ## 9. Completion Criteria
 
@@ -262,9 +249,9 @@ The chapter should produce three complementary outcomes:
 
 | lesson | Expected capability |
 |---|---|
-| File 01 | Retrieval failure classification and triage |
-| File 02 | Evidence-supported diagnostic and root-cause analysis |
-| File 03 | Targeted optimization and regression validation |
+| Lesson 01 | Retrieval failure classification and triage |
+| Lesson 02 | Evidence-supported diagnostic and root-cause analysis |
+| Lesson 03 | Targeted optimization and regression validation |
 
 Together, these capabilities enable an engineer to move from identifying retrieval problems to making and validating defensible engineering improvements.
 
@@ -272,4 +259,4 @@ Together, these capabilities enable an engineer to move from identifying retriev
 
 **Chapter status:** README draft — awaiting approval.
 
-**Next step:** Generate File 01 only after explicit approval of this README.
+**Next step:** Generate Lesson 01 only after explicit approval of this README.

@@ -67,13 +67,13 @@ The three lessons should be studied in order.
 
 ### 01 — AI Risk and Impact Assessment
 
-[01-AI-Risk-and-Impact-Assessment.md](./01-AI-Risk-and-Impact-Assessment.md)
+[AI Risk and Impact Assessment](./01-AI-Risk-and-Impact-Assessment.md)
 
 **Primary question:**
 
 > What can go wrong, who or what can be affected, and how should the enterprise understand the significance of those risks and impacts?
 
-This file establishes the foundation for:
+This lesson establishes the foundation for:
 
 - AI risk
 - AI impact
@@ -90,13 +90,13 @@ This file establishes the foundation for:
 
 ### 02 — AI Oversight, Human Control and Assurance
 
-[02-AI-Oversight-Human-Control-and-Assurance.md](./02-AI-Oversight-Human-Control-and-Assurance.md)
+[AI Oversight Human Control and Assurance](./02-AI-Oversight-Human-Control-and-Assurance.md)
 
 **Primary question:**
 
 > Given the risk and impact of an AI system, what oversight and assurance are necessary to establish justified confidence and maintain appropriate human control?
 
-This file focuses on:
+This lesson focuses on:
 
 - oversight
 - human oversight
@@ -110,19 +110,19 @@ This file focuses on:
 - proportional oversight
 - confidence versus certainty
 
-It builds on the risk and impact assessment established in File 01.
+It builds on the risk and impact assessment established in Lesson 01.
 
 ---
 
 ### 03 — AI Risk Treatment, Assurance and Continuous Reassessment
 
-[03-AI-Risk-Treatment-Assurance-and-Continuous-Reassessment.md](./03-AI-Risk-Treatment-Assurance-and-Continuous-Reassessment.md)
+[AI Risk Treatment Assurance and Continuous Reassessment](./03-AI-Risk-Treatment-Assurance-and-Continuous-Reassessment.md)
 
 **Primary question:**
 
 > Once risks and impacts are understood, how are they treated, how is assurance maintained, and when must the enterprise reassess its confidence and decisions?
 
-This file focuses on:
+This lesson focuses on:
 
 - risk treatment
 - treatment effectiveness

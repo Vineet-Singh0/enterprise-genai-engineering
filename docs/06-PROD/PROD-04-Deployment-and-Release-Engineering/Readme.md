@@ -154,13 +154,13 @@ The engineering reasoning progresses from **moving changes** to **controlling th
 ### 01 — AI CI/CD, Infrastructure Provisioning and Artifact Promotion
 
 **File:**  
-`01-AI-CI-CD-Infrastructure-Provisioning-and-Artifact-Promotion.md`
+AI CI CD Infrastructure Provisioning and Artifact Promotion
 
 **Primary question:**
 
 > How do production AI changes move from source and validated artifacts toward controlled deployment environments?
 
-This file establishes:
+This lesson establishes:
 
 - CI/CD mental models
 - CI and delivery concepts
@@ -213,13 +213,13 @@ Environment
 ### 02 — Deployment Strategies and Progressive Delivery
 
 **File:**  
-`02-Deployment-Strategies-and-Progressive-Delivery.md`
+Deployment Strategies and Progressive Delivery
 
 **Primary question:**
 
 > How can a production change be introduced gradually so that risk and blast radius remain controlled?
 
-This file establishes:
+This lesson establishes:
 
 - Deployment versus release
 - Rolling deployment
@@ -257,13 +257,13 @@ The file emphasizes that progressive delivery **reduces and contains risk; it do
 ### 03 — Release Gates, Rollback and Change Safety
 
 **File:**  
-`03-Release-Gates-Rollback-and-Change-Safety.md`
+Release Gates Rollback and Change Safety
 
 **Primary question:**
 
 > How do we decide whether a production change should continue, stop or be reversed?
 
-This file establishes:
+This lesson establishes:
 
 - Release gates
 - Pre-deployment validation

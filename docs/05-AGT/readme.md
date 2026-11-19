@@ -1031,13 +1031,7 @@ This is a cross-cutting mental model spanning multiple AGT chapters rather than 
 
 # Curriculum Structure
 
-AGT Phase 1 contains:
-
-- **12 chapters**
-- **35 lessons**
-- **12 chapter READMEs**
-- **1 domain README**
-- **48 Markdown artifacts in total**
+AGT contains **12 chapters** and **35 lessons**.
 
 The curriculum progresses from foundational agent concepts toward end-to-end architecture and design review.
 
@@ -1058,11 +1052,10 @@ Focus:
 - agent vs LLM application,
 - architecture composition.
 
-Files:
-
-1. `01-Agent-Definition-and-System-Boundaries.md`
-2. `02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md`
-3. `03-Agent-Architecture-and-System-Composition.md`
+Lessons:
+1. Agent Definition and System Boundaries
+2. Agent vs LLM Applications Workflows and RAG Systems
+3. Agent Architecture and System Composition
 
 **Previous:** None  
 **Next:** AGT-02 — Agent Runtime, Loops & Bounded Autonomy
@@ -1080,11 +1073,10 @@ Focus:
 - termination,
 - bounded autonomy.
 
-Files:
-
-1. `01-Agent-Runtime-Harness-and-Execution-Loop.md`
-2. `02-Agent-Decision-Action-Observation-and-Continuation.md`
-3. `03-Termination-Policies-and-Bounded-Autonomy.md`
+Lessons:
+1. Agent Runtime Harness and Execution Loop
+2. Agent Decision Action Observation and Continuation
+3. Termination Policies and Bounded Autonomy
 
 **Previous:** AGT-01-Agent-Systems-Foundations  
 **Next:** AGT-03 — Tools & Action Execution
@@ -1105,11 +1097,10 @@ Focus:
 - idempotency,
 - invocation boundaries.
 
-Files:
-
-1. `01-Tool-Contracts-Schemas-and-Structured-Calls.md`
-2. `02-Tool-Selection-Routing-and-Execution.md`
-3. `03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md`
+Lessons:
+1. Tool Contracts Schemas and Structured Calls
+2. Tool Selection Routing and Execution
+3. Tool Failures Side Effects Idempotency and Invocation Boundaries
 
 **Previous:** AGT-02 — Agent Runtime, Loops & Bounded Autonomy  
 **Next:** AGT-04 — State, Context & Memory
@@ -1137,11 +1128,10 @@ Focus:
 - staleness,
 - correctness.
 
-Files:
-
-1. `01-Agent-State-Context-and-Lifecycle.md`
-2. `02-Agent-Memory-Types-and-Memory-Architecture.md`
-3. `03-Memory-Recall-Update-Staleness-and-Correctness.md`
+Lessons:
+1. Agent State Context and Lifecycle
+2. Agent Memory Types and Memory Architecture
+3. Memory Recall Update Staleness and Correctness
 
 **Previous:** AGT-03 — Tools & Action Execution  
 **Next:** AGT-05 — Planning & Adaptive Execution
@@ -1161,11 +1151,10 @@ Focus:
 - critique,
 - plan quality.
 
-Files:
-
-1. `01-Task-Decomposition-and-Agent-Planning.md`
-2. `02-Plan-Execution-Replanning-and-Adaptation.md`
-3. `03-Verification-Critique-and-Plan-Quality.md`
+Lessons:
+1. Task Decomposition and Agent Planning
+2. Plan Execution Replanning and Adaptation
+3. Verification Critique and Plan Quality
 
 **Previous:** AGT-04 — State, Context & Memory  
 **Next:** AGT-06 — Workflow Orchestration & Durable Execution
@@ -1187,11 +1176,10 @@ Focus:
 - long-running continuity,
 - compensation.
 
-Files:
-
-1. `01-Workflow-Patterns-Branches-Loops-and-Parallelism.md`
-2. `02-State-Transitions-Checkpoints-and-Durable-Execution.md`
-3. `03-Async-Long-Running-Execution-Continuity-and-Compensation.md`
+Lessons:
+1. Workflow Patterns Branches Loops and Parallelism
+2. State Transitions Checkpoints and Durable Execution
+3. Async Long Running Execution Continuity and Compensation
 
 **Previous:** AGT-05 — Planning & Adaptive Execution  
 **Next:** AGT-07 — Human Control & Approval
@@ -1209,10 +1197,9 @@ Focus:
 - escalation,
 - high-risk actions.
 
-Files:
-
-1. `01-Human-in-the-Loop-and-Intervention-Patterns.md`
-2. `02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md`
+Lessons:
+1. Human in the Loop and Intervention Patterns
+2. Approval Boundaries Escalation and High Risk Actions
 
 **Previous:** AGT-06 — Workflow Orchestration & Durable Execution  
 **Next:** AGT-08 — Agent Interfaces & Protocols
@@ -1231,11 +1218,10 @@ Focus:
 - agent-to-agent interoperability,
 - protocol selection and evolution.
 
-Files:
-
-1. `01-Agent-Capability-Interfaces-and-Interoperability.md`
-2. `02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md`
-3. `03-Agent-to-Agent-Interoperability-and-A2A.md`
+Lessons:
+1. Agent Capability Interfaces and Interoperability
+2. Model Context Protocol MCP and Tool Interoperability
+3. Agent to Agent Interoperability and A2A
 
 **Previous:** AGT-07 — Human Control & Approval  
 **Next:** AGT-09 — Multi-Agent Systems
@@ -1257,11 +1243,10 @@ Focus:
 - communication cost,
 - termination.
 
-Files:
-
-1. `01-Single-Agent-vs-Multi-Agent-Architecture.md`
-2. `02-Delegation-Supervision-and-Agent-Coordination.md`
-3. `03-Multi-Agent-State-Communication-Failure-and-Termination.md`
+Lessons:
+1. Single Agent vs Multi Agent Architecture
+2. Delegation Supervision and Agent Coordination
+3. Multi Agent State Communication Failure and Termination
 
 **Previous:** AGT-08 — Agent Interfaces & Protocols  
 **Next:** AGT-10 — Agent Evaluation & Behavioral Testing
@@ -1293,11 +1278,10 @@ Focus:
 - leakage,
 - regression testing.
 
-Files:
-
-1. `01-Agent-Task-Success-and-Behavioral-Evaluation.md`
-2. `02-Trajectory-Tool-Planning-and-State-Evaluation.md`
-3. `03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md`
+Lessons:
+1. Agent Task Success and Behavioral Evaluation
+2. Trajectory Tool Planning and State Evaluation
+3. Agent Evaluation Sets Metrics and Regression Testing
 
 **Previous:** AGT-09 — Multi-Agent Systems  
 **Next:** AGT-11 — Agent Reliability & Safety
@@ -1326,11 +1310,10 @@ Focus:
 - termination,
 - tool boundaries.
 
-Files:
-
-1. `01-Agent-Failure-Modes-and-Recovery-Strategies.md`
-2. `02-Execution-and-State-Safety.md`
-3. `03-Agent-Safety-Excessive-Agency-and-Tool-Boundaries.md`
+Lessons:
+1. Agent Failure Modes and Recovery Strategies
+2. Execution and State Safety
+3. Agent Safety Excessive Agency and Tool Boundaries
 
 **Previous:** AGT-10 — Agent Evaluation & Behavioral Testing  
 **Next:** AGT-12 — Agent Architecture & Design Review
@@ -1349,11 +1332,10 @@ Focus:
 - architecture validation,
 - design review.
 
-Files:
-
-1. `01-Agent-Architecture-Selection-and-Trade-offs.md`
-2. `02-End-to-End-Agent-System-Design.md`
-3. `03-Agent-Design-Review-and-Architecture-Validation.md`
+Lessons:
+1. Agent Architecture Selection and Trade offs
+2. End to End Agent System Design
+3. Agent Design Review and Architecture Validation
 
 **Previous:** AGT-11 — Agent Reliability & Safety  
 **Next:** None
@@ -1490,11 +1472,11 @@ The artifacts should become increasingly integrated.
 
 ---
 
-## Concept Ownership
+## Where Topics Are Covered
 
-Each major concept has one primary owner.
+Each major concept has one primary teaching chapter.
 
-| Concept | Primary Owner |
+| Concept | Covered in |
 |---|---|
 | Agent definition | AGT-01 |
 | Agent architecture composition | AGT-01 |
@@ -1746,84 +1728,6 @@ The objective is not framework memorization.
 The objective is engineering judgment.
 
 ---
-
-## Documentation Map
-
-```text
-docs/
-└── 05-AGT/
-    ├── README.md
-    ├── AGT-01/
-    │   ├── README.md
-    │   ├── 01-Agent-Definition-and-System-Boundaries.md
-    │   ├── 02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md
-    │   └── 03-Agent-Architecture-and-System-Composition.md
-    │
-    ├── AGT-02/
-    │   ├── README.md
-    │   ├── 01-Agent-Runtime-Harness-and-Execution-Loop.md
-    │   ├── 02-Agent-Decision-Action-Observation-and-Continuation.md
-    │   └── 03-Termination-Policies-and-Bounded-Autonomy.md
-    │
-    ├── AGT-03/
-    │   ├── README.md
-    │   ├── 01-Tool-Contracts-Schemas-and-Structured-Calls.md
-    │   ├── 02-Tool-Selection-Routing-and-Execution.md
-    │   └── 03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md
-    │
-    ├── AGT-04/
-    │   ├── README.md
-    │   ├── 01-Agent-State-Context-and-Lifecycle.md
-    │   ├── 02-Agent-Memory-Types-and-Memory-Architecture.md
-    │   └── 03-Memory-Recall-Update-Staleness-and-Correctness.md
-    │
-    ├── AGT-05/
-    │   ├── README.md
-    │   ├── 01-Task-Decomposition-and-Agent-Planning.md
-    │   ├── 02-Plan-Execution-Replanning-and-Adaptation.md
-    │   └── 03-Verification-Critique-and-Plan-Quality.md
-    │
-    ├── AGT-06/
-    │   ├── README.md
-    │   ├── 01-Workflow-Patterns-Branches-Loops-and-Parallelism.md
-    │   ├── 02-State-Transitions-Checkpoints-and-Durable-Execution.md
-    │   └── 03-Async-Long-Running-Execution-Continuity-and-Compensation.md
-    │
-    ├── AGT-07/
-    │   ├── README.md
-    │   ├── 01-Human-in-the-Loop-and-Intervention-Patterns.md
-    │   └── 02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md
-    │
-    ├── AGT-08/
-    │   ├── README.md
-    │   ├── 01-Agent-Capability-Interfaces-and-Interoperability.md
-    │   ├── 02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md
-    │   └── 03-Agent-to-Agent-Interoperability-and-A2A.md
-    │
-    ├── AGT-09/
-    │   ├── README.md
-    │   ├── 01-Single-Agent-vs-Multi-Agent-Architecture.md
-    │   ├── 02-Delegation-Supervision-and-Agent-Coordination.md
-    │   └── 03-Multi-Agent-State-Communication-Failure-and-Termination.md
-    │
-    ├── AGT-10/
-    │   ├── README.md
-    │   ├── 01-Agent-Task-Success-and-Behavioral-Evaluation.md
-    │   ├── 02-Trajectory-Tool-Planning-and-State-Evaluation.md
-    │   └── 03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md
-    │
-    ├── AGT-11/
-    │   ├── README.md
-    │   ├── 01-Agent-Failure-Modes-and-Recovery-Strategies.md
-    │   ├── 02-Execution-and-State-Safety.md
-    │   └── 03-Agent-Safety-Excessive-Agency-and-Tool-Boundaries.md
-    │
-    └── AGT-12/
-        ├── README.md
-        ├── 01-Agent-Architecture-Selection-and-Trade-offs.md
-        ├── 02-End-to-End-Agent-System-Design.md
-        └── 03-Agent-Design-Review-and-Architecture-Validation.md
-```
 
 ---
 

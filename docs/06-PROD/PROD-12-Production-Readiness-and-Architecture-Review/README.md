@@ -183,7 +183,7 @@ How do we validate that the complete system actually behaves as required?
 
 ## 01 — Production Readiness and Architecture Review
 
-**File:** [`01-Production-Readiness-and-Architecture-Review.md`](./01-Production-Readiness-and-Architecture-Review.md)
+**File:** [Production Readiness and Architecture Review](./01-Production-Readiness-and-Architecture-Review.md)
 
 **Primary responsibility:** establish how to conduct a structured production-readiness and architecture review.
 
@@ -207,13 +207,13 @@ The file covers:
 - Review outcomes
 - Decision records
 
-This file owns the detailed teaching of **production readiness and architecture review**.
+This lesson owns the detailed teaching of **production readiness and architecture review**.
 
 ---
 
 ## 02 — Production Trade-offs and Operational Design
 
-**File:** [`02-Production-Trade-offs-and-Operational-Design.md`](./02-Production-Trade-offs-and-Operational-Design.md)
+**File:** [Production Trade offs and Operational Design](./02-Production-Trade-offs-and-Operational-Design.md)
 
 **Primary responsibility:** examine how production constraints affect architectural decisions and operational design.
 
@@ -230,13 +230,13 @@ The file covers:
 - Architecture fitness
 - Production decision-making
 
-This file owns the detailed teaching of **production trade-offs and operational design**.
+This lesson owns the detailed teaching of **production trade-offs and operational design**.
 
 ---
 
 ## 03 — End-to-End Production System Validation
 
-**File:** [`03-End-to-End-Production-System-Validation.md`](./03-End-to-End-Production-System-Validation.md)
+**File:** [End to End Production System Validation](./03-End-to-End-Production-System-Validation.md)
 
 **Primary responsibility:** establish how to validate the complete AI system against production requirements.
 
@@ -255,7 +255,7 @@ The file covers:
 - Readiness decisions
 - Continuous validation
 
-This file owns the detailed teaching of **end-to-end production system validation**.
+This lesson owns the detailed teaching of **end-to-end production system validation**.
 
 ---
 
@@ -457,7 +457,7 @@ Production Readiness
 
 A system can function correctly in controlled conditions while still lacking the evidence, operational capabilities, resilience, security, economics, or change safety required for production.
 
-Detailed readiness assessment belongs in File 01.
+Detailed readiness assessment belongs in Lesson 01.
 
 ---
 
@@ -485,7 +485,7 @@ The central question is not whether an architecture looks technically impressive
 
 It is whether the architecture is **appropriate for the actual production requirements and constraints**.
 
-Detailed architecture-review methodology belongs in File 01.
+Detailed architecture-review methodology belongs in Lesson 01.
 
 ---
 
@@ -527,7 +527,7 @@ Evidence
 Decision
 ```
 
-Detailed production trade-off analysis belongs in File 02.
+Detailed production trade-off analysis belongs in Lesson 02.
 
 ---
 
@@ -563,7 +563,7 @@ Failure Path
 
 For AI systems, relevant validation may also include model behavior, retrieval changes, tool integrations, provider dependencies, quality degradation, cost changes, and other AI-specific production scenarios.
 
-Detailed validation methodology belongs in File 03.
+Detailed validation methodology belongs in Lesson 03.
 
 ---
 
@@ -766,28 +766,17 @@ The final competency is:
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 ## Chapter Directory
-
-```text
-docs/
-└── 06-PROD/
-    └── PROD-12-Production-Readiness-and-Architecture-Review/
-        ├── README.md
-        ├── 01-Production-Readiness-and-Architecture-Review.md
-        ├── 02-Production-Trade-offs-and-Operational-Design.md
-        └── 03-End-to-End-Production-System-Validation.md
-```
 
 ## Chapter Files
 
 | File | Responsibility |
 |---|---|
-| `README.md` | Chapter navigation and orientation |
-| `01-Production-Readiness-and-Architecture-Review.md` | Production-readiness and architecture-review teaching |
-| `02-Production-Trade-offs-and-Operational-Design.md` | Production trade-offs and operational-design teaching |
-| `03-End-to-End-Production-System-Validation.md` | End-to-end production-validation teaching |
+| README | Chapter navigation and orientation |
+| Production Readiness and Architecture Review | Production-readiness and architecture-review teaching |
+| Production Trade offs and Operational Design | Production trade-offs and operational-design teaching |
+| End to End Production System Validation | End-to-end production-validation teaching |
 
 The README introduces these concepts for orientation but does not replace the detailed teaching in the three files.
 
@@ -797,11 +786,11 @@ The README introduces these concepts for orientation but does not replace the de
 
 Begin with:
 
-[`01-Production-Readiness-and-Architecture-Review.md`](./01-Production-Readiness-and-Architecture-Review.md)
+[Production Readiness and Architecture Review](./01-Production-Readiness-and-Architecture-Review.md)
 
 Then continue through:
 
-1. [`02-Production-Trade-offs-and-Operational-Design.md`](./02-Production-Trade-offs-and-Operational-Design.md)
-2. [`03-End-to-End-Production-System-Validation.md`](./03-End-to-End-Production-System-Validation.md)
+1. [Production Trade offs and Operational Design](./02-Production-Trade-offs-and-Operational-Design.md)
+2. [End to End Production System Validation](./03-End-to-End-Production-System-Validation.md)
 
 The README is intentionally an orientation layer. Detailed production-readiness, trade-off, and validation teaching belongs in the respective files.

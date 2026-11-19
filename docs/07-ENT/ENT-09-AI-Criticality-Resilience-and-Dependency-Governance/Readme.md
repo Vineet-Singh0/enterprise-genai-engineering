@@ -45,9 +45,9 @@ Before starting ENT-09, you should understand the relevant concepts from:
 
 ## Chapter Structure
 
-### File 01 — Criticality, Dependency Mapping and Concentration Risk
+### Lesson 01 — Criticality, Dependency Mapping and Concentration Risk
 
-[Open File 01](./01-AI-Criticality-Dependency-Mapping-and-Concentration-Risk.md)
+[Open Lesson 01](./01-AI-Criticality-Dependency-Mapping-and-Concentration-Risk.md)
 
 Establishes the foundation for resilience reasoning by examining:
 
@@ -63,9 +63,9 @@ The central question is:
 
 > **How important is this AI capability, what does it depend on, and where could concentrated dependencies create enterprise-wide disruption?**
 
-### File 02 — Continuity, Degraded Modes and Recovery Requirements
+### Lesson 02 — Continuity, Degraded Modes and Recovery Requirements
 
-[Open File 02](./02-AI-Continuity-Degraded-Modes-and-Recovery-Requirements.md)
+[Open Lesson 02](./02-AI-Continuity-Degraded-Modes-and-Recovery-Requirements.md)
 
 Builds on the dependency and criticality analysis to define:
 
@@ -81,9 +81,9 @@ The central question is:
 
 > **If the preferred AI capability or dependency becomes unavailable or degraded, how must the required business outcome continue, and what recovery outcome is required?**
 
-### File 03 — Enterprise AI Resilience and Dependency Governance
+### Lesson 03 — Enterprise AI Resilience and Dependency Governance
 
-[Open File 03](./03-Enterprise-AI-Resilience-and-Dependency-Governance.md)
+[Open Lesson 03](./03-Enterprise-AI-Resilience-and-Dependency-Governance.md)
 
 Brings the previous concepts together into enterprise resilience governance covering:
 
@@ -143,9 +143,9 @@ The progression is intentionally outcome-oriented:
 
 Complete the chapter in order:
 
-1. **File 01** — establish criticality and dependency understanding.
-2. **File 02** — translate that understanding into continuity, degraded-mode, fallback, and recovery requirements.
-3. **File 03** — use those requirements to reason about resilience strategy and dependency governance.
+1. **Lesson 01** — establish criticality and dependency understanding.
+2. **Lesson 02** — translate that understanding into continuity, degraded-mode, fallback, and recovery requirements.
+3. **Lesson 03** — use those requirements to reason about resilience strategy and dependency governance.
 
 You should be able to explain the complete reasoning chain:
 

@@ -210,8 +210,7 @@ AGT-03 does not re-teach those foundations.
 
 ---
 
-## Concept Ownership Boundaries
-
+## Where This Is Covered
 The following ownership model prevents duplication across the AGT domain.
 
 | Concept | Primary Owner |

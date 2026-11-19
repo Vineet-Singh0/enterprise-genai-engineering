@@ -198,4 +198,4 @@ The goal is not to memorize every concurrency mechanism. The goal is to reason a
 
 **End of Document**
 
-This completes the Markdown file: `README.md`
+This completes the Markdown file: README

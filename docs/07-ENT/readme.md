@@ -733,9 +733,9 @@ A learner who can demonstrate these capabilities has completed the intended ENT 
 
 ---
 
-## 24. Repository Navigation
+## 24. Related Domains
 
-- [Enterprise GenAI Engineering Documentation](../README.md)
+- [Curriculum overview](../README.md)
 - [ENG](../01-ENG/README.md)
 - [AIF](../02-AIF/README.md)
 - [LLM](../03-LLM/README.md)
@@ -747,36 +747,18 @@ A learner who can demonstrate these capabilities has completed the intended ENT 
 
 ## 25. ENT Domain Structure
 
-```text
-docs/
-└── 07-ENT/
-    ├── README.md
-    ├── ENT-01/
-    ├── ENT-02/
-    ├── ENT-03/
-    ├── ENT-04/
-    ├── ENT-05/
-    ├── ENT-06/
-    ├── ENT-07/
-    ├── ENT-08/
-    └── ENT-09/
-```
-
-### Approved Artifact Count
+### Domain Contents
 
 ```text
 9 chapters
 28 lessons
-9 chapter READMEs
-1 domain README
-38 total Markdown artifacts
 ```
 
 ---
 
-## 26. Concept Ownership
+## Where Topics Are Covered
 
-The frozen architecture defines the primary owner of each concept.
+Each ENT chapter focuses on a distinct enterprise concern:
 
 - **Governance** → ENT-02
 - **Risk / assurance** → ENT-03
@@ -787,8 +769,6 @@ The frozen architecture defines the primary owner of each concept.
 - **AI economics / portfolio** → ENT-08
 - **Criticality / resilience** → ENT-09
 
-Cross-domain references are expected and encouraged.
+Cross-domain references are expected. Deep re-teaching of another chapter's core topic is not.
 
-Deep re-teaching is not.
-
-The domain README provides orientation and navigation; the chapter lessons provide the actual instruction.
+This domain overview provides orientation; the chapter lessons provide the instruction.

@@ -134,7 +134,7 @@ The primary engineering question is:
 
 ## What PROD-11 Does Not Own
 
-PROD-11 deliberately preserves concept ownership across the wider curriculum.
+PROD-11 deliberately preserves topic boundaries across the wider curriculum.
 
 | Area | Primary Owner | Relationship to PROD-11 |
 |---|---|---|
@@ -356,9 +356,9 @@ The progression moves from understanding **how AI systems change** toward decidi
 
 | File | Primary Responsibility |
 |---|---|
-| `01-AI-Model-Application-and-Configuration-Lifecycle.md` | AI lifecycle across models, applications, configuration, dependencies, and runtime changes |
-| `02-Production-Evaluation-Drift-and-Quality-Signals.md` | Production evaluation, quality baselines, regression, drift, and quality signals |
-| `03-Evaluation-Gates-Continuous-Improvement-and-Safe-Change.md` | Evaluation gates, change qualification, controlled experimentation, and continuous improvement |
+| AI Model Application and Configuration Lifecycle | AI lifecycle across models, applications, configuration, dependencies, and runtime changes |
+| Production Evaluation Drift and Quality Signals | Production evaluation, quality baselines, regression, drift, and quality signals |
+| Evaluation Gates Continuous Improvement and Safe Change | Evaluation gates, change qualification, controlled experimentation, and continuous improvement |
 
 ---
 
@@ -366,9 +366,9 @@ The progression moves from understanding **how AI systems change** toward decidi
 
 ### 01 — AI Model, Application and Configuration Lifecycle
 
-`01-AI-Model-Application-and-Configuration-Lifecycle.md`
+AI Model Application and Configuration Lifecycle
 
-This file owns the lifecycle perspective of PROD-11.
+This lesson owns the lifecycle perspective of PROD-11.
 
 It covers:
 
@@ -395,9 +395,9 @@ It covers:
 
 ### 02 — Production Evaluation, Drift and Quality Signals
 
-`02-Production-Evaluation-Drift-and-Quality-Signals.md`
+Production Evaluation Drift and Quality Signals
 
-This file owns production quality measurement and interpretation.
+This lesson owns production quality measurement and interpretation.
 
 It covers:
 
@@ -432,15 +432,15 @@ Likewise:
 
 > **No detected drift does not prove that AI quality is good.**
 
-Detailed treatment belongs in File 02.
+Detailed treatment belongs in Lesson 02.
 
 ---
 
 ### 03 — Evaluation Gates, Continuous Improvement and Safe Change
 
-`03-Evaluation-Gates-Continuous-Improvement-and-Safe-Change.md`
+Evaluation Gates Continuous Improvement and Safe Change
 
-This file owns the connection between evaluation evidence and change decisions.
+This lesson owns the connection between evaluation evidence and change decisions.
 
 It covers:
 
@@ -564,7 +564,7 @@ Build → Validate → Qualify → Release
                          ↺
 ```
 
-The detailed lifecycle model is owned by File 01.
+The detailed lifecycle model is owned by Lesson 01.
 
 ---
 
@@ -592,7 +592,7 @@ The purpose is to provide evidence for production decisions.
 
 Production quality should not be reduced to one universal metric.
 
-The detailed treatment of quality signals, evaluation evidence, regression, and drift is owned by File 02.
+The detailed treatment of quality signals, evaluation evidence, regression, and drift is owned by Lesson 02.
 
 ---
 
@@ -621,7 +621,7 @@ Learn
 
 Continuous improvement is therefore not an uncontrolled sequence of changes.
 
-The detailed evaluation-gate and improvement process is owned by File 03.
+The detailed evaluation-gate and improvement process is owned by Lesson 03.
 
 ---
 
@@ -894,23 +894,10 @@ without confusing the ownership of these domains.
 
 ---
 
-## Repository Navigation
-
+## Chapter Contents
 The PROD-11 chapter is located at:
 
-```text
-docs/06-PROD/PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/
-```
-
 Its approved structure is:
-
-```text
-PROD-11/
-├── README.md
-├── 01-AI-Model-Application-and-Configuration-Lifecycle.md
-├── 02-Production-Evaluation-Drift-and-Quality-Signals.md
-└── 03-Evaluation-Gates-Continuous-Improvement-and-Safe-Change.md
-```
 
 The README is the navigation and orientation hub.
 
