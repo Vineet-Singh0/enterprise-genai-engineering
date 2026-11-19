@@ -3,6 +3,12 @@ import { gfmHeadingId } from 'marked-gfm-heading-id';
 import { codeToHtml } from 'shiki';
 import { resolveMarkdownHref } from './links';
 import type { DomainId } from './types';
+import {
+  extractMathSegments,
+  headingPlainFromSource,
+  renderMathSegments,
+  restoreMathPlaceholders,
+} from './math';
 
 let pluginsReady = false;
 
@@ -67,8 +73,10 @@ export async function renderMarkdown(
 ): Promise<RenderResult> {
   ensurePlugins();
 
-  const { body, fences } = extractFences(source);
+  const { body: fencedBody, fences } = extractFences(source);
+  const { body, segments } = extractMathSegments(fencedBody);
   const highlighted = await Promise.all(fences.map((f) => highlightFence(f.lang, f.code)));
+  const mathHtml = renderMathSegments(segments, sourceRelativePath);
 
   const headings: RenderResult['headings'] = [];
   const renderer = new marked.Renderer();
@@ -97,7 +105,14 @@ export async function renderMarkdown(
   };
 
   renderer.heading = ({ text, depth }: Tokens.Heading) => {
-    const plain = text.replace(/<[^>]+>/g, '');
+    // Expand math placeholders back to delimiter form, then strip to plain TOC/slug text.
+    // Do NOT derive labels from rendered KaTeX/MathML.
+    const withMathSource = text.replace(/EGEMATH(\d+)EGEMATH/g, (_m, n: string) => {
+      const seg = segments[Number(n)];
+      if (!seg) return '';
+      return seg.display ? `\\[${seg.tex}\\]` : `\\(${seg.tex}\\)`;
+    });
+    const plain = headingPlainFromSource(withMathSource);
     const id =
       plain
         .toLowerCase()
@@ -105,13 +120,15 @@ export async function renderMarkdown(
         .trim()
         .replace(/\s+/g, '-') || `heading-${headings.length}`;
     headings.push({ depth, text: plain, id });
+    // Keep placeholder tokens in heading HTML so math restores inside the heading.
     return `<h${depth} id="${id}">${text}</h${depth}>`;
   };
 
   // Placeholders must stay literal — never treat as code.
   renderer.code = ({ text, lang }: Tokens.Code) => {
-    if (/^EGEFENCE\d+EGEFENCE$/.test(text.trim())) {
-      return text.trim();
+    const trimmed = text.trim();
+    if (/^EGEFENCE\d+EGEFENCE$/.test(trimmed) || /^EGEMATH\d+EGEMATH$/.test(trimmed)) {
+      return trimmed;
     }
     if (lang === 'mermaid') {
       return `<div class="mermaid-block"><pre class="mermaid">${escapeHtml(text)}</pre></div>`;
@@ -124,6 +141,8 @@ export async function renderMarkdown(
 
   // marked may wrap placeholders in <p> — unwrap then substitute.
   html = html.replace(/<p>\s*(EGEFENCE\d+EGEFENCE)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*(EGEMATH\d+EGEMATH)\s*<\/p>/g, '$1');
+  html = restoreMathPlaceholders(html, mathHtml);
   html = html.replace(/EGEFENCE(\d+)EGEFENCE/g, (_m, n: string) => highlighted[Number(n)] ?? '');
 
   return { html, headings };
