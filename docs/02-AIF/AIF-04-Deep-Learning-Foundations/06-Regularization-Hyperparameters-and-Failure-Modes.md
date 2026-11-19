@@ -823,5 +823,3 @@ Related material:
 - [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md): transformer architectures and their computational foundations.
 
 The subsequent AIF domains build on the concepts developed here. They introduce specialized architectures and representations rather than replacing the core training principles described in this chapter.
-
-**Chapter status:** Draft generated for review. All six AIF-04 teaching chapter drafts have now been generated. The domain is ready for a review pass; completion should be confirmed after checking technical accuracy, consistency, internal links, and alignment with the approved documentation plan.

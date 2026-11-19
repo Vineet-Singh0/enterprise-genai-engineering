@@ -125,12 +125,6 @@ Consider LLM-02 complete when you can:
 - **Production Engineering:** Consult PROD for serving, deployment, operational quality, and monitoring.
 - **Enterprise Engineering:** Consult ENT for governance, security, compliance, data rights, and enterprise risk.
 
-Relative link destinations reflect the proposed documentation structure and should be validated against the repository before publication.
-
 ## Suggested Next Step
 
-Start with [01 — Language Model Training Foundations and Objectives](01-Language-Model-Training-Foundations-and-Objectives.md) once the corresponding chapter has been generated and approved.
-
----
-
-*Documentation status: Navigation structure generated from the provisional LLM-02 plan. The curriculum architecture, chapter paths, and repository integration remain subject to validation.*
+Start with [01 — Language Model Training Foundations and Objectives](01-Language-Model-Training-Foundations-and-Objectives.md).

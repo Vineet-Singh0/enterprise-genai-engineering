@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 04: HTTP Fundamentals
+# HTTP Fundamentals
 
 ## 1. Learning Objectives
 

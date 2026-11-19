@@ -296,7 +296,6 @@ The following helper provides a compact diagnostic for source-result lists. It e
 ```python
 from collections.abc import Mapping, Sequence
 
-
 def _validate_ids(values, label: str) -> list[str]:
     if isinstance(values, (str, bytes)) or not isinstance(values, Sequence):
         raise TypeError(f"{label} must be a sequence of candidate IDs")
@@ -317,7 +316,6 @@ def _validate_ids(values, label: str) -> list[str]:
         raise ValueError(f"{label} contains duplicate candidate IDs")
 
     return ids
-
 
 def inspect_candidate_pool(
     source_results: Mapping[str, Sequence[str]],
@@ -572,7 +570,6 @@ The following implementation combines candidates by canonical ID and preserves s
 ```python
 from collections.abc import Mapping, Sequence
 from typing import Any
-
 
 def combine_candidates(
     source_results: Mapping[str, Sequence[Mapping[str, Any]]],

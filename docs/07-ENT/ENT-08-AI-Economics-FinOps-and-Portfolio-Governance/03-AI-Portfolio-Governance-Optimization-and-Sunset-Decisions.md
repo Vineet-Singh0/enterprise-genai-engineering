@@ -1194,7 +1194,7 @@ ENT-08 owns the question:
 
 > **Should this capability be sunset?**
 
-It does not own:
+It does not cover:
 
 > **How do we technically shut down every component?**
 
@@ -2048,7 +2048,6 @@ Expected Value
 Investment Decision
       ↓
 Build / Adopt / Experiment
-
 
 FILE 03
 

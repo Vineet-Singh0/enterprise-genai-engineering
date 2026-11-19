@@ -1860,8 +1860,6 @@ Remember:
 
 Refer to the corresponding RET chapters for detailed technical explanations.
 
-The approved RET Phase 1 Documentation Plan v1.4.1 determines the exact chapter destinations. The repository folder names have not been independently verified in the current working context, so no unverified relative links are provided here.
-
 - RET-02 — Document Ingestion and Corpus Quality.
 - RET-03 — Chunking and Context Preservation.
 - RET-04 — Retrieval Representations and Indexing.

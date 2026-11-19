@@ -927,8 +927,6 @@ Continue through the approved repository documentation:
 - [Chapter 03 — Attention Motivation and Sequential Limitations](03-Attention-Motivation-and-Sequential-Limitations.md) — why recurrent limitations motivated attention-based approaches.
 - [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md) — detailed attention and transformer concepts.
 
-Cross-domain links are intended references and should be checked against the actual repository paths before publication.
-
 ---
 
 # End of Document

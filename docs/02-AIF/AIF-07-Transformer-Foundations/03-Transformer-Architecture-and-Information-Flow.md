@@ -44,42 +44,21 @@ For a sequence of tokens, the model begins with numerical representations and re
 
 A simplified flow is:
 
-<box border radius="lg" padding={4} gap={2} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Input tokens**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Token representations + positional information**
-
-    <text color="secondary" size="sm">Exact positional method depends on the architecture</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center" gap={2}>
-    **Transformer block 1**
-
-    <text size="sm" textAlign="center">Attention, residual paths, normalization, feed-forward transformation</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center" gap={2}>
-    **Transformer block 2 ... block N**
-
-    <text size="sm" textAlign="center">Repeated learned transformations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Final contextual representations**
-  </box>
-  <text color="secondary" size="sm" textAlign="center">A task-specific output component may consume these representations.</text>
-</box>
+```text
+**Input tokens**
+        ↓
+**Token representations + positional information**
+Exact positional method depends on the architecture
+        ↓
+**Transformer block 1**
+Attention, residual paths, normalization, feed-forward transformation
+        ↓
+**Transformer block 2 ... block N**
+Repeated learned transformations
+        ↓
+**Final contextual representations**
+A task-specific output component may consume these representations.
+```
 
 The diagram is conceptual. Different Transformer families arrange components differently, and the output component depends on the task.
 
@@ -336,47 +315,21 @@ For a pre-normalization design:
 
 The data flow is:
 
-<box border radius="lg" padding={4} gap={2} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Input \(X\)**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Layer Normalization**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Multi-Head Attention**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center">
-    **Residual addition with \(X\)**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Layer Normalization**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Position-Wise FFN**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Residual addition → Block output**
-  </box>
-</box>
+```text
+**Input \(X\)**
+        ↓
+**Layer Normalization**
+        ↓
+**Multi-Head Attention**
+        ↓
+**Residual addition with \(X\)**
+        ↓
+**Layer Normalization**
+        ↓
+**Position-Wise FFN**
+        ↓
+**Residual addition → Block output**
+```
 
 The diagram emphasizes the order of operations. A real implementation must preserve the intended residual connections and tensor dimensions.
 

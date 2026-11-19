@@ -75,7 +75,7 @@ It does not establish which model is best for a particular application. That req
 
 A useful first step is to separate five classification dimensions.
 
-<text preserveWhitespace>{`                         LANGUAGE MODEL
+{`                         LANGUAGE MODEL
                                |
           +--------------------+--------------------+
           |                    |                    |
@@ -92,7 +92,7 @@ A useful first step is to separate five classification dimensions.
                  |                           |
              Pretrained                 General-purpose
              Instruction-tuned          Domain-specific
-             Task-adapted               Task-specific`}</text>
+             Task-adapted               Task-specific`
 
 The diagram is a conceptual map, not a strict taxonomy. The dimensions overlap, and additional properties—such as model size, licensing, access method, and context capacity—can be used to describe models more precisely.
 
@@ -185,7 +185,7 @@ A well-known example is [BERT](https://arxiv.org/abs/1810.04805), introduced for
 
 Conceptually:
 
-<text preserveWhitespace>{`Input text
+{`Input text
     |
     v
 Encoder-based model
@@ -195,7 +195,7 @@ Contextual representations
     |
     +----> Classification
     +----> Extraction
-    +----> Other downstream tasks`}</text>
+    +----> Other downstream tasks`
 
 An encoder-only model is not automatically a good embedding model for every semantic-search application. Its usefulness depends on its training, adaptation, pooling strategy, and evaluation for the intended task.
 

@@ -459,5 +459,3 @@ When persistent vocabulary mismatch remains after reasonable lexical configurati
 - [Elasticsearch — Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html)
 - [Apache Lucene — Core documentation](https://lucene.apache.org/core/)
 - Formal paper: [SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking](https://arxiv.org/abs/2107.05720)
-
-External links should be checked for current availability and version compatibility before publication.

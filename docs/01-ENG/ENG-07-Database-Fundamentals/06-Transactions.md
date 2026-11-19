@@ -236,59 +236,10 @@ ACID describes four important transaction properties:
 
 These properties address different failure and correctness problems.
 
-<box gap={3}>
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" padding={3} size="48px" align=center justify=center>
-      <icon name="layers" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Atomicity**
-
-      A transaction's database changes are committed as a unit or rolled back as a unit.
-
-      <text color="secondary" size="sm">Problem addressed: partial completion of a logical operation.</text>
-    </box>
-  </row>
-  <divider color="subtle" />
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" padding={3} size="48px" align=center justify=center>
-      <icon name="shield-check" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Consistency**
-
-      A transaction that satisfies the database's applicable rules takes the database from one valid state to another valid state.
-
-      <text color="secondary" size="sm">Problem addressed: violating defined integrity rules.</text>
-    </box>
-  </row>
-  <divider color="subtle" />
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" padding={3} size="48px" align=center justify=center>
-      <icon name="git-compare" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Isolation**
-
-      Concurrent transactions are controlled so that their interactions follow the guarantees of the chosen isolation level.
-
-      <text color="secondary" size="sm">Problem addressed: incorrect or unexpected interactions between concurrent operations.</text>
-    </box>
-  </row>
-  <divider color="subtle" />
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" padding={3} size="48px" align=center justify=center>
-      <icon name="hard-drive" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Durability**
-
-      Once a transaction is successfully committed, its changes are intended to survive subsequent failures according to the DBMS's durability guarantees and configuration.
-
-      <text color="secondary" size="sm">Problem addressed: losing committed changes after a failure.</text>
-    </box>
-  </row>
-</box>
+- **Atomicity** — Problem addressed: partial completion of a logical operation.
+- **Consistency** — Problem addressed: violating defined integrity rules.
+- **Isolation** — Problem addressed: incorrect or unexpected interactions between concurrent operations.
+- **Durability** — Problem addressed: losing committed changes after a failure.
 
 These properties are related but not interchangeable. A database can preserve atomicity while an application still makes an incorrect business decision. It can enforce constraints while concurrent operations still need careful isolation.
 

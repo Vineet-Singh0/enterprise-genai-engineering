@@ -50,21 +50,15 @@ Request A may spend a larger share of its execution time processing the input. R
 
 This distinction helps determine which performance metrics and resource constraints deserve investigation.
 
-<box border radius="lg" padding={3} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} gap={1}>
-    <title size="md">Prefill</title>
-    <text>Input sequence → prompt-processing computation → initial generation state</text>
-    <text color="secondary" size="sm">Performance analysis focuses on input length, prompt-processing cost, and time until generation begins.</text>
-  </box>
-  <row justify="center">
-    <icon name="arrow-down" size="xl" color="secondary" />
-  </row>
-  <box border radius="md" padding={3} gap={1}>
-    <title size="md">Decode</title>
-    <text>Current context → next-token computation → updated context → repeat</text>
-    <text color="secondary" size="sm">Performance analysis focuses on per-token latency, output length, and the resources needed to retain and access context.</text>
-  </box>
-</box>
+```text
+<title size="md">Prefill</title>
+Input sequence → prompt-processing computation → initial generation state
+Performance analysis focuses on input length, prompt-processing cost, and time until generation begins.
+        ↓
+<title size="md">Decode</title>
+Current context → next-token computation → updated context → repeat
+Performance analysis focuses on per-token latency, output length, and the resources needed to retain and access context.
+```
 
 A long delay before the first output token suggests investigating prompt processing and request-startup costs. Slow token emission after generation begins suggests investigating decode execution, memory behavior, and other per-step costs.
 

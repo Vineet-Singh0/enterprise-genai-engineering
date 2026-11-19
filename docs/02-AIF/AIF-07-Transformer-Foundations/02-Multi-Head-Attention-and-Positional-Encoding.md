@@ -72,50 +72,29 @@ The individual outputs are then concatenated and projected into a shared output 
 
 Conceptually:
 
-<box border radius="lg" padding={4} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **Input representations**
-
-    <text color="secondary" size="sm">Same sequence supplied to every head</text>
-  </box>
-  <grid columns={3} gap={2}>
-    <grid-item>
-      <box border radius="md" padding={2} align="center" gap={1}>
-        **Head 1**
-
-        <text size="sm" textAlign="center">Own Q, K, V projections</text>
-      </box>
-    </grid-item>
-    <grid-item>
-      <box border radius="md" padding={2} align="center" gap={1}>
-        **Head 2**
-
-        <text size="sm" textAlign="center">Own Q, K, V projections</text>
-      </box>
-    </grid-item>
-    <grid-item>
-      <box border radius="md" padding={2} align="center" gap={1}>
-        **Head h**
-
-        <text size="sm" textAlign="center">Own Q, K, V projections</text>
-      </box>
-    </grid-item>
-  </grid>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **Concatenate head outputs**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **Output projection**
-
-    <text size="sm" color="secondary">Combine information from the heads</text>
-  </box>
-</box>
+```text
+**Input representations**
+Same sequence supplied to every head
+<grid columns={3} gap={2}>
+<grid-item>
+**Head 1**
+Own Q, K, V projections
+</grid-item>
+<grid-item>
+**Head 2**
+Own Q, K, V projections
+</grid-item>
+<grid-item>
+**Head h**
+Own Q, K, V projections
+</grid-item>
+</grid>
+        ↓
+**Concatenate head outputs**
+        ↓
+**Output projection**
+Combine information from the heads
+```
 
 Each head processes the same input sequence, but its learned projections can produce a different representation space. As a result, the heads can calculate different attention distributions and aggregate different information.
 
@@ -512,37 +491,17 @@ Multi-head attention lets the model compute several learned sets of attention re
 
 A simplified information flow is:
 
-<box border radius="lg" padding={4} gap={2} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Token representations**
-  </box>
-  <box align="center">
-    <icon name="plus" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center">
-    **Positional information**
-
-    <text size="sm" color="secondary">When the architecture uses additive position representations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Input representations supplied to attention**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Multiple learned attention heads**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Concatenated and projected output**
-  </box>
-</box>
+```text
+**Token representations**
+**Positional information**
+When the architecture uses additive position representations
+        ↓
+**Input representations supplied to attention**
+        ↓
+**Multiple learned attention heads**
+        ↓
+**Concatenated and projected output**
+```
 
 This diagram illustrates an additive positional design. Other positional methods may inject positional information directly into the attention computation rather than adding it to the initial token representations.
 

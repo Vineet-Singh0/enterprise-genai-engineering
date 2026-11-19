@@ -681,6 +681,6 @@ These resources provide foundational or implementation-specific information. Ver
 **File:** `05-Tokenization-Across-Languages-and-Technical-Text.md`  
 **Status:** Generated for review
 
-**Scope boundary:** This chapter owns language-, script-, Unicode-, whitespace-, punctuation-, and technical-text-specific tokenization challenges, along with the evaluation strategy for those inputs. Foundational representation concepts belong to Chapter 01; general tokenization trade-offs belong to Chapter 02; pipeline mechanics belong to Chapter 03; algorithm internals belong to Chapter 04; model-tokenizer compatibility belongs to Chapter 06; efficiency measurement and practical inspection belong to Chapter 07.
+**Scope:** This lesson covers language-, script-, Unicode-, whitespace-, punctuation-, and technical-text-specific tokenization challenges, along with the evaluation strategy for those inputs. Foundational representation concepts belong to Chapter 01; general tokenization trade-offs belong to Chapter 02; pipeline mechanics belong to Chapter 03; algorithm internals belong to Chapter 04; model-tokenizer compatibility belongs to Chapter 06; efficiency measurement and practical inspection belong to Chapter 07.
 
 **Next step:** Review this chapter and approve it or request targeted changes before generating Chapter 06.

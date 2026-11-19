@@ -2304,11 +2304,11 @@ External references should supplement, not replace, the organization's own opera
 
 ## Boundary with the Rest of PROD-10
 
-This chapter owns:
+This lesson covers:
 
 > **Detecting, diagnosing, responding to, mitigating, recovering from, and validating production AI incidents and larger operational failures.**
 
-It does not own:
+It does not cover:
 
 - detailed observability architecture — **PROD-05**
 - reliability mechanisms such as timeout/retry/backpressure/fallback design — **PROD-06**

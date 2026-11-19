@@ -128,31 +128,22 @@ Data modeling is often divided into three levels: conceptual, logical, and physi
 
 These levels answer different questions. They are related, but they should not be treated as interchangeable.
 
-<box border radius="lg" padding={3} gap={3}>
-  <box gap={1}>
-    <title size="md">1. Conceptual model</title>
-    <text color="secondary" size="sm">Business perspective</text>
-    Identifies the important business concepts and their relationships.
-
-    Example: Users send interest requests to other users.
-  </box>
-  <divider color="subtle"/>
-  <box gap={1}>
-    <title size="md">2. Logical model</title>
-    <text color="secondary" size="sm">Data structure perspective</text>
-    Defines entities, attributes, identifiers, relationship cardinalities, and business rules.
-
-    Example: An interest request has a sender, recipient, status, and creation timestamp.
-  </box>
-  <divider color="subtle"/>
-  <box gap={1}>
-    <title size="md">3. Physical model</title>
-    <text color="secondary" size="sm">Implementation perspective</text>
-    Specifies how the logical model is implemented in a particular database.
-
-    Example: PostgreSQL tables, column types, constraints, and indexes.
-  </box>
-</box>
+```text
+<title size="md">1. Conceptual model</title>
+Business perspective
+Identifies the important business concepts and their relationships.
+Example: Users send interest requests to other users.
+<divider color="subtle"/>
+<title size="md">2. Logical model</title>
+Data structure perspective
+Defines entities, attributes, identifiers, relationship cardinalities, and business rules.
+Example: An interest request has a sender, recipient, status, and creation timestamp.
+<divider color="subtle"/>
+<title size="md">3. Physical model</title>
+Implementation perspective
+Specifies how the logical model is implemented in a particular database.
+Example: PostgreSQL tables, column types, constraints, and indexes.
+```
 
 ### 3.1 Conceptual modeling
 

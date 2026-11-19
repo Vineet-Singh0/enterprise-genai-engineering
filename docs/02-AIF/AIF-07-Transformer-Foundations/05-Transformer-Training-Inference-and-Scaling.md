@@ -50,51 +50,24 @@ The central question is:
 
 A Transformer model moves through several conceptual stages.
 
-<box border radius="lg" padding={4} gap={2} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Training data**
-
-    <text size="sm" color="secondary">Tokenized examples and targets</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Forward pass**
-
-    <text size="sm" color="secondary">Transformer computes predictions</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Loss and backpropagation**
-
-    <text size="sm" color="secondary">Measure error and calculate gradients</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center">
-    **Parameter updates**
-
-    <text size="sm" color="secondary">Optimizer updates learned weights</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Trained parameters**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Inference**
-
-    <text size="sm" color="secondary">Generate predictions using learned parameters</text>
-  </box>
-</box>
+```text
+**Training data**
+Tokenized examples and targets
+        ↓
+**Forward pass**
+Transformer computes predictions
+        ↓
+**Loss and backpropagation**
+Measure error and calculate gradients
+        ↓
+**Parameter updates**
+Optimizer updates learned weights
+        ↓
+**Trained parameters**
+        ↓
+**Inference**
+Generate predictions using learned parameters
+```
 
 Training and inference use related forward computations, but they have different objectives and resource requirements.
 
@@ -375,25 +348,15 @@ The system still needs to compute the new token's layer representations and atte
 
 ### 11.4 Conceptual comparison
 
-<box border radius="lg" padding={3} gap={3}>
-  <box gap={1}>
-    **Without key-value caching**
-
-    <box background="surface-secondary" radius="md" padding={3} align="center">
-      Recompute representations for the growing prefix
-    </box>
-    <text color="secondary" size="sm">More repeated computation as the prefix grows.</text>
-  </box>
-  <divider />
-  <box gap={1}>
-    **With key-value caching**
-
-    <box background="surface-secondary" radius="md" padding={3} align="center">
-      Reuse past keys and values; compute the new token
-    </box>
-    <text color="secondary" size="sm">Less repeated work, with additional cache memory.</text>
-  </box>
-</box>
+```text
+**Without key-value caching**
+Recompute representations for the growing prefix
+More repeated computation as the prefix grows.
+<divider />
+**With key-value caching**
+Reuse past keys and values; compute the new token
+Less repeated work, with additional cache memory.
+```
 
 ### 11.5 The trade-off
 

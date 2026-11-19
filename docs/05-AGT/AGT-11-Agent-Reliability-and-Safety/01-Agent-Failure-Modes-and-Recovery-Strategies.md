@@ -1260,7 +1260,7 @@ Examples include:
 - risk exceeds acceptable limits,
 - or continued execution could amplify harm.
 
-This chapter owns the **recovery decision**:
+This lesson covers the **recovery decision**:
 
 > **When should the system recover, contain, escalate, or terminate?**
 

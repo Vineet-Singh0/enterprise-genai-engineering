@@ -639,5 +639,3 @@ Related chapters:
 - [Chapter 03 — Activation and Loss Functions](03-Activation-and-Loss-Functions.md): activation functions and task-compatible outputs.
 - [Chapter 04 — Backpropagation and Gradient Flow](04-Backpropagation-and-Gradient-Flow.md): how training computes parameter gradients.
 - [Chapter 05 — Optimization and Training Dynamics](05-Optimization-and-Training-Dynamics.md): how model parameters are updated during training.
-
-**Chapter status:** Draft generated for review. The remaining teaching chapters have not been generated as part of this request.

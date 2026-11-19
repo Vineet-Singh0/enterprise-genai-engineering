@@ -50,7 +50,7 @@ After completing this chapter, an engineer should be able to:
 
 ### 1.2 Scope boundaries
 
-This chapter owns benchmark engineering, execution, artifact management, validation, comparison evidence, and reporting.
+This lesson covers benchmark engineering, execution, artifact management, validation, comparison evidence, and reporting.
 
 It does not reteach:
 
@@ -1455,7 +1455,6 @@ def execute_benchmark_run(
     )
 
     return run.run_id
-
 
 def compare_benchmark_runs(
     comparison_specification_id: str,

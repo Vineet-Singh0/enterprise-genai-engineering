@@ -113,36 +113,19 @@ A production engineer must identify the mechanism behind the observed behavior b
 
 Think of model behavior as the interaction of four major influences.
 
-<box border radius="lg" padding={3} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **1. Learned parameters**
-
-    <text textAlign="center" size="sm">Representations and patterns acquired through optimization</text>
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **2. Training signals**
-
-    <text textAlign="center" size="sm">Prediction targets, demonstrations, and preference objectives</text>
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **3. Inference context**
-
-    <text textAlign="center" size="sm">Instructions, conversation history, retrieved information, and task framing</text>
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **4. Generation and runtime controls**
-
-    <text textAlign="center" size="sm">Decoding settings, output constraints, validation, and application policies</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="xl" />
-  </box>
-  <box border radius="md" padding={3} align="center" gap={1}>
-    **Observable model behavior**
-
-    <text textAlign="center" size="sm">The response produced in a particular situation</text>
-  </box>
-</box>
+```text
+**1. Learned parameters**
+Representations and patterns acquired through optimization
+**2. Training signals**
+Prediction targets, demonstrations, and preference objectives
+**3. Inference context**
+Instructions, conversation history, retrieved information, and task framing
+**4. Generation and runtime controls**
+Decoding settings, output constraints, validation, and application policies
+        ↓
+**Observable model behavior**
+The response produced in a particular situation
+```
 
 This is a conceptual model, not a complete mathematical decomposition.
 
@@ -246,37 +229,19 @@ The effect of a training stage depends on the model produced by previous stages.
 
 A simplified development sequence is:
 
-<box border radius="lg" padding={3} gap={2}>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **Pretraining**
-
-    <text size="sm" textAlign="center">Broad prediction-based learning</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **Supervised fine-tuning**
-
-    <text size="sm" textAlign="center">Instruction-response demonstrations shape task behavior</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **Preference-based optimization**
-
-    <text size="sm" textAlign="center">Preference signals further influence response selection</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **Evaluation and deployment**
-
-    <text size="sm" textAlign="center">Test whether the intended behavior appears reliably in practice</text>
-  </box>
-</box>
+```text
+**Pretraining**
+Broad prediction-based learning
+        ↓
+**Supervised fine-tuning**
+Instruction-response demonstrations shape task behavior
+        ↓
+**Preference-based optimization**
+Preference signals further influence response selection
+        ↓
+**Evaluation and deployment**
+Test whether the intended behavior appears reliably in practice
+```
 
 This is a common conceptual sequence, not a universal pipeline. Some systems omit stages, use alternative objectives, or repeat parts of the process.
 

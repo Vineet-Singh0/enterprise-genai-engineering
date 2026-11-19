@@ -34,7 +34,3 @@ By completing this chapter, you should be able to:
 Produce a reproducible benchmark comparing at least two retrieval configurations. Document queries, relevance judgments, metrics, experimental settings, operational measurements, and limitations. Distinguish retrieval-quality improvements from changes in latency or other operational behavior.
 
 **Important:** Candidate recall is not ANN recall; candidate-generation quality is not final-ranking quality; constraint correctness is not relevance; and offline retrieval metrics do not establish operational suitability.
-
-## Documentation Status
-
-Draft — awaiting review and approval. Repository publication and relative-link verification are not yet confirmed.

@@ -874,7 +874,7 @@ The central principle is that linear algebra gives AI/ML engineers a consistent 
 - [AIF-05 — Representation Learning](../AIF-05-Representation-Learning/README.md): planned cross-pillar reference for learned representations and embedding spaces; verify the target file exists in the repository.
 - [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md): planned cross-pillar reference for transformer-specific mathematical operations; verify the target file exists in the repository.
 
-**Scope boundary:** This chapter owns the conceptual foundations of scalars, vectors, matrices, dimensions, linear combinations, span, basis, linear transformations, and dot product intuition. Detailed vector/matrix calculations belong to Chapter 06. Embedding semantics and similarity interpretation belong to AIF-05. Neural network computation and transformer-specific operations belong to their respective pillars.
+**Scope:** This lesson covers the conceptual foundations of scalars, vectors, matrices, dimensions, linear combinations, span, basis, linear transformations, and dot product intuition. Detailed vector/matrix calculations belong to Chapter 06. Embedding semantics and similarity interpretation belong to AIF-05. Neural network computation and transformer-specific operations belong to their respective pillars.
 
 ---
 

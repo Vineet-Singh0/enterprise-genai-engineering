@@ -737,64 +737,27 @@ The 36 lessons remain the primary locations for detailed technical instruction.
 
 ---
 
-# Quality and Validation
+# Chapter Boundaries
 
-PROD lessons should stay aligned with the domain structure described above.
+When reading across PROD, watch neighboring chapter boundaries, especially:
 
-Validation should confirm:
-
-### Structural Validation
-
-- 12 chapters are present.
-- 36 lessons are represented.
-- Chapter and file names match the approved architecture.
-- Relative links resolve to the approved structure.
-- No invented files are introduced.
-- The domain contains the intended 49 Markdown artifacts.
-
-### Curriculum Validation
-
-- The central engineering question is preserved.
-- PROD scope remains production-focused.
-- Domain boundaries remain explicit.
-- Chapter ownership remains unchanged.
-- The learning progression remains coherent.
-- No new curriculum topics are introduced.
-
-### Documentation Validation
-
-- The README remains navigation-focused.
-- Detailed teaching remains in lessons.
-- Chapter descriptions are not unnecessarily duplicated.
-- Technology does not become the organizing principle.
-- The document remains concise and GitHub-compatible.
-
-### Boundary Validation
-
-Particular attention should be paid to:
-
-- PROD-03 vs PROD-07,
-- PROD-03 vs PROD-08,
-- PROD-05 vs PROD-11,
-- PROD-06 vs PROD-10,
-- PROD-04 vs PROD-11,
-- AGT-10 vs PROD-11,
-- AGT-11 vs PROD-06 vs PROD-10,
-- PROD-09 vs AGT-11,
-- PROD-12 vs AGT-12,
-- PROD-02 vs PROD-09.
+- PROD-03 vs PROD-07 / PROD-08
+- PROD-05 vs PROD-11
+- PROD-06 vs PROD-10
+- PROD-04 vs PROD-11
+- AGT-10 / AGT-11 overlaps with PROD-06 / PROD-10 / PROD-11
+- PROD-09 vs AGT-11
+- PROD-12 vs AGT-12
+- PROD-02 vs PROD-09
 
 ---
 
 ## PROD Domain Structure
 
-The frozen PROD domain contains:
+The PROD domain contains:
 
 - **12 chapters**
 - **36 lessons**
-- **12 chapter READMEs**
-- **1 domain README**
-- **49 total Markdown artifacts**
 
 The architecture is organized as:
 

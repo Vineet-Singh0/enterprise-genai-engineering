@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 09: Serialization Fundamentals
+# Serialization Fundamentals
 
 ## 1. Learning Objectives
 

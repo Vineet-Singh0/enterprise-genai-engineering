@@ -1001,5 +1001,3 @@ Related chapters:
 - [Chapter 02 — Multilayer Networks and Forward Propagation](02-Multilayer-Networks-and-Forward-Propagation.md)
 - [Chapter 05 — Optimization and Training Dynamics](05-Optimization-and-Training-Dynamics.md)
 - [Chapter 06 — Regularization, Hyperparameters, and Failure Modes](06-Regularization-Hyperparameters-and-Failure-Modes.md)
-
-**Chapter status:** Draft generated for review. Chapter 04 has not been generated as part of this request.

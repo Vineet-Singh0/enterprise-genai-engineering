@@ -68,41 +68,20 @@ The encoder and decoder have different responsibilities, even though both may us
 
 ### 5.1 High-level information flow
 
-<box border radius="lg" padding={4} gap={3} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Source sequence**
-
-    <text size="sm" color="secondary">Input tokens and their representations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Encoder stack**
-
-    <text size="sm" color="secondary">Self-attention and feed-forward transformations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Encoder representations**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Decoder stack**
-
-    <text size="sm" color="secondary">Causal self-attention and cross-attention</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Output representations and token predictions**
-  </box>
-</box>
+```text
+**Source sequence**
+Input tokens and their representations
+        ↓
+**Encoder stack**
+Self-attention and feed-forward transformations
+        ↓
+**Encoder representations**
+        ↓
+**Decoder stack**
+Causal self-attention and cross-attention
+        ↓
+**Output representations and token predictions**
+```
 
 This is a simplified view. The decoder commonly receives both previously available output tokens and encoder representations. It does not simply consume the encoder's final output as its only input.
 
@@ -311,37 +290,18 @@ It does not require a separate encoder stack or the encoder-decoder cross-attent
 
 A common decoder-only information flow is:
 
-<box border radius="lg" padding={4} gap={2} align="center">
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Input token sequence**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box border radius="md" padding={3} width="100%" align="center">
-    **Token representations and positional information**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center">
-    **Decoder-style Transformer block**
-
-    <text size="sm" color="secondary">Causal self-attention, residual paths, normalization, FFN</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface" border radius="md" padding={3} width="100%" align="center">
-    **Repeated blocks**
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} width="100%" align="center">
-    **Output representations and next-token scores**
-  </box>
-</box>
+```text
+**Input token sequence**
+        ↓
+**Token representations and positional information**
+        ↓
+**Decoder-style Transformer block**
+Causal self-attention, residual paths, normalization, FFN
+        ↓
+**Repeated blocks**
+        ↓
+**Output representations and next-token scores**
+```
 
 This is a simplified architecture. Actual models may use different normalization strategies, positional methods, attention variants, and output heads.
 

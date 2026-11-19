@@ -169,17 +169,7 @@ The default learning path moves through seven stages:
 
 The progression is not a rigid prerequisite chain. Some topics provide context for others, while evaluation and model selection integrate evidence from multiple topics.
 
-## 8. Documentation Status
-
-This overview defines the scope, topic hierarchy, and learning progression for the LLM domain.
-
-This README serves as the domain-level navigation document. It does not establish that the ten topic READMEs, teaching chapters, or practical implementation files have been generated or reviewed.
-
-The topic links remain provisional until the approved folder and filename structure is confirmed and the destination files are available.
-
-No completion percentages or dates are inferred from the curriculum architecture.
-
-## 9. How to Use This Domain
+## 8. How to Use This Domain
 
 1. Follow the topic list in order as the default learning path.
 2. Focus on understanding model behavior and engineering implications, not memorizing terminology.
@@ -190,8 +180,7 @@ No completion percentages or dates are inferred from the curriculum architecture
 
 Do not treat familiarity with a model API or framework as proof of mastery. Be able to explain the underlying behavior, relevant limitations, and reasoning behind your engineering decisions.
 
-## 10. Cross-Domain Navigation
+## 9. Cross-Domain Navigation
 
-The domain architecture identifies ENG, AIF, RET, AGT, PROD, and ENT as the neighboring domains. Their README destination paths have not been independently verified for this document, so links are not included here.
+LLM Engineering builds on Engineering Foundations and AI Foundations, and feeds Retrieval, Agent, Production, and Enterprise domains. Use the site domain hubs to move between those areas.
 
-Once the repository paths are confirmed, this section should link to the corresponding domain-level README files using relative Markdown links.

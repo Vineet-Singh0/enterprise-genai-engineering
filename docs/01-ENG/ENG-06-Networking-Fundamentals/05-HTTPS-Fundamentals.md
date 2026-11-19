@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 05: HTTPS Fundamentals
+# HTTPS Fundamentals
 
 ## 1. Learning Objectives
 
@@ -159,38 +157,9 @@ Server authentication, user authentication, and authorization are separate conce
 
 ### 5.4 The Three Properties Together
 
-<box gap={3}>
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" size="44px" align="center" justify="center">
-      <icon name="eye-off" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Confidentiality**
-
-      <text color="secondary" size="sm">Protects transmitted content from being read by unauthorized observers.</text>
-    </box>
-  </row>
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" size="44px" align="center" justify="center">
-      <icon name="shield-check" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Integrity**
-
-      <text color="secondary" size="sm">Protects against undetected modification of data in transit.</text>
-    </box>
-  </row>
-  <row align=start gap={3}>
-    <box background="surface-secondary" radius="lg" size="44px" align="center" justify="center">
-      <icon name="badge-check" size="xl" />
-    </box>
-    <box flex="1" gap={1}>
-      **Authentication**
-
-      <text color="secondary" size="sm">Helps verify the identity of the intended server.</text>
-    </box>
-  </row>
-</box>
+- **Confidentiality** — Protects transmitted content from being read by unauthorized observers.
+- **Integrity** — Protects against undetected modification of data in transit.
+- **Authentication** — Helps verify the identity of the intended server.
 
 These properties complement one another. Encryption without proper authentication, for example, would not by itself guarantee that the client is communicating with the intended server.
 

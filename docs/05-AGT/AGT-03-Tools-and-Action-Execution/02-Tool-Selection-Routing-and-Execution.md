@@ -100,7 +100,7 @@ Arguments
 Invocation
 ```
 
-This chapter owns that selection-to-invocation boundary.
+This lesson covers that selection-to-invocation boundary.
 
 It does **not** own the actual execution lifecycle or execution outcomes. Those are covered in File 03.
 
@@ -1236,14 +1236,12 @@ The following simplified Python example demonstrates a hybrid selection and invo
 from dataclasses import dataclass
 from typing import Any, Callable
 
-
 @dataclass
 class Tool:
     name: str
     description: str
     required_inputs: set[str]
     handler: Callable[..., Any]
-
 
 TOOLS = {
     "get_customer_order": Tool(
@@ -1267,7 +1265,6 @@ TOOLS = {
     ),
 }
 
-
 def select_tool(action: str) -> Tool:
     if action == "get_order":
         return TOOLS["get_customer_order"]
@@ -1276,7 +1273,6 @@ def select_tool(action: str) -> Tool:
         return TOOLS["cancel_customer_order"]
 
     raise ValueError(f"No tool available for action: {action}")
-
 
 def build_arguments(
     tool: Tool,
@@ -1293,7 +1289,6 @@ def build_arguments(
         field: context[field]
         for field in tool.required_inputs
     }
-
 
 action = "get_order"
 

@@ -585,7 +585,6 @@ from collections.abc import Iterable
 
 UINT64_MAX = (1 << 64) - 1
 
-
 def _encode_length_prefixed(value: bytes) -> bytes:
     length = len(value)
 
@@ -593,7 +592,6 @@ def _encode_length_prefixed(value: bytes) -> bytes:
         raise ValueError("Encoded value exceeds UINT64 length capacity")
 
     return length.to_bytes(8, byteorder="big", signed=False) + value
-
 
 def deterministic_rank(
     candidate_ids: Iterable[str],
@@ -649,7 +647,6 @@ def deterministic_rank(
         return hashlib.sha256(payload).digest(), candidate_bytes
 
     return sorted(ids, key=rank_key)
-
 
 def select_deterministically(
     candidate_ids: Iterable[str],

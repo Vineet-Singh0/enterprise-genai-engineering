@@ -1090,8 +1090,6 @@ Continue through the approved repository documentation:
 - AIF-04 — Deep Learning Foundations — general neural-network computation, gradient flow, and optimization.
 - AIF-07 — Transformer Foundations — detailed attention mechanisms and transformer architectures.
 
-Cross-domain paths should be verified against the actual repository before publication.
-
 ---
 
 # End of Document

@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 06: REST Principles
+# REST Principles
 
 ## 1. Learning Objectives
 

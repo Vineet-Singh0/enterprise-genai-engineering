@@ -283,7 +283,6 @@ x = np.array([1.0, 0.0])
 y = np.array([5.0, 0.0])
 z = np.array([0.0, 1.0])
 
-
 def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
     denominator = np.linalg.norm(a) * np.linalg.norm(b)
 
@@ -291,7 +290,6 @@ def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
         raise ValueError("Cosine similarity is undefined for zero vectors.")
 
     return float(np.dot(a, b) / denominator)
-
 
 print("cosine(x, y):", cosine_similarity(x, y))
 print("cosine(x, z):", cosine_similarity(x, z))
