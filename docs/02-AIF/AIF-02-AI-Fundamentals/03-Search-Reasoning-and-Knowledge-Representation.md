@@ -272,7 +272,7 @@ There is no universally best search strategy for every problem.
 
 The suitable choice depends on the structure of the search space, the objective, the available resources, and the required guarantees.
 
-Detailed comparisons of individual search algorithms belong in a dedicated algorithm-focused curriculum location if the approved curriculum assigns them there. This chapter focuses on the underlying concepts.
+Detailed comparisons of individual search algorithms belong in a dedicated algorithm-focused curriculum location if this curriculum assigns them there. This chapter focuses on the underlying concepts.
 
 ### 6.5 Search Is Not the Same as Learning
 

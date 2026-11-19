@@ -42,7 +42,7 @@ Retention & Lifecycle Governance
 Ongoing Review
 ```
 
-The three teaching files should be studied in order.
+The three lessons should be studied in order.
 
 ---
 
@@ -249,4 +249,4 @@ After completing ENT-05, readers should be able to reason about enterprise AI in
 
 The chapter also establishes the distinction between information governance and related concerns such as security, privacy, retrieval engineering, risk, and AI system lifecycle governance.
 
-The detailed engineering reasoning for these concepts is contained in the three teaching files above.
+The detailed engineering reasoning for these concepts is contained in the three lessons above.

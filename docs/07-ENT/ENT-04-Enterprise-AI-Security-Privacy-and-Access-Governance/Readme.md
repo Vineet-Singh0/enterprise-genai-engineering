@@ -226,4 +226,4 @@ The chapter can be considered complete when the reader can:
 - Explain why authorization must be governed independently at each relevant resource or capability boundary.
 - Describe how security and privacy controls connect to governance, evidence, review, and reassessment.
 
-Detailed understanding and application are developed within the three teaching files.
+Detailed understanding and application are developed within the three lessons.

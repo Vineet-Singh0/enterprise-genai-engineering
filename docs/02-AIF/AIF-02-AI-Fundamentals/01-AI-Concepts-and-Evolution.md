@@ -713,7 +713,7 @@ The application must also handle inputs, data access, business rules, security, 
 
 ## 17. Further Reading
 
-The following references provide additional context. They are optional supplements, not replacements for the approved curriculum.
+The following references provide additional context. They are optional supplements, not replacements for this curriculum.
 
 - Stuart Russell and Peter Norvig, *Artificial Intelligence: A Modern Approach*. A broad textbook covering intelligent agents, search, knowledge representation, reasoning, and learning.
 - Alan Turing, *Computing Machinery and Intelligence* (1950). A foundational paper exploring questions about machine intelligence.

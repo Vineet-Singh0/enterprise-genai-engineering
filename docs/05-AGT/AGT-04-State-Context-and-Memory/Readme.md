@@ -77,7 +77,7 @@ AGT-04-State-Context-and-Memory/
 
 ---
 
-## Teaching Files
+## lessons
 
 ### 01 — Agent State, Context and Lifecycle
 
@@ -319,7 +319,7 @@ These questions form the practical engineering foundation for later agent-system
 
 ## Practical Learning Path
 
-After completing the three teaching files, use the following reasoning sequence when analyzing an agent information-management problem:
+After completing the three lessons, use the following reasoning sequence when analyzing an agent information-management problem:
 
 ```text
 1. Identify the execution
@@ -362,13 +362,13 @@ Keep these principles consistent throughout AGT-04:
 - **Retrieval mechanisms do not define memory.**
 - **Context engineering is broader than prompt engineering.**
 
-The detailed reasoning behind these principles belongs in the teaching files.
+The detailed reasoning behind these principles belongs in the lessons.
 
 ---
 
 ## Estimated Reading Time
 
-Approximately **75–90 minutes** for the three teaching files, excluding practical exercises, implementation work, and revision.
+Approximately **75–90 minutes** for the three lessons, excluding practical exercises, implementation work, and revision.
 
 ---
 

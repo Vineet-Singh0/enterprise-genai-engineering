@@ -62,7 +62,7 @@ The chapter does **not** turn these topics into vendor-specific installation or 
 
 ## Learning Path
 
-PROD-05 contains exactly three teaching files.
+PROD-05 contains exactly three lessons.
 
 ### 01 — Production AI Observability and Telemetry
 
@@ -371,13 +371,13 @@ PROD-05 builds on production AI engineering concepts including:
 - Distributed service behavior
 - Production deployment concepts
 
-Relevant preceding PROD chapters should be completed according to the approved curriculum sequence.
+Relevant preceding PROD chapters should be completed according to the recommended curriculum sequence.
 
 ---
 
 ## Recommended Reading Order
 
-Read the three teaching files sequentially:
+Read the three lessons sequentially:
 
 ```text
 01 — Observability Foundation

@@ -759,7 +759,7 @@ The chapter should be understood in the context of:
 ENG → AIF → LLM → RET → AGT → PROD
 ```
 
-The actual dependency should follow the approved curriculum hierarchy rather than chapter numbering alone.
+The actual dependency should follow the curriculum hierarchy rather than chapter numbering alone.
 
 ---
 
@@ -914,7 +914,7 @@ PROD-11/
 
 The README is the navigation and orientation hub.
 
-The three teaching files contain the detailed technical instruction.
+The three lessons contain the detailed technical instruction.
 
 ---
 

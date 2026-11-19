@@ -109,7 +109,7 @@ A design is not complete merely because a particular database or vector store ha
 
 ## Estimated Reading Time
 
-**30 minutes** across the three numbered teaching files, based on the curriculum planning estimate.
+**30 minutes** across the three numbered lessons, based on the curriculum planning estimate.
 
 Practical implementation, experiments, debugging, and review require additional time.
 

@@ -62,7 +62,7 @@ ENT-08 does not reteach these domains. They provide context and inputs to econom
 
 ## Chapter Structure
 
-ENT-08 contains three teaching files.
+ENT-08 contains three lessons.
 
 ### 01 — AI Cost Models, FinOps and Unit Economics
 
@@ -191,7 +191,7 @@ Several distinctions are central to ENT-08:
 | **Economic vs Portfolio Optimization** | Individual capability economics versus enterprise portfolio composition |
 | **Portfolio Decision Governance vs Enterprise Governance** | Investment and portfolio decisions versus enterprise governance authority and mechanisms |
 
-These distinctions are developed in the teaching files rather than treated as interchangeable concepts.
+These distinctions are developed in the lessons rather than treated as interchangeable concepts.
 
 ---
 
@@ -326,7 +326,7 @@ Portfolio Optimization
 Enterprise portfolio composition
 ```
 
-The detailed reasoning and trade-offs belong in the corresponding teaching files.
+The detailed reasoning and trade-offs belong in the corresponding lessons.
 
 ---
 

@@ -45,7 +45,7 @@ After completing AGT-10, you should be able to:
 
 ## Chapter Structure
 
-AGT-10 contains exactly three teaching files.
+AGT-10 contains exactly three lessons.
 
 | File | Primary Focus |
 |---|---|
@@ -53,7 +53,7 @@ AGT-10 contains exactly three teaching files.
 | [`02-Trajectory-Tool-Planning-and-State-Evaluation.md`](./02-Trajectory-Tool-Planning-and-State-Evaluation.md) | Trajectories, tool use, planning, state transitions, context, memory, intermediate behavior, and failure points. |
 | [`03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md`](./03-Agent-Evaluation-Sets-Metrics-and-Regression-Testing.md) | Evaluation datasets, metrics, evaluator reliability, calibration, LLM judges, and regression testing. |
 
-No additional teaching files are introduced in AGT-10.
+No additional lessons are introduced in AGT-10.
 
 ---
 
@@ -312,7 +312,7 @@ AGT-10 covers the following major concept groups.
 - regression testing
 - test-set evolution
 
-Detailed treatment of these concepts belongs in the relevant teaching files rather than in this README.
+Detailed treatment of these concepts belongs in the relevant lessons rather than in this README.
 
 ---
 
@@ -436,7 +436,7 @@ These chapters provide the systems and behaviors that AGT-10 evaluates.
 
 ## Suggested Learning Order
 
-Read the teaching files in order.
+Read the lessons in order.
 
 ### 1. Task Success & Behavioral Evaluation
 

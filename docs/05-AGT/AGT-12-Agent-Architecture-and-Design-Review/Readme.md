@@ -94,7 +94,7 @@ AGT-12 assumes these concepts are already understood. It focuses on **architectu
 
 ## Chapter Structure
 
-AGT-12 contains three teaching files.
+AGT-12 contains three lessons.
 
 ### 01 — Architecture Selection and Trade-offs
 
@@ -220,7 +220,7 @@ AGT-12 focuses on the following architecture-level themes:
 - maintainability,
 - and architectural evolution.
 
-These themes are developed in the three teaching files rather than fully taught in this README.
+These themes are developed in the three lessons rather than fully taught in this README.
 
 ---
 

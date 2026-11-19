@@ -40,7 +40,7 @@ This document covers:
 - Validating constraints before execution.
 - Preserving constraints across multiple retrieval operations.
 
-This document does not teach query rewriting, candidate fusion, ranking algorithms, general retrieval evaluation, or enterprise-wide authorization policy. Those subjects belong to their designated curriculum locations.
+This document does not teach query rewriting, candidate fusion, ranking algorithms, general retrieval evaluation, or enterprise-wide authorization policy. Those subjects belong to their related chapters.
 
 ## 2. Metadata as a Retrieval Contract
 

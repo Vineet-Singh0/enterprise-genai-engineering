@@ -550,7 +550,7 @@ Completion should be demonstrated through engineering reasoning, not memorizatio
 
 ## Navigation
 
-### Teaching Files
+### lessons
 
 - [01 — AI Application Packaging and Reproducibility](./01-AI-Application-Packaging-and-Reproducibility.md)
 - [02 — Containers, Configuration, and Runtime Contracts](./02-Containers-Configuration-and-Runtime-Contracts.md)

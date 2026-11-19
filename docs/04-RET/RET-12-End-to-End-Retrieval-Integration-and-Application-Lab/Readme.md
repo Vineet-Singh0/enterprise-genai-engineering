@@ -33,7 +33,7 @@ Learners should select and review the relevant earlier material according to the
 
 ## Chapter Files
 
-Complete the four teaching files in order.
+Complete the four lessons in order.
 
 1. [01 — End-to-End Retrieval Architecture and Acceptance Criteria](01-End-to-End-Retrieval-Architecture-and-Acceptance-Criteria.md)
 
@@ -63,13 +63,13 @@ The chapter implementation should produce a coherent set of artifacts demonstrat
 
 A bounded RAG integration may be included as an additional consumer. It does not replace the required non-RAG demonstration.
 
-The detailed implementation requirements and artifact contents are defined in the corresponding teaching files.
+The detailed implementation requirements and artifact contents are defined in the corresponding lessons.
 
 ## Related Chapter References
 
 The following chapters retain primary ownership of their respective concepts. Consult their existing documentation when additional explanation is needed.
 
-| Chapter | Primary concept ownership | Known primary teaching files |
+| Chapter | Primary concept ownership | Known primary lessons |
 |---|---|---|
 | RET-01 | Retrieval problem formulation and system fundamentals | `01-Retrieval-Problems-and-Information-Needs.md`; `02-Relevance-and-Retrieval-Success-Criteria.md`; `03-Retrieval-Pipeline-and-System-Boundaries.md` |
 | RET-02 | Document ingestion, extraction, normalization, metadata, and corpus lifecycle | Refer to the RET-02 chapter documentation |
@@ -83,9 +83,9 @@ The following chapters retain primary ownership of their respective concepts. Co
 | RET-10 | Retrieval evaluation and experimental design | Refer to the RET-10 chapter documentation |
 | RET-11 | Retrieval diagnostics and optimization | Refer to the RET-11 chapter documentation |
 
-These references identify concept ownership, not a mandatory sequential implementation pipeline. RET-12 uses only the techniques justified by the selected workload.
+These references identify where concepts are taught, not a mandatory sequential implementation pipeline. RET-12 uses only the techniques justified by the selected workload.
 
-**Navigation verification:** The RET-01 and RET-06 teaching filenames above are established by the available curriculum material. The exact chapter folder paths and the remaining chapter file paths have not been independently verified against the live repository. Before publication, verify those paths and convert the references into relative Markdown links to the appropriate chapter READMEs or primary teaching files. Do not infer paths from chapter labels.
+Open the linked chapter READMEs for the detailed lessons behind each concept.
 
 ## Practical Outcome
 
@@ -126,7 +126,7 @@ RET-12 is complete when the learner can demonstrate and explain the following:
 6. An end-to-end evaluation that distinguishes retrieval behavior from downstream application behavior.
 7. An engineering design review that explains important trade-offs, limitations, and unresolved risks.
 
-Completion requires both implementation evidence and the ability to explain the design decisions. Detailed test coverage and acceptance thresholds are defined in the teaching files rather than duplicated here.
+Completion requires both implementation evidence and the ability to explain the design decisions. Detailed test coverage and acceptance thresholds are defined in the lessons rather than duplicated here.
 
 ## Chapter Boundaries
 

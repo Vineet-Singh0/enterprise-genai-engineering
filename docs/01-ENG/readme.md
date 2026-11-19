@@ -52,18 +52,18 @@ By the end of this domain, you should be able to:
 
 The Engineering Foundations domain consists of the following modules.
 
-| Module ID | Module | Status |
-|-----------|--------|--------|
-| ENG-01 | Computer Science Fundamentals | ✅ Completed |
-| ENG-02 | Programming Foundations | ✅ Completed |
-| ENG-03 | Software Engineering Principles | ✅ Completed |
-| ENG-04 | Version Control & Collaborative Development | ✅ Completed |
-| ENG-05 | Linux & Development Environment | ✅ Completed |
-| ENG-06 | Networking Fundamentals | ✅ Completed |
-| ENG-07 | Database Fundamentals | ✅ Completed |
-| ENG-08 | Development Quality | ✅ Completed |
-| ENG-09 | Development Workflow | ✅ Completed |
-| ENG-10 | Concurrency Fundamentals | ✅ Completed |
+| Module ID | Module |
+|-----------|--------|
+| ENG-01 | Computer Science Fundamentals |
+| ENG-02 | Programming Foundations |
+| ENG-03 | Software Engineering Principles |
+| ENG-04 | Version Control & Collaborative Development |
+| ENG-05 | Linux & Development Environment |
+| ENG-06 | Networking Fundamentals |
+| ENG-07 | Database Fundamentals |
+| ENG-08 | Development Quality |
+| ENG-09 | Development Workflow |
+| ENG-10 | Concurrency Fundamentals |
 
 ---
 
@@ -164,22 +164,5 @@ The knowledge gained in this domain is required for:
 - Enterprise AI Systems (ENT)
 
 Every later domain assumes a solid understanding of the concepts introduced here.
-
----
-
-## Current Progress
-
-| Module | Status |
-|---------|--------|
-| ENG-01 | ✅ Completed |
-| ENG-02 | ✅ Completed |
-| ENG-03 | ✅ Completed |
-| ENG-04 | ✅ Completed |
-| ENG-05 | ✅ Completed |
-| ENG-06 | ✅ Completed |
-| ENG-07 | ✅ Completed |
-| ENG-08 | ✅ Completed |
-| ENG-09 | ✅ Completed |
-| ENG-10 | ✅ Completed |
 
 ---

@@ -69,7 +69,7 @@ Work through the files in order:
 2. **Design the ranking pipeline:** Decide when initial ranking is sufficient and when reranking may help.
 3. **Make constrained decisions:** Choose ranking depth and final result count based on relevance requirements, latency, and computational cost.
 
-Use the exercises and self-assessments within the relevant teaching files. Keep each concept's detailed explanation in its designated file rather than duplicating it across the chapter.
+Use the exercises and self-assessments within the relevant lessons. Keep each concept's detailed explanation in its designated file rather than duplicating it across the chapter.
 
 ## Scope Boundaries
 

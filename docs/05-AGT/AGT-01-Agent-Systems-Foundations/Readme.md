@@ -39,7 +39,7 @@ Agent System Composition
 Major Components and Responsibility Boundaries
 ```
 
-The three teaching files should be completed in order.
+The three lessons should be completed in order.
 
 ---
 

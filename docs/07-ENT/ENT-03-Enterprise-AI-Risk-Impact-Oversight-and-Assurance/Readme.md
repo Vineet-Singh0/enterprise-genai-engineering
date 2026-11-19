@@ -59,7 +59,7 @@ WHAT NEXT?
 Risk Treatment, Assurance Maintenance and Reassessment
 ```
 
-The three teaching files should be studied in order.
+The three lessons should be studied in order.
 
 ---
 
@@ -262,7 +262,7 @@ The engineer should be able to determine:
 
 ## How to Use This Chapter
 
-Read the three teaching files sequentially. Each file builds on the reasoning established by the previous file.
+Read the three lessons sequentially. Each file builds on the reasoning established by the previous file.
 
 ---
 

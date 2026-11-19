@@ -35,4 +35,4 @@ This chapter owns dense retrieval compatibility, exact-versus-approximate search
 Produce a working dense retrieval baseline and an exact-versus-approximate search comparison. Document how query–document representation compatibility was checked, how approximate results differ from the exact-search reference, and how observed recall, latency, and resource consumption inform configuration decisions.
 
 **Estimated reading time:** 30 minutes.  
-**Teaching-content budget:** 2,200–2,800 words across the three teaching files.
+**Teaching-content budget:** 2,200–2,800 words across the three lessons.

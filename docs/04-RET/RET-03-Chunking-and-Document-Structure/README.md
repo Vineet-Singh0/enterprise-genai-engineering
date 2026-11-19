@@ -34,7 +34,7 @@ These prerequisites establish what information the retrieval system needs and ho
 
 ## Chapter Navigation
 
-The chapter contains three teaching files.
+The chapter contains three lessons.
 
 | File | Primary Focus |
 |---|---|

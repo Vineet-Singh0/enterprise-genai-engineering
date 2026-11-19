@@ -121,7 +121,7 @@ AGT-07/
 └── 02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md
 ```
 
-The chapter contains exactly two teaching files.
+The chapter contains exactly two lessons.
 
 ---
 
@@ -212,7 +212,7 @@ Answering this requires considering:
 - What authority a human override provides.
 - What happens when the responsible human is unavailable.
 
-The detailed mechanisms for answering these questions are taught in the two teaching files.
+The detailed mechanisms for answering these questions are taught in the two lessons.
 
 ---
 

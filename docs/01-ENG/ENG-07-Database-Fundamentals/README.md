@@ -38,7 +38,7 @@ These prerequisites should be reviewed when necessary rather than retaught in th
 
 ## Learning Path
 
-Study the chapters in the following approved order.
+Study the chapters in the following order.
 
 | Order | Chapter | Focus |
 |---|---|---|
@@ -72,7 +72,7 @@ This topic focuses on foundational database concepts and engineering decisions.
 
 It does not provide comprehensive database administration, cloud deployment, advanced distributed database internals, replication and sharding implementation, advanced query optimizer engineering, vector database engineering, or ORM framework tutorials.
 
-These subjects belong in their approved curriculum locations when applicable.
+These subjects are covered in other chapters when they apply.
 
 ## Connections to Other Domains
 

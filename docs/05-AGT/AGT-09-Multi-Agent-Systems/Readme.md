@@ -45,7 +45,7 @@ After completing AGT-09, you should be able to:
 
 ## Chapter Structure
 
-AGT-09 contains exactly three teaching files.
+AGT-09 contains exactly three lessons.
 
 ### 01 — Single-Agent vs Multi-Agent Architecture
 
@@ -407,7 +407,7 @@ Before considering a multi-agent architecture production-ready, the design shoul
 13. How are latency and communication costs controlled?
 14. What measurable benefit justifies the additional complexity?
 
-These questions are intended as architectural checks. Detailed implementation belongs in the teaching files and the appropriate adjacent chapters.
+These questions are intended as architectural checks. Detailed implementation belongs in the lessons and the appropriate adjacent chapters.
 
 ---
 

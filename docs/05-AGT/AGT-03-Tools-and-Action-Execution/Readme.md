@@ -397,7 +397,7 @@ You should be able to inspect a tool design and determine:
 
 **Estimated Chapter Reading Time:** 75–90 minutes
 
-This estimate covers the three teaching files and assumes normal technical reading with brief reflection on the examples and engineering trade-offs.
+This estimate covers the three lessons and assumes normal technical reading with brief reflection on the examples and engineering trade-offs.
 
 ---
 
@@ -411,7 +411,7 @@ AGT-03-Tools-and-Action-Execution/
 └── 03-Tool-Execution-Results-and-Action-Failures.md
 ```
 
-The chapter intentionally contains exactly three teaching files.
+The chapter intentionally contains exactly three lessons.
 
 ---
 

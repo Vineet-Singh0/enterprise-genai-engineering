@@ -119,7 +119,7 @@ This README defines the proposed navigation and learning objectives for LLM-08.
 Before the documentation is considered integrated, verify:
 
 - All chapter filenames and relative links against the actual repository.
-- Prerequisite and cross-domain links against approved curriculum documents.
+- Prerequisite and cross-domain links against curriculum documents.
 - Chapter responsibilities against the approved LLM-08 documentation plan.
 - Any future changes to the chapter structure against the established concept-ownership boundaries.
 

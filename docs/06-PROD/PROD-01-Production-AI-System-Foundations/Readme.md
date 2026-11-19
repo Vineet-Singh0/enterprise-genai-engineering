@@ -113,7 +113,7 @@ The learner first establishes what the production system must accomplish, then d
 
 ---
 
-## Teaching File Map
+## lesson Map
 
 ### 01 — Production AI Problem and Production Boundaries
 
@@ -326,7 +326,7 @@ Consider PROD-01 complete when you can independently:
 
 ## Navigation
 
-### Teaching Files
+### lessons
 
 1. [Production AI Problem and Production Boundaries](./01-Production-AI-Problem-and-Production-Boundaries.md)
 2. [Production AI System Architecture and Service Boundaries](./02-Production-AI-System-Architecture-and-Service-Boundaries.md)

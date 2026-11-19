@@ -5,7 +5,7 @@
 **Difficulty:** Advanced  
 **Estimated reading time:** 30 minutes  
 **Teaching-content budget:** 2,200–2,800 words  
-**Teaching files:** 3
+**lessons:** 3
 
 ## 1. Purpose
 
@@ -68,7 +68,7 @@ Learners should understand the relevant retrieval component before attempting to
 
 RET-11 follows three stages:
 
-| Stage | Teaching file | Engineering capability |
+| Stage | lesson | Engineering capability |
 |---|---|---|
 | 1. Recognize | File 01 | Identify symptoms, classify failures, and prioritize investigation. |
 | 2. Investigate | File 02 | Trace pipeline behavior and establish evidence-supported root causes. |
@@ -260,7 +260,7 @@ Reading all three files does not establish mastery. Completion requires demonstr
 
 The chapter should produce three complementary outcomes:
 
-| Teaching file | Expected capability |
+| lesson | Expected capability |
 |---|---|
 | File 01 | Retrieval failure classification and triage |
 | File 02 | Evidence-supported diagnostic and root-cause analysis |

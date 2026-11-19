@@ -44,13 +44,13 @@ Readers should understand the purpose of retrieval, the relationship between inf
 
 Engineering foundations in data handling, programming, and databases are also relevant. Familiarity with document formats, structured data, and processing pipelines will help.
 
-These are learning recommendations based on the chapter's stated dependencies. Confirm formal prerequisites against the approved curriculum before treating them as mandatory.
+These are learning recommendations based on the chapter's stated dependencies. Confirm formal prerequisites against this curriculum before treating them as mandatory.
 
 ## Chapter Scope
 
 RET-02 covers three connected responsibilities.
 
-| Responsibility | Primary focus | Teaching file |
+| Responsibility | Primary focus | lesson |
 |---|---|---|
 | Content preparation | Extraction, normalization, structural preservation, and extraction validation | [01 — Document Extraction and Normalization](./01-Document-Extraction-and-Normalization.md) |
 | Identity and traceability | Metadata, stable identity, provenance, versions, and source traceability | [02 — Metadata, Identity, and Provenance](./02-Metadata-Identity-and-Provenance.md) |
@@ -81,7 +81,7 @@ In particular, corpus freshness and index freshness are related but distinct: RE
 
 ## Learning Path
 
-Complete the three teaching files in the following order.
+Complete the three lessons in the following order.
 
 ### 1. Document Extraction and Normalization
 

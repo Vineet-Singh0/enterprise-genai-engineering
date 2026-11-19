@@ -257,7 +257,7 @@ AGT-11 requires precise distinctions between related concepts.
 | **Execution Correctness vs. Execution Safety** | An execution can be technically correct while still being unsafe. |
 | **State Correctness vs. State Safety** | A state can be valid or consistent while still being unsafe for continued execution. |
 
-The teaching files develop these distinctions in depth.
+The lessons develop these distinctions in depth.
 
 ---
 
