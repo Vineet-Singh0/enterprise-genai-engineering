@@ -89,7 +89,7 @@ See [AGT-01-Agent-Systems-Foundations](../AGT-01-Agent-Systems-Foundations/READM
 
 ## Learning Path
 
-Read the teaching files in the following order.
+Read the lessons in the following order.
 
 ### 1. Runtime Harness and Execution Loop
 
@@ -462,7 +462,7 @@ The chapter emphasizes layered runtime boundaries rather than treating any singl
 
 ## Practical Learning Path
 
-For each teaching file:
+For each lesson:
 
 1. Read the learning objectives.
 2. Build the mental model before focusing on terminology.

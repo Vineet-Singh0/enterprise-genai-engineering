@@ -72,4 +72,4 @@ You have completed RET Phase 1 when you can design and implement a retrieval pip
 
 This README is based on **RET Phase 1 Documentation Plan v1.4.1**. Chapter paths reflect the planned structure and proposed RET-12 rename. Repository existence and link resolution have not been verified; validate all relative links against the approved repository structure before publication.
 
-Maintain this README as the domain navigation entry point, not as a substitute for chapter teaching. Use approved relative paths, validate links whenever referenced files or folders are renamed, and keep detailed concept explanations in their designated teaching files. Later chapters may reference earlier concepts but should not duplicate their primary explanations.
+Maintain this README as the domain navigation entry point, not as a substitute for chapter teaching. Use relative paths, validate links whenever referenced files or folders are renamed, and keep detailed concept explanations in their designated lessons. Later chapters may reference earlier concepts but should not duplicate their primary explanations.

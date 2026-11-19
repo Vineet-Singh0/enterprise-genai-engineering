@@ -64,7 +64,7 @@ AIF may introduce the concepts necessary to understand these areas, but it does 
 
 ## 4. Learning Path
 
-AIF contains seven pillars in the approved order. Their order defines the curriculum's intended progression; it does **not**, by itself, establish mandatory prerequisite dependencies.
+AIF contains seven pillars in the recommended order. Their order defines the curriculum's intended progression; it does **not**, by itself, establish mandatory prerequisite dependencies.
 
 | Order | Pillar | Primary focus | Teaching chapters |
 |---:|---|---|---:|

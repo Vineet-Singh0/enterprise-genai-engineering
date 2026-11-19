@@ -157,7 +157,7 @@ After completing PROD-12, an engineer should be able to:
 
 ## Learning Progression
 
-The three teaching files form one reasoning progression:
+The three lessons form one reasoning progression:
 
 ```text
 01 — Production Readiness and Architecture Review

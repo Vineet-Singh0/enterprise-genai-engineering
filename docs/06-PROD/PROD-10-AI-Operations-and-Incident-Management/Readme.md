@@ -259,7 +259,7 @@ After completing PROD-10, an engineer should be able to:
 
 ## Learning Progression
 
-The three teaching files form a deliberate progression:
+The three lessons form a deliberate progression:
 
 ```text
 01 — Prepare
@@ -519,7 +519,7 @@ PROD-10 develops judgment around operational trade-offs, including:
 - communication speed vs information certainty
 - standard procedures vs incident-specific judgment
 
-The detailed analysis of these trade-offs belongs in the relevant teaching files.
+The detailed analysis of these trade-offs belongs in the relevant lessons.
 
 ---
 

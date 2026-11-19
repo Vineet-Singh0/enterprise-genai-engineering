@@ -160,7 +160,7 @@ rather than only describing what was chosen.
 
 ## Concept Ownership
 
-The three teaching files have distinct responsibilities:
+The three lessons have distinct responsibilities:
 
 ```text
 ┌─────────────────────────────────────────────────────────┐

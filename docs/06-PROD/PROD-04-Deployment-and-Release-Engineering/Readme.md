@@ -149,7 +149,7 @@ The engineering reasoning progresses from **moving changes** to **controlling th
 
 ---
 
-## Teaching File Map
+## lesson Map
 
 ### 01 — AI CI/CD, Infrastructure Provisioning and Artifact Promotion
 
@@ -523,7 +523,7 @@ You should be able to answer:
 
 ## Navigation
 
-### Teaching Files
+### lessons
 
 1. [01 — AI CI/CD, Infrastructure Provisioning and Artifact Promotion](./01-AI-CI-CD-Infrastructure-Provisioning-and-Artifact-Promotion.md)
 2. [02 — Deployment Strategies and Progressive Delivery](./02-Deployment-Strategies-and-Progressive-Delivery.md)

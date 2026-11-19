@@ -564,7 +564,7 @@ Outputs depend on the model, generation strategy, configuration, and runtime. Id
 
 ## 17. Further Reading
 
-Consult the following approved curriculum topics for deeper explanations:
+Consult the following related curriculum topics for deeper explanations:
 
 - **LLM-02 — Language Model Training and Learned Behavior:** Training objectives, optimization, and the development of learned behavior.
 - **LLM-03 — Tokenization and Language Representation:** Token IDs, tokenizer/model compatibility, and input representation.

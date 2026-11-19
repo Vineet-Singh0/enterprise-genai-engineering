@@ -170,17 +170,17 @@ This handbook is designed to be:
 
 ---
 
-## Current Documentation Status
+## Domains Available
 
-| Domain | Status |
+| Domain | Notes |
 |---------|--------|
-| ENG | ✅ Completed |
-| AIF | ✅ Completed |
-| LLM | ✅ Completed |
-| RET | ✅ Completed |
-| AGT | ✅ Completed |
-| PROD | ✅ Completed |
-| ENT | ✅ Completed |
+| ENG | Engineering Foundations — published |
+| AIF | AI Foundations — published |
+| LLM | LLM Engineering — published |
+| RET | Retrieval Engineering — published |
+| AGT | Agent Engineering — published |
+| PROD | Production AI Engineering — published |
+| ENT | Enterprise AI Systems — published |
 
 ---
 

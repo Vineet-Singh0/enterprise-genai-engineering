@@ -51,6 +51,7 @@ const TOC_KEEP = new Set(
     'before we start',
     'summary',
     'overview',
+    'completion check',
   ].map((s) => s.toLowerCase()),
 );
 
@@ -64,48 +65,87 @@ function normalize(text: string): string {
   return text.replace(/\s+/g, ' ').trim();
 }
 
+/** `1. Title` — numbered major sections (must stay in TOC). */
+function isNumberedMajor(text: string): boolean {
+  return /^\d+\.\s+\S/.test(text);
+}
+
+/** `3.1 Title` / `11.1 Title` — numbered structural subsections. */
+function isNumberedSub(text: string): boolean {
+  return /^\d+\.\d+(?:\.\d+)*\b/.test(text);
+}
+
+/** `Step 1: …` evaluation / procedure headings. */
+function isStepHeading(text: string): boolean {
+  return /^step\s*\d+/i.test(text);
+}
+
+/**
+ * Repetitive instructional sequences — noisy as TOC destinations.
+ * Mistake N, QN, Query A/B/C, bare Question N.
+ */
+function isRepetitiveMicroSequence(text: string): boolean {
+  const t = normalize(text);
+  if (/^mistake\s*\d+\b/i.test(t)) return true;
+  if (/^queries?\s*[a-c]\b/i.test(t)) return true;
+  if (/^q\d+\b/i.test(t)) return true;
+  if (/^(question|answer|example|remember)\s*\d+\b/i.test(t)) return true;
+  if (/^(q|a)\d*$/i.test(t)) return true;
+  return false;
+}
+
 function isMicroHeading(text: string): boolean {
   const t = normalize(text);
   const lower = t.toLowerCase();
   if (TOC_KEEP.has(lower)) return false;
+  if (isNumberedMajor(t) || isNumberedSub(t) || isStepHeading(t)) return false;
+  if (isRepetitiveMicroSequence(t)) return true;
   if (TOC_MICRO.has(lower)) return true;
   if (t.length <= 3) return true;
-  if (/^(q|a)\d*$/i.test(t)) return true;
-  if (/^(question|answer|example|remember)\s*\d*$/i.test(t)) return true;
   return false;
 }
 
 /**
- * Major H2/H3 navigation only. Stricter H3 rules; collapse to H2-heavy
- * when the list would still be very long.
+ * H2/H3 navigation: keep numbered structure + meaningful titles;
+ * drop repetitive Mistake/Q/Query micro-sequences.
  */
 export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
   const primary = headings.filter((h) => {
     if (h.depth < 2 || h.depth > 3) return false;
-    if (isMicroHeading(h.text)) return false;
     const t = normalize(h.text);
     const lower = t.toLowerCase();
 
-    // Procedural step / numbered markers — useful in prose, noisy in TOC
-    if (/^step\s*\d+/i.test(t)) return false;
-    if (/^\d+\.\s/.test(t)) return false;
+    if (isRepetitiveMicroSequence(t)) return false;
+    if (isMicroHeading(h.text)) return false;
+
+    // Always keep numbered majors, N.M subs, and Step N procedure headings
+    if (isNumberedMajor(t) || isNumberedSub(t) || isStepHeading(t)) return true;
+    if (TOC_KEEP.has(lower)) return true;
 
     if (h.depth === 3) {
-      if (TOC_KEEP.has(lower)) return true;
-      if (t.length < 18) return false;
+      // Descriptive H3: drop ultra-short labels only
+      if (t.length < 12) return false;
       return true;
     }
 
     // H2: keep majors; drop very short non-keep labels
-    if (!TOC_KEEP.has(lower) && t.length < 8) return false;
+    if (t.length < 8) return false;
     return true;
   });
 
+  // If still very long, prefer H2 + structural N.M / Step / keep-list H3
   const h2Count = primary.filter((h) => h.depth === 2).length;
-  if (primary.length > 36 && h2Count >= 8) {
-    return primary.filter(
-      (h) => h.depth === 2 || TOC_KEEP.has(normalize(h.text).toLowerCase()),
-    );
+  if (primary.length > 40 && h2Count >= 8) {
+    return primary.filter((h) => {
+      if (h.depth === 2) return true;
+      const t = normalize(h.text);
+      const lower = t.toLowerCase();
+      return (
+        isNumberedSub(t) ||
+        isStepHeading(t) ||
+        TOC_KEEP.has(lower)
+      );
+    });
   }
 
   return primary;

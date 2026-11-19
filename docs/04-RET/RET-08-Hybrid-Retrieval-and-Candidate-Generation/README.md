@@ -195,7 +195,7 @@ Completion is demonstrated through engineering reasoning and a reproducible prac
 
 ## Planning Notes
 
-The chapter's planning estimates are governed by the approved RET documentation plan. Reading time and word count are estimates for planning purposes, not per-file quotas or substitutes for technical completeness. Each teaching file should be as detailed as necessary to meet its approved learning objectives without unnecessary repetition.
+The chapter's planning estimates are governed by the RET chapter plan. Reading time and word count are estimates for planning purposes, not per-file quotas or substitutes for technical completeness. Each lesson should be as detailed as necessary to meet its learning objectives without unnecessary repetition.
 
 ## Next Step
 

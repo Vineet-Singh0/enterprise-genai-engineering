@@ -34,7 +34,7 @@ After completing this chapter, you should be able to:
 
 ## Chapter Structure
 
-This chapter contains three teaching files.
+This chapter contains three lessons.
 
 ### 01 — Enterprise AI Integration Patterns and System Boundaries
 
@@ -149,7 +149,7 @@ Enterprise Interfaces
 Cross-System Trust / Compatibility
 ```
 
-Each teaching file builds on the architectural reasoning established by the preceding file.
+Each lesson builds on the architectural reasoning established by the preceding file.
 
 ---
 
@@ -255,7 +255,7 @@ These topics may be referenced when necessary to establish an architectural boun
 
 ## Recommended Reading Order
 
-Read the teaching files sequentially:
+Read the lessons sequentially:
 
 1. [`01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 2. [`02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
@@ -315,4 +315,4 @@ docs/
 **Chapter:** ENT-06  
 **Title:** Enterprise AI Integration and Platform Architecture  
 **Chapter Structure:** Approved  
-**Teaching Files:** 3
+**lessons:** 3

@@ -2211,4 +2211,4 @@ PROD-01 establishes the foundations for reasoning about production AI systems.
 
 The next production engineering topic should build on these foundations by addressing the mechanisms required to make production AI systems reproducible, portable, and operationally consistent.
 
-Continue according to the approved PROD curriculum sequence.
+Continue according to the PROD domain sequence.

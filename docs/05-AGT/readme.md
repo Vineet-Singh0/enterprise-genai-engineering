@@ -1034,16 +1034,16 @@ This is a cross-cutting mental model spanning multiple AGT chapters rather than 
 AGT Phase 1 contains:
 
 - **12 chapters**
-- **35 teaching files**
+- **35 lessons**
 - **12 chapter READMEs**
 - **1 domain README**
 - **48 Markdown artifacts in total**
 
 The curriculum progresses from foundational agent concepts toward end-to-end architecture and design review.
 
-AGT-07 contains 2 teaching files.
+AGT-07 contains 2 lessons.
 
-All other chapters contain 3 teaching files.
+All other chapters contain 3 lessons.
 
 ---
 

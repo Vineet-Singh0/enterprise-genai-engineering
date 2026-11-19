@@ -185,7 +185,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** What changes when an AI capability becomes a production system?
 
-**Teaching files:**
+**lessons:**
 
 1. [Production AI Problem and Production Boundaries](./PROD-01-Production-AI-System-Foundations/01-Production-AI-Problem-and-Production-Boundaries.md)
 2. [Production AI System Architecture and Service Boundaries](./PROD-01-Production-AI-System-Foundations/02-Production-AI-System-Architecture-and-Service-Boundaries.md)
@@ -203,7 +203,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How can an AI application run reproducibly across environments?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Application Packaging and Reproducibility](./PROD-02-AI-Application-Packaging-and-Runtime/01-AI-Application-Packaging-and-Reproducibility.md)
 2. [Containers, Configuration and Runtime Contracts](./PROD-02-AI-Application-Packaging-and-Runtime/02-Containers-Configuration-and-Runtime-Contracts.md)
@@ -221,7 +221,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How should AI inference be served in production?
 
-**Teaching files:**
+**lessons:**
 
 1. [Production Inference and Model Serving](./PROD-03-Production-Model-and-AI-Serving/01-Production-Inference-and-Model-Serving.md)
 2. [Concurrency, Queues, Batching and Streaming](./PROD-03-Production-Model-and-AI-Serving/02-Concurrency-Queues-Batching-and-Streaming.md)
@@ -239,7 +239,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How can AI changes be deployed safely and repeatably?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI CI/CD, Infrastructure Provisioning and Artifact Promotion](./PROD-04-Deployment-and-Release-Engineering/01-AI-CI-CD-Infrastructure-Provisioning-and-Artifact-Promotion.md)
 2. [Deployment Strategies and Progressive Delivery](./PROD-04-Deployment-and-Release-Engineering/02-Deployment-Strategies-and-Progressive-Delivery.md)
@@ -257,7 +257,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How do we determine what is happening inside a production AI system?
 
-**Teaching files:**
+**lessons:**
 
 1. [Production AI Observability and Telemetry](./PROD-05-AI-Observability-and-Telemetry/01-Production-AI-Observability-and-Telemetry.md)
 2. [Logs, Metrics, Traces and AI-Specific Signals](./PROD-05-AI-Observability-and-Telemetry/02-Logs-Metrics-Traces-and-AI-Specific-Signals.md)
@@ -275,7 +275,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How should the system behave when components or dependencies fail?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Service Reliability, SLIs, SLOs and Error Budgets](./PROD-06-Production-AI-Reliability/01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md)
 2. [Failure Isolation, Timeouts, Retries and Backpressure](./PROD-06-Production-AI-Reliability/02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md)
@@ -293,7 +293,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How does the system remain viable as demand and resource requirements change?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Capacity Planning and Scaling Models](./PROD-07-Scaling-and-Capacity-Engineering/01-AI-Capacity-Planning-and-Scaling-Models.md)
 2. [Autoscaling, Capacity, Concurrency, Queues and GPU Resources](./PROD-07-Scaling-and-Capacity-Engineering/02-Autoscaling-Capacity-Concurrency-Queues-and-GPU-Resources.md)
@@ -311,7 +311,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How can production AI systems meet performance requirements efficiently?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Latency, Throughput and Performance Analysis](./PROD-08-AI-Performance-Optimization-and-Cost/01-AI-Latency-Throughput-and-Performance-Analysis.md)
 2. [Inference Optimization and Resource Efficiency](./PROD-08-AI-Performance-Optimization-and-Cost/02-Inference-Optimization-and-Resource-Efficiency.md)
@@ -329,7 +329,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How can production AI systems be protected against security threats?
 
-**Teaching files:**
+**lessons:**
 
 1. [Production AI Identity, Secrets and Access Control](./PROD-09-Production-AI-Security/01-Production-AI-Identity-Secrets-and-Access-Control.md)
 2. [AI Application, Container and Supply Chain Security](./PROD-09-Production-AI-Security/02-AI-Application-Container-and-Supply-Chain-Security.md)
@@ -347,7 +347,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How should engineers operate and recover production AI systems?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Production Operations and On-Call Readiness](./PROD-10-AI-Operations-and-Incident-Management/01-AI-Production-Operations-and-On-Call-Readiness.md)
 2. [AI Incident Detection, Diagnosis, Recovery and Disaster Readiness](./PROD-10-AI-Operations-and-Incident-Management/02-AI-Incident-Detection-Diagnosis-Recovery-and-Disaster-Readiness.md)
@@ -365,7 +365,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** How should AI systems evolve while maintaining acceptable production quality?
 
-**Teaching files:**
+**lessons:**
 
 1. [AI Model, Application and Configuration Lifecycle](./PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/01-AI-Model-Application-and-Configuration-Lifecycle.md)
 2. [Production Evaluation, Drift and Quality Signals](./PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/02-Production-Evaluation-Drift-and-Quality-Signals.md)
@@ -383,7 +383,7 @@ The chapter map provides orientation only. Detailed teaching remains inside the 
 
 **Primary question:** Can the complete AI system safely and reliably operate in production?
 
-**Teaching files:**
+**lessons:**
 
 1. [Production Readiness and Architecture Review](./PROD-12-Production-Readiness-and-Architecture-Review/01-Production-Readiness-and-Architecture-Review.md)
 2. [Production Trade-offs and Operational Design](./PROD-12-Production-Readiness-and-Architecture-Review/02-Production-Trade-offs-and-Operational-Design.md)
@@ -487,7 +487,7 @@ PROD-12 integrates the production engineering concerns into an end-to-end readin
 | **PROD-12 vs AGT-12** | PROD-12 owns validation of production readiness and production-operability concerns across the complete AI system; AGT-12 owns agent-specific architecture selection, composition, and architecture validation. |
 | **PROD-02 vs PROD-09** | PROD-02 owns artifact creation, dependency/environment reproducibility, and artifact provenance; PROD-09 owns security controls that protect applications, containers, and the software supply chain from compromise. |
 
-These boundaries prevent the README and later teaching files from treating related concepts as interchangeable.
+These boundaries prevent the README and later lessons from treating related concepts as interchangeable.
 
 ---
 
@@ -701,7 +701,7 @@ Avoid:
 - vendor promotion,
 - framework-specific assumptions,
 - unsupported claims,
-- deep teaching of concepts owned by individual teaching files.
+- deep teaching of concepts owned by individual lessons.
 
 ---
 
@@ -729,7 +729,7 @@ Detailed treatment of:
 - retry storms,
 - or other implementation details
 
-belongs in the appropriate teaching files.
+belongs in the appropriate lessons.
 
 The same principle applies throughout the PROD domain.
 
@@ -739,7 +739,7 @@ The same principle applies throughout the PROD domain.
 
 The domain README does not own the concepts it mentions.
 
-Concept ownership remains with the approved teaching files.
+Concept ownership remains with the lessons.
 
 The README provides:
 
@@ -753,7 +753,7 @@ Dependency Map
 Learning Progression
 ```
 
-The 36 teaching files remain the primary locations for detailed technical instruction.
+The 36 lessons remain the primary locations for detailed technical instruction.
 
 ---
 
@@ -766,7 +766,7 @@ Validation should confirm:
 ### Structural Validation
 
 - 12 chapters are present.
-- 36 teaching files are represented.
+- 36 lessons are represented.
 - Chapter and file names match the approved architecture.
 - Relative links resolve to the approved structure.
 - No invented files are introduced.
@@ -784,7 +784,7 @@ Validation should confirm:
 ### Documentation Validation
 
 - The README remains navigation-focused.
-- Detailed teaching remains in teaching files.
+- Detailed teaching remains in lessons.
 - Chapter descriptions are not unnecessarily duplicated.
 - Technology does not become the organizing principle.
 - The document remains concise and GitHub-compatible.
@@ -811,7 +811,7 @@ Particular attention should be paid to:
 The frozen PROD domain contains:
 
 - **12 chapters**
-- **36 teaching files**
+- **36 lessons**
 - **12 chapter READMEs**
 - **1 domain README**
 - **49 total Markdown artifacts**
@@ -846,4 +846,4 @@ Lifecycle & Evaluation
 Production Readiness
 ```
 
-This structure provides the navigation model for the entire PROD domain while keeping detailed engineering instruction inside the approved teaching files.
+This structure provides the navigation model for the entire PROD domain while keeping detailed engineering instruction inside the lessons.

@@ -354,7 +354,7 @@ AGT-08 primarily addresses the **communication and interoperability layer**. Bro
 
 The concepts in AGT-08 become important in production when systems depend on capabilities or agents that are independently developed, deployed, versioned, or operated.
 
-The teaching files address concerns such as:
+The lessons address concerns such as:
 
 - compatibility
 - capability discovery
@@ -368,7 +368,7 @@ The teaching files address concerns such as:
 - dependency ownership
 - operational visibility and auditability
 
-Detailed implementation and failure analysis remain in the relevant teaching files rather than being duplicated here.
+Detailed implementation and failure analysis remain in the relevant lessons rather than being duplicated here.
 
 ---
 
@@ -428,7 +428,7 @@ docs/
         └── 03-Agent-to-Agent-Interoperability-and-A2A.md
 ```
 
-Use this README as the chapter navigation point. Detailed concepts, examples, implementation guidance, production considerations, and interview material belong in the three teaching files.
+Use this README as the chapter navigation point. Detailed concepts, examples, implementation guidance, production considerations, and interview material belong in the three lessons.
 
 ---
 

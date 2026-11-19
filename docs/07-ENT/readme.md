@@ -245,7 +245,7 @@ The curriculum distinguishes between:
 
 ## 8. Chapter Map
 
-| Chapter | Focus | Core Question | Teaching Files |
+| Chapter | Focus | Core Question | lessons |
 |---|---|---|---|
 | ENT-01 | Enterprise AI Capability Architecture and Operating Models | How should enterprise AI capabilities and operating models be structured? | 3 |
 | ENT-02 | AI Governance, Accountability and Lifecycle Control | Who has authority and how are AI lifecycle decisions governed? | 3 |
@@ -601,7 +601,7 @@ ENT is:
 - concept-first;
 - evidence-oriented.
 
-Vendor and framework examples may appear in teaching files, but they must not define the curriculum.
+Vendor and framework examples may appear in lessons, but they must not define the curriculum.
 
 ---
 
@@ -705,7 +705,7 @@ ENT prepares the learner for advanced architecture and engineering questions suc
 - How would you define enterprise AI continuity requirements?
 - Where does ENT stop and PROD/AGT begin?
 
-The teaching files provide the deeper reasoning, analysis, and application required to answer these questions.
+The lessons provide the deeper reasoning, analysis, and application required to answer these questions.
 
 ---
 
@@ -766,7 +766,7 @@ docs/
 
 ```text
 9 chapters
-28 teaching files
+28 lessons
 9 chapter READMEs
 1 domain README
 38 total Markdown artifacts
@@ -791,4 +791,4 @@ Cross-domain references are expected and encouraged.
 
 Deep re-teaching is not.
 
-The domain README provides orientation and navigation; the chapter teaching files provide the actual instruction.
+The domain README provides orientation and navigation; the chapter lessons provide the actual instruction.

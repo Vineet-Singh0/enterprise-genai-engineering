@@ -100,7 +100,7 @@ AGT-06 does not own the following areas:
 
 ## Chapter Structure
 
-AGT-06 contains three teaching files.
+AGT-06 contains three lessons.
 
 ### 01 — Workflow Patterns, Branches, Loops and Parallelism
 
@@ -313,7 +313,7 @@ AGT-06 owns the **orchestration mechanics of the selected execution path**.
 
 ## Core Engineering Themes
 
-The teaching files develop a small set of connected engineering themes:
+The lessons develop a small set of connected engineering themes:
 
 ```text
 Control Flow
@@ -344,7 +344,7 @@ The chapter also examines the consequences of:
 - cancellation
 - partial completion
 
-These themes are developed in the teaching files rather than treated as independent topics.
+These themes are developed in the lessons rather than treated as independent topics.
 
 ---
 
@@ -407,7 +407,7 @@ AGT-06 explicitly addresses misconceptions around:
 - Cancellation vs automatic rollback
 - Recovery vs restarting from the beginning
 
-Detailed explanations belong in the teaching files.
+Detailed explanations belong in the lessons.
 
 ---
 

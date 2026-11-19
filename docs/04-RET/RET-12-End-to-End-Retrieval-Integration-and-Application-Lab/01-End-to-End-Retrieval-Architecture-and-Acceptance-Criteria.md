@@ -992,7 +992,7 @@ A design should not proceed to implementation with unresolved ambiguity in manda
 
 ## 13. Relationship with Remaining RET-12 Files
 
-The four teaching files form one implementation and validation sequence.
+The four lessons form one implementation and validation sequence.
 
 | File | Responsibility | Relationship to this file |
 |---|---|---|

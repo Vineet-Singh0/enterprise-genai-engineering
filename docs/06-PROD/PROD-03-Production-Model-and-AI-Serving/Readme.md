@@ -243,7 +243,7 @@ Focus:
 
 ---
 
-## Teaching File Map
+## lesson Map
 
 | Order | File | Primary Responsibility |
 |---|---|---|
@@ -410,7 +410,7 @@ The learner should be able to make serving architecture decisions based on workl
 
 ## Navigation
 
-### Teaching Files
+### lessons
 
 1. [01 — Production Inference and Model Serving](./01-Production-Inference-and-Model-Serving.md)
 2. [02 — Concurrency, Queues, Batching and Streaming](./02-Concurrency-Queues-Batching-and-Streaming.md)
@@ -444,4 +444,4 @@ PROD-03 — Production Model and AI Serving
     └── Request → Router → Serving Target → Inference
 ```
 
-**Recommended path:** Read the three teaching files in order. Use this README as the chapter map and scope reference rather than as a substitute for the teaching content.
+**Recommended path:** Read the three lessons in order. Use this README as the chapter map and scope reference rather than as a substitute for the teaching content.

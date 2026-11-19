@@ -24,7 +24,7 @@ This chapter treats capacity and scaling as engineering problems rather than inf
 
 ## Learning Path
 
-PROD-07 is organized into three teaching files.
+PROD-07 is organized into three lessons.
 
 ### 01 — AI Capacity Planning and Scaling Models
 

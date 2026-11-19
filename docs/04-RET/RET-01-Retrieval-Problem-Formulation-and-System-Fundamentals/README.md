@@ -33,7 +33,7 @@ These prerequisites provide the background needed to reason about retrieval inpu
 
 ## Chapter Contents
 
-Complete the teaching files in the following order.
+Complete the lessons in the following order.
 
 | File | Topic | Purpose |
 |---|---|---|
@@ -98,7 +98,7 @@ If you cannot explain why a result should count as relevant or how success will 
 
 ## Documentation Status
 
-- **Chapter structure:** Three teaching files, in the approved order.
+- **Chapter structure:** Three lessons, in the recommended order.
 - **Reading-time estimate:** 20 minutes, aligned with the RET Phase 1 Documentation Plan.
 - **Scope:** Restricted to retrieval problem formulation, relevance, success criteria, and conceptual system boundaries.
 - **Cross-chapter references:** Proposed paths based on the planning inventory; live repository compatibility has not been verified.

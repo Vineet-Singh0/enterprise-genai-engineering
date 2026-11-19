@@ -56,7 +56,7 @@ Technology examples may be used to illustrate concepts, but implementation tutor
 
 ## Learning Path
 
-PROD-06 contains exactly three teaching files.
+PROD-06 contains exactly three lessons.
 
 ```text
 PROD-06 — Production AI Reliability
@@ -504,7 +504,7 @@ User-Visible Outcome
 Reliability Trade-off
 ```
 
-The detailed reasoning frameworks and failure-control mechanisms are intentionally developed inside the teaching files rather than duplicated here.
+The detailed reasoning frameworks and failure-control mechanisms are intentionally developed inside the lessons rather than duplicated here.
 
 ---
 
@@ -547,7 +547,7 @@ Admission control
 Reduced accepted traffic
 ```
 
-The teaching files develop these trade-offs in the context of the reliability mechanisms they own.
+The lessons develop these trade-offs in the context of the reliability mechanisms they own.
 
 ---
 
@@ -640,7 +640,7 @@ docs/06-PROD/PROD-06-Production-AI-Reliability/
 └── 03-Graceful-Degradation-Fallbacks-and-Dependency-Failure.md
 ```
 
-These are the only teaching files in PROD-06.
+These are the only lessons in PROD-06.
 
 Each important concept has a primary teaching location so that later chapters can reference reliability engineering without duplicating its core instruction.
 

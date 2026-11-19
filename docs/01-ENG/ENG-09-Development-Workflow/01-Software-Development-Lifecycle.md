@@ -523,7 +523,7 @@ The lifecycle encourages engineers to consider the complete change rather than f
 
 A change may be implemented and validated without having been deployed to production.
 
-Deployment and operational processes have their own engineering concerns and approved curriculum boundaries.
+Deployment and operational processes have their own engineering concerns and curriculum boundaries.
 
 For this chapter, the relevant distinction is that development completion should be defined in terms of the change's agreed scope and completion conditions. It should not be treated as proof that every subsequent operational activity has occurred.
 
