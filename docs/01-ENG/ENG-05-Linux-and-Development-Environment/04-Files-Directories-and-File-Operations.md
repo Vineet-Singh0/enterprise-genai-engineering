@@ -38,7 +38,7 @@ Recommended previous chapters:
 
 ### Important Boundary
 
-This chapter owns **practical file and directory operations**.
+This lesson covers **practical file and directory operations**.
 
 It does not deeply teach:
 

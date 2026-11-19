@@ -34,8 +34,6 @@ Relevant foundations:
 - LLM-02, Chapter 2 — Pretraining and Training Data
 - LLM-02, Chapter 3 — Training Dynamics, Generalization, and Overfitting
 
-*Cross-topic paths are references to the curriculum structure and should be verified against the repository before publication.*
-
 ## 3. Estimated Reading Time
 
 Approximately 13–16 minutes.
@@ -134,30 +132,17 @@ A production system may combine a tuned model with clear prompts, retrieval, str
 
 Think of pretraining as learning a broad language-and-world representation, and supervised fine-tuning as practicing a particular way of using that representation.
 
-<box border radius="lg" padding={4} gap={2}>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **Pretrained language model**
-
-    <text textAlign="center" size="sm">Broad learned representations and next-token prediction capability</text>
-  </box>
-  <box align="center" gap={1}>
-    <icon name="arrow-down" size="xl" />
-    <text color="secondary" size="sm">Supervised instruction-response examples</text>
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center" gap={1}>
-    **Supervised fine-tuning**
-
-    <text textAlign="center" size="sm">Optimize model parameters using selected demonstrations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" size="xl" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **Instruction-tuned model**
-
-    <text textAlign="center" size="sm">A model trained to respond according to demonstrated patterns</text>
-  </box>
-</box>
+```text
+**Pretrained language model**
+Broad learned representations and next-token prediction capability
+        ↓
+Supervised instruction-response examples
+**Supervised fine-tuning**
+Optimize model parameters using selected demonstrations
+        ↓
+**Instruction-tuned model**
+A model trained to respond according to demonstrated patterns
+```
 
 This diagram represents a common workflow, not a guarantee that every model follows exactly these stages.
 
@@ -334,53 +319,25 @@ A deeper treatment of fine-tuning methods and their implementation belongs in de
 
 A typical instruction-tuning pipeline contains the following stages.
 
-<box border radius="lg" padding={3} gap={2}>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **1. Prepare supervised examples**
-
-    <text size="sm" textAlign="center">Instructions, context, demonstrations, and target responses</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **2. Validate and format data**
-
-    <text size="sm" textAlign="center">Quality checks, conversation templates, tokenization, and loss masks</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **3. Run the forward pass**
-
-    <text size="sm" textAlign="center">Predict token probabilities conditioned on the preceding sequence</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **4. Compute supervised loss**
-
-    <text size="sm" textAlign="center">Compare predicted probabilities with target tokens, respecting the loss mask</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center">
-    **5. Backpropagate and update**
-
-    <text size="sm" textAlign="center">Calculate gradients and update trainable parameters</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center">
-    **6. Evaluate and select a checkpoint**
-
-    <text size="sm" textAlign="center">Assess held-out performance, task quality, and behavioral regressions</text>
-  </box>
-</box>
+```text
+**1. Prepare supervised examples**
+Instructions, context, demonstrations, and target responses
+        ↓
+**2. Validate and format data**
+Quality checks, conversation templates, tokenization, and loss masks
+        ↓
+**3. Run the forward pass**
+Predict token probabilities conditioned on the preceding sequence
+        ↓
+**4. Compute supervised loss**
+Compare predicted probabilities with target tokens, respecting the loss mask
+        ↓
+**5. Backpropagate and update**
+Calculate gradients and update trainable parameters
+        ↓
+**6. Evaluate and select a checkpoint**
+Assess held-out performance, task quality, and behavioral regressions
+```
 
 This pipeline reuses the fundamental training loop described in Chapter 1. The important differences lie in the dataset's construction, sequence formatting, target selection, and evaluation criteria.
 

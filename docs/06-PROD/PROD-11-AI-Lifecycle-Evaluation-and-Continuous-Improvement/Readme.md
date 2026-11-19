@@ -368,7 +368,7 @@ The progression moves from understanding **how AI systems change** toward decidi
 
 AI Model Application and Configuration Lifecycle
 
-This lesson owns the lifecycle perspective of PROD-11.
+This lesson covers the lifecycle perspective of PROD-11.
 
 It covers:
 
@@ -397,7 +397,7 @@ It covers:
 
 Production Evaluation Drift and Quality Signals
 
-This lesson owns production quality measurement and interpretation.
+This lesson covers production quality measurement and interpretation.
 
 It covers:
 
@@ -440,7 +440,7 @@ Detailed treatment belongs in Lesson 02.
 
 Evaluation Gates Continuous Improvement and Safe Change
 
-This lesson owns the connection between evaluation evidence and change decisions.
+This lesson covers the connection between evaluation evidence and change decisions.
 
 It covers:
 

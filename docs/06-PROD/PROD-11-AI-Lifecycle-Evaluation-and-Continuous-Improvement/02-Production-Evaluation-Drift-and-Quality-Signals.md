@@ -2180,7 +2180,7 @@ Quality Interpretation
 Lifecycle Decision
 ```
 
-This chapter owns the **evidence and interpretation** side of that relationship.
+This lesson covers the **evidence and interpretation** side of that relationship.
 
 ---
 

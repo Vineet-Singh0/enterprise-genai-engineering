@@ -1107,5 +1107,3 @@ Related chapters:
 - [Chapter 03 — Activation and Loss Functions](03-Activation-and-Loss-Functions.md)
 - [Chapter 05 — Optimization and Training Dynamics](05-Optimization-and-Training-Dynamics.md)
 - [Chapter 06 — Regularization, Hyperparameters, and Failure Modes](06-Regularization-Hyperparameters-and-Failure-Modes.md)
-
-**Chapter status:** Draft generated for review. Chapter 05 has not been generated as part of this request.

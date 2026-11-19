@@ -1515,7 +1515,7 @@ AGT-08 asks:
 
 > How can a capability be exposed and consumed across an interoperability boundary?
 
-It owns:
+It covers:
 
 - capability exposure
 - capability discovery

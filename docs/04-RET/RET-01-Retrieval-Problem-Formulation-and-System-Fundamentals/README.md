@@ -45,8 +45,6 @@ Complete the lessons in the following order.
 
 **20 minutes**, excluding practical exercises.
 
-This is the planning estimate specified in the RET Phase 1 Documentation Plan. Actual reading time will depend on the learner's background and time spent on the exercise.
-
 ## Scope and Boundaries
 
 This chapter focuses on problem formulation, relevance, success criteria, and conceptual system boundaries. It does not teach retrieval algorithms or implement a complete retrieval pipeline.
@@ -64,8 +62,6 @@ This chapter focuses on problem formulation, relevance, success criteria, and co
 | Retrieval evaluation and experimental design | [RET-10 — Retrieval Evaluation and Experimental Design](../RET-10-Retrieval-Evaluation-and-Experimental-Design/README.md) | Owns formal retrieval metrics, evaluation methodology, and controlled experiments. |
 | Retrieval diagnostics and optimization | [RET-11 — Retrieval Diagnostics and Optimization](../RET-11-Retrieval-Diagnostics-and-Optimization/README.md) | Develops systematic failure analysis and targeted optimization. |
 | End-to-end retrieval integration and application lab | [RET-12 — End-to-End Retrieval Integration and Application Lab](../RET-12-End-to-End-Retrieval-Integration-and-Application-Lab/README.md) | Applies retrieval concepts in an integrated implementation and design exercise. |
-
-**Navigation note:** These cross-chapter destinations follow the proposed RET Phase 1 Documentation Plan v1.4.1. The plan states that repository verification has not been performed. Confirm every destination against the approved final inventory and actual repository before publication; the links must not be treated as verified merely because they are written as relative paths.
 
 ## Practical Exercise
 
@@ -95,11 +91,3 @@ You have completed RET-01 when you can:
 - Produce a retrieval problem specification that another engineer could use to guide implementation and evaluation.
 
 If you cannot explain why a result should count as relevant or how success will be judged, the problem is not yet sufficiently specified for sound retrieval-system design.
-
-## Documentation Status
-
-- **Chapter structure:** Three lessons, in the recommended order.
-- **Reading-time estimate:** 20 minutes, aligned with the RET Phase 1 Documentation Plan.
-- **Scope:** Restricted to retrieval problem formulation, relevance, success criteria, and conceptual system boundaries.
-- **Cross-chapter references:** Proposed paths based on the planning inventory; live repository compatibility has not been verified.
-- **Publication readiness:** Pending validation of the final approved inventory and all relative links against the actual repository.

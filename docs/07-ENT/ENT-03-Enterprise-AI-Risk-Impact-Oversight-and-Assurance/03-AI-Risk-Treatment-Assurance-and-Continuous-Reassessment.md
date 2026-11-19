@@ -1694,7 +1694,7 @@ Decide Again
 
 ## 27. Scope Boundary
 
-This chapter owns:
+This lesson covers:
 
 - AI risk treatment;
 - treatment selection;

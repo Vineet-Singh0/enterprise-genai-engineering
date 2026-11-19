@@ -175,10 +175,4 @@ After completing AIF-04:
 2. Study [AIF-06 — Sequence Modeling](../AIF-06-Sequence-Modeling/README.md) to understand recurrent architectures and sequential computation.
 3. Continue to [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md) to study attention and transformer architecture.
 
-These are the planned curriculum references. Verify that the destination files exist before relying on the links.
-
----
-
-**Topic:** AIF-04 — Deep Learning Foundations  
-**Curriculum:** Enterprise GenAI Engineering  
-**Documentation status:** README content prepared; teaching chapters remain to be generated and reviewed.
+Continue through those modules after finishing AIF-04.

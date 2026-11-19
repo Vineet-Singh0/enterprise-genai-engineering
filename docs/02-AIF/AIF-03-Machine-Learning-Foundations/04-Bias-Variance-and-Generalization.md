@@ -94,40 +94,24 @@ Both people might perform well on a test containing familiar examples. The first
 
 A machine learning model faces an analogous problem.
 
-<box>
-  <box border radius="lg" padding={3} gap={1}>
-    **Training data**
-
-    <text color="secondary" size="sm">Finite examples containing useful patterns, noise, and possible artifacts.</text>
-  </box>
-  <row justify="center">
-    <icon name="arrow-down" size="xl" color="secondary" />
-  </row>
-  <box border radius="lg" padding={3} gap={1}>
-    **Learning process**
-
-    <text color="secondary" size="sm">A model class and training procedure fit a relationship to the observed examples.</text>
-  </box>
-  <row justify="center">
-    <icon name="arrow-down" size="xl" color="secondary" />
-  </row>
-  <grid columns={2} gap={2}>
-    <grid-item>
-      <box border radius="lg" padding={3} gap={1} height="100%">
-        **Useful generalization**
-
-        <text size="sm">The learned relationship remains useful on unseen examples from the intended environment.</text>
-      </box>
-    </grid-item>
-    <grid-item>
-      <box border radius="lg" padding={3} gap={1} height="100%">
-        **Poor generalization**
-
-        <text size="sm">The model misses important patterns, fits accidental patterns, or encounters a changed environment.</text>
-      </box>
-    </grid-item>
-  </grid>
-</box>
+```text
+**Training data**
+Finite examples containing useful patterns, noise, and possible artifacts.
+        ↓
+**Learning process**
+A model class and training procedure fit a relationship to the observed examples.
+        ↓
+<grid columns={2} gap={2}>
+<grid-item>
+**Useful generalization**
+The learned relationship remains useful on unseen examples from the intended environment.
+</grid-item>
+<grid-item>
+**Poor generalization**
+The model misses important patterns, fits accidental patterns, or encounters a changed environment.
+</grid-item>
+</grid>
+```
 
 The goal is not to memorize the training data perfectly. The goal is to learn a relationship that remains useful beyond those observations.
 
@@ -324,20 +308,18 @@ The following patterns are conceptual illustrations, not measured results.
 
 ### 7.1 Underfitting pattern
 
-<box border radius="lg" padding={3} gap={2}>
-  <title size="md">Conceptual pattern: both errors remain high</title>
-  <svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
-    <line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
-    <line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
-    <text x="8" y="24" fill="currentColor" fontSize="10">Error</text>
-    <text x="118" y="173" fill="currentColor" fontSize="10">Training examples →</text>
-    <path d="M 48 47 C 95 56, 150 61, 205 63 S 270 64, 294 64" fill="none" stroke="#2563eb" strokeWidth="2.5" />
-    <path d="M 48 55 C 95 64, 150 69, 205 71 S 270 72, 294 72" fill="none" stroke="#ea580c" strokeWidth="2.5" />
-    <text x="213" y="54" fill="#2563eb" fontSize="10">Training</text>
-    <text x="213" y="86" fill="#ea580c" fontSize="10">Validation</text>
-  </svg>
-  <text color="secondary" size="sm">Both errors settle at an unsatisfactory level, with a relatively small gap. More data alone may not solve the limitation.</text>
-</box>
+<title size="md">Conceptual pattern: both errors remain high</title>
+<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
+<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
+<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
+Error
+Training examples →
+<path d="M 48 47 C 95 56, 150 61, 205 63 S 270 64, 294 64" fill="none" stroke="#2563eb" strokeWidth="2.5" />
+<path d="M 48 55 C 95 64, 150 69, 205 71 S 270 72, 294 72" fill="none" stroke="#ea580c" strokeWidth="2.5" />
+Training
+Validation
+</svg>
+Both errors settle at an unsatisfactory level, with a relatively small gap. More data alone may not solve the limitation.
 
 Interpretation:
 
@@ -349,20 +331,18 @@ Investigate model assumptions, feature information, data quality, and training a
 
 ### 7.2 Overfitting pattern
 
-<box border radius="lg" padding={3} gap={2}>
-  <title size="md">Conceptual pattern: training and validation diverge</title>
-  <svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
-    <line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
-    <line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
-    <text x="8" y="24" fill="currentColor" fontSize="10">Error</text>
-    <text x="118" y="173" fill="currentColor" fontSize="10">Training examples →</text>
-    <path d="M 48 42 C 85 65, 125 96, 175 112 S 260 126, 294 128" fill="none" stroke="#2563eb" strokeWidth="2.5" />
-    <path d="M 48 51 C 95 71, 128 79, 165 76 S 245 68, 294 65" fill="none" stroke="#ea580c" strokeWidth="2.5" />
-    <text x="222" y="121" fill="#2563eb" fontSize="10">Training</text>
-    <text x="219" y="55" fill="#ea580c" fontSize="10">Validation</text>
-  </svg>
-  <text color="secondary" size="sm">Training error continues to decrease while validation error stops improving or increases. This can indicate overfitting.</text>
-</box>
+<title size="md">Conceptual pattern: training and validation diverge</title>
+<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
+<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
+<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
+Error
+Training examples →
+<path d="M 48 42 C 85 65, 125 96, 175 112 S 260 126, 294 128" fill="none" stroke="#2563eb" strokeWidth="2.5" />
+<path d="M 48 51 C 95 71, 128 79, 165 76 S 245 68, 294 65" fill="none" stroke="#ea580c" strokeWidth="2.5" />
+Training
+Validation
+</svg>
+Training error continues to decrease while validation error stops improving or increases. This can indicate overfitting.
 
 Interpretation:
 

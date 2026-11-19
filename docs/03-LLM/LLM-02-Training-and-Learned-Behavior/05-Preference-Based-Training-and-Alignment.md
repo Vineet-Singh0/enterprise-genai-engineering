@@ -31,8 +31,6 @@ Relevant curriculum topics include:
 - LLM-02, Chapter 3 — Training Dynamics, Generalization, and Overfitting
 - LLM-02, Chapter 4 — Supervised Fine-Tuning and Instruction Tuning
 
-*Cross-topic repository paths should be verified against the actual curriculum structure before publication.*
-
 ## 3. Estimated Reading Time
 
 Approximately 15 minutes.
@@ -115,21 +113,12 @@ Preference-based training learns from information about which outputs are prefer
 
 These objectives are related, but they are not identical.
 
-<box border radius="lg" padding={3} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} gap={1}>
-    **Supervised fine-tuning**
-
-    <text size="sm">“Given this instruction, learn to produce this demonstrated response.”</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down-up" size="xl" />
-  </box>
-  <box background="surface" border radius="md" padding={3} gap={1}>
-    **Preference-based training**
-
-    <text size="sm">“Given this instruction and these alternatives, learn to favor the preferred response.”</text>
-  </box>
-</box>
+```text
+**Supervised fine-tuning**
+“Given this instruction, learn to produce this demonstrated response.”
+**Preference-based training**
+“Given this instruction and these alternatives, learn to favor the preferred response.”
+```
 
 Many model-development pipelines use SFT before preference-based training. SFT provides an instruction-following starting point, while preference optimization can further shape response quality.
 
@@ -313,53 +302,25 @@ Neither method is universally better. The appropriate approach depends on the ta
 
 A common high-level architecture is:
 
-<box border radius="lg" padding={3} gap={2}>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **Pretrained language model**
-
-    <text textAlign="center" size="sm">Broad language capabilities learned during pretraining</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center" gap={1}>
-    **Supervised fine-tuning**
-
-    <text textAlign="center" size="sm">Learn instruction-response patterns from demonstrations</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center" gap={1}>
-    **Preference collection**
-
-    <text textAlign="center" size="sm">Compare multiple responses for the same prompt or context</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center" gap={1}>
-    **Reward-model training**
-
-    <text textAlign="center" size="sm">Learn a scoring function from preference comparisons</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface" border radius="md" padding={3} align="center" gap={1}>
-    **Policy optimization**
-
-    <text textAlign="center" size="sm">Use reinforcement learning to improve reward while controlling policy drift</text>
-  </box>
-  <box align="center">
-    <icon name="arrow-down" />
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **Evaluation and deployment selection**
-
-    <text textAlign="center" size="sm">Validate desired behavior and detect regressions</text>
-  </box>
-</box>
+```text
+**Pretrained language model**
+Broad language capabilities learned during pretraining
+        ↓
+**Supervised fine-tuning**
+Learn instruction-response patterns from demonstrations
+        ↓
+**Preference collection**
+Compare multiple responses for the same prompt or context
+        ↓
+**Reward-model training**
+Learn a scoring function from preference comparisons
+        ↓
+**Policy optimization**
+Use reinforcement learning to improve reward while controlling policy drift
+        ↓
+**Evaluation and deployment selection**
+Validate desired behavior and detect regressions
+```
 
 The stages may be repeated or modified depending on the training approach. In particular, DPO-based workflows can use preference data without following the reward-model-plus-PPO sequence.
 

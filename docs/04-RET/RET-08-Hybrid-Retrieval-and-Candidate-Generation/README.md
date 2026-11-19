@@ -200,4 +200,3 @@ The chapter's planning estimates are governed by the RET chapter plan. Reading t
 
 Begin with [01 — Candidate Generation and Retriever Complementarity](01-Candidate-Generation-and-Retriever-Complementarity.md) after this README has been reviewed and explicitly approved.
 
-The repository paths in this README must be checked against the actual repository tree before publication. This draft describes the intended structure; it does not claim that the files already exist or that the links have been verified.

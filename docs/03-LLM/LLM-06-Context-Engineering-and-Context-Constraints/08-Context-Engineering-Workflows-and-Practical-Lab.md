@@ -207,7 +207,6 @@ An intermediate representation makes context preparation inspectable.
 ```python
 from dataclasses import dataclass
 
-
 @dataclass(frozen=True)
 class EvidenceItem:
     source_id: str
@@ -216,13 +215,11 @@ class EvidenceItem:
     authoritative: bool
     applicable: bool
 
-
 @dataclass(frozen=True)
 class ContextRequirements:
     required_evidence: tuple[str, ...]
     allow_partial_result: bool
     task_name: str
-
 
 @dataclass(frozen=True)
 class PreparedEvidenceContext:
@@ -463,12 +460,10 @@ from datetime import date, datetime
 from decimal import Decimal
 from enum import Enum
 
-
 class ApprovalStatus(Enum):
     APPROVED = "approved"
     NOT_APPROVED = "not_approved"
     UNKNOWN = "unknown"
-
 
 @dataclass(frozen=True)
 class Transaction:
@@ -482,7 +477,6 @@ class Transaction:
     jurisdiction: str
     transaction_type: str
 
-
 @dataclass(frozen=True)
 class Policy:
     version: str
@@ -495,7 +489,6 @@ class Policy:
     transaction_type: str
     exception_condition: str
 
-
 @dataclass(frozen=True)
 class ApprovalEvidence:
     status: ApprovalStatus
@@ -503,7 +496,6 @@ class ApprovalEvidence:
     transaction_id: str | None
     approved_at: datetime | None
     validated: bool
-
 
 @dataclass(frozen=True)
 class PreparedContext:
@@ -530,7 +522,6 @@ The `validated` field is a simplified fixture attribute, not a security boundary
 ```python
 from datetime import date
 from decimal import Decimal
-
 
 transaction = Transaction(
     transaction_id="TX-1042",
@@ -612,7 +603,6 @@ def policy_matches_transaction(
         and transaction.jurisdiction == policy.jurisdiction
         and transaction.transaction_type == policy.transaction_type
     )
-
 
 def select_applicable_policy(
     transaction: Transaction,
@@ -1111,7 +1101,6 @@ A corresponding test should verify that a validated denial is accepted only when
 
 ```python
 from datetime import datetime, timezone
-
 
 def test_same_day_prior_approval_is_supported():
     transaction_with_time = Transaction(

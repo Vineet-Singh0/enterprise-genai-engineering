@@ -459,7 +459,6 @@ The implementation below is intended to be a small, auditable fusion component. 
 from collections import defaultdict
 from collections.abc import Sequence
 
-
 def reciprocal_rank_fusion(
     ranked_lists: Sequence[Sequence[str]],
     k: int = 60,
@@ -502,7 +501,6 @@ def reciprocal_rank_fusion(
         scores.items(),
         key=lambda item: (-item[1], item[0]),
     )
-
 
 if __name__ == "__main__":
     lexical = ["A", "B", "C"]
@@ -612,7 +610,6 @@ import unittest
 
 from retrieval_fusion import reciprocal_rank_fusion
 
-
 class TestReciprocalRankFusion(unittest.TestCase):
     def test_worked_example(self):
         result = reciprocal_rank_fusion(
@@ -671,7 +668,6 @@ class TestReciprocalRankFusion(unittest.TestCase):
             with self.subTest(candidate_id=invalid_id):
                 with self.assertRaises(ValueError):
                     reciprocal_rank_fusion([[invalid_id]])
-
 
 if __name__ == "__main__":
     unittest.main()
@@ -864,7 +860,7 @@ If you cannot answer these confidently, revisit the corresponding sections and r
 
 ## 15. Document Boundaries and Next Step
 
-This chapter owns the mechanics and engineering choices involved in combining ranked retrieval results.
+This lesson covers the mechanics and engineering choices involved in combining ranked retrieval results.
 
 The related chapters have distinct responsibilities:
 

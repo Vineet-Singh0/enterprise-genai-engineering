@@ -30,30 +30,22 @@ For engineering purposes, treat the context window as a finite resource that mus
 
 A simplified mental model is:
 
-<box border radius="lg" padding={3} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} align="center" gap={1}>
-    **Available invocation capacity**
-    <text color="secondary" textAlign="center" size="sm">The supported token capacity for the model and interface</text>
-  </box>
-  <row justify="center">
-    <icon name="arrow-down" size="lg" color="secondary" />
-  </row>
-  <grid columns={2} gap={2}>
-    <grid-item>
-      <box border radius="md" padding={3} gap={1} height="100%">
-        **Input**
-        <text size="sm">Instructions, user input, history, reference material, tool results, and other supplied content</text>
-      </box>
-    </grid-item>
-    <grid-item>
-      <box border radius="md" padding={3} gap={1} height="100%">
-        **Output**
-        <text size="sm">Tokens generated in response to the invocation</text>
-      </box>
-    </grid-item>
-  </grid>
-  <text color="secondary" size="sm">Conceptual model: the exact capacity accounting and constraints must be verified for the specific model and API.</text>
-</box>
+```text
+**Available invocation capacity**
+The supported token capacity for the model and interface
+        ↓
+<grid columns={2} gap={2}>
+<grid-item>
+**Input**
+Instructions, user input, history, reference material, tool results, and other supplied content
+</grid-item>
+<grid-item>
+**Output**
+Tokens generated in response to the invocation
+</grid-item>
+</grid>
+Conceptual model: the exact capacity accounting and constraints must be verified for the specific model and API.
+```
 
 The window is a capacity limit, not a recommendation to fill every available token.
 

@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 08: APIs and Network Communication
+# APIs and Network Communication
 
 ## 1. Learning Objectives
 

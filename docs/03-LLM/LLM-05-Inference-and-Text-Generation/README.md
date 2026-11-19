@@ -221,4 +221,3 @@ These boundaries prevent duplicate teaching and keep topic focus clear across th
 
 **Repository:** `enterprise-genai-engineering`
 
-**Status:** Navigation structure proposed; chapter links should be verified against the approved repository file structure before publication.

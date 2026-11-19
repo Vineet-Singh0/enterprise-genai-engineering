@@ -824,7 +824,6 @@ class SmallNetwork(nn.Module):
         prediction = self.output(hidden)
         return prediction
 
-
 model = SmallNetwork()
 
 # One example with two features.
@@ -964,5 +963,3 @@ Related chapters:
 - [Chapter 04 — Backpropagation and Gradient Flow](04-Backpropagation-and-Gradient-Flow.md)
 - [Chapter 05 — Optimization and Training Dynamics](05-Optimization-and-Training-Dynamics.md)
 - [Chapter 06 — Regularization, Hyperparameters, and Failure Modes](06-Regularization-Hyperparameters-and-Failure-Modes.md)
-
-**Chapter status:** Draft generated for review. Chapter 03 has not been generated as part of this request.

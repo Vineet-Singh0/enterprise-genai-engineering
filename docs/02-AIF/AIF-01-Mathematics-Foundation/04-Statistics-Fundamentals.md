@@ -909,7 +909,7 @@ The central principle is that statistics helps engineers summarize data and reas
 - [Chapter 05 — Linear Algebra Foundations](05-Linear-Algebra-Foundations.md): mathematical representations used in AI/ML.
 - [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md): planned cross-pillar reference for model evaluation and data-related methodology; verify the target file exists in the repository.
 
-**Scope boundary:** This chapter owns foundational descriptive and inferential statistics concepts, central tendency, spread, percentiles, sampling variability, correlation, and outliers. It does not teach advanced statistical inference, formal hypothesis testing, detailed ML evaluation methodology, or experimental design in depth.
+**Scope:** This lesson covers foundational descriptive and inferential statistics concepts, central tendency, spread, percentiles, sampling variability, correlation, and outliers. It does not teach advanced statistical inference, formal hypothesis testing, detailed ML evaluation methodology, or experimental design in depth.
 
 ---
 

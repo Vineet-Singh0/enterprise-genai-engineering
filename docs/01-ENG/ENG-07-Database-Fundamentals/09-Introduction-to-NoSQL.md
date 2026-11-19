@@ -139,59 +139,10 @@ A modern relational database can store JSON documents, distribute workloads, and
 
 ## 4. The Four Major NoSQL Data Models
 
-<box gap={3}>
-  <row align=start gap={3}>
-    <AsyncImage query="document database JSON nested document data model illustration" aspectRatio="4:3" maxWidth="124px"/>
-    <box flex="1" gap={1}>
-      **4.1 Document databases**
-
-      Store records as documents, often using JSON-like structures. Related attributes can be grouped inside one document.
-
-      Typical use cases include product catalogs, content management, and application records with varying fields.
-
-      Example technologies: MongoDB and Couchbase.
-    </box>
-  </row>
-  <divider color="subtle"/>
-  <row align=start gap={3}>
-    <AsyncImage query="key value database key value pairs cache illustration" aspectRatio="4:3" maxWidth="124px"/>
-    <box flex="1" gap={1}>
-      **4.2 Key-value databases**
-
-      Store values associated with unique keys. Applications retrieve values using keys, making this model suitable for direct lookups.
-
-      Typical use cases include sessions, caching, and temporary application state.
-
-      Example technologies: Redis and Amazon DynamoDB when used for key-based access patterns.
-    </box>
-  </row>
-  <divider color="subtle"/>
-  <row align=start gap={3}>
-    <AsyncImage query="wide column database column family rows columns illustration" aspectRatio="4:3" maxWidth="124px"/>
-    <box flex="1" gap={1}>
-      **4.3 Wide-column databases**
-
-      Organize data using rows and flexible column families or related wide-row structures, depending on the implementation.
-
-      They are designed for particular large-scale distributed data-access patterns.
-
-      Example technologies: Apache Cassandra and Google Cloud Bigtable.
-    </box>
-  </row>
-  <divider color="subtle"/>
-  <row align=start gap={3}>
-    <AsyncImage query="graph database nodes edges relationships network diagram" aspectRatio="4:3" maxWidth="124px"/>
-    <box flex="1" gap={1}>
-      **4.4 Graph databases**
-
-      Represent entities as nodes and relationships as edges, often with properties attached to both.
-
-      Typical use cases include recommendation relationships, fraud networks, and connection analysis.
-
-      Example technologies: Neo4j and Amazon Neptune.
-    </box>
-  </row>
-</box>
+- **4.1 Document databases**
+- **4.2 Key-value databases**
+- **4.3 Wide-column databases**
+- **4.4 Graph databases**
 
 The examples are representative products, not interchangeable implementations. Each has its own query language, transaction behavior, deployment model, and operational constraints.
 

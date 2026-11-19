@@ -91,31 +91,23 @@ A reported symptom is not necessarily its cause. A request described as "too slo
 
 ### 3.1 Classify the observed problem
 
-<box border radius="lg" padding={3} gap={3}>
-  <box gap={1}>
-    <title size="md">Behavior or quality limitation</title>
-    <text>The model fails task requirements, produces incorrect outputs, or does not follow required constraints.</text>
-    <text color="secondary" size="sm">Investigate task definition, instructions, context, model capability, and whether adaptation is justified.</text>
-  </box>
-  <divider color="subtle" />
-  <box gap={1}>
-    <title size="md">Memory or storage limitation</title>
-    <text>The model or its execution state exceeds an available memory or storage budget.</text>
-    <text color="secondary" size="sm">Separate weight storage from KV-cache memory and other execution allocations.</text>
-  </box>
-  <divider color="subtle" />
-  <box gap={1}>
-    <title size="md">Latency or throughput limitation</title>
-    <text>Requests take too long, tokens arrive slowly, or the system completes insufficient work per unit of time.</text>
-    <text color="secondary" size="sm">Identify the relevant metric, workload, and likely performance constraint.</text>
-  </box>
-  <divider color="subtle" />
-  <box gap={1}>
-    <title size="md">Feasibility or compatibility limitation</title>
-    <text>The current model or representation cannot run within the available hardware, software, or operational constraints.</text>
-    <text color="secondary" size="sm">Investigate compatible models and representations before investing in an unsuitable approach.</text>
-  </box>
-</box>
+```text
+<title size="md">Behavior or quality limitation</title>
+The model fails task requirements, produces incorrect outputs, or does not follow required constraints.
+Investigate task definition, instructions, context, model capability, and whether adaptation is justified.
+<divider color="subtle" />
+<title size="md">Memory or storage limitation</title>
+The model or its execution state exceeds an available memory or storage budget.
+Separate weight storage from KV-cache memory and other execution allocations.
+<divider color="subtle" />
+<title size="md">Latency or throughput limitation</title>
+Requests take too long, tokens arrive slowly, or the system completes insufficient work per unit of time.
+Identify the relevant metric, workload, and likely performance constraint.
+<divider color="subtle" />
+<title size="md">Feasibility or compatibility limitation</title>
+The current model or representation cannot run within the available hardware, software, or operational constraints.
+Investigate compatible models and representations before investing in an unsuitable approach.
+```
 
 These categories can overlap. A smaller model may improve memory feasibility but reduce task quality. A quantized model may fit within memory while failing a quality requirement.
 

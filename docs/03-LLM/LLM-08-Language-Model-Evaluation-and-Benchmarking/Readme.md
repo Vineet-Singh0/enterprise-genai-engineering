@@ -111,16 +111,3 @@ You should be able to:
 - Explain what the evidence establishes, what remains uncertain, and how the results should influence an engineering decision.
 
 The objective is not simply to obtain a score. It is to understand what that score establishes, what it does not establish, and whether the available evidence is strong enough to support a decision.
-
-## Documentation Status
-
-This README defines the proposed navigation and learning objectives for LLM-08.
-
-Before the documentation is considered integrated, verify:
-
-- All chapter filenames and relative links against the actual repository.
-- Prerequisite and cross-domain links against curriculum documents.
-- Chapter responsibilities against the approved LLM-08 documentation plan.
-- Any future changes to the chapter structure against the established concept-ownership boundaries.
-
-Do not treat a proposed link or chapter as repository-verified until its destination and approval status have been confirmed.

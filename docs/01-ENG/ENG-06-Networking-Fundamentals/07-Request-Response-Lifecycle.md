@@ -1,6 +1,4 @@
-# ENG-06 — Networking Fundamentals
-
-## Chapter 07: Request/Response Lifecycle
+# Request/Response Lifecycle
 
 ## 1. Learning Objectives
 

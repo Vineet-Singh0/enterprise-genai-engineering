@@ -34,7 +34,7 @@ The focus is experimental reasoning and engineering decision-making, not a stati
 
 ### 1.1 Scope boundaries
 
-This chapter owns experimental design and interpretation.
+This lesson covers experimental design and interpretation.
 
 It does not reteach:
 

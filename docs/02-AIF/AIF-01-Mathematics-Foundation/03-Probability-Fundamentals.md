@@ -1110,7 +1110,7 @@ The central principle is that probability is a mathematical language for uncerta
 - [AIF-02 — AI Fundamentals](../AIF-02-AI-Fundamentals/README.md): planned cross-pillar reference; verify the target file exists in the repository.
 - [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md): planned cross-pillar reference for learning methods and evaluation; verify the target file exists in the repository.
 
-**Scope boundary:** This chapter owns foundational probability concepts. It does not teach advanced probability theory, formal statistical inference, complete distribution theory, ML evaluation methodology, or implementation of probabilistic models.
+**Scope:** This lesson covers foundational probability concepts. It does not teach advanced probability theory, formal statistical inference, complete distribution theory, ML evaluation methodology, or implementation of probabilistic models.
 
 ---
 

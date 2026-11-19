@@ -675,6 +675,13 @@ Do not assume this index helps. Inspect the plan and measure.
 
 The following is a **single-run result — warm cache — PostgreSQL 18.6 — temporary local cluster** used only to generate evidence for this lesson. It is one reproducible execution example, not a universal benchmark.
 
+**PostgreSQL version**
+
+```text
+SELECT version();
+-- PostgreSQL 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, 64-bit
+```
+
 **Table definition**
 
 ```sql
@@ -695,11 +702,13 @@ SELECT
     WHEN g <= 3500 THEN 101
     ELSE 1 + ((g - 3501) % 99999)
   END AS viewer_user_id,
-  TIMESTAMPTZ '2024-01-01 00:00:00+00'
+  TIMESTAMPTZ '2026-01-01 00:00:00+00'
     + ((g % 86400) * INTERVAL '1 second')
     + ((g / 86400) * INTERVAL '1 day') AS viewed_at
 FROM generate_series(1, 2000000) AS g;
 ```
+
+This is **deterministic synthetic data**, not a production distribution. Rows for `viewer_user_id = 101` are the first 3,500 generated ids, so their timestamps cluster near the start of the series; other viewers get roughly 20 rows each. The planner comparison below depends on row counts and selectivity, not on realism of the clock values.
 
 **Generated distribution**
 

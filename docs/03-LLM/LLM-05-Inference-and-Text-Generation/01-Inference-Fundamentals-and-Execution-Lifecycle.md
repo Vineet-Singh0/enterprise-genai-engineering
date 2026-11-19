@@ -572,8 +572,6 @@ Consult the following related curriculum topics for deeper explanations:
 - **AIF-07 — Transformer Foundations:** Attention and Transformer computation.
 - **LLM-05 Chapter 02 — The Autoregressive Next-Token Generation Loop:** The detailed mechanics of logits, token selection, and iterative decoding.
 
-Exact repository-relative paths for neighboring topics should be verified before publication.
-
 ---
 
 # End of Document

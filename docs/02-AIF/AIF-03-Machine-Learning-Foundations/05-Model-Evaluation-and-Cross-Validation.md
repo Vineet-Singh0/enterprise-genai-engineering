@@ -86,31 +86,21 @@ A random split is not automatically correct simply because it is easy to impleme
 
 A common evaluation design separates data into training, validation, and test sets. Each set has a different responsibility.
 
-<box border radius="lg" padding={3} gap={3}>
-  <box background="surface-secondary" radius="md" padding={3} gap={1}>
-    <title size="lg">Training set</title>
-    <text color="secondary" size="sm">Purpose: learn model parameters</text>
-    Used to fit the model and learn patterns from the examples.
-  </box>
-  <box align="center" gap={1}>
-    <icon name="arrow-down" size="lg" color="secondary" />
-    <text size="xs" color="secondary">Candidate model development</text>
-  </box>
-  <box background="surface-secondary" radius="md" padding={3} gap={1}>
-    <title size="lg">Validation set</title>
-    <text color="secondary" size="sm">Purpose: guide development decisions</text>
-    Used to compare candidates, tune settings, select models, and make other development decisions.
-  </box>
-  <box align="center" gap={1}>
-    <icon name="arrow-down" size="lg" color="secondary" />
-    <text size="xs" color="secondary">Finalize the development procedure</text>
-  </box>
-  <box border radius="md" padding={3} gap={1}>
-    <title size="lg">Test set</title>
-    <text color="secondary" size="sm">Purpose: final evaluation</text>
-    Kept out of fitting and model-selection decisions, then used to estimate performance after the development process is finalized.
-  </box>
-</box>
+```text
+<title size="lg">Training set</title>
+Purpose: learn model parameters
+Used to fit the model and learn patterns from the examples.
+        ↓
+Candidate model development
+<title size="lg">Validation set</title>
+Purpose: guide development decisions
+Used to compare candidates, tune settings, select models, and make other development decisions.
+        ↓
+Finalize the development procedure
+<title size="lg">Test set</title>
+Purpose: final evaluation
+Kept out of fitting and model-selection decisions, then used to estimate performance after the development process is finalized.
+```
 
 The exact percentages allocated to these sets depend on the dataset size, data structure, task, and evaluation requirements. There is no universal split ratio that is correct for every problem.
 
@@ -214,24 +204,20 @@ The dataset is divided into \(k\) folds. The procedure then runs \(k\) rounds:
 
 Conceptually, for five-fold cross-validation:
 
-<box border radius="lg" padding={3} gap={3}>
-  <title size="md">Five-fold cross-validation</title>
-  <text color="secondary" size="sm">Each row shows one round. The orange cell is held out for evaluation; the remaining cells are used for fitting.</text>
-  {#each [{n:"Round 1", held:0},{n:"Round 2",held:1},{n:"Round 3",held:2},{n:"Round 4",held:3},{n:"Round 5",held:4}] as r}
-    <box gap={1}>
-      <text size="sm" weight="medium">{r.n}</text>
-      <grid columns={5} gap={1}>
-        {#each [0,1,2,3,4] as f}
-          <grid-item>
-            <box background={f===r.held?"#FCE7D2":"surface-secondary"} radius="sm" padding={2} align="center">
-              <text color={f===r.held?"#9A3412":"default"} size="sm">{f===r.held?"Eval":"Fit"}</text>
-            </box>
-          </grid-item>
-        {/each}
-      </grid>
-    </box>
-  {/each}
-</box>
+```text
+<title size="md">Five-fold cross-validation</title>
+Each row shows one round. The orange cell is held out for evaluation; the remaining cells are used for fitting.
+{#each [{n:"Round 1", held:0},{n:"Round 2",held:1},{n:"Round 3",held:2},{n:"Round 4",held:3},{n:"Round 5",held:4}] as r}
+{r.n}
+<grid columns={5} gap={1}>
+{#each [0,1,2,3,4] as f}
+<grid-item>
+{f===r.held?"Eval":"Fit"}
+</grid-item>
+{/each}
+</grid>
+{/each}
+```
 
 Each round produces an evaluation result. The results can then be summarized to understand typical performance and variability across the folds.
 

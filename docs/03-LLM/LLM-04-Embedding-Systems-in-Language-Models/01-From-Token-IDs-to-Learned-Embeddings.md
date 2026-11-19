@@ -154,7 +154,7 @@ The basic transformation has four stages:
 3. **Assemble the sequence.** The selected vectors are arranged in the original token order.
 4. **Continue model computation.** The resulting input representations enter subsequent model components.
 
-This chapter owns the embedding lookup and initial representation. Detailed Transformer architecture and positional-information mechanisms belong primarily to AIF-07.
+This lesson covers the embedding lookup and initial representation. Detailed Transformer architecture and positional-information mechanisms belong primarily to AIF-07.
 
 ### 4.1 Understanding tensor shapes
 

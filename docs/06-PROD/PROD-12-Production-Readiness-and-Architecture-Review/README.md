@@ -207,7 +207,7 @@ The file covers:
 - Review outcomes
 - Decision records
 
-This lesson owns the detailed teaching of **production readiness and architecture review**.
+This lesson covers **production readiness and architecture review**.
 
 ---
 
@@ -230,7 +230,7 @@ The file covers:
 - Architecture fitness
 - Production decision-making
 
-This lesson owns the detailed teaching of **production trade-offs and operational design**.
+This lesson covers **production trade-offs and operational design**.
 
 ---
 
@@ -255,7 +255,7 @@ The file covers:
 - Readiness decisions
 - Continuous validation
 
-This lesson owns the detailed teaching of **end-to-end production system validation**.
+This lesson covers **end-to-end production system validation**.
 
 ---
 

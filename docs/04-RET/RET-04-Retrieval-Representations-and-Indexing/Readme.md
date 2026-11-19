@@ -115,4 +115,3 @@ Practical implementation, experiments, debugging, and review require additional 
 
 ---
 
-**Navigation and publication note:** The relative links follow the approved filename inventory. Their existence and compatibility with the live repository have not been verified. Confirm the actual paths and link targets before publication.

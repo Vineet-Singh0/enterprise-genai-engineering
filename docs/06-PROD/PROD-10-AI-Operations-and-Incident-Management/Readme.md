@@ -327,7 +327,7 @@ This lesson establishes the operational foundation for:
 
 > **How do operators detect, diagnose, mitigate, recover from, and validate recovery from production AI incidents?**
 
-This lesson owns the operational incident lifecycle and extends that reasoning to larger failure scopes through disaster readiness.
+This lesson covers the operational incident lifecycle and extends that reasoning to larger failure scopes through disaster readiness.
 
 Its scope includes:
 
