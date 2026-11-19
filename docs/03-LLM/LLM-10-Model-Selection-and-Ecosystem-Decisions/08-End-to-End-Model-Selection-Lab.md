@@ -636,4 +636,3 @@ Use the preceding LLM-10 chapters for the detailed methods underlying this lab:
 - [Adaptation Feasibility and Selection Dependencies](06-Adaptation-Feasibility-and-Selection-Dependencies.md)
 - [Comparative Decision Frameworks and Trade-offs](07-Comparative-Decision-Frameworks-and-Trade-offs.md)
 
-Repository-relative links should be validated against the final directory structure before merging.

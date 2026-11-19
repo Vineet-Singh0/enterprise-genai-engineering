@@ -2077,8 +2077,6 @@ The central architectural question remains:
 - [AGT-04 — State, Context & Memory](../AGT-04/README.md)
 - [AGT-05 — Planning & Adaptive Execution](../AGT-05/README.md)
 
-> **Repository note:** The links above assume the approved AGT chapter structure. Verify destination files exist before committing the document.
-
 ---
 
 ## End of Document

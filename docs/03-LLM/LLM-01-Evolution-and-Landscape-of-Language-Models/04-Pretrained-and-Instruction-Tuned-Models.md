@@ -508,5 +508,3 @@ These readings provide examples of instruction tuning and related methods. They 
 - **Scope:** Explains pretrained and instruction-tuned models, their intended behavioral differences, common labels, and engineering implications.
 - **Boundary control:** Detailed training and alignment procedures remain in LLM-02; detailed behavior and failure analysis remain in LLM-07; systematic model selection remains in LLM-10.
 - **Practical relevance:** Includes a documentation-assistant example and separates learned behavior from application-level guarantees.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.

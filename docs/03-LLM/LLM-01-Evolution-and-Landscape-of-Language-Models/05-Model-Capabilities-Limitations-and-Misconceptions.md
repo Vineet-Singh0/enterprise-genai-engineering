@@ -516,5 +516,3 @@ These readings provide context for understanding model limitations. The detailed
 - **Scope:** Covers broad model capabilities, limitations, common misconceptions, and their engineering implications.
 - **Boundary control:** Detailed failure taxonomies and mitigation strategies remain in LLM-07; formal evaluation methods remain in LLM-08; context engineering remains in LLM-06.
 - **Practical relevance:** Includes documentation-assistant and risk-based verification examples.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.

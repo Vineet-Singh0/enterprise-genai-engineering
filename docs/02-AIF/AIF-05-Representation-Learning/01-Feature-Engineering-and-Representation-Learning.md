@@ -692,6 +692,6 @@ If you cannot yet explain these ideas clearly, revisit Sections 5–11 and compl
 
 **Next chapter:** [02 — Distributed Representations and Embeddings](02-Distributed-Representations-and-Embeddings.md)
 
-**Primary concept ownership:** This chapter owns the conceptual distinction between feature engineering and representation learning. Detailed embedding geometry belongs to Chapter 03, metric selection and representation-quality evaluation belong to Chapter 04, and general preprocessing, neural-network internals, and retrieval implementation remain in their respective curriculum topics.
+**Scope:** This lesson covers the conceptual distinction between feature engineering and representation learning. Detailed embedding geometry is in Lesson 03; metric selection and representation-quality evaluation are in Lesson 04. General preprocessing, neural-network internals, and retrieval implementation remain in their respective topics.
 
 # End of Document

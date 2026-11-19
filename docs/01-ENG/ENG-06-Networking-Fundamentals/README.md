@@ -38,8 +38,6 @@ Complete the following Engineering Foundations modules before beginning ENG-06:
 
 These modules provide the background knowledge needed to understand application behavior, programming examples, development environments, and basic command-line operations.
 
-> **Repository note:** Verify the prerequisite README paths against the existing repository before relying on these links. If the actual directory names differ, update the links to match the repository.
-
 ## Learning Path
 
 Study the chapters in the recommended order. Some concepts can be learned independently, but the sequence gradually connects foundational networking concepts to application communication and troubleshooting.

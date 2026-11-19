@@ -813,11 +813,9 @@ These habits form the foundation for understanding neural network layers, embedd
 
 - [Linear Algebra Foundations](05-Linear-Algebra-Foundations.md) — conceptual foundations, linear combinations, span, basis, and transformations.
 - [Optimization and Calculus Intuition](07-Optimization-and-Calculus-Intuition.md) — gradients and optimization intuition.
-- [AIF-04: Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md) — planned connection to neural network computation.
-- [AIF-05: Representation Learning](../AIF-05-Representation-Learning/README.md) — planned connection to embeddings and vector representations.
-- [AIF-07: Transformer Foundations](../AIF-07-Transformer-Foundations/README.md) — planned connection to transformer computation.
-
-**Source and link limitation:** The authoritative detailed AIF-wide hierarchy was not available for independent comparison, and live repository paths have not been inspected. Cross-links follow the approved proposed structure and should be verified against the repository before merging.
+- [AIF-04: Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md) — connection to neural network computation.
+- [AIF-05: Representation Learning](../AIF-05-Representation-Learning/README.md) — connection to embeddings and vector representations.
+- [AIF-07: Transformer Foundations](../AIF-07-Transformer-Foundations/README.md) — connection to transformer computation.
 
 ---
 

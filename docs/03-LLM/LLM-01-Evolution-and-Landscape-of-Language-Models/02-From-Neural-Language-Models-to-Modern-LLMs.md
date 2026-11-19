@@ -454,5 +454,3 @@ For detailed architectural mechanics, continue with the AI Foundations reference
 - **Scope:** Focuses on the historical and conceptual transition from neural language models to modern LLMs.
 - **Boundary control:** Detailed recurrent mechanics and Transformer internals remain in AIF-06 and AIF-07; training procedures remain in LLM-02.
 - **Engineering relevance:** Connects architectural evolution to scaling, infrastructure, model behavior, and production system design.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.

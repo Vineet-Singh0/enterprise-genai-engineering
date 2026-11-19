@@ -476,8 +476,6 @@ Use the adjacent Agent Engineering chapters for concepts owned outside AGT-09:
 - [AGT-11 — Agent Safety and Failure Handling](../AGT-11/README.md)
 - [AGT-12 — Architecture and System Design](../AGT-12/README.md)
 
-> **Repository note:** These relative links should resolve against the established AGT repository structure before the chapter is committed.
-
 ---
 
 ## Navigation

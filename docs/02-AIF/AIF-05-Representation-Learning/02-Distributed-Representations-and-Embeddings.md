@@ -693,6 +693,6 @@ If these explanations are still unclear, revisit Sections 3–10 and complete th
 
 **Next chapter:** [03 — Representation Spaces, Dimensionality and Similarity](03-Representation-Spaces-Dimensionality-and-Similarity.md)
 
-**Primary concept ownership:** This chapter owns the conceptual foundations of distributed representations and embeddings. Detailed representation-space geometry belongs to Chapter 03; systematic distance-metric selection and representation-quality evaluation belong to Chapter 04; transformer internals and retrieval implementation remain in their respective curriculum topics.
+**Scope:** This lesson covers the conceptual foundations of distributed representations and embeddings. Detailed representation-space geometry is in Lesson 03; systematic distance-metric selection and representation-quality evaluation are in Lesson 04. Transformer internals and retrieval implementation remain in their respective topics.
 
 # End of Document

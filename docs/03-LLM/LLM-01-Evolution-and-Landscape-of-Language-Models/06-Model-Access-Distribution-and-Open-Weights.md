@@ -637,5 +637,3 @@ These resources support further investigation. Actual access rights and deployme
 - **Scope:** Covers hosted API access, self-hosting, model weights, open-weight distribution, licensing distinctions, and deployment implications.
 - **Boundary control:** Does not provide a full model-selection framework or detailed serving implementation; those belong in LLM-10 and later production-engineering modules.
 - **Engineering relevance:** Includes a comparison of hosted and self-hosted deployment approaches for an enterprise document assistant.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.

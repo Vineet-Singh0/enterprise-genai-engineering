@@ -865,6 +865,6 @@ If these ideas are not yet clear, revisit Sections 4–14 and complete the pract
 
 **Downstream application:** RET — Retrieval Engineering, where embeddings and comparison measures are applied within retrieval systems.
 
-**Primary concept ownership:** This chapter owns the systematic comparison of distance and similarity measures and the conceptual evaluation of representation quality. AIF-01 owns general mathematical foundations, AIF-03 owns general evaluation methodology, AIF-05 Chapter 03 owns representation-space geometry, and RET owns retrieval-specific implementation and evaluation.
+**Scope:** This lesson covers the systematic comparison of distance and similarity measures and the conceptual evaluation of representation quality. General mathematical foundations are in AIF-01; general evaluation methodology is in AIF-03; representation-space geometry is in Lesson 03; retrieval-specific implementation and evaluation are in RET.
 
 ## End of Document

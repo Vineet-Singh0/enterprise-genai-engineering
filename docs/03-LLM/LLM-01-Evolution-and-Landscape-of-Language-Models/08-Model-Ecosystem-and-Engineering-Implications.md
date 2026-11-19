@@ -565,5 +565,3 @@ Use current, authoritative documentation for details that may change. This chapt
 - **Scope:** Covers the language-model ecosystem, the difference between durable concepts and changing product details, and the resulting engineering implications.
 - **Boundary control:** Does not provide a vendor ranking or full model-selection framework; systematic comparison remains in LLM-10.
 - **Engineering relevance:** Includes provider-interface isolation, model lifecycle management, and a controlled model-upgrade workflow.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.

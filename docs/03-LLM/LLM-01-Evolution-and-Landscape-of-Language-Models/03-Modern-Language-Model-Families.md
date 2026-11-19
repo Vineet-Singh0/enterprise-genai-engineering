@@ -623,5 +623,3 @@ Try explaining these points without looking at the chapter:
 - **Scope:** Covers the classification of modern language models by architecture, purpose, training/adaptation, specialization, and modality.
 - **Boundary control:** Transformer internals remain in AIF-07; training procedures remain in LLM-02; embedding foundations remain in AIF-05 and LLM-04; systematic model selection remains in LLM-10.
 - **Engineering relevance:** Includes a multi-model retrieval example showing why model responsibilities should be separated.
-- **Navigation:** Relative links follow the planned curriculum hierarchy and should be checked against the repository before merging.
-- **Review status:** Draft prepared for review; repository link targets and rendered Markdown have not been independently verified.
