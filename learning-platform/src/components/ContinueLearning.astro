@@ -1,0 +1,61 @@
+---
+import { getBase } from '../lib/base';
+const base = getBase();
+---
+<section class="card continue-card" id="continue-learning" data-base={base}>
+  <div class="kicker">Continue Learning</div>
+  <h2 class="continue-title" style="margin:0 0 0.35rem;font-size:1.2rem;">Start at the beginning</h2>
+  <p class="muted continue-context" id="continue-context" style="margin:0 0 0.35rem;font-size:0.9rem;" hidden></p>
+  <p class="muted" style="margin:0 0 1rem;" id="continue-meta">
+    Your place in the curriculum will appear here after you open a document.
+  </p>
+  <a class="btn btn-primary continue-cta" id="continue-btn" href={`${base}domains/eng/`}>Browse ENG</a>
+</section>
+
+<script>
+  import { loadStore } from '../lib/storage';
+
+  const root = document.getElementById('continue-learning');
+  const base = root?.dataset.base || '/';
+  const store = loadStore();
+  const study = store.currentStudy;
+  const href = study?.href || store.currentHref || store.recent[0];
+  const metaEl = document.getElementById('continue-meta');
+  const contextEl = document.getElementById('continue-context');
+  const btn = document.getElementById('continue-btn') as HTMLAnchorElement | null;
+  const heading = root?.querySelector('.continue-title');
+
+  if (href && btn && metaEl && heading) {
+    const docEntry = store.documents[href];
+    const title =
+      study?.title ||
+      docEntry?.title ||
+      store.bookmarks.find((b) => b.href === href)?.title ||
+      '';
+    const domainName = study?.domainName || docEntry?.domainName;
+    const chapterTitle = study?.chapterTitle || docEntry?.chapterTitle;
+    const state = docEntry?.state;
+
+    if (title) {
+      heading.textContent = title;
+      metaEl.textContent =
+        state === 'completed'
+          ? 'Completed — resume or continue to the next lesson.'
+          : state === 'in_progress'
+            ? 'In progress — pick up where you left off.'
+            : 'Resume your last document.';
+    } else {
+      heading.textContent = 'Continue reading';
+      metaEl.textContent = 'Resume your last document in the curriculum.';
+    }
+
+    if (contextEl && (domainName || chapterTitle)) {
+      contextEl.hidden = false;
+      contextEl.textContent = [domainName, chapterTitle].filter(Boolean).join(' · ');
+    }
+
+    btn.textContent = 'Continue reading';
+    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+    btn.href = `${cleanBase}${href.startsWith('/') ? href : `/${href}`}`;
+  }
+</script>

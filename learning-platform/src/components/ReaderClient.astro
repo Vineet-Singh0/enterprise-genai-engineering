@@ -1,0 +1,174 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  domainId?: string;
+  domainName?: string;
+  chapterCode?: string;
+  chapterTitle?: string;
+  scrollTarget?: number;
+}
+const { href, title, domainId, domainName, chapterCode, chapterTitle } = Astro.props;
+---
+<div
+  hidden
+  data-reader-client
+  data-href={href}
+  data-title={title}
+  data-domain-id={domainId}
+  data-domain-name={domainName}
+  data-chapter-code={chapterCode}
+  data-chapter-title={chapterTitle}
+></div>
+
+<script>
+  import mermaid from 'mermaid';
+  import {
+    loadStore,
+    toggleCompleted,
+    markCompleted,
+    markInProgress,
+    saveScroll,
+    toggleBookmark,
+    saveStore,
+    type StudyMeta,
+  } from '../lib/storage';
+
+  const node = document.querySelector('[data-reader-client]') as HTMLElement | null;
+  if (!node) throw new Error('reader client missing');
+  const href = node.dataset.href!;
+  const title = node.dataset.title || href;
+  const meta: StudyMeta = {
+    title,
+    domainId: node.dataset.domainId,
+    domainName: node.dataset.domainName,
+    chapterCode: node.dataset.chapterCode,
+    chapterTitle: node.dataset.chapterTitle,
+  };
+
+  markInProgress(href, meta);
+  const store = loadStore();
+  const savedScroll = store.documents[href]?.scroll;
+  if (typeof savedScroll === 'number' && savedScroll > 0) {
+    requestAnimationFrame(() => window.scrollTo({ top: savedScroll }));
+  }
+
+  const dark = document.documentElement.classList.contains('dark');
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: dark ? 'dark' : 'default',
+    securityLevel: 'loose',
+  });
+
+  document.querySelectorAll('.mermaid-block .mermaid').forEach(async (el, i) => {
+    const code = el.textContent || '';
+    try {
+      const { svg } = await mermaid.render(`mmd-${i}-${Date.now()}`, code);
+      el.outerHTML = svg;
+    } catch (err) {
+      console.warn('Mermaid render failed', err);
+    }
+  });
+
+  document.querySelectorAll('[data-copy-code]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const pre = btn.parentElement?.querySelector('pre');
+      const text = pre?.textContent || '';
+      await navigator.clipboard.writeText(text);
+      btn.textContent = 'Copied';
+      setTimeout(() => (btn.textContent = 'Copy'), 1200);
+    });
+  });
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      saveScroll(href, window.scrollY);
+      ticking = false;
+    });
+  });
+
+  const completeBtn = document.getElementById('mark-complete');
+  const bookmarkBtn = document.getElementById('toggle-bookmark');
+  const focusBtn = document.getElementById('toggle-focus');
+  const layout = document.querySelector('.reader-layout');
+
+  function paintProgress() {
+    const s = loadStore();
+    document.querySelectorAll<HTMLAnchorElement>('[data-progress-href]').forEach((a) => {
+      const key = a.dataset.progressHref!;
+      const state = s.documents[key]?.state;
+      a.dataset.state = state || 'not_started';
+      a.classList.toggle('is-completed', state === 'completed');
+      a.classList.toggle('is-in-progress', state === 'in_progress');
+      const label = a.querySelector<HTMLElement>('[data-progress-label]');
+      if (label) {
+        label.textContent =
+          state === 'completed' ? 'Completed' : state === 'in_progress' ? 'In progress' : 'Not started';
+      }
+    });
+  }
+
+  function setFocusMode(on: boolean) {
+    // Session-only viewing preference — do not persist across document navigation.
+    layout?.classList.toggle('focus-mode', on);
+    document.body.classList.toggle('reader-focus', on);
+    if (focusBtn) {
+      focusBtn.textContent = on ? 'Exit focus' : 'Focus mode';
+      focusBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
+  // Clear legacy persisted focusMode so old stores stop reopening focused.
+  if (store.focusMode) {
+    delete store.focusMode;
+    saveStore(store);
+  }
+
+  function refreshButtons() {
+    const s = loadStore();
+    if (completeBtn) {
+      const done = s.documents[href]?.state === 'completed';
+      completeBtn.textContent = done ? 'Completed' : 'Mark completed';
+      completeBtn.classList.add('btn-primary');
+      completeBtn.classList.remove('btn-quiet');
+      completeBtn.setAttribute('aria-pressed', done ? 'true' : 'false');
+    }
+    if (bookmarkBtn) {
+      const bookmarked = s.bookmarks.some((b) => b.href === href);
+      bookmarkBtn.textContent = bookmarked ? 'Bookmarked' : 'Bookmark';
+      bookmarkBtn.classList.toggle('is-active', bookmarked);
+      bookmarkBtn.setAttribute('aria-pressed', bookmarked ? 'true' : 'false');
+    }
+    paintProgress();
+  }
+  refreshButtons();
+
+  completeBtn?.addEventListener('click', () => {
+    toggleCompleted(href, meta);
+    refreshButtons();
+  });
+
+  bookmarkBtn?.addEventListener('click', () => {
+    toggleBookmark(href, title, meta);
+    refreshButtons();
+  });
+
+  focusBtn?.addEventListener('click', () => {
+    setFocusMode(!layout?.classList.contains('focus-mode'));
+  });
+
+  document.querySelectorAll<HTMLAnchorElement>('a[data-complete-on-nav]').forEach((link) => {
+    link.addEventListener('click', () => {
+      markCompleted(href, meta);
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && layout?.classList.contains('focus-mode')) {
+      setFocusMode(false);
+    }
+  });
+</script>

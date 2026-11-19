@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getBase } from '../lib/base';
+
+const base = getBase();
+---
+<BaseLayout title="Page not found">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Missing</div>
+      <h1>Page not found</h1>
+      <p>That address is not part of the learning platform. Try one of these paths instead.</p>
+    </section>
+    <section class="panel" style="padding:1rem 1.15rem;">
+      <div class="not-found-actions">
+        <a class="btn btn-primary" href={base}>Home</a>
+        <a class="btn" href={`${base}path/`}>Learning path</a>
+        <a class="btn" href={`${base}domains/`}>Domains</a>
+        <a class="btn" href={`${base}search/`}>Search</a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

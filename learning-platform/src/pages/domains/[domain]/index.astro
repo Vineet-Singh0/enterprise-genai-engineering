@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCurriculum, getDomain, readDocSource } from '../../../lib/curriculum/scan';
+import { DOMAIN_META } from '../../../lib/curriculum/types';
+import { renderMarkdown } from '../../../lib/curriculum/markdown';
+import { getBase } from '../../../lib/base';
+import { cleanDisplayTitle } from '../../../lib/curriculum/slug';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+
+export function getStaticPaths() {
+  return getCurriculum().domains.map((d) => ({ params: { domain: d.slug } }));
+}
+
+const { domain: domainSlug } = Astro.params;
+const domain = getDomain(domainSlug!);
+if (!domain) throw new Error(`Unknown domain: ${domainSlug}`);
+
+const base = getBase();
+const accent = DOMAIN_META[domain.id].accent;
+const domainName = DOMAIN_META[domain.id].name;
+
+let overviewHtml = '';
+const domainReadme = ['readme.md', 'Readme.md', 'README.md']
+  .map((name) => `${domain.folderName}/${name}`)
+  .find((rel) => {
+    try {
+      readDocSource(rel);
+      return true;
+    } catch {
+      return false;
+    }
+  });
+
+if (domainReadme) {
+  const source = readDocSource(domainReadme);
+  const rendered = await renderMarkdown(source, domainReadme, domain.id, base);
+  // Demote H1 → H2 in embedded README so page keeps a single primary H1
+  overviewHtml = rendered.html
+    .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
+    .replace(/<\/h1>/gi, '</h2>');
+}
+---
+<BaseLayout title={`${domain.id} — ${domain.name}`} description={domain.description}>
+  <main class="shell">
+    <section class="hero-panel" style={`border-top:4px solid ${accent}`}>
+      <Breadcrumbs
+        items={[
+          { href: base, label: 'Home' },
+          { href: `${base}domains/`, label: 'Domains' },
+          { label: domainName },
+        ]}
+      />
+      <div class="kicker">{domain.id}</div>
+      <h1>{domain.name}</h1>
+      <p>{domain.description}</p>
+    </section>
+
+    <section class="panel chapter-map" style="padding:1rem 1.15rem;margin-bottom:1rem;">
+      <div class="kicker">Chapter map</div>
+      <h2 style="margin:0.2rem 0 0.85rem;font-size:1.15rem;">Chapters</h2>
+      <div class="chapter-map-list">
+        {domain.chapters.map((ch) => (
+          <a class="card chapter-map-card" href={`${base}domains/${domain.slug}/${ch.slug}/`}>
+            <div class="chapter-map-row">
+              <div>
+                <div class="kicker">{ch.code}</div>
+                <h3 style="margin:0;">{cleanDisplayTitle(ch.title, ch.code)}</h3>
+              </div>
+              <span class="badge">{ch.documents.length} docs</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {overviewHtml && (
+      <details class="panel domain-overview" id="domain-overview">
+        <summary>
+          <span class="kicker">Domain overview</span>
+          <strong>Reference notes for {domainName}</strong>
+          <span class="muted" style="display:block;margin-top:0.25rem;font-size:0.88rem;">
+            Optional reading — chapters above are the primary path.
+          </span>
+        </summary>
+        {/* Keep supporting README out of the a11y tree until expanded */}
+        <div class="domain-overview-body" hidden inert>
+          <article class="prose domain-overview-prose" set:html={overviewHtml} />
+        </div>
+      </details>
+    )}
+  </main>
+</BaseLayout>
+
+{overviewHtml && (
+  <script>
+    const panel = document.getElementById('domain-overview') as HTMLDetailsElement | null;
+    const body = panel?.querySelector('.domain-overview-body') as HTMLElement | null;
+    function syncOverview() {
+      if (!panel || !body) return;
+      const open = panel.open;
+      body.hidden = !open;
+      if (open) body.removeAttribute('inert');
+      else body.setAttribute('inert', '');
+    }
+    panel?.addEventListener('toggle', syncOverview);
+    syncOverview();
+  </script>
+)}

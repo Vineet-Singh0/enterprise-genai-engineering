@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DomainProgress from '../components/DomainProgress.astro';
+import { getCurriculum } from '../lib/curriculum/scan';
+import { DOMAIN_META } from '../lib/curriculum/types';
+import { getBase } from '../lib/base';
+import { cleanDisplayTitle } from '../lib/curriculum/slug';
+
+const base = getBase();
+const linear = getCurriculum().domains.flatMap((d) =>
+  d.chapters.flatMap((ch) =>
+    [...(ch.readme ? [ch.readme] : []), ...ch.documents].map((doc) => ({
+      href: doc.href,
+      title: cleanDisplayTitle(doc.title, ch.code),
+      domain: d.id,
+      domainName: DOMAIN_META[d.id].name,
+      chapter: ch.code,
+      chapterTitle: cleanDisplayTitle(ch.title, ch.code),
+    })),
+  ),
+);
+---
+<BaseLayout title="Progress">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Personal</div>
+      <h1>Progress</h1>
+      <p>
+        Completion means you marked a document completed. Progress stays in this browser only.
+      </p>
+    </section>
+
+    <DomainProgress />
+
+    <section class="panel" style="padding:1rem 1.15rem;margin-top:1rem;" id="recent-root" data-base={base} data-docs={JSON.stringify(linear)}>
+      <div class="kicker">Recently visited</div>
+      <ul class="recent-list" id="recent-list" hidden></ul>
+      <div id="recent-empty" class="empty-state">
+        <p class="muted" style="margin:0 0 0.85rem;">No recent documents yet.</p>
+        <a class="btn btn-primary" href={`${base}domains/`}>Browse domains</a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  import { loadStore } from '../lib/storage';
+
+  const root = document.getElementById('recent-root');
+  const list = document.getElementById('recent-list');
+  const empty = document.getElementById('recent-empty');
+  const base = (root?.dataset.base || '/').replace(/\/$/, '');
+  const docs = JSON.parse(root?.dataset.docs || '[]') as Array<{
+    href: string;
+    title: string;
+    domain: string;
+    domainName: string;
+    chapter: string;
+    chapterTitle: string;
+  }>;
+  const byHref = new Map(docs.map((d) => [d.href, d]));
+  const store = loadStore();
+
+  const stateLabel = (state: string) => {
+    if (state === 'completed') return 'Completed';
+    if (state === 'in_progress') return 'In progress';
+    return 'Not started';
+  };
+
+  function setRecentEmptyVisible(show: boolean) {
+    if (!empty || !list) return;
+    empty.hidden = !show;
+    empty.toggleAttribute('inert', !show);
+    empty.setAttribute('aria-hidden', show ? 'false' : 'true');
+    list.hidden = show;
+  }
+
+  if (list && empty) {
+    if (!store.recent.length) {
+      setRecentEmptyVisible(true);
+    } else {
+      setRecentEmptyVisible(false);
+      for (const href of store.recent) {
+        const meta = byHref.get(href);
+        const entry = store.documents[href];
+        const li = document.createElement('li');
+        li.className = 'recent-item';
+        const a = document.createElement('a');
+        a.href = `${base}${href}`;
+        const title =
+          entry?.title || meta?.title || store.bookmarks.find((b) => b.href === href)?.title || href;
+        a.innerHTML = `<strong>${title}</strong>`;
+        const sub = document.createElement('div');
+        sub.className = 'muted recent-sub';
+        const domain = entry?.domainName || meta?.domainName || meta?.domain || '';
+        const chapter = entry?.chapterTitle || meta?.chapterTitle || meta?.chapter || '';
+        sub.textContent = [domain, chapter].filter(Boolean).join(' · ');
+        const badge = document.createElement('span');
+        badge.className = 'badge';
+        badge.textContent = stateLabel(entry?.state || 'in_progress');
+        li.append(a, sub, badge);
+        list.append(li);
+      }
+    }
+  }
+</script>

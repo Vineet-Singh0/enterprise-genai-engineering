@@ -1,0 +1,176 @@
+.prose {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: var(--prose-measure);
+  color: var(--ink);
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: var(--font-sans);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  scroll-margin-top: calc(var(--header-h) + 0.75rem);
+}
+
+.prose h1 {
+  font-size: 1.85rem;
+  margin: 0 0 0.75rem;
+}
+
+/* Soft demotion if repo meta still leaks into HTML */
+.prose-lesson > p:first-child:has(code) {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+.prose h2 {
+  font-size: 1.45rem;
+  margin: 2rem 0 0.75rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+}
+.prose h3 {
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.55rem;
+}
+.prose h4 {
+  font-size: 1.02rem;
+  margin: 1.25rem 0 0.45rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose table,
+.prose pre,
+.prose .code-block,
+.prose .mermaid-block {
+  margin: 0 0 1rem;
+}
+
+.prose li + li {
+  margin-top: 0.25rem;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--bg-muted);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.prose .code-block {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: auto;
+  background: var(--bg);
+}
+
+.prose .code-block pre {
+  margin: 0;
+  padding: 1rem 1rem 1.1rem;
+  overflow: auto;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.prose .code-block code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.prose .copy-code {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 2;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--ink-muted);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.prose .copy-code:hover {
+  color: var(--ink);
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--bg-muted);
+}
+
+.prose blockquote {
+  margin-left: 0;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--ink-muted);
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.75rem 0;
+}
+
+.prose .broken-link {
+  color: var(--danger);
+  text-decoration-style: wavy;
+}
+
+.prose .mermaid-block {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: var(--bg);
+  overflow-x: auto;
+}
+
+.prose .mermaid-block .mermaid {
+  margin: 0;
+  background: transparent;
+}
+
+/* Shiki dual theme */
+html:not(.dark) .prose .shiki,
+html:not(.dark) .prose .shiki span {
+  color: var(--shiki-light) !important;
+  background-color: var(--shiki-light-bg) !important;
+}
+
+html.dark .prose .shiki,
+html.dark .prose .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}

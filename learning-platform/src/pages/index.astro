@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContinueLearning from '../components/ContinueLearning.astro';
+import DomainProgress from '../components/DomainProgress.astro';
+import { DOMAIN_ORDER, DOMAIN_META } from '../lib/curriculum/types';
+import { getBase } from '../lib/base';
+
+const base = getBase();
+---
+<BaseLayout title="Enterprise GenAI Engineering">
+  <main class="shell">
+    <section class="hero-panel compact">
+      <div class="kicker">Start here</div>
+      <h1>Continue the journey</h1>
+      <p>
+        Seven domains from engineering foundations to enterprise systems. Resume where you stopped — progress stays in this browser.
+      </p>
+    </section>
+
+    <div class="grid-2 home-top">
+      <ContinueLearning />
+      <section class="card">
+        <div class="kicker">Learning Path</div>
+        <h2 style="margin:0 0 0.75rem;font-size:1.15rem;">Recommended progression</h2>
+        <ol class="path-flow" aria-label="Domain order">
+          {DOMAIN_ORDER.map((id) => (
+            <li>
+              <a
+                href={`${base}domains/${id.toLowerCase()}/`}
+                style={`--chip-accent:${DOMAIN_META[id].accent}`}
+              >
+                {id}
+              </a>
+            </li>
+          ))}
+        </ol>
+        <p class="muted" style="margin:0.85rem 0 0;font-size:0.9rem;">
+          Follow this order unless a chapter says otherwise.
+        </p>
+        <p style="margin:0.85rem 0 0;">
+          <a class="btn" href={`${base}path/`}>Open full path</a>
+        </p>
+      </section>
+    </div>
+
+    <DomainProgress />
+  </main>
+</BaseLayout>

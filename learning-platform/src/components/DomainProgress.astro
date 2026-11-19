@@ -1,0 +1,94 @@
+---
+import { getCurriculum } from '../lib/curriculum/scan';
+import type { DomainId } from '../lib/curriculum/types';
+import { DOMAIN_META as META, DOMAIN_ORDER } from '../lib/curriculum/types';
+import { getBase } from '../lib/base';
+
+const curriculum = getCurriculum();
+const base = getBase();
+
+const counts = curriculum.domains.map((d) => {
+  const docs = d.chapters.reduce((sum, ch) => sum + ch.documents.length + (ch.readme ? 1 : 0), 0);
+  return {
+    domain: d,
+    total: docs,
+    chapters: d.chapters.length,
+    hrefs: d.chapters.flatMap(
+      (ch) => [ch.readme?.href, ...ch.documents.map((doc) => doc.href)].filter(Boolean) as string[],
+    ),
+  };
+});
+---
+<section
+  class="panel domain-progress-panel"
+  id="domain-progress"
+  data-counts={JSON.stringify(
+    counts.map((c) => ({
+      id: c.domain.id,
+      total: c.total,
+      chapters: c.chapters,
+      hrefs: c.hrefs,
+      slug: c.domain.slug,
+      name: c.domain.name,
+    })),
+  )}
+>
+  <div class="kicker">Curriculum Progress</div>
+  <h2 class="domain-progress-heading">Seven-domain journey</h2>
+  <p class="muted domain-progress-lede">
+    Completion is by document. In-progress lessons are called out separately.
+  </p>
+  <ul class="domain-progress-list" id="domain-progress-grid">
+    {DOMAIN_ORDER.map((id: DomainId) => {
+      const domain = curriculum.domains.find((d) => d.id === id)!;
+      const row = counts.find((c) => c.domain.id === id)!;
+      const accent = META[id].accent;
+      return (
+        <li>
+          <a
+            class="domain-progress-row"
+            href={`${base}domains/${domain.slug}/`}
+            style={`--domain-accent:${accent}`}
+          >
+            <span class="domain-progress-code">{id}</span>
+            <div class="domain-progress-main">
+              <strong>{META[id].name}</strong>
+              <span class="muted">{row.chapters} chapters · {row.total} docs</span>
+            </div>
+            <div class="domain-progress-track">
+              <div class="progress-bar" data-domain={id}><span style="width:0%"></span></div>
+              <span class="domain-progress-status" data-label={id}>Not started</span>
+            </div>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</section>
+
+<script>
+  import { loadStore } from '../lib/storage';
+
+  const host = document.getElementById('domain-progress');
+  if (host) {
+    const counts = JSON.parse(host.dataset.counts || '[]') as Array<{
+      id: string;
+      total: number;
+      hrefs: string[];
+    }>;
+    const store = loadStore();
+    for (const item of counts) {
+      const done = item.hrefs.filter((h) => store.documents[h]?.state === 'completed').length;
+      const active = item.hrefs.filter((h) => store.documents[h]?.state === 'in_progress').length;
+      const pct = item.total ? Math.round((done / item.total) * 100) : 0;
+      const bar = host.querySelector(`.progress-bar[data-domain="${item.id}"] > span`) as HTMLElement | null;
+      const label = host.querySelector(`[data-label="${item.id}"]`);
+      if (bar) bar.style.width = `${pct}%`;
+      if (label) {
+        if (done === 0 && active === 0) label.textContent = 'Not started';
+        else if (active > 0) label.textContent = `${done}/${item.total} docs · ${active} in progress`;
+        else label.textContent = `${done}/${item.total} docs (${pct}%)`;
+      }
+    }
+  }
+</script>
