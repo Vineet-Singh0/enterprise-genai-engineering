@@ -2706,7 +2706,7 @@ The orchestrator deliberately catches only `RetrieverExecutionError` for partial
 
 An `AdapterContractError` or `ConstraintEnforcementError` is not a normal provider outage. Silently converting it into a partial response could conceal a correctness or security defect.
 
-The adapter retains the original provider exception as its cause when it raises `RetrieverExecutionError`. At the pipeline boundary, the exception is converted into a sanitized `SourceFailure` response. The original exception chain is not preserved in the returned response.
+The adapter retains the original provider exception as its cause when it raises `RetrieverExecutionError`. At the pipeline boundary, the exception is converted into a sanitized `SourceFailure` response. **The original exception chain is not preserved in the returned response.**
 
 If internal diagnostics are required, capture the exception through a controlled telemetry or logging hook at the point where the pipeline catches it. Apply redaction and access controls. Do not put raw exception objects or provider exception messages into `SourceFailure`, warnings, or downstream response fields.
 
