@@ -1,4 +1,4 @@
-# AGT-03 — Tools & Action Execution
+# Tool Definitions, Contracts and Capability Boundaries
 
 ## 01 — Tool Definitions, Contracts & Capability Boundaries
 
@@ -29,8 +29,8 @@ Before reading this chapter, you should understand:
 
 These concepts are established in:
 
-- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Definition-and-System-Boundaries/README.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-and-Execution/README.md)
+- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
 
 ---
 
@@ -859,7 +859,7 @@ Correct Information
 
 The exact interpretation depends on the tool contract and the underlying system.
 
-Detailed result handling and execution outcome analysis are developed further in **File 03 — Tool Execution, Results & Action Failures**.
+Detailed result handling and execution outcome analysis are developed further in **File 03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries**.
 
 ---
 
@@ -946,14 +946,12 @@ A simplified Python representation can make the relationship concrete.
 from dataclasses import dataclass
 from typing import Any, Callable
 
-
 @dataclass
 class ToolDefinition:
     name: str
     description: str
     input_schema: dict[str, Any]
     handler: Callable[..., Any]
-
 
 def get_customer_order(customer_id: str, order_id: str) -> dict[str, Any]:
     if not customer_id:
@@ -968,7 +966,6 @@ def get_customer_order(customer_id: str, order_id: str) -> dict[str, Any]:
         "order_id": order_id,
         "status": "found",
     }
-
 
 tool = ToolDefinition(
     name="get_customer_order",
@@ -1459,7 +1456,7 @@ The core design principle is:
 
 Continue to:
 
-**[02 — Tool Discovery, Selection & Invocation](./02-Tool-Discovery-Selection-and-Invocation.md)**
+**[02 — Tool Selection, Routing and Execution](./02-Tool-Selection-Routing-and-Execution.md)**
 
 The next file moves from:
 

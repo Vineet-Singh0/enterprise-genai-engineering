@@ -918,11 +918,3 @@ The following chapters continue the mathematical progression:
 - [07 — Optimization and Calculus Intuition](07-Optimization-and-Calculus-Intuition.md): Understanding rates of change and optimization foundations.
 
 For the complete learning path, return to the [AIF-01 Mathematics Foundation README](README.md).
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Functions-and-Graphs.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

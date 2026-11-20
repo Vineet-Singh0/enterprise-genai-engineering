@@ -1726,4 +1726,4 @@ Related production engineering chapters:
 - [PROD-06 — Production AI Reliability](../PROD-06-Production-AI-Reliability/README.md)
 - [PROD-07 — Scaling and Capacity Engineering](../PROD-07-Scaling-and-Capacity-Engineering/README.md)
 - [PROD-11 — AI Lifecycle, Evaluation and Continuous Improvement](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/README.md)
-- [PROD-12 — Production AI Readiness](../PROD-12-Production-AI-Readiness/README.md)
+- [PROD-12 — Production AI Readiness](../PROD-12-Production-Readiness-and-Architecture-Review/README.md)

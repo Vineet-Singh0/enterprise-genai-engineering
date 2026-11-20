@@ -726,5 +726,3 @@ These resources provide broader context for instruction following, structured ge
 - Ouyang et al., [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) — Research on instruction following and alignment through human feedback.
 - OpenAI, [Introducing Structured Outputs in the API](https://openai.com/index/introducing-structured-outputs-in-the-api/) — An overview of schema-constrained output generation and its intended applications.
 - Wang et al., [Self-Instruct: Aligning Language Models with Self-Generated Instructions](https://arxiv.org/abs/2212.10560) — Research on instruction generation and instruction-following model training.
-
-*End of Document*

@@ -430,7 +430,7 @@ The distinction is similar to the difference between a database record's identif
 
 This analogy has limits: a model's input representation is part of a learned numerical system rather than an ordinary database lookup alone.
 
-For a detailed treatment of learned vector representations, see [LLM-04 — Embedding Systems in Language Models](../LLM-04-Embedding-Systems-in-Language-Models/README.md). The destination path is provisional until verified against the repository.
+For a detailed treatment of learned vector representations, see [LLM-04 — Embedding Systems in Language Models](../LLM-04-Embedding-Systems-in-Language-Models/README.md).
 
 ## 6. Practical Example: Inspecting the Representation
 
@@ -582,11 +582,3 @@ Consult the following sources for authoritative background:
 - [Hugging Face Tokenizers documentation](https://huggingface.co/docs/tokenizers/) — Tokenizer concepts, implementations, and practical inspection.
 
 Use these references to deepen the concepts introduced here. Implementation-specific claims and exact tokenizer outputs should be verified against the actual tokenizer and configuration being studied.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Language-as-Model-Input-and-Discrete-Representation.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

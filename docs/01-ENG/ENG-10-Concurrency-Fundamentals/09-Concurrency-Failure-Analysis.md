@@ -492,7 +492,6 @@ import threading
 counter = 0
 read_barrier = threading.Barrier(2)
 
-
 def increment():
     global counter
 
@@ -501,7 +500,6 @@ def increment():
 
     updated = current + 1
     counter = updated
-
 
 threads = [
     threading.Thread(target=increment),
@@ -970,4 +968,4 @@ It should verify the required safety or liveness property under relevant concurr
 - [Thread Safety and Safe Shared-State Design](06-Thread-Safety-and-Safe-Shared-State-Design.md)
 - [Communication and Coordination Between Tasks](07-Communication-and-Coordination-Between-Tasks.md)
 - [Concurrency Models and Practical Trade-offs](08-Concurrency-Models-and-Practical-Trade-offs.md)
-- [ENG-08: Testing and Debugging](../ENG-08-Testing-and-Debugging/README.md) — consult the repository's approved path if this relative link differs from the actual directory structure.
+- [ENG-08: Testing and Debugging](../ENG-08-Development-Quality/Readme.md) — consult the repository's approved path if this relative link differs from the actual directory structure.

@@ -184,5 +184,3 @@ The objective is not merely to recognize terminology. It is to reason about how 
 **Next pillar:** AIF-06 — Sequence Modeling.
 
 **Downstream application:** RET — Retrieval Engineering, where representation learning concepts are applied to retrieval systems.
-
-## End of Document

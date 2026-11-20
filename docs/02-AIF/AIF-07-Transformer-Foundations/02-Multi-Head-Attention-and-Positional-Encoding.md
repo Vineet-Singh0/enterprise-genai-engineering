@@ -73,26 +73,26 @@ The individual outputs are then concatenated and projected into a shared output 
 Conceptually:
 
 ```text
-**Input representations**
+Input representations
 Same sequence supplied to every head
 <grid columns={3} gap={2}>
 <grid-item>
-**Head 1**
+Head 1
 Own Q, K, V projections
 </grid-item>
 <grid-item>
-**Head 2**
+Head 2
 Own Q, K, V projections
 </grid-item>
 <grid-item>
-**Head h**
+Head h
 Own Q, K, V projections
 </grid-item>
 </grid>
         ↓
-**Concatenate head outputs**
+Concatenate head outputs
         ↓
-**Output projection**
+Output projection
 Combine information from the heads
 ```
 
@@ -492,15 +492,15 @@ Multi-head attention lets the model compute several learned sets of attention re
 A simplified information flow is:
 
 ```text
-**Token representations**
-**Positional information**
+Token representations
+Positional information
 When the architecture uses additive position representations
         ↓
-**Input representations supplied to attention**
+Input representations supplied to attention
         ↓
-**Multiple learned attention heads**
+Multiple learned attention heads
         ↓
-**Concatenated and projected output**
+Concatenated and projected output
 ```
 
 This diagram illustrates an additive positional design. Other positional methods may inject positional information directly into the attention computation rather than adding it to the initial token representations.

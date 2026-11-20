@@ -912,5 +912,3 @@ This chapter established the core HTTP message model and semantics. The next cha
 - [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md): How to reason about communication failures and troubleshoot them systematically.
 
 ---
-
-# End of Document

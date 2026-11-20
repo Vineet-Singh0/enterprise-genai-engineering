@@ -1,6 +1,6 @@
-# AGT-03 — Tools & Action Execution
+# Tool Selection, Routing and Execution
 
-## 02 — Tool Discovery, Selection & Invocation
+## 02 — Tool Selection, Routing and Execution
 
 ## Learning Objectives
 
@@ -31,8 +31,8 @@ Before reading this chapter, you should understand:
 
 These concepts are established in:
 
-- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Definition-and-System-Boundaries/README.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-and-Execution/README.md)
+- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
 - [01 — Tool Definitions, Contracts & Capability Boundaries](./01-Tool-Definitions-Contracts-and-Capability-Boundaries.md)
 
 ---
@@ -1878,7 +1878,7 @@ Execution Success
 
 Continue to:
 
-**[03 — Tool Execution, Results & Action Failures](./03-Tool-Execution-Results-and-Action-Failures.md)**
+**[03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries](./03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md)**
 
 The next file begins where this file ends:
 

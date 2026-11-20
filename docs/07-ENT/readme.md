@@ -133,6 +133,7 @@ ENT may reference these areas where enterprise decisions depend on them, but it 
 
 ---
 
+
 ## 6. ENT Learning Outcomes
 
 ### Understand
@@ -249,7 +250,7 @@ The curriculum distinguishes between:
 |---|---|---|---|
 | ENT-01 | Enterprise AI Capability Architecture and Operating Models | How should enterprise AI capabilities and operating models be structured? | 3 |
 | ENT-02 | AI Governance, Accountability and Lifecycle Control | Who has authority and how are AI lifecycle decisions governed? | 3 |
-| ENT-03 | AI Risk, Impact, Human Oversight and Assurance | What risks, impacts, oversight, controls, and assurance are required? | 4 |
+| ENT-03 | Enterprise AI Risk, Impact, Oversight and Assurance | What risks, impacts, oversight, controls, and assurance are required? | 3 |
 | ENT-04 | Enterprise AI Security, Privacy and Access Governance | What enterprise security, privacy, and access constraints apply? | 3 |
 | ENT-05 | Enterprise AI Data Governance and Information Control | What information can be used, who owns it, and how trustworthy and authoritative is it? | 3 |
 | ENT-06 | Enterprise AI Integration and Platform Architecture | How should enterprise AI capabilities integrate and share platform capabilities? | 3 |
@@ -263,40 +264,39 @@ The curriculum distinguishes between:
 
 ## ENT-01 — Enterprise AI Capability Architecture and Operating Models
 
-[Chapter README](./ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/README.md)
+[Chapter overview](./ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/Readme.md)
 
 - [01 — Enterprise AI Capabilities and Architectural Boundaries](./ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/01-Enterprise-AI-Capabilities-and-Architectural-Boundaries.md)
 - [02 — Centralized, Federated and Hybrid AI Operating Models](./ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/02-Centralized-Federated-and-Hybrid-AI-Operating-Models.md)
 - [03 — Enterprise AI Architecture Principles, Boundaries and Decisions](./ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/03-Enterprise-AI-Architecture-Principles-Boundaries-and-Decisions.md)
 
-## ENT-02 — AI Governance, Accountability and Lifecycle Control
+## ENT-02 — Enterprise AI Governance, Accountability and Lifecycle Control
 
-[Chapter README](./ENT-02-AI-Governance-Accountability-and-Lifecycle-Control/README.md)
+[Chapter overview](./ENT-02-Enterprise-AI-Governance-Accountability-and-Lifecycle-Control/Readme.md)
 
-- [01 — AI Governance Authority, Accountability and Decision Rights](./ENT-02-AI-Governance-Accountability-and-Lifecycle-Control/01-AI-Governance-Authority-Accountability-and-Decision-Rights.md)
-- [02 — AI System Registration, Lifecycle and Change Governance](./ENT-02-AI-Governance-Accountability-and-Lifecycle-Control/02-AI-System-Registration-Lifecycle-and-Change-Governance.md)
-- [03 — Governance Gates, Exceptions and Evidence Ownership](./ENT-02-AI-Governance-Accountability-and-Lifecycle-Control/03-Governance-Gates-Exceptions-and-Evidence-Ownership.md)
+- [01 — AI Governance, Accountability and Decision Rights](./ENT-02-Enterprise-AI-Governance-Accountability-and-Lifecycle-Control/01-AI-Governance-Accountability-and-Decision-Rights.md)
+- [02 — Governance Operating Models and Control Mechanisms](./ENT-02-Enterprise-AI-Governance-Accountability-and-Lifecycle-Control/02-Governance-Operating-Models-and-Control-Mechanisms.md)
+- [03 — AI Lifecycle Governance and Material Change Control](./ENT-02-Enterprise-AI-Governance-Accountability-and-Lifecycle-Control/03-AI-Lifecycle-Governance-and-Material-Change-Control.md)
 
-## ENT-03 — AI Risk, Impact, Human Oversight and Assurance
+## ENT-03 — Enterprise AI Risk, Impact, Oversight and Assurance
 
-[Chapter README](./ENT-03-AI-Risk-Impact-Human-Oversight-and-Assurance/README.md)
+[Chapter overview](./ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/Readme.md)
 
-- [01 — AI Risk, Context, Impact and Risk Classification](./ENT-03-AI-Risk-Impact-Human-Oversight-and-Assurance/01-AI-Risk-Context-Impact-and-Risk-Classification.md)
-- [02 — Human Oversight, Intervention and Escalation Requirements](./ENT-03-AI-Risk-Impact-Human-Oversight-and-Assurance/02-Human-Oversight-Intervention-and-Escalation-Requirements.md)
-- [03 — AI Risk Treatment, Controls and Residual Risk](./ENT-03-AI-Risk-Impact-Human-Oversight-and-Assurance/03-AI-Risk-Treatment-Controls-and-Residual-Risk.md)
-- [04 — AI Assurance, Evidence and Control Effectiveness](./ENT-03-AI-Risk-Impact-Human-Oversight-and-Assurance/04-AI-Assurance-Evidence-and-Control-Effectiveness.md)
+- [01 — AI Risk and Impact Assessment](./ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/01-AI-Risk-and-Impact-Assessment.md)
+- [02 — AI Oversight, Human Control and Assurance](./ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/02-AI-Oversight-Human-Control-and-Assurance.md)
+- [03 — AI Risk Treatment, Assurance and Continuous Reassessment](./ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/03-AI-Risk-Treatment-Assurance-and-Continuous-Reassessment.md)
 
 ## ENT-04 — Enterprise AI Security, Privacy and Access Governance
 
-[Chapter README](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/README.md)
+[Chapter overview](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/Readme.md)
 
-- [01 — Enterprise AI Identity, Authorization and Trust Boundaries](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/01-Enterprise-AI-Identity-Authorization-and-Trust-Boundaries.md)
-- [02 — AI Privacy, Sensitive Data and Usage Governance](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/02-AI-Privacy-Sensitive-Data-and-Usage-Governance.md)
-- [03 — AI Access Control, Segregation of Duties and Policy Enforcement](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/03-AI-Access-Control-Segregation-of-Duties-and-Policy-Enforcement.md)
+- [01 — AI Security, Privacy and Access Governance](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/01-AI-Security-Privacy-and-Access-Governance.md)
+- [02 — Identity, Authorization and AI Access Boundaries](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/02-Identity-Authorization-and-AI-Access-Boundaries.md)
+- [03 — AI Security, Privacy Controls and Governance Integration](./ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/03-AI-Security-Privacy-Controls-and-Governance-Integration.md)
 
 ## ENT-05 — Enterprise AI Data Governance and Information Control
 
-[Chapter README](./ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/README.md)
+[Chapter overview](./ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/Readme.md)
 
 - [01 — AI Data Ownership, Stewardship and Classification](./ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/01-AI-Data-Ownership-Stewardship-and-Classification.md)
 - [02 — AI Data Provenance, Lineage, Quality and Trust](./ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/02-AI-Data-Provenance-Lineage-Quality-and-Trust.md)
@@ -304,7 +304,7 @@ The curriculum distinguishes between:
 
 ## ENT-06 — Enterprise AI Integration and Platform Architecture
 
-[Chapter README](./ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/README.md)
+[Chapter overview](./ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/Readme.md)
 
 - [01 — Enterprise AI Integration Patterns and System Boundaries](./ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 - [02 — AI Platforms, Shared Services, Gateways and Control Planes](./ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
@@ -312,7 +312,7 @@ The curriculum distinguishes between:
 
 ## ENT-07 — Model, Provider and Vendor Strategy
 
-[Chapter README](./ENT-07-Model-Provider-and-Vendor-Strategy/README.md)
+[Chapter overview](./ENT-07-Model-Provider-and-Vendor-Strategy/README.md)
 
 - [01 — Enterprise Model and Provider Selection Strategy](./ENT-07-Model-Provider-and-Vendor-Strategy/01-Enterprise-Model-and-Provider-Selection-Strategy.md)
 - [02 — Provider Diversification, Portability and Vendor Lock-In](./ENT-07-Model-Provider-and-Vendor-Strategy/02-Provider-Diversification-Portability-and-Vendor-Lock-In.md)
@@ -320,7 +320,7 @@ The curriculum distinguishes between:
 
 ## ENT-08 — AI Economics, FinOps and Portfolio Governance
 
-[Chapter README](./ENT-08-AI-Economics-FinOps-and-Portfolio-Governance/README.md)
+[Chapter overview](./ENT-08-AI-Economics-FinOps-and-Portfolio-Governance/Readme.md)
 
 - [01 — AI Cost Models, FinOps and Unit Economics](./ENT-08-AI-Economics-FinOps-and-Portfolio-Governance/01-AI-Cost-Models-FinOps-and-Unit-Economics.md)
 - [02 — AI Portfolio Intake, Prioritization, Funding and Value](./ENT-08-AI-Economics-FinOps-and-Portfolio-Governance/02-AI-Portfolio-Intake-Prioritization-Funding-and-Value.md)
@@ -328,7 +328,7 @@ The curriculum distinguishes between:
 
 ## ENT-09 — AI Criticality, Resilience and Dependency Governance
 
-[Chapter README](./ENT-09-AI-Criticality-Resilience-and-Dependency-Governance/README.md)
+[Chapter overview](./ENT-09-AI-Criticality-Resilience-and-Dependency-Governance/Readme.md)
 
 - [01 — AI Criticality, Dependency Mapping and Concentration Risk](./ENT-09-AI-Criticality-Resilience-and-Dependency-Governance/01-AI-Criticality-Dependency-Mapping-and-Concentration-Risk.md)
 - [02 — AI Continuity, Degraded Modes and Recovery Requirements](./ENT-09-AI-Criticality-Resilience-and-Dependency-Governance/02-AI-Continuity-Degraded-Modes-and-Recovery-Requirements.md)
@@ -735,7 +735,6 @@ A learner who can demonstrate these capabilities has completed the intended ENT 
 
 ## 24. Related Domains
 
-- [Curriculum overview](../README.md)
 - [ENG](../01-ENG/README.md)
 - [AIF](../02-AIF/README.md)
 - [LLM](../03-LLM/README.md)
@@ -751,7 +750,7 @@ A learner who can demonstrate these capabilities has completed the intended ENT 
 
 ```text
 9 chapters
-28 lessons
+27 lessons
 ```
 
 ---

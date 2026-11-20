@@ -2645,14 +2645,12 @@ That is the foundation of enterprise AI interoperability.
 
 # Further Reading
 
-- [`ENT-01 — Enterprise AI Architecture`](../ENT-01-Enterprise-AI-Architecture-and-Operating-Models/README.md)
-- [`ENT-04 — AI Security, Privacy and Access Governance`](../ENT-04-AI-Security-Privacy-and-Access-Governance/README.md)
-- [`ENT-05 — AI Data and Information Governance`](../ENT-05-AI-Data-and-Information-Governance/README.md)
+- [`ENT-01 — Enterprise AI Architecture`](../ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/Readme.md)
+- [`ENT-04 — AI Security, Privacy and Access Governance`](../ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/Readme.md)
+- [`ENT-05 — AI Data and Information Governance`](../ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/Readme.md)
 - [`ENT-06 — Enterprise AI Integration and Platform Architecture`](./README.md)
 - [`01 — Enterprise AI Integration Patterns and System Boundaries`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 - [`02 — AI Platforms, Shared Services, Gateways and Control Planes`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
-- [`ENT-07 — AI Model, Provider and Vendor Strategy`](../ENT-07-AI-Model-Provider-and-Vendor-Strategy/README.md)
-- [`ENT-08 — AI Economics and FinOps`](../ENT-08-AI-Economics-and-FinOps/README.md)
+- [`ENT-07 — AI Model, Provider and Vendor Strategy`](../ENT-07-Model-Provider-and-Vendor-Strategy/README.md)
+- [`ENT-08 — AI Economics and FinOps`](../ENT-08-AI-Economics-FinOps-and-Portfolio-Governance/Readme.md)
 - [`ENT-09 — AI Criticality, Resilience and Dependency Governance`](../ENT-09-AI-Criticality-Resilience-and-Dependency-Governance/README.md)
-
-## End of Document

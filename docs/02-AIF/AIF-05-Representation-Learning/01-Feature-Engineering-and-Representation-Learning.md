@@ -693,5 +693,3 @@ If you cannot yet explain these ideas clearly, revisit Sections 5–11 and compl
 **Next chapter:** [02 — Distributed Representations and Embeddings](02-Distributed-Representations-and-Embeddings.md)
 
 **Scope:** This lesson covers the conceptual distinction between feature engineering and representation learning. Detailed embedding geometry is in Lesson 03; metric selection and representation-quality evaluation are in Lesson 04. General preprocessing, neural-network internals, and retrieval implementation remain in their respective topics.
-
-# End of Document

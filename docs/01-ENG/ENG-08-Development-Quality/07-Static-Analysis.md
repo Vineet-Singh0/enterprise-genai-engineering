@@ -269,7 +269,6 @@ python -m pip install mypy
 def calculate_total(price: float, quantity: int) -> float:
     return price * quantity
 
-
 total = calculate_total("100", 3)
 ```
 
@@ -292,7 +291,6 @@ The important point is that the checker can detect the mismatch by examining the
 ```python
 def calculate_total(price: float, quantity: int) -> float:
     return price * quantity
-
 
 total = calculate_total(100.0, 3)
 ```
@@ -631,7 +629,6 @@ def get_display_name(
 ) -> str:
     return first_name + last_name
 
-
 def calculate_age_group(age: int) -> str:
     if age < 0:
         return "invalid"
@@ -641,7 +638,6 @@ def calculate_age_group(age: int) -> str:
         return "minor"
     else:
         return "unknown"
-
 
 def format_user_id(user_id: int) -> str:
     return user_id
@@ -704,7 +700,3 @@ Do not assume that every defect must be detected by the same tool. The objective
 - [Python `ast` Module](https://docs.python.org/3/library/ast.html)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `07-Static-Analysis.md`

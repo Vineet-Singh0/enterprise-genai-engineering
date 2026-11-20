@@ -1986,7 +1986,7 @@ Detailed:
 - privacy controls,
 - security implementation,
 
-belong to the relevant enterprise security and privacy governance domain, particularly [ENT-04 — AI Security, Privacy and Access Governance](../ENT-04-AI-Security-Privacy-and-Access-Governance/README.md).
+belong to the relevant enterprise security and privacy governance domain, particularly [ENT-04 — AI Security, Privacy and Access Governance](../ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/Readme.md).
 
 The important boundary is:
 

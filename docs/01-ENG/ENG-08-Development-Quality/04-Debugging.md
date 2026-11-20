@@ -273,10 +273,8 @@ Consider:
 def calculate_average(total: float, count: int) -> float:
     return total / count
 
-
 def generate_report() -> float:
     return calculate_average(100, 0)
-
 
 generate_report()
 ```
@@ -389,7 +387,6 @@ The exact keyboard shortcuts depend on the debugger or IDE.
 def apply_discount(price: float, discount_percent: float) -> float:
     discount = price * discount_percent
     return price - discount
-
 
 print(apply_discount(100, 20))
 ```
@@ -789,7 +786,3 @@ Do not begin by rewriting the entire function. First reproduce the problem and e
 - [pytest Documentation](https://docs.pytest.org/)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `04-Debugging.md`

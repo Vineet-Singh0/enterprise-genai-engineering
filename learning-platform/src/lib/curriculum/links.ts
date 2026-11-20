@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { getCurriculum, getDocsRoot } from './scan';
-import { isReadmeFile, slugifySegment } from './slug';
+import { isReadmeFile } from './slug';
 import type { DomainId } from './types';
 import fs from 'node:fs';
 
@@ -130,6 +130,9 @@ export function resolveMarkdownHref(
 
   const rel = normalizeFs(path.relative(docsRoot, candidate));
   const relParts = rel.split('/');
+  // Filesystems may be case-insensitive (Windows, WSL on /mnt/c) while curriculum
+  // paths keep on-disk casing; compare case-insensitively so README.md === Readme.md.
+  const relKey = rel.toLowerCase();
 
   // Domain-level README (e.g. AIF/readme.md) → domain hub page, not a fake chapter slug
   if (relParts.length === 2 && isReadmeFile(relParts[1])) {
@@ -149,42 +152,26 @@ export function resolveMarkdownHref(
     for (const chapter of domain.chapters) {
       const docs = [...(chapter.readme ? [chapter.readme] : []), ...chapter.documents];
       for (const doc of docs) {
-        if (doc.relativePath === rel) {
+        if (doc.relativePath.toLowerCase() === relKey) {
           return { sitePath: `${doc.href}${hashSuffix}`, external: false, broken: false };
         }
       }
       // Chapter folder match when linking to folder readme with different casing already handled
-      if (chapter.relativePath === rel) {
+      if (chapter.relativePath.toLowerCase() === relKey) {
         return { sitePath: `${chapter.href}${hashSuffix}`, external: false, broken: false };
       }
     }
   }
 
-  // Synthesize from path parts as last resort
+  // Last resort: only synthesize a site path when the domain + chapter exist in the
+  // curriculum. Never emit raw folder names (e.g. /domains/05-agt/...), which 404.
   const parts = relParts;
   if (parts.length >= 2) {
-    const domainSlug = parts[0].toLowerCase();
-    const chapterSlug = slugifySegment(parts[1]);
-    if (parts.length === 2 && isReadmeFile(parts[1])) {
-      return {
-        sitePath: `/domains/${domainSlug}${hashSuffix}`,
-        external: false,
-        broken: false,
-      };
+    const domain = curriculum.domains.find((d) => d.folderName.toLowerCase() === parts[0].toLowerCase());
+    const chapter = domain?.chapters.find((c) => c.folderName.toLowerCase() === parts[1].toLowerCase());
+    if (domain && chapter && (parts.length === 2 || isReadmeFile(parts[parts.length - 1]))) {
+      return { sitePath: `${chapter.href}${hashSuffix}`, external: false, broken: false };
     }
-    if (parts.length === 2 || isReadmeFile(parts[parts.length - 1])) {
-      return {
-        sitePath: `/domains/${domainSlug}/${chapterSlug}${hashSuffix}`,
-        external: false,
-        broken: false,
-      };
-    }
-    const docSlug = slugifySegment(parts[parts.length - 1].replace(/\.md$/i, ''));
-    return {
-      sitePath: `/domains/${domainSlug}/${chapterSlug}/${docSlug}${hashSuffix}`,
-      external: false,
-      broken: false,
-    };
   }
 
   brokenLinks.push({

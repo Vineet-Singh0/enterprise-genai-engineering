@@ -32,11 +32,11 @@ Before studying this chapter, you should understand:
 - basic authorization and access-control concepts;
 - the reliability and recovery concepts from:
 
-  `AGT-11/01-Agent-Failure-Modes-and-Recovery-Strategies.md`
+  [Agent Failure Modes and Recovery Strategies](01-Agent-Failure-Modes-and-Recovery-Strategies.md)
 
 - execution and state safety concepts from:
 
-  `AGT-11/02-Execution-and-State-Safety.md`
+  [Execution and State Safety](02-Execution-and-State-Safety.md)
 
 Related concepts from other AGT chapters are referenced where necessary but are not re-taught here.
 
@@ -175,7 +175,7 @@ The core File 03 safety model is:
 
 If the action is allowed, execution and state safety are handled through the mechanisms discussed in:
 
-`AGT-11/02-Execution-and-State-Safety.md`
+[Execution and State Safety](02-Execution-and-State-Safety.md)
 
 The distinction is important:
 
@@ -1988,7 +1988,7 @@ def execute_high_impact_action(action, context):
 
 Execution safety, state validation, containment, and termination are covered in greater depth in:
 
-`AGT-11/02-Execution-and-State-Safety.md`
+[Execution and State Safety](02-Execution-and-State-Safety.md)
 
 The purpose of this pattern is to show that **high-impact action authority must be explicitly bounded**.
 
@@ -2255,8 +2255,8 @@ For related concepts, continue through:
 - `AGT-08` — Capability interfaces and interoperability
 - `AGT-09` — Multi-agent delegation and coordination
 - `AGT-10` — Agent evaluation and regression testing
-- `AGT-11/01-Agent-Failure-Modes-and-Recovery-Strategies.md` — Recovery and failure response
-- `AGT-11/02-Execution-and-State-Safety.md` — Execution and state safety
+- [Agent Failure Modes and Recovery Strategies](01-Agent-Failure-Modes-and-Recovery-Strategies.md) — Recovery and failure response
+- [Execution and State Safety](02-Execution-and-State-Safety.md) — Execution and state safety
 - `AGT-12` — End-to-end agent architecture and design trade-offs
 
 The concepts in this chapter are framework-independent and apply across agent implementations using LangGraph, LangChain, OpenAI Agents SDK, AutoGen, CrewAI, MCP, A2A, or custom agent runtimes.

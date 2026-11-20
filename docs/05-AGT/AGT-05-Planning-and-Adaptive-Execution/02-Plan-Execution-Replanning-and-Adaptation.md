@@ -35,10 +35,10 @@ Before reading this chapter, you should understand:
 
 Recommended prerequisites:
 
-- [AGT-01 — Agent Foundations](../AGT-01/README.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02/README.md)
-- [AGT-03 — Tool Use and Invocation](../AGT-03/README.md)
-- [AGT-04 — Agent State, Context, and Memory](../AGT-04/README.md)
+- [AGT-01 — Agent Foundations](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tool Use and Invocation](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — Agent State, Context, and Memory](../AGT-04-State-Context-and-Memory/Readme.md)
 - [AGT-05 — Planning & Adaptive Execution](./README.md)
 - [AGT-05/01 — Task Decomposition and Agent Planning](./01-Task-Decomposition-and-Agent-Planning.md)
 

@@ -114,9 +114,9 @@ Preference-based training learns from information about which outputs are prefer
 These objectives are related, but they are not identical.
 
 ```text
-**Supervised fine-tuning**
+Supervised fine-tuning
 “Given this instruction, learn to produce this demonstrated response.”
-**Preference-based training**
+Preference-based training
 “Given this instruction and these alternatives, learn to favor the preferred response.”
 ```
 
@@ -303,22 +303,22 @@ Neither method is universally better. The appropriate approach depends on the ta
 A common high-level architecture is:
 
 ```text
-**Pretrained language model**
+Pretrained language model
 Broad language capabilities learned during pretraining
         ↓
-**Supervised fine-tuning**
+Supervised fine-tuning
 Learn instruction-response patterns from demonstrations
         ↓
-**Preference collection**
+Preference collection
 Compare multiple responses for the same prompt or context
         ↓
-**Reward-model training**
+Reward-model training
 Learn a scoring function from preference comparisons
         ↓
-**Policy optimization**
+Policy optimization
 Use reinforcement learning to improve reward while controlling policy drift
         ↓
-**Evaluation and deployment selection**
+Evaluation and deployment selection
 Validate desired behavior and detect regressions
 ```
 
@@ -723,4 +723,3 @@ Use these primary papers and official documentation to deepen your understanding
 5. **Hugging Face TRL Documentation**  
    https://huggingface.co/docs/trl  
    Provides implementation resources for supervised fine-tuning, preference optimization, and reinforcement-learning-based language-model training.
-

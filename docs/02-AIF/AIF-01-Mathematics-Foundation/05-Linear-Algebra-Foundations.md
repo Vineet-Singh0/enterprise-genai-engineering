@@ -870,14 +870,8 @@ The central principle is that linear algebra gives AI/ML engineers a consistent 
 - [Chapter 04 — Statistics Fundamentals](04-Statistics-Fundamentals.md): describing datasets and their variability.
 - [Chapter 06 — Vectors, Matrices and Operations](06-Vectors-Matrices-and-Operations.md): practical vector and matrix calculations.
 - [Chapter 07 — Optimization and Calculus Intuition](07-Optimization-and-Calculus-Intuition.md): mathematical foundations for optimization.
-- [AIF-04 — Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md): planned cross-pillar reference for neural networks and their computations; verify the target file exists in the repository.
-- [AIF-05 — Representation Learning](../AIF-05-Representation-Learning/README.md): planned cross-pillar reference for learned representations and embedding spaces; verify the target file exists in the repository.
-- [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md): planned cross-pillar reference for transformer-specific mathematical operations; verify the target file exists in the repository.
+- [AIF-04 — Deep Learning Foundations](../AIF-04-Deep-Learning-Foundations/README.md)
+- [AIF-05 — Representation Learning](../AIF-05-Representation-Learning/README.md)
+- [AIF-07 — Transformer Foundations](../AIF-07-Transformer-Foundations/README.md)
 
 **Scope:** This lesson covers the conceptual foundations of scalars, vectors, matrices, dimensions, linear combinations, span, basis, linear transformations, and dot product intuition. Detailed vector/matrix calculations belong to Chapter 06. Embedding semantics and similarity interpretation belong to AIF-05. Neural network computation and transformer-specific operations belong to their respective pillars.
-
----
-
-# End of Document
-
-**Target path:** `docs/02-AIF/AIF-01-Mathematics-Foundation/05-Linear-Algebra-Foundations.md`

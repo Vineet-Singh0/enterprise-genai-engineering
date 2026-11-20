@@ -69,18 +69,18 @@ The encoder and decoder have different responsibilities, even though both may us
 ### 5.1 High-level information flow
 
 ```text
-**Source sequence**
+Source sequence
 Input tokens and their representations
         ↓
-**Encoder stack**
+Encoder stack
 Self-attention and feed-forward transformations
         ↓
-**Encoder representations**
+Encoder representations
         ↓
-**Decoder stack**
+Decoder stack
 Causal self-attention and cross-attention
         ↓
-**Output representations and token predictions**
+Output representations and token predictions
 ```
 
 This is a simplified view. The decoder commonly receives both previously available output tokens and encoder representations. It does not simply consume the encoder's final output as its only input.
@@ -291,16 +291,16 @@ It does not require a separate encoder stack or the encoder-decoder cross-attent
 A common decoder-only information flow is:
 
 ```text
-**Input token sequence**
+Input token sequence
         ↓
-**Token representations and positional information**
+Token representations and positional information
         ↓
-**Decoder-style Transformer block**
+Decoder-style Transformer block
 Causal self-attention, residual paths, normalization, FFN
         ↓
-**Repeated blocks**
+Repeated blocks
         ↓
-**Output representations and next-token scores**
+Output representations and next-token scores
 ```
 
 This is a simplified architecture. Actual models may use different normalization strategies, positional methods, attention variants, and output heads.

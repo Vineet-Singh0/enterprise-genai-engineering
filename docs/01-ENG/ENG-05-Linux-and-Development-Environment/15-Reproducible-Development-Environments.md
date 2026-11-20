@@ -2382,13 +2382,3 @@ This foundation will support later engineering topics involving:
 - production AI systems
 
 Those topics should build on this foundation rather than replace it.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`15-Reproducible-Development-Environments.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

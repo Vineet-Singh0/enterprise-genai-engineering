@@ -195,12 +195,10 @@ The models are intentionally provider-neutral.
 from dataclasses import dataclass, field
 from typing import Any
 
-
 @dataclass(frozen=True)
 class ConstraintSet:
     mandatory: dict[str, Any] = field(default_factory=dict)
     optional: dict[str, Any] = field(default_factory=dict)
-
 
 @dataclass(frozen=True)
 class RetrievalConfig:
@@ -255,13 +253,11 @@ A retrieval pipeline must distinguish source execution from constraint enforceme
 from dataclasses import dataclass
 from typing import Literal
 
-
 ConstraintStatus = Literal[
     "applied",
     "unsupported",
     "failed",
 ]
-
 
 @dataclass(frozen=True)
 class ConstraintOutcome:
@@ -271,7 +267,6 @@ class ConstraintOutcome:
     status: ConstraintStatus
     enforcement_point: str
     diagnostic: str | None = None
-
 
 @dataclass(frozen=True)
 class SourceFailure:
@@ -294,7 +289,6 @@ class SourceObservation:
     retriever_name: str
     source_rank: int
     source_score: float | None
-
 
 @dataclass(frozen=True)
 class Candidate:
@@ -336,7 +330,6 @@ class RetrievalRequest:
     constraints: ConstraintSet
     config: RetrievalConfig
     request_id: str
-
 
 @dataclass(frozen=True)
 class RetrievalResponse:
@@ -390,12 +383,10 @@ The pipeline needs a common interface that allows different retrieval sources to
 ```
 from typing import Protocol, FrozenSet
 
-
 @dataclass(frozen=True)
 class RetrievalBatch:
     candidates: tuple[Candidate, ...]
     enforced_constraint_fields: frozenset[str]
-
 
 class Retriever(Protocol):
     name: str
@@ -458,42 +449,32 @@ Errors must communicate whether a failure is caused by request input, configurat
 class PipelineError(Exception):
     """Base class for expected retrieval pipeline errors."""
 
-
 class RequestValidationError(PipelineError):
     pass
-
 
 class PipelineConfigurationError(PipelineError):
     pass
 
-
 class ConstraintEnforcementError(PipelineError):
     pass
-
 
 class AdapterContractError(PipelineError):
     pass
 
-
 class RetrieverExecutionError(PipelineError):
     """A known provider execution failure."""
-
 
 class QueryEmbeddingError(PipelineError):
     """Query embedding failed before vector-provider execution."""
 
-
 class RetrievalExecutionError(PipelineError):
     """The overall retrieval request cannot complete."""
-
 
 class RankingContractError(PipelineError):
     pass
 
-
 class RankingExecutionError(PipelineError):
     pass
-
 
 class AuthorizationError(PipelineError):
     """Trusted authorization could not be established or verified."""
@@ -546,7 +527,6 @@ Generic built-in exception classes such as `Exception`, `RuntimeError`, or `OSEr
 from collections.abc import Iterable
 from itertools import islice
 from typing import Any
-
 
 class LexicalRetriever:
     name = "lexical"
@@ -778,7 +758,6 @@ The injected embedder and vector client are application/provider dependencies. T
 ```
 import math
 
-
 def validate_query_vector(vector: Any) -> list[float]:
     if not isinstance(vector, (list, tuple)) or not vector:
         raise AdapterContractError(
@@ -812,7 +791,6 @@ def validate_query_vector(vector: Any) -> list[float]:
         normalized.append(normalized_component)
 
     return normalized
-
 
 class DenseRetriever:
     name = "dense"
@@ -1096,7 +1074,6 @@ A field cannot be simultaneously mandatory and optional in the same request. Thi
 ```
 from copy import deepcopy
 
-
 def prepare_source_constraints(
     constraints: ConstraintSet,
     retriever: Retriever,
@@ -1233,11 +1210,9 @@ A minimal integration contract is:
 ```
 from typing import Protocol
 
-
 @dataclass(frozen=True)
 class TrustedAccessScope:
     mandatory_constraints: dict[str, Any]
-
 
 class AuthorizationService(Protocol):
     def derive_scope(
@@ -1252,7 +1227,6 @@ class AuthorizationService(Protocol):
         candidate: Candidate,
     ) -> bool:
         ...
-
 
 class AuthorizedRetrievalService:
     def __init__(
@@ -1556,9 +1530,7 @@ Cyclic Python objects are not valid JSON-compatible metadata. Pathologically dee
 import math
 from typing import Any
 
-
 MAX_METADATA_DEPTH = 32
-
 
 def validate_metadata_value(
     value: Any,
@@ -1696,7 +1668,6 @@ The following function validates the candidate and returns a new candidate conta
 
 ```
 from copy import deepcopy
-
 
 def normalize_candidate(candidate: Candidate) -> Candidate:
     if not isinstance(candidate, Candidate):
@@ -1923,7 +1894,6 @@ Ranking and deduplication require type-aware equality. Python's ordinary equalit
 ```
 from dataclasses import fields, is_dataclass
 
-
 def contract_values_equal(left: Any, right: Any) -> bool:
     if type(left) is not type(right):
         return False
@@ -2090,7 +2060,6 @@ This keeps ranking behavior separate from candidate generation and combination.
 
 ```
 import copy
-
 
 def validate_ranking_output(
     original: tuple[Candidate, ...],
@@ -2305,7 +2274,6 @@ def validate_config(config: RetrievalConfig) -> None:
             raise RequestValidationError(
                 f"Invalid candidate limit for source: {source_name}"
             )
-
 
 def validate_request(request: RetrievalRequest) -> None:
     if not isinstance(request, RetrievalRequest):
@@ -2738,7 +2706,7 @@ The orchestrator deliberately catches only `RetrieverExecutionError` for partial
 
 An `AdapterContractError` or `ConstraintEnforcementError` is not a normal provider outage. Silently converting it into a partial response could conceal a correctness or security defect.
 
-The adapter retains the original provider exception as its cause when it raises `RetrieverExecutionError`. At the pipeline boundary, the exception is converted into a sanitized `SourceFailure` response. **The original exception chain is not preserved in the returned response.**
+The adapter retains the original provider exception as its cause when it raises `RetrieverExecutionError`. At the pipeline boundary, the exception is converted into a sanitized `SourceFailure` response. The original exception chain is not preserved in the returned response.
 
 If internal diagnostics are required, capture the exception through a controlled telemetry or logging hook at the point where the pipeline catches it. Apply redaction and access controls. Do not put raw exception objects or provider exception messages into `SourceFailure`, warnings, or downstream response fields.
 
@@ -2850,7 +2818,6 @@ The snippets are intended to be assembled into a single test module with the imp
 ```
 import pytest
 
-
 def test_rejects_overlapping_constraints():
     constraints = ConstraintSet(
         mandatory={"department": "engineering"},
@@ -2860,7 +2827,6 @@ def test_rejects_overlapping_constraints():
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
 
-
 def test_accepts_distinct_constraint_groups():
     constraints = ConstraintSet(
         mandatory={"department": "engineering"},
@@ -2869,20 +2835,17 @@ def test_accepts_distinct_constraint_groups():
 
     validate_constraint_set(constraints)
 
-
 def test_rejects_non_dictionary_mandatory_constraints():
     constraints = ConstraintSet(mandatory=None)
 
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
 
-
 def test_rejects_non_dictionary_optional_constraints():
     constraints = ConstraintSet(optional=[])
 
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
-
 
 @pytest.mark.parametrize(
     "invalid_field",
@@ -2895,7 +2858,6 @@ def test_rejects_invalid_constraint_field_names(invalid_field):
 
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
-
 
 @pytest.mark.parametrize(
     "invalid_value",
@@ -2914,7 +2876,6 @@ def test_rejects_invalid_constraint_values(invalid_value):
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
 
-
 def test_rejects_cyclic_constraint_values():
     cyclic_value = {}
     cyclic_value["self"] = cyclic_value
@@ -2925,7 +2886,6 @@ def test_rejects_cyclic_constraint_values():
 
     with pytest.raises(RequestValidationError):
         validate_constraint_set(constraints)
-
 
 def test_accepts_nested_json_compatible_constraint_values():
     constraints = ConstraintSet(
@@ -2938,7 +2898,6 @@ def test_accepts_nested_json_compatible_constraint_values():
     )
 
     validate_constraint_set(constraints)
-
 
 def test_rejects_excessively_nested_constraint_values():
     value = "engineering"
@@ -2965,7 +2924,6 @@ def test_rejects_string_as_enabled_sources():
     with pytest.raises(RequestValidationError):
         validate_config(config)
 
-
 def test_rejects_empty_source_name():
     config = RetrievalConfig(
         enabled_sources=("lexical", ""),
@@ -2973,7 +2931,6 @@ def test_rejects_empty_source_name():
 
     with pytest.raises(RequestValidationError):
         validate_config(config)
-
 
 def test_rejects_non_dictionary_source_limits():
     config = RetrievalConfig(
@@ -2983,7 +2940,6 @@ def test_rejects_non_dictionary_source_limits():
 
     with pytest.raises(RequestValidationError):
         validate_config(config)
-
 
 def test_rejects_unknown_source_limit_key():
     config = RetrievalConfig(
@@ -2998,7 +2954,6 @@ def test_rejects_unknown_source_limit_key():
             config,
             {"lexical": object()},
         )
-
 
 def test_rejects_limit_for_registered_but_disabled_source():
     config = RetrievalConfig(
@@ -3027,24 +2982,19 @@ def test_rejects_non_finite_metadata():
     with pytest.raises(AdapterContractError):
         validate_metadata_value(float("nan"))
 
-
 def test_rejects_boolean_source_score():
     with pytest.raises(AdapterContractError):
         normalize_source_score(True)
 
-
 def test_normalizes_integer_source_score():
     assert normalize_source_score(5) == 5.0
-
 
 def test_accepts_missing_source_score():
     assert normalize_source_score(None) is None
 
-
 def test_rejects_overflowing_source_score():
     with pytest.raises(AdapterContractError):
         normalize_source_score(10**10000)
-
 
 def test_rejects_cyclic_metadata():
     metadata = {}
@@ -3052,7 +3002,6 @@ def test_rejects_cyclic_metadata():
 
     with pytest.raises(AdapterContractError):
         validate_metadata_value(metadata)
-
 
 def test_rejects_excessively_nested_metadata():
     metadata = "value"
@@ -3086,7 +3035,6 @@ def test_candidate_normalization_converts_integer_score():
         normalized.source_observations[0].source_score,
         float,
     )
-
 
 def test_candidate_normalization_copies_metadata():
     original_metadata = {
@@ -3503,7 +3451,6 @@ def test_rejects_ranker_that_removes_candidate():
             (first,),
         )
 
-
 def test_ranking_validation_distinguishes_boolean_from_integer_metadata():
     original = Candidate(
         document_id="doc-1",
@@ -3528,7 +3475,6 @@ def test_ranking_validation_distinguishes_boolean_from_integer_metadata():
 
     with pytest.raises(RankingContractError):
         validate_ranking_output((original,), (mutated,))
-
 
 def test_ranking_validation_rejects_uninspectable_output_snapshot():
     class CannotDeepcopy:
@@ -3567,11 +3513,9 @@ class CannotDeepcopy:
     def __deepcopy__(self, memo):
         raise RuntimeError("copy blocked")
 
-
 class NeverCalledRanker:
     def rank(self, query, candidates):
         raise AssertionError("rank must not run when snapshotting fails")
-
 
 def test_execute_ranker_classifies_input_snapshot_failure():
     candidate = Candidate(
@@ -3593,7 +3537,6 @@ def test_execute_ranker_classifies_input_snapshot_failure():
         )
 
     assert isinstance(captured.value.__cause__, RuntimeError)
-
 
 def test_execute_ranker_wraps_unrelated_pipeline_error():
     class MisbehavingRanker:
@@ -3619,7 +3562,6 @@ def test_execute_ranker_wraps_unrelated_pipeline_error():
         )
 
     assert isinstance(captured.value.__cause__, RequestValidationError)
-
 
 def test_execute_ranker_sanitizes_ranker_raised_execution_error():
     class MisconfiguredRanker:
@@ -3862,11 +3804,9 @@ Dense query embedding and vector-provider execution are separate dependency boun
 class VectorProviderTimeout(Exception):
     pass
 
-
 class FailingVectorClient:
     def search(self, **kwargs):
         raise VectorProviderTimeout("vector service timed out")
-
 
 def test_dense_adapter_classifies_query_embedding_failure_separately():
     def failing_embedder(query):
@@ -3887,7 +3827,6 @@ def test_dense_adapter_classifies_query_embedding_failure_separately():
         )
 
     assert isinstance(captured.value.__cause__, RuntimeError)
-
 
 @pytest.mark.parametrize(
     "invalid_vector",
@@ -3928,7 +3867,6 @@ def test_dense_adapter_rejects_malformed_query_vector_before_provider_call(
         )
 
     assert client.calls == 0
-
 
 def test_dense_adapter_classifies_vector_provider_failure():
     adapter = DenseRetriever(
@@ -4045,7 +3983,6 @@ class CountingProviderClient:
         self.calls += 1
         return []
 
-
 def test_adapter_rejects_unverified_filter_before_provider_call():
     client = CountingProviderClient()
     adapter = LexicalRetriever(
@@ -4079,7 +4016,6 @@ class FakeProviderClient:
     def search(self, **kwargs):
         return self.result
 
-
 def test_adapter_rejects_dictionary_result_container():
     adapter = LexicalRetriever(
         client=FakeProviderClient({"unexpected": "container"}),
@@ -4108,7 +4044,6 @@ def provider_record(index: int) -> dict[str, Any]:
         "score": 0.8,
     }
 
-
 class IterableProviderClient:
     def __init__(self, result):
         self.result = result
@@ -4116,14 +4051,12 @@ class IterableProviderClient:
     def search(self, **kwargs):
         return self.result
 
-
 def make_lexical_adapter(result):
     return LexicalRetriever(
         client=IterableProviderClient(result),
         guaranteed_exact_match_fields=frozenset(),
         provider_error_types=(ProviderTimeout,),
     )
-
 
 def test_adapter_accepts_exactly_requested_limit():
     adapter = make_lexical_adapter(
@@ -4134,7 +4067,6 @@ def test_adapter_accepts_exactly_requested_limit():
 
     assert len(batch.candidates) == 3
 
-
 def test_adapter_rejects_limit_plus_one_records():
     adapter = make_lexical_adapter(
         (provider_record(index) for index in range(4))
@@ -4142,7 +4074,6 @@ def test_adapter_rejects_limit_plus_one_records():
 
     with pytest.raises(AdapterContractError):
         adapter.search("example", {}, limit=3)
-
 
 def test_adapter_bounds_consumption_of_unbounded_iterator():
     consumed = 0
@@ -4161,7 +4092,6 @@ def test_adapter_bounds_consumption_of_unbounded_iterator():
         adapter.search("example", {}, limit=3)
 
     assert consumed == 4
-
 
 def test_adapter_classifies_provider_failure_during_bounded_iteration():
     def failing_records():
@@ -4184,7 +4114,6 @@ The adapter consumes at most `limit + 1` records. An iterator that yields the ex
 class ProviderTimeout(Exception):
     pass
 
-
 class LazyFailureClient:
     def search(self, **kwargs):
         def records():
@@ -4199,7 +4128,6 @@ class LazyFailureClient:
             raise ProviderTimeout("Iterator timed out")
 
         return records()
-
 
 def test_adapter_classifies_documented_iterator_failure():
     adapter = LexicalRetriever(
@@ -4232,7 +4160,6 @@ def test_adapter_rejects_generic_exception_classification():
             provider_error_types=(Exception,),
         )
 
-
 def test_adapter_rejects_builtin_runtime_error_classification():
     with pytest.raises(TypeError):
         LexicalRetriever(
@@ -4249,7 +4176,6 @@ class UnexpectedRuntimeClient:
     def search(self, **kwargs):
         raise RuntimeError("Unexpected implementation defect")
 
-
 def test_unexpected_runtime_error_is_not_provider_failure():
     adapter = LexicalRetriever(
         client=UnexpectedRuntimeClient(),
@@ -4263,7 +4189,6 @@ def test_unexpected_runtime_error_is_not_provider_failure():
             constraints={},
             limit=10,
         )
-
 
 def test_pipeline_does_not_treat_unexpected_runtime_error_as_partial():
     adapter = LexicalRetriever(
@@ -4295,13 +4220,11 @@ This verifies that an unexpected programming error does not become a `RetrieverE
 class SensitiveProviderError(Exception):
     pass
 
-
 class SensitiveFailureClient:
     def search(self, **kwargs):
         raise SensitiveProviderError(
             "https://internal.example/index?token=secret"
         )
-
 
 def test_provider_error_message_is_not_exposed():
     adapter = LexicalRetriever(
@@ -4427,7 +4350,6 @@ class CapturingPipeline:
     def retrieve(self, request):
         self.request = request
         return self.response
-
 
 def test_matching_optional_trusted_constraint_is_promoted():
     empty_response = RetrievalResponse(
@@ -4656,7 +4578,6 @@ class CountingAuthorizationService(FakeAuthorizationService):
         self.derive_calls += 1
         return self.scope
 
-
 def test_malformed_request_is_rejected_before_scope_derivation():
     authorization = CountingAuthorizationService(
         TrustedAccessScope(
@@ -4690,7 +4611,6 @@ def test_malformed_request_is_rejected_before_scope_derivation():
 class FailingPipeline:
     def retrieve(self, request):
         raise RuntimeError("Unexpected pipeline implementation failure")
-
 
 def test_pipeline_exception_is_not_misclassified_as_authorization_error():
     authorization = FakeAuthorizationService(
@@ -4836,7 +4756,6 @@ class FailingAuthorizationService:
     def authorize_candidate(self, principal, candidate):
         return True
 
-
 def test_authorization_service_failure_fails_closed():
     pipeline = CapturingPipeline(None)
 
@@ -4934,13 +4853,11 @@ class RuntimeErrorNameRetriever:
     def supported_constraint_fields(self):
         return frozenset()
 
-
 def test_registry_wraps_runtime_error_from_retriever_property():
     with pytest.raises(PipelineConfigurationError):
         validate_registry({
             "lexical": RuntimeErrorNameRetriever()
         })
-
 
 class InvalidNameRetriever:
     name = "   "
@@ -4948,7 +4865,6 @@ class InvalidNameRetriever:
 
     def search(self, query, constraints, limit):
         return RetrievalBatch((), frozenset())
-
 
 def test_registry_rejects_blank_retriever_name():
     with pytest.raises(PipelineConfigurationError):

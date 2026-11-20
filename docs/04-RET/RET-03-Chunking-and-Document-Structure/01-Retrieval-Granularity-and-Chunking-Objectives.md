@@ -770,11 +770,3 @@ Continue with the following approved RET-03 chapter files:
 - **[Structure, Context Preservation, and Chunk Comparison](./03-Structure-Context-Preservation-and-Chunk-Comparison.md):** Learn how to preserve structural meaning and context, and how to inspect alternative chunking outputs.
 
 Related topics in the broader Retrieval Engineering curriculum include retrieval problem formulation in RET-01, document preparation in RET-02, indexing in RET-04, and formal retrieval evaluation in RET-10. These chapters own their respective concepts and should be consulted for their detailed treatment.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Retrieval-Granularity-and-Chunking-Objectives.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

@@ -45,18 +45,18 @@ For a sequence of tokens, the model begins with numerical representations and re
 A simplified flow is:
 
 ```text
-**Input tokens**
+Input tokens
         ↓
-**Token representations + positional information**
+Token representations + positional information
 Exact positional method depends on the architecture
         ↓
-**Transformer block 1**
+Transformer block 1
 Attention, residual paths, normalization, feed-forward transformation
         ↓
-**Transformer block 2 ... block N**
+Transformer block 2 ... block N
 Repeated learned transformations
         ↓
-**Final contextual representations**
+Final contextual representations
 A task-specific output component may consume these representations.
 ```
 
@@ -316,19 +316,19 @@ For a pre-normalization design:
 The data flow is:
 
 ```text
-**Input \(X\)**
+Input \(X\)
         ↓
-**Layer Normalization**
+Layer Normalization
         ↓
-**Multi-Head Attention**
+Multi-Head Attention
         ↓
-**Residual addition with \(X\)**
+Residual addition with \(X\)
         ↓
-**Layer Normalization**
+Layer Normalization
         ↓
-**Position-Wise FFN**
+Position-Wise FFN
         ↓
-**Residual addition → Block output**
+Residual addition → Block output
 ```
 
 The diagram emphasizes the order of operations. A real implementation must preserve the intended residual connections and tensor dimensions.

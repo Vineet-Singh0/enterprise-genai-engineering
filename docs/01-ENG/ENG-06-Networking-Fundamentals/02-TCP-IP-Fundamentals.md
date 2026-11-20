@@ -1109,10 +1109,4 @@ It changes a security control without establishing that the firewall is responsi
 - [RFC 1918 — Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918) — Private IPv4 address ranges.
 - [RFC 4632 — Classless Inter-domain Routing (CIDR)](https://www.rfc-editor.org/rfc/rfc4632) — CIDR addressing and routing context.
 
----
-
-# End of Document
-
-This completes the Markdown file: `02-TCP-IP-Fundamentals.md`
-
 All content can now be saved as a single production-ready Markdown document in the ENG-06 repository.

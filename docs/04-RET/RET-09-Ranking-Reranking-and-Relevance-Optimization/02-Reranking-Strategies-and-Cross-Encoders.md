@@ -409,7 +409,6 @@ import numbers
 import numpy as np
 from sentence_transformers import CrossEncoder
 
-
 class CrossEncoderReranker:
     """Rerank a candidate sequence using one scalar score per candidate."""
 
@@ -849,7 +848,6 @@ import pytest
 
 from reranker import CrossEncoderReranker
 
-
 class FakeCrossEncoder:
     def __init__(self, scores):
         self.scores = scores
@@ -862,7 +860,6 @@ class FakeCrossEncoder:
             return self.scores(pairs)
 
         return self.scores
-
 
 def make_reranker(scores, batch_size=32):
     reranker = CrossEncoderReranker.__new__(
@@ -963,7 +960,6 @@ def test_rejects_non_dictionary_candidate():
             ["not a candidate dictionary"],
         )
 
-
 def test_rejects_duplicate_document_ids():
     reranker = make_reranker([0.5, 0.4])
 
@@ -974,7 +970,6 @@ def test_rejects_duplicate_document_ids():
 
     with pytest.raises(ValueError, match="Duplicate"):
         reranker.rerank("query", candidates)
-
 
 @pytest.mark.parametrize(
     "candidate",

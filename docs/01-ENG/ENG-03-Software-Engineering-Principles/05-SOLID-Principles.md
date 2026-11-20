@@ -37,7 +37,7 @@ This chapter focuses on the five principles and their application.
 - [04 — Coupling and Cohesion](04-Coupling-and-Cohesion.md) explains dependency relationships and responsibility concentration.
 - [06 — Dependency Injection](06-Dependency-Injection.md) focuses on supplying dependencies to components.
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md) applies dependency and responsibility principles at the architectural level.
-- [08 — Design Patterns](08-Design-Patterns/README.md) covers recurring design solutions and their trade-offs.
+- [08 — Design Patterns](./08-Design-Patterns.md) covers recurring design solutions and their trade-offs.
 
 ---
 
@@ -148,17 +148,14 @@ class InvoiceCalculator:
             for item in items
         )
 
-
 class InvoiceRenderer:
     def render_html(self, invoice) -> str:
         return f"<h1>Invoice {invoice['id']}</h1>"
-
 
 class InvoiceRepository:
     def save(self, invoice) -> None:
         # Database-specific persistence belongs here.
         pass
-
 
 class InvoiceEmailSender:
     def send(self, invoice, html: str) -> None:
@@ -289,7 +286,6 @@ One alternative is to define a payment-method interface:
 ```python
 from typing import Protocol
 
-
 class PaymentMethod(Protocol):
     def pay(self, amount: float) -> None:
         ...
@@ -302,11 +298,9 @@ class CardPayment:
     def pay(self, amount: float) -> None:
         print(f"Charging card: {amount}")
 
-
 class BankTransferPayment:
     def pay(self, amount: float) -> None:
         print(f"Initiating transfer: {amount}")
-
 
 class WalletPayment:
     def pay(self, amount: float) -> None:
@@ -419,11 +413,9 @@ One alternative is to separate the capabilities:
 ```python
 from typing import Protocol
 
-
 class ReadableStore(Protocol):
     def read(self, key: str) -> str:
         ...
-
 
 class WritableStore(ReadableStore, Protocol):
     def write(self, key: str, value: str) -> None:
@@ -530,7 +522,6 @@ Consider this interface:
 ```python
 from typing import Protocol
 
-
 class Machine(Protocol):
     def print_document(self, document: str) -> None:
         ...
@@ -557,11 +548,9 @@ class Printer(Protocol):
     def print_document(self, document: str) -> None:
         ...
 
-
 class Scanner(Protocol):
     def scan_document(self) -> str:
         ...
-
 
 class FaxMachine(Protocol):
     def fax_document(self, document: str) -> None:
@@ -644,7 +633,6 @@ class SQLReportRepository:
         # Database-specific query.
         return []
 
-
 class ReportService:
     def __init__(self):
         self.repository = SQLReportRepository()
@@ -668,7 +656,6 @@ Define the capability required by the reporting service:
 
 ```python
 from typing import Protocol
-
 
 class ReportRepository(Protocol):
     def fetch_report_data(self) -> list[dict]:
@@ -1093,7 +1080,7 @@ Continue in the approved chapter order:
 
 1. [06 — Dependency Injection](06-Dependency-Injection.md)
 2. [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-3. [08 — Design Patterns](08-Design-Patterns/README.md)
+3. [08 — Design Patterns](./08-Design-Patterns.md)
 
 For the complete module structure and learning path, see [README.md](README.md).
 

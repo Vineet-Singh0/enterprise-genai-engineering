@@ -189,7 +189,6 @@ Branch
   ↓
 Contains development history
 
-
 Pull Request
   ↓
 Proposes integrating that history
@@ -1092,11 +1091,9 @@ For example:
    ↓
 Easy direct communication
 
-
 20 engineers
    ↓
 More coordination required
-
 
 100+ engineers
    ↓
@@ -1524,5 +1521,3 @@ The most important principle is:
 - [Collaborative Development](./09-Collaborative-Development.md)
 
 ---
-
-## End of Document

@@ -210,11 +210,9 @@ Create a file named `profile_example.py`:
 def calculate_squares(limit: int) -> list[int]:
     return [number * number for number in range(limit)]
 
-
 def main() -> None:
     results = calculate_squares(1_000_000)
     print(f"Calculated {len(results)} squares")
-
 
 if __name__ == "__main__":
     main()
@@ -280,10 +278,8 @@ You can profile a targeted operation rather than an entire application.
 ```python
 import cProfile
 
-
 def calculate_total(values: list[int]) -> int:
     return sum(values)
-
 
 values = list(range(1_000_000))
 
@@ -440,7 +436,6 @@ def find_user(
 
     return None
 
-
 def process_orders(
     users: list[dict],
     order_user_ids: list[int],
@@ -505,13 +500,11 @@ Example:
 ```python
 import tracemalloc
 
-
 def create_records(count: int) -> list[dict[str, int]]:
     return [
         {"id": number, "value": number * 2}
         for number in range(count)
     ]
-
 
 tracemalloc.start()
 
@@ -569,7 +562,6 @@ For basic elapsed-time measurements, `time.perf_counter()` provides a high-resol
 
 ```python
 from time import perf_counter
-
 
 start = perf_counter()
 
@@ -767,7 +759,6 @@ Use the following implementation:
 import cProfile
 import pstats
 
-
 def find_user(
     users: list[dict],
     target_id: int,
@@ -778,7 +769,6 @@ def find_user(
 
     return None
 
-
 def process_orders(
     users: list[dict],
     order_user_ids: list[int],
@@ -787,7 +777,6 @@ def process_orders(
         find_user(users, user_id)
         for user_id in order_user_ids
     ]
-
 
 def main() -> None:
     users = [
@@ -800,7 +789,6 @@ def main() -> None:
     results = process_orders(users, order_user_ids)
 
     print(f"Processed {len(results)} order references")
-
 
 if __name__ == "__main__":
     profiler = cProfile.Profile()
@@ -872,7 +860,3 @@ Do not claim that the optimized version is faster based only on the algorithm's 
 - [py-spy — Sampling Profiler for Python](https://github.com/benfred/py-spy)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `06-Profiling.md`

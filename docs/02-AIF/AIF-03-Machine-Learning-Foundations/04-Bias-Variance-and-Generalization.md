@@ -95,19 +95,19 @@ Both people might perform well on a test containing familiar examples. The first
 A machine learning model faces an analogous problem.
 
 ```text
-**Training data**
+Training data
 Finite examples containing useful patterns, noise, and possible artifacts.
         ↓
-**Learning process**
+Learning process
 A model class and training procedure fit a relationship to the observed examples.
         ↓
 <grid columns={2} gap={2}>
 <grid-item>
-**Useful generalization**
+Useful generalization
 The learned relationship remains useful on unseen examples from the intended environment.
 </grid-item>
 <grid-item>
-**Poor generalization**
+Poor generalization
 The model misses important patterns, fits accidental patterns, or encounters a changed environment.
 </grid-item>
 </grid>

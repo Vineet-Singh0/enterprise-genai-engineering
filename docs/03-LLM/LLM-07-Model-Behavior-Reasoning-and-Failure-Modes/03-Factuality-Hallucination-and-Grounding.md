@@ -745,5 +745,3 @@ The following research papers provide broader context on factuality, hallucinati
 - Ji et al., [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629) — A survey of hallucination definitions, categories, and mitigation approaches across natural-language generation.
 - Lin, Hilton, and Evans, [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) — Research on evaluating whether language models reproduce common misconceptions rather than providing truthful answers.
 - Lewis et al., [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — Foundational research on combining retrieval with generation for knowledge-intensive tasks.
-
-*End of Document*

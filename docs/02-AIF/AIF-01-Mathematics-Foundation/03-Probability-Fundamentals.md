@@ -1107,13 +1107,7 @@ The central principle is that probability is a mathematical language for uncerta
 
 - [Chapter 02 — Algebra, Exponents and Logarithms](02-Algebra-Exponents-and-Logarithms.md): prerequisite mathematical notation and manipulation.
 - [Chapter 04 — Statistics Fundamentals](04-Statistics-Fundamentals.md): descriptive statistics, sampling variability, and interpreting observed data.
-- [AIF-02 — AI Fundamentals](../AIF-02-AI-Fundamentals/README.md): planned cross-pillar reference; verify the target file exists in the repository.
-- [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md): planned cross-pillar reference for learning methods and evaluation; verify the target file exists in the repository.
+- [AIF-02 — AI Fundamentals](../AIF-02-AI-Fundamentals/README.md)
+- [AIF-03 — Machine Learning Foundations](../AIF-03-Machine-Learning-Foundations/README.md)
 
 **Scope:** This lesson covers foundational probability concepts. It does not teach advanced probability theory, formal statistical inference, complete distribution theory, ML evaluation methodology, or implementation of probabilistic models.
-
----
-
-# End of Document
-
-**Target path:** `docs/02-AIF/AIF-01-Mathematics-Foundation/03-Probability-Fundamentals.md`

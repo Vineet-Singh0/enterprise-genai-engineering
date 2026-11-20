@@ -1870,10 +1870,10 @@ An artifact whose core contents are not modified during runtime.
 
 - [01-AI-Application-Packaging-and-Reproducibility.md](./01-AI-Application-Packaging-and-Reproducibility.md)
 - [03-Production-Artifacts-Dependencies-and-Environment-Configuration.md](./03-Production-Artifacts-Dependencies-and-Environment-Configuration.md)
-- [PROD-03 — Model Serving](../PROD-03-Model-Serving/README.md)
-- [PROD-04 — CI/CD, Deployment, and Release Engineering](../PROD-04-CI-CD-Deployment-and-Release-Engineering/README.md)
-- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity/README.md)
-- [PROD-09 — AI Security and Supply-Chain Trust](../PROD-09-AI-Security-and-Supply-Chain-Trust/README.md)
+- [PROD-03 — Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
+- [PROD-04 — CI/CD, Deployment, and Release Engineering](../PROD-04-Deployment-and-Release-Engineering/Readme.md)
+- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-09 — AI Security and Supply-Chain Trust](../PROD-09-Production-AI-Security/Readme.md)
 
 ---
 

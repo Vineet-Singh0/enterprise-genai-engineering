@@ -678,7 +678,6 @@ Provider A pricing information.
 Continuation:
 Proceed with provider B retrieval.
 
-
 Step 2
 
 Decision:
@@ -693,7 +692,6 @@ Provider B pricing information.
 Continuation:
 Compare collected information.
 
-
 Step 3
 
 Decision:
@@ -707,7 +705,6 @@ Comparison result.
 
 Continuation:
 Generate final response.
-
 
 Step 4
 
@@ -1391,7 +1388,6 @@ Step 1
   Continuation:
     Retrieve order
 
-
 Step 2
   Decision:
     Retrieve order
@@ -1404,7 +1400,6 @@ Step 2
 
   Continuation:
     Generate response
-
 
 Step 3
   Decision:

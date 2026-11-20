@@ -1561,13 +1561,3 @@ That leads to the Linux filesystem.
 Continue with:
 
 [**02 — Linux Filesystem →**](02-Linux-Filesystem.md)
-
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`01-Linux-Fundamentals.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

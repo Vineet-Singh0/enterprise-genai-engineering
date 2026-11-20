@@ -803,5 +803,3 @@ These resources provide broader context for language-model reliability and retri
 This chapter teaches observable failure classification, evidence collection, and causal attribution within LLM applications.
 
 It does not define a comprehensive benchmark suite, statistical evaluation methodology, or operational incident-management standard. Those concerns belong in formal evaluation, production engineering, and enterprise governance modules.
-
-*End of Document*

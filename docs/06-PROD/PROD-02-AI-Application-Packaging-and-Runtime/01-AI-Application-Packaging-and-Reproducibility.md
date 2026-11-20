@@ -1321,10 +1321,10 @@ Continue with:
 
 For broader production-system context, see:
 
-- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-Problem-and-Production-Boundaries/README.md)
-- [PROD-03 — AI Model Serving and Inference](../PROD-03-AI-Model-Serving-and-Inference/README.md)
-- [PROD-04 — AI CI/CD and Delivery](../PROD-04-AI-CI-CD-and-Delivery/README.md)
-- [PROD-09 — AI Supply Chain Security and Trust](../PROD-09-AI-Supply-Chain-Security-and-Trust/README.md)
+- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-System-Foundations/Readme.md)
+- [PROD-03 — AI Model Serving and Inference](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
+- [PROD-04 — AI CI/CD and Delivery](../PROD-04-Deployment-and-Release-Engineering/Readme.md)
+- [PROD-09 — AI Supply Chain Security and Trust](../PROD-09-Production-AI-Security/Readme.md)
 
 ---
 

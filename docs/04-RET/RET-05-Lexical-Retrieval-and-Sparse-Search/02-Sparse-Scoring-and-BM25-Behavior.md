@@ -1024,8 +1024,4 @@ Useful starting points include:
 
 The equations in this chapter explain common TF-IDF and BM25 formulations. Use the selected engine's current documentation and score explanations when reproducing actual production scores.
 
----
-
-# End of Document
-
 File: `02-Sparse-Scoring-and-BM25-Behavior.md`

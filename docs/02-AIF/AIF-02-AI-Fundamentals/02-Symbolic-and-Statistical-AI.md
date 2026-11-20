@@ -788,11 +788,3 @@ The following resources provide optional additional context:
 - The official Python documentation. A reference for the language used to implement illustrative rule-based examples and application logic.
 
 These resources supplement the chapter. Detailed ML algorithms, mathematical foundations, and production implementation remain within their respective curriculum domains.
-
----
-
-# End of Document
-
-This completes the Markdown file: `02-Symbolic-and-Statistical-AI.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

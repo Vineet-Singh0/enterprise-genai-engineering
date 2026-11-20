@@ -33,7 +33,7 @@ Recommended reading:
 - [Git Fundamentals](./01-Git-Fundamentals.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
 - [Merge and Rebase](./04-Merge-and-Rebase.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 
 ---
 
@@ -1597,12 +1597,10 @@ And:
 
 ## Further Reading
 
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
 - [Merge and Rebase](./04-Merge-and-Rebase.md)
 - [Issue Tracking](./08-Issue-Tracking.md)
 - [Collaborative Development](./09-Collaborative-Development.md)
 
 ---
-
-## End of Document

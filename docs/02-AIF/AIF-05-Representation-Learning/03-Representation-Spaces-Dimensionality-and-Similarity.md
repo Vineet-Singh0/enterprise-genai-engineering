@@ -843,5 +843,3 @@ If you cannot yet explain these concepts clearly, revisit Sections 4–9 and wor
 **Next chapter:** [04 — Distance Metrics and Representation Quality](04-Distance-Metrics-and-Representation-Quality.md)
 
 **Scope:** This lesson covers the geometry of representation spaces, dimensionality, magnitude, direction, dot product, cosine similarity, and normalization. Lesson 04 covers systematic metric comparison and representation-quality evaluation. General vector mathematics remains in AIF-01; retrieval implementation remains in RET.
-
-## End of Document

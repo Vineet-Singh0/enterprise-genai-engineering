@@ -844,7 +844,6 @@ Weak:
 
 User → Agent → Tool → External System
 
-
 Stronger:
 
 User

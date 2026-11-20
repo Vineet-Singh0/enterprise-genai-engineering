@@ -113,7 +113,6 @@ Concurrent progress:
 Task A: ███───████───██
 Task B: ──████───███───
 
-
 Parallel execution:
 
 Task A: █████████████
@@ -875,7 +874,3 @@ The next chapter, **Concurrency Failure Analysis**, focuses on investigating tim
 These references illustrate Python-specific execution models. Always verify the actual behavior and limitations of the language, runtime, libraries, and deployment environment used by your application.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `08-Concurrency-Models-and-Practical-Trade-offs.md`.

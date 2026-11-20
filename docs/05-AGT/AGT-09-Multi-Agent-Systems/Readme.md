@@ -464,27 +464,27 @@ The learner should be able to defend a multi-agent design **and** explain why a 
 
 Use the adjacent Agent Engineering chapters for concepts owned outside AGT-09:
 
-- [AGT-01 — Agent Foundations](../AGT-01/README.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02/README.md)
-- [AGT-03 — Tools and Agent Actions](../AGT-03/README.md)
-- [AGT-04 — Agent State, Context and Memory](../AGT-04/README.md)
-- [AGT-05 — Task Decomposition and Planning](../AGT-05/README.md)
-- [AGT-06 — Workflow Orchestration](../AGT-06/README.md)
-- [AGT-07 — Human-in-the-Loop and Intervention](../AGT-07/README.md)
-- [AGT-08 — Agent Interfaces and Protocols](../AGT-08/README.md)
-- [AGT-10 — Agent Evaluation](../AGT-10/README.md)
-- [AGT-11 — Agent Safety and Failure Handling](../AGT-11/README.md)
-- [AGT-12 — Architecture and System Design](../AGT-12/README.md)
+- [AGT-01 — Agent Foundations](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools and Agent Actions](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — Agent State, Context and Memory](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-05 — Task Decomposition and Planning](../AGT-05-Planning-and-Adaptive-Execution/Readme.md)
+- [AGT-06 — Workflow Orchestration](../AGT-06-Workflow-Orchestration-and-Durable-Execution/Readme.md)
+- [AGT-07 — Human-in-the-Loop and Intervention](../AGT-07-Human-Control-and-Approval/Readme.md)
+- [AGT-08 — Agent Interfaces and Protocols](../AGT-08-Agent-Interfaces-and-Protocols/Readme.md)
+- [AGT-10 — Agent Evaluation](../AGT-10-Agent-Evaluation-and-Behavioral-Testing/Readme.md)
+- [AGT-11 — Agent Safety and Failure Handling](../AGT-11-Agent-Reliability-and-Safety/Readme.md)
+- [AGT-12 — Architecture and System Design](../AGT-12-Agent-Architecture-and-Design-Review/Readme.md)
 
 ---
 
 ## Navigation
 
-**Previous:** [AGT-08 — Agent Interfaces and Protocols](../AGT-08/README.md)
+**Previous:** [AGT-08 — Agent Interfaces and Protocols](../AGT-08-Agent-Interfaces-and-Protocols/Readme.md)
 
 **Current:** AGT-09 — Multi-Agent Systems
 
-**Next:** [AGT-10 — Agent Evaluation](../AGT-10/README.md)
+**Next:** [AGT-10 — Agent Evaluation](../AGT-10-Agent-Evaluation-and-Behavioral-Testing/Readme.md)
 
 The teaching sequence within this chapter is:
 

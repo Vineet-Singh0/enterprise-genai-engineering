@@ -825,10 +825,4 @@ Verify the hostname, the production resolver configuration, the relevant DNS rec
 - [IANA — Root Zone Database](https://www.iana.org/domains/root/db) — Reference for top-level domain delegation.
 - [ICANN — DNS Basics](https://www.icann.org/resources/pages/dns-2012-02-25-en) — Introductory information about the Domain Name System.
 
----
-
-# End of Document
-
-This completes the Markdown file: `03-DNS-Fundamentals.md`
-
 All content can now be saved as a single production-ready Markdown document in the ENG-06 repository.

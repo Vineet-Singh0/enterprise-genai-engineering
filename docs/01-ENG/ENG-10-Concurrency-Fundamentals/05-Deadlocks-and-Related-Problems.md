@@ -146,7 +146,6 @@ def update_customer():
         release(lock_b)
         release(lock_a)
 
-
 def update_transaction():
     acquire(lock_b)
     acquire(lock_a)
@@ -802,7 +801,3 @@ These ideas lead to the next chapter, **Thread Safety and Safe Shared-State Desi
 These references provide implementation-specific details. Always verify the behavior of the synchronization primitives used by the actual language and runtime.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `05-Deadlocks-and-Related-Problems.md`.

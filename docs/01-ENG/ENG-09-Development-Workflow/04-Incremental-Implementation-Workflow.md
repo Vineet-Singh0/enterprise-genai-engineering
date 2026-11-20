@@ -748,11 +748,3 @@ Most importantly, a successful intermediate step does not prove that the overall
 - [Agile Manifesto](https://agilemanifesto.org/)
 
 These resources provide additional perspectives on iterative development and feedback. This chapter remains focused on the approved ENG-09 scope of incremental implementation workflow.
-
----
-
-# End of Document
-
-This completes the Markdown file: `04-Incremental-Implementation-Workflow.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

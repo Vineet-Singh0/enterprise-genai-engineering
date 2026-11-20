@@ -652,67 +652,8 @@ Completion means the learner can connect these concerns into a coherent producti
 ---
 
 ## Chapter Contents
-The PROD domain is self-contained in:
 
-Upstream and downstream domain links should be added only when their exact repository paths are confirmed.
-
----
-
-# Writing Rules
-
-PROD documentation follows these principles:
-
-- simple professional English,
-- short paragraphs,
-- clear headings,
-- concise tables,
-- GitHub-compatible Markdown,
-- Mermaid source where a diagram improves understanding,
-- relative links,
-- consistent terminology,
-- engineering-oriented language,
-- production-focused reasoning.
-
-Avoid:
-
-- marketing language,
-- unnecessary verbosity,
-- generic motivational text,
-- repeated explanations,
-- vendor promotion,
-- framework-specific assumptions,
-- unsupported claims,
-- deep teaching of concepts owned by individual lessons.
-
----
-
-## README-Specific Duplication Rule
-
-This README is an orientation and navigation layer.
-
-It may introduce concepts sufficiently to explain:
-
-- what a chapter owns,
-- how chapters connect,
-- what dependencies exist,
-- what the learner should be able to do.
-
-It must not become the primary teaching location for those concepts.
-
-For example, the README may state that PROD-06 covers reliability, SLOs, failure isolation, retries, backpressure, degradation, and fallback.
-
-Detailed treatment of:
-
-- retry strategies,
-- exponential backoff,
-- circuit breakers,
-- SLO calculations,
-- retry storms,
-- or other implementation details
-
-belongs in the appropriate lessons.
-
-The same principle applies throughout the PROD domain.
+Use the chapter map and lesson links above to navigate the PROD domain.
 
 ---
 

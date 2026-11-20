@@ -217,7 +217,6 @@ Current Files
      │
      └── Copy
 
-
 Version Control
 
 Project
@@ -560,7 +559,6 @@ Before
 
 timeout = 30
 
-
 After
 
 timeout = 60
@@ -801,7 +799,6 @@ Therefore:
 Git
 │
 └── Version Control System
-
 
 GitHub / GitLab / Bitbucket
 │
@@ -1319,13 +1316,5 @@ For long-term understanding, prioritize primary and authoritative resources when
 - [Git Reference](https://git-scm.com/docs)
 
 These resources can be used after completing the conceptual material in this chapter.
-
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`01-Git-Fundamentals.md`
 
 This chapter establishes the Git mental model. Detailed repository structure, branching, merging, rebasing, pull requests, reviews, releases, issue tracking, and collaborative development are intentionally handled by the subsequent ENG-04 documents.

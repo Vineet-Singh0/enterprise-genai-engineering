@@ -635,4 +635,3 @@ Use the preceding LLM-10 chapters for the detailed methods underlying this lab:
 - [Hosted APIs, Open Weights, and Ecosystem Fit](05-Hosted-APIs-Open-Weights-and-Ecosystem-Fit.md)
 - [Adaptation Feasibility and Selection Dependencies](06-Adaptation-Feasibility-and-Selection-Dependencies.md)
 - [Comparative Decision Frameworks and Trade-offs](07-Comparative-Decision-Frameworks-and-Trade-offs.md)
-

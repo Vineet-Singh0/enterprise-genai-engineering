@@ -572,10 +572,4 @@ Consult the following related curriculum topics for deeper explanations:
 - **AIF-07 — Transformer Foundations:** Attention and Transformer computation.
 - **LLM-05 Chapter 02 — The Autoregressive Next-Token Generation Loop:** The detailed mechanics of logits, token selection, and iterative decoding.
 
----
-
-# End of Document
-
-This completes the Markdown file: `01-Inference-Fundamentals-and-Execution-Lifecycle.md`
-
 All content is provided as a proposed documentation artifact. Model-specific behavior and implementation details should be verified against the chosen model library or provider before being presented as experimentally validated.

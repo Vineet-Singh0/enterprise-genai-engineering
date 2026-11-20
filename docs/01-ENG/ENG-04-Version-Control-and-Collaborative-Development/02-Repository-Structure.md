@@ -1157,7 +1157,7 @@ See [Merge & Rebase](./04-Merge-and-Rebase.md).
 
 Pull requests build on branches, commits, and repository collaboration.
 
-See [Pull Requests](./05-Pull-Requests.md).
+See [Pull Requests](./05-Pull-Request.md).
 
 This chapter does not re-teach those concepts.
 
@@ -1337,11 +1337,3 @@ A remote is used for sharing and collaboration; Git itself is not the same thing
 - [Git Documentation](https://git-scm.com/docs)
 - [Git Book — Pro Git](https://git-scm.com/book/en/v2)
 - [Git Repository Documentation](https://git-scm.com/docs/gitrepository-layout)
-
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`02-Repository-Structure.md`

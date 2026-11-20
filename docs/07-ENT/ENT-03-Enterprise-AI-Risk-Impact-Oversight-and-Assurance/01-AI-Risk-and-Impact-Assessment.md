@@ -1575,5 +1575,3 @@ Relevant areas include:
 Framework-specific material should be treated as an implementation or reference perspective rather than as the conceptual foundation of ENT-03.
 
 ---
-
-## End of Document

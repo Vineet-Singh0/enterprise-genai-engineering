@@ -414,5 +414,3 @@ These resources provide broader background; they are not substitutes for the cha
 - Vaswani et al., [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Transformer architecture background.
 - Brown et al., [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) — Language-model capabilities and few-shot behavior.
 - Bender et al., [On the Dangers of Stochastic Parrots](https://dl.acm.org/doi/10.1145/3442188.3445922) — Critical discussion of language-model limitations and risks.
-
-*End of Document*

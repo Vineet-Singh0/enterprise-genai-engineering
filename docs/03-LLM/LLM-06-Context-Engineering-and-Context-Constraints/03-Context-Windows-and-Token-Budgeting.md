@@ -31,16 +31,16 @@ For engineering purposes, treat the context window as a finite resource that mus
 A simplified mental model is:
 
 ```text
-**Available invocation capacity**
+Available invocation capacity
 The supported token capacity for the model and interface
         ↓
 <grid columns={2} gap={2}>
 <grid-item>
-**Input**
+Input
 Instructions, user input, history, reference material, tool results, and other supplied content
 </grid-item>
 <grid-item>
-**Output**
+Output
 Tokens generated in response to the invocation
 </grid-item>
 </grid>

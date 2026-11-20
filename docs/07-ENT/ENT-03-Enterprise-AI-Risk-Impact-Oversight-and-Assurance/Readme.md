@@ -281,5 +281,3 @@ ENT-03 focuses on **enterprise AI risk, impact, oversight, assurance, risk treat
 Detailed implementation of security, privacy, data governance, integration, model/provider strategy, economics, resilience, agent safety, evaluation, and production engineering remains owned by the corresponding domains.
 
 ---
-
-# End of Document

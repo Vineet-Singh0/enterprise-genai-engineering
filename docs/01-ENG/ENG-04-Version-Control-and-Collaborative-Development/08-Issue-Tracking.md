@@ -32,7 +32,7 @@ Recommended reading:
 
 - [Git Fundamentals](./01-Git-Fundamentals.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 - [Semantic Versioning and Releases](./07-Semantic-Versioning-and-Releases.md)
 
@@ -546,7 +546,7 @@ The issue remains the source of the original work context.
 
 Detailed Pull Request and code-review mechanics are covered in:
 
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 
 ---
@@ -1534,11 +1534,9 @@ The central principle is:
 
 ## Further Reading
 
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 - [Semantic Versioning and Releases](./07-Semantic-Versioning-and-Releases.md)
 - [Collaborative Development](./09-Collaborative-Development.md)
 
 ---
-
-## End of Document

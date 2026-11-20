@@ -1314,7 +1314,7 @@ This chapter is complete when you can:
 - Explain the trade-offs of stricter architecture versus a simpler layered design.
 - Defend an architectural decision based on change risk, testability, complexity, and operational requirements.
 
-**Next chapter:** [08 — Design Patterns](08-Design-Patterns/README.md), beginning with creational patterns. The next chapter should focus on recurring object-creation problems rather than re-teaching architecture boundaries.
+**Next chapter:** [08 — Design Patterns](./08-Design-Patterns.md), beginning with creational patterns. The next chapter should focus on recurring object-creation problems rather than re-teaching architecture boundaries.
 
 ---
 

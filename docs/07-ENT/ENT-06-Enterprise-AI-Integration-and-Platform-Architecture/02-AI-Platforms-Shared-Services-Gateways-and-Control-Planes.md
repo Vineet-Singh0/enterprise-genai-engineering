@@ -2036,5 +2036,3 @@ Recommended related topics in this curriculum:
 Within ENT-06, continue with:
 
 [`03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md`](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
-
-## End of Document

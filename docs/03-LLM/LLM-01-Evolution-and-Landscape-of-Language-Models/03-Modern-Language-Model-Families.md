@@ -135,7 +135,7 @@ Examples include:
 
 These labels can overlap. A model may be pretrained, instruction-tuned, and further adapted for a specialized application.
 
-The training process is covered in detail in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Language-Model-Training-and-Learned-Behavior/README.md).
+The training process is covered in detail in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Training-and-Learned-Behavior/Readme.md).
 
 ### 6.4 Specialization
 

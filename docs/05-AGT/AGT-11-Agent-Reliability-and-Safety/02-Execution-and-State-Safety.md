@@ -38,10 +38,10 @@ You should already understand:
 
 Recommended prior reading:
 
-- [AGT-02 — Agent Execution and Runtime Control](../AGT-02/)
-- [AGT-03 — Tools and Tool Execution](../AGT-03/)
-- [AGT-04 — Agent State, Context, and Memory](../AGT-04/)
-- [AGT-06 — Agent Workflows and Durable Execution](../AGT-06/)
+- [AGT-02 — Agent Execution and Runtime Control](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools and Tool Execution](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — Agent State, Context, and Memory](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-06 — Agent Workflows and Durable Execution](../AGT-06-Workflow-Orchestration-and-Durable-Execution/Readme.md)
 - [AGT-11 — Agent Failure Modes and Recovery Strategies](./01-Agent-Failure-Modes-and-Recovery-Strategies.md)
 
 This chapter does not re-teach those systems. It focuses on the **safety consequences and controls** that determine whether execution and state may safely continue.

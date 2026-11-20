@@ -2031,13 +2031,3 @@ The next chapter focuses on practical operations involving them.
 Continue with:
 
 **[04 — Files, Directories & File Operations](./04-Files-Directories-and-File-Operations.md)**
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`03-Shell-and-Command-Line.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

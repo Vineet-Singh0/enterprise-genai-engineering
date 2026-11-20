@@ -2070,13 +2070,3 @@ Installing, updating, and removing these components is handled through **package
 Continue with:
 
 **[07 — Package Management](./07-Package-Management.md)**
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`06-Processes-and-Process-Management.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

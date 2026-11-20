@@ -1131,7 +1131,3 @@ Continue with these curriculum chapters:
 - [LLM-09 README — Language Model Optimization and Adaptation](../LLM-09-Language-Model-Optimization-and-Adaptation/README.md)
 
 Use current provider pricing and billing documentation when preparing an actual estimate. Record the model or service version, applicable rates, date checked, and workload assumptions rather than treating illustrative calculations as current commercial terms.
-
----
-
-**End of document.**

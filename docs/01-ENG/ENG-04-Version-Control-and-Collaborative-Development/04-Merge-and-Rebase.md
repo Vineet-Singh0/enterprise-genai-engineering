@@ -383,7 +383,6 @@ A ─── B ─── C
           \
            D ─── E
 
-
 Rebase
 
 Take:
@@ -392,7 +391,6 @@ E
 
 Replay on top of:
 C
-
 
 Result
 
@@ -553,7 +551,6 @@ A ─── B ─── C
        \
         D ─── E
 
-
 After:
 
 A ─── B ─── C ─── D' ─── E'
@@ -613,7 +610,6 @@ Conceptually:
 Original
 
 A ─── B ─── D ─── E
-
 
 Rewritten
 
@@ -675,7 +671,6 @@ Private History
       │
       ▼
 More freedom to rewrite
-
 
 Shared History
       │
@@ -1151,7 +1146,7 @@ Bring Histories Together
 
 The next chapter explains how pull requests provide a structured team mechanism for proposing and integrating changes.
 
-See [Pull Requests](./05-Pull-Requests.md).
+See [Pull Requests](./05-Pull-Request.md).
 
 ---
 
@@ -1349,12 +1344,4 @@ Resolve the **engineering intent**, not just the text conflict.
 - [Pro Git — Git Branching](https://git-scm.com/book/en/v2/Git-Branching)
 - [Pro Git — Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
 
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`04-Merge-and-Rebase.md`
-
-The next chapter, [Pull Requests](./05-Pull-Requests.md), will build on branches and integration while focusing on the team-level process for proposing and coordinating changes.
+The next chapter, [Pull Requests](./05-Pull-Request.md), will build on branches and integration while focusing on the team-level process for proposing and coordinating changes.

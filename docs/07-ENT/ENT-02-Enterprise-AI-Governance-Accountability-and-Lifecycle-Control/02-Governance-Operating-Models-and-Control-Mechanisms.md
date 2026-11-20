@@ -25,7 +25,7 @@ Before reading this chapter, you should understand:
 
 - Enterprise AI accountability and decision rights from [ENT-02 File 01](./01-AI-Governance-Accountability-and-Decision-Rights.md).
 - The distinction between accountability, responsibility, ownership, and decision authority.
-- The basic enterprise AI architecture and operating-model concepts introduced in [ENT-01](../ENT-01-Enterprise-AI-Capabilities-and-Architectural-Boundaries/README.md).
+- The basic enterprise AI architecture and operating-model concepts introduced in [ENT-01](../ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/Readme.md).
 
 You do not need detailed knowledge of enterprise risk management, security controls, data governance, or production operations. Those areas are covered by their respective domains.
 
@@ -1799,13 +1799,13 @@ Within this repository:
 - [ENT-02 — Enterprise AI Governance, Accountability and Lifecycle Control](./README.md)
 - [AI Governance, Accountability and Decision Rights](./01-AI-Governance-Accountability-and-Decision-Rights.md)
 - [AI Lifecycle Governance and Material Change Control](./03-AI-Lifecycle-Governance-and-Material-Change-Control.md)
-- [ENT-01 — Enterprise AI Capabilities and Architectural Boundaries](../ENT-01-Enterprise-AI-Capabilities-and-Architectural-Boundaries/README.md)
+- [ENT-01 — Enterprise AI Capabilities and Architectural Boundaries](../ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/Readme.md)
 
 Related enterprise domains:
 
-- [ENT-03 — AI Risk, Impact and Assurance](../ENT-03-AI-Risk-Impact-and-Assurance/README.md)
-- [ENT-04 — AI Security, Privacy and Access Governance](../ENT-04-AI-Security-Privacy-and-Access-Governance/README.md)
-- [ENT-05 — AI Data Governance and Information Control](../ENT-05-AI-Data-Governance-and-Information-Control/README.md)
+- [ENT-03 — AI Risk, Impact and Assurance](../ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/Readme.md)
+- [ENT-04 — AI Security, Privacy and Access Governance](../ENT-04-Enterprise-AI-Security-Privacy-and-Access-Governance/Readme.md)
+- [ENT-05 — AI Data Governance and Information Control](../ENT-05-Enterprise-AI-Data-Governance-and-Information-Control/Readme.md)
 - [ENT-06 — Enterprise AI Integration and Platform Architecture](../ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/README.md)
 
 ---

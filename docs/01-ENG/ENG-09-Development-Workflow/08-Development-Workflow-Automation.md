@@ -710,7 +710,3 @@ Answer these without looking back at the chapter:
 - ENG-08 — Development Quality
 
 For tool-specific behavior, consult the official documentation for the shell, task runner, package manager, or development tools used by the project.
-
----
-
-**End of Document:** `08-Development-Workflow-Automation.md`

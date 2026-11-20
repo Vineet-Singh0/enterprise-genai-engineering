@@ -878,5 +878,3 @@ This chapter connected the previously studied protocols into an end-to-end reque
 - [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md): Applies the networking concepts to communication failures and systematic troubleshooting.
 
 ---
-
-# End of Document

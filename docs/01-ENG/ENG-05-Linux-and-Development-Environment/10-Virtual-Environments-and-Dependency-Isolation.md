@@ -377,7 +377,6 @@ python
   ↓
 System Python
 
-
 After activation
 
 python
@@ -404,7 +403,6 @@ PATH
  ├── /usr/local/bin
  ├── /usr/bin
  └── /bin
-
 
 After:
 
@@ -1990,13 +1988,3 @@ Scripts
 ```
 
 The next chapter introduces **Shell Scripting Fundamentals**, focusing on practical automation for engineering workflows without turning the chapter into advanced shell programming.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`10-Virtual-Environments-and-Dependency-Isolation.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

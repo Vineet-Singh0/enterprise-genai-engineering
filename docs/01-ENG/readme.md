@@ -107,16 +107,16 @@ Each module builds on the knowledge gained in the previous modules. Following th
 
 | Module | Directory |
 |---------|-----------|
-| ENG-01 — Computer Science Fundamentals | [ENG-01](./ENG-01/) |
-| ENG-02 — Programming Foundations | [ENG-02](./ENG-02/) |
-| ENG-03 — Software Engineering Principles | [ENG-03](./ENG-03/) |
-| ENG-04 — Version Control & Collaborative Development | [ENG-04](./ENG-04/) |
-| ENG-05 — Linux & Development Environment | [ENG-05](./ENG-05/) |
-| ENG-06 — Networking Fundamentals | [ENG-06](./ENG-06/) |
-| ENG-07 — Database Fundamentals | [ENG-07](./ENG-07/) |
-| ENG-08 — Development Quality | [ENG-08](./ENG-08/) |
-| ENG-09 — Development Workflow | [ENG-09](./ENG-09/) |
-| ENG-10 — Concurrency Fundamentals | [ENG-10](./ENG-10/) |
+| ENG-01 — Computer Science Fundamentals | [ENG-01](./ENG-01-Computer-Science-Fundamentals/README.md) |
+| ENG-02 — Programming Foundations | [ENG-02](./ENG-02-Programming-Foundations/README.md) |
+| ENG-03 — Software Engineering Principles | [ENG-03](./ENG-03-Software-Engineering-Principles/README.md) |
+| ENG-04 — Version Control & Collaborative Development | [ENG-04](./ENG-04-Version-Control-and-Collaborative-Development/readme.md) |
+| ENG-05 — Linux & Development Environment | [ENG-05](./ENG-05-Linux-and-Development-Environment/Readme.md) |
+| ENG-06 — Networking Fundamentals | [ENG-06](./ENG-06-Networking-Fundamentals/README.md) |
+| ENG-07 — Database Fundamentals | [ENG-07](./ENG-07-Database-Fundamentals/README.md) |
+| ENG-08 — Development Quality | [ENG-08](./ENG-08-Development-Quality/Readme.md) |
+| ENG-09 — Development Workflow | [ENG-09](./ENG-09-Development-Workflow/Readme.md) |
+| ENG-10 — Concurrency Fundamentals | [ENG-10](./ENG-10-Concurrency-Fundamentals/Readme.md) |
 
 ---
 

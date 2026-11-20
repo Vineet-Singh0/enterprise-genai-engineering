@@ -1927,5 +1927,3 @@ Related enterprise domains:
 - **ENT-09 — AI Criticality, Resilience and Dependency Governance**
 
 ---
-
-## End of Document

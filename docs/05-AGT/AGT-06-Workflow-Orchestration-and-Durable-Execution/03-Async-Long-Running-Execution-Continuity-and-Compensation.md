@@ -2941,5 +2941,3 @@ How does execution continue across long waits and partial completion?
 ```
 
 ---
-
-# End of Document

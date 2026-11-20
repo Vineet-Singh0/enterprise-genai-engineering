@@ -2146,5 +2146,3 @@ The next file extends this chapter's workflow structures into the question:
 > **What happens when execution is interrupted after some work has already completed?**
 
 ---
-
-## End of Document

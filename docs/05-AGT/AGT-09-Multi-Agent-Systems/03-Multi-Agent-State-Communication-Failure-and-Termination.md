@@ -2471,7 +2471,7 @@ For related concepts, continue with:
 
 **Chapter:** [AGT-09 — Multi-Agent Systems](./README.md)
 
-**Next:** [AGT-10 — Agent Evaluation and Reliability](../AGT-10/README.md)
+**Next:** [AGT-10 — Agent Evaluation and Reliability](../AGT-10-Agent-Evaluation-and-Behavioral-Testing/Readme.md)
 
 ---
 

@@ -346,7 +346,6 @@ Create `order_service.py`:
 ```python
 from product_repository import ProductRepository
 
-
 class OrderService:
     def __init__(self, repository: ProductRepository):
         self.repository = repository
@@ -381,7 +380,6 @@ import pytest
 from order_service import OrderService
 from product_repository import ProductRepository
 
-
 @pytest.fixture
 def order_service():
     products = {
@@ -393,7 +391,6 @@ def order_service():
 
     return OrderService(repository)
 
-
 def test_calculates_total_using_repository_data(order_service):
     result = order_service.calculate_order_total(
         product_id=1,
@@ -402,7 +399,6 @@ def test_calculates_total_using_repository_data(order_service):
 
     assert result == 300.0
 
-
 def test_uses_correct_product(order_service):
     result = order_service.calculate_order_total(
         product_id=2,
@@ -410,7 +406,6 @@ def test_uses_correct_product(order_service):
     )
 
     assert result == 100.0
-
 
 def test_rejects_missing_product(order_service):
     with pytest.raises(
@@ -421,7 +416,6 @@ def test_rejects_missing_product(order_service):
             product_id=999,
             quantity=1,
         )
-
 
 def test_rejects_non_positive_quantity(order_service):
     with pytest.raises(
@@ -829,11 +823,3 @@ After completing the assignment, answer:
 - [Python — `unittest` Documentation](https://docs.python.org/3/library/unittest.html): Standard-library testing concepts and test organization.
 
 Consult the documentation relevant to the actual database or dependency used in your project when designing real integration tests.
-
----
-
-# End of Document
-
-This completes the Markdown file: `02-Integration-Testing.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

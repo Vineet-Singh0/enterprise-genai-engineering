@@ -199,4 +199,3 @@ The chapter's planning estimates are governed by the RET chapter plan. Reading t
 ## Next Step
 
 Begin with [01 — Candidate Generation and Retriever Complementarity](01-Candidate-Generation-and-Retriever-Complementarity.md) after this README has been reviewed and explicitly approved.
-

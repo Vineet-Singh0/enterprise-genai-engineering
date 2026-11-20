@@ -693,10 +693,4 @@ The following resources provide authoritative explanations of the concepts intro
 - [Cloudflare Learning Center — What Is the OSI Model?](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/) — A practical explanation of the OSI layers.
 - [Internet Society — A Brief History of the Internet](https://www.internetsociety.org/internet/history-internet/brief-history-internet/) — Historical context for the development of internet communication.
 
----
-
-# End of Document
-
-This completes the Markdown file: `01-Networking-Basics.md`
-
 All content can now be saved as a single production-ready Markdown document in the ENG-06 repository.

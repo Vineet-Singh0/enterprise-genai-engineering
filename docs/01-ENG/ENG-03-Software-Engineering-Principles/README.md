@@ -202,13 +202,13 @@ The emphasis is on understanding architectural organization and making suitable 
 
 Provides a structured catalog of reusable design approaches to recurring software design problems.
 
-Start with the [Design Patterns README](08-Design-Patterns/README.md) for selection guidance and navigation.
+Start with the [Design Patterns README](./08-Design-Patterns.md) for selection guidance and navigation.
 
 The catalog is divided into three categories:
 
-- [Creational Patterns](08-Design-Patterns/01-Creational-Patterns.md)
-- [Structural Patterns](08-Design-Patterns/02-Structural-Patterns.md)
-- [Behavioral Patterns](08-Design-Patterns/03-Behavioral-Patterns.md)
+- Creational Patterns
+- Structural Patterns
+- Behavioral Patterns
 
 Patterns should be selected because they solve a recognizable problem in context. They should not be introduced merely to make an implementation appear sophisticated.
 
@@ -385,7 +385,7 @@ The objective is sound engineering judgment, not the maximum possible number of 
 - [05 — SOLID Principles](05-SOLID-Principles.md)
 - [06 — Dependency Injection](06-Dependency-Injection.md)
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-- [08 — Design Patterns](08-Design-Patterns/README.md)
+- [08 — Design Patterns](./08-Design-Patterns.md)
 - [09 — Refactoring](09-Refactoring.md)
 - [10 — Technical Debt](10-Technical-Debt.md)
 

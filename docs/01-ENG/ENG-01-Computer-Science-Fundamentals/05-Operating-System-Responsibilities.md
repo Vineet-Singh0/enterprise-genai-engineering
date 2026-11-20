@@ -2038,4 +2038,3 @@ Applications request operating system services instead of directly accessing har
 * Interrupts allow efficient communication between hardware and the CPU.
 * Modern technologies such as Linux, Docker, Kubernetes, databases, and AI platforms all rely on operating system services.
 ---
-

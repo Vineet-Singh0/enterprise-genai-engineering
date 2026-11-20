@@ -1790,13 +1790,3 @@ One Machine
 The goal is to allow multiple projects to coexist without their dependencies interfering with each other.
 
 That is the purpose of **virtual environments and dependency isolation**.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`09-Development-Environment-Setup.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

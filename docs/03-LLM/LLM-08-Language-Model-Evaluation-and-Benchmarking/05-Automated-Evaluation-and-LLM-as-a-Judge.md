@@ -939,4 +939,3 @@ Answer in your own words. Focus on engineering reasoning rather than memorizing 
 8. A judge's verdict changes when the order of two reference passages changes. What would you investigate before using the judge in production?
 9. How could a team improve judge scores while making the evaluated product worse?
 10. Design a validation plan for an LLM judge that checks whether customer-support answers are grounded in supplied documentation. Identify the dataset, reference judgments, metrics, failure categories, and escalation policy you would use.
-

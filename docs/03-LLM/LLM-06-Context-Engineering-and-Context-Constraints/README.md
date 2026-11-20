@@ -106,7 +106,7 @@ These boundaries keep each concept in its primary teaching location. Related top
 
 ## Estimated Study Time
 
-All estimates are provisional and should be revised after the chapters are written.
+Estimates assume steady reading plus the exercises; adjust for prior familiarity and pace.
 
 | Activity | Estimate |
 |---|---:|

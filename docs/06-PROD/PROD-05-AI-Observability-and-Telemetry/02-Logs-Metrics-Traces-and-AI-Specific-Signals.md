@@ -2907,13 +2907,13 @@ Continue with:
 
 Related production topics include:
 
-- [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Inference-and-Model-Serving/README.md)
-- [PROD-06 — AI Reliability Engineering](../PROD-06-AI-Reliability-Engineering/README.md)
-- [PROD-07 — AI Scaling and Capacity Engineering](../PROD-07-AI-Scaling-and-Capacity-Engineering/README.md)
-- [PROD-08 — AI Performance, Optimization, and Cost Engineering](../PROD-08-AI-Performance-Optimization-and-Cost-Engineering/README.md)
-- [PROD-09 — AI Security Engineering](../PROD-09-AI-Security-Engineering/README.md)
+- [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
+- [PROD-06 — AI Reliability Engineering](../PROD-06-Production-AI-Reliability/Readme.md)
+- [PROD-07 — AI Scaling and Capacity Engineering](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-08 — AI Performance, Optimization, and Cost Engineering](../PROD-08-AI-Performance-Optimization-and-Cost/Readme.md)
+- [PROD-09 — AI Security Engineering](../PROD-09-Production-AI-Security/Readme.md)
 - [PROD-10 — AI Operations and Incident Management](../PROD-10-AI-Operations-and-Incident-Management/README.md)
-- [PROD-11 — AI Evaluation and Lifecycle Management](../PROD-11-AI-Evaluation-and-Lifecycle-Management/README.md)
+- [PROD-11 — AI Evaluation and Lifecycle Management](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md)
 
 ---
 

@@ -97,12 +97,10 @@ Image and audio are the primary modalities covered. Their model-level interfaces
 
 ## 5. Topic Navigation
 
-The following list preserves the approved topic IDs, names, and sequence.
-
-> **Link status:** The exact LLM topic-folder structure and filenames have not been independently verified. The relative links below are provisional navigation targets and do not establish that the destination files exist.
+The following list is the recommended topic sequence.
 
 1. [LLM-01 — Evolution and Landscape of Language Models](LLM-01-Evolution-and-Landscape-of-Language-Models/README.md)
-2. [LLM-02 — Language Model Training and Learned Behavior](LLM-02-Language-Model-Training-and-Learned-Behavior/README.md)
+2. [LLM-02 — Language Model Training and Learned Behavior](LLM-02-Training-and-Learned-Behavior/README.md)
 3. [LLM-03 — Tokenization and Language Representation](LLM-03-Tokenization-and-Language-Representation/README.md)
 4. [LLM-04 — Embedding Systems in Language Models](LLM-04-Embedding-Systems-in-Language-Models/README.md)
 5. [LLM-05 — Inference and Text Generation](LLM-05-Inference-and-Text-Generation/README.md)
@@ -183,4 +181,3 @@ Do not treat familiarity with a model API or framework as proof of mastery. Be a
 ## 9. Cross-Domain Navigation
 
 LLM Engineering builds on Engineering Foundations and AI Foundations, and feeds Retrieval, Agent, Production, and Enterprise domains. Use the site domain hubs to move between those areas.
-

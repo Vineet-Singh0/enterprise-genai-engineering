@@ -620,7 +620,6 @@ import math
 
 import numpy as np
 
-
 def _normalize_real(
     value: Any,
     field_name: str,
@@ -676,7 +675,6 @@ def _normalize_real(
     raise ValueError(
         f"{field_name} must be a supported integer or floating-point value."
     )
-
 
 def select_top_k(
     ranked_candidates: Sequence[dict[str, Any]],
@@ -882,14 +880,12 @@ The threshold is inclusive: a candidate whose score equals `min_score` is retain
 def test_empty_input_returns_empty_list():
     assert select_top_k([], k=3) == []
 
-
 def test_zero_k_returns_empty_list_for_valid_input():
     candidates = [
         {"document_id": "a", "reranker_score": 0.9},
     ]
 
     assert select_top_k(candidates, k=0) == []
-
 
 def test_k_larger_than_candidate_count():
     candidates = [
@@ -908,7 +904,6 @@ These tests establish that K is an upper bound, not a guarantee that exactly K c
 
 ```python
 import pytest
-
 
 @pytest.mark.parametrize(
     "k",
@@ -957,7 +952,6 @@ It deliberately does **not** include arbitrarily large Python integers. Those ar
 ```python
 from fractions import Fraction
 
-
 def test_rejects_fraction_scores():
     candidates = [
         {
@@ -968,7 +962,6 @@ def test_rejects_fraction_scores():
 
     with pytest.raises(ValueError):
         select_top_k(candidates, k=1)
-
 
 def test_rejects_fraction_threshold():
     candidates = [
@@ -984,7 +977,6 @@ def test_rejects_fraction_threshold():
             k=1,
             min_score=Fraction(1, 2),
         )
-
 
 def test_rejects_extended_precision_numpy_float_when_supported():
     extended = np.longdouble("0.9")

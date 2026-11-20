@@ -822,7 +822,3 @@ This foundation leads to the next chapter: **Synchronization Fundamentals**, whe
 Consult the documentation for the language and runtime actually used by your application. Exact data-race definitions and memory-access guarantees differ across programming environments.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `03-Race-Conditions-and-Data-Races.md`.

@@ -519,4 +519,3 @@ Continue within this curriculum:
 - [AIF-06 — Sequence Modeling](../../02-AIF/AIF-06-Sequence-Modeling/README.md) — sequential data, recurrent networks, and the motivation for attention.
 - [AIF-07 — Transformer Foundations](../../02-AIF/AIF-07-Transformer-Foundations/README.md) — attention and Transformer architecture.
 - [02 — From Neural Language Models to Modern LLMs](02-From-Neural-Language-Models-to-Modern-LLMs.md) — the next chapter in this topic.
-

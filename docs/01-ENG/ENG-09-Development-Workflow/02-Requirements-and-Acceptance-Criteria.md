@@ -741,11 +741,3 @@ Finally, acceptance criteria are not a guarantee that all defects have been elim
 - [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
 
 These resources provide additional perspectives on requirements and acceptance. The examples and guidance in this chapter remain focused on the approved ENG-09 scope.
-
----
-
-# End of Document
-
-This completes the Markdown file: `02-Requirements-and-Acceptance-Criteria.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.
