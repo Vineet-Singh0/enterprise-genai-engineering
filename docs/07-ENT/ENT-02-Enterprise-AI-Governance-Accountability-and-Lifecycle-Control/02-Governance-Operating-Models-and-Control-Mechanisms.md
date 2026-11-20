@@ -23,7 +23,7 @@ By the end of this chapter, you should be able to:
 
 Before reading this chapter, you should understand:
 
-- Enterprise AI accountability and decision rights from [ENT-02 File 01](./01-AI-Governance-Accountability-and-Decision-Rights.md).
+- Enterprise AI accountability and decision rights from [ENT-02 Lesson 01](./01-AI-Governance-Accountability-and-Decision-Rights.md).
 - The distinction between accountability, responsibility, ownership, and decision authority.
 - The basic enterprise AI architecture and operating-model concepts introduced in [ENT-01](../ENT-01-Enterprise-AI-Capability-Architecture-and-Operating-Models/Readme.md).
 
@@ -438,7 +438,7 @@ from:
 
 **Who has authority to decide?**
 
-File 01 establishes the accountability and decision-right concepts. This chapter focuses on how those decisions are operationalized.
+Lesson 01 establishes the accountability and decision-right concepts. This chapter focuses on how those decisions are operationalized.
 
 ---
 
@@ -1422,7 +1422,7 @@ For any important governance decision, ask:
 11. Where is the decision recorded?
 12. What conditions would require the governance decision to be revisited?
 
-The final question connects to lifecycle governance, which is the focus of File 03.
+The final question connects to lifecycle governance, which is the focus of Lesson 03.
 
 ---
 
@@ -1788,7 +1788,7 @@ Escalation when required
 15. **Governance mechanisms should be proportional to decision consequence and context.**
 16. **Scalable governance distributes appropriate decision-making rather than routing everything through one central authority.**
 17. **Effective governance balances consistency, autonomy, rigor, delivery velocity, evidence, and operational burden.**
-18. **Lifecycle governance and material-change reassessment determine how governance remains active as AI systems change; those topics are covered in File 03.**
+18. **Lifecycle governance and material-change reassessment determine how governance remains active as AI systems change; those topics are covered in Lesson 03.**
 
 ---
 

@@ -87,7 +87,7 @@ The following boundaries help prevent duplication across the engineering handboo
 | LLM-06 — Context Engineering | Context construction, constraints, and context-management strategies |
 | LLM-07 — Behavior and Reasoning | Detailed behavioral analysis, reasoning, and failure modes |
 | LLM-08 — Evaluation | Evaluation methodology, benchmarks, and systematic model assessment |
-| LLM-09 — Optimization and Adaptation | Model optimization and adaptation techniques within its approved scope |
+| LLM-09 — Optimization and Adaptation | Model optimization and adaptation techniques |
 | LLM-10 — Model Selection | Model selection and ecosystem decisions |
 | AIF-03 through AIF-07 | Machine-learning, neural-network, representation-learning, sequence-modeling, and Transformer foundations |
 | PROD | Production serving, deployment, operations, and monitoring |

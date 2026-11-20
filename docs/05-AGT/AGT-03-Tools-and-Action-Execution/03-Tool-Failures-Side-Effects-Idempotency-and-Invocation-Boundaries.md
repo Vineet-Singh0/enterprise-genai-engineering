@@ -47,7 +47,7 @@ These concepts are established in:
 
 ## Before We Start
 
-File 02 ended at the invocation boundary:
+Lesson 02 ended at the invocation boundary:
 
 ```text
 Action Need
@@ -67,7 +67,7 @@ Invocation
 Execution Layer
 ```
 
-File 03 begins here.
+Lesson 03 begins here.
 
 The central question is:
 
@@ -224,12 +224,12 @@ AGT-02 owns what the runtime does with the resulting observation.
 
 ## 1. Invocation Boundary
 
-An invocation is the handoff created by File 02.
+An invocation is the handoff created by Lesson 02.
 
 Conceptually:
 
 ```text
-File 02
+Lesson 02
 ──────────────────────────────
 
 Selected Tool
@@ -846,9 +846,9 @@ conditionally idempotent
 
 These semantics influence how an uncertain execution outcome can be interpreted and what repetition risks exist.
 
-File 01 establishes these as tool-contract concerns.
+Lesson 01 establishes these as tool-contract concerns.
 
-File 03 applies those semantics during actual execution and failure analysis.
+Lesson 03 applies those semantics during actual execution and failure analysis.
 
 ---
 
@@ -2000,13 +2000,13 @@ Reliability Policy
 The ownership boundary is:
 
 ```text
-File 02
+Lesson 02
 Discover → Select → Route → Construct → Invoke
                          ↓
                     Invocation
                          ↓
 ────────────────────────────────────────
-File 03
+Lesson 03
 Execute → Result → Failure → Outcome
                          ↓
                  Runtime Observation
@@ -2084,20 +2084,20 @@ Return Observation
 The ownership model is:
 
 ```text
-File 01
+Lesson 01
 What capability exists?
 What does its contract mean?
 
         ↓
 
-File 02
+Lesson 02
 Which capability should be used?
 How is it routed?
 What invocation is constructed?
 
         ↓
 
-File 03
+Lesson 03
 What happened during execution?
 What result was produced?
 What failed?

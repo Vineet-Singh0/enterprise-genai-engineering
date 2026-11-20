@@ -26,8 +26,8 @@ By the end of this chapter, you should be able to:
 
 Before studying this chapter, you should understand:
 
-- The AI lifecycle and lifecycle states from [File 01 — AI Model, Application, and Configuration Lifecycle](./01-AI-Model-Application-and-Configuration-Lifecycle.md).
-- Production evaluation, quality baselines, regression, drift, and production quality signals from [File 02 — Production Evaluation, Drift, and Quality Signals](./02-Production-Evaluation-Drift-and-Quality-Signals.md).
+- The AI lifecycle and lifecycle states from [Lesson 01 — AI Model, Application, and Configuration Lifecycle](./01-AI-Model-Application-and-Configuration-Lifecycle.md).
+- Production evaluation, quality baselines, regression, drift, and production quality signals from [Lesson 02 — Production Evaluation, Drift, and Quality Signals](./02-Production-Evaluation-Drift-and-Quality-Signals.md).
 - Basic software change management.
 - Basic concepts of production deployment and release processes.
 - Basic understanding of metrics, baselines, thresholds, and statistical variation.
@@ -2512,53 +2512,53 @@ This is the central lifecycle loop for production AI improvement.
 
 ---
 
-# Relationship to File 01
+# Relationship to Lesson 01
 
-File 01 answers:
+Lesson 01 answers:
 
 > **How does the AI system and its components evolve through controlled lifecycle states?**
 
-File 03 answers:
+Lesson 03 answers:
 
 > **What evidence determines whether a change should progress through that lifecycle?**
 
 The relationship is:
 
 ```text
-File 01
+Lesson 01
 Lifecycle + Change
         ↓
-File 03
+Lesson 03
 Qualification + Safe Change
 ```
 
-File 01 establishes the lifecycle context.
+Lesson 01 establishes the lifecycle context.
 
-File 03 establishes the evidence-based decision mechanism.
+Lesson 03 establishes the evidence-based decision mechanism.
 
 ---
 
-# Relationship to File 02
+# Relationship to Lesson 02
 
-File 02 answers:
+Lesson 02 answers:
 
 > **What production evidence and quality signals tell us how the AI system is behaving?**
 
-File 03 answers:
+Lesson 03 answers:
 
 > **How should that evidence influence qualification and improvement decisions?**
 
 Therefore:
 
 ```text
-File 02
+Lesson 02
 Evidence + Evaluation
         ↓
-File 03
+Lesson 03
 Qualification + Decision + Improvement
 ```
 
-File 03 should use File 02 concepts rather than re-teaching their full methodology.
+Lesson 03 should use Lesson 02 concepts rather than re-teaching their full methodology.
 
 ---
 

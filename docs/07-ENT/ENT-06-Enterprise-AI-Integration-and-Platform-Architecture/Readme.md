@@ -38,7 +38,7 @@ This chapter contains three lessons.
 
 ### 01 — Enterprise AI Integration Patterns and System Boundaries
 
-**File:** [Enterprise AI Integration Patterns and System Boundaries](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
+**Lesson:** [Enterprise AI Integration Patterns and System Boundaries](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 
 This lesson establishes the integration architecture foundation.
 
@@ -66,7 +66,7 @@ It covers:
 
 ### 02 — AI Platforms, Shared Services, Gateways and Control Planes
 
-**File:** [AI Platforms Shared Services Gateways and Control Planes](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
+**Lesson:** [AI Platforms Shared Services Gateways and Control Planes](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
 
 This lesson examines enterprise AI platform architecture and the boundary between centrally provided capabilities and domain-owned capabilities.
 
@@ -95,7 +95,7 @@ It covers:
 
 ### 03 — AI Interoperability, Identity Propagation and Enterprise Interfaces
 
-**File:** [AI Interoperability Identity Propagation and Enterprise Interfaces](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
+**Lesson:** [AI Interoperability Identity Propagation and Enterprise Interfaces](./03-AI-Interoperability-Identity-Propagation-and-Enterprise-Interfaces.md)
 
 This lesson examines how independent enterprise systems exchange AI capabilities across system boundaries.
 
@@ -302,5 +302,4 @@ The authoritative chapter structure is:
 **Domain:** Enterprise AI Systems (ENT)  
 **Chapter:** ENT-06  
 **Title:** Enterprise AI Integration and Platform Architecture  
-**Chapter Structure:** Approved  
 **lessons:** 3

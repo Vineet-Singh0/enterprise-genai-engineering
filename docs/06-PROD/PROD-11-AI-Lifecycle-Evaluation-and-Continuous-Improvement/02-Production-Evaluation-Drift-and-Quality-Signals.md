@@ -2136,7 +2136,7 @@ This creates an important engineering principle:
 
 # 59. Production Evaluation and Lifecycle Management
 
-File 01 established that AI systems move through lifecycle states:
+Lesson 01 established that AI systems move through lifecycle states:
 
 ```text
 Build
@@ -2184,26 +2184,26 @@ This lesson covers the **evidence and interpretation** side of that relationship
 
 ---
 
-# 60. Relationship to File 01
+# 60. Relationship to Lesson 01
 
-File 01 answers:
+Lesson 01 answers:
 
 > **How does the AI system change over its lifecycle?**
 
-File 02 answers:
+Lesson 02 answers:
 
 > **How do we determine whether those changes or changing conditions affect production quality?**
 
 Therefore:
 
 ```text
-File 01
+Lesson 01
 Lifecycle State
       ↓
-File 02
+Lesson 02
 Quality Evidence
       ↓
-File 03
+Lesson 03
 Qualification and Safe Change
 ```
 
@@ -2663,7 +2663,7 @@ into:
 Evidence-Based Hypothesis
 ```
 
-That evidence can then feed the change-qualification process in File 03.
+That evidence can then feed the change-qualification process in Lesson 03.
 
 ---
 
@@ -3193,7 +3193,7 @@ Failure
 20. False alarms and missed degradation are both evaluation-system failures.
 21. Quality trends can reveal degradation that point-in-time metrics miss.
 22. Multiple signals strengthen investigation and reduce dependence on misleading individual metrics.
-23. Production evaluation produces evidence; File 03 uses that evidence for qualification and safe change decisions.
+23. Production evaluation produces evidence; Lesson 03 uses that evidence for qualification and safe change decisions.
 24. The objective is not to measure everything, but to measure what is necessary to make sound production decisions.
 
 ---
@@ -3268,7 +3268,7 @@ Controlled Change
 Evaluate Again
 ```
 
-This preserves the boundary with File 03: **File 02 establishes and interprets the evidence; File 03 turns that evidence into evaluation gates, qualification decisions, and safe improvement.**
+This preserves the boundary with Lesson 03: **Lesson 02 establishes and interprets the evidence; Lesson 03 turns that evidence into evaluation gates, qualification decisions, and safe improvement.**
 
 ---
 

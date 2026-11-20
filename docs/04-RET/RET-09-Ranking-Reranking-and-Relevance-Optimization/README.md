@@ -33,7 +33,7 @@ These prerequisites establish why retrieval scores may differ in meaning and sca
 
 ### 01 — Candidate Scores and Relevance Ordering
 
-**File:** Candidate Scores and Relevance Ordering
+**Lesson:** Candidate Scores and Relevance Ordering
 
 **Responsibility:** Explain how ranking signals are interpreted and how retrieved candidates are ordered.
 
@@ -43,7 +43,7 @@ Covers score semantics, ranking signals, score comparability, relevance judgment
 
 ### 02 — Reranking Strategies and Cross-Encoders
 
-**File:** Reranking Strategies and Cross Encoders
+**Lesson:** Reranking Strategies and Cross Encoders
 
 **Responsibility:** Explain when an additional relevance-assessment stage is justified and how reranking fits into a retrieval pipeline.
 
@@ -53,7 +53,7 @@ Covers initial ranking versus reranking, reranking strategies, the conceptual di
 
 ### 03 — Top-K Decisions, Ranking Errors, and Trade-offs
 
-**File:** Top K Decisions Ranking Errors and Trade offs
+**Lesson:** Top K Decisions Ranking Errors and Trade offs
 
 **Responsibility:** Explain how ranking depth and final result limits affect relevance, latency, and resource use.
 

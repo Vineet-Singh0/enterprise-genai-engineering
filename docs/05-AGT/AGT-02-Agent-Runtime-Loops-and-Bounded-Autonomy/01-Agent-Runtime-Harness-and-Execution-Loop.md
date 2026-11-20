@@ -386,7 +386,7 @@ Step
 
 The exact rules governing whether execution continues or terminates depend on the runtime design and its execution policies.
 
-AGT-02 File 03 covers termination policies and bounded autonomy in detail.
+AGT-02 Lesson 03 covers termination policies and bounded autonomy in detail.
 
 This chapter establishes the runtime's responsibility for **progressing execution through successive steps**.
 
@@ -922,7 +922,7 @@ Engineers need enough information to understand what happened during execution.
 
 The runtime needs explicit mechanisms for controlling execution.
 
-The detailed termination policies, execution limits, and bounded-autonomy mechanisms are covered in File 03.
+The detailed termination policies, execution limits, and bounded-autonomy mechanisms are covered in Lesson 03.
 
 ## Failure Visibility
 
@@ -1279,8 +1279,8 @@ Process Result
 - Runtime state is **not the same as memory**.
 - Execution visibility is essential for understanding runtime behavior.
 - Runtime boundaries should be explicit enough to make execution understandable and controllable.
-- File 02 explains the internal Decision → Action → Observation → Continuation cycle.
-- File 03 explains termination policies and bounded autonomy.
+- Lesson 02 explains the internal Decision → Action → Observation → Continuation cycle.
+- Lesson 03 explains termination policies and bounded autonomy.
 
 ---
 

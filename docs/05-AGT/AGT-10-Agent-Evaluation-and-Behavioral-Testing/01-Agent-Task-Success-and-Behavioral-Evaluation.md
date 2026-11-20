@@ -513,7 +513,7 @@ These are possible evaluation dimensions, not a mandatory checklist.
 
 > **Evaluation dimensions should be derived from system requirements.**
 
-Detailed evaluation of trajectories, tool calls, planning behavior, state transitions, context, and memory belongs primarily to **File 02**.
+Detailed evaluation of trajectories, tool calls, planning behavior, state transitions, context, and memory belongs primarily to **Lesson 02**.
 
 The underlying architecture and mechanics of those capabilities remain owned by their respective AGT chapters. AGT-10 owns the systematic measurement of their observable behavior.
 
@@ -802,7 +802,7 @@ Not necessarily required:
 
 The evaluation design should distinguish **required behavior** from **one particular implementation path**.
 
-Detailed trajectory and tool evaluation is covered in File 02.
+Detailed trajectory and tool evaluation is covered in Lesson 02.
 
 ---
 
@@ -867,7 +867,7 @@ Possible contributing causes:
 
 At this stage, the evaluator should avoid claiming a root cause without sufficient evidence.
 
-Detailed analysis of trajectories and behavioral divergence belongs to File 02.
+Detailed analysis of trajectories and behavioral divergence belongs to Lesson 02.
 
 ---
 
@@ -930,7 +930,7 @@ This leads to an important principle:
 
 > **Evidence should be sufficient for the property being evaluated, not merely available to the evaluator.**
 
-The detailed evaluation of execution evidence is developed in File 02.
+The detailed evaluation of execution evidence is developed in Lesson 02.
 
 ---
 
@@ -992,7 +992,7 @@ This leads to an important principle:
 
 At this stage, the focus is on evaluator design fundamentals.
 
-Detailed evaluator reliability, calibration, disagreement analysis, bias, LLM-as-a-Judge behavior, and evaluator drift are covered in **File 03**.
+Detailed evaluator reliability, calibration, disagreement analysis, bias, LLM-as-a-Judge behavior, and evaluator drift are covered in **Lesson 03**.
 
 ---
 
@@ -1366,7 +1366,7 @@ These topics belong primarily to:
 
 [`02-Trajectory-Tool-Planning-and-State-Evaluation.md`](./02-Trajectory-Tool-Planning-and-State-Evaluation.md)
 
-File 02 builds on the evaluation criteria established here rather than redefining them.
+Lesson 02 builds on the evaluation criteria established here rather than redefining them.
 
 ---
 
@@ -1404,7 +1404,7 @@ Outcome + behavioral evaluation may be required
 
 Evaluation should therefore be designed as part of the system's engineering requirements, not added only after implementation or after a production failure occurs.
 
-Production-scale evaluation infrastructure, regression pipelines, evaluator monitoring, test-set maintenance, and release gates are developed further in File 03.
+Production-scale evaluation infrastructure, regression pipelines, evaluator monitoring, test-set maintenance, and release gates are developed further in Lesson 03.
 
 ---
 
@@ -1652,8 +1652,8 @@ Pass/fail is appropriate when requirements are clear and the engineering decisio
 13. **Evaluation evidence should be sufficient for the property being evaluated.**
 14. **Evidence availability alone does not guarantee evidence sufficiency.**
 15. **A basic evaluator should connect explicit criteria with sufficient, relevant evidence.**
-16. **Detailed trajectory, tool, planning, state, context, and memory evaluation belongs in File 02.**
-17. **Evaluator reliability, calibration, judge behavior, and regression methodology belong primarily in File 03.**
+16. **Detailed trajectory, tool, planning, state, context, and memory evaluation belongs in Lesson 02.**
+17. **Evaluator reliability, calibration, judge behavior, and regression methodology belong primarily in Lesson 03.**
 18. **AGT-10 evaluates observable behavior across these capabilities; it does not take ownership of their underlying architecture.**
 
 ---
@@ -1666,7 +1666,7 @@ For continued study, review the related chapters in this repository:
 - **AGT-03** — Tools and Tool Execution
 - **AGT-04** — Agent State, Context, and Memory
 - **AGT-05** — Verification and Critique
-- **AGT-10 File 02** — Trajectory, Tool, Planning and State Evaluation
-- **AGT-10 File 03** — Evaluation Sets, Metrics and Regression Testing
+- **AGT-10 Lesson 02** — Trajectory, Tool, Planning and State Evaluation
+- **AGT-10 Lesson 03** — Evaluation Sets, Metrics and Regression Testing
 
 The next file builds directly on the evaluation concepts established here.

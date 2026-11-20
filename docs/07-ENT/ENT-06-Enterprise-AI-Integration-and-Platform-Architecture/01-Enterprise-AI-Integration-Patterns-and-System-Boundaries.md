@@ -976,7 +976,7 @@ It may coordinate:
 - usage controls,
 - capability registration.
 
-Detailed platform architecture is the subject of File 02.
+Detailed platform architecture is the subject of Lesson 02.
 
 Here, the important point is that introducing a platform changes the dependency topology.
 
@@ -1585,17 +1585,17 @@ The key idea is:
 
 # Boundary with the Next Files
 
-File 01 establishes the integration foundation.
+Lesson 01 establishes the integration foundation.
 
 It answers:
 
 > **How should AI capabilities integrate with enterprise systems, where should system boundaries exist, and what integration trade-offs follow from those choices?**
 
-File 02 builds on this foundation by asking:
+Lesson 02 builds on this foundation by asking:
 
 > **What should an enterprise AI platform provide centrally, and what should remain within individual AI applications or business domains?**
 
-File 02 therefore moves from integration relationships toward:
+Lesson 02 therefore moves from integration relationships toward:
 
 - enterprise AI platforms,
 - shared AI services,
@@ -1606,7 +1606,7 @@ File 02 therefore moves from integration relationships toward:
 - capability registration,
 - Enterprise AI Control Architecture.
 
-File 03 then builds on the platform and integration boundaries by asking:
+Lesson 03 then builds on the platform and integration boundaries by asking:
 
 > **How should independent enterprise systems exchange AI capabilities and preserve identity, security context, trust context, and interface compatibility across system boundaries?**
 

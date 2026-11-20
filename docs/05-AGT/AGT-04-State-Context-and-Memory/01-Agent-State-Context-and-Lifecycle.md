@@ -967,7 +967,7 @@ Therefore:
 
 > **Availability does not imply inclusion in context.**
 
-The detailed mechanisms for deciding what belongs in context are handled by File 02.
+The detailed mechanisms for deciding what belongs in context are handled by Lesson 02.
 
 ---
 
@@ -981,7 +981,7 @@ Therefore:
 
 > **The goal is not maximum retention. The goal is appropriate retention.**
 
-Detailed retention policies belong to File 03.
+Detailed retention policies belong to Lesson 03.
 
 ---
 
@@ -1070,7 +1070,7 @@ Incorrect.
 
 Retained information can later require updating, expiration, correction, or deletion.
 
-Those lifecycle mechanisms are explored in File 03.
+Those lifecycle mechanisms are explored in Lesson 03.
 
 ---
 

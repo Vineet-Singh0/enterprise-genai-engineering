@@ -248,10 +248,6 @@ ENT-08 — AI Economics, FinOps and Portfolio Governance
 
 ---
 
-## Chapter Structure
-
----
-
 ## Guiding Principle
 
 > **Good provider strategy does not mean avoiding every dependency. It means making dependency an informed engineering and enterprise decision, while preserving meaningful options to adapt, substitute, or exit when circumstances change.**

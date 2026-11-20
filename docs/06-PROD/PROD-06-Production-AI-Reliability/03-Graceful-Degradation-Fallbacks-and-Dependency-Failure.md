@@ -26,8 +26,8 @@ By the end of this chapter, you should be able to:
 
 You should understand:
 
-- Reliability, availability, SLI, SLO, and error budgets from [File 01](./01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md).
-- Failure isolation, timeouts, retries, circuit breaking, concurrency limits, queues, backpressure, admission control, and load shedding from [File 02](./02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md).
+- Reliability, availability, SLI, SLO, and error budgets from [Lesson 01](./01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md).
+- Failure isolation, timeouts, retries, circuit breaking, concurrency limits, queues, backpressure, admission control, and load shedding from [Lesson 02](./02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md).
 - Basic distributed-system concepts such as services, dependencies, requests, latency, partial failure, and resource exhaustion.
 
 ---
@@ -441,7 +441,7 @@ Retry same operation
 
 Retry is useful when the failure may be transient and the operation can safely be repeated.
 
-Detailed retry policy, backoff, jitter, retry amplification, and retry ownership are covered in File 02.
+Detailed retry policy, backoff, jitter, retry amplification, and retry ownership are covered in Lesson 02.
 
 ## Fallback
 
@@ -933,7 +933,7 @@ Resource exhaustion
 System failure
 ```
 
-Async deferral therefore interacts directly with the bounded queues and backpressure mechanisms discussed in File 02.
+Async deferral therefore interacts directly with the bounded queues and backpressure mechanisms discussed in Lesson 02.
 
 ---
 
@@ -976,7 +976,7 @@ This allows the system to preserve the most important user-visible behavior unde
 
 Failure isolation and graceful degradation work together.
 
-File 02 focuses on preventing failure propagation:
+Lesson 02 focuses on preventing failure propagation:
 
 ```text
 Dependency Failure
@@ -990,7 +990,7 @@ Backpressure
 Contain Failure
 ```
 
-File 03 then asks:
+Lesson 03 then asks:
 
 ```text
 Contained Dependency Failure
@@ -1230,7 +1230,7 @@ Fallback paths need their own:
 - observability;
 - recovery behavior.
 
-Fallback logic must not bypass the reliability controls established in File 02.
+Fallback logic must not bypass the reliability controls established in Lesson 02.
 
 ---
 
@@ -1699,7 +1699,7 @@ Possible controls include:
 - bounded retries;
 - controlled routing.
 
-These mechanisms come from the reliability controls established in File 02.
+These mechanisms come from the reliability controls established in Lesson 02.
 
 ---
 
@@ -2369,7 +2369,7 @@ You should now be able to answer:
 - How can a fallback become overloaded?
 - How do you prevent fallback paths from bypassing safety or correctness boundaries?
 - How should recovery and traffic restoration work?
-- How do reliability controls from File 02 interact with graceful degradation?
+- How do reliability controls from Lesson 02 interact with graceful degradation?
 - How can a system remain operational while providing lower-quality AI behavior?
 
 If you can answer these questions and design a degradation strategy for an unfamiliar AI system, you have completed the core reliability reasoning expected from PROD-06.

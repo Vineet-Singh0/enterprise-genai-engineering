@@ -81,7 +81,7 @@ The files are designed to build on one another without repeating the same teachi
 
 ### Lesson 01 — Retrieval Failure Taxonomy and Triage
 
-**File:** [Retrieval Failure Taxonomy and Triage](./01-Retrieval-Failure-Taxonomy-and-Triage.md)
+**Lesson:** [Retrieval Failure Taxonomy and Triage](./01-Retrieval-Failure-Taxonomy-and-Triage.md)
 
 **Primary responsibility:** Classify retrieval failure symptoms and prioritize investigation.
 
@@ -105,7 +105,7 @@ Topics include:
 
 ### Lesson 02 — Layered Diagnostics and Root Cause Analysis
 
-**File:** [Layered Diagnostics and Root Cause Analysis](./02-Layered-Diagnostics-and-Root-Cause-Analysis.md)
+**Lesson:** [Layered Diagnostics and Root Cause Analysis](./02-Layered-Diagnostics-and-Root-Cause-Analysis.md)
 
 **Primary responsibility:** Trace failures across retrieval pipeline stages and establish defensible root-cause hypotheses using evidence.
 
@@ -130,7 +130,7 @@ Topics include:
 
 ### Lesson 03 — Targeted Optimization and Regression Validation
 
-**File:** [Targeted Optimization and Regression Validation](./03-Targeted-Optimization-and-Regression-Validation.md)
+**Lesson:** [Targeted Optimization and Regression Validation](./03-Targeted-Optimization-and-Regression-Validation.md)
 
 **Primary responsibility:** Select targeted engineering interventions, evaluate their effects, and prevent regressions.
 

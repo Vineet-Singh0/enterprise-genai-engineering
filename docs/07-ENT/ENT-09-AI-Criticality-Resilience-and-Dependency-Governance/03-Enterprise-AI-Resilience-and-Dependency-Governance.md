@@ -21,16 +21,16 @@ After completing this chapter, you should be able to:
 
 Before starting this chapter, you should understand:
 
-- AI capability criticality and dependency mapping from File 01;
-- dependency concentration from File 01;
-- continuity requirements, degraded modes, fallback, and recovery requirements from File 02;
+- AI capability criticality and dependency mapping from Lesson 01;
+- dependency concentration from Lesson 01;
+- continuity requirements, degraded modes, fallback, and recovery requirements from Lesson 02;
 - enterprise AI governance concepts from ENT-02;
 - AI risk concepts from ENT-03;
 - enterprise AI platform and integration concepts from ENT-06;
 - provider, model, portability, and diversification strategy from ENT-07;
 - AI economics and portfolio investment governance from ENT-08.
 
-File 01 and File 02 are the immediate conceptual prerequisites for this chapter.
+Lesson 01 and Lesson 02 are the immediate conceptual prerequisites for this chapter.
 
 ---
 
@@ -42,21 +42,21 @@ File 01 and File 02 are the immediate conceptual prerequisites for this chapter.
 
 ## Before We Start
 
-File 01 established the enterprise dependency picture:
+Lesson 01 established the enterprise dependency picture:
 
 > **How important is the AI capability, what does it depend on, and where does dependency concentration exist?**
 
-File 02 established the resilience requirements:
+Lesson 02 established the resilience requirements:
 
 > **What must continue when the capability is unavailable or degraded, what operating modes are acceptable, and what must eventually be restored or achieved?**
 
-File 03 uses those established inputs to answer a different question:
+Lesson 03 uses those established inputs to answer a different question:
 
 > **Given those requirements, what resilience posture should the enterprise maintain, how should material dependencies be governed, and when should that posture be reassessed?**
 
 This distinction is important.
 
-File 03 is not another dependency-mapping chapter and not another continuity-design chapter.
+Lesson 03 is not another dependency-mapping chapter and not another continuity-design chapter.
 
 It is the **resilience decision and governance layer** of ENT-09.
 
@@ -126,7 +126,7 @@ The objective is:
 
 # Mental Model
 
-The File 03 mental model is:
+The Lesson 03 mental model is:
 
 ```text
 Established Requirements
@@ -180,9 +180,9 @@ Resilience can therefore involve:
 - recovery requirements;
 - dependency governance.
 
-The detailed continuity and recovery requirements are established in File 02.
+The detailed continuity and recovery requirements are established in Lesson 02.
 
-File 03 uses those requirements to govern the resulting resilience posture.
+Lesson 03 uses those requirements to govern the resulting resilience posture.
 
 ---
 
@@ -220,9 +220,9 @@ This keeps resilience connected to enterprise outcomes while recognizing that re
 
 # 3. From Criticality to Resilience Requirement
 
-File 01 established capability criticality.
+Lesson 01 established capability criticality.
 
-File 03 does not redefine criticality. Instead, it uses the established criticality assessment as an input to resilience strategy.
+Lesson 03 does not redefine criticality. Instead, it uses the established criticality assessment as an input to resilience strategy.
 
 The general relationship is:
 
@@ -250,15 +250,15 @@ A critical capability may be supported by:
 - another platform;
 - a combination of these.
 
-The correct decision depends on the continuity and recovery requirements already established in File 02.
+The correct decision depends on the continuity and recovery requirements already established in Lesson 02.
 
 ---
 
 # 4. From Dependency Concentration to Resilience Decision
 
-File 01 established dependency concentration.
+Lesson 01 established dependency concentration.
 
-File 03 asks what should happen when that concentration becomes materially relevant to resilience.
+Lesson 03 asks what should happen when that concentration becomes materially relevant to resilience.
 
 For example:
 
@@ -331,7 +331,7 @@ Examples:
 - reduce shared dependency;
 - formally accept the concentration.
 
-This distinction makes File 03 more precise:
+This distinction makes Lesson 03 more precise:
 
 ```text
 Requirement
@@ -613,14 +613,14 @@ The appropriate treatment depends on:
 
 ## 13. Fallback and Substitution as Governed Resilience Requirements
 
-File 02 established whether fallback or substitution is required and what outcome it must preserve.
+Lesson 02 established whether fallback or substitution is required and what outcome it must preserve.
 
-File 03 asks whether that resilience treatment remains adequate as the environment changes.
+Lesson 03 asks whether that resilience treatment remains adequate as the environment changes.
 
 For example:
 
 ```text
-File 02
+Lesson 02
 
 Fallback Required
         ↓
@@ -632,7 +632,7 @@ Required Business Outcome Preserved
 Later:
 
 ```text
-File 03
+Lesson 03
 
 Dependency Change
         ↓
@@ -1173,7 +1173,7 @@ What resilience consequences arise because
 multiple critical capabilities depend on it?
 ```
 
-File 03 therefore evaluates resilience implications rather than redesigning the enterprise platform architecture.
+Lesson 03 therefore evaluates resilience implications rather than redesigning the enterprise platform architecture.
 
 ---
 
@@ -1577,7 +1577,7 @@ The trigger is the **potential change in resilience posture**, not simply the ex
 
 ## Production / Enterprise Perspective
 
-File 03 defines the enterprise resilience posture and governance logic.
+Lesson 03 defines the enterprise resilience posture and governance logic.
 
 It answers:
 
@@ -1611,12 +1611,12 @@ The boundary remains:
 
 ---
 
-# Relationship to File 01
+# Relationship to Lesson 01
 
-File 01 establishes the dependency and criticality picture.
+Lesson 01 establishes the dependency and criticality picture.
 
 ```text
-File 01
+Lesson 01
 
 Criticality
     +
@@ -1625,10 +1625,10 @@ Dependency Mapping
 Dependency Concentration
 ```
 
-File 03 uses those established concepts:
+Lesson 03 uses those established concepts:
 
 ```text
-File 03
+Lesson 03
 
 Resilience Strategy
         ↓
@@ -1639,15 +1639,15 @@ Dependency Governance
 
 Therefore:
 
-> **File 01 identifies the enterprise dependency exposure; File 03 determines how that exposure should influence resilience strategy and governance.**
+> **Lesson 01 identifies the enterprise dependency exposure; Lesson 03 determines how that exposure should influence resilience strategy and governance.**
 
-File 03 should use File 01 as the detailed reference rather than re-teaching dependency mapping.
+Lesson 03 should use Lesson 01 as the detailed reference rather than re-teaching dependency mapping.
 
 ---
 
-# Relationship to File 02
+# Relationship to Lesson 02
 
-File 02 establishes:
+Lesson 02 establishes:
 
 ```text
 Continuity
@@ -1659,12 +1659,12 @@ Fallback
 Recovery Requirements
 ```
 
-File 03 governs the continued adequacy of those requirements and treatments.
+Lesson 03 governs the continued adequacy of those requirements and treatments.
 
 For example:
 
 ```text
-File 02
+Lesson 02
 
 Fallback Required
         ↓
@@ -1674,7 +1674,7 @@ Business Outcome Preserved
 
         ↓
 
-File 03
+Lesson 03
 
 Dependency Changes
         ↓
@@ -1687,7 +1687,7 @@ Adjust if Required
 
 Therefore:
 
-> **File 02 defines what must continue and what must eventually be restored or achieved; File 03 governs whether the resulting resilience posture remains appropriate as dependencies and enterprise conditions change.**
+> **Lesson 02 defines what must continue and what must eventually be restored or achieved; Lesson 03 governs whether the resulting resilience posture remains appropriate as dependencies and enterprise conditions change.**
 
 ---
 
@@ -1944,7 +1944,7 @@ Repeat
 # Key Takeaways
 
 1. **Enterprise AI resilience is broader than availability.**
-2. **File 01 establishes criticality and dependency exposure; File 02 establishes continuity and recovery requirements; File 03 governs the resulting resilience posture.**
+2. **Lesson 01 establishes criticality and dependency exposure; Lesson 02 establishes continuity and recovery requirements; Lesson 03 governs the resulting resilience posture.**
 3. **Criticality informs resilience requirements but does not dictate one architecture.**
 4. **Dependency concentration is a contextual resilience consideration, not automatically a defect.**
 5. **Strategic redundancy is a treatment justified by requirements, not a universal best practice.**
@@ -1966,8 +1966,8 @@ Repeat
 
 For deeper study, connect this chapter with:
 
-- **ENT-09 File 01** — AI Criticality, Dependency Mapping and Concentration Risk
-- **ENT-09 File 02** — AI Continuity, Degraded Modes and Recovery Requirements
+- **ENT-09 Lesson 01** — AI Criticality, Dependency Mapping and Concentration Risk
+- **ENT-09 Lesson 02** — AI Continuity, Degraded Modes and Recovery Requirements
 - **ENT-03** — Enterprise AI Risk, Impact, Treatment, and Assurance
 - **ENT-06** — Enterprise AI Platforms, Shared Services, Gateways, and Control Planes
 - **ENT-07** — Enterprise Model and Provider Selection Strategy

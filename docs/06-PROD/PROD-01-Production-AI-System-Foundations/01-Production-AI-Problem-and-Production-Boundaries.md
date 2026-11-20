@@ -1313,20 +1313,20 @@ Those concepts have dedicated ownership elsewhere in the PROD curriculum.
 The distinction is important:
 
 ```text
-File 01
+Lesson 01
 Why does this production responsibility exist?
 Where should the responsibility boundary be?
 
         ↓
 
-File 02
+Lesson 02
 How should those responsibilities be represented
 in system architecture and component/service boundaries?
 ```
 
-File 01 therefore establishes the **problem and boundary model**.
+Lesson 01 therefore establishes the **problem and boundary model**.
 
-File 02 will build the **architecture model**.
+Lesson 02 will build the **architecture model**.
 
 ---
 
@@ -1618,7 +1618,7 @@ What limits the possible engineering solutions?
 
 12. **The correct production architecture depends on workload, requirements, responsibilities, dependencies, and constraints.**
 
-13. **File 01 establishes why and where production responsibilities exist. File 02 will address how those responsibilities are represented in system architecture and service boundaries.**
+13. **Lesson 01 establishes why and where production responsibilities exist. Lesson 02 will address how those responsibilities are represented in system architecture and service boundaries.**
 
 ---
 

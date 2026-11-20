@@ -65,19 +65,7 @@ Memory
 
 ---
 
-## Chapter Structure
-
-```text
-AGT-04-State-Context-and-Memory/
-├── README.md
-├── 01-Agent-State-Context-and-Lifecycle.md
-├── 02-Context-Engineering-and-Execution-Context-Management.md
-└── 03-Agent-Memory-Retention-Retrieval-and-Lifecycle.md
-```
-
----
-
-## lessons
+## Lessons
 
 ### 01 — Agent State, Context and Lifecycle
 

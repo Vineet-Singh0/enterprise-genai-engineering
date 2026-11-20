@@ -27,7 +27,7 @@ By the end of this chapter, you should be able to:
 
 Before studying this chapter, you should understand:
 
-- the enterprise AI security, privacy, and access-governance foundation from **ENT-04 File 01**
+- the enterprise AI security, privacy, and access-governance foundation from **ENT-04 Lesson 01**
 - the distinction between security and privacy
 - the concepts of trust boundaries and information-flow boundaries
 - least privilege as a security principle

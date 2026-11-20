@@ -232,7 +232,7 @@ Cross-domain concepts should be referenced rather than retaught in depth. In par
 
 Use the approved documentation for earlier AIF pillars when revisiting prerequisites. Consult authoritative technical references when deeper verification of transformer equations, architecture details, or computational behavior is necessary.
 
-External references should supplement the curriculum rather than silently expand its approved scope.
+External references should supplement the curriculum rather than silently expand what this chapter teaches.
 
 ---
 

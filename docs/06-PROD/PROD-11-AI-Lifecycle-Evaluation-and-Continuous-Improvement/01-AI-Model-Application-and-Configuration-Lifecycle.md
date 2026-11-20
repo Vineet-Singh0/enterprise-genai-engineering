@@ -1049,9 +1049,9 @@ This connects lifecycle management to the production evaluation work in:
 
 [Production Evaluation, Drift, and Quality Signals](02-Production-Evaluation-Drift-and-Quality-Signals.md)
 
-File 01 establishes **what changed and what system state is being operated**.
+Lesson 01 establishes **what changed and what system state is being operated**.
 
-File 02 focuses on **what production evidence says about quality and behavior**.
+Lesson 02 focuses on **what production evidence says about quality and behavior**.
 
 ---
 
@@ -2528,7 +2528,7 @@ Production Evidence
 Evaluation
 ```
 
-File 02 owns the detailed production evaluation and drift concepts.
+Lesson 02 owns the detailed production evaluation and drift concepts.
 
 ---
 
@@ -2552,7 +2552,7 @@ Evaluation Evidence
 Qualification Decision
 ```
 
-The detailed qualification gates, acceptance criteria, and controlled improvement loop belong to File 03.
+The detailed qualification gates, acceptance criteria, and controlled improvement loop belong to Lesson 03.
 
 ---
 

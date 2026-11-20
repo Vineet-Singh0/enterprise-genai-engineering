@@ -24,8 +24,8 @@ By the end of this chapter, you should be able to:
 
 Before studying this chapter, you should understand:
 
-- the security, privacy, and access governance foundations from **ENT-04 File 01**;
-- identity, authorization, access boundaries, delegation, least privilege, and access lifecycle concepts from **ENT-04 File 02**;
+- the security, privacy, and access governance foundations from **ENT-04 Lesson 01**;
+- identity, authorization, access boundaries, delegation, least privilege, and access lifecycle concepts from **ENT-04 Lesson 02**;
 - enterprise AI governance and accountability from **ENT-02**;
 - enterprise AI risk, impact, oversight, and assurance concepts from **ENT-03**;
 - the distinction between enterprise governance and production implementation.
@@ -560,7 +560,7 @@ Examples include:
 - retrieval access;
 - administrative access.
 
-The detailed authorization model belongs to **ENT-04 File 02**.
+The detailed authorization model belongs to **ENT-04 Lesson 02**.
 
 This file focuses on how access controls become part of the broader control-governance lifecycle.
 
@@ -1354,7 +1354,7 @@ PROD-09
 Detailed Production Security Implementation
 ```
 
-ENT-04 File 03 governs how security and privacy requirements become **owned, scoped, evidenced, reviewed, and reassessed controls**.
+ENT-04 Lesson 03 governs how security and privacy requirements become **owned, scoped, evidenced, reviewed, and reassessed controls**.
 
 It does not replace:
 
@@ -2366,8 +2366,8 @@ Production Security Implementation
 
 For continued study, connect this chapter with:
 
-- **ENT-04 File 01 — AI Security, Privacy and Access Governance**
-- **ENT-04 File 02 — Identity, Authorization and AI Access Boundaries**
+- **ENT-04 Lesson 01 — AI Security, Privacy and Access Governance**
+- **ENT-04 Lesson 02 — Identity, Authorization and AI Access Boundaries**
 - **ENT-02 — Enterprise AI Governance**
 - **ENT-03 — Enterprise AI Risk, Impact, Oversight and Assurance**
 - **ENT-05 — Enterprise AI Data Governance**

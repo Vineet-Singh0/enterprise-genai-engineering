@@ -733,7 +733,7 @@ Discovery tells a consumer **what exists**.
 
 The interface contract determines **how it can be used safely**.
 
-The detailed treatment of enterprise interfaces and compatibility belongs in File 03.
+The detailed treatment of enterprise interfaces and compatibility belongs in Lesson 03.
 
 ---
 
@@ -1137,7 +1137,7 @@ These may include:
 - deprecation,
 - consumer impact analysis.
 
-Detailed enterprise interface evolution is developed in File 03.
+Detailed enterprise interface evolution is developed in Lesson 03.
 
 ---
 
@@ -1788,7 +1788,7 @@ Domains continue to own appropriate application and business-specific responsibi
 
 ---
 
-# Boundary with File 03
+# Boundary with Lesson 03
 
 This file focused on:
 
@@ -1804,7 +1804,7 @@ The next file moves to a different question:
 
 > How should independent enterprise systems exchange AI capabilities and preserve identity, security context, trust context, and interface compatibility across system boundaries?
 
-File 03 therefore develops:
+Lesson 03 therefore develops:
 
 - AI interoperability,
 - enterprise interfaces,

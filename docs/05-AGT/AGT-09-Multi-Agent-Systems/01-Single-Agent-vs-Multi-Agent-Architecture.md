@@ -1633,7 +1633,7 @@ Potential consequences include:
 
 Shared state is sometimes useful, but ownership must be explicit.
 
-Detailed shared-state behavior is covered in File 03.
+Detailed shared-state behavior is covered in Lesson 03.
 
 ---
 
@@ -1992,7 +1992,7 @@ Specialist agents may be justified if each responsibility has different:
 
 The architecture should still define how responsibility is selected and transferred.
 
-Those coordination details are covered in File 02.
+Those coordination details are covered in Lesson 02.
 
 ---
 

@@ -112,19 +112,6 @@ The key prerequisite is an understanding that an agent can make decisions and ta
 
 ---
 
-## Chapter Structure
-
-```text
-AGT-07/
-├── README.md
-├── 01-Human-in-the-Loop-and-Intervention-Patterns.md
-└── 02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md
-```
-
-The chapter contains exactly two lessons.
-
----
-
 ## Learning Progression
 
 ### Lesson 01 — Human-in-the-Loop and Intervention Patterns

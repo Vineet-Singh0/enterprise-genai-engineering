@@ -18,7 +18,7 @@ After completing this chapter, you should be able to:
 - reason about sequencing and portfolio balancing;
 - handle strategically important but economically immature opportunities;
 - distinguish expected value from realized value;
-- understand how File 01 economic evidence contributes to investment decisions;
+- understand how Lesson 01 economic evidence contributes to investment decisions;
 - understand how risk and governance requirements can influence investment decisions without turning this chapter into risk or governance methodology;
 - explain why local optimization of an individual AI initiative can produce a worse portfolio outcome;
 - make investment decisions using multiple evidence dimensions rather than a single metric;
@@ -32,7 +32,7 @@ You should already understand:
 
 - the distinction between an AI initiative, AI capability, and AI system/solution;
 - basic enterprise AI concepts;
-- the economic concepts introduced in File 01;
+- the economic concepts introduced in Lesson 01;
 - cost structure, unit economics, cost-to-outcome relationships, and AI FinOps;
 - the difference between economic optimization and technical optimization.
 
@@ -174,7 +174,7 @@ This requires structured reasoning.
 
 # 1. Mental Model: AI Investment Is a Decision Process
 
-The core ENT-08 File 02 progression is:
+The core ENT-08 Lesson 02 progression is:
 
 ```text
 Discover
@@ -470,9 +470,9 @@ Evidence
 Realized Value
 ```
 
-File 02 primarily owns **expected value and investment reasoning**.
+Lesson 02 primarily owns **expected value and investment reasoning**.
 
-File 03 later owns the portfolio-level review of **realized value** and the resulting lifecycle decisions for established capabilities.
+Lesson 03 later owns the portfolio-level review of **realized value** and the resulting lifecycle decisions for established capabilities.
 
 ---
 
@@ -584,7 +584,7 @@ The question is:
 
 > **Does the expected economic profile justify further investment relative to the available alternatives and uncertainty?**
 
-Economic feasibility can use evidence from File 01:
+Economic feasibility can use evidence from Lesson 01:
 
 - expected cost;
 - unit economics;
@@ -1740,7 +1740,7 @@ Portfolio lifecycle decisions for an established AI capability—such as:
 - consolidate;
 - sunset;
 
-belong to File 03.
+belong to Lesson 03.
 
 ---
 
@@ -1780,14 +1780,14 @@ may justify a small staged investment.
 
 ---
 
-# 39. Economic Evidence from File 01
+# 39. Economic Evidence from Lesson 01
 
-File 01 provides an important input to File 02.
+Lesson 01 provides an important input to Lesson 02.
 
 For example:
 
 ```text
-File 01
+Lesson 01
     ↓
 Cost Structure
     ↓
@@ -1800,7 +1800,7 @@ Cost-to-Outcome Evidence
 Economic Evidence
 ```
 
-File 02 then combines that evidence with:
+Lesson 02 then combines that evidence with:
 
 ```text
 Strategic Alignment
@@ -1825,7 +1825,7 @@ Strategic Context
 Prioritization / Funding Decision
 ```
 
-File 02 does not re-teach the detailed cost model from File 01.
+Lesson 02 does not re-teach the detailed cost model from Lesson 01.
 
 ---
 
@@ -1933,7 +1933,7 @@ Low adoption may indicate:
 
 These signals may change the next funding decision.
 
-Detailed portfolio decisions about continuing, reducing, consolidating, or sunsetting an established capability belong to File 03.
+Detailed portfolio decisions about continuing, reducing, consolidating, or sunsetting an established capability belong to Lesson 03.
 
 ---
 
@@ -2150,7 +2150,7 @@ The enterprise can then make an updated **investment decision** to:
 - defer;
 - stop further investment.
 
-The detailed portfolio treatment of an already-established capability belongs to File 03.
+The detailed portfolio treatment of an already-established capability belongs to Lesson 03.
 
 ---
 
@@ -2488,13 +2488,13 @@ The updated investment decision may be:
 
 This creates a learning-oriented investment process.
 
-Portfolio-level continuation, consolidation, reduction, and sunset decisions for established capabilities are addressed in File 03.
+Portfolio-level continuation, consolidation, reduction, and sunset decisions for established capabilities are addressed in Lesson 03.
 
 ---
 
-# 59. What File 02 Owns
+# 59. What Lesson 02 Owns
 
-File 02 owns the reasoning around:
+Lesson 02 owns the reasoning around:
 
 ```text
 Discover
@@ -2530,9 +2530,9 @@ Specifically:
 
 ---
 
-# 60. What File 02 Does Not Own
+# 60. What Lesson 02 Does Not Own
 
-File 02 does not own:
+Lesson 02 does not own:
 
 - detailed AI cost modeling;
 - token economics;
@@ -2550,24 +2550,24 @@ File 02 does not own:
 - portfolio sunset mechanics;
 - technical decommissioning.
 
-These remain with their appropriate domains or ENT-08 File 01/File 03.
+These remain with their appropriate domains or ENT-08 Lesson 01/Lesson 03.
 
 ---
 
-## 61. Relationship to File 03
+## 61. Relationship to Lesson 03
 
-File 02 asks:
+Lesson 02 asks:
 
 > **Should we prioritize and fund this opportunity?**
 
-File 03 asks:
+Lesson 03 asks:
 
 > **Once AI capabilities exist in the portfolio, how should realized evidence influence their portfolio position?**
 
 The distinction is:
 
 ```text
-File 02
+Lesson 02
 Expected Value
 Investment Hypothesis
 Prioritization
@@ -2575,7 +2575,7 @@ Funding
         ↓
 Capability / Solution Proceeds
         ↓
-File 03
+Lesson 03
 Realized Value
 Portfolio Review
 Continue
@@ -2585,13 +2585,13 @@ Consolidate
 Sunset
 ```
 
-This prevents File 02 from becoming a duplicate of File 03.
+This prevents Lesson 02 from becoming a duplicate of Lesson 03.
 
 ---
 
 # 62. Final Mental Model
 
-The core idea of File 02 can be summarized as:
+The core idea of Lesson 02 can be summarized as:
 
 ```mermaid
 flowchart TD
@@ -2782,9 +2782,9 @@ Investment-Stage Stop ≠ Portfolio Sunset
 
 20. **Risk can influence investment decisions without becoming an ENT-08 risk-management methodology.**
 
-21. **Economic evidence from File 01 is an input to File 02 investment reasoning.**
+21. **Economic evidence from Lesson 01 is an input to Lesson 02 investment reasoning.**
 
-22. **File 02 owns expected value and investment decisions; File 03 owns realized-value review and portfolio evolution.**
+22. **Lesson 02 owns expected value and investment decisions; Lesson 03 owns realized-value review and portfolio evolution.**
 
 23. **A good investment decision makes assumptions, uncertainty, evidence, alternatives, and opportunity cost visible.**
 

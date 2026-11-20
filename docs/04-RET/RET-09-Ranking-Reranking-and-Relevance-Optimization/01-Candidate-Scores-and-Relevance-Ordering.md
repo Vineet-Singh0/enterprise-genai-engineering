@@ -37,8 +37,8 @@ The following neighboring topics have separate primary locations:
 - **RET-06:** Dense retrieval, similarity measures, and vector-search mechanics.
 - **RET-07:** Query processing and structured constraints.
 - **RET-08:** Candidate generation, retrieval fusion, deduplication, and coverage.
-- **RET-09 File 02:** Reranking strategies and Cross-Encoders.
-- **RET-09 File 03:** Top-K decisions, ranking errors, and trade-offs.
+- **RET-09 Lesson 02:** Reranking strategies and Cross-Encoders.
+- **RET-09 Lesson 03:** Top-K decisions, ranking errors, and trade-offs.
 - **RET-10:** Formal relevance metrics, judgments, and experimental design.
 
 The focus here is how to interpret and order the candidates already available. Examples use simplified, hypothetical values to demonstrate ranking behavior; they are not benchmark results.
@@ -112,7 +112,7 @@ A ranking stage may preserve the candidate set while changing its order. It may 
 
 ### 5.3 Reranking
 
-Reranking applies a subsequent ranking process to an existing candidate set, often using a more expensive relevance model. Its detailed strategies and implementation belong in File 02.
+Reranking applies a subsequent ranking process to an existing candidate set, often using a more expensive relevance model. Its detailed strategies and implementation belong in Lesson 02.
 
 ### 5.4 Final result presentation
 

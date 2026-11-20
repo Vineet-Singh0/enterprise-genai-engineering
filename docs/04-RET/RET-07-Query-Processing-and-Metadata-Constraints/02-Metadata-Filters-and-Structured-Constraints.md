@@ -474,7 +474,7 @@ Selectivity matters because it can affect:
 
 The number of predicates is not a reliable substitute for selectivity. One condition may eliminate almost the entire collection, while several other conditions may each eliminate very few records.
 
-Filter-specific result shortages and execution diagnostics are treated in File 03.
+Filter-specific result shortages and execution diagnostics are treated in Lesson 03.
 
 ## 8. Tenant and Access-Related Constraints
 
@@ -700,7 +700,7 @@ Common failures include:
 
 A system should be able to inspect the effective constraints for each retrieval operation and determine which source or transformation introduced them.
 
-The detailed diagnosis of filter-specific empty results and execution failures belongs in File 03.
+The detailed diagnosis of filter-specific empty results and execution failures belongs in Lesson 03.
 
 ## 12. Practical Engineering Exercise
 

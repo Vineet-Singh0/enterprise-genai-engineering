@@ -618,13 +618,13 @@ Severity
           Minimal operational impact
 ```
 
-The purpose of File 01 is not to teach incident classification in depth.
+The purpose of Lesson 01 is not to teach incident classification in depth.
 
 The on-call engineer needs to know:
 
 > **What severity model does our organization use, what is my responsibility at each level, and when should I escalate?**
 
-Detailed incident classification, impact assessment, and response belong to **File 02**.
+Detailed incident classification, impact assessment, and response belong to **Lesson 02**.
 
 ---
 
@@ -906,11 +906,11 @@ Retrieval Dependency Degraded
 Overall AI Service Behavior Degraded
 ```
 
-The important File 01 question is:
+The important Lesson 01 question is:
 
 > **Does the operating team know that these dependencies exist and know where their ownership and support information are documented?**
 
-Detailed retrieval diagnosis belongs to the retrieval curriculum and the incident-response process in File 02.
+Detailed retrieval diagnosis belongs to the retrieval curriculum and the incident-response process in Lesson 02.
 
 ---
 
@@ -996,7 +996,7 @@ Examples include:
 - large retrieval contexts,
 - or unexpected workload patterns.
 
-The File 01 responsibility is not cost optimization.
+The Lesson 01 responsibility is not cost optimization.
 
 Instead, the operating team should know:
 
@@ -1111,7 +1111,7 @@ A runbook may technically exist but still fail operationally because it is:
 
 Existence is not the same as readiness.
 
-Detailed runbook design and maintenance are covered in **File 03**.
+Detailed runbook design and maintenance are covered in **Lesson 03**.
 
 ---
 
@@ -1407,7 +1407,7 @@ An alert is a signal.
 
 An incident is a production condition requiring coordinated operational response.
 
-The detailed distinction and incident lifecycle are covered in **File 02**.
+The detailed distinction and incident lifecycle are covered in **Lesson 02**.
 
 ---
 
@@ -1695,13 +1695,13 @@ The objective is to ensure that operators have enough **context, ownership, acce
 The key boundary for this chapter is:
 
 ```text
-File 01
+Lesson 01
 Prepare the team and system for responsible operation.
                     ↓
-File 02
+Lesson 02
 Respond to production incidents and recover the service.
                     ↓
-File 03
+Lesson 03
 Capture operational learning and improve the system.
 ```
 
@@ -1720,7 +1720,7 @@ The following topics are intentionally owned by other chapters and should not be
 - **PROD-12** — production readiness assessment
 - **AGT-11** — agent-specific failure and recovery behavior
 
-File 01 establishes the operational context needed to work with those capabilities without transferring their teaching ownership into this chapter.
+Lesson 01 establishes the operational context needed to work with those capabilities without transferring their teaching ownership into this chapter.
 
 ---
 

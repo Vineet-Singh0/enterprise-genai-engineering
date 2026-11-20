@@ -42,7 +42,7 @@ You should already understand:
 - evidence collected during execution
 - evaluator design fundamentals
 
-This chapter does **not** re-teach trajectory, tool, planning, or state evaluation in depth. Those concepts belong primarily to File 02.
+This chapter does **not** re-teach trajectory, tool, planning, or state evaluation in depth. Those concepts belong primarily to Lesson 02.
 
 The focus here is different:
 

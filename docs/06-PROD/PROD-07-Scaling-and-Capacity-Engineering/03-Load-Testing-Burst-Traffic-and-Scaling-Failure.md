@@ -56,10 +56,10 @@ The first two PROD-07 files answer two questions:
 
 ```mermaid
 flowchart TD
-    A["File 01 — Capacity Planning"] --> B["What capacity should exist?"]
-    B --> C["File 02 — Autoscaling"]
+    A["Lesson 01 — Capacity Planning"] --> B["What capacity should exist?"]
+    B --> C["Lesson 02 — Autoscaling"]
     C --> D["How should capacity change?"]
-    D --> E["File 03 — Load and Scaling Validation"]
+    D --> E["Lesson 03 — Load and Scaling Validation"]
     E --> F["Does the scaling strategy actually work?"]
 ```
 
@@ -1914,7 +1914,7 @@ flowchart TD
     E --> F["Does the strategy actually work?"]
 ```
 
-### File 01 owns
+### Lesson 01 owns
 
 - demand modeling
 - workload characterization
@@ -1923,7 +1923,7 @@ flowchart TD
 - planning headroom
 - capacity assumptions
 
-### File 02 owns
+### Lesson 02 owns
 
 - autoscaling signals
 - scaling policies
@@ -1934,7 +1934,7 @@ flowchart TD
 - warm/cold capacity
 - GPU scaling considerations
 
-### File 03 owns
+### Lesson 03 owns
 
 - load testing
 - stress testing

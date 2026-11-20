@@ -996,18 +996,18 @@ The four lessons form one implementation and validation sequence.
 
 | File | Responsibility | Relationship to this file |
 |---|---|---|
-| File 01 — Architecture and Acceptance Criteria | Defines the system boundary, contracts, and acceptance criteria | Establishes the architecture and requirements |
-| File 02 — Implementing the Retrieval Pipeline | Implements the modular retrieval pipeline | Turns the architecture into working components |
-| File 03 — Evidence Packaging and Downstream Integration | Packages evidence and integrates downstream consumers | Demonstrates consumer-independent use |
-| File 04 — End-to-End Evaluation and Design Review | Validates integrated behavior and reviews design decisions | Verifies the acceptance criteria established here |
+| Lesson 01 — Architecture and Acceptance Criteria | Defines the system boundary, contracts, and acceptance criteria | Establishes the architecture and requirements |
+| Lesson 02 — Implementing the Retrieval Pipeline | Implements the modular retrieval pipeline | Turns the architecture into working components |
+| Lesson 03 — Evidence Packaging and Downstream Integration | Packages evidence and integrates downstream consumers | Demonstrates consumer-independent use |
+| Lesson 04 — End-to-End Evaluation and Design Review | Validates integrated behavior and reviews design decisions | Verifies the acceptance criteria established here |
 
-File 01 defines what the architecture must satisfy. It does not implement the complete pipeline or teach downstream integration.
+Lesson 01 defines what the architecture must satisfy. It does not implement the complete pipeline or teach downstream integration.
 
-File 02 owns the practical pipeline implementation.
+Lesson 02 owns the practical pipeline implementation.
 
-File 03 owns evidence packaging and downstream consumer integration, including at least one non-RAG consumer.
+Lesson 03 owns evidence packaging and downstream consumer integration, including at least one non-RAG consumer.
 
-File 04 owns integrated evaluation and design review, reusing RET-10 evaluation assets and RET-11 diagnostic knowledge.
+Lesson 04 owns integrated evaluation and design review, reusing RET-10 evaluation assets and RET-11 diagnostic knowledge.
 
 This separation prevents the same concept from being taught repeatedly across the chapter.
 

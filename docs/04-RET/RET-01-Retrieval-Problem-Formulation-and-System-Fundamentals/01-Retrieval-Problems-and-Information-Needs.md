@@ -50,7 +50,7 @@ A concise retrieval problem specification should record:
 
 For the credential-rotation example, specify the relevant operational documentation and required procedure—not merely results containing *API* and *credential*.
 
-This specification establishes the problem that retrieval design and evaluation must address. Detailed relevance and success criteria belong to File 02; the conceptual pipeline and system boundaries belong to File 03.
+This specification establishes the problem that retrieval design and evaluation must address. Detailed relevance and success criteria belong to Lesson 02; the conceptual pipeline and system boundaries belong to Lesson 03.
 
 ## Knowledge Check
 

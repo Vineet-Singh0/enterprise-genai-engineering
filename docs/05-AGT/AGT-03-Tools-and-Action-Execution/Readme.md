@@ -115,7 +115,7 @@ After completing AGT-03, you should be able to:
 
 ## Chapter Navigation
 
-| File | Primary Focus | Primary Question |
+| Lesson | Primary Focus | Primary Question |
 |---|---|---|
 | [01 — Tool Definitions, Contracts & Capability Boundaries](./01-Tool-Definitions-Contracts-and-Capability-Boundaries.md) | Tool contracts and capability boundaries | What makes a tool a well-defined and usable capability for an agent? |
 | [02 — Tool Selection, Routing and Execution](./02-Tool-Selection-Routing-and-Execution.md) | Discovery, selection, argument construction, and invocation | How does an agent determine which available capability to use and invoke it correctly? |
@@ -397,20 +397,6 @@ You should be able to inspect a tool design and determine:
 **Estimated Chapter Reading Time:** 75–90 minutes
 
 This estimate covers the three lessons and assumes normal technical reading with brief reflection on the examples and engineering trade-offs.
-
----
-
-## Chapter Structure
-
-```text
-AGT-03-Tools-and-Action-Execution/
-├── README.md
-├── 01-Tool-Definitions-Contracts-and-Capability-Boundaries.md
-├── 02-Tool-Selection-Routing-and-Execution.md
-└── 03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md
-```
-
-The chapter intentionally contains exactly three lessons.
 
 ---
 

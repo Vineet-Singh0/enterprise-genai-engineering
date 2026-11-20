@@ -153,7 +153,7 @@ The engineering reasoning progresses from **moving changes** to **controlling th
 
 ### 01 — AI CI/CD, Infrastructure Provisioning and Artifact Promotion
 
-**File:**  
+**Lesson:**  
 AI CI CD Infrastructure Provisioning and Artifact Promotion
 
 **Primary question:**
@@ -212,7 +212,7 @@ Environment
 
 ### 02 — Deployment Strategies and Progressive Delivery
 
-**File:**  
+**Lesson:**  
 Deployment Strategies and Progressive Delivery
 
 **Primary question:**
@@ -256,7 +256,7 @@ The file emphasizes that progressive delivery **reduces and contains risk; it do
 
 ### 03 — Release Gates, Rollback and Change Safety
 
-**File:**  
+**Lesson:**  
 Release Gates Rollback and Change Safety
 
 **Primary question:**

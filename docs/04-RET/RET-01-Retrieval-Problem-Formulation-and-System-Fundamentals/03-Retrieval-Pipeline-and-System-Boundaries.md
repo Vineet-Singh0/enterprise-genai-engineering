@@ -83,6 +83,6 @@ Detailed ingestion, retrieval algorithms, ranking methods, and formal evaluation
 
 ## Practical Exercise
 
-Extend the retrieval specification from File 01 into a conceptual design for an internal engineering assistant. Identify the input and output of each retrieval stage, mark the retrieval boundary, and describe one possible failure in two different components.
+Extend the retrieval specification from Lesson 01 into a conceptual design for an internal engineering assistant. Identify the input and output of each retrieval stage, mark the retrieval boundary, and describe one possible failure in two different components.
 
 **Completion criterion:** Another engineer should be able to distinguish retrieval responsibilities from downstream application responsibilities and identify where an observed failure should be investigated first.

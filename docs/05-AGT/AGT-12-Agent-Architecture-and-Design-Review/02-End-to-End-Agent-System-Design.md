@@ -18,7 +18,7 @@ The central question is:
 
 ## 1. From Architecture Selection to System Design
 
-File 01 answered:
+Lesson 01 answered:
 
 > **Which architecture should we choose, and why?**
 
@@ -1639,30 +1639,30 @@ Before implementation, verify:
 
 ---
 
-## 25. Connection to File 03
+## 25. Connection to Lesson 03
 
-File 02 establishes the complete architecture.
+Lesson 02 establishes the complete architecture.
 
 The next question is whether that architecture is actually defensible.
 
-File 03 therefore focuses on:
+Lesson 03 therefore focuses on:
 
 > **How do we review and validate an agent architecture before implementation or production?**
 
 The relationship is:
 
 ```text
-File 01
+Lesson 01
 Architecture Selection
         │
         │ Which architecture?
         ▼
-File 02
+Lesson 02
 End-to-End System Design
         │
         │ How is it composed?
         ▼
-File 03
+Lesson 03
 Architecture Review and Validation
         │
         │ Is the design defensible?
@@ -1670,7 +1670,7 @@ Architecture Review and Validation
 Implementation / Production
 ```
 
-File 03 should challenge the assumptions, boundaries, risks, evidence, and operational fitness of the design produced here.
+Lesson 03 should challenge the assumptions, boundaries, risks, evidence, and operational fitness of the design produced here.
 
 ---
 

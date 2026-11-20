@@ -72,14 +72,6 @@ These chapters provide the underlying mechanisms. AGT-11 addresses their **relia
 
 ## Chapter Structure
 
-```text
-AGT-11/
-├── README.md
-├── 01-Agent-Failure-Modes-and-Recovery-Strategies.md
-├── 02-Execution-and-State-Safety.md
-└── 03-Agent-Safety-Excessive-Agency-and-Tool-Boundaries.md
-```
-
 ### 01 — Agent Failure Modes and Recovery Strategies
 
 **Primary responsibility:** Understand how agents fail and how engineering systems should respond.

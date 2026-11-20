@@ -687,7 +687,7 @@ The important principle is:
 
 The agent should not implicitly interpret rejection as permission to keep retrying until approval is eventually obtained.
 
-Detailed approval-denial behavior is covered in File 02.
+Detailed approval-denial behavior is covered in Lesson 02.
 
 ---
 
@@ -746,7 +746,7 @@ Examples include:
 - conflicting instructions,
 - or situations requiring human judgment.
 
-Detailed escalation rules, thresholds, approver selection, and high-risk escalation patterns are covered in File 02.
+Detailed escalation rules, thresholds, approver selection, and high-risk escalation patterns are covered in Lesson 02.
 
 ---
 
@@ -783,7 +783,7 @@ Authorized override
 
 This distinction becomes especially important in production systems.
 
-Detailed authorization scope and high-risk override considerations are covered in File 02.
+Detailed authorization scope and high-risk override considerations are covered in Lesson 02.
 
 ---
 
@@ -817,7 +817,7 @@ At minimum, the system should be able to determine:
 
 Without these definitions, a system may appear to have human oversight while still allowing the agent to bypass the intended control.
 
-Detailed approval-boundary design and authorization rules are covered in File 02.
+Detailed approval-boundary design and authorization rules are covered in Lesson 02.
 
 ---
 
@@ -1023,7 +1023,7 @@ It also introduces additional design questions around:
 - human availability,
 - and continuation semantics.
 
-Detailed approval expiration, revocation, and timeout behavior are covered in File 02.
+Detailed approval expiration, revocation, and timeout behavior are covered in Lesson 02.
 
 ---
 
@@ -1173,7 +1173,7 @@ Approval requests should therefore be reserved for decisions where human judgmen
 - decision quality,
 - or risk management.
 
-Detailed approval-boundary design is covered in File 02.
+Detailed approval-boundary design is covered in Lesson 02.
 
 ---
 
@@ -1282,7 +1282,7 @@ Decision
 
 The human-control point exists because the action has meaningful external consequences.
 
-The detailed definition of approval scope and high-risk action handling belongs to File 02.
+The detailed definition of approval scope and high-risk action handling belongs to Lesson 02.
 
 ---
 
@@ -1868,7 +1868,7 @@ When designing human control, ask:
 - AGT-07 defines the human-control requirement and semantics.
 - AGT-06 owns the underlying durable workflow mechanisms for checkpointing and resumption.
 - Human control complements, but does not replace, technical safety mechanisms.
-- Detailed approval boundaries, authorization scope, expiry, revocation, and high-risk action handling belong to File 02.
+- Detailed approval boundaries, authorization scope, expiry, revocation, and high-risk action handling belong to Lesson 02.
 
 ---
 
@@ -1878,7 +1878,7 @@ Continue with:
 
 [Approval Boundaries, Escalation, and High-Risk Actions](./02-Approval-Boundaries-Escalation-and-High-Risk-Actions.md)
 
-File 02 builds on the human-control patterns established here and focuses on:
+Lesson 02 builds on the human-control patterns established here and focuses on:
 
 - approval boundaries,
 - risk-based approval,

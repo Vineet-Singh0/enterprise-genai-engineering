@@ -1541,7 +1541,7 @@ A system can be:
 - economically efficient but slower,
 - or strong across all three dimensions.
 
-Detailed economic evaluation belongs to File 03.
+Detailed economic evaluation belongs to Lesson 03.
 
 ---
 
@@ -1739,7 +1739,7 @@ A useful conceptual acceptance rule is:
 
 > **Valid optimization = measurable performance or efficiency gain + acceptable quality + required reliability + acceptable operational complexity.**
 
-Economic justification may additionally be required, but detailed cost-performance analysis belongs in File 03.
+Economic justification may additionally be required, but detailed cost-performance analysis belongs in Lesson 03.
 
 ---
 
@@ -1953,7 +1953,7 @@ An optimization may improve average latency while worsening tail latency.
 
 Production systems must consider latency distributions and workload behavior.
 
-Detailed latency analysis is covered in File 01.
+Detailed latency analysis is covered in Lesson 01.
 
 ---
 
@@ -2003,9 +2003,9 @@ A practical workflow is:
 12. Accept / Reject / Iterate
 ```
 
-The baseline and bottleneck concepts are established in File 01.
+The baseline and bottleneck concepts are established in Lesson 01.
 
-Detailed benchmark methodology and cost-performance comparison are covered in File 03.
+Detailed benchmark methodology and cost-performance comparison are covered in Lesson 03.
 
 Observability evidence comes from PROD-05.
 
@@ -2269,7 +2269,7 @@ The most important concepts are:
 - High utilization is not equivalent to high efficiency.
 - Performance efficiency, resource efficiency, and economic efficiency are distinct concepts.
 - Optimization must preserve required quality and reliability.
-- Detailed benchmarking and cost-performance evaluation belong in File 03.
+- Detailed benchmarking and cost-performance evaluation belong in Lesson 03.
 
 The central engineering principle remains:
 

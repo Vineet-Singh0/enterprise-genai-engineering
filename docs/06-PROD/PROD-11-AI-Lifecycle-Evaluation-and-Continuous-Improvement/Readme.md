@@ -354,7 +354,7 @@ The progression moves from understanding **how AI systems change** toward decidi
 
 ## Chapter Map
 
-| File | Primary Responsibility |
+| Lesson | Primary Responsibility |
 |---|---|
 | AI Model Application and Configuration Lifecycle | AI lifecycle across models, applications, configuration, dependencies, and runtime changes |
 | Production Evaluation Drift and Quality Signals | Production evaluation, quality baselines, regression, drift, and quality signals |

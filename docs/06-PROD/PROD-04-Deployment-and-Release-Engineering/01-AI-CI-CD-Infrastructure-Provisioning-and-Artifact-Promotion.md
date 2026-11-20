@@ -1954,7 +1954,7 @@ Therefore:
 
 A useful gate should detect a meaningful failure mode and produce a decision that justifies its cost.
 
-This principle becomes central in File 03 when release gates are examined in detail.
+This principle becomes central in Lesson 03 when release gates are examined in detail.
 
 ---
 

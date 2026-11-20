@@ -1924,7 +1924,7 @@ But excessive utilization can cause:
 
 Therefore the economic optimum may not occur at maximum utilization.
 
-This connects performance economics with the saturation concepts introduced in File 01.
+This connects performance economics with the saturation concepts introduced in Lesson 01.
 
 ---
 

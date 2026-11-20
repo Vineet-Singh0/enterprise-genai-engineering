@@ -23,7 +23,7 @@ After completing this chapter, you should be able to:
 Before reading this chapter, you should understand:
 
 - Agent systems and their basic architecture from AGT-01.
-- The purpose of an agent runtime from AGT-02 File 01.
+- The purpose of an agent runtime from AGT-02 Lesson 01.
 - Runtime harnesses and execution steps.
 - The distinction between runtime execution and planning.
 - The idea that one agent execution may contain multiple execution steps.
@@ -72,7 +72,7 @@ The important question for this chapter is:
 
 > **What actually happens inside one execution cycle?**
 
-File 01 established that the runtime repeatedly executes steps.
+Lesson 01 established that the runtime repeatedly executes steps.
 
 This chapter now opens one of those steps and examines its internal progression.
 
@@ -568,7 +568,7 @@ Observation
 
 Other runtime conditions may also affect the transition.
 
-The exact termination conditions and policies are covered in File 03.
+The exact termination conditions and policies are covered in Lesson 03.
 
 The important point for this chapter is that the observation creates a point at which execution must transition somewhere.
 
@@ -895,7 +895,7 @@ The important engineering question is:
 
 > **Is execution producing meaningful new information or progress toward the intended outcome?**
 
-Detailed no-progress detection and termination policies belong to File 03.
+Detailed no-progress detection and termination policies belong to Lesson 03.
 
 ---
 
@@ -967,7 +967,7 @@ This may indicate that execution is not progressing.
 
 The runtime should make such behavior observable.
 
-The specific policy for responding to repeated or non-progressing execution belongs to File 03.
+The specific policy for responding to repeated or non-progressing execution belongs to Lesson 03.
 
 ---
 
@@ -995,9 +995,9 @@ Execution Transition
       └──────────────→ Finish
 ```
 
-File 02 focuses on the transition.
+Lesson 02 focuses on the transition.
 
-File 03 focuses on the policies governing why and under what conditions execution stops.
+Lesson 03 focuses on the policies governing why and under what conditions execution stops.
 
 This distinction prevents the two chapters from duplicating each other.
 
@@ -1039,7 +1039,7 @@ Execution stopped
 
 This chapter only establishes that such runtime transitions can occur.
 
-Detailed cancellation, timeout, budget exhaustion, and termination policies belong to File 03.
+Detailed cancellation, timeout, budget exhaustion, and termination policies belong to Lesson 03.
 
 ---
 
@@ -1290,7 +1290,7 @@ while runtime_has_execution_step(execution):
 
 Again, this intentionally omits detailed termination policy mechanics.
 
-Those are covered in File 03.
+Those are covered in Lesson 03.
 
 ---
 
@@ -1523,7 +1523,7 @@ Did the execution condition change?
 Did the runtime make meaningful progress?
 ```
 
-The detailed policy for responding to problematic repetition belongs to File 03.
+The detailed policy for responding to problematic repetition belongs to Lesson 03.
 
 ---
 
@@ -1832,7 +1832,7 @@ No. The external environment may have changed between executions. Repeated actio
 
 **Expected answer:**
 
-I would reconstruct the execution trace and inspect whether the action is expected to be repeated, whether the observation is genuinely unchanged, whether the execution condition is progressing, and whether meaningful progress is occurring. The specific policy for stopping no-progress behavior belongs to AGT-02 File 03.
+I would reconstruct the execution trace and inspect whether the action is expected to be repeated, whether the observation is genuinely unchanged, whether the execution condition is progressing, and whether meaningful progress is occurring. The specific policy for stopping no-progress behavior belongs to AGT-02 Lesson 03.
 
 ---
 
@@ -2005,15 +2005,15 @@ Related ownership areas:
 The key boundary to retain before moving forward is:
 
 ```text
-AGT-02 File 01
+AGT-02 Lesson 01
 Runtime Harness
 → How is execution structured?
 
-AGT-02 File 02
+AGT-02 Lesson 02
 Decision → Action → Observation → Continuation
 → What happens inside a step?
 
-AGT-02 File 03
+AGT-02 Lesson 03
 Termination + Bounded Autonomy
 → When and why does execution stop?
 ```

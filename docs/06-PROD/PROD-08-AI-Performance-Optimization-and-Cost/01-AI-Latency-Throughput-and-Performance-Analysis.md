@@ -1211,9 +1211,9 @@ A practical workflow is:
 12. Evaluate quality and cost implications
 ```
 
-The optimization step itself belongs primarily in File 02.
+The optimization step itself belongs primarily in Lesson 02.
 
-The benchmarking and economic decision methodology is developed further in File 03.
+The benchmarking and economic decision methodology is developed further in Lesson 03.
 
 ---
 

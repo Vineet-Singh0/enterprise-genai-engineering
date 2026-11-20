@@ -38,7 +38,7 @@ You should already understand:
 
 This chapter builds directly on **[01 — AI Capacity Planning and Scaling Models](./01-AI-Capacity-Planning-and-Scaling-Models.md)**.
 
-File 01 answered:
+Lesson 01 answered:
 
 > **How much capacity does this workload require?**
 
@@ -62,7 +62,7 @@ Capacity planning and autoscaling are related, but they solve different engineer
 
 **Autoscaling** determines how the system should adjust available capacity as workload conditions change.
 
-For example, File 01 may establish that a workload requires approximately 10 workers during peak sustained demand.
+For example, Lesson 01 may establish that a workload requires approximately 10 workers during peak sustained demand.
 
 That does not answer:
 
@@ -93,7 +93,7 @@ Observed System State
 Next Scaling Decision
 ```
 
-Autoscaling therefore builds on the capacity model established in File 01 rather than replacing it.
+Autoscaling therefore builds on the capacity model established in Lesson 01 rather than replacing it.
 
 ---
 
@@ -783,7 +783,7 @@ Therefore:
 
 > **Autoscaling policy must be designed relative to demand duration and scaling delay, not just peak magnitude.**
 
-This connects directly to the burst-capacity distinction established in File 01.
+This connects directly to the burst-capacity distinction established in Lesson 01.
 
 ---
 
@@ -1729,7 +1729,7 @@ Therefore:
 
 > **Scaling one layer can expose a different bottleneck rather than increasing end-to-end capacity.**
 
-The capacity-planning reasoning from File 01 should be reused here rather than re-taught.
+The capacity-planning reasoning from Lesson 01 should be reused here rather than re-taught.
 
 ---
 
@@ -2152,13 +2152,13 @@ Therefore:
 
 > **Autoscaling should increase capacity where additional resources can improve useful end-to-end capacity.**
 
-This is the autoscaling application of the bottleneck reasoning established in File 01.
+This is the autoscaling application of the bottleneck reasoning established in Lesson 01.
 
 ---
 
 # 59. Autoscaling and Headroom
 
-File 01 established headroom as part of planned capacity.
+Lesson 01 established headroom as part of planned capacity.
 
 In autoscaling, the engineering question becomes:
 
@@ -2253,9 +2253,9 @@ Use the following sequence when designing an autoscaling policy:
 14. Test under realistic demand
 ```
 
-The final step belongs to File 03.
+The final step belongs to Lesson 03.
 
-The purpose of this chapter is to design the control policy; File 03 validates whether that policy behaves correctly under load.
+The purpose of this chapter is to design the control policy; Lesson 03 validates whether that policy behaves correctly under load.
 
 ---
 
@@ -2488,9 +2488,9 @@ Therefore:
 
 ---
 
-# 65. Relationship to File 01
+# 65. Relationship to Lesson 01
 
-File 01 established:
+Lesson 01 established:
 
 ```text
 Demand
@@ -2506,7 +2506,7 @@ Headroom
 Scaling Strategy
 ```
 
-File 02 extends the final part of that reasoning:
+Lesson 02 extends the final part of that reasoning:
 
 ```text
 Scaling Strategy
@@ -2527,17 +2527,17 @@ Feedback
 Therefore:
 
 ```text
-PROD-07 File 01
+PROD-07 Lesson 01
 Capacity Planning
         ↓
 "What capacity should exist?"
 
-PROD-07 File 02
+PROD-07 Lesson 02
 Autoscaling
         ↓
 "How should capacity change?"
 
-PROD-07 File 03
+PROD-07 Lesson 03
 Load & Scaling Validation
         ↓
 "Does the scaling strategy actually work?"
@@ -2908,7 +2908,7 @@ Capacity that can actually process the workload under current constraints.
 22. Autoscaling policies should be derived from workload behavior rather than copied from another service.
 23. A capacity model provides the foundation; autoscaling operationalizes that model under changing demand.
 24. Autoscaling must account for the effects its own actions can have on dependencies and observed signals.
-25. File 03 will validate whether the scaling strategy actually works under realistic load, burst, and failure conditions.
+25. Lesson 03 will validate whether the scaling strategy actually works under realistic load, burst, and failure conditions.
 26. **The goal is not maximum utilization or minimum infrastructure. The goal is sufficient useful capacity with controlled risk and predictable behavior.**
 
 ---

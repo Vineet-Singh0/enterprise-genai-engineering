@@ -28,7 +28,7 @@ You should be familiar with:
 - enterprise application architecture
 - APIs and service integrations
 - basic AI model/provider concepts
-- the model/provider selection principles from [File 01 — Enterprise Model and Provider Selection Strategy](./01-Enterprise-Model-and-Provider-Selection-Strategy.md)
+- the model/provider selection principles from [Lesson 01 — Enterprise Model and Provider Selection Strategy](./01-Enterprise-Model-and-Provider-Selection-Strategy.md)
 - basic concepts of abstraction and architectural coupling
 
 You do not need to know how to implement a technical migration to understand this chapter.
@@ -85,7 +85,7 @@ At that point, the enterprise has more than an API dependency.
 
 It has a **strategic dependency system**.
 
-This is the central problem of File 02.
+This is the central problem of Lesson 02.
 
 ---
 
@@ -1962,8 +1962,8 @@ For adjacent enterprise context:
 - ENT-08 — AI Economics, FinOps and Portfolio Governance
 - ENT-09 — AI Criticality, Resilience and Dependency Governance
 
-> **File 01 answers: “Which model/provider should we strategically choose?”**
+> **Lesson 01 answers: “Which model/provider should we strategically choose?”**
 >
-> **File 02 answers: “How do we manage the dependency and lock-in created by that choice?”**
+> **Lesson 02 answers: “How do we manage the dependency and lock-in created by that choice?”**
 >
-> **File 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**
+> **Lesson 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**

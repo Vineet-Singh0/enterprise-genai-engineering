@@ -721,4 +721,4 @@ The following resources provide additional perspectives on software development 
 - [Agile Manifesto](https://agilemanifesto.org/)
 - [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
 
-These resources provide broader lifecycle and process perspectives. They do not replace the approved scope of this chapter.
+These resources provide broader lifecycle and process perspectives. They do not replace the lessons in this chapter.

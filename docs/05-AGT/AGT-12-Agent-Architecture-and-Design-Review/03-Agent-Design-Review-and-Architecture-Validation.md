@@ -97,11 +97,11 @@ The distinction is important:
 
 | File | Primary question |
 |---|---|
-| File 01 | **Which architecture should we choose, and why?** |
-| File 02 | **How should the selected architecture be composed?** |
-| File 03 | **Can we defend and validate the resulting architecture?** |
+| Lesson 01 | **Which architecture should we choose, and why?** |
+| Lesson 02 | **How should the selected architecture be composed?** |
+| Lesson 03 | **Can we defend and validate the resulting architecture?** |
 
-File 03 therefore does not redesign the system from scratch. It **challenges the design produced by Files 01 and 02**.
+Lesson 03 therefore does not redesign the system from scratch. It **challenges the design produced by Files 01 and 02**.
 
 ---
 
@@ -576,20 +576,20 @@ Possible reasons include:
 
 A boundary that has no meaningful architectural reason is a candidate for consolidation.
 
-This connects directly to File 01's complexity budget:
+This connects directly to Lesson 01's complexity budget:
 
 ```text
-File 01
+Lesson 01
 Should this structure exist?
 
         ↓
 
-File 02
+Lesson 02
 What responsibility and authority does it own?
 
         ↓
 
-File 03
+Lesson 03
 Is that boundary justified and validated?
 ```
 

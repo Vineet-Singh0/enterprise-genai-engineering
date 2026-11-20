@@ -99,7 +99,7 @@ Examples include:
 
 Increasing ANN search effort does not correct these problems. It may help the system retrieve more neighbors, but those neighbors are still determined by the underlying vector representation and scoring function.
 
-Use the compatibility and representation procedures in File 01 rather than duplicating them here.
+Use the compatibility and representation procedures in Lesson 01 rather than duplicating them here.
 
 ### 2.2 Index and search-execution failures
 
@@ -321,7 +321,7 @@ Use this workflow when investigating a dense retrieval failure.
 
 1. **Reproduce the symptom.** Record the query, expected behavior, observed candidates, and relevant configuration.
 2. **Verify the data.** Confirm that expected document vectors exist in the active searchable collection.
-3. **Verify compatibility and scoring.** Check the query/document representation and configured similarity semantics using File 01's guidance.
+3. **Verify compatibility and scoring.** Check the query/document representation and configured similarity semantics using Lesson 01's guidance.
 4. **Verify execution equivalence.** Ensure the comparison uses the same query vector, corpus snapshot, filters, and result depth.
 5. **Compare with exact search.** Determine whether the expected candidates appear in the exact-search reference.
 6. **Locate the failing stage.** Distinguish representation, data/index state, ANN approximation, candidate depth, and candidate refinement.

@@ -2,7 +2,7 @@
 
 ## 1. Relevance Depends on the User's Task
 
-Retrieval does not succeed merely because a system returns results. It succeeds when those results provide useful evidence for the information need defined in File 01.
+Retrieval does not succeed merely because a system returns results. It succeeds when those results provide useful evidence for the information need defined in Lesson 01.
 
 **Relevance** describes how well a retrieved item serves the user's information need in a particular context. It is not necessarily equivalent to keyword overlap, topical similarity, or semantic similarity.
 
@@ -67,6 +67,6 @@ Explicit criteria help reviewers explain why a result passes or fails instead of
 
 ## Practical Exercise
 
-Using the credential-rotation scenario from File 01, define three criteria for judging a retrieved passage, including task fit and applicability. Identify a result that matches the query's terminology but fails your criteria.
+Using the credential-rotation scenario from Lesson 01, define three criteria for judging a retrieved passage, including task fit and applicability. Identify a result that matches the query's terminology but fails your criteria.
 
 **Completion criterion:** Another engineer should be able to apply your criteria to candidate results and explain why each result does or does not satisfy the task.

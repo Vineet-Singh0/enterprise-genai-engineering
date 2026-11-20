@@ -61,7 +61,7 @@ Detailed knowledge of agent frameworks is **not required**.
 
 ### 1. Agent Definition and System Boundaries
 
-**File:** [Agent Definition and System Boundaries](./01-Agent-Definition-and-System-Boundaries.md)
+**Lesson:** [Agent Definition and System Boundaries](./01-Agent-Definition-and-System-Boundaries.md)
 
 This lesson establishes the foundational definition of an agent.
 
@@ -102,7 +102,7 @@ The model is conceptual rather than a claim that every implementation follows ex
 
 ### 2. Agent vs LLM Applications, Workflows, and RAG Systems
 
-**File:** [Agent vs LLM Applications Workflows and RAG Systems](./02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md)
+**Lesson:** [Agent vs LLM Applications Workflows and RAG Systems](./02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md)
 
 This lesson establishes the architectural distinction between agentic systems and other common AI application patterns.
 
@@ -175,7 +175,7 @@ Systems can also combine these patterns. A workflow may contain agentic behavior
 
 ### 3. Agent Architecture and System Composition
 
-**File:** [Agent Architecture and System Composition](./03-Agent-Architecture-and-System-Composition.md)
+**Lesson:** [Agent Architecture and System Composition](./03-Agent-Architecture-and-System-Composition.md)
 
 This lesson establishes the high-level architectural composition of an agent system.
 

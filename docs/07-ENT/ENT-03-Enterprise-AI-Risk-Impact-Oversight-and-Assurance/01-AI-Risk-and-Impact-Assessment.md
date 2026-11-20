@@ -363,7 +363,7 @@ Humans may:
 
 Human interaction therefore forms part of the risk context.
 
-Detailed human oversight and control design are covered in File 02.
+Detailed human oversight and control design are covered in Lesson 02.
 
 ---
 
@@ -947,7 +947,7 @@ For example:
 
 If that statement is merely an assumption rather than an observed operating condition, the risk assessment may be overly optimistic.
 
-The detailed design of meaningful human oversight belongs to File 02, but the assumption itself must be recognized during risk assessment.
+The detailed design of meaningful human oversight belongs to Lesson 02, but the assumption itself must be recognized during risk assessment.
 
 ---
 
@@ -1088,11 +1088,11 @@ Notice what this conclusion does **not** do.
 
 It does not prescribe the detailed human oversight mechanism.
 
-That is File 02.
+That is Lesson 02.
 
 It does not specify risk treatment or residual-risk acceptance.
 
-That is File 03.
+That is Lesson 03.
 
 The purpose here is to establish the **risk and impact understanding** that those later decisions depend on.
 
@@ -1284,7 +1284,7 @@ The existence of a human reviewer does not by itself establish effective control
 
 **Correction:**
 
-Record the assumption and assess the actual decision context. Detailed oversight analysis belongs to File 02.
+Record the assumption and assess the actual decision context. Detailed oversight analysis belongs to Lesson 02.
 
 ---
 
@@ -1384,7 +1384,7 @@ Potential triggers include:
 
 These triggers indicate that the previous risk and impact understanding may need to be revisited.
 
-The detailed lifecycle process for continuous reassessment, assurance maintenance, and treatment of changing residual risk is covered in File 03.
+The detailed lifecycle process for continuous reassessment, assurance maintenance, and treatment of changing residual risk is covered in Lesson 03.
 
 The governance mechanism for lifecycle change control belongs to ENT-02.
 

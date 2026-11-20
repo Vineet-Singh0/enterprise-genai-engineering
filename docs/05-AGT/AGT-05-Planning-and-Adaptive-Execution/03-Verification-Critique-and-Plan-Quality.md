@@ -986,7 +986,7 @@ API does not support operation X.
 
 The original plan must now be reconsidered.
 
-This connects File 03 directly with AGT-05.02:
+This connects Lesson 03 directly with AGT-05.02:
 
 ```text
 Plan

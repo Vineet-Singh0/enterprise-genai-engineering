@@ -52,7 +52,7 @@ These are conditional implementation dependencies. For example, a system combini
 
 ### 01 — Candidate Generation and Retriever Complementarity
 
-File: Candidate Generation and Retriever Complementarity
+Lesson: Candidate Generation and Retriever Complementarity
 
 This chapter establishes the role of candidate generation in the retrieval pipeline and explains why different retrieval sources may contribute different candidates.
 
@@ -69,7 +69,7 @@ The emphasis is on deciding which sources should participate and why. It does no
 
 ### 02 — Retrieval Fusion and Candidate Combination
 
-File: Retrieval Fusion and Candidate Combination
+Lesson: Retrieval Fusion and Candidate Combination
 
 This chapter examines how outputs from multiple retrieval sources can be combined into a unified candidate set.
 
@@ -87,7 +87,7 @@ The emphasis is on combining retrieval outputs correctly and understanding the a
 
 ### 03 — Candidate Depth, Deduplication, and Coverage
 
-File: Candidate Depth Deduplication and Coverage
+Lesson: Candidate Depth Deduplication and Coverage
 
 This chapter examines how the size and composition of a candidate set affect the rest of the retrieval pipeline.
 

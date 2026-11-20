@@ -45,7 +45,7 @@ These concepts are established in:
 
 ## Before We Start
 
-File 01 established the first part of the tool boundary:
+Lesson 01 established the first part of the tool boundary:
 
 ```text
 Tool
@@ -102,7 +102,7 @@ Invocation
 
 This lesson covers that selection-to-invocation boundary.
 
-It does **not** own the actual execution lifecycle or execution outcomes. Those are covered in File 03.
+It does **not** own the actual execution lifecycle or execution outcomes. Those are covered in Lesson 03.
 
 ---
 
@@ -919,9 +919,9 @@ Semantic checks:
 customer C123 owns order O456
 ```
 
-The validation model itself is established in File 01.
+The validation model itself is established in Lesson 01.
 
-File 02 uses that boundary; it does not redefine the contract-validation model.
+Lesson 02 uses that boundary; it does not redefine the contract-validation model.
 
 ---
 
@@ -1072,7 +1072,7 @@ Therefore:
 
 > **When multiple capabilities satisfy the same requirement, prefer the appropriately scoped capability rather than the most powerful one.**
 
-This principle connects File 02's selection decision back to File 01's capability-boundary model.
+This principle connects Lesson 02's selection decision back to Lesson 01's capability-boundary model.
 
 ---
 
@@ -1116,7 +1116,7 @@ The important point is:
 
 # 20. Invocation Is Not Execution
 
-This distinction is critical for maintaining the boundary between File 02 and File 03.
+This distinction is critical for maintaining the boundary between Lesson 02 and Lesson 03.
 
 The system may successfully construct:
 
@@ -1147,9 +1147,9 @@ Invocation
 Execution Success
 ```
 
-File 02 ends at the invocation handoff.
+Lesson 02 ends at the invocation handoff.
 
-File 03 owns the subsequent execution lifecycle:
+Lesson 03 owns the subsequent execution lifecycle:
 
 ```text
 Execution
@@ -1903,26 +1903,26 @@ Action-level Observability
 The complete AGT-03 progression is therefore:
 
 ```text
-File 01
+Lesson 01
 Define the capability
         ↓
-File 02
+Lesson 02
 Discover, select, route, construct, and invoke the capability
         ↓
-File 03
+Lesson 03
 Execute the action and handle its outcome
 ```
 
 The ownership boundary is intentional:
 
 ```text
-File 01
+Lesson 01
 What does this capability mean?
 
-File 02
+Lesson 02
 Which capability should be used and what invocation should be prepared?
 
-File 03
+Lesson 03
 What happened when the action was executed?
 ```
 

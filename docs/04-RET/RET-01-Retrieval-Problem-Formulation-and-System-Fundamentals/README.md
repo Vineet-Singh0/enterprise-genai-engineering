@@ -35,7 +35,7 @@ These prerequisites provide the background needed to reason about retrieval inpu
 
 Complete the lessons in the following order.
 
-| File | Topic | Purpose |
+| Lesson | Topic | Purpose |
 |---|---|---|
 | [01 — Retrieval Problems and Information Needs](01-Retrieval-Problems-and-Information-Needs.md) | Formulating retrieval problems | Establish the information need, query, corpus, document, retrieval unit, candidate, and expected evidence. |
 | [02 — Relevance and Retrieval Success Criteria](02-Relevance-and-Retrieval-Success-Criteria.md) | Defining relevance and success | Explain task-dependent relevance and establish criteria for judging retrieval outcomes. |

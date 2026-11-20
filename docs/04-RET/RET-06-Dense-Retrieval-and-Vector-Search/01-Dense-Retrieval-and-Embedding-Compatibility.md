@@ -209,7 +209,7 @@ The query instruction follows the documented BGE retrieval convention. The model
 
 The example validates basic invariants: a non-empty corpus, non-empty document text, unique IDs, compatible dimensions, finite values, and unit-normalized vectors. It remains a teaching baseline, not a complete production service. Production implementations also need explicit handling for empty queries, model-loading failures, resource limits, request validation, and index lifecycle management.
 
-The example compares the query against every document vector. This is exact search over the supplied corpus and is useful for establishing reference rankings on small datasets. Scalable index selection and approximate-nearest-neighbor tuning belong to File 02.
+The example compares the query against every document vector. This is exact search over the supplied corpus and is useful for establishing reference rankings on small datasets. Scalable index selection and approximate-nearest-neighbor tuning belong to Lesson 02.
 
 Successful execution proves that the pipeline ran; it does not prove that the results are relevant. The code has not been executed as part of this documentation revision, so runtime behavior must still be verified in the project's pinned environment.
 

@@ -151,7 +151,7 @@ Safety controls must prevent that proposal from automatically becoming unaccepta
 
 # Mental Model
 
-The core File 03 safety model is:
+The core Lesson 03 safety model is:
 
 ```text
                     Agent Goal
@@ -180,10 +180,10 @@ If the action is allowed, execution and state safety are handled through the mec
 The distinction is important:
 
 ```text
-File 03
+Lesson 03
 "What should this agent be capable and authorized to do?"
 
-File 02
+Lesson 02
 "How do we keep execution and state safe when an action proceeds?"
 ```
 
@@ -634,13 +634,13 @@ Questions may include:
 - Is the action within the task's intended scope?
 - Does the action require stronger risk controls?
 
-This is different from the deeper execution/state safety validation owned by File 02.
+This is different from the deeper execution/state safety validation owned by Lesson 02.
 
-File 03 asks:
+Lesson 03 asks:
 
 > **Should this agent be permitted to propose and execute this class of action in this context?**
 
-File 02 asks:
+Lesson 02 asks:
 
 > **Can execution and resulting state remain safe if the action proceeds?**
 
@@ -795,7 +795,7 @@ For such actions, systems may use:
 - restricted execution;
 - post-action verification.
 
-The architecture of approval itself belongs to **AGT-07**. File 03 focuses on **why action risk requires stronger authority boundaries**.
+The architecture of approval itself belongs to **AGT-07**. Lesson 03 focuses on **why action risk requires stronger authority boundaries**.
 
 ---
 
@@ -1138,7 +1138,7 @@ Broader Authority
 
 The architecture of multi-agent delegation and coordination belongs to AGT-09.
 
-File 03 focuses on the **authority and safety consequence of delegation**.
+Lesson 03 focuses on the **authority and safety consequence of delegation**.
 
 ---
 
@@ -1198,7 +1198,7 @@ The important engineering question is:
 
 Approval architecture itself is owned by AGT-07.
 
-File 03 owns the safety requirement that **high-impact outcomes must not become reachable through an uncontrolled alternate path**.
+Lesson 03 owns the safety requirement that **high-impact outcomes must not become reachable through an uncontrolled alternate path**.
 
 ---
 
@@ -1277,7 +1277,7 @@ Containment / Termination
 
 Different chapters own different parts of this model.
 
-File 03 primarily owns:
+Lesson 03 primarily owns:
 
 ```text
 Capability
@@ -1286,7 +1286,7 @@ Action Scope
 Risk-Based Agent Controls
 ```
 
-File 02 owns deeper:
+Lesson 02 owns deeper:
 
 ```text
 Execution Safety
@@ -1441,7 +1441,7 @@ A dangerous operation such as arbitrary production configuration modification sh
 
 AGT-03 owns tool invocation architecture.
 
-File 03 owns the decision that **the agent should not possess broader action authority than its operational role requires**.
+Lesson 03 owns the decision that **the agent should not possess broader action authority than its operational role requires**.
 
 ---
 
@@ -2155,13 +2155,13 @@ A guardrail reduces or detects unsafe behavior, but it can fail or be bypassed. 
 
 ---
 
-## 12. How does File 03 differ from File 02?
+## 12. How does Lesson 03 differ from Lesson 02?
 
 **Expected answer:**
 
-File 03 focuses on what the agent should be capable and authorized to do, including excessive agency and action boundaries.
+Lesson 03 focuses on what the agent should be capable and authorized to do, including excessive agency and action boundaries.
 
-File 02 focuses on keeping execution and state safe when actions proceed, including unsafe continuation, state safety, containment, and termination.
+Lesson 02 focuses on keeping execution and state safe when actions proceed, including unsafe continuation, state safety, containment, and termination.
 
 ---
 

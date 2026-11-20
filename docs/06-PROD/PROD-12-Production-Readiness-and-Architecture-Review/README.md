@@ -183,7 +183,7 @@ How do we validate that the complete system actually behaves as required?
 
 ## 01 — Production Readiness and Architecture Review
 
-**File:** [Production Readiness and Architecture Review](./01-Production-Readiness-and-Architecture-Review.md)
+**Lesson:** [Production Readiness and Architecture Review](./01-Production-Readiness-and-Architecture-Review.md)
 
 **Primary responsibility:** establish how to conduct a structured production-readiness and architecture review.
 
@@ -213,7 +213,7 @@ This lesson covers **production readiness and architecture review**.
 
 ## 02 — Production Trade-offs and Operational Design
 
-**File:** [Production Trade offs and Operational Design](./02-Production-Trade-offs-and-Operational-Design.md)
+**Lesson:** [Production Trade offs and Operational Design](./02-Production-Trade-offs-and-Operational-Design.md)
 
 **Primary responsibility:** examine how production constraints affect architectural decisions and operational design.
 
@@ -236,7 +236,7 @@ This lesson covers **production trade-offs and operational design**.
 
 ## 03 — End-to-End Production System Validation
 
-**File:** [End to End Production System Validation](./03-End-to-End-Production-System-Validation.md)
+**Lesson:** [End to End Production System Validation](./03-End-to-End-Production-System-Validation.md)
 
 **Primary responsibility:** establish how to validate the complete AI system against production requirements.
 
@@ -771,7 +771,7 @@ The final competency is:
 
 ## Chapter Files
 
-| File | Responsibility |
+| Lesson | Responsibility |
 |---|---|
 | README | Chapter navigation and orientation |
 | Production Readiness and Architecture Review | Production-readiness and architecture-review teaching |

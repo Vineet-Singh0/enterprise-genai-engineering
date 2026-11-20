@@ -187,13 +187,13 @@ Safe Continuation
            Terminate
 ```
 
-This is deliberately different from the recovery model in File 01.
+This is deliberately different from the recovery model in Lesson 01.
 
-**File 01 asks:**
+**Lesson 01 asks:**
 
 > What should the system do when failure occurs?
 
-**File 02 asks:**
+**Lesson 02 asks:**
 
 > What safety conditions must hold for execution and state, and what mechanisms prevent unsafe continuation when those conditions no longer hold?
 
@@ -577,7 +577,7 @@ Execution
 
 The exact controls depend on the action's risk.
 
-Detailed tool schemas and invocation semantics belong to AGT-03. Detailed capability and authority design is developed further in AGT-11 File 03.
+Detailed tool schemas and invocation semantics belong to AGT-03. Detailed capability and authority design is developed further in AGT-11 Lesson 03.
 
 ---
 
@@ -771,7 +771,7 @@ Controlled Side Effect
 
 This chapter treats the boundary as a runtime safety control.
 
-Broader questions about which capabilities the agent should possess, least privilege, excessive agency, and capability authority are developed in **AGT-11 File 03**.
+Broader questions about which capabilities the agent should possess, least privilege, excessive agency, and capability authority are developed in **AGT-11 Lesson 03**.
 
 ---
 
@@ -1026,13 +1026,13 @@ Can the next action be performed safely?
 Would repeating an earlier action create duplication?
 ```
 
-This connects to the recovery concepts from File 01, but the ownership is different:
+This connects to the recovery concepts from Lesson 01, but the ownership is different:
 
 ```text
-File 01
+Lesson 01
 → chooses the recovery response.
 
-File 02
+Lesson 02
 → determines whether the resulting execution and state are safe enough for continuation.
 ```
 
@@ -1362,7 +1362,7 @@ Therefore:
 
 > **Untrusted outputs must not silently redefine execution authority or safety constraints.**
 
-Detailed tool architecture and trust contracts belong to AGT-03. The File 02 concern is the safety consequence: **untrusted output must not bypass execution controls.**
+Detailed tool architecture and trust contracts belong to AGT-03. The Lesson 02 concern is the safety consequence: **untrusted output must not bypass execution controls.**
 
 ---
 
@@ -1639,7 +1639,7 @@ Validated Action
 Limited Side Effect
 ```
 
-The detailed design of capability and authorization boundaries belongs to File 03. Here, the focus is the safety effect of limiting blast radius.
+The detailed design of capability and authorization boundaries belongs to Lesson 03. Here, the focus is the safety effect of limiting blast radius.
 
 ---
 
@@ -1688,7 +1688,7 @@ If one layer fails, another layer may still prevent unsafe execution.
 
 This is the principle of **defense in depth**.
 
-File 03 develops the agent-specific capability, authority, and excessive-agency side of these boundaries in greater depth.
+Lesson 03 develops the agent-specific capability, authority, and excessive-agency side of these boundaries in greater depth.
 
 ---
 
@@ -1774,7 +1774,7 @@ Determine Actual State
 Continue Only When Safe
 ```
 
-The recovery strategy comes from File 01.
+The recovery strategy comes from Lesson 01.
 
 The execution/state safety question here is:
 
@@ -2022,7 +2022,7 @@ only when
 the safety boundaries scale with it.
 ```
 
-The broader question of excessive agency and unnecessary capability belongs to File 03.
+The broader question of excessive agency and unnecessary capability belongs to Lesson 03.
 
 ---
 
@@ -2446,7 +2446,7 @@ Because assuming unknown state is equivalent to a known safe state can cause dup
 
 **Expected answer:**
 
-Not blindly. The system should determine whether the operation may have produced a side effect, reconcile or verify the actual payment state, and only retry if repeating the operation is established to be safe. This is also a recovery decision discussed in File 01.
+Not blindly. The system should determine whether the operation may have produced a side effect, reconcile or verify the actual payment state, and only retry if repeating the operation is established to be safe. This is also a recovery decision discussed in Lesson 01.
 
 ---
 
@@ -2490,7 +2490,7 @@ Post-action validation. A successful API response does not necessarily establish
 
 **Expected answer:**
 
-At multiple layers where appropriate: action validation, state validation, authorization, approval, execution isolation, preconditions, postconditions, monitoring, containment, and termination. Capability restrictions may also form part of the boundary, with deeper treatment in File 03. This is defense in depth.
+At multiple layers where appropriate: action validation, state validation, authorization, approval, execution isolation, preconditions, postconditions, monitoring, containment, and termination. Capability restrictions may also form part of the boundary, with deeper treatment in Lesson 03. This is defense in depth.
 
 ---
 
@@ -2659,8 +2659,8 @@ For continued study, connect this chapter with:
 - **AGT-06** — Agent Workflows and Durable Execution
 - **AGT-07** — Human Intervention and Approval Boundaries
 - **AGT-10** — Agent Evaluation and Behavioral Testing
-- **AGT-11 File 01** — Agent Failure Modes and Recovery Strategies
-- **AGT-11 File 03** — Agent Safety, Excessive Agency, and Tool Boundaries
+- **AGT-11 Lesson 01** — Agent Failure Modes and Recovery Strategies
+- **AGT-11 Lesson 03** — Agent Safety, Excessive Agency, and Tool Boundaries
 
 The ownership boundary to preserve is:
 
@@ -2680,13 +2680,13 @@ How workflows and durable execution are orchestrated
 AGT-10
 How agent behavior is evaluated
 
-AGT-11 File 01
+AGT-11 Lesson 01
 What recovery response should be selected after failure
 
-AGT-11 File 02
+AGT-11 Lesson 02
 What safety conditions and execution/state controls prevent unsafe continuation
 
-AGT-11 File 03
+AGT-11 Lesson 03
 How agent capability, authority, excessive agency, and tool boundaries are constrained
 ```
 
