@@ -37,7 +37,7 @@ Recommended reading:
 - [Repository Structure](./02-Repository-Structure.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
 - [Merge and Rebase](./04-Merge-and-Rebase.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 - [Semantic Versioning and Releases](./07-Semantic-Versioning-and-Releases.md)
 - [Issue Tracking](./08-Issue-Tracking.md)
@@ -475,7 +475,6 @@ For example:
 Merge conflict:
 Two changes modify the same lines.
 
-
 Engineering conflict:
 Two engineers disagree about the correct architecture.
 ```
@@ -544,16 +543,13 @@ Simple clarification
    ↓
 Chat
 
-
 Technical decision affecting the repository
    ↓
 Issue / documented discussion
 
-
 Complex disagreement
    ↓
 Direct discussion
-
 
 Final decision
    ↓
@@ -651,7 +647,7 @@ The PR provides a place for:
 
 The detailed PR lifecycle is covered in:
 
-[Pull Requests](./05-Pull-Requests.md)
+[Pull Requests](./05-Pull-Request.md)
 
 ---
 
@@ -1714,11 +1710,9 @@ Collaborative development connects all of these pieces.
 - [Repository Structure](./02-Repository-Structure.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
 - [Merge and Rebase](./04-Merge-and-Rebase.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 - [Semantic Versioning and Releases](./07-Semantic-Versioning-and-Releases.md)
 - [Issue Tracking](./08-Issue-Tracking.md)
 
 ---
-
-## End of Document

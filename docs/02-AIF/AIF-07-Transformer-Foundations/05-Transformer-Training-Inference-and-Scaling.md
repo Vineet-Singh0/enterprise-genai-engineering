@@ -51,21 +51,21 @@ The central question is:
 A Transformer model moves through several conceptual stages.
 
 ```text
-**Training data**
+Training data
 Tokenized examples and targets
         ↓
-**Forward pass**
+Forward pass
 Transformer computes predictions
         ↓
-**Loss and backpropagation**
+Loss and backpropagation
 Measure error and calculate gradients
         ↓
-**Parameter updates**
+Parameter updates
 Optimizer updates learned weights
         ↓
-**Trained parameters**
+Trained parameters
         ↓
-**Inference**
+Inference
 Generate predictions using learned parameters
 ```
 
@@ -349,11 +349,11 @@ The system still needs to compute the new token's layer representations and atte
 ### 11.4 Conceptual comparison
 
 ```text
-**Without key-value caching**
+Without key-value caching
 Recompute representations for the growing prefix
 More repeated computation as the prefix grows.
 <divider />
-**With key-value caching**
+With key-value caching
 Reuse past keys and values; compute the new token
 Less repeated work, with additional cache memory.
 ```

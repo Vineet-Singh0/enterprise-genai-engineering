@@ -34,7 +34,7 @@ Recommended reading:
 
 - [Git Fundamentals](./01-Git-Fundamentals.md)
 - [Branching Strategies](./03-Branching-Strategies.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 
 ---
@@ -546,7 +546,6 @@ Internal refactor
 Same API contract
         ↓
 Potentially non-breaking
-
 
 API removed
         ↓
@@ -1095,7 +1094,6 @@ The distinction is:
 Commit
   ↓
 Developer-level history
-
 
 Release Notes
   ↓
@@ -1759,11 +1757,9 @@ Before selecting a version, ask:
 
 - [Git Fundamentals](./01-Git-Fundamentals.md)
 - [Merge and Rebase](./04-Merge-and-Rebase.md)
-- [Pull Requests](./05-Pull-Requests.md)
+- [Pull Requests](./05-Pull-Request.md)
 - [Code Reviews](./06-Code-Reviews.md)
 - [Issue Tracking](./08-Issue-Tracking.md)
 - [Collaborative Development](./09-Collaborative-Development.md)
 
 ---
-
-## End of Document

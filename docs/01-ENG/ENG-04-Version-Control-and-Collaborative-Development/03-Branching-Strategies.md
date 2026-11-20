@@ -1203,7 +1203,7 @@ Pull Request
 
 The pull-request workflow is responsible for proposing and coordinating integration.
 
-See [Pull Requests](./05-Pull-Requests.md).
+See [Pull Requests](./05-Pull-Request.md).
 
 ---
 
@@ -1375,13 +1375,5 @@ A branching strategy defines:
 - [Git Branching — Pro Git](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Git Branch Documentation](https://git-scm.com/docs/git-branch)
 - [Git Book — Git Branching](https://git-scm.com/book/en/v2/ch00/ch03-git-branching)
-
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`03-Branching-Strategies.md`
 
 The next chapter, [Merge & Rebase](./04-Merge-and-Rebase.md), owns the detailed explanation of how divergent development histories are integrated.

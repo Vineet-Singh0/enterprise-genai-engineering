@@ -793,4 +793,3 @@ If you cannot explain why the splitting strategy follows from the prediction sce
 - [Chapter 03: Data Preparation, Features, and Labels](03-Data-Preparation-Features-and-Labels.md) — data quality, feature availability, preprocessing, and leakage.
 - [Chapter 04: Bias, Variance, and Generalization](04-Bias-Variance-and-Generalization.md) — why performance on training data may not transfer to unseen examples.
 - [Chapter 06: Evaluation Metrics and Model Selection](06-Evaluation-Metrics-and-Model-Selection.md) — selecting metrics and comparing candidates using the evidence produced by an evaluation protocol.
-

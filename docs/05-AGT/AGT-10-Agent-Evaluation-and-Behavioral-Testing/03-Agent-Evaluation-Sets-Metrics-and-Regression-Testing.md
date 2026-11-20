@@ -2336,16 +2336,16 @@ That is the foundation of trustworthy agent evaluation.
 
 ## Related Agent Engineering Chapters
 
-- [AGT-02 — Agent Runtime and Control Loop](../AGT-02/README.md)
-- [AGT-03 — Tools, Actions, and Tool Execution](../AGT-03/README.md)
-- [AGT-04 — Agent State, Context, and Memory](../AGT-04/README.md)
-- [AGT-05 — Verification, Critique, and Self-Correction](../AGT-05/README.md)
-- [AGT-06 — Agent Workflow Orchestration](../AGT-06/README.md)
-- [AGT-07 — Human-in-the-Loop and Intervention](../AGT-07/README.md)
-- [AGT-08 — Agent Interoperability](../AGT-08/README.md)
-- [AGT-09 — Multi-Agent Systems](../AGT-09/README.md)
-- [AGT-11 — Agent Failure Modes, Recovery, and Safety](../AGT-11/README.md)
-- [AGT-12 — Agent System Architecture and Design](../AGT-12/README.md)
+- [AGT-02 — Agent Runtime and Control Loop](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools, Actions, and Tool Execution](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — Agent State, Context, and Memory](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-05 — Verification, Critique, and Self-Correction](../AGT-05-Planning-and-Adaptive-Execution/Readme.md)
+- [AGT-06 — Agent Workflow Orchestration](../AGT-06-Workflow-Orchestration-and-Durable-Execution/Readme.md)
+- [AGT-07 — Human-in-the-Loop and Intervention](../AGT-07-Human-Control-and-Approval/Readme.md)
+- [AGT-08 — Agent Interoperability](../AGT-08-Agent-Interfaces-and-Protocols/Readme.md)
+- [AGT-09 — Multi-Agent Systems](../AGT-09-Multi-Agent-Systems/Readme.md)
+- [AGT-11 — Agent Failure Modes, Recovery, and Safety](../AGT-11-Agent-Reliability-and-Safety/Readme.md)
+- [AGT-12 — Agent System Architecture and Design](../AGT-12-Agent-Architecture-and-Design-Review/Readme.md)
 
 ---
 

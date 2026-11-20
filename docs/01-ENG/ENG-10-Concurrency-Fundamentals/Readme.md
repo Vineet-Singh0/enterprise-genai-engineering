@@ -195,7 +195,3 @@ Consider this topic complete when you can demonstrate the following capabilities
 The goal is not to memorize every concurrency mechanism. The goal is to reason about concurrent systems and make sound engineering decisions.
 
 ---
-
-**End of Document**
-
-This completes the Markdown file: README

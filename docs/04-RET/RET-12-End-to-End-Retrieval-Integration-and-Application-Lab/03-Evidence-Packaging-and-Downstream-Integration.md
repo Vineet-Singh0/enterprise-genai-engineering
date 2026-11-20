@@ -222,10 +222,8 @@ The model preserves source observations exactly as received. It does not introdu
 from dataclasses import dataclass
 from typing import Literal, TypeAlias
 
-
 JSONScalar: TypeAlias = str | int | float | bool | None
 JSONValue: TypeAlias = JSONScalar | list["JSONValue"] | dict[str, "JSONValue"]
-
 
 @dataclass(frozen=True)
 class EvidenceProvenance:
@@ -237,20 +235,17 @@ class EvidenceProvenance:
     start_offset: int | None
     end_offset: int | None
 
-
 @dataclass(frozen=True)
 class EvidenceSourceObservation:
     retriever_name: str
     source_rank: int
     score: float | None
 
-
 @dataclass(frozen=True)
 class EvidenceSourceFailure:
     retriever_name: str
     error_type: str
     message: str
-
 
 @dataclass(frozen=True)
 class EvidenceConstraintOutcome:
@@ -260,7 +255,6 @@ class EvidenceConstraintOutcome:
     status: Literal["applied", "unsupported", "failed"]
     enforcement_point: str
     diagnostic: str | None
-
 
 @dataclass(frozen=True)
 class EvidenceItem:
@@ -272,7 +266,6 @@ class EvidenceItem:
     source_observations: tuple["EvidenceSourceObservation", ...]
     provenance: EvidenceProvenance
     metadata: dict[str, JSONValue]
-
 
 @dataclass(frozen=True)
 class EvidencePackage:
@@ -345,22 +338,17 @@ from copy import deepcopy
 from dataclasses import dataclass
 from typing import Protocol
 
-
 class EvidencePackagingError(Exception):
     """Raised when a retrieval response cannot satisfy the evidence contract."""
 
-
 EVIDENCE_SCHEMA_VERSION = "1.0"
-
 
 class ProvenanceResolutionError(Exception):
     """Expected failure when trusted source provenance cannot be resolved."""
 
-
 class ProvenanceResolver(Protocol):
     def resolve(self, candidate: Candidate) -> EvidenceProvenance:
         """Resolve source provenance from trusted corpus metadata."""
-
 
 class EvidencePackager:
     def __init__(
@@ -579,10 +567,8 @@ The shared contract defines metadata as recursive JSON-compatible values. This i
 import json
 from dataclasses import asdict
 
-
 class EvidenceSerializationError(ValueError):
     """Raised when an evidence package cannot be serialized safely."""
-
 
 def serialize_evidence_package(package: EvidencePackage) -> str:
     payload = asdict(package)
@@ -753,7 +739,6 @@ A search interface may need a smaller view:
 ```python
 from dataclasses import dataclass
 
-
 @dataclass(frozen=True)
 class SearchResultView:
     document_id: str
@@ -762,7 +747,6 @@ class SearchResultView:
     snippet: str
     source_reference: str | None
     position: int
-
 
 def to_search_view(item: EvidenceItem) -> SearchResultView:
     title = item.provenance.source_title or item.document_id
@@ -817,7 +801,6 @@ The generation component receives a bounded set of evidence items. It should not
 from dataclasses import dataclass
 from typing import Protocol
 
-
 @dataclass(frozen=True)
 class GenerationEvidence:
     evidence_id: str
@@ -826,18 +809,15 @@ class GenerationEvidence:
     text: str
     source_reference: str | None
 
-
 @dataclass(frozen=True)
 class GenerationRequest:
     query: str
     evidence: tuple[GenerationEvidence, ...]
 
-
 @dataclass(frozen=True)
 class GenerationResult:
     answer: str
     cited_evidence_ids: tuple[str, ...]
-
 
 class GenerationClient(Protocol):
     def generate(self, request: GenerationRequest) -> GenerationResult:
@@ -885,7 +865,6 @@ def build_generation_request(
         ),
         evidence_lookup,
     )
-
 
 def validate_generation_result(
     result: GenerationResult,
@@ -958,7 +937,6 @@ The API layer owns HTTP validation, authentication, pagination policy, and respo
 from dataclasses import dataclass
 from typing import Literal, Protocol
 
-
 @dataclass(frozen=True)
 class SearchResponse:
     request_id: str
@@ -966,14 +944,12 @@ class SearchResponse:
     results: tuple[SearchResultView, ...]
     warnings: tuple[str, ...]
 
-
 class RetrievalService(Protocol):
     def retrieve(
         self,
         request: RetrievalRequest,
     ) -> RetrievalResponse:
         """Execute the authorized retrieval contract."""
-
 
 class SemanticSearchService:
     def __init__(
@@ -1098,7 +1074,6 @@ from dataclasses import dataclass
 
 import pytest
 
-
 @dataclass(frozen=True)
 class FakeProvenanceResolver:
     def resolve(self, candidate: Candidate) -> EvidenceProvenance:
@@ -1111,7 +1086,6 @@ class FakeProvenanceResolver:
             start_offset=None,
             end_offset=None,
         )
-
 
 def make_candidate(
     document_id: str = "doc-1",
@@ -1129,7 +1103,6 @@ def make_candidate(
         source_observations=(),
     )
 
-
 def make_request() -> RetrievalRequest:
     return RetrievalRequest(
         query="token expiry",
@@ -1139,7 +1112,6 @@ def make_request() -> RetrievalRequest:
         ),
         request_id="req-123",
     )
-
 
 def make_response(
     results: tuple[Candidate, ...],
@@ -1155,13 +1127,11 @@ def make_response(
         warnings=(),
     )
 
-
 def make_packager() -> EvidencePackager:
     return EvidencePackager(
         provenance_resolver=FakeProvenanceResolver(),
         allowed_metadata_fields=frozenset({"department"}),
     )
-
 
 def test_packager_preserves_identity_order_and_provenance():
     first = make_candidate("doc-1", "chunk-1")
@@ -1179,7 +1149,6 @@ def test_packager_preserves_identity_order_and_provenance():
     assert package.items[1].result_position == 2
     assert package.items[0].provenance.source_version == "v3"
 
-
 def test_packager_does_not_expose_non_allowlisted_metadata():
     package = make_packager().package(
         make_request(),
@@ -1190,7 +1159,6 @@ def test_packager_does_not_expose_non_allowlisted_metadata():
         "department": "engineering"
     }
     assert "internal_acl" not in package.items[0].metadata
-
 
 def test_packager_rejects_missing_provenance():
     class MissingProvenanceResolver:
@@ -1208,7 +1176,6 @@ def test_packager_rejects_missing_provenance():
             make_response((make_candidate(),)),
         )
 
-
 def test_packager_rejects_malformed_provenance():
     class MalformedResolver:
         def resolve(self, candidate: Candidate) -> EvidenceProvenance:
@@ -1224,7 +1191,6 @@ def test_packager_rejects_malformed_provenance():
             make_request(),
             make_response((make_candidate(),)),
         )
-
 
 def test_packager_wraps_unexpected_provenance_failure():
     class BrokenResolver:
@@ -1242,7 +1208,6 @@ def test_packager_wraps_unexpected_provenance_failure():
             make_response((make_candidate(),)),
         )
 
-
 def test_packager_rejects_request_response_mismatch():
     request = make_request()
     response = make_response((make_candidate(),))
@@ -1257,7 +1222,6 @@ def test_packager_rejects_request_response_mismatch():
     with pytest.raises(EvidencePackagingError):
         make_packager().package(wrong_request, response)
 
-
 def test_packager_rejects_duplicate_evidence_identity():
     candidate = make_candidate()
 
@@ -1267,14 +1231,12 @@ def test_packager_rejects_duplicate_evidence_identity():
             make_response((candidate, candidate)),
         )
 
-
 def test_packager_rejects_empty_status_with_results():
     with pytest.raises(EvidencePackagingError):
         make_packager().package(
             make_request(),
             make_response((make_candidate(),), status="empty"),
         )
-
 
 def test_packager_accepts_empty_response_without_results():
     package = make_packager().package(
@@ -1284,7 +1246,6 @@ def test_packager_accepts_empty_response_without_results():
 
     assert package.status == "empty"
     assert package.items == ()
-
 
 def test_packager_copies_allowlisted_metadata():
     candidate = make_candidate()
@@ -1317,7 +1278,6 @@ def make_mandatory_request() -> RetrievalRequest:
         request_id="req-123",
     )
 
-
 def make_constraint_outcome(
     status: str,
 ) -> ConstraintOutcome:
@@ -1329,7 +1289,6 @@ def make_constraint_outcome(
         enforcement_point="provider",
         diagnostic=None,
     )
-
 
 def test_packager_accepts_confirmed_mandatory_outcome():
     request = make_mandatory_request()
@@ -1347,7 +1306,6 @@ def test_packager_accepts_confirmed_mandatory_outcome():
 
     assert len(package.items) == 1
 
-
 @pytest.mark.parametrize("status", ["unsupported", "failed"])
 def test_packager_rejects_unconfirmed_mandatory_outcome(status):
     request = make_mandatory_request()
@@ -1364,7 +1322,6 @@ def test_packager_rejects_unconfirmed_mandatory_outcome(status):
     with pytest.raises(EvidencePackagingError):
         make_packager().package(request, response)
 
-
 def test_packager_rejects_missing_mandatory_outcome():
     request = make_mandatory_request()
     response = RetrievalResponse(
@@ -1379,7 +1336,6 @@ def test_packager_rejects_missing_mandatory_outcome():
 
     with pytest.raises(EvidencePackagingError):
         make_packager().package(request, response)
-
 
 def test_packager_rejects_duplicate_mandatory_outcomes():
     request = make_mandatory_request()
@@ -1396,7 +1352,6 @@ def test_packager_rejects_duplicate_mandatory_outcomes():
 
     with pytest.raises(EvidencePackagingError):
         make_packager().package(request, response)
-
 
 def test_packager_preserves_partial_response_without_results():
     request = make_request()

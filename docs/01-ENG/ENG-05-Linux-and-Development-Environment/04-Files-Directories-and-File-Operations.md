@@ -1962,13 +1962,3 @@ Ownership
 Continue with:
 
 **[05 — Users, Groups & Permissions](./05-Users-Groups-and-Permissions.md)**
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`04-Files-Directories-and-File-Operations.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

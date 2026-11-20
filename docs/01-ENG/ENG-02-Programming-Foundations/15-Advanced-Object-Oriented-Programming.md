@@ -530,11 +530,9 @@ class Car(Vehicle):
 
     pass
 
-
 class Truck(Vehicle):
 
     pass
-
 
 class Bus(Vehicle):
 
@@ -1266,13 +1264,11 @@ class Dog:
 
         print("Bark")
 
-
 class Cat:
 
     def speak(self):
 
         print("Meow")
-
 
 class Cow:
 

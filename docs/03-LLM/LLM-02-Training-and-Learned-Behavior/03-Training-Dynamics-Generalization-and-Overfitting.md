@@ -507,6 +507,6 @@ Early stopping can prevent unnecessary training when a monitored validation metr
 - [02 — Pretraining and Training Data](02-Pretraining-and-Training-Data.md) — how corpus composition and data quality influence training.
 - [04 — Supervised Fine-Tuning and Instruction Tuning](04-Supervised-Fine-Tuning-and-Instruction-Tuning.md) — the next chapter on supervised post-training.
 - [AIF-03 — Machine-Learning Foundations](../../02-AIF/AIF-03-Machine-Learning-Foundations/README.md) — foundational generalization and evaluation concepts. **Verify the exact path against the repository.**
-- [LLM-08 — Evaluation](../../LLM-08-Evaluation-and-Benchmarks/README.md) — systematic evaluation and benchmark design. **Verify the exact path against the repository.**
+- [LLM-08 — Evaluation](../LLM-08-Language-Model-Evaluation-and-Benchmarking/Readme.md) — systematic evaluation and benchmark design. **Verify the exact path against the repository.**
 
 The cross-topic paths are navigation candidates and have not been verified against the live repository.

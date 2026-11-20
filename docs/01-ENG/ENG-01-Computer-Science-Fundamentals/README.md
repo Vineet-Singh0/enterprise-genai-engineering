@@ -210,4 +210,3 @@ After completing this module, you will have a strong mental model of:
 * How data is stored and accessed.
 
 These concepts form the engineering foundation for every remaining module in the Enterprise GenAI Engineering curriculum.
-

@@ -763,7 +763,3 @@ These ideas prepare us to study race conditions and data races in the next chapt
 These resources provide language-specific examples. This chapter's concepts are intended to remain applicable beyond Python.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `02-Execution-Models-and-Shared-State.md`.

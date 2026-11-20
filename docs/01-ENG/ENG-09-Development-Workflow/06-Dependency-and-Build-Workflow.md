@@ -707,7 +707,3 @@ Answer these without referring to the chapter:
 - ENG-08 — Development Quality
 
 For ecosystem-specific behavior, consult the official documentation for the package manager and build tools used by the project. Exact commands, lockfile semantics, and build configuration differ across ecosystems.
-
----
-
-**End of Document:** `06-Dependency-and-Build-Workflow.md`

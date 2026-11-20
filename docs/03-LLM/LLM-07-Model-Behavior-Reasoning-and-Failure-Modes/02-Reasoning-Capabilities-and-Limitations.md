@@ -559,5 +559,3 @@ These sources provide broader background. They do not establish that any particu
 - Wei et al., [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) — Research on prompting models to produce intermediate reasoning steps.
 - Kojima et al., [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/abs/2205.11916) — Research on prompting and reasoning-task performance.
 - Valmeekam et al., [Large Language Models Still Can't Plan](https://arxiv.org/abs/2206.10498) — Research examining limitations in planning-related tasks.
-
-*End of Document*

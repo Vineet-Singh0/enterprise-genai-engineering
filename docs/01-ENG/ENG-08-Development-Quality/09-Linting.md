@@ -249,7 +249,6 @@ Create `sample.py`:
 ```python
 import os
 
-
 def calculate_total(price, quantity):
     unused_value = 100
     total = price * quantity
@@ -640,12 +639,10 @@ Create a file named `order_utils.py`:
 import os
 import json
 
-
 def calculate_total(price, quantity):
     unused_value = 10
     total = price * quantity
     return total
-
 
 def get_order_status(status):
     if status == "completed":
@@ -711,7 +708,3 @@ def get_order_status(status):
 - [mypy Documentation](https://mypy.readthedocs.io/)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `09-Linting.md`

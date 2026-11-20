@@ -676,5 +676,3 @@ This chapter established how TLS protects HTTP communication. The next chapters 
 - [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md): How to reason about communication failures, including TLS and certificate-related failures.
 
 ---
-
-# End of Document

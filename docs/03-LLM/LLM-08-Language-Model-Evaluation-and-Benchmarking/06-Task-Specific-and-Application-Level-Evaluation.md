@@ -804,4 +804,3 @@ Answer in your own words. Focus on engineering reasoning rather than memorizing 
 8. What is the risk of optimizing a proxy metric without checking whether it tracks the actual outcome?
 9. Design a layered evaluation strategy for a conversational application that must resolve user requests across multiple turns.
 10. After fixing one application failure, how would you establish that the fix did not introduce regressions in other workflows?
-

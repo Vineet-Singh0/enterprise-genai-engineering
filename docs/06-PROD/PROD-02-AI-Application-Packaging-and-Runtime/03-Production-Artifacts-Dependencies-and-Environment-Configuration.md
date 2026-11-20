@@ -27,7 +27,7 @@ You should already understand:
 
 Recommended reading:
 
-- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-Problem-and-Production-Boundaries/README.md)
+- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-System-Foundations/Readme.md)
 - [01 — AI Application Packaging and Reproducibility](./01-AI-Application-Packaging-and-Reproducibility.md)
 - [02 — Containers, Configuration, and Runtime Contracts](./02-Containers-Configuration-and-Runtime-Contracts.md)
 
@@ -1435,9 +1435,9 @@ Promotion Readiness
 
 ## Further Reading
 
-- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-Problem-and-Production-Boundaries/README.md)
+- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-System-Foundations/Readme.md)
 - [PROD-02 README — AI Application Packaging and Runtime](./README.md)
 - [02 — Containers, Configuration, and Runtime Contracts](./02-Containers-Configuration-and-Runtime-Contracts.md)
-- [PROD-04 — CI/CD, Artifact Promotion, and Release Safety](../PROD-04-CI-CD-Artifact-Promotion-and-Release-Safety/README.md)
-- [PROD-09 — Production AI Security and Trust](../PROD-09-Production-AI-Security-and-Trust/README.md)
-- [PROD-11 — Production AI Lifecycle and Continuous Improvement](../PROD-11-Production-AI-Lifecycle-and-Continuous-Improvement/README.md)
+- [PROD-04 — CI/CD, Artifact Promotion, and Release Safety](../PROD-04-Deployment-and-Release-Engineering/Readme.md)
+- [PROD-09 — Production AI Security and Trust](../PROD-09-Production-AI-Security/Readme.md)
+- [PROD-11 — Production AI Lifecycle and Continuous Improvement](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md)

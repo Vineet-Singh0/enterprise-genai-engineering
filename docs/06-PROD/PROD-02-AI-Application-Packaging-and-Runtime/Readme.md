@@ -557,12 +557,12 @@ Completion should be demonstrated through engineering reasoning, not memorizatio
 
 ### Related Production Topics
 
-- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-Problem-and-Production-Boundaries/README.md)
-- [PROD-03 — AI Model Serving](../PROD-03-AI-Model-Serving/README.md)
-- [PROD-04 — CI/CD and Production Delivery](../PROD-04-CI-CD-and-Production-Delivery/README.md)
-- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity/README.md)
-- [PROD-09 — Production AI Security and Supply-Chain Trust](../PROD-09-Production-AI-Security-and-Supply-Chain-Trust/README.md)
-- [PROD-11 — Production AI Lifecycle and Evaluation Integration](../PROD-11-Production-AI-Lifecycle-and-Evaluation-Integration/README.md)
+- [PROD-01 — Production AI Problem and Production Boundaries](../PROD-01-Production-AI-System-Foundations/Readme.md)
+- [PROD-03 — AI Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
+- [PROD-04 — CI/CD and Production Delivery](../PROD-04-Deployment-and-Release-Engineering/Readme.md)
+- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-09 — Production AI Security and Supply-Chain Trust](../PROD-09-Production-AI-Security/Readme.md)
+- [PROD-11 — Production AI Lifecycle and Evaluation Integration](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md)
 
 ---
 

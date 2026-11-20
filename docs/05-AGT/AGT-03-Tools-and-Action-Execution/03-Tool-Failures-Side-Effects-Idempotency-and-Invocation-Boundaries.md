@@ -1,6 +1,6 @@
-# AGT-03 — Tools & Action Execution
+# Tool Failures, Side Effects, Idempotency and Invocation Boundaries
 
-## 03 — Tool Execution, Results & Action Failures
+## 03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries
 
 ## Learning Objectives
 
@@ -32,10 +32,10 @@ Before reading this chapter, you should understand:
 
 These concepts are established in:
 
-- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Definition-and-System-Boundaries/README.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-and-Execution/README.md)
+- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
 - [01 — Tool Definitions, Contracts & Capability Boundaries](./01-Tool-Definitions-Contracts-and-Capability-Boundaries.md)
-- [02 — Tool Discovery, Selection & Invocation](./02-Tool-Discovery-Selection-and-Invocation.md)
+- [02 — Tool Selection, Routing and Execution](./02-Tool-Selection-Routing-and-Execution.md)
 
 ---
 
@@ -1341,7 +1341,6 @@ The following simplified Python example demonstrates an execution wrapper that d
 from dataclasses import dataclass
 from typing import Any, Callable
 
-
 @dataclass
 class ToolResult:
     status: str
@@ -1349,10 +1348,8 @@ class ToolResult:
     error: str | None = None
     invocation_id: str | None = None
 
-
 class ExecutionTimeout(Exception):
     pass
-
 
 def execute_tool(
     handler: Callable[..., Any],
@@ -2053,9 +2050,9 @@ The AGT-03 chapter is now complete:
 ```text
 01 — Tool Definitions, Contracts & Capability Boundaries
         ↓
-02 — Tool Discovery, Selection & Invocation
+02 — Tool Selection, Routing and Execution
         ↓
-03 — Tool Execution, Results & Action Failures
+03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries
 ```
 
 The complete action boundary is:

@@ -121,7 +121,6 @@ Real Payment Client
  v
 External Provider
 
-
 With a test double:
 
 Test
@@ -352,7 +351,6 @@ from unittest.mock import Mock
 
 from order_service import OrderService
 
-
 def test_confirms_order_when_payment_succeeds():
     payment_client = Mock()
     payment_client.charge.return_value = {
@@ -414,7 +412,6 @@ import pytest
 from unittest.mock import Mock
 
 from order_service import OrderService
-
 
 def test_propagates_payment_dependency_failure():
     payment_client = Mock()
@@ -484,7 +481,6 @@ Create `notification_service.py`:
 ```python
 from email_sender import send_email
 
-
 def notify_user(email: str) -> str:
     send_email(email, "Your order is confirmed")
     return "Notification requested"
@@ -498,7 +494,6 @@ A test can patch that imported name:
 from unittest.mock import patch
 
 from notification_service import notify_user
-
 
 def test_notify_user_requests_email():
     with patch(
@@ -817,11 +812,3 @@ The goal is not simply to make the tests pass. It is to understand exactly what 
 - [pytest — Official Documentation](https://docs.pytest.org/en/stable/): Test execution, fixtures, and test organization.
 
 Consult the documentation for the actual dependency and its test environment when verifying real integration behavior.
-
----
-
-# End of Document
-
-This completes the Markdown file: `03-Mocking.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

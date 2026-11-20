@@ -39,7 +39,7 @@ Related concepts have their primary explanations elsewhere:
 - [04 — Coupling and Cohesion](04-Coupling-and-Cohesion.md) explains dependency relationships and their effects.
 - [05 — SOLID Principles](05-SOLID-Principles.md) explains the Dependency Inversion Principle.
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md) explains architectural boundaries and dependency direction.
-- [08 — Design Patterns](08-Design-Patterns/README.md) covers recurring design solutions.
+- [08 — Design Patterns](./08-Design-Patterns.md) covers recurring design solutions.
 
 ---
 
@@ -125,7 +125,6 @@ A test can supply a controlled implementation:
 class FakeUserRepository:
     def get_by_id(self, user_id: int):
         return {"id": user_id, "name": "Test User"}
-
 
 service = UserService(FakeUserRepository())
 
@@ -221,7 +220,6 @@ class PostgreSQLUserRepository:
     def get_by_id(self, user_id: int):
         ...
 
-
 class UserService:
     def __init__(self, repository: PostgreSQLUserRepository):
         self.repository = repository
@@ -234,11 +232,9 @@ Now consider a protocol:
 ```python
 from typing import Protocol
 
-
 class UserRepository(Protocol):
     def get_by_id(self, user_id: int):
         ...
-
 
 class UserService:
     def __init__(self, repository: UserRepository):
@@ -382,11 +378,9 @@ Consider a small order-processing system.
 ```python
 from typing import Protocol
 
-
 class OrderRepository(Protocol):
     def get_by_id(self, order_id: int):
         ...
-
 
 class PaymentGateway(Protocol):
     def charge(self, amount: float) -> None:
@@ -490,21 +484,17 @@ from fastapi import Depends, FastAPI
 
 app = FastAPI()
 
-
 class UserService:
     def get_user(self, user_id: int) -> dict:
         return {"id": user_id, "name": "Example User"}
 
-
 def get_user_service() -> UserService:
     return UserService()
-
 
 UserServiceDependency = Annotated[
     UserService,
     Depends(get_user_service),
 ]
-
 
 @app.get("/users/{user_id}")
 def read_user(
@@ -554,7 +544,6 @@ from sqlalchemy.orm import Session, sessionmaker
 # Configured during application initialization.
 SessionLocal = sessionmaker()
 
-
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()
 
@@ -586,22 +575,18 @@ For example, a test can provide a fake service instead of using the normal provi
 ```python
 from fastapi.testclient import TestClient
 
-
 class FakeUserService:
     def get_user(self, user_id: int) -> dict:
         return {"id": user_id, "name": "Test User"}
 
-
 def get_fake_user_service() -> FakeUserService:
     return FakeUserService()
-
 
 app.dependency_overrides[get_user_service] = (
     get_fake_user_service
 )
 
 client = TestClient(app)
-
 
 def test_read_user():
     response = client.get("/users/42")
@@ -655,7 +640,6 @@ class FakeOrderRepository:
 
     def get_by_id(self, order_id: int):
         return self.orders.get(order_id)
-
 
 class FakePaymentGateway:
     def __init__(self):
@@ -1161,7 +1145,7 @@ A strong answer should distinguish construction from lifecycle management, accou
 Continue in the approved chapter order:
 
 1. [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-2. [08 — Design Patterns](08-Design-Patterns/README.md)
+2. [08 — Design Patterns](./08-Design-Patterns.md)
 3. [09 — Refactoring](09-Refactoring.md)
 
 For the complete module structure and learning path, see [README.md](README.md).

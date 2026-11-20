@@ -114,16 +114,16 @@ A production engineer must identify the mechanism behind the observed behavior b
 Think of model behavior as the interaction of four major influences.
 
 ```text
-**1. Learned parameters**
+1. Learned parameters
 Representations and patterns acquired through optimization
-**2. Training signals**
+2. Training signals
 Prediction targets, demonstrations, and preference objectives
-**3. Inference context**
+3. Inference context
 Instructions, conversation history, retrieved information, and task framing
-**4. Generation and runtime controls**
+4. Generation and runtime controls
 Decoding settings, output constraints, validation, and application policies
         ↓
-**Observable model behavior**
+Observable model behavior
 The response produced in a particular situation
 ```
 
@@ -230,16 +230,16 @@ The effect of a training stage depends on the model produced by previous stages.
 A simplified development sequence is:
 
 ```text
-**Pretraining**
+Pretraining
 Broad prediction-based learning
         ↓
-**Supervised fine-tuning**
+Supervised fine-tuning
 Instruction-response demonstrations shape task behavior
         ↓
-**Preference-based optimization**
+Preference-based optimization
 Preference signals further influence response selection
         ↓
-**Evaluation and deployment**
+Evaluation and deployment
 Test whether the intended behavior appears reliably in practice
 ```
 
@@ -714,4 +714,3 @@ The following resources connect the training stages covered in this domain. Use 
 6. **Hugging Face TRL Documentation**  
    https://huggingface.co/docs/trl  
    Provides implementation resources for supervised fine-tuning and preference-based training workflows.
-

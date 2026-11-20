@@ -176,4 +176,3 @@ The hierarchy has been approved as the working documentation plan. The following
 - **Dependency claims:** The pillar order should not be interpreted as proof that every earlier pillar is a mandatory prerequisite for every later pillar.
 
 These limitations do not block generation under the approved plan, but they must not be represented as validated facts.
-

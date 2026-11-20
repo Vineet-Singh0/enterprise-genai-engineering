@@ -144,5 +144,3 @@ A learner who can identify a failure but cannot investigate its cause or verify 
 Begin with [Chapter 01 — Model Behavior Fundamentals](01-Model-Behavior-Fundamentals.md) after this README and its proposed chapter structure have been approved.
 
 ---
-
-*End of Document*

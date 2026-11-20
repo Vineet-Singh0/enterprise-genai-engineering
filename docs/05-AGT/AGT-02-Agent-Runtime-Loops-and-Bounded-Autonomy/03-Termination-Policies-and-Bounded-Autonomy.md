@@ -30,7 +30,7 @@ Before reading this chapter, you should understand:
 
 Recommended previous reading:
 
-- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Definition-and-System-Boundaries/README.md)
+- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Systems-Foundations/Readme.md)
 - [AGT-02 — Agent Runtime, Loops & Bounded Autonomy](./README.md)
 - [01 — Agent Runtime Harness and Execution Loop](./01-Agent-Runtime-Harness-and-Execution-Loop.md)
 - [02 — Agent Decision, Action, Observation and Continuation](./02-Agent-Decision-Action-Observation-and-Continuation.md)
@@ -2061,11 +2061,11 @@ The central engineering lesson is:
 
 ## Further Reading
 
-- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Definition-and-System-Boundaries/README.md)
+- [AGT-01 — Agent Definition and System Boundaries](../AGT-01-Agent-Systems-Foundations/Readme.md)
 - [AGT-02 — Agent Runtime, Loops & Bounded Autonomy](./README.md)
 - [01 — Agent Runtime Harness and Execution Loop](./01-Agent-Runtime-Harness-and-Execution-Loop.md)
 - [02 — Agent Decision, Action, Observation and Continuation](./02-Agent-Decision-Action-Observation-and-Continuation.md)
-- [AGT-04 — State, Context and Memory](../AGT-04-Agent-State-Context-and-Memory/README.md)
-- [AGT-05 — Planning and Replanning](../AGT-05-Agent-Planning-and-Replanning/README.md)
+- [AGT-04 — State, Context and Memory](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-05 — Planning and Replanning](../AGT-05-Planning-and-Adaptive-Execution/Readme.md)
 - [AGT-06 — Workflow Orchestration and Durable Execution](../AGT-06-Workflow-Orchestration-and-Durable-Execution/README.md)
-- [AGT-11 — Reliability, Recovery and Safety](../AGT-11-Agent-Reliability-Recovery-and-Safety/README.md)
+- [AGT-11 — Reliability, Recovery and Safety](../AGT-11-Agent-Reliability-and-Safety/Readme.md)

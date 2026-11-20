@@ -33,8 +33,8 @@ Complete the following Engineering Foundations modules before beginning ENG-06:
 - [ENG-01 — Computer Science Fundamentals](../ENG-01-Computer-Science-Fundamentals/README.md)
 - [ENG-02 — Programming Foundations](../ENG-02-Programming-Foundations/README.md)
 - [ENG-03 — Software Engineering Principles](../ENG-03-Software-Engineering-Principles/README.md)
-- [ENG-04 — Version Control & Collaborative Development](../ENG-04-Version-Control-Collaborative-Development/README.md)
-- [ENG-05 — Linux & Development Environment](../ENG-05-Linux-Development-Environment/README.md)
+- [ENG-04 — Version Control & Collaborative Development](../ENG-04-Version-Control-and-Collaborative-Development/readme.md)
+- [ENG-05 — Linux & Development Environment](../ENG-05-Linux-and-Development-Environment/Readme.md)
 
 These modules provide the background knowledge needed to understand application behavior, programming examples, development environments, and basic command-line operations.
 

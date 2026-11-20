@@ -1691,13 +1691,3 @@ That leads to the shell and command line.
 Continue with:
 
 [**03 — Shell & Command Line →**](03-Shell-and-Command-Line.md)
-
----
-
-## End of Document
-
-This completes the Markdown file:
-
-`02-Linux-Filesystem.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

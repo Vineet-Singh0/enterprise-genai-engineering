@@ -482,8 +482,8 @@ No. Their data, architectures, parameter initialization, optimization settings, 
 Use these repository topics to deepen the relevant foundations:
 
 - [AIF-03 — Machine-Learning Foundations](../../02-AIF/AIF-03-Machine-Learning-Foundations/README.md) — foundational learning and generalization concepts. **Verify the exact path against the repository.**
-- [AIF-04 — Neural Networks and Deep Learning](../../02-AIF/AIF-04-Neural-Networks-and-Deep-Learning/README.md) — neural-network training and optimization foundations. **Verify the exact path against the repository.**
-- [AIF-06 — Sequential Modeling](../../02-AIF/AIF-06-Sequential-Modeling/README.md) — sequence modeling foundations. **Verify the exact path against the repository.**
+- [AIF-04 — Neural Networks and Deep Learning](../../02-AIF/AIF-04-Deep-Learning-Foundations/Readme.md) — neural-network training and optimization foundations. **Verify the exact path against the repository.**
+- [AIF-06 — Sequential Modeling](../../02-AIF/AIF-06-Sequence-Modeling/Readme.md) — sequence modeling foundations. **Verify the exact path against the repository.**
 - [AIF-07 — Transformer Foundations](../../02-AIF/AIF-07-Transformer-Foundations/README.md) — Transformer architecture and information flow.
 - [LLM-02 README](README.md) — the topic learning path and chapter navigation.
 - [02 — Pretraining and Training Data](02-Pretraining-and-Training-Data.md) — the next chapter, covering how pretraining data and its composition influence learning.

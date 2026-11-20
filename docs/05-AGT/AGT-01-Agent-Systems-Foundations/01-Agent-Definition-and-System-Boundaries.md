@@ -2295,15 +2295,13 @@ And:
 
 The following topics should be studied next within the Enterprise GenAI Engineering curriculum:
 
-- [AGT-02 — Agent Runtime, Loops & Bounded Autonomy](../AGT-02/README.md)
-- [AGT-03 — Tools & Action Execution](../AGT-03/README.md)
-- [AGT-04 — State, Context & Memory](../AGT-04/README.md)
-- [AGT-05 — Planning & Adaptive Execution](../AGT-05/README.md)
+- [AGT-02 — Agent Runtime, Loops & Bounded Autonomy](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools & Action Execution](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — State, Context & Memory](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-05 — Planning & Adaptive Execution](../AGT-05-Planning-and-Adaptive-Execution/Readme.md)
 
 These chapters expand the foundational vocabulary introduced here.
 
 AGT-01.01 should not be treated as a condensed version of those chapters. Its purpose is to establish the system-level mental model and responsibility boundaries required to understand them.
 
 ---
-
-## End of Document

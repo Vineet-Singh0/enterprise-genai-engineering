@@ -572,7 +572,6 @@ The final review should produce a small decision record.
 from dataclasses import dataclass
 from typing import Literal
 
-
 @dataclass(frozen=True)
 class DesignReviewDecision:
     decision: str

@@ -602,7 +602,6 @@ Conceptually:
      ↓
 Local access
 
-
 0.0.0.0:8000
      ↓
 Listen across available IPv4 interfaces
@@ -2277,13 +2276,3 @@ The next chapter is:
 [13 — Logs & System Troubleshooting](./13-Logs-and-System-Troubleshooting.md)
 
 The focus will be on turning system and application evidence into a structured troubleshooting process rather than debugging through guesswork.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`12-Linux-Networking-Basics.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

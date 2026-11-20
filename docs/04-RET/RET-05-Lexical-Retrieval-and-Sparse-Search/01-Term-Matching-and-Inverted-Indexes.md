@@ -890,11 +890,9 @@ documents = {
     "D5": "connection timeout runbook",
 }
 
-
 def analyze(text: str) -> list[str]:
     """Apply a deliberately simple lowercase, whitespace-based analysis."""
     return text.lower().split()
-
 
 def build_inverted_index(documents: dict[str, str]):
     index = defaultdict(set)
@@ -904,7 +902,6 @@ def build_inverted_index(documents: dict[str, str]):
             index[term].add(document_id)
 
     return dict(index)
-
 
 def search_and(index, query: str) -> set[str]:
     """Return documents containing every analyzed query term."""
@@ -922,7 +919,6 @@ def search_and(index, query: str) -> set[str]:
 
     return result
 
-
 def search_or(index, query: str) -> set[str]:
     """Return documents containing at least one analyzed query term."""
     result = set()
@@ -931,7 +927,6 @@ def search_or(index, query: str) -> set[str]:
         result.update(index.get(term, set()))
 
     return result
-
 
 index = build_inverted_index(documents)
 
@@ -1148,11 +1143,3 @@ Useful starting points include:
 - [OpenSearch — Text analysis](https://docs.opensearch.org/latest/analyzers/)
 
 These references provide implementation-specific details. The examples and diagrams in this chapter remain simplified teaching models and should not be treated as exact descriptions of every search engine's internal execution.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Term-Matching-and-Inverted-Indexes.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

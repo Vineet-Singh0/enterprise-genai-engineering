@@ -54,7 +54,7 @@ Finite Capacity
 
 PROD-07 builds on this model and extends it into demand characterization, resource sizing, and scaling decisions.
 
-For serving architecture and inference mechanisms, refer to [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Inference-and-Model-Serving/README.md).
+For serving architecture and inference mechanisms, refer to [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md).
 
 For observability concepts used as capacity inputs, refer to [PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md).
 
@@ -2353,7 +2353,7 @@ For capacity validation and testing, continue afterward with:
 
 For related production disciplines:
 
-- [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Inference-and-Model-Serving/README.md)
+- [PROD-03 — Production Inference and Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md)
 - [PROD-06 — Production AI Reliability](../PROD-06-Production-AI-Reliability/README.md)
 - [PROD-08 — AI Performance, Optimization and Cost](../PROD-08-AI-Performance-Optimization-and-Cost/README.md)

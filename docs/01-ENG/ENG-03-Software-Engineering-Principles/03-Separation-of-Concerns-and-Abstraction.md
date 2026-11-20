@@ -52,7 +52,6 @@ from sqlalchemy import text
 
 app = FastAPI()
 
-
 @app.post("/users")
 def register_user(email: str, password: str):
     if "@" not in email:
@@ -462,7 +461,6 @@ For example:
 def get_user(user_id):
     return user_service.get_user(user_id)
 
-
 def get_user(user_id):
     return user_repository.get_user(user_id)
 ```
@@ -490,7 +488,6 @@ First, define the operations the registration workflow requires.
 ```python
 from typing import Protocol
 
-
 class UserRepository(Protocol):
     def create(
         self,
@@ -498,7 +495,6 @@ class UserRepository(Protocol):
         password_hash: str,
     ) -> None:
         ...
-
 
 class NotificationSender(Protocol):
     def send_welcome_email(self, email: str) -> None:
@@ -554,7 +550,6 @@ A FastAPI endpoint can delegate the workflow:
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
-
 
 @app.post("/users")
 def register_user(email: str, password: str):

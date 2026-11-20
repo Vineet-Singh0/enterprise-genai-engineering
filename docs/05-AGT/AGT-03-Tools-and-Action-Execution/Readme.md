@@ -118,8 +118,8 @@ After completing AGT-03, you should be able to:
 | File | Primary Focus | Primary Question |
 |---|---|---|
 | [01 — Tool Definitions, Contracts & Capability Boundaries](./01-Tool-Definitions-Contracts-and-Capability-Boundaries.md) | Tool contracts and capability boundaries | What makes a tool a well-defined and usable capability for an agent? |
-| [02 — Tool Discovery, Selection & Invocation](./02-Tool-Discovery-Selection-and-Invocation.md) | Discovery, selection, argument construction, and invocation | How does an agent determine which available capability to use and invoke it correctly? |
-| [03 — Tool Execution, Results & Action Failures](./03-Tool-Execution-Results-and-Action-Failures.md) | Execution, results, failures, retries, and side effects | What happens when a tool actually executes, returns a result, or fails? |
+| [02 — Tool Selection, Routing and Execution](./02-Tool-Selection-Routing-and-Execution.md) | Discovery, selection, argument construction, and invocation | How does an agent determine which available capability to use and invoke it correctly? |
+| [03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries](./03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md) | Execution, results, failures, retries, and side effects | What happens when a tool actually executes, returns a result, or fails? |
 
 ---
 
@@ -295,19 +295,19 @@ Read:
 
 Focus on understanding the capability exposed by a tool and the contract that bounds it.
 
-### Step 2 — Discovery, Selection and Invocation
+### Step 2 — Selection, Routing and Execution
 
 Read:
 
-[02 — Tool Discovery, Selection & Invocation](./02-Tool-Discovery-Selection-and-Invocation.md)
+[02 — Tool Selection, Routing and Execution](./02-Tool-Selection-Routing-and-Execution.md)
 
 Focus on how available capabilities are discovered, selected, and invoked.
 
-### Step 3 — Execution, Results and Failures
+### Step 3 — Failures, Side Effects and Invocation Boundaries
 
 Read:
 
-[03 — Tool Execution, Results & Action Failures](./03-Tool-Execution-Results-and-Action-Failures.md)
+[03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries](./03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md)
 
 Focus on how invocation becomes execution and how results, failures, retries, idempotency, side effects, and observability are handled.
 
@@ -406,8 +406,8 @@ This estimate covers the three lessons and assumes normal technical reading with
 AGT-03-Tools-and-Action-Execution/
 ├── README.md
 ├── 01-Tool-Definitions-Contracts-and-Capability-Boundaries.md
-├── 02-Tool-Discovery-Selection-and-Invocation.md
-└── 03-Tool-Execution-Results-and-Action-Failures.md
+├── 02-Tool-Selection-Routing-and-Execution.md
+└── 03-Tool-Failures-Side-Effects-Idempotency-and-Invocation-Boundaries.md
 ```
 
 The chapter intentionally contains exactly three lessons.

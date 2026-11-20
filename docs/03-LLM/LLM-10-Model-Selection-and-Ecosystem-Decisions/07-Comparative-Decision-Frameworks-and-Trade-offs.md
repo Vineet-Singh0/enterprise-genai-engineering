@@ -766,4 +766,3 @@ Consult the relevant authoritative documentation and preceding chapters when app
 - The preceding LLM-10 chapters for requirements, candidate shortlisting, evidence, cost, ecosystem fit, and adaptation dependencies.
 - Production AI Engineering documentation for deployment and operational acceptance.
 - Enterprise AI Systems documentation for governance, security, and compliance constraints.
-

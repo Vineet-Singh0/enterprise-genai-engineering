@@ -775,7 +775,3 @@ These principles prepare us for the next chapter, **Deadlocks and Related Proble
 These references provide language-specific details. Always verify the guarantees of the actual programming language and runtime used by your application.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `04-Synchronization-Fundamentals.md`.

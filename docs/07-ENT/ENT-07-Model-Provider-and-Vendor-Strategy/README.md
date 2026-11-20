@@ -244,7 +244,7 @@ ENT-06 — Enterprise Integration and Platform Architecture
 ENT-08 — AI Economics, FinOps and Portfolio Governance
 
 **ENT Domain:**  
-[ENT — Enterprise Architecture and Governance](../README.md)
+[ENT — Enterprise Architecture and Governance](../readme.md)
 
 ---
 

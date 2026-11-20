@@ -327,7 +327,6 @@ For example:
 def multiply(a: int, b: int) -> int:
     return a * b
 
-
 def test_multiply():
     assert multiply(4, 5) == 20
 ```
@@ -507,24 +506,20 @@ import pytest
 
 from pricing import calculate_final_price
 
-
 def test_calculates_price_after_discount():
     result = calculate_final_price(1000, 10)
 
     assert result == 900
-
 
 def test_zero_discount_preserves_price():
     result = calculate_final_price(1000, 0)
 
     assert result == 1000
 
-
 def test_full_discount_returns_zero():
     result = calculate_final_price(1000, 100)
 
     assert result == 0
-
 
 def test_rejects_negative_price():
     with pytest.raises(
@@ -533,14 +528,12 @@ def test_rejects_negative_price():
     ):
         calculate_final_price(-100, 10)
 
-
 def test_rejects_discount_above_100():
     with pytest.raises(
         ValueError,
         match="Discount must be between 0 and 100",
     ):
         calculate_final_price(1000, 120)
-
 
 def test_rejects_negative_discount():
     with pytest.raises(
@@ -598,7 +591,6 @@ For example:
 import pytest
 
 from pricing import calculate_final_price
-
 
 @pytest.mark.parametrize(
     ("price", "discount", "expected"),
@@ -989,11 +981,3 @@ Do not focus only on making all tests pass. Focus on whether the suite would det
 - [Python — `unittest` Documentation](https://docs.python.org/3/library/unittest.html): Python's standard-library unit-testing framework and its testing concepts.
 
 Use these references to deepen your understanding of the framework and its capabilities. The engineering principles in this chapter remain applicable across different testing frameworks.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Unit-Testing.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

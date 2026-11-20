@@ -626,7 +626,6 @@ Evaluation
 Shared Platform Capabilities
 Common Engineering Practices
 
-
 Domain-Specific
 
 Customer Workflows

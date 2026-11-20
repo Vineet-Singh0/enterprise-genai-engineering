@@ -530,11 +530,3 @@ Different applications have different language requirements, input types, and pe
 - [RFC 3629 — UTF-8](https://www.rfc-editor.org/rfc/rfc3629) — The UTF-8 character encoding and its byte representation.
 
 These references provide background for further investigation. Exact behavior should always be verified against the tokenizer implementation and configuration under consideration.
-
----
-
-# End of Document
-
-This completes the Markdown file: `02-Tokenization-Approaches-and-Design-Trade-offs.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

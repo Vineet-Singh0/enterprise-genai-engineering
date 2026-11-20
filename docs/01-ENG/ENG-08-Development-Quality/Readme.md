@@ -57,7 +57,7 @@ Study the chapters in the following order.
 | Chapter | Description |
 |---|---|
 | [07 — Static Analysis](07-Static-Analysis.md) | Examine source code without executing the application. |
-| [08 — Formatting](08-Formatting.md) | Maintain consistent source-code presentation. |
+| 08 — Formatting | Maintain consistent source-code presentation. |
 | [09 — Linting](09-Linting.md) | Detect rule violations, suspicious patterns, and selected code-quality issues. |
 
 ### 4. Performance Reasoning

@@ -2393,13 +2393,3 @@ The next chapter introduces:
 [12 — Linux Networking Basics](./12-Linux-Networking-Basics.md)
 
 It will focus on the networking concepts required by a software and GenAI engineer without turning into an advanced networking or network-administration course.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`11-Shell-Scripting-Fundamentals.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

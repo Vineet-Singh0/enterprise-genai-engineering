@@ -1814,15 +1814,15 @@ Remember:
 
 For deeper understanding, continue into the relevant production chapters:
 
-- [PROD-01 — Production System Foundations](../PROD-01-Production-System-Foundations/README.md)
-- [PROD-04 — Deployment and Release](../PROD-04-Deployment-and-Release/README.md)
-- [PROD-05 — Observability](../PROD-05-Observability/README.md)
-- [PROD-06 — Reliability](../PROD-06-Reliability/README.md)
-- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity/README.md)
-- [PROD-08 — Performance and Cost](../PROD-08-Performance-and-Cost/README.md)
-- [PROD-09 — Security](../PROD-09-Security/README.md)
-- [PROD-10 — Operations and Incident Management](../PROD-10-Operations-and-Incident-Management/README.md)
+- [PROD-01 — Production System Foundations](../PROD-01-Production-AI-System-Foundations/Readme.md)
+- [PROD-04 — Deployment and Release](../PROD-04-Deployment-and-Release-Engineering/Readme.md)
+- [PROD-05 — Observability](../PROD-05-AI-Observability-and-Telemetry/Readme.md)
+- [PROD-06 — Reliability](../PROD-06-Production-AI-Reliability/Readme.md)
+- [PROD-07 — Scaling and Capacity](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-08 — Performance and Cost](../PROD-08-AI-Performance-Optimization-and-Cost/Readme.md)
+- [PROD-09 — Security](../PROD-09-Production-AI-Security/Readme.md)
+- [PROD-10 — Operations and Incident Management](../PROD-10-AI-Operations-and-Incident-Management/Readme.md)
 - [PROD-11 — AI Lifecycle, Evaluation and Continuous Improvement](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/README.md)
-- [AGT-12 — Agent Architecture](../../05-AGT/AGT-12-Agent-Architecture/README.md)
+- [AGT-12 — Agent Architecture](../../05-AGT/AGT-12-Agent-Architecture-and-Design-Review/Readme.md)
 
 These chapters provide the implementation and operational foundations that PROD-12 synthesizes into production architecture decisions.

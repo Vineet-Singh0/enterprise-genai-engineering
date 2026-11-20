@@ -182,8 +182,6 @@ LLM-05 focuses on the mechanics of inference and generation. Related topics reta
 | PROD — Production AI Engineering | Covers serving, batching, deployment, performance optimization, and operations. |
 | ENT — Enterprise AI Systems | Covers enterprise architecture, governance, security, and risk management. |
 
-Repository-relative links to these neighboring topics should be added after their exact paths have been verified.
-
 ## Completion Criteria
 
 Reading the chapters is not sufficient to demonstrate mastery.
@@ -220,4 +218,3 @@ These boundaries prevent duplicate teaching and keep topic focus clear across th
 **Module:** LLM-05 — Inference and Text Generation
 
 **Repository:** `enterprise-genai-engineering`
-

@@ -1114,7 +1114,3 @@ Do not assume the optimized version is automatically better in every scenario. U
 - [Python `functools` Module](https://docs.python.org/3/library/functools.html)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `10-Performance-Fundamentals.md`

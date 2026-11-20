@@ -38,10 +38,10 @@ Recommended prerequisites include:
 
 Recommended prerequisite chapters:
 
-- [AGT-01 — Agent Foundations](../AGT-01/README.md)
-- [AGT-02 — Runtime, Loops & Bounded Autonomy](../AGT-02/README.md)
-- [AGT-03 — Tools, Contracts & Execution](../AGT-03/README.md)
-- [AGT-04 — State, Context & Memory](../AGT-04/README.md)
+- [AGT-01 — Agent Foundations](../AGT-01-Agent-Systems-Foundations/Readme.md)
+- [AGT-02 — Runtime, Loops & Bounded Autonomy](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools, Contracts & Execution](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — State, Context & Memory](../AGT-04-State-Context-and-Memory/Readme.md)
 
 AGT-02 is particularly important because this chapter builds a planning capability **around** runtime execution rather than replacing it.
 
@@ -2179,9 +2179,9 @@ The next chapter builds directly on this foundation by examining what happens wh
 
 For the surrounding agent architecture, continue with:
 
-- [AGT-02 — Runtime, Loops & Bounded Autonomy](../AGT-02/README.md)
-- [AGT-03 — Tools, Contracts & Execution](../AGT-03/README.md)
-- [AGT-04 — State, Context & Memory](../AGT-04/README.md)
+- [AGT-02 — Runtime, Loops & Bounded Autonomy](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tools, Contracts & Execution](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — State, Context & Memory](../AGT-04-State-Context-and-Memory/Readme.md)
 
 For the next AGT-05 concept:
 

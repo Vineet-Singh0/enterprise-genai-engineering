@@ -895,11 +895,3 @@ The following resources provide optional additional context:
 - The official NetworkX documentation. Provides practical examples of graph representations and graph algorithms that can help illustrate search-related concepts.
 
 These resources supplement the conceptual foundations in this chapter. Detailed algorithm implementations, agent orchestration, and knowledge-graph infrastructure remain outside the scope of this document.
-
----
-
-# End of Document
-
-This completes the Markdown file: `03-Search-Reasoning-and-Knowledge-Representation.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

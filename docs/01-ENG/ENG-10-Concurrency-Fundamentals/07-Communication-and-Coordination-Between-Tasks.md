@@ -967,7 +967,3 @@ The next chapter, **Concurrency Models and Practical Trade-offs**, compares the 
 These references provide Python-specific implementation details. Verify the guarantees of the actual communication mechanism used by your application.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `07-Communication-and-Coordination-Between-Tasks.md`.

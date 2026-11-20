@@ -818,5 +818,3 @@ This chapter focused on REST as an architectural style. The next chapters cover 
 - [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md): How to reason about communication failures and troubleshoot them systematically.
 
 ---
-
-# End of Document

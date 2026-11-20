@@ -402,6 +402,6 @@ The goal is to develop a reliable mental model that can be used when designing, 
 
 After completing AGT-01, continue with:
 
-[`AGT-02 — Agent Runtime, Loops & Bounded Autonomy`](../AGT-02/README.md)
+[`AGT-02 — Agent Runtime, Loops & Bounded Autonomy`](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
 
 AGT-02 takes the foundational concept of agent execution introduced here and develops the runtime, execution-loop, continuation, termination, cancellation, execution-budget, and bounded-autonomy concepts in detail.

@@ -27,7 +27,7 @@ Recommended references:
 - [02 — From Neural Language Models to Modern LLMs](02-From-Neural-Language-Models-to-Modern-LLMs.md)
 - [03 — Modern Language Model Families](03-Modern-Language-Model-Families.md)
 
-Detailed training objectives, optimization procedures, and alignment methods belong in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Language-Model-Training-and-Learned-Behavior/README.md).
+Detailed training objectives, optimization procedures, and alignment methods belong in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Training-and-Learned-Behavior/Readme.md).
 
 ## 3. Estimated Reading Time
 

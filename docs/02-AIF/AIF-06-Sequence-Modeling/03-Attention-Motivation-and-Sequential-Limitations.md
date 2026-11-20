@@ -581,7 +581,7 @@ Making representations available to one another does not guarantee that the mode
 
 - [Chapter 01 — Sequential Data and Language Sequences](01-Sequential-Data-and-Language-Sequences.md)
 - [Chapter 02 — Recurrent Neural Networks and LSTMs](02-Recurrent-Neural-Networks-and-LSTMs.md)
-- [AIF-04 — Neural Networks and Deep Learning](../AIF-04-Neural-Networks-and-Deep-Learning/README.md) — provisional path; verify against the repository.
-- [AIF-07 — Attention and Transformer Architectures](../AIF-07-Attention-and-Transformer-Architectures/README.md) — provisional path; verify against the repository.
+- [AIF-04 — Neural Networks and Deep Learning](../AIF-04-Deep-Learning-Foundations/Readme.md)
+- [AIF-07 — Attention and Transformer Architectures](../AIF-07-Transformer-Foundations/Readme.md)
 
 The next topic should build on this motivation by studying attention mechanisms and Transformer architectures in detail. This chapter intentionally does not teach attention equations, self-attention, multi-head attention, positional encoding, or Transformer internals.

@@ -42,11 +42,11 @@ Recommended preceding files:
 
 Related production chapters:
 
-- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-AI-Serving-and-Runtime-Architecture/README.md)
+- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md)
-- [PROD-06 — AI Reliability Engineering](../PROD-06-AI-Reliability-Engineering/README.md)
-- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-AI-Capacity-Planning-and-Scaling/README.md)
-- [PROD-11 — AI Lifecycle, Evaluation and Regression Management](../PROD-11-AI-Lifecycle-Evaluation-and-Regression-Management/README.md)
+- [PROD-06 — AI Reliability Engineering](../PROD-06-Production-AI-Reliability/Readme.md)
+- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-11 — AI Lifecycle, Evaluation and Regression Management](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md)
 
 ---
 
@@ -1089,7 +1089,7 @@ Useful for understanding:
 - queueing,
 - tail latency.
 
-Detailed capacity planning belongs to [PROD-07](../PROD-07-AI-Capacity-Planning-and-Scaling/README.md).
+Detailed capacity planning belongs to [PROD-07](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md).
 
 ---
 
@@ -1994,7 +1994,7 @@ cost
 
 The decision should consider the required quality level.
 
-Detailed AI evaluation methodology belongs to [PROD-11](../PROD-11-AI-Lifecycle-Evaluation-and-Regression-Management/README.md).
+Detailed AI evaluation methodology belongs to [PROD-11](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md).
 
 PROD-08 consumes the required quality signal as a decision constraint rather than re-teaching evaluation methodology.
 

@@ -166,5 +166,3 @@ Exact token outputs, API behavior, and implementation-specific claims must be ve
 **Domain:** LLM Engineering
 
 **Purpose:** Build the conceptual and practical understanding required to reason about how text becomes the discrete input representation consumed by language models.
-
-## End of Document

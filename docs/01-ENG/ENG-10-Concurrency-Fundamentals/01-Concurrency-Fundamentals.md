@@ -551,7 +551,3 @@ Concurrency can only safely overlap operations when their dependencies and requi
 These references provide additional context. The concepts and scope boundaries established by the ENG-10 curriculum remain the basis of this chapter.
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `01-Concurrency-Fundamentals.md`

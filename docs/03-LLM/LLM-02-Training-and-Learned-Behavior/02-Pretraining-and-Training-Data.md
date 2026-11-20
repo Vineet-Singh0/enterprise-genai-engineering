@@ -564,7 +564,7 @@ If training data overlaps with evaluation material, the measured result may not 
 - [01 — Language Model Training Foundations and Objectives](01-Language-Model-Training-Foundations-and-Objectives.md) — the training objective, model parameters, and optimization process.
 - [03 — Training Dynamics, Generalization, and Overfitting](03-Training-Dynamics-Generalization-and-Overfitting.md) — how optimization and training conditions affect generalization.
 - [04 — Supervised Fine-Tuning and Instruction Tuning](04-Supervised-Fine-Tuning-and-Instruction-Tuning.md) — how supervised examples can shape instruction-following behavior.
-- [LLM-08 — Evaluation](../../LLM-08-Evaluation-and-Benchmarks/README.md) — evaluation methodology and benchmark considerations. **Verify the exact path against the repository.**
+- [LLM-08 — Evaluation](../LLM-08-Language-Model-Evaluation-and-Benchmarking/Readme.md) — evaluation methodology and benchmark considerations. **Verify the exact path against the repository.**
 - [ENT — Enterprise Governance](../../07-ENT/README.md) — governance and data-rights considerations. **Verify the exact path against the repository.**
 
 The LLM-08 and ENT paths are navigation candidates and have not been verified against the live repository.

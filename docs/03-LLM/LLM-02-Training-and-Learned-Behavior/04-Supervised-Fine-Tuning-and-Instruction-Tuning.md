@@ -133,14 +133,14 @@ A production system may combine a tuned model with clear prompts, retrieval, str
 Think of pretraining as learning a broad language-and-world representation, and supervised fine-tuning as practicing a particular way of using that representation.
 
 ```text
-**Pretrained language model**
+Pretrained language model
 Broad learned representations and next-token prediction capability
         ↓
 Supervised instruction-response examples
-**Supervised fine-tuning**
+Supervised fine-tuning
 Optimize model parameters using selected demonstrations
         ↓
-**Instruction-tuned model**
+Instruction-tuned model
 A model trained to respond according to demonstrated patterns
 ```
 
@@ -320,22 +320,22 @@ A deeper treatment of fine-tuning methods and their implementation belongs in de
 A typical instruction-tuning pipeline contains the following stages.
 
 ```text
-**1. Prepare supervised examples**
+1. Prepare supervised examples
 Instructions, context, demonstrations, and target responses
         ↓
-**2. Validate and format data**
+2. Validate and format data
 Quality checks, conversation templates, tokenization, and loss masks
         ↓
-**3. Run the forward pass**
+3. Run the forward pass
 Predict token probabilities conditioned on the preceding sequence
         ↓
-**4. Compute supervised loss**
+4. Compute supervised loss
 Compare predicted probabilities with target tokens, respecting the loss mask
         ↓
-**5. Backpropagate and update**
+5. Backpropagate and update
 Calculate gradients and update trainable parameters
         ↓
-**6. Evaluate and select a checkpoint**
+6. Evaluate and select a checkpoint
 Assess held-out performance, task quality, and behavioral regressions
 ```
 
@@ -803,4 +803,3 @@ Use the following primary sources to deepen your understanding. Verify current d
 7. **Hugging Face PEFT Documentation**  
    https://huggingface.co/docs/peft  
    Explains parameter-efficient fine-tuning methods and their integration with model-training workflows.
-

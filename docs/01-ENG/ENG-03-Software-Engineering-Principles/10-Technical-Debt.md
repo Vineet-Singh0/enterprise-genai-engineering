@@ -36,7 +36,7 @@ This chapter focuses on recognizing and managing accumulated engineering costs.
 - [04 — Coupling and Cohesion](04-Coupling-and-Cohesion.md) explains structural conditions that can increase change cost.
 - [05 — SOLID Principles](05-SOLID-Principles.md) covers object-oriented design principles.
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md) addresses architectural boundaries.
-- [08 — Design Patterns](08-Design-Patterns/README.md) introduces reusable design approaches.
+- [08 — Design Patterns](./08-Design-Patterns.md) introduces reusable design approaches.
 - [09 — Refactoring](09-Refactoring.md) explains how to improve existing code while preserving behavior.
 
 This chapter uses those concepts to evaluate debt and decide what to do about it rather than re-teaching them.
@@ -955,7 +955,7 @@ Use this checklist during architecture reviews, planning, or maintenance discuss
 - [05 — SOLID Principles](05-SOLID-Principles.md)
 - [06 — Dependency Injection](06-Dependency-Injection.md)
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-- [08 — Design Patterns](08-Design-Patterns/README.md)
+- [08 — Design Patterns](./08-Design-Patterns.md)
 - [09 — Refactoring](09-Refactoring.md)
 
 ### Connection to Future Engineering Domains

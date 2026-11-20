@@ -822,7 +822,3 @@ The next chapter, **Communication and Coordination Between Tasks**, examines how
 These references provide Python-specific details. The design principles in this chapter apply more broadly, but implementation guarantees must be verified for the language and runtime used by the application.
 
 ---
-
-## End of Document
-
-This completes the Markdown file: `06-Thread-Safety-and-Safe-Shared-State-Design.md`.

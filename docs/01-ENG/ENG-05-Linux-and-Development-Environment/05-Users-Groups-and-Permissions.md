@@ -1881,13 +1881,3 @@ The next chapter connects your understanding of Linux users and permissions with
 Continue with:
 
 **[06 — Processes & Process Management](./06-Processes-and-Process-Management.md)**
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`05-Users-Groups-and-Permissions.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

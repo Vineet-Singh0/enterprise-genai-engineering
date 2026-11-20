@@ -2128,13 +2128,3 @@ Dependency Isolation
 ```
 
 That is the focus of the next chapter.
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`08-Environment-Variables-and-Configuration.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

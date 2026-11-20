@@ -40,10 +40,10 @@ This chapter assumes familiarity with:
 
 Recommended prerequisite reading:
 
-- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-AI-Serving-and-Runtime-Architecture/README.md)
+- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md)
-- [PROD-06 — AI Reliability Engineering](../PROD-06-AI-Reliability-Engineering/README.md)
-- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-AI-Capacity-Planning-and-Scaling/README.md)
+- [PROD-06 — AI Reliability Engineering](../PROD-06-Production-AI-Reliability/Readme.md)
+- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
 - [01 — AI Latency, Throughput and Performance Analysis](./01-AI-Latency-Throughput-and-Performance-Analysis.md)
 
 ---
@@ -1043,7 +1043,7 @@ Distillation is discussed here **only as an inference-efficiency strategy**.
 
 Training methodology and optimization of the distillation process are outside this chapter.
 
-Detailed model evaluation methodology belongs to [PROD-11 — AI Evaluation, Quality and Regression](../PROD-11-AI-Evaluation-Quality-and-Regression/README.md).
+Detailed model evaluation methodology belongs to [PROD-11 — AI Evaluation, Quality and Regression](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md).
 
 ---
 
@@ -2281,9 +2281,9 @@ The central engineering principle remains:
 
 - [01 — AI Latency, Throughput and Performance Analysis](./01-AI-Latency-Throughput-and-Performance-Analysis.md)
 - [03 — Performance Benchmarking and Cost-Performance Trade-offs](./03-Performance-Benchmarking-and-Cost-Performance-Trade-offs.md)
-- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-AI-Serving-and-Runtime-Architecture/README.md)
+- [PROD-03 — AI Serving and Runtime Architecture](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-05 — AI Observability and Telemetry](../PROD-05-AI-Observability-and-Telemetry/README.md)
-- [PROD-06 — AI Reliability Engineering](../PROD-06-AI-Reliability-Engineering/README.md)
-- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-AI-Capacity-Planning-and-Scaling/README.md)
-- [PROD-11 — AI Evaluation, Quality and Regression](../PROD-11-AI-Evaluation-Quality-and-Regression/README.md)
-- [PROD-12 — Production AI Readiness](../PROD-12-Production-AI-Readiness/README.md)
+- [PROD-06 — AI Reliability Engineering](../PROD-06-Production-AI-Reliability/Readme.md)
+- [PROD-07 — AI Capacity Planning and Scaling](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
+- [PROD-11 — AI Evaluation, Quality and Regression](../PROD-11-AI-Lifecycle-Evaluation-and-Continuous-Improvement/Readme.md)
+- [PROD-12 — Production AI Readiness](../PROD-12-Production-Readiness-and-Architecture-Review/README.md)

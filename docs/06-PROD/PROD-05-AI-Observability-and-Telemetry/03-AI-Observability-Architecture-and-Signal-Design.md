@@ -33,8 +33,8 @@ Before starting this chapter, you should understand:
 
 Recommended prerequisite chapters:
 
-- [PROD-01 — Production AI Systems and Architecture](../PROD-01-Production-AI-Systems-and-Architecture/README.md)
-- [PROD-03 — Production AI Model Serving](../PROD-03-Production-Model-Serving/README.md)
+- [PROD-01 — Production AI Systems and Architecture](../PROD-01-Production-AI-System-Foundations/Readme.md)
+- [PROD-03 — Production AI Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-05 — AI Observability and Telemetry](./README.md)
 
 ---
@@ -2068,9 +2068,9 @@ Key relationships:
 
 For related production engineering concepts, continue with:
 
-- [PROD-03 — Production AI Model Serving](../PROD-03-Production-Model-Serving/README.md)
+- [PROD-03 — Production AI Model Serving](../PROD-03-Production-Model-and-AI-Serving/Readme.md)
 - [PROD-06 — Production AI Reliability](../PROD-06-Production-AI-Reliability/README.md)
-- [PROD-07 — AI Scaling and Capacity Engineering](../PROD-07-AI-Scaling-and-Capacity-Engineering/README.md)
+- [PROD-07 — AI Scaling and Capacity Engineering](../PROD-07-Scaling-and-Capacity-Engineering/Readme.md)
 - [PROD-08 — AI Performance Optimization and Cost](../PROD-08-AI-Performance-Optimization-and-Cost/README.md)
 - [PROD-09 — Production AI Security](../PROD-09-Production-AI-Security/README.md)
 - [PROD-10 — AI Operations and Incident Management](../PROD-10-AI-Operations-and-Incident-Management/README.md)

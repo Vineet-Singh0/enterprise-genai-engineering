@@ -2015,13 +2015,3 @@ The next chapter explains how Linux exposes and manages this information through
 Continue with:
 
 **[08 — Environment Variables & Configuration](./08-Environment-Variables-and-Configuration.md)**
-
----
-
-# End of Document
-
-This completes the Markdown file:
-
-`07-Package-Management.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

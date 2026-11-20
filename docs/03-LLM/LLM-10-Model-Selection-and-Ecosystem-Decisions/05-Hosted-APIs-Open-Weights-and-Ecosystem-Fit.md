@@ -929,7 +929,3 @@ Continue with these curriculum chapters:
 - [LLM-09 README — Language Model Optimization and Adaptation](../LLM-09-Language-Model-Optimization-and-Adaptation/README.md)
 
 For a real selection decision, consult the current model license, provider service terms, model documentation, runtime compatibility information, and applicable contractual documentation. Record the sources and dates used for the decision.
-
----
-
-**End of document.**

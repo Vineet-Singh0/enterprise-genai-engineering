@@ -600,7 +600,6 @@ import math
 from collections.abc import Iterable
 from typing import Any
 
-
 def rank_candidates(
     candidates: Iterable[dict[str, Any]],
 ) -> list[dict[str, Any]]:

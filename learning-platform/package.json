@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:search": "npm run build && astro preview",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && node scripts/check-links.mjs",
     "preview": "astro preview",
     "preview:search": "npm run build && astro preview",
     "test:math": "npx --yes tsx scripts/test-math.mjs",

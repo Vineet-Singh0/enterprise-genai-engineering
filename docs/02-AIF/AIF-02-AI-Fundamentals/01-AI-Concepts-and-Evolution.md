@@ -721,11 +721,3 @@ The following references provide additional context. They are optional supplemen
 - The official PyTorch documentation. A reference for deep-learning concepts and implementation.
 
 Use these resources to deepen your understanding when needed. Preserve the ownership boundaries of the Enterprise GenAI Engineering curriculum when deciding where a topic should be studied in detail.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-AI-Concepts-and-Evolution.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

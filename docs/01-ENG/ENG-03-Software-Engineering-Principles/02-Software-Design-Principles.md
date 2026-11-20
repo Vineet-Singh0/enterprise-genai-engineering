@@ -30,7 +30,7 @@ This chapter establishes general design guidance. Detailed treatment of related 
 - SOLID principles — [05-SOLID Principles](05-SOLID-Principles.md)
 - Dependency injection — [06-Dependency Injection](06-Dependency-Injection.md)
 - Layered and clean architecture — [07-Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-- Design patterns — [08-Design Patterns](08-Design-Patterns/README.md)
+- Design patterns — [08-Design Patterns](./08-Design-Patterns.md)
 - Refactoring — [09-Refactoring](09-Refactoring.md)
 - Technical debt — [10-Technical Debt](10-Technical-Debt.md)
 
@@ -90,7 +90,6 @@ def calculate_checkout_fee(order_total: float) -> float:
         return 0.0
     return 50.0
 
-
 def calculate_invoice_fee(order_total: float) -> float:
     if order_total >= 1000:
         return 0.0
@@ -108,7 +107,6 @@ A possible improvement is to represent the rule in one authoritative location:
 ```python
 FREE_DELIVERY_THRESHOLD = 1500
 STANDARD_DELIVERY_FEE = 50.0
-
 
 def calculate_delivery_fee(order_total: float) -> float:
     if order_total >= FREE_DELIVERY_THRESHOLD:
@@ -351,11 +349,9 @@ class Notification:
     def send(self, message: str) -> None:
         raise NotImplementedError
 
-
 class EmailNotification(Notification):
     def send(self, message: str) -> None:
         print(f"Sending email: {message}")
-
 
 class SMSNotification(Notification):
     def send(self, message: str) -> None:
@@ -375,21 +371,17 @@ An alternative is to let a service receive a notification sender that performs t
 ```python
 from typing import Protocol
 
-
 class NotificationSender(Protocol):
     def send(self, message: str) -> None:
         ...
-
 
 class EmailSender:
     def send(self, message: str) -> None:
         print(f"Sending email: {message}")
 
-
 class SMSSender:
     def send(self, message: str) -> None:
         print(f"Sending SMS: {message}")
-
 
 class NotificationService:
     def __init__(self, sender: NotificationSender) -> None:

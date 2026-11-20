@@ -2498,5 +2498,3 @@ The next chapter extends durable execution into workflows that cannot remain con
 > **How does a workflow remain logically alive when it must wait for hours, days, external events, or human/external dependencies before continuing?**
 
 ---
-
-## End of Document

@@ -394,5 +394,3 @@ The most important engineering habit is to separate the algorithm's general prin
 - Related: [Chapter 02 — Tokenization Approaches and Design Trade-offs](02-Tokenization-Approaches-and-Design-Trade-offs.md)
 - Next: [Chapter 05 — Tokenization Across Languages and Technical Text](05-Tokenization-Across-Languages-and-Technical-Text.md)
 - Practical investigation: [Chapter 07 — Tokenization Efficiency and Practical Inspection](07-Tokenization-Efficiency-and-Practical-Inspection.md)
-
-**Validation note:** Examples in this chapter are conceptual illustrations, not verified outputs from a named tokenizer. Repository links and GitHub rendering have not been independently checked in this revision.

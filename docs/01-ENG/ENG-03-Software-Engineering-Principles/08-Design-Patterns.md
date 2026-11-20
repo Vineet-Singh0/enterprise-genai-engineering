@@ -29,13 +29,13 @@ After completing this chapter group, you should be able to:
 
 Complete the following ENG-03 chapters before studying design patterns:
 
-- [01 — Software Quality Attributes](../01-Software-Quality-Attributes.md)
-- [02 — Software Design Principles](../02-Software-Design-Principles.md)
-- [03 — Separation of Concerns and Abstraction](../03-Separation-of-Concerns-and-Abstraction.md)
-- [04 — Coupling and Cohesion](../04-Coupling-and-Cohesion.md)
-- [05 — SOLID Principles](../05-SOLID-Principles.md)
-- [06 — Dependency Injection](../06-Dependency-Injection.md)
-- [07 — Layered and Clean Architecture](../07-Layered-and-Clean-Architecture.md)
+- 01 — Software Quality Attributes
+- 02 — Software Design Principles
+- 03 — Separation of Concerns and Abstraction
+- 04 — Coupling and Cohesion
+- 05 — SOLID Principles
+- 06 — Dependency Injection
+- 07 — Layered and Clean Architecture
 
 These chapters establish the principles needed to evaluate patterns. In particular, design patterns should be understood as possible implementations of design decisions, not as replacements for sound responsibility boundaries or dependency management.
 
@@ -45,9 +45,9 @@ The learning sequence is organized into three categories.
 
 | Chapter | Focus | Central question |
 |---|---|---|
-| [01 — Creational Patterns](01-Creational-Patterns.md) | Object creation and construction | How should objects be created when construction is complex or needs to vary? |
-| [02 — Structural Patterns](02-Structural-Patterns.md) | Composition and relationships between components | How can components be combined without creating unnecessary coupling? |
-| [03 — Behavioral Patterns](03-Behavioral-Patterns.md) | Communication, responsibilities, and changing behavior | How can responsibilities and interactions be organized as behavior evolves? |
+| 01 — Creational Patterns | Object creation and construction | How should objects be created when construction is complex or needs to vary? |
+| 02 — Structural Patterns | Composition and relationships between components | How can components be combined without creating unnecessary coupling? |
+| 03 — Behavioral Patterns | Communication, responsibilities, and changing behavior | How can responsibilities and interactions be organized as behavior evolves? |
 
 Each chapter should explain the problems addressed by its selected patterns, their structure, practical implementations, trade-offs, and selection criteria.
 
@@ -206,9 +206,9 @@ Answer these in your own words:
 
 ## 13. Navigation
 
-- [01 — Creational Patterns](01-Creational-Patterns.md)
-- [02 — Structural Patterns](02-Structural-Patterns.md)
-- [03 — Behavioral Patterns](03-Behavioral-Patterns.md)
+- 01 — Creational Patterns
+- 02 — Structural Patterns
+- 03 — Behavioral Patterns
 
 **Next step:** Study `01-Creational-Patterns.md`, beginning with the problems associated with object creation and construction.
 

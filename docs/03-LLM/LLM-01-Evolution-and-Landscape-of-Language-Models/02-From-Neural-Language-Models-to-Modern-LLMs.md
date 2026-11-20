@@ -262,7 +262,7 @@ Depending on the model and application, adaptation can involve:
 
 These approaches serve different purposes and should not be treated as interchangeable. Instruction tuning, for example, is a training-time adaptation, while prompting changes the input supplied to a model at inference time.
 
-The detailed mechanics of pretraining, supervised fine-tuning, and alignment belong in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Language-Model-Training-and-Learned-Behavior/README.md).
+The detailed mechanics of pretraining, supervised fine-tuning, and alignment belong in [LLM-02 — Language Model Training and Learned Behavior](../LLM-02-Training-and-Learned-Behavior/Readme.md).
 
 ### 9.4 From language prediction to general-purpose interfaces
 

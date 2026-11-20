@@ -505,7 +505,6 @@ def calculate_subtotal(items):
         for item in items
     )
 
-
 def calculate_invoice(items):
     subtotal = calculate_subtotal(items)
     tax = subtotal * 0.18
@@ -1052,7 +1051,7 @@ There is no single universally correct decomposition. The quality of the proposa
 - [05 — SOLID Principles](05-SOLID-Principles.md)
 - [06 — Dependency Injection](06-Dependency-Injection.md)
 - [07 — Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
-- [08 — Design Patterns](08-Design-Patterns/README.md)
+- [08 — Design Patterns](./08-Design-Patterns.md)
 
 ### Connection to the Next Chapter
 

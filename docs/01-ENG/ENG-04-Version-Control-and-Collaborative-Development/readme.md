@@ -115,7 +115,7 @@ This chapter explains merge and rebase, how they differ, and the engineering tra
 
 ## 5. Pull Requests
 
-[Pull Requests](./05-Pull-Requests.md)
+[Pull Requests](./05-Pull-Request.md)
 
 A change is rarely integrated directly into shared code without some form of discussion or control.
 
@@ -466,7 +466,7 @@ Each major concept has one primary documentation location.
 | Repository Structure | [Repository Structure](./02-Repository-Structure.md) |
 | Branching Strategies | [Branching Strategies](./03-Branching-Strategies.md) |
 | Merge & Rebase | [Merge & Rebase](./04-Merge-and-Rebase.md) |
-| Pull Requests | [Pull Requests](./05-Pull-Requests.md) |
+| Pull Requests | [Pull Requests](./05-Pull-Request.md) |
 | Code Reviews | [Code Reviews](./06-Code-Reviews.md) |
 | Semantic Versioning & Releases | [Semantic Versioning & Releases](./07-Semantic-Versioning-and-Releases.md) |
 | Issue Tracking | [Issue Tracking](./08-Issue-Tracking.md) |
@@ -489,10 +489,6 @@ Other chapters should reference these locations instead of duplicating their exp
 - Issue tracking connects engineering work with implementation.
 - Collaborative development combines these practices into a controlled team workflow.
 - The real goal is not Git command memorization. It is **safe, understandable, and maintainable software change**.
-
----
-
-## End of Document
 
 This completes the README:
 

@@ -211,7 +211,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-
 def validate_quantity(quantity: int) -> bool:
     if quantity <= 0:
         logger.warning(
@@ -408,7 +407,6 @@ Consider:
 import logging
 
 logger = logging.getLogger(__name__)
-
 
 def load_configuration(path: str) -> str:
     try:
@@ -838,7 +836,3 @@ def calculate_order_total(
 - [Python Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 
 ---
-
-# End of Document
-
-This completes the Markdown file: `05-Logging.md`

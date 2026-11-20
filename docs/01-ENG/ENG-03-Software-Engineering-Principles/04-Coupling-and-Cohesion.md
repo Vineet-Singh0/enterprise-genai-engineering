@@ -150,7 +150,6 @@ class Account:
     def __init__(self):
         self._balance = 100.0
 
-
 def apply_fee(account: Account) -> None:
     account._balance -= 10.0
 ```
@@ -194,10 +193,8 @@ application_state = {
     "maintenance_mode": False,
 }
 
-
 def calculate_price(price: float) -> float:
     return price * (1 - application_state["discount_rate"])
-
 
 def enable_discount_for_campaign() -> None:
     application_state["discount_rate"] = 0.25
@@ -724,11 +721,9 @@ This function assumes valid item data and uses simplified numeric handling. A pr
 ```python
 from typing import Protocol
 
-
 class OrderRepository(Protocol):
     def update_total(self, order_id: int, total: float) -> None:
         ...
-
 
 class OrderNotifier(Protocol):
     def notify_total(self, recipient: str, total: float) -> None:

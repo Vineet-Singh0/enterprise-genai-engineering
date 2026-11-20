@@ -722,11 +722,3 @@ The following resources provide additional perspectives on software development 
 - [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
 
 These resources provide broader lifecycle and process perspectives. They do not replace the approved scope of this chapter.
-
----
-
-# End of Document
-
-This completes the Markdown file: `01-Software-Development-Lifecycle.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

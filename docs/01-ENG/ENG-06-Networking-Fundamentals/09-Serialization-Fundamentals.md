@@ -955,5 +955,3 @@ This chapter focused on data representation and the boundary between in-memory o
 The final chapter, [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md), brings together the networking concepts from ENG-06 and develops a systematic way to reason about communication failures and troubleshoot them.
 
 ---
-
-# End of Document

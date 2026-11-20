@@ -1259,11 +1259,3 @@ Continue with:
 - [07 — Optimization and Calculus Intuition](07-Optimization-and-Calculus-Intuition.md): Build on functions and algebra to understand derivatives and optimization.
 
 Return to the [AIF-01 Mathematics Foundation README](README.md) for the complete learning path.
-
----
-
-## End of Document
-
-This completes the Markdown file: `02-Algebra-Exponents-and-Logarithms.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

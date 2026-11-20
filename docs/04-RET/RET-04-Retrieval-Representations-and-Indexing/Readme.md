@@ -114,4 +114,3 @@ A design is not complete merely because a particular database or vector store ha
 Practical implementation, experiments, debugging, and review require additional time.
 
 ---
-

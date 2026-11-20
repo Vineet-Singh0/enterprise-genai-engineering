@@ -565,7 +565,3 @@ Gather more evidence when an unresolved question could change eligibility, accep
 - [04 — Cost, Latency, and Total Cost of Ownership](04-Cost-Latency-and-Total-Cost-of-Ownership.md) — for evaluating economic and performance trade-offs after establishing relevant candidate evidence.
 
 ---
-
-**End of Document**
-
-This completes the Markdown file: `03-Evaluation-Evidence-for-Model-Selection.md`

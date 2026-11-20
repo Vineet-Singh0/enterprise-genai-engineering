@@ -38,8 +38,6 @@ Related topics in this curriculum include:
 - **PROD-08 — AI Performance and Cost Engineering**
 - **PROD-11 — AI Lifecycle, Evaluation and Continuous Improvement**
 
-Repository paths for neighboring chapters should be established from the actual repository structure rather than inferred from chapter names.
-
 ---
 
 ## Estimated Reading Time
@@ -986,7 +984,7 @@ PROD-11 therefore treats lifecycle progression as an evidence-based engineering 
 
 Detailed evaluation gates and acceptance mechanisms are covered in:
 
-`03-Evaluation-Gates-Continuous-Improvement-and-Safe-Change.md`
+[Evaluation Gates, Continuous Improvement, and Safe Change](03-Evaluation-Gates-Continuous-Improvement-and-Safe-Change.md)
 
 ---
 
@@ -1049,7 +1047,7 @@ Production behavior generates evidence about whether the system continues to mee
 
 This connects lifecycle management to the production evaluation work in:
 
-`02-Production-Evaluation-Drift-and-Quality-Signals.md`
+[Production Evaluation, Drift, and Quality Signals](02-Production-Evaluation-Drift-and-Quality-Signals.md)
 
 File 01 establishes **what changed and what system state is being operated**.
 

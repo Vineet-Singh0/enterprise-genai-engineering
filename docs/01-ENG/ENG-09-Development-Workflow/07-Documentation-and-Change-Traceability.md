@@ -738,7 +738,3 @@ Answer these without looking back at the chapter:
 - ENG-03 — Software Engineering Principles
 - ENG-04 — Version Control and Collaborative Development
 - ENG-08 — Development Quality
-
----
-
-**End of Document:** `07-Documentation-and-Change-Traceability.md`

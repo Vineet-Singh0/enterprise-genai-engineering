@@ -512,5 +512,3 @@ Do not skip directly to durable execution before understanding the workflow stru
 - AGT-11 — Reliability and Safety
 
 ---
-
-# End of Document

@@ -1435,15 +1435,15 @@ Continue with:
 
 For strategic provider, model, diversification, portability, and exit considerations:
 
-[ENT-07 — AI Provider, Model and Vendor Strategy](../ENT-07-AI-Provider-Model-and-Vendor-Strategy/README.md)
+[ENT-07 — AI Provider, Model and Vendor Strategy](../ENT-07-Model-Provider-and-Vendor-Strategy/README.md)
 
 For AI risk, impact, treatment, residual risk, and assurance:
 
-[ENT-03 — AI Risk, Impact and Assurance](../ENT-03-AI-Risk-Impact-and-Assurance/README.md)
+[ENT-03 — AI Risk, Impact and Assurance](../ENT-03-Enterprise-AI-Risk-Impact-Oversight-and-Assurance/Readme.md)
 
 For enterprise AI architecture and integration:
 
-[ENT-06 — Enterprise AI Architecture and Integration](../ENT-06-Enterprise-AI-Architecture-and-Integration/README.md)
+[ENT-06 — Enterprise AI Architecture and Integration](../ENT-06-Enterprise-AI-Integration-and-Platform-Architecture/Readme.md)
 
 ---
 

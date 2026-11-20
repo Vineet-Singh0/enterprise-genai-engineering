@@ -592,5 +592,3 @@ The following papers provide additional context for generation behavior, calibra
 This chapter establishes practical concepts for reasoning about consistency, calibration, and behavioral variation.
 
 It does not define a complete statistical evaluation methodology, prescribe one universal confidence-calibration technique, or replace production monitoring and governance controls. Formal evaluation methodology belongs in LLM-08; deployment and operational monitoring belong in production engineering; enterprise risk and governance belong in the enterprise systems domain.
-
-*End of Document*

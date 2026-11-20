@@ -1871,9 +1871,3 @@ Refer to the corresponding RET chapters for detailed technical explanations.
 - RET-10 — Retrieval Evaluation and Benchmarking.
 
 **Next chapter:** `02-Layered-Diagnostics-and-Root-Cause-Analysis.md`
-
-# End of Document
-
-This completes the Markdown file: `01-Retrieval-Failure-Taxonomy-and-Triage.md`
-
-All parts can now be combined into a single production-ready Markdown document for the GitHub repository.

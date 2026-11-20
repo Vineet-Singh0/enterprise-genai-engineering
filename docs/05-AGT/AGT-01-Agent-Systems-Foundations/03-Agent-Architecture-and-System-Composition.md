@@ -1366,17 +1366,17 @@ The later chapters provide detailed engineering treatment.
 
 | Responsibility / Concern | Detailed Owner |
 |---|---|
-| Runtime and execution | [AGT-02](../AGT-02/README.md) |
-| Tools and capabilities | [AGT-03](../AGT-03/README.md) |
-| State, context, and memory | [AGT-04](../AGT-04/README.md) |
-| Planning and replanning | [AGT-05](../AGT-05/README.md) |
-| Workflow execution | [AGT-06](../AGT-06/README.md) |
-| Human control and intervention | [AGT-07](../AGT-07/README.md) |
-| Interoperability and protocols | [AGT-08](../AGT-08/README.md) |
-| Multi-agent systems | [AGT-09](../AGT-09/README.md) |
-| Agent evaluation | [AGT-10](../AGT-10/README.md) |
-| Agent reliability and safety | [AGT-11](../AGT-11/README.md) |
-| End-to-end architecture and design review | [AGT-12](../AGT-12/README.md) |
+| Runtime and execution | [AGT-02](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md) |
+| Tools and capabilities | [AGT-03](../AGT-03-Tools-and-Action-Execution/Readme.md) |
+| State, context, and memory | [AGT-04](../AGT-04-State-Context-and-Memory/Readme.md) |
+| Planning and replanning | [AGT-05](../AGT-05-Planning-and-Adaptive-Execution/Readme.md) |
+| Workflow execution | [AGT-06](../AGT-06-Workflow-Orchestration-and-Durable-Execution/Readme.md) |
+| Human control and intervention | [AGT-07](../AGT-07-Human-Control-and-Approval/Readme.md) |
+| Interoperability and protocols | [AGT-08](../AGT-08-Agent-Interfaces-and-Protocols/Readme.md) |
+| Multi-agent systems | [AGT-09](../AGT-09-Multi-Agent-Systems/Readme.md) |
+| Agent evaluation | [AGT-10](../AGT-10-Agent-Evaluation-and-Behavioral-Testing/Readme.md) |
+| Agent reliability and safety | [AGT-11](../AGT-11-Agent-Reliability-and-Safety/Readme.md) |
+| End-to-end architecture and design review | [AGT-12](../AGT-12-Agent-Architecture-and-Design-Review/Readme.md) |
 
 This gives AGT-01 a clear role:
 
@@ -1754,21 +1754,17 @@ These responsibilities can coexist without requiring every system to implement t
 - [AGT-01 README — Agent Systems Foundations](./README.md)
 - [AGT-01.01 — Agent Definition and System Boundaries](./01-Agent-Definition-and-System-Boundaries.md)
 - [AGT-01.02 — Agent vs LLM Applications, Workflows, and RAG Systems](./02-Agent-vs-LLM-Applications-Workflows-and-RAG-Systems.md)
-- [AGT-02 — Agent Runtime and Execution](../AGT-02/README.md)
-- [AGT-03 — Tool and Capability Engineering](../AGT-03/README.md)
-- [AGT-04 — State, Context, and Memory Engineering](../AGT-04/README.md)
-- [AGT-05 — Planning and Replanning](../AGT-05/README.md)
-- [AGT-06 — Workflow and Long-Running Execution](../AGT-06/README.md)
-- [AGT-07 — Human Control and Intervention](../AGT-07/README.md)
-- [AGT-08 — Agent Interoperability](../AGT-08/README.md)
-- [AGT-09 — Multi-Agent Systems](../AGT-09/README.md)
-- [AGT-10 — Agent Evaluation](../AGT-10/README.md)
-- [AGT-11 — Agent Reliability and Safety](../AGT-11/README.md)
-- [AGT-12 — Agent Architecture and Design Review](../AGT-12/README.md)
-
----
-
-## End of Document
+- [AGT-02 — Agent Runtime and Execution](../AGT-02-Agent-Runtime-Loops-and-Bounded-Autonomy/Readme.md)
+- [AGT-03 — Tool and Capability Engineering](../AGT-03-Tools-and-Action-Execution/Readme.md)
+- [AGT-04 — State, Context, and Memory Engineering](../AGT-04-State-Context-and-Memory/Readme.md)
+- [AGT-05 — Planning and Replanning](../AGT-05-Planning-and-Adaptive-Execution/Readme.md)
+- [AGT-06 — Workflow and Long-Running Execution](../AGT-06-Workflow-Orchestration-and-Durable-Execution/Readme.md)
+- [AGT-07 — Human Control and Intervention](../AGT-07-Human-Control-and-Approval/Readme.md)
+- [AGT-08 — Agent Interoperability](../AGT-08-Agent-Interfaces-and-Protocols/Readme.md)
+- [AGT-09 — Multi-Agent Systems](../AGT-09-Multi-Agent-Systems/Readme.md)
+- [AGT-10 — Agent Evaluation](../AGT-10-Agent-Evaluation-and-Behavioral-Testing/Readme.md)
+- [AGT-11 — Agent Reliability and Safety](../AGT-11-Agent-Reliability-and-Safety/Readme.md)
+- [AGT-12 — Agent Architecture and Design Review](../AGT-12-Agent-Architecture-and-Design-Review/Readme.md)
 
 **AGT-01.03 establishes the architectural map of an agent system.**
 

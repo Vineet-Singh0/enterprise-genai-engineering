@@ -41,8 +41,6 @@ Earlier topics provide additional context:
 - [LLM-06 — Context Engineering and Context Constraints](../LLM-06-Context-Engineering-and-Context-Constraints/README.md)
 - [LLM-07 — Model Behavior, Reasoning, and Failure Modes](../LLM-07-Model-Behavior-Reasoning-and-Failure-Modes/README.md)
 
-These relative paths are provisional until verified against the actual repository structure.
-
 ## Learning Path
 
 Complete the chapters in order. Each chapter builds on concepts introduced earlier.

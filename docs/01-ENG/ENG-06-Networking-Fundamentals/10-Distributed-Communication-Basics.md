@@ -1138,5 +1138,3 @@ This chapter completes ENG-06 by integrating the communication concepts introduc
 The purpose of ENG-06 is to give you a reliable mental model for how components communicate and how to reason about failures. Advanced production networking, distributed-system coordination, and detailed observability implementation belong to their respective future topics.
 
 ---
-
-# End of Document

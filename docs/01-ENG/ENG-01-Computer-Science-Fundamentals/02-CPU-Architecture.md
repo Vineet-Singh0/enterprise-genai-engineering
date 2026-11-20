@@ -2261,5 +2261,3 @@ Useful for workloads that support parallel execution.
 * CPU architecture directly affects software performance, cloud infrastructure, databases, operating systems, and AI systems.
 
 ---
-
-

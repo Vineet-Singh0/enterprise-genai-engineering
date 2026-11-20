@@ -813,5 +813,3 @@ This chapter focused on APIs as software interfaces and on the engineering conce
 - [Chapter 10 — Distributed Communication Basics](10-Distributed-Communication-Basics.md): How to reason about failures across networked components and troubleshoot them systematically.
 
 ---
-
-# End of Document

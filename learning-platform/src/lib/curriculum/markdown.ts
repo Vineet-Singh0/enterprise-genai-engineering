@@ -79,18 +79,22 @@ export async function renderMarkdown(
   const mathHtml = renderMathSegments(segments, sourceRelativePath);
 
   const headings: RenderResult['headings'] = [];
+  const seenIds = new Map<string, number>();
   const renderer = new marked.Renderer();
 
-  renderer.link = ({ href, title, text }: Tokens.Link) => {
+  // Use parsed inline tokens so markup inside link text (**bold**, `code`) renders
+  // instead of appearing as literal characters.
+  renderer.link = function ({ href, title, tokens }: Tokens.Link) {
+    const text = this.parser.parseInline(tokens);
     const resolved = resolveMarkdownHref(href || '', sourceRelativePath, domainId);
+    if (resolved.broken) {
+      // Unresolvable target: keep the label as plain styled text instead of a dead "#" link.
+      return `<span class="broken-link" title="Unresolved link: ${escapeHtml(href || '')}">${text}</span>`;
+    }
     let finalHref = href || '';
-    let cls = '';
 
     if (resolved.external) {
       finalHref = href || '';
-    } else if (resolved.broken) {
-      finalHref = '#';
-      cls = ' class="broken-link"';
     } else if (resolved.sitePath?.startsWith('#')) {
       finalHref = resolved.sitePath;
     } else if (resolved.sitePath) {
@@ -101,10 +105,11 @@ export async function renderMarkdown(
 
     const titleAttr = title ? ` title="${escapeHtml(title)}"` : '';
     const externalAttrs = resolved.external ? ' target="_blank" rel="noopener noreferrer"' : '';
-    return `<a href="${escapeHtml(finalHref)}"${titleAttr}${cls}${externalAttrs}>${text}</a>`;
+    return `<a href="${escapeHtml(finalHref)}"${titleAttr}${externalAttrs}>${text}</a>`;
   };
 
-  renderer.heading = ({ text, depth }: Tokens.Heading) => {
+  renderer.heading = function ({ text: rawText, depth, tokens }: Tokens.Heading) {
+    const text = rawText;
     // Expand math placeholders back to delimiter form, then strip to plain TOC/slug text.
     // Do NOT derive labels from rendered KaTeX/MathML.
     const withMathSource = text.replace(/EGEMATH(\d+)EGEMATH/g, (_m, n: string) => {
@@ -113,15 +118,24 @@ export async function renderMarkdown(
       return seg.display ? `\\[${seg.tex}\\]` : `\\(${seg.tex}\\)`;
     });
     const plain = headingPlainFromSource(withMathSource);
-    const id =
+    const base =
       plain
         .toLowerCase()
         .replace(/[^\w\s-]/g, '')
         .trim()
         .replace(/\s+/g, '-') || `heading-${headings.length}`;
+    // Lessons repeat subheadings ("Example", "Expected Answer"); make every anchor unique
+    // so "On this page" links jump to the right section.
+    let id = base;
+    while (seenIds.has(id)) {
+      seenIds.set(base, (seenIds.get(base) ?? 1) + 1);
+      id = `${base}-${seenIds.get(base)}`;
+    }
+    seenIds.set(id, 1);
     headings.push({ depth, text: plain, id });
     // Keep placeholder tokens in heading HTML so math restores inside the heading.
-    return `<h${depth} id="${id}">${text}</h${depth}>`;
+    const inner = this.parser.parseInline(tokens);
+    return `<h${depth} id="${id}">${inner}</h${depth}>`;
   };
 
   // Placeholders must stay literal — never treat as code.
