@@ -1933,20 +1933,20 @@ If you can explain these clearly and apply them to an unfamiliar production inci
 PROD-10 follows a deliberate progression:
 
 ```text
-File 01
+Lesson 01
 Prepare the team and system for responsible operation.
                     ↓
-File 02
+Lesson 02
 Detect, diagnose, mitigate, and recover from incidents.
                     ↓
-File 03
+Lesson 03
 Capture operational knowledge and convert incidents into
 durable operational improvement.
 ```
 
 The boundaries are important.
 
-### File 01 — Production Operations and On-Call Readiness
+### Lesson 01 — Production Operations and On-Call Readiness
 
 Focuses on:
 
@@ -1960,7 +1960,7 @@ Focuses on:
 - support boundaries,
 - operational preparedness.
 
-### File 02 — Incident Detection, Diagnosis, Recovery, and Disaster Readiness
+### Lesson 02 — Incident Detection, Diagnosis, Recovery, and Disaster Readiness
 
 Focuses on:
 
@@ -1977,7 +1977,7 @@ Focuses on:
 - failover,
 - RTO/RPO.
 
-### File 03 — Runbooks, Postmortems, and Operational Learning
+### Lesson 03 — Runbooks, Postmortems, and Operational Learning
 
 Focuses on:
 
@@ -1997,17 +1997,17 @@ Focuses on:
 The distinction can be summarized as:
 
 ```text
-File 01
+Lesson 01
 "Are we prepared to operate the system?"
 
         ↓
 
-File 02
+Lesson 02
 "Can we respond effectively when production fails?"
 
         ↓
 
-File 03
+Lesson 03
 "Are we learning from what production teaches us,
 and are those lessons actually improving operations?"
 ```

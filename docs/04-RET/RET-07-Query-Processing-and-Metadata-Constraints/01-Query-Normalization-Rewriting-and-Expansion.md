@@ -301,7 +301,7 @@ Not every intermediate value should necessarily be logged. Queries may contain p
 
 The purpose is to make transformation decisions inspectable enough to investigate query-processing failures, not to accumulate logs indiscriminately.
 
-Detailed filter-execution diagnosis belongs to **File 03**. General retrieval observability and system-wide diagnosis belong to **RET-11**.
+Detailed filter-execution diagnosis belongs to **Lesson 03**. General retrieval observability and system-wide diagnosis belong to **RET-11**.
 
 ## 8. Practical Engineering Exercise
 
@@ -342,7 +342,7 @@ Demonstrate that:
 
 Explain how the system should respond when the original query is ambiguous, expansion adds irrelevant terminology, decomposition loses a relationship, or routing selects an unsuitable source.
 
-Structured filter construction belongs to **File 02**. Filter execution and empty-result diagnosis belong to **File 03**. Formal retrieval evaluation belongs to **RET-10**.
+Structured filter construction belongs to **Lesson 02**. Filter execution and empty-result diagnosis belong to **Lesson 03**. Formal retrieval evaluation belongs to **RET-10**.
 
 ## 9. Completion Criteria
 

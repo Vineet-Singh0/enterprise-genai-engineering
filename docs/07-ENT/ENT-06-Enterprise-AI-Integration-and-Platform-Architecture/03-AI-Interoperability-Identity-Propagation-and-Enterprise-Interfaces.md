@@ -30,9 +30,9 @@ Before starting this file, you should understand the concepts covered in:
 1. [`01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md`](./01-Enterprise-AI-Integration-Patterns-and-System-Boundaries.md)
 2. [`02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md`](./02-AI-Platforms-Shared-Services-Gateways-and-Control-Planes.md)
 
-File 01 establishes system boundaries and integration patterns.
+Lesson 01 establishes system boundaries and integration patterns.
 
-File 02 establishes enterprise AI platforms, shared capabilities, gateways, routing, and Enterprise AI Control Architecture.
+Lesson 02 establishes enterprise AI platforms, shared capabilities, gateways, routing, and Enterprise AI Control Architecture.
 
 This file builds on those concepts and focuses on what happens **across the boundaries**.
 
@@ -2097,7 +2097,7 @@ The architecture must also define what the systems mean, what context crosses th
 The three files now form a continuous progression:
 
 ```text
-File 01
+Lesson 01
 Enterprise AI Integration Patterns
         ↓
 System Boundaries
@@ -2108,7 +2108,7 @@ Shared vs Embedded Capabilities
 
                 ↓
 
-File 02
+Lesson 02
 Enterprise AI Platforms
         ↓
 Shared AI Services
@@ -2121,7 +2121,7 @@ Enterprise AI Control Architecture
 
                 ↓
 
-File 03
+Lesson 03
 Interoperability
         ↓
 Enterprise Interfaces

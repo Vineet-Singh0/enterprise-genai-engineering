@@ -79,7 +79,7 @@ The module is organized into ten numbered chapters, with Design Patterns maintai
 
 ### 01 — Software Quality Attributes
 
-**File:** [Software Quality Attributes](01-Software-Quality-Attributes.md)
+**Lesson:** [Software Quality Attributes](01-Software-Quality-Attributes.md)
 
 Establishes why software quality matters and how engineers evaluate the characteristics of a system beyond functional correctness.
 
@@ -96,7 +96,7 @@ Primary coverage:
 
 ### 02 — Software Design Principles
 
-**File:** [Software Design Principles](02-Software-Design-Principles.md)
+**Lesson:** [Software Design Principles](02-Software-Design-Principles.md)
 
 Introduces general principles that guide everyday software design decisions.
 
@@ -114,7 +114,7 @@ The chapter establishes general design guidance. Detailed explanations of coupli
 
 ### 03 — Separation of Concerns and Abstraction
 
-**File:** [Separation of Concerns and Abstraction](03-Separation-of-Concerns-and-Abstraction.md)
+**Lesson:** [Separation of Concerns and Abstraction](03-Separation-of-Concerns-and-Abstraction.md)
 
 Explains how to organize software responsibilities and expose clear interfaces while hiding unnecessary implementation details.
 
@@ -129,7 +129,7 @@ Primary coverage:
 
 ### 04 — Coupling and Cohesion
 
-**File:** [Coupling and Cohesion](04-Coupling-and-Cohesion.md)
+**Lesson:** [Coupling and Cohesion](04-Coupling-and-Cohesion.md)
 
 Examines the relationships between software components and how those relationships influence maintainability and change.
 
@@ -145,7 +145,7 @@ This chapter covers the detailed treatment of coupling and cohesion.
 
 ### 05 — SOLID Principles
 
-**File:** [SOLID Principles](05-SOLID-Principles.md)
+**Lesson:** [SOLID Principles](05-SOLID-Principles.md)
 
 Explains five object-oriented design principles and how they help manage responsibilities, dependencies, and change.
 
@@ -162,7 +162,7 @@ SOLID is a design aid, not a requirement to introduce extra classes, interfaces,
 
 ### 06 — Dependency Injection
 
-**File:** [Dependency Injection](06-Dependency-Injection.md)
+**Lesson:** [Dependency Injection](06-Dependency-Injection.md)
 
 Focuses on supplying dependencies to components rather than making components construct or locate all their dependencies themselves.
 
@@ -180,7 +180,7 @@ The chapter owns the detailed explanation of dependency injection. Architecture 
 
 ### 07 — Layered and Clean Architecture
 
-**File:** [Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
+**Lesson:** [Layered and Clean Architecture](07-Layered-and-Clean-Architecture.md)
 
 Examines how software systems organize responsibilities and control dependencies across architectural boundaries.
 
@@ -214,7 +214,7 @@ Patterns should be selected because they solve a recognizable problem in context
 
 ### 09 — Refactoring
 
-**File:** [Refactoring](09-Refactoring.md)
+**Lesson:** [Refactoring](09-Refactoring.md)
 
 Explains how to improve the internal structure of existing software while preserving its required externally observable behavior.
 
@@ -230,7 +230,7 @@ The focus is controlled improvement of existing code, rather than a comprehensiv
 
 ### 10 — Technical Debt
 
-**File:** [Technical Debt](10-Technical-Debt.md)
+**Lesson:** [Technical Debt](10-Technical-Debt.md)
 
 Examines the long-term consequences of design and implementation compromises and how engineering teams should reason about them.
 

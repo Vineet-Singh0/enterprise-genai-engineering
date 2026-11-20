@@ -63,7 +63,7 @@ Approximately **75–105 minutes**, including the practical implementation examp
 
 ## Before We Start
 
-File 01 established the durable engineering concepts behind interoperability.
+Lesson 01 established the durable engineering concepts behind interoperability.
 
 This chapter now applies those concepts to a concrete protocol:
 

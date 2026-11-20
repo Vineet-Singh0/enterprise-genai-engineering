@@ -934,7 +934,7 @@ This is an important distinction:
 
 > **A field may be useful in a log or trace without being appropriate as a metric dimension.**
 
-Detailed cardinality engineering belongs to File 03, but signal selection must recognize the problem here.
+Detailed cardinality engineering belongs to Lesson 03, but signal selection must recognize the problem here.
 
 ---
 
@@ -2657,7 +2657,7 @@ The important engineering work occurs before signal generation:
 
 That question determines the signal.
 
-The architecture for collecting, processing, routing, storing, querying, and visualizing these signals belongs to File 03.
+The architecture for collecting, processing, routing, storing, querying, and visualizing these signals belongs to Lesson 03.
 
 ---
 
@@ -2894,7 +2894,7 @@ And remember:
 12. Signal selection should begin with operational questions.
 13. More signals do not automatically mean better observability.
 14. Signal quality depends on clear semantics, appropriate granularity, context, correlation, and operational usefulness.
-15. File 02 defines the meaning and engineering role of the signals; File 03 will address how those signals are architected, collected, processed, routed, stored, and managed at scale.
+15. Lesson 02 defines the meaning and engineering role of the signals; Lesson 03 will address how those signals are architected, collected, processed, routed, stored, and managed at scale.
 
 ---
 
@@ -2951,7 +2951,7 @@ Before considering this file complete, you should be able to explain:
 - [ ] Why sensitive payloads should not be logged by default.
 - [ ] Why operational AI signals are not the same as AI evaluation.
 
-If you cannot explain these concepts clearly in your own words, revisit the relevant sections before proceeding to File 03.
+If you cannot explain these concepts clearly in your own words, revisit the relevant sections before proceeding to Lesson 03.
 
 ---
 

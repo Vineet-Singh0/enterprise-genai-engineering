@@ -74,9 +74,9 @@ Approximately **75–105 minutes**, including the practical implementation examp
 
 ## Before We Start
 
-File 01 established the general problem of interoperability.
+Lesson 01 established the general problem of interoperability.
 
-File 02 applied those principles to:
+Lesson 02 applied those principles to:
 
 ```text
 AI Application / Agent

@@ -1018,7 +1018,7 @@ This can influence architecture decisions around:
 - serving isolation,
 - request handling.
 
-Detailed concurrency and scheduling behavior is covered in File 02.
+Detailed concurrency and scheduling behavior is covered in Lesson 02.
 
 ---
 

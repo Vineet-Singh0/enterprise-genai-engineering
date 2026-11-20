@@ -1333,7 +1333,7 @@ This question often reveals whether the boundary is useful.
 
 These questions are intended as a **boundary-analysis aid**, not as a formal enterprise governance or architecture decision process.
 
-Detailed architecture decision criteria and trade-off evaluation belong to File 03.
+Detailed architecture decision criteria and trade-off evaluation belong to Lesson 03.
 
 ---
 
@@ -1448,13 +1448,13 @@ It is not yet:
 
 > How should responsibility be distributed between central and domain teams?
 
-That is an operating-model question owned by File 02.
+That is an operating-model question owned by Lesson 02.
 
 Likewise, it is not yet:
 
 > Which architecture option should we choose and why?
 
-That is an architecture decision question owned by File 03.
+That is an architecture decision question owned by Lesson 03.
 
 The intended progression is:
 
@@ -1468,7 +1468,7 @@ Operating Model
 Architecture Decision
 ```
 
-File 01 establishes the first two stages; the later stages are developed in subsequent files.
+Lesson 01 establishes the first two stages; the later stages are developed in subsequent files.
 
 ---
 
@@ -1521,7 +1521,7 @@ A boundary is therefore not merely a diagramming exercise.
 
 It is an architectural decision about how responsibilities and dependencies are separated.
 
-Detailed evaluation of competing architecture options and trade-offs belongs to File 03.
+Detailed evaluation of competing architecture options and trade-offs belongs to Lesson 03.
 
 ---
 
@@ -1593,7 +1593,7 @@ They are not automatically equivalent to them.
 
 A capability can be shared without determining its operating model.
 
-Whether responsibility should be centralized, federated, or hybrid is addressed in File 02.
+Whether responsibility should be centralized, federated, or hybrid is addressed in Lesson 02.
 
 ---
 
@@ -1800,7 +1800,7 @@ The appropriate boundary is the one that creates a meaningful separation of capa
 - Architectural responsibility should be clear enough that a capability can evolve without ambiguity.
 - Poor boundaries can create excessive coupling, duplication, unclear responsibility, and architectural fragmentation.
 - Capability boundaries are intentional architectural constructs and may evolve as enterprise needs change.
-- **File 01 defines what exists and where its boundaries are. File 02 addresses how those capabilities are organized and operated. File 03 addresses how architecture decisions are evaluated and defended.**
+- **Lesson 01 defines what exists and where its boundaries are. Lesson 02 addresses how those capabilities are organized and operated. Lesson 03 addresses how architecture decisions are evaluated and defended.**
 
 ---
 

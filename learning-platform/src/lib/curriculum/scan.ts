@@ -45,6 +45,14 @@ function titleFromMarkdown(filePath: string, fallback: string): string {
   return humanizeTitle(fallback);
 }
 
+/** Letters/digits only, with "&" read as "and", for comparing a title to a folder name. */
+function comparableTitle(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '');
+}
+
 function teachingOrder(fileName: string): number {
   const match = fileName.match(/^(\d+)/);
   return match ? Number(match[1]) : 999;
@@ -113,11 +121,21 @@ function scanChapter(
     .replace(/\s+/g, ' ')
     .trim();
 
-  // Prefer folder-derived chapter titles. README H1 is often meta ("Documentation Plan").
+  // Prefer folder-derived chapter titles. README H1 is often meta ("Documentation Plan"),
+  // so it is only used to restore punctuation (commas, "&") when it names the same words.
+  const readmeTitle = readme?.title
+    .replace(/^[A-Za-z]+-\d+(?:\.\d+)?\s*[—–:-]+\s*/, '')
+    .trim();
+  const sameWords = (a: string, b: string) => comparableTitle(a) === comparableTitle(b);
+  const chapterTitle =
+    readmeTitle && titleFromFolder && sameWords(readmeTitle, titleFromFolder)
+      ? readmeTitle
+      : titleFromFolder;
+
   return {
     id: `${domainId}/${code}`,
     code,
-    title: titleFromFolder || code,
+    title: chapterTitle || code,
     folderName: chapterFolder,
     relativePath,
     slug: chapterSlug,

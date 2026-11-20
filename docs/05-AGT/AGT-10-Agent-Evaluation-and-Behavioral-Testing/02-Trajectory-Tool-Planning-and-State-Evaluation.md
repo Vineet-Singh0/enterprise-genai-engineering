@@ -55,7 +55,7 @@ Approximately **50–70 minutes**, depending on how deeply you work through the 
 
 ## Before We Start
 
-File 01 established what it means for an agent to behave correctly and why final outcomes alone may not be sufficient.
+Lesson 01 established what it means for an agent to behave correctly and why final outcomes alone may not be sufficient.
 
 This chapter applies those principles to the agent's **execution trajectory**.
 
@@ -2201,7 +2201,7 @@ The goal is:
 
 ---
 
-## 33. Relationship to File 03
+## 33. Relationship to Lesson 03
 
 This file focuses on **individual executions and their behavioral evidence**.
 
@@ -2225,7 +2225,7 @@ Metrics / Evaluators
 Regression Testing
 ```
 
-File 03 will address:
+Lesson 03 will address:
 
 - evaluation datasets,
 - test-case design,
@@ -2249,7 +2249,7 @@ File 03 will address:
 
 The distinction is therefore:
 
-> **File 02 asks whether a particular execution behaved correctly. File 03 asks how to build a trustworthy evaluation system that can measure such behavior systematically across many executions and over time.**
+> **Lesson 02 asks whether a particular execution behaved correctly. Lesson 03 asks how to build a trustworthy evaluation system that can measure such behavior systematically across many executions and over time.**
 
 ---
 

@@ -274,8 +274,8 @@ Acceptable behavior despite expected variation and failure
 
 The mechanisms for controlling failure are covered later in:
 
-- File 02 — failure isolation, timeouts, retries, and backpressure.
-- File 03 — graceful degradation, fallbacks, and dependency failure.
+- Lesson 02 — failure isolation, timeouts, retries, and backpressure.
+- Lesson 03 — graceful degradation, fallbacks, and dependency failure.
 
 This file focuses on **how reliability is defined and measured**.
 
@@ -878,7 +878,7 @@ A client may report failure even though the service continues processing.
 
 This means reliability measurement needs clearly defined boundaries.
 
-Timeout mechanics and timeout architecture belong to File 02.
+Timeout mechanics and timeout architecture belong to Lesson 02.
 
 Here, the focus is:
 
@@ -1955,9 +1955,9 @@ Measured outcome
 SLO evaluation
 ```
 
-File 02 focuses on failure-control mechanisms.
+Lesson 02 focuses on failure-control mechanisms.
 
-File 03 focuses on degradation and dependency-failure behavior.
+Lesson 03 focuses on degradation and dependency-failure behavior.
 
 ---
 
@@ -2241,7 +2241,7 @@ Complete failure
 
 Whether this is acceptable depends on the service contract.
 
-Graceful degradation and fallback architecture are covered in File 03.
+Graceful degradation and fallback architecture are covered in Lesson 03.
 
 ---
 
@@ -2599,11 +2599,11 @@ A model can produce high-quality output while the service is operationally unrel
 
 16. Reliability must remain distinct from AI quality and evaluation.
 
-17. File 01 establishes the reliability objectives and measurement foundation.
+17. Lesson 01 establishes the reliability objectives and measurement foundation.
 
-18. File 02 will build on this foundation to explain failure isolation, timeouts, retries, backpressure, and related controls.
+18. Lesson 02 will build on this foundation to explain failure isolation, timeouts, retries, backpressure, and related controls.
 
-19. File 03 will build on this foundation to explain graceful degradation, fallbacks, and dependency failure.
+19. Lesson 03 will build on this foundation to explain graceful degradation, fallbacks, and dependency failure.
 
 ---
 
@@ -2632,7 +2632,7 @@ For repository continuity, refer to the approved neighboring PROD chapter README
 
 ## Chapter Completion Check
 
-Before moving to File 02, you should be able to explain without referring to the documentation:
+Before moving to Lesson 02, you should be able to explain without referring to the documentation:
 
 ```text
 What is reliability?

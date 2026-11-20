@@ -763,7 +763,7 @@ Use authoritative documentation and research material to deepen understanding af
 - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) — practical introductions to machine-learning concepts.
 - [Sutton and Barto, *Reinforcement Learning: An Introduction*](http://incompleteideas.net/book/the-book-2nd.html) — a foundational reference for reinforcement learning.
 
-These references extend the chapter's concepts. They do not change the approved scope of AIF-03.
+These references extend the chapter's concepts. They do not change what AIF-03 teaches.
 
 ## 17. Practice Assignment
 

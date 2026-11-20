@@ -720,9 +720,9 @@ Normal Decision
         Higher or broader authority
 ```
 
-File 01 establishes **who has escalation responsibility and where escalation goes**.
+Lesson 01 establishes **who has escalation responsibility and where escalation goes**.
 
-The detailed governance mechanisms for routing, documenting, reviewing, and handling escalations are developed in File 02.
+The detailed governance mechanisms for routing, documenting, reviewing, and handling escalations are developed in Lesson 02.
 
 Escalation should not be treated as failure.
 
@@ -1131,7 +1131,7 @@ The governance authority determines who has the right to make the relevant decis
 
 This separation becomes increasingly important as enterprise AI dependencies become more distributed.
 
-Detailed lifecycle reassessment and material-change governance are addressed in File 03.
+Detailed lifecycle reassessment and material-change governance are addressed in Lesson 03.
 
 ---
 
@@ -1160,9 +1160,9 @@ Escalation Boundary
 
 This is not a complete enterprise governance workflow.
 
-File 02 extends this foundation by explaining **how these responsibilities and decision rights become operational through governance operating models, mechanisms, controls, evidence, and review**.
+Lesson 02 extends this foundation by explaining **how these responsibilities and decision rights become operational through governance operating models, mechanisms, controls, evidence, and review**.
 
-File 03 then explains **when governance must be revisited across the AI lifecycle and when material change can trigger renewed governance assessment**.
+Lesson 03 then explains **when governance must be revisited across the AI lifecycle and when material change can trigger renewed governance assessment**.
 
 ---
 
@@ -1561,9 +1561,9 @@ Take important AI decisions and ask who is accountable, who has the decision rig
 12. Distributed responsibility is acceptable; distributed ambiguity is not.
 13. Escalation is a designed governance mechanism for decisions that exceed normal authority.
 14. Decision authority should be separated from implementation responsibility when appropriate.
-15. File 01 establishes **who** is accountable and who has decision rights.
-16. File 02 will establish **how** those responsibilities and decision rights become operational through governance operating models and mechanisms.
-17. File 03 will establish **when** governance must be revisited across the AI lifecycle and after material change.
+15. Lesson 01 establishes **who** is accountable and who has decision rights.
+16. Lesson 02 will establish **how** those responsibilities and decision rights become operational through governance operating models and mechanisms.
+17. Lesson 03 will establish **when** governance must be revisited across the AI lifecycle and after material change.
 18. Governance becomes stronger when important AI decisions have explicit accountability, decision rights, responsibilities, and escalation paths.
 
 ---

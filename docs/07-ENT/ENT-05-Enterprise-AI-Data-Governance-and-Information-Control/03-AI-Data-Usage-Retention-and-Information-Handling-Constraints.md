@@ -576,7 +576,7 @@ The information-governance question is:
 
 # 5. Classification and Handling Requirements
 
-Classification established in File 01 provides an important input into handling governance.
+Classification established in Lesson 01 provides an important input into handling governance.
 
 The relationship can be represented as:
 

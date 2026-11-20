@@ -557,18 +557,3 @@ AGT-05 is complete when you can confidently:
 - design bounded adaptive planning behavior
 - explain AGT-05's relationship with runtime, tools, state, workflows, and evaluation without confusing topic boundaries
 
----
-
-## Chapter Structure
-
-```text
-AGT-05/
-├── README.md
-├── 01-Task-Decomposition-and-Agent-Planning.md
-├── 02-Plan-Execution-Replanning-and-Adaptation.md
-└── 03-Verification-Critique-and-Plan-Quality.md
-```
-
-The README serves as the navigation and orientation layer.
-
-Detailed teaching belongs in the three chapter files.

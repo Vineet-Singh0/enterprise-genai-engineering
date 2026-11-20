@@ -28,7 +28,7 @@ Before studying this chapter, you should understand:
 - Request/response lifecycles.
 - Dependencies and service boundaries.
 - Basic observability concepts.
-- Reliability, SLI, SLO, and error-budget concepts from [File 01](./01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md).
+- Reliability, SLI, SLO, and error-budget concepts from [Lesson 01](./01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md).
 
 You should also understand that this chapter focuses on **how the system behaves when failure or overload occurs**, not on how operators detect and investigate those conditions.
 

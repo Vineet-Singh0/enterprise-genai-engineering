@@ -367,7 +367,7 @@ For ENT-04, the important governance principle is:
 
 > **Identity and authorization are security boundaries that must remain explicit when AI systems act between users and enterprise resources.**
 
-Detailed authorization semantics, policy models, delegated access, lifecycle management, and access-boundary engineering are developed in File 02.
+Detailed authorization semantics, policy models, delegated access, lifecycle management, and access-boundary engineering are developed in Lesson 02.
 
 This chapter therefore establishes why those concerns matter without re-teaching their detailed mechanics.
 
@@ -439,7 +439,7 @@ The governance question is:
 
 > Who or what is permitted to use the capability, for what purpose, and within which boundaries?
 
-Detailed authorization models belong to File 02.
+Detailed authorization models belong to Lesson 02.
 
 ---
 
@@ -487,7 +487,7 @@ This is why least privilege remains relevant to AI governance:
 
 > Give an AI capability the access required for its intended function, rather than treating broad access as the default.
 
-Detailed privilege and authorization engineering belongs in File 02.
+Detailed privilege and authorization engineering belongs in Lesson 02.
 
 ---
 
@@ -588,7 +588,7 @@ Enterprise Resource
 
 The user's authorization should not be treated as unrestricted delegated authority for every AI component.
 
-Detailed access-boundary semantics are developed in File 02.
+Detailed access-boundary semantics are developed in Lesson 02.
 
 ---
 
@@ -848,7 +848,7 @@ The governance principle is simple:
 
 > Do not grant broad access merely because broad access is technically convenient.
 
-Detailed authorization semantics and privilege lifecycle are developed in File 02.
+Detailed authorization semantics and privilege lifecycle are developed in Lesson 02.
 
 ---
 
@@ -1211,7 +1211,7 @@ Multiple teams assume another team is responsible for a security or privacy requ
 
 The enterprise cannot demonstrate why an important security or privacy decision was made or who was responsible for it.
 
-Detailed control evidence, control effectiveness, monitoring, and reassessment are covered in File 03.
+Detailed control evidence, control effectiveness, monitoring, and reassessment are covered in Lesson 03.
 
 Detailed production implementation belongs primarily to PROD.
 
@@ -1350,7 +1350,7 @@ The enterprise must also establish:
 - review expectations,
 - handling of changes and exceptions.
 
-Detailed control effectiveness and evidence are covered in File 03.
+Detailed control effectiveness and evidence are covered in Lesson 03.
 
 ---
 
@@ -1559,8 +1559,8 @@ Every transition may introduce a new security, privacy, access, or trust-boundar
 
 For continued study, use the following areas as the next conceptual steps:
 
-- **ENT-04 File 02** — Identity, Authorization and AI Access Boundaries
-- **ENT-04 File 03** — AI Security, Privacy Controls and Governance Integration
+- **ENT-04 Lesson 02** — Identity, Authorization and AI Access Boundaries
+- **ENT-04 Lesson 03** — AI Security, Privacy Controls and Governance Integration
 - **ENT-02** — Enterprise AI Governance and Accountability
 - **ENT-03** — Enterprise AI Risk, Oversight and Assurance
 - **ENT-05** — Enterprise AI Data Governance

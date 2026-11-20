@@ -314,7 +314,7 @@ Controls may include:
 - Request validation
 - Usage monitoring
 
-These controls complement the identity and access controls covered in File 01.
+These controls complement the identity and access controls covered in Lesson 01.
 
 ---
 
@@ -1233,7 +1233,7 @@ Primarily a production AI application threat
 
 This chapter focuses on the security impact of poisoned or attacker-controlled data **on a running AI capability**.
 
-The security of the artifact and supply-chain processes through which model or data components enter production is covered in File 02.
+The security of the artifact and supply-chain processes through which model or data components enter production is covered in Lesson 02.
 
 For retrieval-based systems, the runtime concern is that attacker-controlled content can become trusted-looking context and influence downstream model behavior.
 
@@ -1305,7 +1305,7 @@ Production Impact
 
 The controls overlap in places, but the attack paths differ.
 
-This distinction connects File 02 with this chapter without duplicating it.
+This distinction connects Lesson 02 with this chapter without duplicating it.
 
 ---
 

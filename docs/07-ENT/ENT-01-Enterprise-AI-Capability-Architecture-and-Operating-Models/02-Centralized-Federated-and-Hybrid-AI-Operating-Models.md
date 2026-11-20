@@ -40,14 +40,14 @@ The broader progression is:
 ENG → AIF → LLM → RET → AGT → PROD → ENT
                                       │
                                       ├── ENT-01
-                                      │    ├── File 01: What exists?
-                                      │    ├── File 02: How is it organized?
-                                      │    └── File 03: How do we decide?
+                                      │    ├── Lesson 01: What exists?
+                                      │    ├── Lesson 02: How is it organized?
+                                      │    └── Lesson 03: How do we decide?
                                       │
                                       └── Future ENT chapters
 ```
 
-File 01 established **what enterprise AI capabilities exist and where their boundaries are**.
+Lesson 01 established **what enterprise AI capabilities exist and where their boundaries are**.
 
 This chapter moves to the next question:
 
@@ -263,7 +263,7 @@ Governance
     └── How exceptions are handled
 ```
 
-ENT-01 File 02 therefore focuses on **operating structure, responsibility distribution, and operating-level decision authority**, not governance mechanisms.
+ENT-01 Lesson 02 therefore focuses on **operating structure, responsibility distribution, and operating-level decision authority**, not governance mechanisms.
 
 Detailed governance belongs to ENT-02.
 
@@ -1342,11 +1342,11 @@ The architecture should investigate which case applies rather than assuming the 
 
 # 34. Operating Model and Capability Boundaries
 
-File 01 established:
+Lesson 01 established:
 
 > What capabilities exist?
 
-File 02 asks:
+Lesson 02 asks:
 
 > How should responsibility for those capabilities be organized?
 
@@ -1698,7 +1698,7 @@ This assessment helps determine whether the responsibility distribution fits the
 
 It is **not a universal scoring model or formal enterprise architecture decision process**.
 
-Detailed architecture decision criteria, competing architecture options, trade-off evaluation, decision rationale, and consequences are covered in File 03.
+Detailed architecture decision criteria, competing architecture options, trade-off evaluation, decision rationale, and consequences are covered in Lesson 03.
 
 ---
 
@@ -2123,7 +2123,7 @@ Important principles:
 - Regulatory constraints, risk, integration needs, enterprise scale, AI maturity, expertise distribution, standardization, and domain autonomy can influence operating-model choice.
 - Operating-model assessments should begin from capability boundaries rather than team structures alone.
 - A good operating model is context-dependent and should be justified by the characteristics of the capabilities being operated.
-- **File 01 establishes what capabilities exist and where their boundaries are. File 02 establishes how those capabilities are organized and operated. File 03 will establish how architecture principles, options, trade-offs, and decisions are evaluated and defended.**
+- **Lesson 01 establishes what capabilities exist and where their boundaries are. Lesson 02 establishes how those capabilities are organized and operated. Lesson 03 will establish how architecture principles, options, trade-offs, and decisions are evaluated and defended.**
 
 ---
 

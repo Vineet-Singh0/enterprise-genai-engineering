@@ -40,21 +40,21 @@ These concepts are established in:
 The progression of ENT-01 is:
 
 ```text
-File 01
+Lesson 01
 WHAT exists?
     │
     ▼
 Capabilities + Boundaries
     │
     ▼
-File 02
+Lesson 02
 HOW is it organized?
     │
     ▼
 Operating Models + Responsibility Distribution
     │
     ▼
-File 03
+Lesson 03
 HOW do we decide?
     │
     ▼
@@ -372,11 +372,11 @@ They do not answer every specific architecture question.
 
 # 8. Architecture Boundaries as Decision Inputs
 
-File 01 established that boundaries determine where capabilities and responsibilities begin and end.
+Lesson 01 established that boundaries determine where capabilities and responsibilities begin and end.
 
-File 02 established how operating responsibility can be distributed around those boundaries.
+Lesson 02 established how operating responsibility can be distributed around those boundaries.
 
-File 03 uses those boundaries as **decision inputs**.
+Lesson 03 uses those boundaries as **decision inputs**.
 
 For example:
 
@@ -1783,7 +1783,7 @@ A strong architecture decision should survive these questions.
 
 The three files form a deliberate reasoning chain.
 
-## File 01 — Capabilities and Boundaries
+## Lesson 01 — Capabilities and Boundaries
 
 Answers:
 
@@ -1799,7 +1799,7 @@ Capability Boundary
 Architectural Responsibility
 ```
 
-## File 02 — Operating Models
+## Lesson 02 — Operating Models
 
 Answers:
 
@@ -1815,7 +1815,7 @@ Operating Model
 Operating-Level Decisions
 ```
 
-## File 03 — Principles and Decisions
+## Lesson 03 — Principles and Decisions
 
 Answers:
 
@@ -2164,19 +2164,19 @@ Remember:
 - The three ENT-01 files form a deliberate progression:
 
 ```text
-File 01
+Lesson 01
 WHAT exists?
 Capabilities + Boundaries
 
         ↓
 
-File 02
+Lesson 02
 HOW is it organized?
 Operating Models + Responsibility Distribution
 
         ↓
 
-File 03
+Lesson 03
 HOW do we decide?
 Principles + Options + Trade-offs + Architecture Decisions
 ```

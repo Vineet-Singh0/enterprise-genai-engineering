@@ -186,7 +186,7 @@ It answers questions such as:
 - Who can authorize those changes?
 - When should the system be retired?
 
-Lifecycle governance therefore connects the governance model from File 01 and the operating mechanisms from File 02 to the changing state of an AI system.
+Lifecycle governance therefore connects the governance model from Lesson 01 and the operating mechanisms from Lesson 02 to the changing state of an AI system.
 
 ---
 

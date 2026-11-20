@@ -117,7 +117,7 @@ The learner first establishes what the production system must accomplish, then d
 
 ### 01 — Production AI Problem and Production Boundaries
 
-**File:** [Production AI Problem and Production Boundaries](./01-Production-AI-Problem-and-Production-Boundaries.md)
+**Lesson:** [Production AI Problem and Production Boundaries](./01-Production-AI-Problem-and-Production-Boundaries.md)
 
 Focuses on:
 
@@ -142,7 +142,7 @@ Focuses on:
 
 ### 02 — Production AI System Architecture and Service Boundaries
 
-**File:** [Production AI System Architecture and Service Boundaries](./02-Production-AI-System-Architecture-and-Service-Boundaries.md)
+**Lesson:** [Production AI System Architecture and Service Boundaries](./02-Production-AI-System-Architecture-and-Service-Boundaries.md)
 
 Focuses on:
 
@@ -168,7 +168,7 @@ Focuses on:
 
 ### 03 — Production Workload Characteristics and Trade-offs
 
-**File:** [Production Workload Characteristics and Trade offs](./03-Production-Workload-Characteristics-and-Trade-offs.md)
+**Lesson:** [Production Workload Characteristics and Trade offs](./03-Production-Workload-Characteristics-and-Trade-offs.md)
 
 Focuses on:
 

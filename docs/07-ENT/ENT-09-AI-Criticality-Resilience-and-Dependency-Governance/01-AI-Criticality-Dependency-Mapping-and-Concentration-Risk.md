@@ -875,11 +875,11 @@ Nor is it:
 
 That belongs to production engineering and later resilience planning.
 
-The File 01 decision is:
+The Lesson 01 decision is:
 
 > **Is this dependency concentration material enough to require further continuity and resilience analysis?**
 
-That keeps the decision within File 01 ownership.
+That keeps the decision within Lesson 01 ownership.
 
 ---
 
@@ -965,13 +965,13 @@ The important principle is:
 
 > **A dependency posture that was acceptable yesterday may become unacceptable when the enterprise context changes.**
 
-Detailed dependency governance and continuous review belong primarily to File 03.
+Detailed dependency governance and continuous review belong primarily to Lesson 03.
 
 ---
 
 # Production / Enterprise Perspective
 
-File 01 establishes the **enterprise dependency and criticality picture**.
+Lesson 01 establishes the **enterprise dependency and criticality picture**.
 
 The reasoning chain is:
 
@@ -1007,7 +1007,7 @@ PROD
 "How should the production system technically achieve it?"
 ```
 
-File 01 therefore does not become a tutorial on:
+Lesson 01 therefore does not become a tutorial on:
 
 - retries;
 - timeouts;
@@ -1078,7 +1078,7 @@ Ask:
 
 > **Is the existing concentration acceptable given the criticality and consequence of the dependent capabilities?**
 
-The resulting resilience strategy belongs to File 03.
+The resulting resilience strategy belongs to Lesson 03.
 
 ---
 
@@ -1086,13 +1086,13 @@ The resulting resilience strategy belongs to File 03.
 
 Not necessarily.
 
-The existence or absence of an alternative is a relevant input to criticality and dependency analysis, but File 01 does not determine the detailed fallback design.
+The existence or absence of an alternative is a relevant input to criticality and dependency analysis, but Lesson 01 does not determine the detailed fallback design.
 
 Ask:
 
 > **Does the dependency structure create a material exposure that requires further continuity analysis?**
 
-Detailed fallback, degraded-mode, and substitution requirements belong to File 02.
+Detailed fallback, degraded-mode, and substitution requirements belong to Lesson 02.
 
 ---
 
@@ -1199,7 +1199,7 @@ The objective is proportionate resilience, not zero concentration.
 
 ---
 
-## Mistake 9 — Turning File 01 into provider strategy
+## Mistake 9 — Turning Lesson 01 into provider strategy
 
 If the discussion becomes:
 
@@ -1211,11 +1211,11 @@ If the discussion becomes:
 
 the discussion belongs to **ENT-07**.
 
-File 01 asks what criticality and concentration exposure arise from those dependencies.
+Lesson 01 asks what criticality and concentration exposure arise from those dependencies.
 
 ---
 
-## Mistake 10 — Turning File 01 into continuity design
+## Mistake 10 — Turning Lesson 01 into continuity design
 
 If the discussion becomes:
 
@@ -1225,7 +1225,7 @@ If the discussion becomes:
 - recovery targets;
 - technical recovery mechanisms;
 
-the discussion has moved into File 02 or PROD.
+the discussion has moved into Lesson 02 or PROD.
 
 ---
 
@@ -1418,8 +1418,8 @@ The detailed provider strategy belongs to ENT-07, while the continuity and resil
 10. Concentration can provide significant enterprise benefits as well as create resilience exposure.
 11. Application-level independence does not guarantee enterprise dependency independence.
 12. The correct question is not whether concentration exists, but whether it is acceptable in context.
-13. File 01 establishes the criticality and dependency foundation for the continuity and recovery reasoning developed in File 02.
-14. Strategic provider diversification belongs to ENT-07; detailed fallback and degraded-mode design belongs to File 02; technical implementation belongs to PROD.
+13. Lesson 01 establishes the criticality and dependency foundation for the continuity and recovery reasoning developed in Lesson 02.
+14. Strategic provider diversification belongs to ENT-07; detailed fallback and degraded-mode design belongs to Lesson 02; technical implementation belongs to PROD.
 
 The central engineering question is:
 
@@ -1463,6 +1463,6 @@ flowchart TD
     I --> J[Material Dependency Exposure]
 ```
 
-The purpose of File 01 is not to eliminate every dependency or concentration.
+The purpose of Lesson 01 is not to eliminate every dependency or concentration.
 
 It is to make the enterprise dependency structure and capability criticality visible enough to support **proportionate, defensible continuity and resilience analysis in the later ENT-09 files**.

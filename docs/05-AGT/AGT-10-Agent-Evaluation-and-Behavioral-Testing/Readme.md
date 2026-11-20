@@ -47,7 +47,7 @@ After completing AGT-10, you should be able to:
 
 AGT-10 contains exactly three lessons.
 
-| File | Primary Focus |
+| Lesson | Primary Focus |
 |---|---|
 | [Agent Task Success and Behavioral Evaluation](./01-Agent-Task-Success-and-Behavioral-Evaluation.md) | Task success, behavioral correctness, evaluation dimensions, acceptance criteria, and evaluation fundamentals. |
 | [Trajectory Tool Planning and State Evaluation](./02-Trajectory-Tool-Planning-and-State-Evaluation.md) | Trajectories, tool use, planning, state transitions, context, memory, intermediate behavior, and failure points. |

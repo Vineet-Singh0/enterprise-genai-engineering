@@ -145,5 +145,5 @@ Choose a technical document and one retrieval unit. Produce a short trace that:
 - [RET-03 — Chunking and Document Structure](../RET-03-Chunking-and-Document-Structure/README.md)
 - [RET-05 — Lexical Retrieval and Sparse Search](../RET-05-Lexical-Retrieval-and-Sparse-Search/README.md)
 - [RET-06 — Dense Retrieval and Vector Search](../RET-06-Dense-Retrieval-and-Vector-Search/README.md)
-- [File 02 — Index Lifecycle, Freshness, and Consistency](02-Index-Lifecycle-Freshness-and-Consistency.md)
-- [File 03 — Index Design and Engineering Trade-offs](03-Index-Design-and-Engineering-Trade-offs.md)
+- [Lesson 02 — Index Lifecycle, Freshness, and Consistency](02-Index-Lifecycle-Freshness-and-Consistency.md)
+- [Lesson 03 — Index Design and Engineering Trade-offs](03-Index-Design-and-Engineering-Trade-offs.md)

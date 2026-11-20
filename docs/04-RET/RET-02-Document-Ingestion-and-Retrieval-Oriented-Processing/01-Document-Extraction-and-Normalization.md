@@ -114,7 +114,7 @@ Choose processing methods according to source characteristics and the consequenc
 - **Validation** determines whether output meets defined quality checks.
 - **Failure handling** prevents defective output from silently passing downstream.
 
-This file owns source-format extraction, conservative normalization, and extraction-quality validation. Metadata identity and provenance belong to File 02; corpus quality, freshness, and lifecycle belong to File 03. Chunking, embeddings, indexing, and retrieval are outside this file's scope.
+This file owns source-format extraction, conservative normalization, and extraction-quality validation. Metadata identity and provenance belong to Lesson 02; corpus quality, freshness, and lifecycle belong to Lesson 03. Chunking, embeddings, indexing, and retrieval are outside this file's scope.
 
 ## Further Reading
 

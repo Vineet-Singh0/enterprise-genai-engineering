@@ -287,7 +287,7 @@ Operational Improvement
 
 ## Chapter Map
 
-| File | Primary Responsibility |
+| Lesson | Primary Responsibility |
 |---|---|
 | AI Production Operations and On Call Readiness | Production operations, service ownership, on-call readiness, operational context, dependencies, escalation, and operational preparation |
 | AI Incident Detection Diagnosis Recovery and Disaster Readiness | Incident detection, triage, diagnosis, mitigation, recovery, verification, disaster readiness, failover, backup/restore, RTO/RPO, and continuity |

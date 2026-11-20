@@ -2158,7 +2158,7 @@ The three files in PROD-01 now establish a complete progression:
 
 ```text
 ┌──────────────────────────────────────────────┐
-│ File 01                                      │
+│ Lesson 01                                    │
 │ Production AI Problem & Boundaries           │
 │                                              │
 │ What problem exists?                         │
@@ -2168,7 +2168,7 @@ The three files in PROD-01 now establish a complete progression:
                        │
                        ▼
 ┌──────────────────────────────────────────────┐
-│ File 02                                      │
+│ Lesson 02                                    │
 │ System Architecture & Service Boundaries     │
 │                                              │
 │ How should responsibilities be represented?  │
@@ -2178,7 +2178,7 @@ The three files in PROD-01 now establish a complete progression:
                        │
                        ▼
 ┌──────────────────────────────────────────────┐
-│ File 03                                      │
+│ Lesson 03                                    │
 │ Workload Characteristics & Trade-offs        │
 │                                              │
 │ What workload must the architecture serve?   │

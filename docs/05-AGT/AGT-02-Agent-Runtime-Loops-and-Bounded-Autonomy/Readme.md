@@ -93,7 +93,7 @@ Read the lessons in the following order.
 
 ### 1. Runtime Harness and Execution Loop
 
-**File:** Agent Runtime Harness and Execution Loop
+**Lesson:** Agent Runtime Harness and Execution Loop
 
 This lesson establishes the runtime foundation:
 
@@ -115,7 +115,7 @@ This lesson establishes the runtime foundation:
 
 ### 2. Decision, Action, Observation and Continuation
 
-**File:** Agent Decision Action Observation and Continuation
+**Lesson:** Agent Decision Action Observation and Continuation
 
 This lesson examines the execution cycle:
 
@@ -141,7 +141,7 @@ It focuses on how one execution step produces the information needed to determin
 
 ### 3. Termination Policies and Bounded Autonomy
 
-**File:** Termination Policies and Bounded Autonomy
+**Lesson:** Termination Policies and Bounded Autonomy
 
 This lesson covers runtime stopping conditions and execution boundaries, including:
 
@@ -509,7 +509,7 @@ Before moving beyond AGT-02, you should be able to explain:
 
 ## Chapter Navigation
 
-| File | Purpose |
+| Lesson | Purpose |
 |---|---|
 | [Agent Runtime Harness and Execution Loop](01-Agent-Runtime-Harness-and-Execution-Loop.md) | Runtime harness and execution-loop foundations |
 | [Agent Decision Action Observation and Continuation](02-Agent-Decision-Action-Observation-and-Continuation.md) | Execution-cycle mechanics |

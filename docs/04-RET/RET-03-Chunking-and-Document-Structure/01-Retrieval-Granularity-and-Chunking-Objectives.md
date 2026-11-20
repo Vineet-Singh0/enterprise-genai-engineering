@@ -167,7 +167,7 @@ There are two broad ways to achieve this:
 
 The second approach depends on the surrounding system actually preserving and using that relationship. A reference to missing context is not sufficient by itself.
 
-Detailed treatment of headings, parent sections, and structural context belongs to File 03.
+Detailed treatment of headings, parent sections, and structural context belongs to Lesson 03.
 
 ### 6.3 Source-information preservation
 
@@ -235,7 +235,7 @@ Inspect resulting units
 Determine whether they meet the objectives
 ```
 
-The actual splitting mechanism is a separate design decision. RET-03 File 02 covers the available chunking strategies and their boundary behavior.
+The actual splitting mechanism is a separate design decision. RET-03 Lesson 02 covers the available chunking strategies and their boundary behavior.
 
 The distinction matters because a splitting algorithm can work exactly as designed while producing unsuitable retrieval units.
 
@@ -306,7 +306,7 @@ Overlap does not automatically repair a poor granularity decision. Repeating a f
 
 The first question should be whether the boundaries and unit sizes are appropriate. Overlap should then be considered as a specific way to address boundary-spanning information.
 
-The detailed mechanisms and trade-offs of overlap belong to RET-03 File 02.
+The detailed mechanisms and trade-offs of overlap belong to RET-03 Lesson 02.
 
 ## 8. Defining Chunking Objectives
 
@@ -700,7 +700,7 @@ The engineering decision should account for:
 
 **Why it fails:** The easiest splitting method may produce units that do not match the system's information needs.
 
-**Better approach:** Define the desired retrieval unit first. Select a strategy in RET-03 File 02 to produce it.
+**Better approach:** Define the desired retrieval unit first. Select a strategy in RET-03 Lesson 02 to produce it.
 
 ### Mistake 7: Equating structural coherence with retrieval success
 

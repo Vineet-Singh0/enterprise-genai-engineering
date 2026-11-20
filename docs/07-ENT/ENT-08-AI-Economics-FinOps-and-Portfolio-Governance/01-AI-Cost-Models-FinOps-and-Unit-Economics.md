@@ -21,7 +21,7 @@ After completing this chapter, you should be able to:
 - distinguish economic optimization from technical optimization;
 - reason about total economic impact as a decision-oriented economic boundary rather than a standardized accounting measure;
 - compare AI workloads using economic evidence without reducing the decision to a single metric;
-- understand how File 01's economic evidence feeds the investment reasoning developed in File 02.
+- understand how Lesson 01's economic evidence feeds the investment reasoning developed in Lesson 02.
 
 ---
 
@@ -915,7 +915,7 @@ The relevant question is:
 
 That is where unit economics becomes important.
 
-Detailed expected-value and investment reasoning belongs primarily to File 02.
+Detailed expected-value and investment reasoning belongs primarily to Lesson 02.
 
 ---
 
@@ -2427,7 +2427,7 @@ Governance authority remains outside ENT-08.
 
 ## 42. From Cost Model to Economic Evidence
 
-The central output of File 01 is **economic evidence**.
+The central output of Lesson 01 is **economic evidence**.
 
 The progression is:
 
@@ -2464,7 +2464,7 @@ Economic evidence may include:
 
 This evidence does not by itself determine whether an initiative should be funded.
 
-That investment decision is developed in File 02.
+That investment decision is developed in Lesson 02.
 
 ---
 
@@ -2520,31 +2520,31 @@ The enterprise can then ask:
 
 ---
 
-# 44. From Economic Evidence to File 02
+# 44. From Economic Evidence to Lesson 02
 
-File 01 and File 02 have deliberately different responsibilities.
+Lesson 01 and Lesson 02 have deliberately different responsibilities.
 
-File 01 asks:
+Lesson 01 asks:
 
 > **What does the AI capability cost, what drives that cost, and what does the resulting economic evidence tell us about its efficiency?**
 
-File 02 asks:
+Lesson 02 asks:
 
 > **Given economic evidence and other investment dimensions, should the enterprise prioritize, fund, or scale the opportunity?**
 
 Therefore:
 
 ```text
-File 01
+Lesson 01
 Economic Understanding
         ↓
 Economic Evidence
         ↓
-File 02
+Lesson 02
 Investment Reasoning
 ```
 
-File 01 does not own:
+Lesson 01 does not own:
 
 - universal prioritization formulas;
 - portfolio ranking;
@@ -2552,7 +2552,7 @@ File 01 does not own:
 - investment stage gates;
 - expected-value methodology.
 
-Those are developed in File 02.
+Those are developed in Lesson 02.
 
 ---
 
@@ -3108,7 +3108,7 @@ Weak reasoning:
 
 Better reasoning:
 
-> “The capability has evidence of useful outcomes and a defined economic profile. File 02 can combine that economic evidence with strategic alignment, expected value, feasibility, capacity, and other investment dimensions to determine whether the opportunity should be prioritized or funded.”
+> “The capability has evidence of useful outcomes and a defined economic profile. Lesson 02 can combine that economic evidence with strategic alignment, expected value, feasibility, capacity, and other investment dimensions to determine whether the opportunity should be prioritized or funded.”
 
 That is the difference between **cost reporting** and **economic engineering**.
 
@@ -3546,7 +3546,7 @@ Always Minimize Provider Cost
 
 23. **Good AI economic reasoning connects cost with meaningful success and outcomes.**
 
-24. **File 01 produces economic evidence; File 02 uses that evidence within broader AI investment reasoning.**
+24. **Lesson 01 produces economic evidence; Lesson 02 uses that evidence within broader AI investment reasoning.**
 
 25. **The purpose of AI economics is better enterprise decision-making, not simply lower bills.**
 
@@ -3602,7 +3602,7 @@ The most important idea from this chapter is:
           Subsequent AI Decision
                      │
                      ▼
-             File 02 Investment
+             Lesson 02 Investment
                 Reasoning
 ```
 
@@ -3614,7 +3614,7 @@ toward:
 
 > **“What economic resources does this capability consume, what drives those costs, what success or outcome does that consumption produce, and what does the resulting economic evidence tell us?”**
 
-That is the foundation for the investment reasoning developed in **File 02**.
+That is the foundation for the investment reasoning developed in **Lesson 02**.
 
 ## Next Chapter
 

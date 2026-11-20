@@ -163,7 +163,7 @@ Foundational explanations may refer to these areas when necessary, but detailed 
 | ENG-02 — Programming Foundations | Provides the programming concepts used in concurrency examples. |
 | ENG-03 — Software Engineering Principles | Supports modularity, abstraction, and maintainable design. |
 | ENG-08 — Development Quality | Provides testing, debugging, profiling, and quality practices for investigating failures. |
-| Future PROD topics | Apply concurrency concepts to production workloads and services within their approved scope. |
+| Future PROD topics | Apply concurrency concepts to production workloads and services. |
 | Future ENT topics | Apply these foundations to larger systems without duplicating foundational concurrency explanations. |
 
 ## Completion Criteria

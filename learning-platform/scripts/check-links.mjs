@@ -24,12 +24,14 @@ const files = await walk(distDir).catch(() => {
 });
 
 const re = /<span class="broken-link" title="([^"]*)">/g;
+// Dead placeholder anchors, e.g. markdown `[Title](#)`, render as <a href="#">.
+const deadAnchor = /<a\b[^>]*\shref="#"[^>]*>/g;
 const hits = [];
 for (const file of files) {
   const html = await readFile(file, 'utf8');
-  for (const m of html.matchAll(re)) {
-    hits.push({ page: path.relative(distDir, file).replace(/\\/g, '/'), title: m[1] });
-  }
+  const page = path.relative(distDir, file).replace(/\\/g, '/');
+  for (const m of html.matchAll(re)) hits.push({ page, title: m[1] });
+  for (const m of html.matchAll(deadAnchor)) hits.push({ page, title: `dead anchor ${m[0]}` });
 }
 
 if (hits.length) {

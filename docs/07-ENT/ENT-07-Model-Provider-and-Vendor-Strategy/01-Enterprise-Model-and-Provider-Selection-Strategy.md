@@ -13,7 +13,7 @@ By the end of this chapter, you should be able to:
 - reason about the architectural consequences of selecting a model or provider
 - explain why the strongest model on a narrow benchmark may not be the best enterprise choice
 - make a defensible model/provider selection decision without relying on a single score
-- recognize where File 01 ends and dependency, lock-in, procurement, and exit strategy begin
+- recognize where Lesson 01 ends and dependency, lock-in, procurement, and exit strategy begin
 
 ---
 
@@ -716,7 +716,7 @@ These questions do not require the team to reject dependency.
 
 They require the team to **understand its implications before selecting the option**.
 
-Detailed analysis of portability, concentration, lock-in, and diversification belongs in File 02.
+Detailed analysis of portability, concentration, lock-in, and diversification belongs in Lesson 02.
 
 ---
 
@@ -919,7 +919,7 @@ The engineering question is:
 
 > **Is the architectural coupling intentional and justified by the capability gained?**
 
-The detailed analysis of portability dimensions and lock-in belongs in File 02.
+The detailed analysis of portability dimensions and lock-in belongs in Lesson 02.
 
 ---
 
@@ -1008,7 +1008,7 @@ It can also create greater concentration around that provider.
 
 Therefore, the selection decision should record concentration as a strategic consequence rather than assuming that standardization is automatically beneficial or harmful.
 
-Detailed provider concentration and diversification strategy belongs in File 02.
+Detailed provider concentration and diversification strategy belongs in Lesson 02.
 
 ---
 
@@ -1022,7 +1022,7 @@ But the enterprise should also ask:
 
 > **What important provider-specific assumptions would we have to revisit if the capability needed to be substituted?**
 
-This makes substitution an input to the selection decision without turning File 01 into a migration or portability guide.
+This makes substitution an input to the selection decision without turning Lesson 01 into a migration or portability guide.
 
 ---
 
@@ -1067,7 +1067,7 @@ Provider-Specific Capabilities
 
 The correct architecture depends on the workload.
 
-Detailed portability analysis belongs in File 02.
+Detailed portability analysis belongs in Lesson 02.
 
 ---
 
@@ -1400,19 +1400,19 @@ ENT-06 focuses on how AI capabilities and providers integrate into enterprise ar
 
 ---
 
-## 13. How does File 01 differ from File 02?
+## 13. How does Lesson 01 differ from Lesson 02?
 
 **Expected answer:**
 
-File 01 determines which model/provider capabilities are strategically suitable. File 02 examines the dependencies created by those choices and addresses portability, diversification, concentration, lock-in, and substitution barriers.
+Lesson 01 determines which model/provider capabilities are strategically suitable. Lesson 02 examines the dependencies created by those choices and addresses portability, diversification, concentration, lock-in, and substitution barriers.
 
 ---
 
-## 14. How does File 01 differ from File 03?
+## 14. How does Lesson 01 differ from Lesson 03?
 
 **Expected answer:**
 
-File 01 focuses on selection and strategic suitability. File 03 focuses on AI-specific vendor risk, procurement implications, contractual dependencies, substitution conditions, and strategic exit.
+Lesson 01 focuses on selection and strategic suitability. Lesson 03 focuses on AI-specific vendor risk, procurement implications, contractual dependencies, substitution conditions, and strategic exit.
 
 ---
 
@@ -1518,7 +1518,7 @@ Short-Term Productivity ↔ Long-Term Dependency
 11. **There is no universally correct model/provider strategy.**
 12. **The best enterprise decision is a defensible trade-off, not necessarily the highest-scoring candidate.**
 13. **Selection should make important dependencies and substitution implications visible before adoption.**
-14. **File 01 establishes strategic suitability; detailed portability and lock-in belong to File 02, while vendor risk, procurement, and exit belong to File 03.**
+14. **Lesson 01 establishes strategic suitability; detailed portability and lock-in belong to Lesson 02, while vendor risk, procurement, and exit belong to Lesson 03.**
 
 ---
 
@@ -1536,8 +1536,8 @@ For adjacent enterprise context:
 - ENT-08 — AI Economics, FinOps and Portfolio Governance
 - ENT-09 — AI Criticality, Resilience and Dependency Governance
 
-> **File 01 answers: “Which model/provider should we strategically choose?”**
+> **Lesson 01 answers: “Which model/provider should we strategically choose?”**
 >
-> **File 02 answers: “How do we manage the dependency created by that choice?”**
+> **Lesson 02 answers: “How do we manage the dependency created by that choice?”**
 >
-> **File 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**
+> **Lesson 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**

@@ -461,7 +461,7 @@ Important observable dimensions may include:
 - lifecycle state,
 - and relevant version information.
 
-The detailed semantics of logs, metrics, traces, and AI-specific signals are covered in [File 02](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md).
+The detailed semantics of logs, metrics, traces, and AI-specific signals are covered in [Lesson 02](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md).
 
 ---
 
@@ -1295,7 +1295,7 @@ Correlation allows the evidence to be connected.
 
 This is why request identity and distributed context are fundamental to production AI observability.
 
-Detailed implementation of logs, metrics, traces, and correlation belongs to [File 02](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md).
+Detailed implementation of logs, metrics, traces, and correlation belongs to [Lesson 02](./02-Logs-Metrics-Traces-and-AI-Specific-Signals.md).
 
 ---
 
@@ -1343,7 +1343,7 @@ The resulting information becomes useful for investigation.
 
 Engineers use the evidence to understand behavior and make decisions.
 
-Detailed telemetry architecture is intentionally deferred to [File 03](./03-AI-Observability-Architecture-and-Signal-Design.md).
+Detailed telemetry architecture is intentionally deferred to [Lesson 03](./03-AI-Observability-Architecture-and-Signal-Design.md).
 
 ---
 

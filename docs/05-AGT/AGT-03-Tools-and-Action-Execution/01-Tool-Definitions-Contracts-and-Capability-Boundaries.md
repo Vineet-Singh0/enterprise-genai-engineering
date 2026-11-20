@@ -859,7 +859,7 @@ Correct Information
 
 The exact interpretation depends on the tool contract and the underlying system.
 
-Detailed result handling and execution outcome analysis are developed further in **File 03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries**.
+Detailed result handling and execution outcome analysis are developed further in **Lesson 03 — Tool Failures, Side Effects, Idempotency and Invocation Boundaries**.
 
 ---
 
@@ -900,7 +900,7 @@ The important principle is:
 
 > **Errors should communicate meaningful distinctions that the consuming system can act on.**
 
-The detailed lifecycle of execution failures, timeout behavior, ambiguous outcomes, and action-level failure handling belongs primarily to File 03.
+The detailed lifecycle of execution failures, timeout behavior, ambiguous outcomes, and action-level failure handling belongs primarily to Lesson 03.
 
 ---
 
@@ -1470,7 +1470,7 @@ to:
 "How does the system discover, select, construct, and invoke that capability?"
 ```
 
-File 03 will then cover:
+Lesson 03 will then cover:
 
 ```text
 Execution

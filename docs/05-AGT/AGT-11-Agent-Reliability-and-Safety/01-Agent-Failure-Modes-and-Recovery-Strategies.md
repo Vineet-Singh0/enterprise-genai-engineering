@@ -1192,15 +1192,15 @@ Failure Recovery
 Safety Enforcement
 ```
 
-File 01 primarily asks:
+Lesson 01 primarily asks:
 
 > **“What should the system do when something fails or produces an abnormal outcome?”**
 
-File 02 primarily asks:
+Lesson 02 primarily asks:
 
 > **“How does the system constrain execution and state so unsafe behavior cannot continue?”**
 
-Therefore, File 01 focuses on selecting among:
+Therefore, Lesson 01 focuses on selecting among:
 
 ```text
 Retry
@@ -1212,7 +1212,7 @@ Contain
 Terminate
 ```
 
-while File 02 goes deeper into mechanisms such as:
+while Lesson 02 goes deeper into mechanisms such as:
 
 ```text
 Safety Invariants
@@ -1264,7 +1264,7 @@ This lesson covers the **recovery decision**:
 
 > **When should the system recover, contain, escalate, or terminate?**
 
-The detailed mechanics for enforcing those boundaries belong to **AGT-11 File 02 — Execution and State Safety**.
+The detailed mechanics for enforcing those boundaries belong to **AGT-11 Lesson 02 — Execution and State Safety**.
 
 ---
 
@@ -2266,10 +2266,10 @@ Recovery Decision
 ### Safety Boundary
 
 ```text
-File 01
+Lesson 01
 "What should we do when failure occurs?"
 
-File 02
+Lesson 02
 "How do we constrain execution and state so unsafe behavior cannot continue?"
 ```
 
@@ -2303,7 +2303,7 @@ Contain / Escalate / Terminate
 16. Containment limits consequences when continuation is unsafe.
 17. Termination can be the correct recovery outcome.
 18. Recovery observability should explain both what failed and why a particular recovery path was selected.
-19. File 01 decides the appropriate recovery response; File 02 owns the detailed execution/state safety mechanisms that enforce safety boundaries.
+19. Lesson 01 decides the appropriate recovery response; Lesson 02 owns the detailed execution/state safety mechanisms that enforce safety boundaries.
 20. The goal of recovery is not to keep the agent running indefinitely.
 21. The goal is to restore acceptable behavior **only when safe continuation is justified**.
 
@@ -2334,10 +2334,10 @@ For related concepts within this curriculum, continue with:
 - **AGT-10 — Agent Evaluation**  
   For systematic evaluation of agent behavior and recovery-related controls.
 
-- **AGT-11 File 02 — Execution and State Safety**  
+- **AGT-11 Lesson 02 — Execution and State Safety**  
   For safety invariants, unsafe execution and state, containment, and termination controls.
 
-- **AGT-11 File 03 — Agent Safety, Excessive Agency and Tool Boundaries**  
+- **AGT-11 Lesson 03 — Agent Safety, Excessive Agency and Tool Boundaries**  
   For excessive agency, capability and authority boundaries, tool trust, and unsafe agent actions.
 
 ---

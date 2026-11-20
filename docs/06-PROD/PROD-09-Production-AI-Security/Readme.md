@@ -364,7 +364,7 @@ The learner finally applies the previous security concepts to AI-specific attack
 
 # Chapter Map
 
-| File | Primary Responsibility |
+| Lesson | Primary Responsibility |
 |---|---|
 | Production AI Identity Secrets and Access Control | Identity, authentication, authorization, access control, workload identity, secrets, credentials, and least privilege |
 | AI Application Container and Supply Chain Security | Application, container, dependency, artifact, vulnerability, and software/AI supply-chain security |

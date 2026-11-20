@@ -199,7 +199,7 @@ Candidate depth also affects how complementarity is observed. A second retriever
 
 When comparing retrievers, record their retrieval depths. Otherwise, an observed difference may reflect configuration rather than a meaningful difference in retrieval behavior.
 
-This file establishes the concept. Detailed depth selection, overlap analysis, deduplication, and coverage diagnostics belong to [File 03 — Candidate Depth, Deduplication, and Coverage](03-Candidate-Depth-Deduplication-and-Coverage.md).
+This file establishes the concept. Detailed depth selection, overlap analysis, deduplication, and coverage diagnostics belong to [Lesson 03 — Candidate Depth, Deduplication, and Coverage](03-Candidate-Depth-Deduplication-and-Coverage.md).
 
 ## 6. Candidate Relevance, Candidate Recall, and Final Ranking
 
@@ -439,7 +439,7 @@ For input lengths \(n\) and \(m\), expected time complexity is \(O(n+m)\) under 
 
 The validation checks assume the inputs are lists, as stated in the exercise contract. A more general production interface would validate container types explicitly and define behavior for malformed upstream responses.
 
-The code compares IDs; it does not determine whether different IDs refer to the same underlying document. That requires a reliable identity strategy, which is treated in File 03.
+The code compares IDs; it does not determine whether different IDs refer to the same underlying document. That requires a reliable identity strategy, which is treated in Lesson 03.
 
 ### E. Advanced follow-up questions
 

@@ -77,7 +77,7 @@ Protect the User-Visible Outcome
 
 # Lesson 01 — AI Service Reliability, SLIs, SLOs and Error Budgets
 
-**File:**
+**Lesson:**
 
 AI Service Reliability SLIs SLOs and Error Budgets
 
@@ -123,7 +123,7 @@ AI evaluation methodology is not the purpose of this lesson.
 
 # Lesson 02 — Failure Isolation, Timeouts, Retries and Backpressure
 
-**File:**
+**Lesson:**
 
 Failure Isolation Timeouts Retries and Backpressure
 
@@ -179,7 +179,7 @@ The file teaches these mechanisms as **interacting reliability controls**, rathe
 
 ## Lesson 03 — Graceful Degradation, Fallbacks and Dependency Failure
 
-**File:**
+**Lesson:**
 
 Graceful Degradation Fallbacks and Dependency Failure
 
@@ -572,25 +572,6 @@ After completing PROD-06, the learner should be able to:
 Most importantly, the learner should be able to answer:
 
 > **When something fails in a production AI system, what should happen next, why, and what are the consequences of that decision?**
-
----
-
-## Chapter File Structure
-
-```text
-│
-├── README.md
-│
-├── 01-AI-Service-Reliability-SLIs-SLOs-and-Error-Budgets.md
-│
-├── 02-Failure-Isolation-Timeouts-Retries-and-Backpressure.md
-│
-└── 03-Graceful-Degradation-Fallbacks-and-Dependency-Failure.md
-```
-
-These are the only lessons in PROD-06.
-
-Each important concept has a primary teaching location so that later chapters can reference reliability engineering without duplicating its core instruction.
 
 ---
 

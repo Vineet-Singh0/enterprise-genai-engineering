@@ -49,9 +49,9 @@ The chapter assumes that a first-stage retriever has already produced a candidat
 
 | Topic | Primary location |
 |---|---|
-| Score interpretation and fundamental ranking concepts | RET-09 File 01 |
+| Score interpretation and fundamental ranking concepts | RET-09 Lesson 01 |
 | Reranking strategies and Cross-Encoder implementation | This file |
-| Top-K decisions, ranking errors, and ranking trade-offs | RET-09 File 03 |
+| Top-K decisions, ranking errors, and ranking trade-offs | RET-09 Lesson 03 |
 | Candidate generation, fusion, and candidate coverage | RET-08 |
 | Formal retrieval evaluation and benchmark methodology | RET-10 |
 | General retrieval diagnostics | RET-11 |

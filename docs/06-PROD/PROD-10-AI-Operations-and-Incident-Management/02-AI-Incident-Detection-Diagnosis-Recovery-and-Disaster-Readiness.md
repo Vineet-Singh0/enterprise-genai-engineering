@@ -208,7 +208,7 @@ Closure
 Confirm the incident is controlled and preserve the operational facts needed for later learning.
 ```
 
-Detailed postmortem analysis and durable operational improvement belong to **File 03**.
+Detailed postmortem analysis and durable operational improvement belong to **Lesson 03**.
 
 ---
 
@@ -1616,7 +1616,7 @@ Gap
 Operational fact to preserve
 ```
 
-Detailed postmortem analysis and corrective-action ownership belong to **File 03**.
+Detailed postmortem analysis and corrective-action ownership belong to **Lesson 03**.
 
 ---
 
@@ -1830,7 +1830,7 @@ Minimal procedures may leave operators without enough guidance.
 
 A useful operational procedure should provide enough information to support reliable decisions without becoming an unmaintainable manual.
 
-Detailed runbook design belongs to **File 03**.
+Detailed runbook design belongs to **Lesson 03**.
 
 ---
 
@@ -2234,7 +2234,7 @@ Recovery Confirmed
 17. Failover must include validation of dependencies and user-visible functionality.
 18. RTO and RPO are recovery objectives, not guarantees of actual recovery performance.
 19. Recovery drills provide evidence about real recovery capability.
-20. Incident closure should preserve operational facts; detailed postmortem analysis and durable improvement belong to File 03.
+20. Incident closure should preserve operational facts; detailed postmortem analysis and durable improvement belong to Lesson 03.
 
 ---
 
@@ -2322,13 +2322,13 @@ It does not cover:
 The progression within PROD-10 is:
 
 ```text
-File 01
+Lesson 01
 Prepare the team and system for responsible operation.
                     ↓
-File 02
+Lesson 02
 Respond to incidents and recover production service.
                     ↓
-File 03
+Lesson 03
 Analyze operational facts, conduct postmortems, and convert learning into durable improvement.
 ```
 

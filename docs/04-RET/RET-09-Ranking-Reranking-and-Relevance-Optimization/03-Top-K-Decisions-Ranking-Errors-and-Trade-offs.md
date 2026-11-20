@@ -43,9 +43,9 @@ The surrounding retrieval curriculum separates responsibilities deliberately:
 | Topic | Primary responsibility |
 |---|---|
 | RET-08 | Candidate generation, retrieval fusion, candidate depth, deduplication, and coverage |
-| RET-09 File 01 | Candidate scores and relevance ordering |
-| RET-09 File 02 | Reranking strategies and Cross-Encoders |
-| RET-09 File 03 | Final selection, top-K decisions, boundary errors, and trade-offs |
+| RET-09 Lesson 01 | Candidate scores and relevance ordering |
+| RET-09 Lesson 02 | Reranking strategies and Cross-Encoders |
+| RET-09 Lesson 03 | Final selection, top-K decisions, boundary errors, and trade-offs |
 | RET-10 | Formal retrieval evaluation, relevance judgments, and benchmark methodology |
 | RET-11 | Broader retrieval diagnostics and troubleshooting |
 

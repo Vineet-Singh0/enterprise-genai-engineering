@@ -12,7 +12,7 @@ By completing this chapter, you should be able to:
 
 ## Prerequisites
 
-This chapter assumes familiarity with dense retrieval, query and document vectors, and similarity measures. See [File 01 — Dense Retrieval and Embedding Compatibility](01-Dense-Retrieval-and-Embedding-Compatibility.md) for the representation contract.
+This chapter assumes familiarity with dense retrieval, query and document vectors, and similarity measures. See [Lesson 01 — Dense Retrieval and Embedding Compatibility](01-Dense-Retrieval-and-Embedding-Compatibility.md) for the representation contract.
 
 **Estimated reading time:** 11 minutes.
 
@@ -241,7 +241,7 @@ These families are not mutually exclusive product categories. An implementation 
 
 The engineering question is not which family is universally best. It is which combination meets the workload's latency, memory, update, and quality requirements at an acceptable operational cost.
 
-Detailed parameter tuning belongs to File 03.
+Detailed parameter tuning belongs to Lesson 03.
 
 ## 5. ANN Recall and Retrieval Quality
 
@@ -344,7 +344,7 @@ An ANN candidate is acceptable only if it meets the latency and memory requireme
 - **Reject or revise an ANN candidate** if it meets latency requirements but fails recall or task quality.
 - **Revisit the architecture or requirements** if neither approach satisfies the constraints.
 
-This process separates the decision to use ANN from the later task of tuning it. File 03 covers detailed vector-search tuning and diagnostics.
+This process separates the decision to use ANN from the later task of tuning it. Lesson 03 covers detailed vector-search tuning and diagnostics.
 
 ## 7. Common Engineering Failure Modes
 
@@ -399,5 +399,5 @@ ANN recall measures overlap with exact results, not semantic relevance. Evaluate
 - [FAISS — Similarity Search and Clustering of Dense Vectors](https://github.com/facebookresearch/faiss)
 - [hnswlib — Hierarchical Navigable Small World Graphs](https://github.com/nmslib/hnswlib)
 - [ScaNN — Efficient Vector Similarity Search](https://github.com/google-research/google-research/tree/master/scann)
-- [File 01 — Dense Retrieval and Embedding Compatibility](01-Dense-Retrieval-and-Embedding-Compatibility.md)
-- [File 03 — Vector Search Tuning and Dense Retrieval Diagnostics](03-Vector-Search-Tuning-and-Dense-Retrieval-Diagnostics.md)
+- [Lesson 01 — Dense Retrieval and Embedding Compatibility](01-Dense-Retrieval-and-Embedding-Compatibility.md)
+- [Lesson 03 — Vector Search Tuning and Dense Retrieval Diagnostics](03-Vector-Search-Tuning-and-Dense-Retrieval-Diagnostics.md)

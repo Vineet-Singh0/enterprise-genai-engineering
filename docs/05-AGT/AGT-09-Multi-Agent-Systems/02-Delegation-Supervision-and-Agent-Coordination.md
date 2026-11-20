@@ -38,7 +38,7 @@ This chapter assumes familiarity with:
 - AGT-08 — Agent Interoperability and Capability Interfaces
 - AGT-09-01 — Single-Agent vs Multi-Agent Architecture
 
-In particular, File 01 established **why and when multiple agents may be justified**.
+In particular, Lesson 01 established **why and when multiple agents may be justified**.
 
 This chapter focuses on the next engineering problem:
 
@@ -686,7 +686,7 @@ Supervision can include:
 - escalation,
 - and termination of an unhealthy delegation.
 
-The last item should be understood here as a **supervisory boundary**, not as a treatment of the broader termination architecture. Detailed termination coordination is covered in File 03.
+The last item should be understood here as a **supervisory boundary**, not as a treatment of the broader termination architecture. Detailed termination coordination is covered in Lesson 03.
 
 ---
 
@@ -816,7 +816,7 @@ Therefore:
 
 > **Timeout is a supervision signal, not necessarily a proof of execution failure.**
 
-Detailed failure propagation and degraded-operation design are addressed in File 03.
+Detailed failure propagation and degraded-operation design are addressed in Lesson 03.
 
 ---
 
@@ -909,7 +909,7 @@ Repeated retries can amplify:
 - side effects,
 - and congestion.
 
-Detailed failure recovery strategies and failure propagation are covered in File 03.
+Detailed failure recovery strategies and failure propagation are covered in Lesson 03.
 
 ---
 
@@ -981,7 +981,7 @@ Possible architectural responses include:
 - introducing redundancy where justified,
 - or defining a controlled degraded coordination mode.
 
-The detailed treatment of partial failure, failure propagation, recovery, isolation, and degraded operation belongs to File 03.
+The detailed treatment of partial failure, failure propagation, recovery, isolation, and degraded operation belongs to Lesson 03.
 
 ---
 
@@ -1143,7 +1143,7 @@ Therefore synchronization requires policies around:
 - partial results,
 - and degraded continuation.
 
-Detailed communication failure, partial failure, and termination behavior are addressed in File 03.
+Detailed communication failure, partial failure, and termination behavior are addressed in Lesson 03.
 
 ---
 
@@ -1350,7 +1350,7 @@ Architecture should follow responsibility and dependency structure.
 
 ## 30. Coordination Complexity
 
-File 01 established that adding agents can increase coordination cost.
+Lesson 01 established that adding agents can increase coordination cost.
 
 This chapter extends that idea by examining the **shape of the coordination relationships**.
 
@@ -1386,7 +1386,7 @@ The engineering lesson is:
 
 > **Control the coordination surface, not merely the number of agents.**
 
-This is the operational extension of File 01's broader principle that additional agents are justified only when their value exceeds their coordination cost.
+This is the operational extension of Lesson 01's broader principle that additional agents are justified only when their value exceeds their coordination cost.
 
 ---
 
@@ -1570,7 +1570,7 @@ At the coordination-design level, useful preventive mechanisms include:
 - cycle detection,
 - and explicit coordination timeouts.
 
-The detailed treatment of multi-agent failure, recovery, failure propagation, and termination belongs to File 03.
+The detailed treatment of multi-agent failure, recovery, failure propagation, and termination belongs to Lesson 03.
 
 ---
 
@@ -2013,7 +2013,7 @@ A production design should be able to answer:
 - Which responsibilities require global coordination?
 - Which can be handled locally?
 
-Detailed multi-agent failure propagation, isolation, recovery, degraded operation, and termination are covered in File 03.
+Detailed multi-agent failure propagation, isolation, recovery, degraded operation, and termination are covered in Lesson 03.
 
 These questions should be answered before production deployment rather than discovered during incidents.
 
@@ -2161,7 +2161,7 @@ Therefore:
 
 > **Agent specialization creates value only when the value of separation exceeds the cost of coordination.**
 
-This extends the architectural principle established in File 01.
+This extends the architectural principle established in Lesson 01.
 
 ---
 

@@ -15,7 +15,7 @@ This chapter teaches how retrieval systems transform queries, select appropriate
 
 Estimated reading time: **25 minutes**, excluding practical work.
 
-| File | Focus | Reading time |
+| Lesson | Focus | Reading time |
 |---|---|---:|
 | [01 — Query Normalization, Rewriting, and Expansion](01-Query-Normalization-Rewriting-and-Expansion.md) | Query transformations, decomposition, routing, and awareness-level HyDE and iterative retrieval. | 8 min |
 | [02 — Metadata Filters and Structured Constraints](02-Metadata-Filters-and-Structured-Constraints.md) | Structured predicates, hard constraints, relevance signals, and choosing structured retrieval when preferable to text retrieval. | 8 min |

@@ -22,14 +22,14 @@ After completing this chapter, you should be able to:
 
 Before starting this chapter, you should understand:
 
-- AI capability criticality and dependency mapping from File 01;
+- AI capability criticality and dependency mapping from Lesson 01;
 - dependency concentration and common dependency exposure;
 - enterprise AI governance concepts from ENT-02 and ENT-03;
 - enterprise data and platform dependencies from ENT-05 and ENT-06;
 - provider and portability strategy from ENT-07;
 - AI economics and portfolio decisions from ENT-08.
 
-File 01 should be treated as the immediate prerequisite because this chapter uses its criticality and dependency reasoning to define continuity requirements.
+Lesson 01 should be treated as the immediate prerequisite because this chapter uses its criticality and dependency reasoning to define continuity requirements.
 
 ---
 
@@ -41,7 +41,7 @@ File 01 should be treated as the immediate prerequisite because this chapter use
 
 ## Before We Start
 
-File 01 asked:
+Lesson 01 asked:
 
 > **How important is the AI capability, what does it depend on, and where does dependency concentration exist?**
 
@@ -622,9 +622,9 @@ A business may tolerate:
 
 ## 12. Continuity Requirements and Criticality
 
-File 01 established that criticality describes the importance of an AI-enabled capability and the consequence of its disruption.
+Lesson 01 established that criticality describes the importance of an AI-enabled capability and the consequence of its disruption.
 
-File 02 uses that reasoning to determine the required continuity posture.
+Lesson 02 uses that reasoning to determine the required continuity posture.
 
 Conceptually:
 
@@ -1078,7 +1078,7 @@ Test / Review
 Adjust Requirement or Implementation
 ```
 
-File 02 defines the continuity and recovery requirements that later resilience governance in File 03 will use.
+Lesson 02 defines the continuity and recovery requirements that later resilience governance in Lesson 03 will use.
 
 PROD implements and operates the mechanisms needed to satisfy them.
 
@@ -1396,12 +1396,12 @@ Those belong to production engineering.
 
 ---
 
-# Relationship to File 01
+# Relationship to Lesson 01
 
-File 01 establishes the enterprise dependency and criticality picture.
+Lesson 01 establishes the enterprise dependency and criticality picture.
 
 ```text
-File 01
+Lesson 01
 Criticality
     ↓
 Dependency Mapping
@@ -1409,10 +1409,10 @@ Dependency Mapping
 Dependency Concentration
 ```
 
-File 02 uses that understanding to determine:
+Lesson 02 uses that understanding to determine:
 
 ```text
-File 02
+Lesson 02
 Continuity
     ↓
 Degraded Modes
@@ -1424,17 +1424,17 @@ Recovery Requirements
 
 The relationship can be summarized as:
 
-> **File 01 asks how important the capability is and where dependency exposure exists. File 02 asks what must continue and what must eventually be restored.**
+> **Lesson 01 asks how important the capability is and where dependency exposure exists. Lesson 02 asks what must continue and what must eventually be restored.**
 
 This creates a deliberate progression rather than repeating the same analysis.
 
 ---
 
-# Relationship to File 03
+# Relationship to Lesson 03
 
-File 02 defines the required continuity and recovery outcomes.
+Lesson 02 defines the required continuity and recovery outcomes.
 
-File 03 then asks:
+Lesson 03 then asks:
 
 > **How should the enterprise govern resilience and dependency decisions over time?**
 
@@ -1451,7 +1451,7 @@ FILE 03
 Govern Resilience and Dependency Decisions
 ```
 
-File 03 will therefore extend this chapter into:
+Lesson 03 will therefore extend this chapter into:
 
 - enterprise resilience strategy;
 - dependency governance;
@@ -1460,7 +1460,7 @@ File 03 will therefore extend this chapter into:
 - resilience trade-offs;
 - continuous dependency review.
 
-File 02 should not pre-emptively teach those topics in depth.
+Lesson 02 should not pre-emptively teach those topics in depth.
 
 ---
 
@@ -1654,7 +1654,7 @@ operated, monitored, and recovered?
 9. **Recovery requirements define enterprise outcomes, not technical recovery procedures.**
 10. **Technical RTO/RPO, backup, replication, failover, restoration, and recovery runbooks belong to production engineering.**
 11. **ENT-07 owns strategic provider/model substitution and portability; ENT-09 owns resilience-required substitution.**
-12. **File 02 connects criticality and dependency exposure from File 01 to the resilience governance decisions developed in File 03.**
+12. **Lesson 02 connects criticality and dependency exposure from Lesson 01 to the resilience governance decisions developed in Lesson 03.**
 
 ---
 
@@ -1662,8 +1662,8 @@ operated, monitored, and recovered?
 
 For deeper study, connect this chapter with:
 
-- **ENT-09 File 01** — AI Criticality, Dependency Mapping and Concentration Risk
-- **ENT-09 File 03** — Enterprise AI Resilience and Dependency Governance
+- **ENT-09 Lesson 01** — AI Criticality, Dependency Mapping and Concentration Risk
+- **ENT-09 Lesson 03** — Enterprise AI Resilience and Dependency Governance
 - **ENT-07** — Provider strategy, portability, diversification, and vendor dependency
 - **PROD** — Technical reliability, runtime failure handling, operational recovery, and production implementation
 
@@ -1697,7 +1697,7 @@ What Must Eventually Be Restored or Achieved?
         ↓
 Recovery Requirement
         ↓
-File 03
+Lesson 03
 Resilience Strategy and Dependency Governance
         ↓
 Production Engineering Implements the Required Mechanisms

@@ -1113,7 +1113,7 @@ If Agent A and Agent B share the same infrastructure or dependency, they may fai
 
 Therefore, logical agent separation does not automatically imply independent failure.
 
-This connects to the distinction established in File 01:
+This connects to the distinction established in Lesson 01:
 
 ```text
 Organizational Independence

@@ -25,8 +25,8 @@ By the end of this chapter, you should be able to:
 
 Before studying this chapter, you should understand:
 
-- basic AI economics and FinOps concepts from [File 01](./01-AI-Cost-Models-FinOps-and-Unit-Economics.md);
-- AI initiative intake, prioritization, funding, expected value, and investment decisions from [File 02](./02-AI-Portfolio-Intake-Prioritization-Funding-and-Value.md);
+- basic AI economics and FinOps concepts from [Lesson 01](./01-AI-Cost-Models-FinOps-and-Unit-Economics.md);
+- AI initiative intake, prioritization, funding, expected value, and investment decisions from [Lesson 02](./02-AI-Portfolio-Intake-Prioritization-Funding-and-Value.md);
 - the distinction between an AI initiative, capability, and system;
 - the difference between expected value and realized value;
 - the difference between economic optimization and technical optimization.
@@ -79,11 +79,11 @@ That is the central concern of this chapter.
 
 ## 2. Why This Exists
 
-File 02 answers a forward-looking investment question:
+Lesson 02 answers a forward-looking investment question:
 
 > **Which AI opportunities should receive investment?**
 
-File 03 answers a portfolio-evolution question:
+Lesson 03 answers a portfolio-evolution question:
 
 > **Now that AI capabilities exist and evidence is available, what should the enterprise do with them?**
 
@@ -319,7 +319,7 @@ Authority + Accountability + Decision Rights + Governance Mechanisms
 "Who is authorized to make this decision and under what governance structure?"
 ```
 
-File 03 should define the portfolio decision problem without becoming a second enterprise governance chapter.
+Lesson 03 should define the portfolio decision problem without becoming a second enterprise governance chapter.
 
 ---
 
@@ -335,7 +335,7 @@ Realized Value
 
 ## Expected Value
 
-Expected value belongs primarily to File 02.
+Expected value belongs primarily to Lesson 02.
 
 It represents what the enterprise expects an investment to produce.
 
@@ -552,9 +552,9 @@ ENT-08 consumes relevant evidence as an input to portfolio decisions.
 
 This distinction is mandatory.
 
-## File 01 — Economic Optimization
+## Lesson 01 — Economic Optimization
 
-File 01 asks:
+Lesson 01 asks:
 
 > **How can this AI workload or capability become economically efficient?**
 
@@ -568,9 +568,9 @@ Examples include:
 
 The focus is the economics of an individual workload or capability.
 
-## File 03 — Portfolio Optimization
+## Lesson 03 — Portfolio Optimization
 
-File 03 asks:
+Lesson 03 asks:
 
 > **Is this capability still the right use of enterprise AI investment capacity given the other capabilities in the portfolio?**
 
@@ -2000,41 +2000,41 @@ The diagram does not prescribe a universal decision algorithm.
 
 ---
 
-# 46. Relationship to File 01
+# 46. Relationship to Lesson 01
 
-File 01 teaches:
+Lesson 01 teaches:
 
 > **What does this capability cost, what drives the cost, and how should its economics be understood?**
 
-File 03 consumes that economic evidence.
+Lesson 03 consumes that economic evidence.
 
 For example:
 
 ```text
-File 01
+Lesson 01
 Cost per Successful Task
         ↓
 Economic Evidence
         ↓
-File 03
+Lesson 03
 Portfolio Review
         ↓
 Continue / Scale / Reduce / Consolidate / Sunset
 ```
 
-File 03 should not re-teach token economics, cost allocation, FinOps, or unit-economic formulas in depth.
+Lesson 03 should not re-teach token economics, cost allocation, FinOps, or unit-economic formulas in depth.
 
 It should use those concepts when they inform portfolio decisions.
 
 ---
 
-# 47. Relationship to File 02
+# 47. Relationship to Lesson 02
 
-File 02 asks:
+Lesson 02 asks:
 
 > **Should this opportunity receive investment?**
 
-File 03 asks:
+Lesson 03 asks:
 
 > **Now that evidence exists, what should happen to the capability in the portfolio?**
 
@@ -2060,7 +2060,7 @@ Portfolio Review
 Continue / Scale / Reduce / Consolidate / Sunset
 ```
 
-File 03 should not re-teach the entire intake and prioritization methodology.
+Lesson 03 should not re-teach the entire intake and prioritization methodology.
 
 ---
 
@@ -2068,7 +2068,7 @@ File 03 should not re-teach the entire intake and prioritization methodology.
 
 ENT-07 owns model/provider/vendor strategy.
 
-File 03 may encounter provider-related evidence during portfolio review.
+Lesson 03 may encounter provider-related evidence during portfolio review.
 
 For example:
 
@@ -2099,7 +2099,7 @@ ENT-09 owns:
 - dependencies;
 - continuity.
 
-File 03 may use those considerations as portfolio inputs.
+Lesson 03 may use those considerations as portfolio inputs.
 
 For example:
 
@@ -2155,7 +2155,7 @@ Do not turn portfolio optimization into GPU optimization, serving optimization, 
 
 ENT-01 owns enterprise AI capability architecture and operating models.
 
-File 03 owns economic and portfolio decisions about those capabilities.
+Lesson 03 owns economic and portfolio decisions about those capabilities.
 
 Architecture may inform:
 
@@ -2164,7 +2164,7 @@ Architecture may inform:
 - dependency analysis;
 - investment consequences.
 
-But File 03 does not become a generic architecture chapter.
+But Lesson 03 does not become a generic architecture chapter.
 
 ---
 
@@ -2210,7 +2210,7 @@ ENT-03 owns:
 - human oversight;
 - assurance.
 
-File 03 may use risk-related evidence as an input.
+Lesson 03 may use risk-related evidence as an input.
 
 For example:
 
@@ -2218,7 +2218,7 @@ For example:
 
 That can affect the portfolio decision.
 
-However, File 03 should not re-teach risk assessment, impact assessment, residual-risk methodology, or assurance.
+However, Lesson 03 should not re-teach risk assessment, impact assessment, residual-risk methodology, or assurance.
 
 Risk remains an input rather than an ENT-08-owned methodology.
 

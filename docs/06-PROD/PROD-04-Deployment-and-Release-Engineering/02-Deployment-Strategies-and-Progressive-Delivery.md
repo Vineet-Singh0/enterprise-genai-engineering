@@ -178,7 +178,7 @@ This separation creates opportunities for controlled rollout.
 
 # From Environment Promotion to Production Exposure
 
-File 01 established **artifact promotion** and **environment progression**.
+Lesson 01 established **artifact promotion** and **environment progression**.
 
 Conceptually:
 
@@ -196,7 +196,7 @@ Promotion
 Test / Staging / Production Environment
 ```
 
-File 02 begins where the artifact has reached its target deployment environment.
+Lesson 02 begins where the artifact has reached its target deployment environment.
 
 The next question is:
 
@@ -593,7 +593,7 @@ For a rolling deployment, this may involve:
 - replacing updated instances with the previous version,
 - verifying that the previous version remains compatible with current state.
 
-The exact rollback procedure belongs to File 03.
+The exact rollback procedure belongs to Lesson 03.
 
 The deployment-strategy concern is:
 
@@ -806,7 +806,7 @@ This creates an important principle:
 
 > **Progressive exposure should be paired with a practical recovery path.**
 
-The detailed definition of rollback, rollback triggers, and rollback limitations is covered in File 03.
+The detailed definition of rollback, rollback triggers, and rollback limitations is covered in Lesson 03.
 
 ---
 
@@ -914,7 +914,7 @@ Rollback
 → Return the production change to a previous acceptable state.
 ```
 
-The detailed rollback mechanics belong to File 03.
+The detailed rollback mechanics belong to Lesson 03.
 
 ---
 
@@ -987,7 +987,7 @@ It is also:
 
 This is why rollout planning and recovery planning should be considered together.
 
-File 03 will define the detailed release-gate and rollback mechanics.
+Lesson 03 will define the detailed release-gate and rollback mechanics.
 
 ---
 
@@ -1086,7 +1086,7 @@ At each stage, the organization should know:
 - how exposure can be reduced if necessary,
 - what recovery path is available.
 
-Detailed release gates and rollback mechanics are covered in File 03.
+Detailed release gates and rollback mechanics are covered in Lesson 03.
 
 ---
 
@@ -1418,7 +1418,7 @@ Different strategies optimize different properties.
 
 The rollback/recovery column is intentionally high-level.
 
-Detailed rollback mechanics and limitations are covered in File 03.
+Detailed rollback mechanics and limitations are covered in Lesson 03.
 
 The correct strategy depends on the system.
 
@@ -2006,11 +2006,11 @@ PROD-04 owns the deployment mechanism and the controlled exposure decision proce
 
 ---
 
-# File 02 and File 03 Boundary
+# Lesson 02 and Lesson 03 Boundary
 
 This chapter establishes **how a change is deployed and progressively exposed**.
 
-File 02 owns:
+Lesson 02 owns:
 
 - deployment strategies,
 - rollout scope,
@@ -2022,7 +2022,7 @@ File 02 owns:
 - strategy selection,
 - rollout readiness and recovery considerations.
 
-File 03 owns the deeper decision mechanics for:
+Lesson 03 owns the deeper decision mechanics for:
 
 - release gates,
 - explicit continue/stop decisions,
@@ -2036,12 +2036,12 @@ File 03 owns the deeper decision mechanics for:
 The distinction is:
 
 ```text
-File 02
+Lesson 02
 How should we introduce and expose the change?
 
         ↓
 
-File 03
+Lesson 03
 How do we decide whether to continue, stop, or reverse it?
 ```
 

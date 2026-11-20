@@ -40,7 +40,7 @@ After completing AGT-08, you should be able to:
 
 ### 01 — Agent Capability Interfaces and Interoperability
 
-**File:** [Agent Capability Interfaces and Interoperability](./01-Agent-Capability-Interfaces-and-Interoperability.md)
+**Lesson:** [Agent Capability Interfaces and Interoperability](./01-Agent-Capability-Interfaces-and-Interoperability.md)
 
 Establishes the durable foundations of interoperability:
 
@@ -64,7 +64,7 @@ This lesson provides the conceptual foundation for the protocol-specific files t
 
 ### 02 — Model Context Protocol (MCP) and Tool Interoperability
 
-**File:** [Model Context Protocol MCP and Tool Interoperability](./02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md)
+**Lesson:** [Model Context Protocol MCP and Tool Interoperability](./02-Model-Context-Protocol-MCP-and-Tool-Interoperability.md)
 
 Applies the interoperability foundations to **MCP** and capability/tool exposure.
 
@@ -76,7 +76,7 @@ MCP is treated as a mechanism for **capability/tool interoperability**, not as a
 
 ### 03 — Agent-to-Agent Interoperability and A2A
 
-**File:** [Agent to Agent Interoperability and A2A](./03-Agent-to-Agent-Interoperability-and-A2A.md)
+**Lesson:** [Agent to Agent Interoperability and A2A](./03-Agent-to-Agent-Interoperability-and-A2A.md)
 
 Applies the interoperability foundations to **agent-to-agent communication** and A2A.
 

@@ -86,7 +86,7 @@ function isStepHeading(text: string): boolean {
  */
 function isRepetitiveMicroSequence(text: string): boolean {
   const t = normalize(text);
-  if (/^mistake\s*\d+\b/i.test(t)) return true;
+  if (/^(mistake|misconception)\s*\d+\b/i.test(t)) return true;
   if (/^queries?\s*[a-c]\b/i.test(t)) return true;
   if (/^q\d+\b/i.test(t)) return true;
   if (/^(question|answer|example|remember)\s*\d+\b/i.test(t)) return true;
@@ -117,6 +117,8 @@ export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
 
     if (isRepetitiveMicroSequence(t)) return false;
     if (isMicroHeading(h.text)) return false;
+    // Numbered interview questions ("3. Why does …?") are content, not navigation.
+    if (h.depth === 3 && isNumberedMajor(t) && /\?$/.test(t)) return false;
 
     // Always keep numbered majors, N.M subs, and Step N procedure headings
     if (isNumberedMajor(t) || isNumberedSub(t) || isStepHeading(t)) return true;
@@ -140,11 +142,7 @@ export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
       if (h.depth === 2) return true;
       const t = normalize(h.text);
       const lower = t.toLowerCase();
-      return (
-        isNumberedSub(t) ||
-        isStepHeading(t) ||
-        TOC_KEEP.has(lower)
-      );
+      return isNumberedSub(t) || TOC_KEEP.has(lower);
     });
   }
 

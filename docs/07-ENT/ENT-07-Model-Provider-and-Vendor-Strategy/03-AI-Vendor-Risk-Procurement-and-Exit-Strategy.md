@@ -24,8 +24,8 @@ By the end of this chapter, you should be able to:
 You should be familiar with:
 
 - enterprise AI model and provider selection
-- strategic fit and provider dependency from [File 01 — Enterprise Model and Provider Selection Strategy](./01-Enterprise-Model-and-Provider-Selection-Strategy.md)
-- portability, diversification, provider concentration, and vendor lock-in from [File 02 — Provider Diversification, Portability and Vendor Lock-In](./02-Provider-Diversification-Portability-and-Vendor-Lock-In.md)
+- strategic fit and provider dependency from [Lesson 01 — Enterprise Model and Provider Selection Strategy](./01-Enterprise-Model-and-Provider-Selection-Strategy.md)
+- portability, diversification, provider concentration, and vendor lock-in from [Lesson 02 — Provider Diversification, Portability and Vendor Lock-In](./02-Provider-Diversification-Portability-and-Vendor-Lock-In.md)
 - basic enterprise architecture and supplier dependency concepts
 
 This chapter does not require knowledge of contract law, procurement operations, or technical migration implementation.
@@ -330,7 +330,7 @@ A provider decision should therefore be treated as something that may require re
 
 # Provider Concentration as Vendor Risk
 
-File 02 established provider concentration as a dependency strategy.
+Lesson 02 established provider concentration as a dependency strategy.
 
 Here, the focus is different.
 
@@ -418,7 +418,7 @@ The enterprise should ask:
 - Is the capability strategically important?
 - Is continued dependency still justified?
 
-This connects vendor risk with the substitution model introduced in File 02.
+This connects vendor risk with the substitution model introduced in Lesson 02.
 
 ---
 
@@ -671,7 +671,7 @@ It is:
 
 ## Procurement and Portability
 
-Procurement should be connected to the portability analysis from File 02.
+Procurement should be connected to the portability analysis from Lesson 02.
 
 Consider:
 
@@ -1002,7 +1002,7 @@ Organizational Dependency
 Contractual Dependency
 ```
 
-This connects the assessment to File 02.
+This connects the assessment to Lesson 02.
 
 ---
 
@@ -1211,7 +1211,7 @@ The enterprise should ask:
 
 > **Is the capability value high enough to justify the additional substitution dependency?**
 
-This connects directly to File 01 and File 02.
+This connects directly to Lesson 01 and Lesson 02.
 
 ---
 
@@ -1685,8 +1685,8 @@ For adjacent enterprise context:
 - ENT-08 — AI Economics, FinOps and Portfolio Governance
 - ENT-09 — AI Criticality, Resilience and Dependency Governance
 
-> **File 01 answers: “Which model/provider should we strategically choose?”**
+> **Lesson 01 answers: “Which model/provider should we strategically choose?”**
 >
-> **File 02 answers: “How do we manage the dependency and lock-in created by that choice?”**
+> **Lesson 02 answers: “How do we manage the dependency and lock-in created by that choice?”**
 >
-> **File 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**
+> **Lesson 03 answers: “How do we manage vendor risk and preserve substitution or exit options?”**
