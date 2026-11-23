@@ -26,8 +26,15 @@ function escapeHtml(text: string): string {
     .replace(/"/g, '&quot;');
 }
 
+/** First token of a fence info string: `mermaid id="x"` → `mermaid`. */
+function fenceLanguage(info: string): string {
+  const raw = (info || '').trim();
+  if (!raw) return 'text';
+  return (raw.split(/\s+/)[0] || 'text').toLowerCase();
+}
+
 async function highlightFence(lang: string, code: string): Promise<string> {
-  const language = (lang || 'text').trim() || 'text';
+  const language = fenceLanguage(lang);
   if (language === 'mermaid') {
     return `<div class="mermaid-block"><pre class="mermaid">${escapeHtml(code)}</pre></div>`;
   }
@@ -54,7 +61,7 @@ function extractFences(source: string): { body: string; fences: Array<{ lang: st
   const fences: Array<{ lang: string; code: string }> = [];
   const body = source.replace(/```([^\n`]*)\n([\s\S]*?)```/g, (_m, lang: string, code: string) => {
     const idx = fences.length;
-    fences.push({ lang: (lang || '').trim(), code: code.replace(/\n$/, '') });
+    fences.push({ lang: fenceLanguage(lang), code: code.replace(/\n$/, '') });
     return `\n\nEGEFENCE${idx}EGEFENCE\n\n`;
   });
   return { body, fences };
@@ -144,10 +151,11 @@ export async function renderMarkdown(
     if (/^EGEFENCE\d+EGEFENCE$/.test(trimmed) || /^EGEMATH\d+EGEMATH$/.test(trimmed)) {
       return trimmed;
     }
-    if (lang === 'mermaid') {
+    const language = fenceLanguage(lang || '');
+    if (language === 'mermaid') {
       return `<div class="mermaid-block"><pre class="mermaid">${escapeHtml(text)}</pre></div>`;
     }
-    return `<pre><code class="language-${escapeHtml(lang || 'text')}">${escapeHtml(text)}</code></pre>`;
+    return `<pre><code class="language-${escapeHtml(language)}">${escapeHtml(text)}</code></pre>`;
   };
 
   marked.setOptions({ renderer, gfm: true, breaks: false });

@@ -10,6 +10,7 @@ const TOC_MICRO = new Set(
     'examples',
     'think',
     'think about it',
+    'think for a moment',
     'analogy',
     'note',
     'notes',
@@ -55,6 +56,9 @@ const TOC_KEEP = new Set(
   ].map((s) => s.toLowerCase()),
 );
 
+const TOC_MICRO_PREFIX =
+  /^(analogy|example|examples|remember|question|questions|answer|answers|note|notes|tip|warning|think)\b/i;
+
 export interface TocHeading {
   depth: number;
   text: string;
@@ -80,6 +84,11 @@ function isStepHeading(text: string): boolean {
   return /^step\s*\d+/i.test(text);
 }
 
+/** Interview-style numbered questions — content, not navigation. */
+function isNumberedQuestion(text: string): boolean {
+  return isNumberedMajor(text) && /\?\s*$/.test(text);
+}
+
 /**
  * Repetitive instructional sequences — noisy as TOC destinations.
  * Mistake N, QN, Query A/B/C, bare Question N.
@@ -98,16 +107,18 @@ function isMicroHeading(text: string): boolean {
   const t = normalize(text);
   const lower = t.toLowerCase();
   if (TOC_KEEP.has(lower)) return false;
+  if (isNumberedQuestion(t)) return true;
   if (isNumberedMajor(t) || isNumberedSub(t) || isStepHeading(t)) return false;
   if (isRepetitiveMicroSequence(t)) return true;
   if (TOC_MICRO.has(lower)) return true;
+  if (TOC_MICRO_PREFIX.test(t)) return true;
   if (t.length <= 3) return true;
   return false;
 }
 
 /**
  * H2/H3 navigation: keep numbered structure + meaningful titles;
- * drop repetitive Mistake/Q/Query micro-sequences.
+ * drop repetitive Mistake/Q/Query micro-sequences and interview questions.
  */
 export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
   const primary = headings.filter((h) => {
@@ -115,10 +126,9 @@ export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
     const t = normalize(h.text);
     const lower = t.toLowerCase();
 
+    if (isNumberedQuestion(t)) return false;
     if (isRepetitiveMicroSequence(t)) return false;
     if (isMicroHeading(h.text)) return false;
-    // Numbered interview questions ("3. Why does …?") are content, not navigation.
-    if (h.depth === 3 && isNumberedMajor(t) && /\?$/.test(t)) return false;
 
     // Always keep numbered majors, N.M subs, and Step N procedure headings
     if (isNumberedMajor(t) || isNumberedSub(t) || isStepHeading(t)) return true;
@@ -135,15 +145,31 @@ export function filterTocHeadings(headings: TocHeading[]): TocHeading[] {
     return true;
   });
 
-  // If still very long, prefer H2 + structural N.M / Step / keep-list H3
   const h2Count = primary.filter((h) => h.depth === 2).length;
+
+  // Long lessons: keep H2 structure + N.M / keep-list H3 only.
   if (primary.length > 40 && h2Count >= 8) {
-    return primary.filter((h) => {
-      if (h.depth === 2) return true;
+    const compacted = primary.filter((h) => {
+      if (h.depth === 2) {
+        const t = normalize(h.text);
+        if (isNumberedQuestion(t) || isMicroHeading(h.text)) return false;
+        return true;
+      }
       const t = normalize(h.text);
       const lower = t.toLowerCase();
       return isNumberedSub(t) || TOC_KEEP.has(lower);
     });
+
+    // Still huge (common when many `#` sections demote to H2): keep majors + keep-list only.
+    if (compacted.length > 55) {
+      return compacted.filter((h) => {
+        const t = normalize(h.text);
+        const lower = t.toLowerCase();
+        return TOC_KEEP.has(lower) || isNumberedMajor(t) || isNumberedSub(t);
+      });
+    }
+
+    return compacted;
   }
 
   return primary;

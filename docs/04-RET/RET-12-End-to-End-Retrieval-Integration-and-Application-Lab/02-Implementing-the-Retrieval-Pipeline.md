@@ -127,7 +127,6 @@ Likewise, a downstream RAG application should not need to understand the provide
 
 ### 2.1 End-to-end implementation flow
 
-````
 ```mermaid
 flowchart TD
     A["Authenticated Principal"] --> B["Trusted Authorization Service"]
@@ -150,7 +149,6 @@ flowchart TD
     Q --> R["Response Normalization"]
     R --> S["Authorized Retrieval Response"]
 ```
-````
 
 The flow has four important properties:
 
