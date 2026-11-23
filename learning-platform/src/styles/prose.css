@@ -144,6 +144,11 @@
   margin: 1.75rem 0;
 }
 
+/* Docs often put `---` before ##; h2 already has border-top — hide the duplicate. */
+.prose hr:has(+ h2) {
+  display: none;
+}
+
 .prose .broken-link {
   color: var(--danger);
   text-decoration-style: wavy;
