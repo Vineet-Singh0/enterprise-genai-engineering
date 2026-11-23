@@ -1,6 +1,4 @@
-# AGT-09 — Multi-Agent Systems
-
-## 03 — Multi-Agent State, Communication, Failure, and Termination
+# 03 — Multi-Agent State, Communication, Failure, and Termination
 
 ## Learning Objectives
 

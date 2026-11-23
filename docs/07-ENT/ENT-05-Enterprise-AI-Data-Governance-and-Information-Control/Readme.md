@@ -46,8 +46,7 @@ The three lessons should be studied in order.
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ### 01 — AI Data Ownership, Stewardship and Classification
 
 **Primary question:**

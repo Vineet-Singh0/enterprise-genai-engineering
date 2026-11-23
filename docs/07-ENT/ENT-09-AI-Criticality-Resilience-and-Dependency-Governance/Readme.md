@@ -43,8 +43,7 @@ Before starting ENT-09, you should understand the relevant concepts from:
 
 **PROD — Production AI Engineering** is a supporting reference for understanding the distinction between enterprise resilience requirements and the technical reliability, recovery, and operational mechanisms used to implement them.
 
-## Chapter Structure
-
+## Lessons
 ### Lesson 01 — Criticality, Dependency Mapping and Concentration Risk
 
 [Open Lesson 01](./01-AI-Criticality-Dependency-Mapping-and-Concentration-Risk.md)

@@ -70,15 +70,14 @@ The progression moves from establishing what must be governed, to determining wh
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ### 01 — AI Security, Privacy and Access Governance
 
 **Lesson:** AI Security Privacy and Access Governance
 
 Establishes the conceptual foundation for enterprise AI security, privacy, and access governance.
 
-The file addresses the responsibilities enterprises must govern when AI systems interact with:
+This lesson addresses the responsibilities enterprises must govern when AI systems interact with:
 
 - People
 - Data

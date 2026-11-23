@@ -86,7 +86,8 @@ A reproducible evaluation should have explicit stages rather than combining data
 
 A useful high-level workflow is:
 
-<CodeBlock language="mermaid">flowchart TD
+```mermaid
+flowchart TD
     A[Evaluation Specification] --> B[Resolve Versions and Configuration]
     B --> C[Validate Dataset and Inputs]
     C --> D[Execute Model Requests]
@@ -95,7 +96,8 @@ A useful high-level workflow is:
     F --> G[Run Evaluators]
     G --> H[Calculate Metrics]
     H --> I[Generate Report]
-    I --> J[Review Evidence and Decision]</CodeBlock>
+    I --> J[Review Evidence and Decision]
+```
 
 Each stage has a defined responsibility.
 

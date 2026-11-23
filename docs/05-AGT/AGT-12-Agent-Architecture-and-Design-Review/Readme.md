@@ -92,8 +92,7 @@ AGT-12 assumes these concepts are already understood. It focuses on **architectu
 
 ---
 
-## Chapter Structure
-
+## Lessons
 AGT-12 contains three lessons.
 
 ### 01 — Architecture Selection and Trade-offs

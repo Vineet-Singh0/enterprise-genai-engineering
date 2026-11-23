@@ -58,7 +58,8 @@ For example, consider three illustrative two-dimensional representations:
 
 These vectors can be visualized as points on a two-dimensional plane.
 
-<CodeBlock language="python" editable={false}>import matplotlib.pyplot as plt
+```python
+import matplotlib.pyplot as plt
 
 points = {
     "A": (1, 2),
@@ -75,7 +76,8 @@ plt.xlabel("Dimension 1")
 plt.ylabel("Dimension 2")
 plt.title("Illustrative Representation Space")
 plt.grid(True)
-plt.show()</CodeBlock>
+plt.show()
+```
 
 The visualization is only an illustration of vector geometry. These arbitrary coordinates do not encode any real semantic relationship.
 

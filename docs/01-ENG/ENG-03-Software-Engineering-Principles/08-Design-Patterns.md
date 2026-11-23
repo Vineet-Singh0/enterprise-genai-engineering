@@ -39,8 +39,7 @@ Complete the following ENG-03 chapters before studying design patterns:
 
 These chapters establish the principles needed to evaluate patterns. In particular, design patterns should be understood as possible implementations of design decisions, not as replacements for sound responsibility boundaries or dependency management.
 
-## 4. Chapter Structure
-
+## Lessons
 The learning sequence is organized into three categories.
 
 | Chapter | Focus | Central question |

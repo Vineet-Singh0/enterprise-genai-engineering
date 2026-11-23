@@ -1,4 +1,4 @@
-# PROD-12 — Production Readiness and Architecture Review
+# 01 — Production Readiness and Architecture Review
 
 ## Learning Objectives
 

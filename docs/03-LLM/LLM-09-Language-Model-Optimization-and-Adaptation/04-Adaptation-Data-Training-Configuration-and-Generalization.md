@@ -20,7 +20,7 @@ The chapter builds on the adaptation methods introduced in Chapter 03. It does n
 
 A fine-tuning experiment can be viewed as a sequence of connected engineering decisions.
 
-<escape>
+```text
 Requirements
     |
     v
@@ -43,7 +43,7 @@ Evaluation on unseen examples
     |
     v
 Accept, revise, or reject the adaptation
-</escape>
+```
 
 Each stage introduces assumptions that affect later stages.
 
@@ -152,11 +152,11 @@ The training pipeline must preserve the intended relationship among those tokens
 
 For example, a serialized conversation might conceptually contain:
 
-<escape>
+```text
 System: Extract the order identifier as JSON.
 User: My order number is AB123.
 Assistant: {"order_id":"AB123"}
-</escape>
+```
 
 This is an illustrative representation, not a universal model-specific chat template. Actual tokenization and message markers depend on the model.
 

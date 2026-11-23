@@ -98,8 +98,7 @@ AGT-06 does not own the following areas:
 
 ---
 
-## Chapter Structure
-
+## Lessons
 AGT-06 contains three lessons.
 
 ### 01 — Workflow Patterns, Branches, Loops and Parallelism

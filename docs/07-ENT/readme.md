@@ -133,7 +133,6 @@ ENT may reference these areas where enterprise decisions depend on them, but it 
 
 ---
 
-
 ## 6. ENT Learning Outcomes
 
 ### Understand

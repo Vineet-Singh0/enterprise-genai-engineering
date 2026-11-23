@@ -48,8 +48,7 @@ The following chapters provide the relevant implementation foundations when work
 
 These are conditional implementation dependencies. For example, a system combining lexical and dense retrieval benefits from the corresponding RET-05 and RET-06 foundations. A system using only one source or a different source combination does not need to implement every technique discussed in those chapters.
 
-## Chapter Structure
-
+## Lessons
 ### 01 — Candidate Generation and Retriever Complementarity
 
 Lesson: Candidate Generation and Retriever Complementarity

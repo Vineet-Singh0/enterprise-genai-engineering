@@ -43,9 +43,8 @@ After completing AGT-09, you should be able to:
 
 ---
 
-## Chapter Structure
-
-AGT-09 contains exactly three lessons.
+## Lessons
+AGT-09 contains three lessons.
 
 ### 01 — Single-Agent vs Multi-Agent Architecture
 

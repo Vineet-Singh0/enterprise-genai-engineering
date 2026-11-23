@@ -126,7 +126,8 @@ A multi-turn application may preserve a fact in its own state without including 
 
 Information typically passes through an application-side preparation stage before it reaches a model. The following diagram shows a conceptual flow, not a universal architecture.
 
-<CodeBlock language="mermaid">flowchart TD
+```mermaid
+flowchart TD
     A["User request"] --> D["Application prepares request"]
     B["Document repository"] --> C["Application obtains document"]
     C --> D
@@ -134,7 +135,8 @@ Information typically passes through an application-side preparation stage befor
     F["Selected conversation history"] --> D
     D --> G["Model input"]
     G --> H["Model inference"]
-    H --> I["Generated response"]</CodeBlock>
+    H --> I["Generated response"]
+```
 
 Consider a contract-summary application. The application obtains a contract, selects the material needed for the task, combines it with the request and applicable instructions, and constructs the model input.
 

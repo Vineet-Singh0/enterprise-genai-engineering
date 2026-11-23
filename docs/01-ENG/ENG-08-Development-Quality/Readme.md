@@ -57,7 +57,7 @@ Study the chapters in the following order.
 | Chapter | Description |
 |---|---|
 | [07 — Static Analysis](07-Static-Analysis.md) | Examine source code without executing the application. |
-| 08 — Formatting | Maintain consistent source-code presentation. |
+| [08 — Formatting](08-Formatting.md) | Maintain consistent source-code presentation. |
 | [09 — Linting](09-Linting.md) | Detect rule violations, suspicious patterns, and selected code-quality issues. |
 
 ### 4. Performance Reasoning
@@ -113,7 +113,7 @@ Prioritize understanding and practical application over memorizing tool commands
 
 ## Completion Guidance
 
-ENG-08 is complete when you can demonstrate that you understand and can apply its ten approved subtopics.
+ENG-08 is complete when you can demonstrate that you understand and can apply its ten lessons.
 
 You should be able to:
 
@@ -140,5 +140,3 @@ Reading-time estimates are planning guides, not completion targets.
 
 **Topic:** ENG-08 — Development Quality  
 **Domain:** Engineering Foundations (ENG)  
-**Documentation scope:** One README and ten teaching chapters  
-**Documentation standard:** Enterprise GenAI Engineering Documentation Generator v4.0

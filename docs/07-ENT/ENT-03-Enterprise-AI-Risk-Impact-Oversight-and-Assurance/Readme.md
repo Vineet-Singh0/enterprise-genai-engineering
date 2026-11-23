@@ -63,8 +63,7 @@ The three lessons should be studied in order.
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ### 01 — AI Risk and Impact Assessment
 
 [AI Risk and Impact Assessment](./01-AI-Risk-and-Impact-Assessment.md)

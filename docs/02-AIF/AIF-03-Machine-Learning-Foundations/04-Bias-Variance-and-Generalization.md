@@ -308,16 +308,17 @@ The following patterns are conceptual illustrations, not measured results.
 
 ### 7.1 Underfitting pattern
 
-<title size="md">Conceptual pattern: both errors remain high</title>
-<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
-<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
-<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
-Error
-Training examples →
-<path d="M 48 47 C 95 56, 150 61, 205 63 S 270 64, 294 64" fill="none" stroke="#2563eb" strokeWidth="2.5" />
-<path d="M 48 55 C 95 64, 150 69, 205 71 S 270 72, 294 72" fill="none" stroke="#ea580c" strokeWidth="2.5" />
-Training
-Validation
+**Conceptual pattern: both errors remain high**
+
+<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Both training and validation error remain high with a small gap">
+<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" stroke-width="1.2" />
+<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" stroke-width="1.2" />
+<text x="8" y="20" font-size="11" fill="currentColor">Error</text>
+<text x="190" y="170" font-size="11" fill="currentColor">Training examples →</text>
+<path d="M 48 47 C 95 56, 150 61, 205 63 S 270 64, 294 64" fill="none" stroke="#2563eb" stroke-width="2.5" />
+<path d="M 48 55 C 95 64, 150 69, 205 71 S 270 72, 294 72" fill="none" stroke="#ea580c" stroke-width="2.5" />
+<text x="250" y="55" font-size="11" fill="#2563eb">Training</text>
+<text x="250" y="80" font-size="11" fill="#ea580c">Validation</text>
 </svg>
 Both errors settle at an unsatisfactory level, with a relatively small gap. More data alone may not solve the limitation.
 
@@ -331,16 +332,17 @@ Investigate model assumptions, feature information, data quality, and training a
 
 ### 7.2 Overfitting pattern
 
-<title size="md">Conceptual pattern: training and validation diverge</title>
-<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg">
-<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" strokeWidth="1.2" />
-<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" strokeWidth="1.2" />
-Error
-Training examples →
-<path d="M 48 42 C 85 65, 125 96, 175 112 S 260 126, 294 128" fill="none" stroke="#2563eb" strokeWidth="2.5" />
-<path d="M 48 51 C 95 71, 128 79, 165 76 S 245 68, 294 65" fill="none" stroke="#ea580c" strokeWidth="2.5" />
-Training
-Validation
+**Conceptual pattern: training and validation diverge**
+
+<svg viewBox="0 0 320 185" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Training error decreases while validation error rises">
+<line x1="42" y1="15" x2="42" y2="145" stroke="currentColor" stroke-width="1.2" />
+<line x1="42" y1="145" x2="300" y2="145" stroke="currentColor" stroke-width="1.2" />
+<text x="8" y="20" font-size="11" fill="currentColor">Error</text>
+<text x="190" y="170" font-size="11" fill="currentColor">Training examples →</text>
+<path d="M 48 42 C 85 65, 125 96, 175 112 S 260 126, 294 128" fill="none" stroke="#2563eb" stroke-width="2.5" />
+<path d="M 48 51 C 95 71, 128 79, 165 76 S 245 68, 294 65" fill="none" stroke="#ea580c" stroke-width="2.5" />
+<text x="250" y="55" font-size="11" fill="#2563eb">Training</text>
+<text x="250" y="120" font-size="11" fill="#ea580c">Validation</text>
 </svg>
 Training error continues to decrease while validation error stops improving or increases. This can indicate overfitting.
 

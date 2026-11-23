@@ -56,7 +56,7 @@ Technology examples may be used to illustrate concepts, but implementation tutor
 
 ## Learning Path
 
-PROD-06 contains exactly three lessons.
+PROD-06 contains three lessons.
 
 The files form a deliberate progression:
 

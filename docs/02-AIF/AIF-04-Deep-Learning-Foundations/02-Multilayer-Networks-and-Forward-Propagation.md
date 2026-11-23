@@ -69,7 +69,39 @@ The hidden representation is not necessarily a human-interpretable feature. It i
 
 A feedforward neural network commonly contains an input layer, one or more hidden layers, and an output layer.
 
-<AsyncImage query="simple feedforward neural network diagram input layer hidden layer output layer labeled neurons and connecting weighted arrows white background educational illustration" aspectRatio="5:3" width="100%" />
+```mermaid
+flowchart LR
+    subgraph Input["Input layer"]
+        x1["x1"]
+        x2["x2"]
+        x3["x3"]
+    end
+    subgraph Hidden["Hidden layer"]
+        h1["h1"]
+        h2["h2"]
+        h3["h3"]
+        h4["h4"]
+    end
+    subgraph Output["Output layer"]
+        y1["y"]
+    end
+    x1 --> h1
+    x1 --> h2
+    x1 --> h3
+    x1 --> h4
+    x2 --> h1
+    x2 --> h2
+    x2 --> h3
+    x2 --> h4
+    x3 --> h1
+    x3 --> h2
+    x3 --> h3
+    x3 --> h4
+    h1 --> y1
+    h2 --> y1
+    h3 --> y1
+    h4 --> y1
+```
 
 ### 2.1 Input layer
 

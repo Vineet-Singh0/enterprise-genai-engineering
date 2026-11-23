@@ -117,7 +117,7 @@ The chosen plan is not guaranteed to be optimal in every runtime situation. Esti
 
 A useful conceptual model is:
 
-<escape>
+```text
 SQL Query
     |
     v
@@ -140,7 +140,7 @@ Execution
     |
     v
 Result Rows
-</escape>
+```
 
 This diagram represents a simplified lifecycle. The exact internal implementation and phase boundaries depend on the database system.
 
@@ -325,7 +325,7 @@ A sequential scan examines table pages in sequence and evaluates rows against ap
 
 Conceptually:
 
-<escape>
+```text
 Read table pages
        |
        v
@@ -336,7 +336,7 @@ Evaluate filter
        |
        v
 Return qualifying rows
-</escape>
+```
 
 Example:
 
@@ -473,11 +473,11 @@ Three important join algorithms are nested-loop join, hash join, and merge join.
 
 Conceptually, a nested-loop join takes rows from one input and searches for matching rows in the other input.
 
-<escape>
+```text
 For each row from input A:
     Find matching rows in input B
     Produce matching combinations
-</escape>
+```
 
 This can work well when:
 
@@ -495,7 +495,7 @@ A hash join commonly builds an in-memory hash structure from one input and probe
 
 Conceptually:
 
-<escape>
+```text
 Build phase:
     Read one input
     Build hash structure using join key
@@ -504,7 +504,7 @@ Probe phase:
     Read other input
     Look up matching keys
     Produce matching rows
-</escape>
+```
 
 Hash joins are often useful for equijoins between sufficiently large inputs when building and probing a hash table is cost-effective.
 
@@ -851,7 +851,7 @@ Consider a FastAPI endpoint that retrieves candidate profiles for a matchmaking 
 
 A simplified request path might be:
 
-<escape>
+```text
 HTTP Request
     |
     v
@@ -874,7 +874,7 @@ Application Processing
     |
     v
 HTTP Response
-</escape>
+```
 
 A slow endpoint does not automatically mean PostgreSQL's query plan is the problem.
 

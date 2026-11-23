@@ -1,6 +1,4 @@
-# AGT-09 — Multi-Agent Systems
-
-## 02 — Delegation, Supervision, and Agent Coordination
+# 02 — Delegation, Supervision, and Agent Coordination
 
 ## Learning Objectives
 

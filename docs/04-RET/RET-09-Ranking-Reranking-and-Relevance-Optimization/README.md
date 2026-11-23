@@ -29,8 +29,7 @@ These prerequisites establish why retrieval scores may differ in meaning and sca
 
 **Next:** RET-10 — Retrieval Evaluation and Experimental Design covers the formal methods for measuring retrieval quality and comparing ranking configurations.
 
-## Chapter Structure
-
+## Lessons
 ### 01 — Candidate Scores and Relevance Ordering
 
 **Lesson:** Candidate Scores and Relevance Ordering

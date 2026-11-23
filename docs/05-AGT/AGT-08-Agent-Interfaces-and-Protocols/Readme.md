@@ -36,8 +36,7 @@ After completing AGT-08, you should be able to:
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ### 01 — Agent Capability Interfaces and Interoperability
 
 **Lesson:** [Agent Capability Interfaces and Interoperability](./01-Agent-Capability-Interfaces-and-Interoperability.md)

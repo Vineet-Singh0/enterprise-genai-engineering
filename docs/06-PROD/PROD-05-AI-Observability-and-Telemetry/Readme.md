@@ -62,7 +62,7 @@ The chapter does **not** turn these topics into vendor-specific installation or 
 
 ## Learning Path
 
-PROD-05 contains exactly three lessons.
+PROD-05 contains three lessons.
 
 ### 01 — Production AI Observability and Telemetry
 

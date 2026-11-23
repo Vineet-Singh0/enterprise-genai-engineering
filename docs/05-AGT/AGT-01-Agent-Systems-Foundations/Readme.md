@@ -1,4 +1,4 @@
-# AGT-01-Agent-Systems-Foundations
+# AGT-01 — Agent Systems Foundations
 
 ## Chapter Purpose
 

@@ -60,8 +60,7 @@ ENT-08 does not reteach these domains. They provide context and inputs to econom
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ENT-08 contains three lessons.
 
 ### 01 — AI Cost Models, FinOps and Unit Economics

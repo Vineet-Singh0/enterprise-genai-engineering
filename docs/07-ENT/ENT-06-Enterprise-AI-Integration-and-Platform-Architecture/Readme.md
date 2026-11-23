@@ -32,8 +32,7 @@ After completing this chapter, you should be able to:
 
 ---
 
-## Chapter Structure
-
+## Lessons
 This chapter contains three lessons.
 
 ### 01 — Enterprise AI Integration Patterns and System Boundaries

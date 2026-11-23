@@ -74,7 +74,8 @@ A representation is not automatically useful merely because it preserves the ori
 
 Think of a representation as an interface between the real-world input and the learning system.
 
-<CodeBlock language="mermaid" editable={false}>flowchart TD
+```mermaid
+flowchart TD
     A["Real-world object or event"] --> B["Observed raw data"]
     B --> C["Representation"]
     C --> D["Machine-learning model"]
@@ -82,7 +83,7 @@ Think of a representation as an interface between the real-world input and the l
 
     F["Task requirements"] --> C
     F --> D
-</CodeBlock>
+```
 
 The representation determines what information is exposed and how that information is organized. The model then learns from the available representation according to its learning procedure and objective.
 
@@ -276,14 +277,15 @@ The objective and evaluation context matter.
 
 At a high level, representation learning involves a learning procedure that adjusts a system using data and an objective.
 
-<CodeBlock language="mermaid" editable={false}>flowchart TD
+```mermaid
+flowchart TD
     A["Training data"] --> B["Representation-producing system"]
     B --> C["Representations"]
     C --> D["Training objective or task signal"]
     D --> E["Learning procedure updates parameters"]
     E --> B
     B --> F["Learned representation"]
-</CodeBlock>
+```
 
 This diagram is conceptual. Different systems use different objectives and training procedures, and not all representation-learning methods use the same feedback mechanism.
 

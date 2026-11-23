@@ -70,8 +70,7 @@ These chapters provide the underlying mechanisms. AGT-11 addresses their **relia
 
 ---
 
-## Chapter Structure
-
+## Lessons
 ### 01 — Agent Failure Modes and Recovery Strategies
 
 **Primary responsibility:** Understand how agents fail and how engineering systems should respond.
